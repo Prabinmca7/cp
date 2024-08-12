@@ -1,0 +1,27 @@
+@import 'widget-includes';
+
+.rn_AnswerNotificationManager {
+
+    $border: 1px solid #DDD;
+
+    background: #F2FAFD;
+    border: $border;
+    margin: 10px 0 20px;
+    padding: 10px 4px 8px;
+
+    .rn_Notification {
+        margin: 0 auto;
+    }
+
+    .rn_Notification_Info {
+        border-bottom: $border;
+        color: #6F6F6F;
+        padding: 0 4px 10px 0;
+    }
+
+    .rn_Notification_Actions button {
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+}

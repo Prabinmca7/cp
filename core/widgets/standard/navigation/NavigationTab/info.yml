@@ -1,0 +1,48 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_tab:
+    name: rn:msg:TAB_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_TO_DISPLAY_ON_THE_TAB_LBL
+    default: rn:msg:SUPPORT_HOME_TAB_HDG
+  link:
+    name: rn:msg:LINK_LBL
+    type: STRING
+    description: rn:msg:WHAT_PAGE_NAVIGATION_LINK_GOES_LBL
+    default: /app/home
+  pages:
+    name: rn:msg:PAGES_LBL
+    type: STRING
+    description: rn:msg:COMMA_SEPARATED_L_PAGES_CHG_CSS_LBL
+  subpages:
+    name: rn:msg:SUBPAGES_LBL
+    type: STRING
+    description: rn:msg:COMMA_SEPARATED_L_LABEL_URL_PAIRS_MSG
+  css_class:
+    name: rn:msg:CSS_CLSS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_CHANGE_PAGE_LINK_ATTRIB_MSG
+    default: rn_SelectedTab
+  target:
+    name: rn:msg:TARGET_OF_LINK_LBL
+    type: STRING
+    description: rn:msg:CNTROLS_DOC_DISPLAYED_FOLLOWS_MSG
+    default: _self
+  external:
+    name: rn:msg:EXTERNAL_LINK_LBL
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_ALLOWS_LINKS_SITES_RN_CP_MSG
+  searches_done:
+    name: rn:msg:SEARCHES_DONE_LBL
+    type: INT
+    description: rn:msg:SEARCHES_REQUIRED_BEFORE_TAB_LBL
+  label_selected_tab:
+    name: rn:msg:LABEL_SELECTED_TAB_LBL
+    description: rn:msg:LABEL_FOR_A_SELECTED_TAB_LBL
+    default: rn:msg:S_SELECTED_LBL
+    type: STRING
+info:
+  description: rn:msg:WIDGET_DISP_LINK_NAVIGATION_MSG

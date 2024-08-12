@@ -1,0 +1,24 @@
+@import 'widget-includes';
+
+.rn_KeywordText {
+    label {
+        @extend %screenreader;
+    }
+
+    input {
+        $placeholder-color: lighten(#000, 45);
+
+        &::-webkit-input-placeholder {
+            color: $placeholder-color;
+        }
+
+        &::-moz-placeholder {
+            color: $placeholder-color;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: $placeholder-color;
+        }
+    }
+}

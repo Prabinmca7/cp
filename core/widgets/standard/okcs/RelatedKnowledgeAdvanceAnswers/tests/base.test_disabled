@@ -1,0 +1,71 @@
+input: <rn:widget path="standard/okcs/RelatedKnowledgeAdvanceAnswers"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,CP_ANSWERS_DETAIL_URL|answers/answer_view
+fixture: QuestionWithProduct
+removecontent: true
+urlparameters: /qid/%CommunityQuestion%
+output:
+<div id="rn_RelatedKnowledgeAdvanceAnswers_0" class="rn_RelatedKnowledgeAdvanceAnswers">
+		<h2>Related Answers</h2>
+		<ul class="rn_List">
+										<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000001" title="Proof Submission document in Windows">
+							Proof Submission document in Windows						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000002" title=" INVESTMENT PROOF SUBMISSION GUIDELINES FOR THE FY 2014-2015">
+							 INVESTMENT PROOF SUBMISSION GUIDELINES FOR THE FY...						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000043" title="Integration user issue new">
+							Integration user issue new						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000042" title="Integration user issue">
+							Integration user issue						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000013" title="test v2 123">
+							test v2 123						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000015" title="test v4 123">
+							test v4 123						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000012" title="test v 123">
+							test v 123						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000039" title="Title defect validation">
+							Title defect validation						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000014" title="test v3 123">
+							test v3 123						</a>
+					</span>
+				</li>
+							<li class="rn_RelatedKnowledgeAdvanceAnswersItem">
+					<span class="rn_Title">
+						<a href="/app/answers/answer_view/a_id/1000028" title="File attachment 2.0">
+							File attachment 2.0						</a>
+					</span>
+				</li>
+					</ul>
+</div>

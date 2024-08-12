@@ -1,0 +1,70 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.1:
+  release: "15.8"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 338
+    date: 05/18/2015
+    description: Support new Community Self Service permissions
+    details:
+    - Products or categories will be automatically filtered from the treeview if the
+      user does not have permission to read the product/category or its children.
+    - Change default messaging from 'Limit by product' to 'Filter by product'.
+    - Icon is now defined in CSS rather than by the `remove_icon_path` attribute.
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.1.2:
+  release: "14.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 263
+    date: 07/09/2014
+    description: Search filter was incorrectly displaying a single product level in
+      some circumstances
+    level: nano
+    refno: 140530-000064
+    sortPosition: Middle
+1.1.1:
+  release: "13.8"
+  entries:
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 108
+    date: 07/17/2013
+    description: Allows selection of any search filter segments displayed by the widget
+    details:
+    - Previously, the links displayed by this widget could not be selected, which
+      is different behavior from the standard and basic page sets that do allow selection.
+      Now all page sets allow clickable search links.
+    level: minor
+    refno: 130430-000003
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

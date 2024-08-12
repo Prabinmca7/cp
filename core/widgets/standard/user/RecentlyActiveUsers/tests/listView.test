@@ -1,0 +1,31 @@
+input: <rn:widget path="standard/user/RecentlyActiveUsers" content_display_type="list_view" max_user_count="1"/>
+filter: @(?:Last Active(.*)</span>|\/user\/\d+)@
+fixture: QuestionActiveModActive
+removecontent: true
+output:
+<div id="rn_RecentlyActiveUsers_0" class="rn_RecentlyActiveUsers">
+    <div class="rn_RecentlyActiveUsers">
+                    <div class="rn_RecentUsersList">
+    <ul class="rn_RecentUsers">
+                    <li class="rn_RecentUser">
+                                    <div class="rn_RecentUserAvatar">
+                                                    <span class="rn_UserAvatar" title="Active User1">
+            <a itemprop="url" href="/app/public_profile/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor1" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">A</span>
+            </span>
+            </span>
+                <span class="rn_ScreenReaderOnly">Active User1 Avatar</span>
+                </a>
+    </span>
+                                            </div>
+                                                    <div class="rn_RecentUserDetails">
+                                                    <span><a href="/app/public_profile">Active User1</a></span>
+                                                                            <span>
+                                            </div>
+                            </li>
+            </ul>
+</div>
+            </div>
+</div>

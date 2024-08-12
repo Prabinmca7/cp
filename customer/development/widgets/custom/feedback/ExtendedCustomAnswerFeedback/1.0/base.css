@@ -1,0 +1,20 @@
+.rn_ExtendedCustomAnswerFeedback .partial-insert {
+    background: dodgerblue;
+    text-align: center;
+}
+.rn_ExtendedCustomAnswerFeedback .mr {
+    display: inline-block;
+    -webkit-animation-name: rove;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes rove {
+    from {
+        -webkit-transform: translateX(20px);
+    }
+    to {
+        -webkit-transform: translateX(-20px);
+    }
+}

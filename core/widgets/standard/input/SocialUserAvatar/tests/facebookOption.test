@@ -1,0 +1,56 @@
+input: <rn:widget path="standard/input/SocialUserAvatar" avatar_selection_options="facebook"/>
+config: FACEBOOK_ENABLED|1,FACEBOOK_OAUTH_APP_ID|111111111,FACEBOOK_OAUTH_APP_SECRET|dummyOne,FACEBOOK_APPLICATION_ID|111111111",FACEBOOK_APPLICATION_SECRET|dummyOne"
+contact: slatest
+removecontent: true
+output:
+<div id="rn_SocialUserAvatar_0" class="rn_SocialUserAvatar">
+    <div id="rn_SocialUserAvatar_0_ProfilePicture">
+        <div id="rn_ErrorLocation"></div>
+                    <h2>Update Your Profile Picture</h2>
+                            <section class="rn_PreviewImage">
+                <div class="rn_image">
+                    <div class="rn_UserAvatar">
+                        <div class="rn_Avatar rn_Large rn_Placeholder">
+                            <span class="rn_Default rn_DefaultColor2 ">
+                                <span class="rn_Liner">
+                                    S                                </span>
+                            </span>
+                            <img class="rn_Hidden" src="#" alt=""/>
+                        </div>
+                    </div>
+                    <div><a href="/app/unitTest/rendering/widgets/standard/input/SocialUserAvatar/tests/facebookOption" class="rn_Refresh" title="Click to reset profile picture selection">Reset</a></div>
+                </div>
+                <div class="rn_DisplayName" title="slatest">
+                    slatest                </div>
+            </section>
+            <section class="rn_AvatarOptions">
+                                        <div class="rn_Service rn_Facebook rn_AvatarOption ">
+                <div id="rn_SocialUserAvatar_0_FacebookForm">
+            <span class="rn_FacebookIcon rn_OptionTitle">
+                Use your Facebook profile picture            </span>
+                            <div class="rn_NewSocialFacebookInput">
+                    <div id="rn_OpenLogin_1" class="rn_OpenLogin">
+    <a href="javascript:void(0)" id="rn_OpenLogin_1_ProviderButton" class="rn_LoginProvider rn_Log into Facebook">Log into Facebook</a>
+</div>
+                </div>
+                            <div class="rn_HintText" id="rn_SocialUserAvatar_0_FacebookHint">
+                    Authorize your Facebook account                </div>
+                                </div>
+    </div>
+                                        <div class="rn_DefaultOption rn_AvatarOption rn_ChosenAvatar">
+                    <span class="rn_ScreenReaderOnly">You are currently using the default profile picture</span>
+                <div id="rn_SocialUserAvatar_0_DefaultForm">
+            <span class="rn_OptionTitle">
+                Use a default profile picture            </span>
+            <button id="rn_SocialUserAvatar_0_SelectDefault" type="button">Apply</button>
+                            <div class="rn_HintText" id="rn_SocialUserAvatar_0_DefaultHint">
+                    Generated from your Display Name                </div>
+                    </div>
+    </div>
+                            </section>
+            <div class="rn_AvatarButtons">
+                                    <button class="rn_SaveButton">Save Changes</button>
+                    <button class="rn_CancelButton">Cancel</button>
+                            </div>
+            </div>
+</div>

@@ -1,0 +1,37 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:ALLOWS_AUTHOR_S_USERS_T_NOTIFICATIONS_MSG
+  category:
+  - Community
+attributes:
+  fetch_prodcat_subscription_ajax:
+    name: rn:msg:FETCH_PRODUCTCATEGORY_SUB_AJAX_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_FETCH_L_SUB_PRODUCTCATEGORY_LBL
+    default: /ci/ajax/widget
+  label_subscribe_me:
+    name: rn:msg:SUBSCRIBE_ME_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYS_SUBSCRIBE_ME_OPTI_PAGE_LBL
+    default: rn:msg:EMAIL_ME_WHEN_A_NEW_COMMENT_IS_POSTED_LBL
+    type: STRING
+  label_subscribed_to_prodcat:
+    name: rn:msg:SUBSCRIBED_TO_PRODUCT_LABEL_LBL
+    description: rn:msg:STRING_ALREADY_SUB_PRODUCTCATEGORY_LBL
+    default: rn:msg:ARE_ALREADY_SUBSCRIBED_ALL_QUESTION_S_LBL
+    type: STRING
+  subscribe_me_default:
+    name: rn:msg:SUBSCRIBE_ME_CHECKBOX_VALUE_LBL
+    description: rn:msg:DEFAULT_VALUE_OF_SUBSCRIBE_ME_CHECKBOX_LBL
+    default: true
+    type: BOOLEAN
+  prodcat_type:
+    name: rn:msg:PRODUCT_OR_CATEGORY_TYPE_LBL
+    description: rn:msg:DETERMINES_OBJECT_CREATE_SUB_FOR_MSG
+    default: Product
+    type: OPTION
+    options:
+    - Product
+    - Category

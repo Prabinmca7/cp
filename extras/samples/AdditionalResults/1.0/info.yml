@@ -1,0 +1,39 @@
+# File: info.yml
+# Abstract: Definition of AdditionalResults widget
+# Version: 1.0
+
+version: "1.0"
+requires:
+  framework: ["3.0", "3.1", "3.2"]
+  jsModule:
+  - standard
+attributes:
+  source_id:
+    name: source_id
+    type: string
+    description: ID for an additional search source
+    default: ddg
+  search_endpoint:
+    name: search_ajax
+    type: ajax
+    description: Endpoint for searches
+    default: /ci/ajax/widget
+  label_heading:
+    name: label_heading
+    type: string
+    description: Heading for additional results
+    default: Additional results
+extends:
+  widget: standard/reports/Multiline
+  components:
+  - php
+  - view
+  - css
+  - js
+info:
+  description: This widget extends standard Multiline functionality in order to append additional search results from a third-party source onto standard knowledgebase report results.
+  urlParameters:
+    kw:
+      name: rn:msg:KEYWORD_LBL
+      description: rn:msg:THE_CURRENT_SEARCH_TERM_LBL
+      example: kw/search

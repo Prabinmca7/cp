@@ -1,0 +1,31 @@
+@import 'widget-includes';
+
+.rn_SupportedLanguages {
+    margin-bottom: 20px;
+
+    a:link {
+        color: $hero-color;
+        line-height: 30px;
+    }
+
+    fieldset {
+        padding: 14px;
+        background: none;
+        border: 0;
+    
+        label {
+            padding-left: 5px;
+            display: inline;
+            color: $hero-color;
+            font-weight: normal;
+        }
+    }
+
+    .rn_SupportedLanguagesCheckbox {
+        float: left;
+        height: 1em;
+        width: 5%;
+        min-width: 20px;
+        min-height: 20px;
+    }
+}

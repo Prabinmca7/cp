@@ -1,0 +1,18 @@
+input: <rn:widget path="standard/okcs/SearchResult" source_id="OKCSSearch" kw="Usergroup" display_doc_id="true" open_parent_answer="true" open_article="Open Article"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,CP_ANSWERS_DETAIL_URL|answers/answer_view,OKCS_API_TIMEOUT|0
+filter: @"sessionKey":"(.+)"|"clickThroughUrl":"(.+)"|data-id="(.+)" href="(.+)" data-url="(.+)"@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/Test/loc/en-US
+output:
+<div id="rn_SearchResult_0" class="">
+    <div id="rn_SearchResult_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_SearchResult_0_NoSearchResult" class="rn_NoSearchResultMsg rn_Hidden">
+                No results found. Please expand your search query        <span class="rn_ClearFilterMsg">or <a role="button" class="rn_ClearResultFilters" href="javascript:void(0)">Clear</a> applied filters</span>
+    </div>
+    <div id="rn_SearchResult_0_Loading"></div>
+    <div id="rn_SearchResult_0_Content" class="rn_SearchResultContent">
+                    <div class="rn_NoSearchResultMsg"></div>
+                    </div>
+            <script type="text/json" id="rn_SearchResult_0_HistoryData">{"filters":{"query":{"value":"Test","key":"kw","type":"query"},"locale":{"value":"en-US","key":"loc","type":"locale"},"facet":{"value":null,"key":"facet","type":"facet"},"collectFacet":{"value":null,"key":"collectFacet","type":"collectFacet"},"direction":{"value":null,"key":"dir","type":"direction"},"page":{"value":1,"key":"page","type":"page"},"truncate":{"value":200},"searchCacheId":{"value":null,"key":"searchCacheId","type":"searchCacheId"},"searchType":{"value":null,"key":"searchType","type":"searchType"},"okcsSearchSession":{"value":null,"key":"okcsSearchSession","type":"okcsSearchSession"},"priorTransactionID":{"value":null,"key":"priorTransactionID","type":"priorTransactionID"},"docIdRegEx":{"value":""},"transactionID":{"value":null,"key":"transactionID","type":"transactionID"},"okcsNewSearch":{"value":null,"key":"okcsNewSearch","type":"okcsNewSearch"},"prod":{"value":null,"key":"product","type":"prod"},"cat":{"value":null,"key":"category","type":"cat"},"querySource":{"value":""},"resultCount":{"value":null},"sort":{"value":null,"key":"sort","type":"sort"},"product":{"value":null,"key":"p","type":"product"},"category":{"value":null,"key":"c","type":"category"},"offset":{"value":0,"key":null,"type":"offset"},"limit":{"value":null},"docIdNavigation":{"value":"false"},"sessionKey":null,"errors":"HTTP: 500 ,Error in token generation"},"offset":0,"query":null,"searchResults":null,"size":1,"total":0}</script>
+    </div>

@@ -1,0 +1,57 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LBL
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: rn:def:CP_NOV09_ANSWERS_DEFAULT
+    type: INT
+    min: 1
+  per_page:
+    name: rn:msg:ITEMS_PER_PAGE_LBL
+    description: rn:msg:CONTROLS_RES_DISP_PG_OVERRIDDEN_MSG
+    default: 0
+    type: INT
+  label_page:
+    name: rn:msg:LABEL_PAGE_LBL
+    description: rn:msg:DISP_PAGE_INDICATOR_HOVERS_PAGE_LBL
+    default: rn:msg:PAGE_PCT_S_OF_PCT_S_LBL
+    type: STRING
+  label_forward:
+    name: rn:msg:FORWARD_LABEL_CMD
+    description: rn:msg:LABEL_FOR_THE_FORWARD_LINK_LBL
+    default: rn:msg:NEXT_LBL
+    type: STRING
+  label_back:
+    name: rn:msg:BACK_LABEL_CMD
+    description: rn:msg:LABEL_FOR_THE_BACK_LINK_LBL
+    default: rn:msg:PREVIOUS_LBL
+    type: STRING
+  label_screen_reader_description:
+    name: rn:msg:SCREEN_READER_DESCRIPTION_LBL
+    type: STRING
+    description: rn:msg:VISUALLY_HIDDEN_LABEL_THAT_LBL
+    default: rn:msg:RESULT_PAGES_LBL
+  max_date_range_interval:
+    name: rn:msg:MAX_DATE_RANGE_INTERVAL_LBL
+    description: rn:msg:MAXIMUM_EXPR_FMT_EX_90_DAYS_2_YEARS_ETC_MSG
+    default: 90 days
+    type: STRING
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+  label_current_page:
+    name: rn:msg:LABEL_CURRENT_PAGE_LBL
+    description: rn:msg:INDICATOR_HOVERS_OVER_CURRENT_NUMBER_LBL
+    default: rn:msg:PAGE_S_OF_S_SELECTED_LBL
+    type: STRING
+info:
+  description: rn:msg:TH_NAV_TT_MAXDATERANGENTRVL_MDRTN_FLWS_MSG
+  urlParameters:
+    page:
+      name: rn:msg:PAGE_LBL
+      description: rn:msg:SETS_PAGE_PAGE_URL_PARAMETER_LBL
+      example: page/2

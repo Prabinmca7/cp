@@ -1,0 +1,81 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.1:
+  release: "16.5"
+  entries:
+  - account: aswin.kolli
+    category: Bug Fix
+    changelogID: 499
+    date: 03/29/2016
+    description: Search Results now use header tags.
+    details:
+    - The search results now use &lt;h3&gt; header tags.
+    level: minor
+    refno: 160301-000127
+    sortPosition: Middle
+1.1.1:
+  release: "13.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 144
+    date: 10/09/2013
+    description: Adds an ARIA alert div for screen readers
+    details:
+    - When a user interaction updates the widget, the ARIA alert div (specifically
+      for screen readers) is updated to explain what the update was (for example,
+      search performed).
+    level: minor
+    refno: 130808-000129
+    sortPosition: Middle
+  - account: ryan.peterson
+    category: New Feature
+    changelogID: 136
+    date: 10/09/2013
+    description: Aligns MobileMultiline view with the Multiline view
+    details:
+    - The MobileMultiline widget uses the `view.ejs` file associated with the Multiline
+      widget, so the `rn_Odd` and `rn_Even` classes on the `li` element are not available
+      after an AJAX request. This change simply minimizes the differences between
+      the `view.php` files of the two widgets so that inconsistencies are removed
+      because the same`view.ejs` file is used after an AJAX request.
+    level: minor
+    refno: 130426-000059
+    sortPosition: Middle
+  - account: ryan.peterson
+    category: New Feature
+    changelogID: 135
+    date: 08/05/2013
+    description: Adds `hide_empty_columns` attribute which defaults to hide columns
+      with no data value
+    details:
+    - The `hide_empty_columns` attribute indicates whether columns with empty or null
+      data values are displayed.
+    level: minor
+    refno: 130426-000059
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

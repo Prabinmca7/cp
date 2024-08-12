@@ -1,0 +1,25 @@
+.rn_Footer {
+    background: #EFEFEF;
+    padding: 2em 0;
+
+    @media print {
+        padding: 0;
+    }
+
+    .rn_SiteFeedback {
+        display: inline;
+        font-size: $base-font-size * 1.25;
+        font-weight: bold;
+    }
+
+    .rn_PageSetSelector {
+        @include span-columns(12);
+    }
+
+    .rn_Misc {
+        @include span-columns(4);
+        text-align: right;
+        float: right;
+    }
+}
+

@@ -1,0 +1,56 @@
+1.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 818
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.3.1:
+  release: "19.5"
+  entries:
+  - account: vikas.adavani@oracle.com
+    category: Bug Fix
+    changelogID: 726
+    date: 03/27/2019
+    description: Added new descrptive banner message for the API exception due to
+      duplicate subscription
+    level: minor
+    refno: 180803-000196
+    sortPosition: Middle
+1.2.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 557
+    date: 08/30/2016
+    description: Updated default message for label\_subscribe\_msg and label\_unsubscribe\_msg.
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.1.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+1.0.1:
+  release: "15.11"
+  entries:
+  - date: 08/07/2015
+    level: major
+    description: Initial version of okcs/SubscriptionButton
+    category: API Change
+    sortPosition: Middle

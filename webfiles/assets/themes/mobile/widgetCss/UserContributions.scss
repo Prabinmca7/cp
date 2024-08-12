@@ -1,0 +1,17 @@
+@import 'widget-includes';
+
+.rn_UserContributions {
+    @include span-columns(12);
+
+    fieldset {
+        legend {
+            padding: 0;
+        }
+
+        li {
+            font-size: .75em;
+            padding-right: .7em;
+            display: block;
+        }
+    }
+}

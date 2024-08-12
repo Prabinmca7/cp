@@ -1,0 +1,62 @@
+/*
+*= require yui datatable-base/assets/skins/sam/datatable-base.css
+*= require yui datatable-paginator/assets/skins/sam/datatable-paginator.css
+*= require yui datatable-sort/assets/skins/sam/datatable-sort.css
+*= require yui datatable-scroll/assets/skins/sam/datatable-scroll.css
+*/
+
+.errorText {
+    color:red;
+    font-weight:bold;
+}
+.successText {
+    color:green;
+    font-weight:bold;
+}
+.warnLogEntry{
+    color:#FF7F00;
+}
+.errorLogEntry{
+    color:red;
+}
+#search button, .yui3-datatable-paginator-group button {
+    padding: 2px 6px 3px;
+}
+
+.yui3-datatable-paginator-control-per-page .total {
+    padding: 0 15px 0;
+}
+
+/* Webdav */
+#headline {
+    width:958px;
+    border:1px solid #ccc;
+    background-color:#f0f0f0;
+    color:#777;
+    font-size:.9em;
+    margin:5px 0 15px;
+}
+#headline h3 {
+    padding-left:15px;
+}
+#headline h3 a{
+    font-weight: normal;
+}
+#headline p {
+    margin:2px;
+    padding:0;
+}
+
+/* Debug */
+#debugLogs .yui3-datatable-col-name, #debugLogs .yui3-datatable-col-delete {
+    text-align:center;
+}
+
+/* Deploy */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}

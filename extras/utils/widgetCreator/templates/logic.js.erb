@@ -1,0 +1,7 @@
+RightNow.Widgets.<%= widgetName %> = RightNow.Widgets.<%= (extendsFrom) ? extendsFrom[:widget].split('/')[1] + '.' : '' %>extend({
+    constructor: function() {
+    <% if extendsFrom %>
+        this.parent();
+    <% end %>
+    }
+});

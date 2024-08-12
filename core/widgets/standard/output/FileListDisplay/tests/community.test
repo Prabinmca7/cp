@@ -1,0 +1,10 @@
+input: <rn:widget path='standard/output/FileListDisplay' name='CommunityQuestion.FileAttachments'/>
+contact: slatest
+filter: @datetime="[^"]+">[^<]+</time>@
+removecontent: true
+jstestfile: community.test.js
+replace: datetime=""></time>
+urlparameters: /qid/1
+output:
+<div id="rn_FileListDisplay_0" class="rn_FileListDisplay rn_Output">
+</div>

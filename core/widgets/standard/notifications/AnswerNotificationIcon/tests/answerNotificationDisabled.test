@@ -1,0 +1,7 @@
+input: <rn:widget path='standard/notifications/AnswerNotificationIcon'/>
+config: ANS_NOTIF_ENABLED|0
+contact: slatest
+jstestfile: disable.test.js
+removecontent: true
+urlparameters: /a_id/1
+output:

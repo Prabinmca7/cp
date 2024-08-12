@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rn="http://schemas.rightnow.com/crm/document">
+<head>
+<link href="/euf/core/static/ma.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/rnt/rnw/javascript/enduser.js" language="JavaScript"></script><script type="text/javascript"><!--
+
+            var _submit_accepted = false;
+
+            function survey_field(id,min, max, type, elements, question_text, force_ranking, counter_default_color, counter_warning_color)
+            {
+              this.id    = id;
+              this.min   = min;
+              this.max   = max;
+              this.type  = type;
+              this.elements = elements;
+              this.question_text = question_text;
+              this.force_ranking = force_ranking;
+              this.counter_default_color = counter_default_color;
+              this.counter_warning_color = counter_warning_color;
+            }
+
+            var _survey_fields = [];
+
+            function _do_submit(form)
+            {
+
+                var last_page_num = document.getElementsByName('_last_page_num');
+                var submitCookieExists = document.cookie.search('survey_submit_cookie');
+                var now = new Date();
+                now.setSeconds(now.getSeconds() + 2);
+                if(last_page_num != null && last_page_num[0].value == '1')
+                {
+                     if (submitCookieExists == -1)
+                         document.cookie = 'survey_submit_cookie=submitted; expires=' + now.toUTCString();
+                     else
+                         return(false);
+                }
+
+                var errorDisplay = document.getElementById('rn_ErrorDisplay');
+                RightNow.MarketingFeedback.removeErrorsFromForm(form, errorDisplay);
+
+                if(RightNow.MarketingFeedback.getSubmitType() == 'back')
+                     return(true);
+
+                 fld_data.please_wait_message = 'Please Wait...';
+                return RightNow.MarketingFeedback.validate(form, fld_data, _fields, _survey_fields, errorDisplay, true);
+
+
+            }
+
+
+
+
+var fld_data = new field_data(
+"is not an integer.",
+"requires a value.",
+"is not completely specified.",
+"The text entered for \'%s\' exceeds its size limit of %d characters by %d characters.",
+"must only contain valid ascii characters.",
+"does not seem to be a valid email address.",
+"Must contain valid furigana characters",
+"Need to select more options.",
+"Need to select fewer options.",
+"Month",
+"Day",
+"Year",
+"Hour",
+"Minute",
+"^((([-_!#$%&\'*+/=?^~`{|}\\w]+(\\.[.]?[-_!#$%&\'*+/=?^~`{|}\\w]+)*)|(\"[^\"]+\"))@[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*(\\.[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*)+[;]*)$",
+0,
+"",
+"must not contain either \'<\' or \'>\'",
+"cannot be negative",
+"Field contains too many characters.",
+"Must contain a valid format character.",
+"is not a valid format character.",
+"Must contain a valid number.",
+"is not a valid number.",
+"Must contain a valid alpha-numeric.",
+"is not a valid alpha-numeric.",
+"Must contain a valid letter.",
+"is not a valid letter.",
+"Must contain a valid character.",
+"is not a valid character.",
+"The correct format is",
+"The value you have entered is less than the smallest value allowed for this field.",
+"The value you have entered is greater than the largest value allowed for this field.",
+"is not a valid date.",
+"is not a valid date. Please enter a date in format",
+"MM",
+"DD",
+"YYYY",
+"Minimum year is:",
+"Maximum year is:",
+"Only letters, digits, space, and (,.+#) are valid for %s");
+            var onBeforeUnloadMessage = 'Your responses have not yet been saved. If you wish to navigate to a different survey page please use the navigation buttons provided within the survey.';
+          //--></script><title>Page 1</title></head>
+<body>
+<div id="rn_ErrorDisplay" class="rn_Hidden"></div>
+<form action="http://OE_WEB_SERVER/ci/documents/submit" name="_main" method="post" onsubmit="return(_do_submit(this))">
+<script type="text/javascript"><!--
+var _fields = new Array ();
+//--></script>
+
+<script type="text/javascript"><!--
+
+_survey_fields.push(new survey_field('12',-1,7,2,'q_12_53:q_12_54:q_12_55:q_12_56:q_12_57:q_12_58:q_12_59','What is your favorite color?',false));
+
+
+        //--></script><fieldset style="padding:0px; margin:0px; border:0px;"><legend style="font-size: inherit; margin: 0px; padding: 0px; border: none; visibility: inherit; float:left; white-space:normal;">
+<span id="q12" style="font-weight: bold">What is your favorite color?</span>
+</legend>
+<br />
+<table>
+<tr><td valign="top">
+<input name="q_12" type="radio" value="53" id="q_12_53"/><label for="q_12_53">red</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="54" id="q_12_54"/><label for="q_12_54">green</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="55" id="q_12_55"/><label for="q_12_55">blue</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="56" id="q_12_56"/><label for="q_12_56">orange</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="57" id="q_12_57"/><label for="q_12_57">yellow</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="58" id="q_12_58"/><label for="q_12_58">indigo</label>
+</td>
+</tr>
+<tr> 
+<td valign="top">
+<input name="q_12" type="radio" value="59" id="q_12_59"/><label for="q_12_59">Other</label> <input type="text" value="" maxlength="255" size="20" name="other_12_59" id="other_59" onclick="getElementById('q_12_59').checked=true " onchange="getElementById('q_12_59').checked=true "/>
+</td>
+</tr>
+</table>
+<input type="hidden" name="val_q_12" id="val_q_12" value="'12',-1,7,2,'q_12_53:q_12_54:q_12_55:q_12_56:q_12_57:q_12_58:q_12_59','What is your favorite color?',false"/></fieldset><p></p>
+<p><input id="submit_btn" name="submit_btn" rn:submit="true" type="submit" value="Submit" /></p>
+<input name="p_t" type="hidden" value="AvMG~wr~Dv8S6xb~Gv8e~yK3Jv8q~y77Mv9a~z7~Pv_T" />
+<input name="p_shortcut" type="hidden" value="Flow_10_Webpage_1_Doc_36" />
+<input name="_survey_score" type="hidden" value="0" />
+<input name="p_question_session_type" type="hidden" value="1" />
+<input name="_last_page_num" type="hidden" value="1" />
+<input name="p_val_validated" type="hidden" value="0" />
+<script type="text/javascript"><!--
+_fields.push(new field('','',0,0,0));
+_survey_fields.push(new survey_field(0,0,0,0,''));
+//--></script>
+</form>
+
+<script type='text/javascript' src='/euf/core/static/RightNow.Compatibility.MarketingFeedback.js'></script>
+<script>window.onload=function(){
+var forms = document.getElementsByTagName('form');
+for(i = 0;i < forms.length; i++){
+var formElement = forms[i];
+if(formElement.name == '_main')
+{
+var f_tok = document.createElement('input');
+f_tok.setAttribute('type', 'hidden');
+f_tok.setAttribute('name', 'f_tok');
+f_tok.setAttribute('value', '$formToken');
+formElement.insertBefore(f_tok, formElement.lastChild);
+formElement.action = formElement.action.replace(/^(http|https):/, '');
+}
+}
+}</script>
+</body>
+</html>

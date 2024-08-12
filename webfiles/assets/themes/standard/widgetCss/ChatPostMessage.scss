@@ -1,0 +1,17 @@
+@import 'widget-includes';
+
+.rn_ChatPostMessage textarea {
+    max-height: 3.5em;
+    width: 100%;
+    padding: 0;
+}
+
+.rn_ChatPostMessage {
+    margin: 0 1.2em 0 1em;
+}
+
+@media print {
+    .rn_ChatPostMessage {
+        display: none;
+    }
+}

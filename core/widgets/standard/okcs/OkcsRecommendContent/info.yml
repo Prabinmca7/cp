@@ -1,0 +1,163 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    type: STRING
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    default: OKCSBrowse
+    options:
+    - OKCSBrowse
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  label_recommend_content:
+    name: rn:msg:RECOMMEND_CONTENT_LABEL_LBL
+    description: rn:msg:BUTTON_OPENS_UP_RECOMMENDATION_PANEL_MSG
+    default: rn:msg:RECOMMEND_CONTENT_LBL
+    type: STRING
+  label_recommend_change:
+    name: rn:msg:RECOMMEND_CHANGE_LABEL_LBL
+    description: rn:msg:BUTT_BRING_U_RECOMMENDATI_L_L_PAGE_MSG
+    default: rn:msg:RECOMMEND_CHANGE_LBL
+    type: STRING
+  label_recommendation:
+    name: rn:msg:RECOMMENDATION_LABEL_LBL
+    type: STRING
+    description: rn:msg:HEADER_CONTENT_RECOMMENDATI_PANEL_MSG
+    default: rn:msg:RECOMMENDATION_LBL
+  label_recommend_title:
+    name: rn:msg:RECOMMEND_TITLE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_RECOMMENDATION_TITLE_FIELD_MSG
+    default: rn:msg:TITLE_LBL
+  label_recommend_description:
+    name: rn:msg:RECOMMEND_DESCRIPTION_LABEL_LBL
+    type: STRING
+    description: Label for the Recommendation Description Field.
+    default: rn:msg:DESCRIPTION_LBL
+  label_recommend_case_number:
+    name: rn:msg:CASE_NUMBER_LABEL_LBL
+    type: STRING
+    description: rn:msg:CASE_AGAINST_RECOMMENDATION_BEING_MADE_MSG
+    default: rn:msg:CASE_NUMBER_LBL
+  label_recommend_priority:
+    name: rn:msg:PRIORITY_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_RECOMMENDATION_PRIORITY_FIELD_MSG
+    default: rn:msg:PRIORITY_LBL
+  label_recommend_content_type:
+    name: rn:msg:CONTENT_TYPE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_RECOMMENDATION_CONTENT_FIELD_MSG
+    default: rn:msg:CONTENT_TYPE_LBL
+  label_recommend_submit:
+    name: rn:msg:SUBMIT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_BUTTON_SUBMIT_RECOMMENDATIONS_MSG
+    default: rn:msg:SUBMIT_CMD
+  label_recommend_cancel:
+    name: rn:msg:CANCEL_LABEL_LBL
+    type: STRING
+    description: rn:msg:DISPLAYED_BUTT_CANCELS_RECOMMENDATION_MSG
+    default: rn:msg:CANCEL_CMD
+  label_success_msg:
+    name: rn:msg:RECOMMENDATION_SUCCESS_MESSAGE_LBL
+    type: STRING
+    description: rn:msg:ONCE_TIMES_RECOMMENDATI_SUCCESSFULLY_MSG
+    default: rn:msg:THANK_YOU_FOR_MAKING_A_RECOMMENDATION_MSG
+  label_failure_msg:
+    name: rn:msg:RECOMMENDATION_FAILURE_MESSAGE_LBL
+    type: STRING
+    description: rn:msg:CONTENT_TYPES_ENABLED_RECOMMENDATION_LBL
+    default: rn:msg:CONTENT_TYPES_ENABLED_RECOMMENDATION_MSG
+  label_default_priority:
+    name: rn:msg:DEFAULT_PRIORITY_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_DEFAULT_VALUE_PRIORITY_LIST_MSG
+    default: rn:msg:SELECT_A_PRIORITY_LBL
+  label_default_content_type:
+    name: rn:msg:DEFAULT_CONTENT_TYPE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DEFAULT_VALUE_CONTENT_TYPE_LIST_MSG
+    default: rn:msg:SELECT_A_CONTENT_TYPE_LBL
+  label_title_prefix:
+    name: rn:msg:PREFIX_FOR_RECOMMEND_CHANGE_LBL
+    type: STRING
+    description: rn:msg:PREPENDED_BEF_DOC_ASSERT_RECOMMENDATIN_MSG
+    default: rn:msg:RE_LBL
+  content_type_list:
+    name: rn:msg:CONTENT_TYPE_L_LBL
+    type: STRING
+    description: rn:msg:COMMA_S_REF_KEYS_TYPES_RESTRICT_RES_TO_MSG
+  message_element:
+    name: rn:msg:MESSAGE_ELEMENT_LBL
+    description: rn:msg:UNIQ_ID_DIV_PG_SUCC_MSGS_REPORTED_MSG
+    type: STRING
+  label_submitting_message:
+    name: rn:msg:SUBMITTING_MESSAGE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYS_FORM_IS_SUBMITTING_MSG
+    type: STRING
+    default: rn:msg:SUBMITTING_ELLIPSIS_MSG
+  create_recommendation_ajax:
+    name: rn:msg:AJAX_URL_FOR_CREATING_RECOMMENDATIONS_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_SUBMIT_RES_VIA_AJAX_REQUESTS_MSG
+    default: /ci/okcsAjaxRequest/createRecommendation
+  retrieve_content_type_ajax:
+    name: rn:msg:AJAX_URL_FOR_RETRIEVING_CONTENTTYPES_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_ERR_TYP_RES_VIA_AJAX_REQUESTS_MSG
+    default: /ci/okcsAjaxRequest/getContentType
+  label_maxlength_error:
+    name: rn:msg:ERROR_MESSAGE_FOR_DESCRIPTION_FIELD_LBL
+    type: STRING
+    description: rn:msg:DESCRIPTION_MORE_4000_CHARS_ENTERED_LBL
+    default: rn:msg:PLEASE_ENTER_LESS_THAN_4000_CHARACTERS_MSG
+  default_maxlength_value:
+    name: rn:msg:MAXIMUM_CHARACTER_ALLOWED_DESC_FIELD_LBL
+    type: INT
+    description: rn:msg:MAXIMUM_CHARACTER_ALLOWED_DESC_FIELD_LBL
+    default: 4000
+    min: 1
+    max: 4000
+  label_characters_remaining:
+    name: rn:msg:CHARACTERS_REMAINING_LABEL_LBL
+    type: STRING
+    description: rn:msg:INDICATING_REMAINING_CHARS_ENTERED_AREA_MSG
+    default: rn:msg:CHARACTERS_REMAINING_LBL
+  display_to_anonymous:
+    name: rn:msg:DISPLAY_TO_ANONYMOUS_LBL
+    type: BOOLEAN
+    description: rn:msg:TRUE_VISIBLE_ACCESSIBLE_ANONYMOUS_USERS_MSG
+    default: false
+  show_recommend_case_number:
+    name: rn:msg:DISPLAY_CASE_NUMBER_FIELD_LBL
+    type: BOOLEAN
+    description: rn:msg:WHEN_SET_TRUE_WIDGET_SHOW_CASE_FIELD_MSG
+    default: true
+  show_recommend_priority:
+    name: rn:msg:DISPLAY_PRIORITY_FIELD_LBL
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_WIDGET_SHOW_PRIORITY_FIELD_MSG
+    default: true
+  label_recommend_attachment:
+    name: rn:msg:RECOMMEND_ATTACHMENT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_RECOMMENDATION_ATTACHMENT_FIELD_MSG
+    default: rn:msg:ATTACH_DOCUMENT_LBL
+  label_remove:
+    name: rn:msg:REMOVE_ATTACHMENT_LABEL_CMD
+    description: rn:msg:LABEL_DISPLAY_LINK_REMOVE_ATTACH_LBL
+    default: rn:msg:REMOVE_CMD
+    type: STRING
+  label_invalid_extension:
+    name: rn:msg:LABEL_INVALID_FILE_EXTENSION_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_INV_FILE_EXTENSION_PCT_S_LBL), 'CP.ValidFileExtensions')
+    default: rn:msg:FOLLOWING_FILE_TYPES_ALLOWED_PCT_S_MSG
+    type: STRING
+info:
+  category:
+    - OKCS
+  description: rn:msg:T_LLWS_CR_CHG_RL_SPC_SGG_RL_WNR_PRM_NFRM_I_MSG

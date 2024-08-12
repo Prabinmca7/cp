@@ -1,0 +1,20 @@
+input: <rn:widget path='standard/search/DisplaySearchFilters'/>
+removecontent: true
+urlparameters: /p/1,4,15,54/c/122,123,124,125,126,127
+output:
+<div id="rn_DisplaySearchFilters_0" class="rn_DisplaySearchFilters">
+<span class="rn_Heading">Search filters applied</span>
+<div id="rn_DisplaySearchFilters_0_FilterContainer">
+    <div id="rn_DisplaySearchFilters_0_Filter_0" class="rn_Filter">
+        <div class="rn_Label">
+            Product            <a id="rn_DisplaySearchFilters_0_Remove_0" title="Remove Product filter" href="javascript:void(0);">
+                                    <span class="rn_ScreenReaderOnly">Remove Product filter</span>
+                            </a>
+        </div>
+                                                        <a href="/app/unitTest/rendering/widgets/standard/search/DisplaySearchFilters/tests/prodsAndCats/p/1" class="rn_FilterItem " id="rn_DisplaySearchFilters_0_Filter1">Mobile Phones</a>
+                            <span class="rn_Separator "></span>
+                                                        <span id="rn_DisplaySearchFilters_0_Filter4" class="rn_FilterItem rn_Selected">iPhone</span>
+                            <span class="rn_Separator rn_Selected"></span>
+            </div>
+</div>
+</div>

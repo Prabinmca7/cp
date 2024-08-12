@@ -1,0 +1,44 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  content_type:
+    name: rn:msg:CONTENT_TYPE_LBL
+    description: rn:msg:TYPE_OF_CONTENT_BE_INCLUDED_IN_RESULTS_MSG
+    type: MULTIOPTION
+    options:
+    - questions
+    - answers
+    default:
+    - questions
+    - answers
+  content_count:
+    name: rn:msg:CONTENT_COUNT_LBL
+    description: rn:msg:MAXIMUM_RESULTS_DISPLAYED_AT_ONE_0_FOR_MSG
+    type: INT
+    min: 0
+    default: 5
+  truncate_size:
+    name: rn:msg:TRUNCATE_SIZE_LBL
+    description: rn:msg:CHARACTERS_LIMIT_CONTENT_LINK_SET_0_FOR_MSG
+    type: INT
+    default: 50
+  label_heading:
+    name: rn:msg:LABEL_HEADING_LBL
+    description: rn:msg:HEADER_TEXT_FOR_THE_WIDGET_LBL
+    default: rn:msg:RECENTLY_VIEWED_LBL
+    type: STRING
+info:
+  category:
+    - Community
+  description: rn:msg:COMBINED_RECENTLY_VIEWED_KNOWLEDGE_BASE_LBL
+  urlParameters:
+    qid:
+      name: rn:msg:QUESTION_ID_LBL
+      description: rn:msg:APPLICABLE_SOCIAL_QUESTI_QUESTI_WHICH_LBL
+      example: qid/56
+    a_id:
+      name: rn:msg:ANSWER_ID_LBL
+      description: rn:msg:APPLICABLE_KNOWLEDGE_BASE_ANSWER_LBL
+      example: a_id/3

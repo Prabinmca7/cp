@@ -1,0 +1,40 @@
+<rn:block id="topChannelAttribute"/>
+<div class="<%= className %>">
+    <% if (contentAttribute.type && contentAttribute.type === 'FILE' ) { %>
+        <div class='rn_SchemaAttribute'><%= contentAttribute.name %></div>
+        <div class='rn_SchemaAttributeValue'>
+         <% if (contentAttribute.fileType === 'NONE') { %>
+            <a href="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>"><%= contentAttribute.value %></a>
+        <% } else if (contentAttribute.fileType === 'IMAGE') { %>
+            <img src="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>" alt="<%= contentAttribute.value %>"></img>
+        <% } else if(contentAttribute.fileType === 'VIDEO') { %>
+            <video controls>
+            <source src="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>">
+            <a href="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>"><%= contentAttribute.value %></a>
+            Your browser does not support the video tag.
+            </video>
+        <% } else if (contentAttribute.fileType === 'AUDIO') { %>
+            <audio controls>
+            <source src="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>">
+            <a href="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>"><%= contentAttribute.value %></a>
+            Your browser does not support the audio element.
+            </audio>
+         <% } else { %>
+            <a href="/ci/okcsFattach/get/<%= answerID %>_<%= contentAttribute.position %>"><%= contentAttribute.value %></a>
+        <% } %>
+        </div>
+    <% } else if (contentAttribute.type && contentAttribute.type === 'CHECKBOX') {
+        var checkboxID = className + index,
+            checked = contentAttribute.value === 'Y'; %>
+        <div class='rn_SchemaAttribute'>
+            <label for="<%= checkboxID %>"><%= contentAttribute.name %></label>
+            <input id="<%= checkboxID %>" type="checkbox" disabled <%=checked ? "checked" : "" %>>
+        </div>
+        <div class='rn_SchemaAttributeValue'></div>
+    <% } else if (contentAttribute.type && contentAttribute.type === 'NODE') { %>
+        <div class='rn_SchemaAttribute'><%= contentAttribute.name %></div>
+    <% } else { %>
+        <div class='rn_SchemaAttribute'><%= contentAttribute.name %></div>
+        <div class='rn_SchemaAttributeValue'><%= contentAttribute.value %></div>
+    <% } %>
+</div>

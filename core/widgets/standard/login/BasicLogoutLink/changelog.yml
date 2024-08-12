@@ -1,0 +1,22 @@
+1.1.1:
+  release: "15.2"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 276
+    date: 10/24/2014
+    description: Widget AJAX calls that return JSON now set the appropriate mime type
+    details:
+    - Widget AJAX endpoints now set the content type headers as 'application/json'
+      as well as setting content length.
+    level: minor
+    refno: 141010-000017
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/18/2012
+    level: major
+    description: Initial version of login/BasicLogoutLink
+    category: API Change
+    sortPosition: Middle

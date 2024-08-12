@@ -1,0 +1,38 @@
+info:
+  description: My custom widget. Does X.
+  urlParameters:
+    i_id:
+      name: Incident ID
+      description: The incident id of the incident to deal with.
+      example: i_id/23
+attributes:
+  label_title:
+    name: Title label
+    type: string
+    description: Label that displays as the title for the widget
+    default: Was this answer helpful?
+  options_count:
+    name: Options count
+    type: int
+    description: Number of answer rating controls to display
+    default: 2
+    min: 2
+    max: 5
+  use_rank_names:
+    name: Use rank names
+    type: boolean
+    description: Whether to use rank labels for rating controls
+  ordering:
+    name: Ordering
+    type: option
+    description: The order to display the rating controls
+    default: ascending
+    options: [descending, ascending, random]
+extends:
+  widget: standard/input/SelectionInput
+  versions: ["1.9"]
+  components: [php, js, view, css]
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+version: "1.0"

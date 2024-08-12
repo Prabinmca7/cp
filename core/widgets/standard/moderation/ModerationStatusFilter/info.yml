@@ -1,0 +1,43 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LC_LBL
+    type: INT
+    description: rn:msg:ID_NUM_REPORT_USED_DISPLAY_MSG
+    default: 15100
+  report_filter_name:
+    name: rn:msg:STATUS_FILTER_NAME_LBL
+    description: rn:msg:EXPRESSION_DEF_CONSOLE_MDRTN_DASHBOARDS_MSG
+    default: questions.status
+    type: OPTION
+    options:
+    - questions.status
+    - comments.status
+    - users.status
+  object_type:
+    name: rn:msg:OBJECT_TYPE_LBL
+    description: rn:msg:THE_TYPE_OF_THE_OBJECTS_TO_BE_FILTERED_MSG
+    default: CommunityQuestion
+    type: OPTION
+    options:
+    - CommunityQuestion
+    - CommunityComment
+    - CommunityUser
+  hide_pending_status:
+    name: rn:msg:HIDE_PENDING_STATUS_LBL
+    description: rn:msg:HIDE_PENDING_STATUS_LBL
+    default: true
+    type: BOOLEAN
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_STATUS_FILTER_WIDGET_MSG
+    default: rn:msg:STATUS_LBL
+    type: STRING
+info:
+  category:
+    - Community
+    - Moderation
+  description: rn:msg:CHECKBOXES_ALLOWS_FLTR_S_BASED_SELECTED_MSG

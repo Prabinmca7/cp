@@ -1,0 +1,8 @@
+<rn:block id="preFileInputLabel"/>
+<label for="rn_<%= instanceID %>_FileInput" id="rn_<%= instanceID %>_Label">
+<%= label %>
+<% if(minAttachments) { %>
+    <%= getRequiredLabel() %>
+<% } %>
+</label>
+<rn:block id="postFileInputLabel"/>

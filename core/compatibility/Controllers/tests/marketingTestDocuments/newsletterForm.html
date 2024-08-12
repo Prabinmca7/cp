@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:rn="http://schemas.rightnow.com/crm/document"><head>
+<link href="/euf/core/static/ma.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/rnt/rnw/javascript/enduser.js" language="JavaScript"></script><script type="text/javascript"><!--
+
+            var _submit_accepted = false;
+
+            function survey_field(id,min, max, type, elements, question_text, force_ranking, counter_default_color, counter_warning_color)
+            {
+              this.id    = id;
+              this.min   = min;
+              this.max   = max;
+              this.type  = type;
+              this.elements = elements;
+              this.question_text = question_text;
+              this.force_ranking = force_ranking;
+              this.counter_default_color = counter_default_color;
+              this.counter_warning_color = counter_warning_color;
+            }
+
+            var _survey_fields = [];
+
+            function _do_submit(form)
+            {
+
+                var last_page_num = document.getElementsByName('_last_page_num');
+                var submitCookieExists = document.cookie.search('survey_submit_cookie');
+                var now = new Date();
+                now.setSeconds(now.getSeconds() + 2);
+                if(last_page_num != null && last_page_num[0].value == '1')
+                {
+                     if (submitCookieExists == -1)
+                         document.cookie = 'survey_submit_cookie=submitted; expires=' + now.toUTCString();
+                     else
+                         return(false);
+                }
+
+                var errorDisplay = document.getElementById('rn_ErrorDisplay');
+                RightNow.MarketingFeedback.removeErrorsFromForm(form, errorDisplay);
+
+                if(RightNow.MarketingFeedback.getSubmitType() == 'back')
+                     return(true);
+
+                 fld_data.please_wait_message = 'Please Wait...';
+                return RightNow.MarketingFeedback.validate(form, fld_data, _fields, null, errorDisplay, false);
+
+
+            }
+
+
+
+
+var fld_data = new field_data(
+"is not an integer.",
+"requires a value.",
+"is not completely specified.",
+"The text entered for \'%s\' exceeds its size limit of %d characters by %d characters.",
+"must only contain valid ascii characters.",
+"does not seem to be a valid email address.",
+"Must contain valid furigana characters",
+"Need to select more options.",
+"Need to select fewer options.",
+"Month",
+"Day",
+"Year",
+"Hour",
+"Minute",
+"^((([-_!#$%&\'*+/=?^~`{|}\\w]+(\\.[.]?[-_!#$%&\'*+/=?^~`{|}\\w]+)*)|(\"[^\"]+\"))@[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*(\\.[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*)+[;]*)$",
+0,
+"",
+"must not contain either \'<\' or \'>\'",
+"cannot be negative",
+"Field contains too many characters.",
+"Must contain a valid format character.",
+"is not a valid format character.",
+"Must contain a valid number.",
+"is not a valid number.",
+"Must contain a valid alpha-numeric.",
+"is not a valid alpha-numeric.",
+"Must contain a valid letter.",
+"is not a valid letter.",
+"Must contain a valid character.",
+"is not a valid character.",
+"The correct format is",
+"The value you have entered is less than the smallest value allowed for this field.",
+"The value you have entered is greater than the largest value allowed for this field.",
+"is not a valid date.",
+"is not a valid date. Please enter a date in format",
+"MM",
+"DD",
+"YYYY",
+"Minimum year is:",
+"Maximum year is:",
+"Only letters, digits, space, and (,.+#) are valid for %s");
+            var onBeforeUnloadMessage = 'Your responses have not yet been saved. If you wish to navigate to a different survey page please use the navigation buttons provided within the survey.';
+          //--></script><title></title></head><body>
+<p><img alt="" border="0" src="http://www.rightnow.com/help/global/global.jpg" /></p><p><font face="Verdana, Helvetica" size="2">Get Connected with Global Wireless Connection!</font></p><p><font face="Verdana" size="2">Simply fill out this form, and we'll keep you up-to-date with the world of wireless. Remember, you can unsubscribe at any time.</font></p><div id="rn_ErrorDisplay" class="rn_Hidden"></div>
+<form action="http://OE_WEB_SERVER/ci/documents/submit" name="_main" method="post" onsubmit="return(_do_submit(this))">
+<script type="text/javascript"><!--
+var _fields = new Array ();
+//--></script>
+<table align="left"><tbody><tr><td><font face="Verdana, Helvetica" size="2">First Name</font></td><td><font size="2"><font face="Verdana, Helvetica" size="2"><input name="wf_2_100003" id="wf_2_100003" type="text" maxlength="80" size="25"></input><input type="hidden" name="val_wf_2_100003" id="val_wf_2_100003" value="'wf_2_100003','First Name',5,80,1" /><script type="text/javascript"><!--
+ _fields.push(new field('wf_2_100003','First Name',5,80,1));
+//--></script></font></font></td></tr><tr><td><font face="Verdana, Helvetica" size="2">Last Name</font></td><td><font size="2"><font face="Verdana, Helvetica" size="2"><input name="wf_2_100002" id="wf_2_100002" type="text" maxlength="80" size="25"></input><input type="hidden" name="val_wf_2_100002" id="val_wf_2_100002" value="'wf_2_100002','Last Name',5,80,1" /><script type="text/javascript"><!--
+ _fields.push(new field('wf_2_100002','Last Name',5,80,1));
+//--></script></font></font></td></tr><tr><td><font face="Verdana, Helvetica" size="2">Email</font></td><td><font size="2"><font face="Verdana, Helvetica" size="2"><input name="wf_2_100004" id="wf_2_100004" type="text" maxlength="80" size="25"></input><input type="hidden" name="val_wf_2_100004" id="val_wf_2_100004" value="'wf_2_100004','Email Address',5,80,5" /><script type="text/javascript"><!--
+ _fields.push(new field('wf_2_100004','Email Address',5,80,5));
+//--></script></font></font></td></tr><tr><td><font face="Verdana, Helvetica" size="2">State</font></td><td><font size="2"><font face="Verdana, Helvetica" size="2"><select name="wf_2_100023" id="wf_2_100023"> 
+ <option value="">--</option>
+<option value="62">A. Powersville</option>
+<option value="1">AK</option>
+<option value="2">AL</option>
+<option value="3">AR</option>
+<option value="4">AS</option>
+<option value="5">AZ</option>
+<option value="6">CA</option>
+<option value="7">CO</option>
+<option value="8">CT</option>
+<option value="9">DC</option>
+<option value="10">DE</option>
+<option value="11">FL</option>
+<option value="12">FM</option>
+<option value="13">GA</option>
+<option value="14">GU</option>
+<option value="15">HI</option>
+<option value="16">IA</option>
+<option value="17">ID</option>
+<option value="18">IL</option>
+<option value="19">IN</option>
+<option value="20">KS</option>
+<option value="21">KY</option>
+<option value="22">LA</option>
+<option value="23">MA</option>
+<option value="24">MD</option>
+<option value="25">ME</option>
+<option value="26">MH</option>
+<option value="27">MI</option>
+<option value="28">MN</option>
+<option value="29">MO</option>
+<option value="30">MP</option>
+<option value="31">MS</option>
+<option value="32">MT</option>
+<option value="33">NC</option>
+<option value="34">ND</option>
+<option value="35">NE</option>
+<option value="36">NH</option>
+<option value="37">NJ</option>
+<option value="38">NM</option>
+<option value="39">NV</option>
+<option value="40">NY</option>
+<option value="41">OH</option>
+<option value="42">OK</option>
+<option value="43">OR</option>
+<option value="44">PA</option>
+<option value="45">PR</option>
+<option value="46">PW</option>
+<option value="47">RI</option>
+<option value="48">SC</option>
+<option value="49">SD</option>
+<option value="61">Tea &amp; crumpets</option>
+<option value="50">TN</option>
+<option value="51">TX</option>
+<option value="52">UT</option>
+<option value="53">VA</option>
+<option value="54">VI</option>
+<option value="55">VT</option>
+<option value="56">WA</option>
+<option value="57">WI</option>
+<option value="58">WV</option>
+<option value="59">WY</option>
+<option value="60">Yorkshiretown</option>
+</select><input type="hidden" name="val_wf_2_100023" id="val_wf_2_100023" value="'wf_2_100023','State/Province',1,0,0" /><script type="text/javascript"><!--
+ _fields.push(new field('wf_2_100023','State/Province',1,0,0));
+//--></script></font></font></td></tr></tbody></table><p><input id="submit_btn" name="submit_btn" rn:submit="true" type="submit" value="Submit" /></p><input name="p_t" type="hidden" value="AvMG~wr~Dv8S_xb~Gv8e~yLnJv8o~y77Mv8Y~z7~Pv~R" />
+<input name="p_shortcut" type="hidden" value="newsletter_form" />
+<input name="_survey_score" type="hidden" value="0" />
+<input name="p_question_session_type" type="hidden" value="1" />
+<input name="_last_page_num" type="hidden" value="-1" />
+<input name="p_val_validated" type="hidden" value="0" />
+<script type="text/javascript"><!--
+_fields.push(new field('','',0,0,0));
+//--></script>
+</form>
+
+<script type='text/javascript' src='/euf/core/static/RightNow.Compatibility.MarketingFeedback.js'></script>
+<script>window.onload=function(){
+var forms = document.getElementsByTagName('form');
+for(i = 0;i < forms.length; i++){
+var formElement = forms[i];
+if(formElement.name == '_main')
+{
+var f_tok = document.createElement('input');
+f_tok.setAttribute('type', 'hidden');
+f_tok.setAttribute('name', 'f_tok');
+f_tok.setAttribute('value', '$formToken');
+formElement.insertBefore(f_tok, formElement.lastChild);
+formElement.action = formElement.action.replace(/^(http|https):/, '');
+}
+}
+}</script>
+</body>
+</html>

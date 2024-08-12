@@ -1,0 +1,75 @@
+input: <rn:widget path='standard/notifications/ProdCatNotificationManager'/>
+filter: #(?:Expires.*\))#
+contact: ddespain@rightnow.com
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_ProdCatNotificationManager_0" class="rn_ProdCatNotificationManager">
+    <div id="rn_ProdCatNotificationManager_0_List">
+                    <div id="rn_ProdCatNotificationManager_0_Notification_0" class="rn_Notification">
+            <div class="rn_Notification_Info">
+                <a href="/app/categories/detail/c/122" target="_blank">Category - c1</a>
+                <span>Subscribed on 02/18/2009</span>
+                <span id="rn_ProdCatNotificationManager_0_Expiration_0">
+                </span>
+            </div>
+            <div class="rn_Notification_Actions">
+	<button id="rn_ProdCatNotificationManager_0_Renew_0">Renew</button>
+                                <button id="rn_ProdCatNotificationManager_0_Delete_0">Delete</button>
+            </div>
+        </div>
+                <div id="rn_ProdCatNotificationManager_0_Notification_1" class="rn_Notification">
+            <div class="rn_Notification_Info">
+                <a href="/app/products/detail/p/130" target="_blank">Product - p1 / p2 / p3</a>
+                <span>Subscribed on 02/18/2009</span>
+                <span id="rn_ProdCatNotificationManager_0_Expiration_1">
+                </span>
+            </div>
+            <div class="rn_Notification_Actions">
+	<button id="rn_ProdCatNotificationManager_0_Renew_1">Renew</button>
+                                <button id="rn_ProdCatNotificationManager_0_Delete_1">Delete</button>
+            </div>
+        </div>
+                </div>
+    <div class="rn_ButtonGroup">
+        <button id="rn_ProdCatNotificationManager_0_AddButton" class="rn_AddButton">Add Notifications</button>
+    </div>
+    <form id="rn_ProdCatNotificationManager_0_Form">
+        <div id="rn_ProdCatNotificationManager_0_Dialog" class="rn_ProdCatNotificationManager_Dialog rn_Hidden">
+            <div class="rn_SelectionWidget">
+                <div id="rn_ProductCategoryInput_1" class="rn_ProductCategoryInput rn_Input">
+    <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_ProductCategoryInput_1_LinksTrigger"><span id="rn_ProductCategoryInput_1_TreeDescription"></span>&nbsp;Screen Reader users press enter to select a Product.</a>
+    <span class="rn_Label" id="rn_ProductCategoryInput_1_Label">
+        Product                    <span id="rn_ProductCategoryInput_1_RequiredLabel" class="rn_Required rn_Hidden"> *</span>
+            <span id="rn_ProductCategoryInput_1_ErrorLabel" class="rn_ErrorLabel">
+                            </span>
+            </span>
+    <button type="button" id="rn_ProductCategoryInput_1_Product_Button" class="rn_DisplayButton"><span id="rn_ProductCategoryInput_1_Button_Visible_Text">Select a product</span></button>
+    <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_ProductCategoryInput_1_Links"></div>
+    <div id="rn_ProductCategoryInput_1_TreeContainer" class="rn_PanelContainer rn_Hidden">
+        <div id="rn_ProductCategoryInput_1_Tree" class="rn_Panel">
+                    </div>
+        </div>
+        <button type="button" id="rn_ProductCategoryInput_1_Product_SetButton">Add Product</button>
+    </div>
+            </div>
+            <div class="rn_SelectionWidget">
+                <div id="rn_ProductCategoryInput_2" class="rn_ProductCategoryInput rn_Input">
+    <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_ProductCategoryInput_2_LinksTrigger"><span id="rn_ProductCategoryInput_2_TreeDescription"></span>&nbsp;Screen Reader users press enter to select a Category.</a>
+    <span class="rn_Label" id="rn_ProductCategoryInput_2_Label">
+        Category                    <span id="rn_ProductCategoryInput_2_RequiredLabel" class="rn_Required rn_Hidden"> *</span>
+            <span id="rn_ProductCategoryInput_2_ErrorLabel" class="rn_ErrorLabel">
+                            </span>
+            </span>
+    <button type="button" id="rn_ProductCategoryInput_2_Category_Button" class="rn_DisplayButton"><span id="rn_ProductCategoryInput_2_Button_Visible_Text">Select a category</span></button>
+    <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_ProductCategoryInput_2_Links"></div>
+    <div id="rn_ProductCategoryInput_2_TreeContainer" class="rn_PanelContainer rn_Hidden">
+        <div id="rn_ProductCategoryInput_2_Tree" class="rn_Panel">
+                    </div>
+        </div>
+        <button type="button" id="rn_ProductCategoryInput_2_Category_SetButton">Add Category</button>
+    </div>
+            </div>
+        </div>
+    </form>
+</div>

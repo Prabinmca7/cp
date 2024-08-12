@@ -1,0 +1,11 @@
+<rn:block id="preErrorMessageList"/>
+<ul>
+    <% for(var i=0; i<errors.length; i++) {%>
+        <rn:block id="preErrorItem"/>
+        <li>
+            <%= errors[i] %>
+        </li>
+        <rn:block id="postErrorItem"/>
+    <% } %>        
+</ul>
+<rn:block id="postErrorMessageList"/>

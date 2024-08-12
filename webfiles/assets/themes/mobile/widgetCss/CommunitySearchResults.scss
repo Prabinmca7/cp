@@ -1,0 +1,83 @@
+@import 'widget-includes';
+
+.rn_CommunitySearchResults {
+    overflow: hidden;
+    position: relative;
+}
+
+.rn_CommunitySearchResults .rn_Loading {
+    background: url('#{$theme-images}/loading.gif') no-repeat center center;
+    height: auto !important;
+    min-height: 66px;
+}
+
+.rn_CommunitySearchResults .rn_PostTitle {
+    font-size: 1.333em;
+    line-height: 1.3em;
+}
+
+.rn_CommunitySearchResults .rn_PostSubContent {
+    clear: both;
+    color: #6F6F6F;
+    font-size: .8em;
+}
+
+.rn_CommunitySearchResults ol {
+    padding-top: 3px;
+}
+
+.rn_CommunitySearchResults li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.rn_CommunitySearchResults .rn_HasProfilePicture {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.rn_CommunitySearchResults .rn_HasProfilePicture img {
+    left: 0;
+    position: absolute;
+    top: 3px;
+}
+
+.rn_CommunitySearchResults .rn_HasProfilePicture span {
+    margin-left: 65px;
+}
+
+.rn_CommunitySearchResults li span {
+    display: block;
+}
+
+.rn_CommunitySearchResults .rn_AllResults {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.rn_CommunitySearchResults .rn_Pagination {
+    margin-top: 10px;
+}
+
+.rn_CommunitySearchResults .rn_Pagination a {
+    border: 1px solid #DDD;
+    text-decoration: none;
+}
+
+.rn_CommunitySearchResults .rn_Pagination .rn_CurrentPage {
+    color: #222;
+    font-weight: bold;
+}
+
+.rn_CommunitySearchResults .rn_Pagination a:hover,
+.rn_CommunitySearchResults .rn_Pagination a:focus {
+    background: #EBEFF5;
+}
+
+.rn_CommunitySearchResults .rn_NoResults {
+    display: block;
+    color: #404040;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.3em;
+}

@@ -1,0 +1,291 @@
+@import 'widget-includes';
+
+.rn_SmartAssistantDialogContainer {
+    width: 70%;
+
+    .yui3-widget-ft {
+        text-align: right;
+    }
+}
+
+.rn_SmartAssistantDialog {
+    .rn_Answer, .rn_Response, .rn_List {
+        background: none;
+        border: 0;
+    }
+
+    .rn_InlineAnswerLink {
+        font-size: .8em;
+    }
+    
+    a {
+        padding: 0;
+    }
+}
+
+.rn_OkcsSmartAssistant {
+    .rn_ExpandedAnswerContentExplorer {
+        border-left: 1px solid #E2E2E0;
+        border-radius: 0;
+    }
+
+    .rn_NewTabButton {
+        margin-top: .25em;
+    }
+
+    .rn_HideButton {
+        margin-left: .25em;
+        margin-top: .25em;
+    }
+
+    .rn_Heading {
+        font-size: 1.333em;
+        font-weight: bold;
+        line-height: 1.4em;
+    }
+
+    .rn_List {
+        margin-top: 6px;
+        padding: 4px;
+
+        > li {
+            list-style: disc outside none;
+            margin: .5em .5em .5em 2em;
+        }
+    }
+
+    .rn_Prompt {
+        color: #000;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.3em;
+    }
+
+    .rn_Summary {
+        font-size: 1.3em;
+        font-weight: bold;
+        letter-spacing: -.01em;
+        line-height: 1em;
+        padding: 7px 0 0;
+    }
+
+    .rn_Solution {
+        padding: 6px 0 10px;
+    }
+
+    .rn_InlineAnswersExplorer li a {
+        padding: 2px;
+    }
+
+    .rn_List.rn_InlineAnswers > li {
+        border-bottom: 1px solid #DDD;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .rn_InlineAnswersLimitedText {
+        max-height: 60px;
+    }
+
+    .rn_InlineAnswerLink {
+        display: inline-block;
+        border-bottom: 1px solid #CCC;
+        color: #000;
+        padding: 0 4px 6px 0;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #FFF;
+        line-height: 1.5em;
+    }
+
+    .rn_Loading {
+        height: 100%;
+        position: absolute;
+        top: 4px;
+        right: 2px;
+        width: 16px;
+    }
+
+    .rn_ExpandAnswer {
+        font-size: .8em;
+    }
+
+    .rn_ExpandAnswer, a.rn_ExpandedAnswer {
+        margin-right: 1px;
+        padding-left: 2px;
+        font-size: $form-font-size;
+        font-family: $form-font-family;
+    }
+
+    .rn_ExpandAnswer:before, a.rn_ExpandedAnswer {
+        @include icon($fa-var-caret-right);
+        padding-right: 5px;
+    }
+
+    .rn_ExpandAnswerSolution, a.rn_ExpandedAnswerSolution {
+        margin-right: 1px;
+        padding-left: 0;
+        font-size: $form-font-size;
+        font-family: $form-font-family;
+    }
+
+    .rn_ExpandAnswerSolution:before, a.rn_ExpandedAnswerSolution {
+        @include icon($fa-var-caret-down);
+        padding-right: 5px;
+    }
+
+    .rn_ExpandedAnswer {
+        color: #666;
+    }
+
+    .rn_ExpandedAnswerContent {
+        background: #FFF;
+        padding: 6px;
+    }
+
+    .rn_AccesskeyPrompt {
+        font-style: italic;
+        color: #404040;
+        font-size: .96em;
+    }
+
+    .rn_AnswerSummary {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    a.rn_ExpandedAnswerExplorer {
+        background: #426FD9;
+        color: #fff;
+    }
+
+    .rn_AnswerSolution {
+        display: block;
+    }
+
+    .rn_AnswerPDFSolution {
+        height: 420px;
+        border: 0;
+    }
+
+    .rn_AnswerSummary ol,
+    .rn_AnswerSolution ol,
+    .rn_AnswerSummary ul,
+    .rn_AnswerSolution ul {
+        padding-top: 0;
+    }
+
+    .rn_AnswerSummary > ol,
+    .rn_AnswerSolution > ol,
+    .rn_AnswerSummary > ul,
+    .rn_AnswerSolution > ul {
+        margin-bottom: 1em;
+    }
+
+    .rn_OkcsSmartAssistantContainer {
+        width: 600px;
+
+        .yui3-widget-buttons a {
+            padding-left: 8px;
+        }
+    }
+
+    section {
+        display: inline-block;
+        padding: 3px;
+        width: 48%;
+
+        span {
+            padding-left: 5px;
+        }
+    }
+
+    .ok-highlight-title {
+        background-color: #FF0;
+        font-weight: bold;
+    }
+
+    .ok-highlight-sentence {
+        background-color: #D8DFE8;
+        
+        a {
+            padding: 0;
+        }
+    }
+
+    .rn_SchemaAttribute {
+        margin-bottom: 5px;
+        font-weight: bold;
+
+        input {
+            margin-right: 5px;
+            vertical-align: middle;
+            float: left;
+        }
+
+    }
+
+    .rn_SchemaAttributeValue {
+        margin-bottom: 30px;
+
+        ul, ol {
+            padding: 5px 0 5px 35px;
+        }
+
+        ul li {
+            list-style: disc;
+        }
+
+        li ul li {
+            list-style: circle;
+        }
+
+        li li ul li {
+            list-style: square;
+        }
+
+        ol li,
+        li ol li,
+        li li ol li {
+            list-style: decimal;
+        }
+    }
+
+    .rn_AnswerInfo {
+        color: #666;
+        margin: 6px 0 20px;
+        padding-bottom: 10px;
+    }
+
+    .rn_AnswerInfo_Top {
+        border-bottom: 1px solid #E2E2E0;
+    }
+
+    .rn_AnswerInfo .rn_InfoLabel {
+        width: 46%;
+        display: inline-block;
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+
+    .rn_AnswerText {
+        clear: both;
+        line-height: 1.4em;
+        padding: 5px 0 15px;
+    }
+
+    .rn_AnswerSolution iframe {
+        width: 100%;
+        min-height: 90%;
+    }
+
+    .rn_Indent {
+        margin-left: 20px;
+    }
+}
+
+.rn_ExternalContent {
+    width: 100%;
+    min-height: 90%;
+}

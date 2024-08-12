@@ -1,0 +1,48 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LC_LBL
+    type: STRING
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: rn:def:CP_NOV09_ANSWERS_DEFAULT
+  filter_name:
+    name: rn:msg:FILTER_NAME_LBL
+    type: STRING
+    description: rn:msg:NAME_DROPDOWN_FLTR_DEFINED_RPT_MSG
+    default:
+    required: true
+  label_any:
+    name: rn:msg:ANY_LBL
+    type: STRING
+    description: rn:msg:TEXT_FOR_FIRST_DROP_DOWN_ITEM_LBL
+    default: rn:msg:ANY_LBL
+  search_on_select:
+    name: rn:msg:SEARCH_ON_SELECTED_CMD
+    type: BOOLEAN
+    description: rn:msg:START_SEARCH_SOON_ITEM_IS_SELECTED_MSG
+    default: false
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:PG_DISP_ITEM_SEL_SRCH_SEL_SET_TRUE_MSG
+    default:
+  options_to_ignore:
+    name: rn:msg:OPTIONS_TO_IGNORE_LBL
+    type: STRING
+    description: rn:msg:COMMA_SEPARATED_L_NUMERICAL_ID_VALS_MSG
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Report Search
+  description: rn:msg:CTRL_RQS_RUNTIME_FLTR_TYPE_MENU_LBL
+  urlParameters:
+    filtername:
+      name: rn:msg:FILTER_NAME_LBL
+      description: rn:msg:SETS_CUST_MENU_PD_SELECTED_IDX_LBL
+      example: customMenu/22

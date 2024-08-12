@@ -1,0 +1,36 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/search/AdvancedSearchDialog' display_sort_filter='false'/></form>
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_AdvancedSearchDialog_0" class="rn_AdvancedSearchDialog">
+    <a href="javascript:void(0);" id="rn_AdvancedSearchDialog_0_TriggerLink" class="rn_AdvancedLink">Advanced Search<span class="rn_ScreenReaderOnly">Opens new dialog</span></a>
+    <div id="rn_AdvancedSearchDialog_0_DialogContent" class="rn_DialogContent rn_Hidden">
+                <a class="rn_SearchTips" href="javascript:void(0);" onclick="window.open('/app/utils/help_search', '', 'scrollbars,resizable,width=720,height=700'); return false;">Search Tips</a>
+                <div class="rn_AdvancedKeyword rn_AdvancedSubWidget">
+            <div id="rn_KeywordText_1" class="rn_KeywordText">
+    <label for="rn_KeywordText_1_Text">Search terms</label>
+    <input placeholder="Search..." id="rn_KeywordText_1_Text" name="rn_KeywordText_1_Text" type="text" maxlength="255" value=""/>
+</div>
+        </div>
+                        <div class="rn_AdvancedFilter rn_AdvancedSubWidget"><div id="rn_ProductCategorySearchFilter_2" class="rn_ProductCategorySearchFilter">
+        <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_ProductCategorySearchFilter_2_LinksTrigger">Screen Reader users press enter to select a Filter by product.&nbsp;<span id="rn_ProductCategorySearchFilter_2_TreeDescription"></span></a>
+                <span class="rn_Label">Filter by product</span>
+                <button type="button" id="rn_ProductCategorySearchFilter_2_Product_Button" class="rn_DisplayButton"><span id="rn_ProductCategorySearchFilter_2_ButtonVisibleText">Select a product</span></button>
+        <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_ProductCategorySearchFilter_2_Links"></div>
+        <div id="rn_ProductCategorySearchFilter_2_TreeContainer" class="rn_PanelContainer rn_Hidden">
+            <div id="rn_ProductCategorySearchFilter_2_Tree" class="rn_Panel"></div>
+                </div>
+</div>
+</div>
+                        <div class="rn_AdvancedFilter rn_AdvancedSubWidget"><div id="rn_ProductCategorySearchFilter_3" class="rn_ProductCategorySearchFilter">
+        <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_ProductCategorySearchFilter_3_LinksTrigger">Screen Reader users press enter to select a Filter by category.&nbsp;<span id="rn_ProductCategorySearchFilter_3_TreeDescription"></span></a>
+                <span class="rn_Label">Filter by category</span>
+                <button type="button" id="rn_ProductCategorySearchFilter_3_Category_Button" class="rn_DisplayButton"><span id="rn_ProductCategorySearchFilter_3_ButtonVisibleText">Select a category</span></button>
+        <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_ProductCategorySearchFilter_3_Links"></div>
+        <div id="rn_ProductCategorySearchFilter_3_TreeContainer" class="rn_PanelContainer rn_Hidden">
+            <div id="rn_ProductCategorySearchFilter_3_Tree" class="rn_Panel"></div>
+                </div>
+</div>
+</div>
+                                </div>
+</div>
+</form>

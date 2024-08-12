@@ -1,0 +1,120 @@
+1.5.2:
+  release: "16.11"
+  entries:
+  - account: geoff.kembel@oracle.com
+    category: Bug Fix
+    changelogID: 522
+    date: 06/17/2016
+    description: Added sub_id and pre/post blocks to all uses of FieldDisplay widget
+    level: nano
+    refno: 160511-000189
+    sortPosition: Middle
+1.5.1:
+  release: "16.5"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+1.4.1:
+  release: "15.8"
+  entries:
+  - account: dmadsen
+    category: Bug Fix
+    changelogID: 292
+    date: 03/10/2015
+    description: Translated labels not being used from input widgets to output widgets
+      due to label name differences.
+    level: minor
+    refno: 150221-000000
+    sortPosition: Middle
+1.3.1:
+  release: "14.8"
+  entries:
+  - account: spage
+    category: New Feature
+    changelogID: 257
+    date: 04/30/2014
+    description: Honor min and max constraints for custom object date fields
+    details:
+    - Custom object date fields will now use the constraints provided by the Connect
+      meta data instead of the MIN_DATE and MAX_DATE defines.
+    level: minor
+    refno: 140416-000149
+    sortPosition: Middle
+1.2.1:
+  release: "14.2"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 188
+    date: 10/24/2013
+    description: Minimum date for custom date fields increased by 1 day
+    details:
+    - The minimum date used to validate custom 'date' and 'datetime' fields was changed
+      from January 2nd, 1970 to January 3rd.
+    - This was changed to accomodate sites utilizing a GMT+12 timezone.
+    level: minor
+    refno: 131018-000065
+    sortPosition: Middle
+  - account: spage
+    category: Bug Fix
+    changelogID: 169
+    date: 10/17/2013
+    description: Minimum date validation message now contains the time for DateTime
+      fields
+    details:
+    - The minimum date validation message used to only specify the year, month and
+      day. The time is now part of the validation message for DateTime fields.
+    - 'Example - OLD -> (min value: ''1/2/1970'') : NEW -> (min value: ''1/2/1970
+      09:00:00'')'
+    level: nano
+    refno: 130613-000055
+    sortPosition: Middle
+1.1.1:
+  release: "13.8"
+  entries:
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 110
+    date: 07/17/2013
+    description: Consolidates min/max year variables
+    details:
+    - Widgets extending view.php should now use `$this->data['attrs']['min_year']`
+      and `$this->data['attrs']['max_year']` instead of `$this->data['minYear']` and
+      `$this->data['maxYear']`
+    - Widgets extending logic.js should now use `this.data.attrs.min_year` and `this.data.attrs.max_year`
+      instead of `this.data.js.minYear` and `this.data.js.maxYear`
+    level: minor
+    refno: 130507-000058
+    sortPosition: Middle
+  - account: ldavison
+    category: API Change
+    changelogID: 102
+    date: 07/17/2013
+    description: Allows pre-1970 dates for custom attribute fields
+    details:
+    - "The minimum year for custom attribute fields is now 1902. If a widget\u2019s
+      min_year attribute specifies a value earlier than the field constraint, the
+      field\u2019s minimum year will be used."
+    level: nano
+    refno: 120927-000089
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/06/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

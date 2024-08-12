@@ -1,0 +1,143 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  yui:
+  - datatable-base
+  - datatable-sort
+  - datatable-message
+  - anim-scroll
+extends:
+  widget: standard/reports/Grid
+  versions: ["1.5"]
+  components:
+  - php
+  - view
+  - js
+  - css
+attributes:
+  add_params_to_url: unset
+  highlight: unset
+  truncate_size: unset
+  max_wordbreak_trunc: unset
+  label_row_number: unset
+  report_id:
+    name: rn:msg:REPORT_ID_LBL
+    description: rn:msg:ID_NUM_REPORT_USED_DISPLAY_MSG
+    default: 15100
+    type: INT
+  moderate_social_object_ajax:
+    name: rn:msg:MODERATE_S_OBJECT_ACTION_AJAX_ENDPOINT_LBL
+    description: rn:msg:AJAX_ENDPOINT_TO_MODERATE_SOCIAL_OBJECT_MSG
+    default: /ci/ajax/widget
+    type: AJAX
+  avatar_column_index:
+    name: rn:msg:AVATAR_COLUMN_LBL
+    description: rn:msg:AVATAR_AVATAR_IDX_USERDSPLYNMCLMN_TTRBT_MSG
+    type: INT
+    min: 1
+  user_display_name_column_index:
+    name: rn:msg:DISPLAY_NAME_COLUMN_LBL
+    description: rn:msg:T_LLWS_VTRS_DT_VTRCLMN_TTRB_VTRCLMN_TTRB_MSG
+    default: 2
+    type: INT
+    min: 1
+  product_column_index:
+    name: rn:msg:PRODUCT_COLUMN_LBL
+    description: rn:msg:INDEX_COLUMN_CONTAINS_PRODUCT_NAME_MSG
+    default: 3
+    type: INT
+    min: 1
+  category_column_index:
+    name: rn:msg:CATEGORY_COLUMN_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CONT_ID_ATTRIB_PRDCTTYP_ND_PRDCTCLMNNDX_I_MSG), "category", "category", "category")
+    default: 9
+    type: INT
+    min: 1
+  primary_info_column_index:
+    name: rn:msg:PRIMARY_INFORMATION_COLUMN_INDEX_LBL
+    description: rn:msg:PRM_CNT_CHCK_SST_TCHNLGS_SSS_DD_RR_CHCK_MSG
+    default: 1
+    type: INT
+    min: 1
+  status_id_column_index:
+    name: rn:msg:STATUS_ID_COLUMN_INDEX_LBL
+    description: rn:msg:INDEX_USERS_TH_ID_L_DISP_AVATAR_USERS_MSG
+    default: 12
+    type: INT
+    min: 1
+  max_allowed_selected_rows:
+    name: rn:msg:MAXIMUM_ALLOWED_SELECTED_ROWS_LBL
+    description: rn:msg:MAXIMUM_ROWS_C_SELECT_PERFORM_ACTION_LBL
+    default: 200
+    type: INT
+    min: 1
+    max: 200
+  label_max_allowed_selected_rows_error:
+    name: rn:msg:MAXIMUM_ALLOWED_ROWS_ERROR_LABEL_LBL
+    description: rn:msg:ROWS_GREATER_THAN_MAXIMUM_LIMIT_MSG
+    default: rn:msg:TOO_MANY_ROWS_D_FEWER_ROWS_AT_TIME_MSG
+    type: STRING
+  label_select_social_object_error:
+    name: rn:msg:SELECT_SOCIAL_OBJECT_ERROR_LABEL_LBL
+    description: rn:msg:MESSAGE_MODERATOR_SELECTED_NO_ROW_MSG
+    default: rn:msg:SELECT_AT_LEAST_ONE_ROW_PERFORM_ACTION_MSG
+    type: STRING
+  label_delete_social_object_confirm:
+    name: rn:msg:DELETE_CONFIRM_MESSAGE_LABEL_LBL
+    description: rn:msg:CONFIRM_SHOW_BEFORE_ITEM_DELETED_MSG
+    default: rn:msg:DELETED_ITEMS_NO_REST_SURE_WANT_DELETE_MSG
+    type: STRING
+  label_not_logged_in_error:
+    name: rn:msg:NOT_LOGGED_IN_ERROR_LABEL_LBL
+    description: rn:msg:MESSAGE_DISPLAY_WHEN_USER_LOGGED_IN_MSG
+    default: rn:msg:YOU_MUST_BE_LOGGED_PERFORM_THIS_ACTION_MSG
+    type: STRING
+  label_action_successful:
+    name: rn:msg:ACTION_SUCCESSFUL_LABEL_LBL
+    description: rn:msg:MESSAGE_REQUESTED_ACTION_SUCCESSFUL_MSG
+    default: rn:msg:REQUESTED_ACTION_PERFORMED_SUCCESSFULLY_MSG
+    type: STRING
+  label_action_successful_with_error:
+    name: rn:msg:ACTION_SUCCESSFUL_WITH_ERROR_LABEL_LBL
+    description: rn:msg:REQUESTED_ACT_PARTIALLY_SEL_FEW_ERRORS_MSG
+    default: rn:msg:REQUESTED_ACTION_DESC_BUT_L_ERRORS_LBL
+    type: STRING
+  label_requested_action_not_supported_error:
+    name: rn:msg:REQUESTED_ACTION_NOT_SUPPORTED_ERROR_LBL
+    description: rn:msg:MESSAGE_REQUESTED_ACTION_SUPPORTED_MSG
+    default: rn:msg:YOUR_REQUESTED_ACTION_IS_NOT_SUPPORTED_MSG
+    type: STRING
+  label_select_all:
+    name: rn:msg:SELECT_ALL_CHECKBOX_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_MESSAGE_FOR_SELECTALL_CHECKBOX_MSG
+    default: rn:msg:SELECT_ALL_LC_LBL
+    type: STRING
+  label_requested_action_not_performed_error:
+    name: rn:msg:REQUESTED_ACTION_PERFORMED_ERROR_LABEL_LBL
+    description: rn:msg:REQUIRED_ACTION_UNABLE_COMPLETE_LBL
+    default: rn:msg:ERROR_REQUEST_PLEASE_TRY_MSG
+    type: STRING
+  object_type:
+    name: rn:msg:OBJECT_TYPE_LBL
+    description: rn:msg:TYPE_OF_THE_SOCIAL_OBJECT_MSG
+    default:  CommunityQuestion
+    type: OPTION
+    options:
+    - CommunityComment
+    - CommunityQuestion
+    - CommunityUser
+  prodcat_type:
+    name: rn:msg:PRODUCT_CATEGORY_TYPE_LBL
+    description: rn:msg:ASSOC_S_OBJ_ATTRIB_DETS_VIS_COLUMN_MSG
+    default: Product
+    type: OPTION
+    options:
+        - Product
+        - Category
+info:
+  category:
+    - Community
+    - Moderation
+  description: rn:msg:WIDGET_DISP_MOD_DATA_TABLE_GRID_MSG

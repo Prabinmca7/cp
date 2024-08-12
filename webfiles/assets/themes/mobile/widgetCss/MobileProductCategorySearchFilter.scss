@@ -1,0 +1,114 @@
+@import 'widget-includes';
+
+.rn_MobileProductCategorySearchFilter {
+    padding-top: 4px;
+
+    &.rn_HideEmpty {
+        visibility: hidden;
+    }
+
+    .rn_FilterDisplay {
+        overflow: hidden;
+        border-top: 1px solid #DDD;
+    }
+
+    .rn_LinkOpener {
+        @include icon($fa-var-angle-double-right, after);
+
+        color: #FFF;
+        display: inline-block;
+        font-weight: bold;
+        padding: 8px 0;
+    }
+
+    @-webkit-keyframes blink {
+        from {
+            text-shadow: 0 -1px 3px rgba(255, 255, 255, .7);
+        }
+
+        to {
+            text-shadow: 0 1px 3px rgba(255, 255, 255, .7);
+        }
+    }
+
+    .rn_Opener {
+        -webkit-animation-name: blink;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: 4;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: ease-in-out;
+    }
+
+    .rn_Heading .rn_Remove {
+        @include icon($fa-var-close);
+
+        color: #FFF;
+        font-weight: normal;
+        text-shadow: none;
+        float: right;
+        margin-top: 8px;
+    }
+
+    .rn_FilterItem {
+        border-width: 0 12px 0 4px;
+        color: #FFF;
+        float: left;
+        font-weight: bold;
+        height: 33px;
+        max-width: 200px;
+        overflow: hidden;
+        padding: 8px 12px 2px 4px;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, .7);
+        white-space: nowrap;
+    }
+
+    .rn_FilterItem.rn_Selected {
+        color: #FFF;
+        font-weight: normal;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .7);
+    }
+
+    /* Dialog styling */
+    &.rn_Input,
+    &.rn_PanelContent {
+        margin: 0;
+        padding: 0;
+        width: auto;
+
+    }
+
+    &.rn_Input {
+        .rn_Selected {
+            background-color: rgba(56, 121, 217, .6);
+        }
+
+        .rn_Parent,
+        .rn_SubItem {
+            border-bottom: 1px solid #DDD;
+        }
+
+        label {
+            color: $dark-gray;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1.2em;
+            padding: 20px 16px;
+            width: auto;
+
+            &.rn_HasChildren {
+                @include icon($fa-var-angle-right, after);
+            }
+        }
+    }
+
+    .rn_LoadingIcon {
+        @include loading-icon(1em) {
+            right: 10px;
+            position: absolute;
+            color: $dark-gray;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import 'widget-includes';
+
+.rn_AdvancedSearchDialog {
+    overflow: visible;
+
+    .rn_DialogContent {
+        position: relative;
+        width: 500px;
+
+        .rn_AdvancedSubWidget &:empty {
+            display: none;
+        }
+
+        .rn_ProductCategorySearchFilter {
+            @include fill-parent;
+
+            .rn_PanelContainer {
+                width: auto;
+            }
+
+            @include media($rn-medium) {
+                margin: 0;
+            }
+        }
+
+        label, .rn_ProductCategorySearchFilter .rn_Label {
+            @include span-columns(5);
+        }
+
+        .rn_DisplayButton, select {
+            @include span-columns(7);
+            margin: 0 0 10px;
+            min-height: 1.5em;
+        }
+
+        select {
+            padding: 2px 20px 2px 2px;
+        }
+    }
+
+    .rn_SearchTips {
+        color: #333;
+        position: absolute;
+        right: 0;
+        top: -25px;
+    }
+}

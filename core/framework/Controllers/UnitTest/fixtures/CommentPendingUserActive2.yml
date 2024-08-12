@@ -1,0 +1,8 @@
+type: CommunityComment
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive2
+  Body: Pending Comment by active user2.
+  StatusWithType.Status.LookupName: Pending
+  BodyContentType.LookupName: text/x-markdown
+

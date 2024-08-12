@@ -1,0 +1,16 @@
+input: <rn:widget path="standard/navigation/ProductCategoryBreadcrumb" type="product" display_first_item="true"/>
+removecontent: true
+urlparameters: /p/1
+output:
+<div id="rn_ProductCategoryBreadcrumb_0" class="rn_ProductCategoryBreadcrumb">
+    <nav role="navigation">
+        <p id="rn_ProductCategoryBreadcrumb_0_Label" class="rn_ScreenReaderOnly">Current product hierarchy</p>
+        <ol aria-labelledby="rn_ProductCategoryBreadcrumb_0_Label">
+                                                            <li class="rn_BreadcrumbLevel rn_Level0 rn_CurrentItem" itemscope itemtype="Breadcrumb">
+                    <a href="/app/products/detail/p/1" itemprop="url">
+                        <span itemprop="title">Mobile Phones</span>
+                    </a>
+                </li>
+                    </ol>
+    </nav>
+</div>

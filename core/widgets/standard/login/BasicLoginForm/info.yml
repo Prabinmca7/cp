@@ -1,0 +1,31 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - none
+info:
+  description: rn:msg:WIDGET_DISPLAYS_BASIC_LOGIN_FORM_MSG
+attributes:
+  login_ajax: unset
+  initial_focus: unset
+  form_action:
+    name: rn:msg:FORM_ACTION_LBL
+    description: rn:msg:TARGET_URL_SUBMIT_LOGIN_REQUEST_LBL
+    default: /app/utils/login_form
+    type: STRING
+  login_endpoint:
+    name: rn:msg:LOGIN_ENDPOINT_LBL
+    description: rn:msg:CLSS_METHOD_PROCESS_POST_DATA_LBL
+    default: postRequest/doLogin
+    type: STRING
+extends:
+  widget: standard/login/LoginForm
+  versions: ["1.2"]
+  components:
+  - php
+  overrideViewAndLogic: true
+contains:
+  - widget: standard/input/BasicFormSubmit
+    versions: ["1.1"]
+  - widget: standard/input/BasicFormStatusDisplay
+    versions: ["1.1"]

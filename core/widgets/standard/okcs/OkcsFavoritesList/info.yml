@@ -1,0 +1,107 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [datatable-base, datatable-message]
+attributes:
+  label_delete_button:
+    name: rn:msg:LABEL_DELETE_LBL
+    description: rn:msg:USE_DELETE_BUTTON_ONLY_VIEWTYPE_LIST_MSG
+    default: rn:msg:DELETE_CMD
+    type: STRING
+  label_favorite_deleted:
+    name: rn:msg:FAVORITE_DELETED_LABEL_LBL
+    description: rn:msg:HAS_DELETED_FAVORITE_ONLY_VIEWTYPE_LIST_MSG
+    default: rn:msg:THIS_ANSWER_HAS_BEEN_REMOVED_MY_FAVORITES_MSG
+    type: STRING
+  label_no_favorites_list:
+    name: rn:msg:LABEL_NO_FAVORITES_LIST_LBL
+    description: rn:msg:THERE_FAVORITE_ONLY_VIEWTYPE_LIST_MSG
+    default: rn:msg:YOU_CURRENTLY_DONT_HAVE_ANY_FAVORITES_MSG
+    type: STRING
+  label_no_favorites_table:
+    name: rn:msg:LABEL_NO_FAVORITES_TABLE_LBL
+    type: STRING
+    description: rn:msg:DISPLAYED_THERE_FAV_VIEWTYPE_TABLE_MSG
+    default: rn:msg:NO_FAVORITES_FOUND_MSG
+  label_doc_id:
+    name: rn:msg:DOC_ID_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_DOC_ID_LBL
+    default: rn:msg:DOCUMENT_ID_LBL
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_TITLESUMMARY_COLUMN_MSG
+    default: rn:msg:TITLE_LBL
+  label_caption:
+    name: rn:msg:TABLE_CAPTION_LBL
+    description: rn:msg:C_L_TB_S_TG_SSS_PRACTICE_ACCESSIBILTY_MSG
+    type: STRING
+  max_wordbreak_trunc:
+    name: rn:msg:MAXIMUM_WORD_BREAK_TRUNCATION_LBL
+    description: rn:msg:MAX_CHARS_ANS_SOLN_ANS_DESC_MSG
+    type: INT
+    min: 0
+  hide_when_no_favorites:
+    name: rn:msg:HIDE_WHEN_NO_FAVORITES_LBL
+    description: rn:msg:HIDES_ENTIRE_CSS_FAVORITES_RETURNED_MSG
+    default: false
+    type: BOOLEAN
+  enable_pagination_for_table:
+    name: rn:msg:ENABLE_PAGINATION_FOR_TABLE_LBL
+    description: rn:msg:PAGINATION_TRUE_VIEWTYPE_TABLE_T_UHK
+    default: false
+    type: BOOLEAN
+  rows_to_display:
+    name: rn:msg:ROWS_TO_DISPLAY_LBL
+    type: STRING
+    description: rn:msg:A_RECS_VWTYP_PPR_0_RCS_NBLPGNTNFR_TTRBT_T_UHK
+    default: 5
+  label_forward:
+    name: rn:msg:FORWARD_LABEL_CMD
+    description: rn:msg:LABEL_FOR_THE_FORWARD_LINK_LBL
+    default: rn:msg:NEXT_LBL
+    type: STRING
+  label_back:
+    name: rn:msg:BACK_LABEL_CMD
+    description: rn:msg:LABEL_FOR_THE_BACK_LINK_LBL
+    default: rn:msg:PREVIOUS_LBL
+    type: STRING
+  message_element:
+    name: rn:msg:MESSAGE_ELEMENT_LBL
+    description: rn:msg:UNIQ_ID_DIV_PG_SUCC_MSGS_REPORTED_MSG
+    type: STRING
+  display_fields:
+    name: rn:msg:EUI_DISPLAY_FIELDS_LBL
+    description: rn:msg:L_R_S_L_NAME_L_NM_VIEWTYPE_TABLE_MSG
+    default: title|documentId
+    type: STRING
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:DETERMINES_THE_NEW_PG_TARG_NOTE_MSG
+    default: _blank
+    type: OPTION
+    options:
+    - _blank
+    - _self
+  view_type:
+    name: rn:msg:FAVORITE_VIEW_TYPE_LBL
+    description: rn:msg:SPECIFIES_WAYS_DATA_RELATED_FAVORITES_MSG
+    default: table
+    type: OPTION
+    options:
+    - table
+    - list
+  delete_favorite_ajax:
+    name: rn:msg:DELETE_FAVORITES_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_TO_DELETE_FAVORITES_LBL
+    default: /ci/okcsAjaxRequest/removeFavorite
+  get_favorite_answers_ajax:
+    name: rn:msg:GET_FAVORITE_ANSWERS_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_GET_PAGINATED_FAV_DETAILS_LBL
+    default: /ci/okcsAjaxRequest/getFavoriteAnswers
+info:
+  description: rn:msg:FAVORITE_L_LOGGEDIN_ALLOWS_FAV_LISTED_MSG

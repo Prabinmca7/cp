@@ -1,0 +1,112 @@
+<rn:block id="preResults"/>
+<%accessKeyNumber = 0;%>
+<% for(var i = 0, suggestion; i < suggestions.length; i++) {
+    suggestion = suggestions[i];
+    if(suggestion.type === 'AnswerSummary') { %>
+        <rn:block id="preAnswerSummaryResultsPrompt"/>
+        <div class="rn_Prompt"><%= attrs.label_prompt %>
+        <% if(attrs.accesskeys_enabled && attrs.label_accesskey && attrs.display_inline) { %>
+            <div class="rn_AccesskeyPrompt"><%= accessKeyPrompt %></div>
+        <% } %>
+        </div>
+        <rn:block id="postAnswerSummaryResultsPrompt"/>
+        <ul class="rn_List <%= (attrs.display_inline) ? 'rn_InlineAnswers' : '' %>">
+        <% for(var j = 0; j < suggestion.list.length; j++) {
+            var answerID = suggestion.list[j].answerID ? suggestion.list[j].answerID : j;
+            var okcsAnswerUrl = suggestion.list[j].url || '';
+            var okcsClickThroughUrl = suggestion.list[j].clickThrough;
+            var docID = suggestion.list[j].docID;
+            var resultID = suggestion.list[j].answerID;
+            var iqAction = suggestion.list[j].iqAction;
+            var highlightLink = suggestion.list[j].highlightLink;
+            var okcsAnswerHref = suggestion.list[j].href.indexOf('a_id') > -1 ? answerViewUrl + suggestion.list[j].href : okcsAnswerUrl;
+            var imDocID = suggestion.list[j].imDocID;
+            var title = suggestion.list[j].title;
+
+            if (title.length > truncateSize) {
+                title = title.substring(0, truncateSize) + ellipsis;
+            }
+
+            if(attrs.display_inline) { %>
+                    <rn:block id="preAnswerSummaryResult"/>
+                    <li>
+                        <rn:block id="preAnswerSummaryResultLink"/>
+                        <% if(attrs.accesskeys_enabled) { %>
+                            <a role="link" href="javascript:void(0)" accesskey="<%=j+1%>" data-id="<%=answerID%>" data-object-type="answer" data-docId="<%=docID%>:<%=resultID%>:<%=iqAction%>:<%=imDocID%>" data-url="<%=okcsAnswerUrl%>" data-href="<%=okcsAnswerHref%>" data-clickThroughUrl="<%=okcsClickThroughUrl%>" data-highlightUrl="<%=highlightLink%>" data-answerType="<%=suggestion.list[j].type%>" title="<%=suggestion.list[j].title%>" class="rn_InlineAnswerLink rn_ExpandAnswer" id="<%=baseDomID + '_Answer' + answerID %>">
+                        <% } else { %>
+                            <a role="link" href="javascript:void(0)" data-id="<%=answerID%>" data-object-type="answer" data-docId="<%=docID%>:<%=resultID%>:<%=iqAction%>:<%=imDocID%>" data-url="<%=okcsAnswerUrl%>" data-href="<%=okcsAnswerHref%>" data-clickThroughUrl="<%=okcsClickThroughUrl%>" data-highlightUrl="<%=highlightLink%>" data-answerType="<%=suggestion.list[j].type%>" title="<%=suggestion.list[j].title%>" class="rn_InlineAnswerLink rn_ExpandAnswer" id="<%=baseDomID + '_Answer' + answerID %>">
+                        <% } %><span class="rn_KBAnswerImage"></span>
+                    <%=title%>
+                    <span class="rn_ScreenReaderOnly" role="alert" id="<%=baseDomID + '_Answer' + answerID + '_Alternative'%>">
+                        <%= attrs.label_collapsed %>
+                    </span>
+                    </a>
+                    </li>
+                    <rn:block id="postAnswerSummaryResult"/>
+            <% } else { %>
+                <rn:block id="preAnswerSummaryResult"/>
+                <li>
+                    <rn:block id="preAnswerSummaryResultLink"/>
+                    <a role="button" target="_blank" href="<%= '/app/' + answerUrl + suggestion.list[j].href %>" data-url="<%=okcsAnswerUrl%>" data-clickThroughUrl="<%=okcsClickThroughUrl%>" data-highlightUrl="<%=highlightLink%>">
+                    <%=title%>
+                    </a>
+                    <rn:block id="postAnswerSummaryResultLink"/>
+                </li>
+                <rn:block id="postAnswerSummaryResult"/>
+            <% } %>
+        <% } %>
+        </ul>
+    <% } else if(suggestion.type === 'Answer') { %>
+        <rn:block id="preAnswerResult"/>
+        <div class="rn_Answer">
+            <div class="rn_Summary"><%=suggestion.title%></div>
+            <div class="rn_Solution"><%=suggestion.content%></div>
+        </div>
+        <rn:block id="postAnswerResult"/>
+    <% } else if(suggestion.type === 'QuestionSummary') { %>
+        <ul class="rn_List <%= (attrs.display_inline) ? 'rn_InlineAnswers' : '' %>">
+        <% for(var j = 0; j < suggestion.list.length; j++) {
+            var title = suggestion.list[j].title;
+
+            if (title.length > truncateSize) {
+                title = title.substring(0, truncateSize) + ellipsis;
+            }%>
+            <% if(attrs.display_inline) { %>
+                <rn:block id="preAnswerSummaryResult"/>
+                <li>
+                <% if(attrs.accesskeys_enabled) { %>
+                    <rn:block id="preAnswerSummaryResultLink"/>
+                    <a href="javascript:void(0)" accesskey="<%=++accessKeyNumber%>" data-id="<%=suggestion.list[j].ID%>" data-object-type="discussion" class="rn_InlineAnswerLink rn_ExpandAnswer" id="<%=baseDomID + '_Answer' + suggestion.list[j].ID %>" role="link" title="<%=suggestion.list[j].title%>">
+                <% } else { %>
+                    <rn:block id="preAnswerSummaryResultLink"/>
+                    <a href="javascript:void(0)" data-id="<%=suggestion.list[j].ID%>" data-object-type="discussion" class="rn_InlineAnswerLink rn_ExpandAnswer" id="<%=baseDomID + '_Answer' + suggestion.list[j].ID %>" role="link" title="<%=suggestion.list[j].title%>">
+                <% } %>
+                    <span class="rn_SocialDiscussionImage"></span>
+                    <%=title%>
+                    <span class="rn_ScreenReaderOnly" id="<%=baseDomID + '_Answer' + suggestion.list[j].ID + '_Alternative'%>">
+                        <%= attrs.label_collapsed %>
+                    </span>
+                    </a>
+                    <rn:block id="postAnswerSummaryResultLink"/>
+                </li>
+                <rn:block id="postAnswerSummaryResult"/>
+            <% } else { %>
+                <rn:block id="preAnswerSummaryResult"/>
+                <li>
+                    <rn:block id="preAnswerSummaryResultLink"/>
+                    <a target="_blank" href="<%= '/app/' + RightNow.Interface.getConfig('CP_SOCIAL_QUESTIONS_DETAIL_URL') + '/qid/' + suggestion.list[j].ID + sessionParam %>" onclick='RightNow.ActionCapture.record("smartAssistantResult", "view", <%=suggestion.list[j].ID%>);' title="<%=suggestion.list[j].title%>">
+                    <%=title%>
+                    </a>
+                    <rn:block id="postAnswerSummaryResultLink"/>
+                </li>
+                <rn:block id="postAnswerSummaryResult"/>
+            <% } %>
+        <% } %>
+        </ul>
+    <% } else { %>
+        <rn:block id="preStandardContentResult"/>
+        <div class="rn_Response"><%=suggestion.content%></div>
+        <rn:block id="postStandardContentResult"/>
+    <% } %>
+<% } %>
+<rn:block id="postResults"/>

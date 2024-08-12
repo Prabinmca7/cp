@@ -1,0 +1,19 @@
+<div id="<%= divID %>" class="rn_Notification">
+    <div class="rn_Notification_Info">
+        <rn:block id="link">
+        <a href="<%= href %>" target="_blank"><%= label %></a>
+        <span><%= startDate %></span>
+        <span><%= expirationDate %></span>
+        </rn:block>
+    </div>
+    <div class="rn_Notification_Actions">
+    <% if (renewButtonID) { %>
+        <rn:block id="preRenewButton"/>
+        <button id="<%= renewButtonID %>"><%= labelRenewButton %></button>
+        <rn:block id="postRenewButton"/>
+    <% } %>
+    <rn:block id="preDeleteButton"/>
+    <button id="<%= deleteButtonID %>"><%= labelDeleteButton %></button>
+    <rn:block id="postDeleteButton"/>
+    </div>
+</div>

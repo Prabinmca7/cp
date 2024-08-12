@@ -1,0 +1,27 @@
+input: <rn:widget path='standard/utils/SocialBookmarkLink'/>
+filter: @url=https://[^/]+|https://facebook.com/sharer.php[?]u=https://[^/]+|https://twitter.com/home[?]status=.* https://[^/]+@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /a_id/1
+output:
+<div id="rn_SocialBookmarkLink_0" class="rn_SocialBookmarkLink">
+    <a id="rn_SocialBookmarkLink_0_Link" href="javascript:void(0);" title="Share this page on social networks">
+        <span>Share</span>
+    </a>
+    <div id="rn_SocialBookmarkLink_0_Panel" class="rn_Panel rn_Hidden">
+        <ul>
+                    <li class="rn_Link1">
+                <a href=" sharer.php?m2w&amp;u=app/unitTest/rendering/widgets/standard/utils/SocialBookmarkLink/tests/base/a_id/1" target="_blank" title=" Post to Facebook ">Facebook </a>
+            </li>
+                    <li class="rn_Link2">
+                <a href=" intent/tweet?text=How+do+I+change+my+address%3F+app/unitTest/rendering/widgets/standard/utils/SocialBookmarkLink/tests/base/a_id/1" target="_blank" title=" Tweet this ">Twitter </a>
+            </li>
+                    <li class="rn_Link3">
+                <a href=" shareArticle?mini=true&amp;url=app/unitTest/rendering/widgets/standard/utils/SocialBookmarkLink/tests/base/a_id/1&amp;title=How+do+I+change+my+address%3F&amp;summary=How+do+I+change+my+address%3F&amp;source=app/unitTest/rendering/widgets/standard/utils/SocialBookmarkLink/tests/base/a_id/1" target="_blank" title=" Post to LinkedIn ">LinkedIn </a>
+            </li>
+                    <li class="rn_Link4">
+                <a href=" submit?url=app/unitTest/rendering/widgets/standard/utils/SocialBookmarkLink/tests/base/a_id/1&amp;title=How+do+I+change+my+address%3F" target="_blank" title=" Post to Reddit ">Reddit </a>
+            </li>
+                </ul>
+    </div>
+</div>

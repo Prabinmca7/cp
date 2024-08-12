@@ -1,0 +1,16 @@
+input: <rn:widget path='standard/navigation/NavigationTab' subpages="Account Overview > /app/account/overview, Support History > /app/account/questions/list, Account Settings > /app/account/profile, Notifications > /app/account/notif/list"/>
+jstestfile: base.test.js
+removecontent: true
+output:
+<span id="rn_NavigationTab_0" class="rn_NavigationTab">
+    <a id="rn_NavigationTab_0_Link" class=" rn_DropDown" href="/app/home" target="_self">
+        <span>Support Home</span>
+        <em id="rn_NavigationTab_0_DropdownButton" class="rn_ButtonOff"></em>
+    </a>
+    <span id="rn_NavigationTab_0_SubNavigation" class="rn_SubNavigation rn_ScreenReaderOnly">
+            <a href="/app/account/overview" target="_self">Account Overview</a>
+            <a href="/app/account/questions/list" target="_self">Support History</a>
+            <a href="/app/account/profile" target="_self">Account Settings</a>
+            <a href="/app/account/notif/list" target="_self">Notifications</a>
+        </span>
+</span>

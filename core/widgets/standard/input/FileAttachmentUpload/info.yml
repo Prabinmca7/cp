@@ -1,0 +1,87 @@
+version: "1.12.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  name:
+    name: rn:msg:NAME_LBL
+    type: string
+    description: rn:msg:COMBINATION_T_INCIDENTFILEATTACHMENTS_MSG
+    required: true
+    default: Incident.FileAttachments
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: rn:msg:ATTACH_DOCUMENTS_LBL
+    type: STRING
+  label_error:
+    name: rn:msg:ERROR_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_IDENTIFY_FLD_NAME_ERR_MSGS_MSG),
+      'label_input')
+    type: STRING
+  label_remove:
+    name: rn:msg:REMOVE_ATTACHMENT_LABEL_CMD
+    description: rn:msg:LABEL_DISPLAY_LINK_REMOVE_ATTACH_LBL
+    default: rn:msg:REMOVE_CMD
+    type: STRING
+  max_attachments:
+    name: rn:msg:MAXIMUM_ATTACHMENTS_LBL
+    description: rn:msg:HOW_M_TTCH_A_SNGL_0_GT_100_T_MAX_WL_100_MSG
+    default: 0
+    type: INT
+  label_max_attachment_limit:
+    name: rn:msg:MAX_ATTACHMENT_LIMIT_LABEL_LBL
+    description: rn:msg:ERR_MSG_DISP_REACHES_UPLOAD_LIMIT_LBL
+    default: rn:msg:REACHD_LIMIT_FILES_UPLOADED_ADD_MSG
+    type: STRING
+  label_generic_error:
+    name: rn:msg:GENERIC_ERROR_MESSAGE_LBL
+    description: rn:msg:GENERIC_ERR_DISP_UNKNOWN_ERR_MSG
+    default: rn:msg:FILE_SUCC_UPLOADED_FILE_PATH_FILE_MSG
+    type: STRING
+  label_still_uploading_error:
+    name: rn:msg:STILL_UPLOADING_ERROR_LABEL_LBL
+    description: rn:msg:MSG_DISP_ATTEMPTS_SUBMIT_FORM_MSG
+    default: rn:msg:PLS_WAIT_ATTACH_FINISHED_UPLOADING_MSG
+    type: STRING
+  loading_icon_path:
+    name: rn:msg:LOADING_ICON_PATH_LBL
+    description: rn:msg:FILE_PATH_IMG_DISP_SUBMITTING_FORM_LBL
+    default: images/indicator.gif
+    type: FILEPATH
+  min_required_attachments:
+    name: rn:msg:MINIMUM_REQUIRED_ATTACHMENTS_LBL
+    description: rn:msg:MINIMUM_REQD_ATTACHMENTS_LBL
+    default: 0
+    type: INT
+  label_min_required:
+    name: rn:msg:MINIMUM_REQUIRED_LABEL_LBL
+    description: rn:msg:ERR_MSG_DISP_MINIMUM_REQD_MSG
+    default: rn:msg:PCT_S_REQUIRES_PCT_S_FILE_S_LBL
+    type: STRING
+  label_invalid_extension:
+    name: rn:msg:LABEL_INVALID_FILE_EXTENSION_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_INV_FILE_EXTENSION_PCT_S_LBL), 'CP.ValidFileExtensions')
+    default: rn:msg:FOLLOWING_FILE_TYPES_ALLOWED_PCT_S_MSG
+    type: STRING
+  display_thumbnail:
+    name: rn:msg:DISPLAY_THUMBNAIL_CMD
+    description: rn:msg:ENABLED_DISP_THUMBNAIL_IMG_TYPE_MSG
+    type: BOOLEAN
+    default: true
+  max_thumbnail_height:
+    name: rn:msg:MAX_THUMBNAIL_HEIGHT_LBL
+    description: rn:msg:SPECIFIES_MAX_HEIGHT_PIXELS_MSG
+    default: 100
+    type: INT
+  hide_on_load:
+    name: rn:msg:HIDE_ON_LOAD_CMD
+    type: boolean
+    description: rn:msg:WDGETS_FLD_HIDDEN_FORM_PG_LOAD_MSG
+info:
+  description: rn:msg:WIDGET_ALLOWS_USERS_ATTACH_FILES_MSG
+  urlParameters:
+    i_id:
+      name: rn:msg:INCIDENT_ID_LBL
+      description: rn:msg:INCIDENT_ID_GET_INFORMATION_LBL
+      example: i_id/7

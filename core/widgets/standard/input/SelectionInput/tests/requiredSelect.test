@@ -1,0 +1,20 @@
+input: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path='standard/input/SelectionInput' name='Incident.CustomFields.c.priority' validate_on_blur='true' required='true'/></form>
+jstestfile: required.test.js
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><div id="rn_SelectionInput_0" class="rn_SelectionInput rn_Input">
+    <div id="rn_SelectionInput_0_LabelContainer">
+        <label for="rn_SelectionInput_0_Incident.CustomFields.c.priority" id="rn_SelectionInput_0_Label" class="rn_Label">Priority                        <span class="rn_Required" aria-label="Required">
+    *</span>                            <span class="rn_ScreenReaderOnly">hint for menu</span>
+                </label>
+    </div>
+    <select id="rn_SelectionInput_0_Incident.CustomFields.c.priority" name="Incident.CustomFields.c.priority">
+            <option value="">--</option>
+                            <option value="11" >1</option>
+                    <option value="12" >2</option>
+                    <option value="13" >3</option>
+                    <option value="14" >4</option>
+                    <option value="15" >5</option>
+                </select>
+    </div>
+</form>

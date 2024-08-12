@@ -1,0 +1,44 @@
+@import 'widget-includes';
+
+.rn_ProductCategoryList {
+    h2 {
+        margin-bottom: .5em;
+    }
+
+    .rn_ListColumns {
+        @include row;
+        margin: 0 1em;
+
+        .rn_LeftColumn {
+            @include span-columns(6);
+        }
+
+        .rn_RightColumn {
+            @include span-columns(6);
+        }
+
+        .rn_LeftColumn,.rn_RightColumn {
+            > li {
+                margin-top: .5em;
+            }
+
+            .rn_ListItemLink {
+                &:hover {
+                    color: darken($base-accent-color, 20);
+                }
+            }
+
+            @include media($rn-medium) {
+                @include span-columns(12);
+            }
+        }
+
+        h3 {
+            font-size: $base-font-size * 1.5;
+        }
+
+        .rn_SubItemList {
+            margin-left: 1em;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+input: <rn:widget path='standard/knowledgebase/SearchSuggestions' link="/app/answers/list2"/>
+config: SEARCH_SUGGESTIONS_DISPLAY|3
+filter: @/(p|c)/[\d]+([^>]+>Mobile )[^<]+<@
+jstestfile: base.test.js
+removecontent: true
+replace: /$1/$2<
+urlparameters: /kw/mobile%20phones
+output:
+<div id="rn_SearchSuggestions_0" class="rn_SearchSuggestions">
+    <div class="rn_Title">
+        Narrow results by:    </div>
+            <ul id="rn_SearchSuggestions_0_SuggestionsList">
+                            <li>
+                    <a href="/app/unitTest/rendering/widgets/standard/knowledgebase/SearchSuggestions/tests/link/p/">Mobile </a>
+                </li>
+                            <li>
+                    <a href="/app/unitTest/rendering/widgets/standard/knowledgebase/SearchSuggestions/tests/link/p/">Mobile </a>
+                </li>
+                                        <li>
+                    <a href="/app/unitTest/rendering/widgets/standard/knowledgebase/SearchSuggestions/tests/link/c/">Mobile </a>
+                </li>
+                            <li>
+                    <a href="/app/unitTest/rendering/widgets/standard/knowledgebase/SearchSuggestions/tests/link/c/">Mobile </a>
+                </li>
+                    </ul>
+    </div>

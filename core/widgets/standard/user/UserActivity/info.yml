@@ -1,0 +1,114 @@
+version: "1.6.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:VST_SBMT_QST_CMMNTNG_QST_MLT_SNGL_SNGL_C_MSG
+  category:
+  - Community
+  urlParameters:
+    user:
+      name: rn:msg:USER_LBL
+      description: rn:msg:TK_SOME_OTHER_ID_FUTURE_ACTIVITIES_FOR_LBL
+      example: user/1
+attributes:
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - none
+    - small
+    - medium
+    - large
+    - xlarge
+    default: medium
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    type: string
+    description: rn:msg:HEADING_LABEL_FOR_SPECIFIC_ACTIVITY_LBL
+    default: rn:msg:RECENT_ACTIVITY_LBL
+  user_id:
+    name: rn:msg:USER_ID_LBL
+    type: int
+    description: rn:msg:ACTIVITIES_IDS_ANY_FOUND_PARAMETER_LBL
+  type:
+    name: rn:msg:TYPE_LBL
+    type: multioption
+    description: rn:msg:TYPE_ACTIVITIES_DISPLAY_FOR_GIVEN_USER_MSG
+    options:
+      - question
+      - comment
+      - bestAnswerGivenByUser
+      - bestAnswerGivenToUser
+      - commentRatingGivenByUser
+      - commentRatingGivenToUser
+      - questionRatingGivenByUser
+      - questionRatingGivenToUser
+    default:
+      - question
+      - comment
+      - bestAnswerGivenByUser
+      - bestAnswerGivenToUser
+      - commentRatingGivenByUser
+      - commentRatingGivenToUser
+      - questionRatingGivenByUser
+      - questionRatingGivenToUser
+  limit:
+    name: rn:msg:LIMIT_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(MAXIMUM_TOTAL_ACTIVITIE_A_DISPLAY_LBL), 'type')
+    type: int
+    max: 25
+    min: 1
+    default: 25
+  truncate_size:
+    name: rn:msg:TRUNCATE_SIZE_LBL
+    description: rn:msg:CHARACTERS_BEGIN_UC_POST_CONTENT_LBL
+    default: 200
+    min: 1
+    type: int
+  label_question:
+    name: rn:msg:QUESTIONS_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_QUEST_ASKED_TO_SS_ATTRIBUTE_LBL), 'question', 'type')
+    type: string
+    default: rn:msg:ASKED_A_QUESTION_LBL
+  label_comment:
+    name: rn:msg:COMMENTS_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_T_S_OPTION_CHOS_ATTRIBUTE_LBL), 'comment', 'type')
+    type: string
+    default: rn:msg:ANSWERED_A_QUESTION_LBL
+  label_best_answer_by_user:
+    name: rn:msg:BEST_ANSWER_BY_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(SS_DESIGNATION_NEG_TO_CHOSEN_ATTRIBUTE_LBL), 'bestAnswerGivenByUser', 'type')
+    type: string
+    default: rn:msg:SELECTED_A_BEST_ANSWER_TO_A_QUESTION_LBL
+  label_best_answer_to_user:
+    name: rn:msg:BEST_ANSWER_TO_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(SS_AN_AUTHORED_TO_CHOSEN_ATTRIBUTE_LBL), 'bestAnswerGivenToUser', 'type')
+    type: string
+    default: rn:msg:PROVIDED_A_BEST_ANSWER_TO_A_QUESTION_LBL
+  label_comment_ratings_by_user:
+    name: rn:msg:COMMENT_RATINGS_BY_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_T_GIVEN_TO_CHOSEN_ATTRIBUTE_LBL), 'commentRatingGivenByUser', 'type')
+    type: string
+    default: rn:msg:RATED_A_COMMENT_LBL
+  label_comment_ratings_to_user:
+    name: rn:msg:COMMENT_RATINGS_TO_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_T_GIVEN_TO_CHOSEN_ATTR_LBL), 'commentRatingGivenToUser', 'type')
+    type: string
+    default: rn:msg:RECEIVED_A_RATING_ON_A_COMMENT_LBL
+  label_question_ratings_by_user:
+    name: rn:msg:QUESTION_RATINGS_BY_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_T_GIVEN_TO_CHOSEN_A_LBL), 'questionRatingGivenByUser', 'type')
+    type: string
+    default: rn:msg:RATED_A_QUESTION_LBL
+  label_question_ratings_to_user:
+    name: rn:msg:QUESTION_RATINGS_TO_USER_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAYED_T_GIVEN_TO_CHOSEN_LBL), 'questionRatingGivenToUser', 'type')
+    type: string
+    default: rn:msg:RECEIVED_A_RATING_ON_A_QUESTION_LBL
+  label_no_recent_activity:
+    name: rn:msg:NO_RECENT_ACTIVITY_AVAILABLE_LBL
+    description: rn:msg:LABEL_THERE_NO_RECENT_ACTIVITIES_SHOW_LBL
+    default: rn:msg:USER_HAS_NO_ACTIVITY_TO_SEE_HERE_MSG
+    type: STRING

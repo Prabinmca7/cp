@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/login/BasicLogoutLink'/>
+removecontent: true
+template: basic
+validate: false
+output: 

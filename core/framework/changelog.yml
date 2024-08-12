@@ -1,0 +1,1893 @@
+3.11.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: Deprecation
+    changelogID: 814
+    date: 07/30/2024
+    description: 'Deprecation: The following list of Customer Portal functionalities
+      are deprecated:'
+    details:
+    - Basic page set
+    - Self Service for Facebook
+    - Syndicated Widgets (Proactive chat, Conditional chat, Knowledge base search,
+      Proactive survey link and Survey polling)
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 813
+    date: 07/24/2024
+    description: Security Improvements
+    details:
+    - As part of security improvements, Form token(f_tok) has been made mandatory
+      in the Ajax calls triggered from all standard widgets and in the file upload
+      requests(ci/fattach/upload) made from the standard widgets FileAttachmentUpload,
+      ChatAttachFileButton and SocialFileAttachmentUpload.
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 812
+    date: 07/24/2024
+    description: Newer PHP version support
+    details:
+    - Admins can choose between PHP 5.6 and PHP 8.3
+    - PHP 8.3 provides better security and stability
+    - Upgrading to PHP 8.3 is expected to have an impact on customizations and syndicated
+      widgets
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+3.10.3:
+  release: "24.5"
+  entries:
+  - account: praveen.puvvada@oracle.com
+    category: New Feature
+    changelogID: 810
+    date: 03/06/2024
+    description: Replaced CK editor 4 with ORTL as RichTextInput editor for creating/updating
+      a new question/comment.
+    details:
+    - The RichTextInput field on Community page which is loaded on CKEditor 4.5.5
+      is replaced with OracleRichTextEditor
+    level: minor
+    refno: 240108-000022
+    sortPosition: Middle
+3.10.1:
+  release: "23.11"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: New Feature
+    changelogID: 796
+    date: 10/25/2023
+    description: Attachment widgets security update
+    details:
+    - The CP file attachment widgets were enhanced to honor the file extensions configured
+      in the "VALID\_FILE\_EXTENSIONS" configuration setting. All allowed file extensions
+      configured in the siteConfig JSON file must be copied into the VALID\_FILE\_EXTENSIONS
+      configuration setting. The siteConfig JSON file allowed file extension values
+      are not honored by the new CP framework version. This enhancement streamlines
+      allowed file extension configuration.
+    - The default valid file extensions list remains the same "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    level: minor
+    refno: 231025-000049
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: New Feature
+    changelogID: 793
+    date: 10/25/2023
+    description: CodeIgniter upgrade
+    details:
+    - The Customer Portal CodeIgniter framework was upgraded to version 3.1.13 in
+      preparation for supporting PHPv8.1 in a later release. This change is not expected
+      to alter CP customization behavior.
+    level: minor
+    refno: 231025-000049
+    sortPosition: Middle
+3.9.2:
+  release: "23.2"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 788
+    date: 02/03/2023
+    description: Clickstreams fixes for non existing pages and non existing custom
+      controllers
+    details:
+    - Made necessary changes in clickstreams to capture action as error404 when user
+      tried to access non existing URLs
+    level: nano
+    refno: 230203-000090
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 787
+    date: 02/03/2023
+    description: Chat captcha fixes
+    details:
+    - Made changes to validate if captcha verification is required before initiating
+      a chat session. If captcha verification on chat_launch page is required, chat
+      session will be initiated only after user completes captcha verification.
+    level: nano
+    refno: 230203-000090
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 786
+    date: 02/03/2023
+    description: Update screen reader text in ProductCategoryInput widget and ProductCategorySearch
+      widget
+    details:
+    - ProductCategoryInput widget and ProductCategorySearch widget will now display
+      Select a product/ Select a category labels in screen readers
+    level: nano
+    refno: 230203-000090
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 785
+    date: 02/03/2023
+    description: Turkish language widget error issue fixes
+    details:
+    - We have fixed an unknown source_id widget error that was happening in Turkish
+      language.
+    level: nano
+    refno: 230203-000090
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 784
+    date: 02/03/2023
+    description: Gmail open login changes to use profile information
+    details:
+    - Gmail open login will be using user profile information for creating an user
+      contact in OSvC
+    level: nano
+    refno: 230203-000090
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 781
+    date: 10/21/2022
+    description: Addressed the pagination on answers page when user filters answers
+      on product or category.
+    level: minor
+    refno: 221020-000069
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 779
+    date: 10/21/2022
+    description: Removed duplicate message that was displayed when video chat is launched.
+    level: minor
+    refno: 221020-000069
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 778
+    date: 10/21/2022
+    description: On Ask page, user will be able to remove attachments before submitting
+      the incident when there are no menu type fields like Product, Category or Account
+      dropdown
+    level: minor
+    refno: 221020-000069
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 777
+    date: 10/21/2022
+    description: File upload improvements to allow specific file extensions. An error
+      message displays the list of allowed file extensions when the user selects a
+      file extension that cannot be uploaded. For more information on changes needed
+      for file attachments to work as expected, see
+    details:
+    - To improve security, moved FileAttachmentUpload widget attribute valid\_file\_extensions
+      to /customer/development/config/siteConfig.json as CP.ValidFileExtensions.
+    - Default valid file extensions are "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    - 'If the CP.ValidFileExtensions configuration settings is not defined in your
+      siteConfig.json file, the default sets listed above will be used.To allow a
+      restricted set of file types only to be uploaded, define the configuration settings
+      with the desired extensions in your siteConfig.json file.For example, if we
+      want to allow only "png,jpg,txt,gif,pdf,doc,xlsx,xls" then define this in the
+      siteConfig.json "CP.ValidFileExtensions" : "png,jpg,txt,gif,pdf,doc,xlsx,xls"'
+    level: minor
+    refno: 221020-000069
+    sortPosition: Top
+3.8.1:
+  release: "19.8"
+  entries:
+  - account: nick.moore@oracle.com
+    category: Deprecation
+    changelogID: 734
+    date: 06/27/2019
+    description: Deprecation of version 1 of Virtual assistant widgets. VirtualAssistantBanner,
+      VirtualAssistantFeedback, and VirtualAssistantSimilarMatches
+    level: nano
+    refno: 190626-000019
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: API Change
+    changelogID: 733
+    date: 06/27/2019
+    description: Customer Portal uptakes the Connect API version 1.4
+    level: nano
+    refno: 190626-000019
+    sortPosition: Middle
+3.7.6:
+  release: "18.11"
+  entries:
+  - account: rene.ouendag@oracle.com
+    category: Bug Fix
+    changelogID: 706
+    date: 08/09/2018
+    description: Fixed error in time string interpretation
+    details:
+    - The (UTC) timestamp generated by createServiceFinishTime() will now take timezone
+      information into account and interpret the month value in the right way (0-11
+      based rather than 1-12). This method is mainly used for tagging transcript entries
+      with a timestamp in the page's source but is also used to generate createdTime
+      in the chat server response for an agent post.
+    level: nano
+    refno: 180802-000113
+    sortPosition: Middle
+3.7.5:
+  release: "18.8"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: New Feature
+    changelogID: 704
+    date: 06/12/2018
+    description: Suggested search feature for better searchability of answers
+    details:
+    - New widget OkcsSuggestions to display a list of suggestions for the query input
+      by the user.
+    level: nano
+    refno: 171122-000031
+    sortPosition: Middle
+3.7.1:
+  release: "17.8"
+  entries:
+  - account: nidhi.kaushal
+    category: New Feature
+    changelogID: 644
+    date: 05/17/2017
+    description: Community Questions and Comments will accept HTML type content by
+      default for 'Body' Field and will be sanitized by HTMLPurifier.
+    level: minor
+    refno: 170502-000008
+    sortPosition: Middle
+    details:
+    - Markdown editor is replaced by CKEditor version 4.5.5 in input/RichTextInput
+      Widget
+    - Users can create HTML content using various toolbar menu options provided in
+      CKEditor e.g. Bold, Italics etc
+    - RightNow\Models\CommunityQuestion and RightNow\Models\CommunityComment have
+      been modified to default 'text/html' as content type for Body field
+    - Raw/unescaped content can be fetched from POST variable using the methods -
+      'getRawFormFields' of RightNow\Models\Fields or - \RightNow\Environment\unsanitizedPostVariable
+      or - using a wrapper method 'getRawPostFields' of RightNow\Utils\Url
+    - On fetch and save Questions/Comments 'Body' content will be XSS sanitized using
+      HTMLPurifier version 4.7.0
+    - Method 'formatSafeHTML' in RightNow\Libraries\Formatter class has been introduced
+      to XSS purify any content using HTMLPurifier
+    - Method 'formatHtmlEntry' of RightNow\Libraries\Formatter has also been modified
+      to XSS purify content using HTMLPurifier
+    - Any Customization around default/custom HTML type fields should also ensure
+      XSS sanitized content by invoking 'formatSafeHTML' method when required
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 666
+    date: 09/26/2017
+    description: File Attachments support for Community Questions and Comments
+    details:
+    - We now support attaching files with Community Questions and Comments.
+    - Upon successful upload and saving the object, the files can be seen as attached
+      on the discussion page.
+    - Clicking on the file link will force the user to download the attachment on
+      to their local system. This behaviour will now also be seen for Incident and
+      Answer file attachments.
+    - Only users with appropriate permissions will be allowed to attach or view a
+      file attachment.  Appropriate permissions include 'read' for viewing attachments
+      and 'write' for creating a social question or comment.  These permissions apply
+      to the question or the product to which the question is associated.
+    level: minor
+    refno: 160901-000051
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: New Feature
+    changelogID: 667
+    date: 06/21/2017
+    description: Separate CP landing page for categories - app/categories/detail
+    details:
+    - We now provide full dynamic support for category pages (categories/detail) similar
+      to products (products/detail).
+    level: minor
+    refno: 160721-000052
+    sortPosition: Middle
+3.6.1:
+  release: "17.2"
+  entries:
+  - account: kanthi.kamath
+    category: Bug Fix
+    changelogID: 617
+    date: 11/29/2016
+    description: Adding logic to display OKCS Referene or Reference Implementation
+      links based on MOD\_RNANS\_DISABLED and OKCS\_ENABLED
+    details:
+    - If the value of MOD\_RNANS\_ENABLED is set to 1 and OKCS\_ENABLED is set to
+      1, then both OKCS Reference and Reference Implementation links are shown
+    - If the value of MOD\_RNANS\_ENABLED is set to 1 and OKCS\_ENABLED is set to
+      0, then only Reference Implementation link is shown
+    - If the value of MOD\_RNANS\_ENABLED is set to 0 and OKCS\_ENABLED is set to
+      1, then only OKCS Reference link is shown
+    - If the value of MOD\_RNANS\_ENABLED is set to 0 and OKCS\_ENABLED is set to
+      0, then only Reference Implementation link is shown
+    level: minor
+    refno: 161012-000079
+    sortPosition: Middle
+  - account: nidhi.kaushal
+    category: Bug Fix
+    changelogID: 615
+    date: 11/29/2016
+    description: Security Improvement for Rating questions and comments
+    details:
+    - Updated rating methods in CommunityQuestion and CommunityComment Model to detect
+      abuse and disallow creation of a new rating if the old one exists.
+    level: minor
+    refno: 160915-000025
+    sortPosition: Middle
+  - account: soumitra.deb
+    category: New Feature
+    changelogID: 614
+    date: 11/17/2016
+    description: Performance improvement for moderation overview page
+    details:
+    - Some ROQL functions were replaced with PHP functions. This should significantly
+      improve performance on larger sites.
+    level: minor
+    refno: 160829-000037
+    sortPosition: Middle
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 600
+    date: 11/16/2016
+    description: May impact custom code. Added new framework level support for Facebook
+      authentication. The framework can now return Facebook user details to callee
+      instead of creating/updating a new CP contact.
+    details:
+    - Customers can now pass a custom controller_endpoint as "/ci/openlogin/oauth/authorize/fbDetailsOnly"
+      to fetch only Facebook user details.
+    level: minor
+    refno: 160818-000119
+    sortPosition: Middle
+  - account: aswin.kolli
+    category: New Feature
+    changelogID: 599
+    date: 11/06/2016
+    description: May impact custom code. Ability to inspect the widgets on any page.
+    details:
+    - Customer portal will now have the ability for the admin to inspect (or highlight)
+      widgets on a page while in development mode. The user can select one, multiple
+      or all widgets and the page will refresh to show those widgets by highlighting
+      them along with the widget name superimposed over the top of the widget. Selecting
+      the widget name will in most cases show the attributes of that widget. Note
+      that there are some widgets that do not have DOM characteristics and thus are
+      not displayed.
+    level: minor
+    refno: 160808-000196
+    sortPosition: Middle
+  - account: aswin.kolli
+    category: API Change
+    changelogID: 598
+    date: 11/06/2016
+    description: Upgrade to YUI 3.18.1
+    details:
+    - YUI has been upgraded to the latest version 3.18.1 . The changelog is available
+      at https://github.com/yui/yui3/releases .
+    level: minor
+    refno: 161003-000153
+    sortPosition: Middle
+  - account: nidhin.joseph
+    category: Bug Fix
+    changelogID: 589
+    date: 09/24/2016
+    description: Adding padding logic for initialization vector - PTA_ENCRYPTION_IV
+    details:
+    - If the value set for CP config verb - PTA_ENCRYPTION_IV is less than 8 bytes
+      and PTA_ENCRYPTION_METHOD is set to DES encryption, then the initialization
+      vector value will be zero padded to 8 bytes.
+    - If the value set for CP config verb - PTA_ENCRYPTION_IV is less than 16 bytes
+      and PTA_ENCRYPTION_METHOD is set to AES encryption, then the initialization
+      vector value will be zero padded to 16 bytes.
+    - At customer side, the PTA generation logic is also expected to use 8 bytes/16
+      bytes initialization vector values(PTA_ENCRYPTION_IV) for DES/AES encryptions.
+    level: minor
+    refno: 160506-000000
+    sortPosition: Middle
+3.5.2:
+  release: "16.11"
+  entries:
+  - account: rlund
+    category: New Feature
+    changelogID: 576
+    date: 08/31/2016
+    description: Added a new Widgets Not In Use page under the Widgets menu in the
+      admin area
+    level: nano
+    refno: 160215-000102
+    sortPosition: Top
+  - account: varun.asok
+    category: Bug Fix
+    changelogID: 564
+    date: 08/29/2016
+    description: Customer Portal uptakes the Connect API version 1.3
+    level: nano
+    refno: 160429-000014
+    sortPosition: Middle
+  - account: matthew
+    category: Bug Fix
+    changelogID: 537
+    date: 08/11/2016
+    description: Silently deny chat requests from known spiders
+    level: nano
+    refno: 160712-000174
+    sortPosition: Middle
+3.5.1:
+  release: "16.8"
+  entries:
+  - account: rene.ouendag
+    category: Bug Fix
+    changelogID: 520
+    date: 06/16/2016
+    description: Chat disconnect on window refresh/close now done synchronously (Chrome)
+    details:
+    - Upon window reload ongoing chats would not be disconnected in Chrome. By sending
+      the disconnect synchronously ongoing chats will be disconnected before the page
+      is being refreshed.
+    level: nano
+    refno: 160614-000107
+    sortPosition: Middle
+  - account: rene.ouendag
+    category: Bug Fix
+    changelogID: 516
+    date: 06/10/2016
+    description: Chat Controller is now using native JavaScript cookie set functionality
+      to prevent issues with expiry time when using Chrome with YUI
+    level: nano
+    refno: 160520-000105
+    sortPosition: Middle
+  - account: varun.asok
+    category: Bug Fix
+    changelogID: 511
+    date: 04/29/2016
+    description: PHP Upgrade
+    details:
+    - Upgraded the version of PHP to 5.6.18
+    level: minor
+    refno: 160425-000037
+    sortPosition: Middle
+3.4.1:
+  release: "16.5"
+  entries:
+  - account: varun.asok
+    category: API Change
+    changelogID: 564
+    date: 08/29/2016
+    description: Customer Portal uptakes the Connect API version 1.3
+    level: minor
+    refno: 160429-000014
+    sortPosition: Middle
+  - account: ben.darling
+    category: Bug Fix
+    changelogID: 508
+    date: 04/05/2016
+    description: Removed support for ChatLaunchFormOpen widget
+    details:
+    - There is no replacement widget for ChatLaunchFormOpen. It was intended to support
+      backwards compatibility between CP2 to CP3. A form open tag in line can be used
+      in place of the widget on the chat form. Please see the reference implementation
+      version of the chat_launch page for more information.
+    level: minor
+    refno: 160318-000094
+    sortPosition: Middle
+  - account: ryan.peterson
+    category: Bug Fix
+    changelogID: 504
+    date: 03/31/2016
+    description: Select inputs now use the rn\_HintBoxRight CSS class for hints
+    details:
+    - Non-boolean option (select) input fields now use the rn\_HintBoxRight class
+      for hints, while others all still use rn\_HintBox.
+    level: minor
+    refno: 160311-000083
+    sortPosition: Middle
+  - account: rlund
+    category: Bug Fix
+    changelogID: 497
+    date: 03/28/2016
+    description: Dialog heading is now an H2 element instead of a simple span
+    level: minor
+    refno: 160225-000109
+    sortPosition: Middle
+  - account: ryan.peterson
+    category: Bug Fix
+    changelogID: 484
+    date: 03/03/2016
+    description: Substitute variables when parsed by PHP when variable is included
+      in Answer field or Answer custom field
+    details:
+    - Console-set variables are now properly substituted when parsed by PHP when they
+      are included in an Answer's field or custom field. If variables have been previously
+      included in an answer's field or custom field, the behavior will now be slightly
+      different, as the value will now be properly substituted. In previous behavior,
+      the variable's name would have simply been presented instead of substituted.
+    level: minor
+    refno: 160127-000106
+    sortPosition: Middle
+3.3.2:
+  release: "15.11"
+  entries:
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 354
+    date: 02/28/2017
+    description: Polling widget i\_id and chat\_id association
+    details:
+    - If taken from an Incident or Chat page i\_id or chat\_id will be populated on
+      the question_session allowing for better analytics and feedback into incidents
+      and chats.
+    level: nano
+    refno: 150407-000077
+    sortPosition: Middle
+3.3.1:
+  release: "15.8"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 363
+    date: 07/07/2015
+    description: Answer.Summary field is no longer html encoded at the model level
+      and is left to the widgets to decide
+    level: minor
+    refno: 140612-000117
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 361
+    date: 08/26/2015
+    description: The messaging when users request their login or password reset has
+      changed.
+    details:
+    - The previous message bases (DNT\_RECEIVE\_EMAIL\_UL\_THAN\_LI\_ACCT_MSG, DONT\_RECEIVE\_EMAIL\_UL\_THAN\_LI\_ACCT\_MSG)
+      related to reasons why a user may not receive an email when requesting their
+      login or a password reset have been clarified.  If you want to update that messaging,
+      new message bases will need to be changed.
+    level: minor
+    refno: 141121-000048
+    sortPosition: Middle
+  - account: rlund
+    category: Deprecation
+    changelogID: 359
+    date: 06/22/2015
+    description: Removed support for MobileAnswerFeedback widget
+    details:
+    - The MobileAnswerFeedback widget no longer claims support for this framework.
+      The reference mobile page set instead uses the standard AnswerFeedback widget.
+    level: minor
+    refno: 150525-000023
+    sortPosition: Middle
+  - account: milan.pandya
+    category: API Change
+    changelogID: 358
+    date: 06/22/2015
+    description: Enduser visibility of product and category.
+    details:
+    - If Enduser visibility of product and/or category is set to false, then any page
+      consisting that product/category id will get changed to its parent id which
+      has enduser visibility set to true.
+    level: minor
+    refno: 150519-000124
+    sortPosition: Middle
+  - account: Sridhar
+    category: Bug Fix
+    changelogID: 357
+    date: 06/19/2015
+    description: When using PTA to login, data sent such as product, category, custom
+      fields, request source is lost
+    details:
+    - When PTA is used to login to the Customer Portal pages, data sent such as product,
+      category, custom fields, request source, etc is lost. Changes are made to now
+      passthrough all data.
+    level: minor
+    refno: 131209-000125
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 352
+    date: 05/11/2015
+    description: New features related to Community Self Service
+    details:
+    - Community Self Service has released a large set of new features.  The items
+      listed in this entry are more of a highlight of changes that could impact upgrades.
+    - When a failure occurs during the `IncidentModel::get` method, errors will be
+      returned instead of warnings.
+    - See the Field model's documentation for the `getStatus` method for details about
+      the new return data structure from the `sendForm` response.
+    - Added support for flash data. Note that due to this change (impacts the user's
+      session cookie), any existing user sessions prior to updating will be reset
+      after this framework update is promoted to production.
+    - Hint overlays for input widgets are now attached to the bottom left corner of
+      the widgets' div (previously attached to the upper right corner of its last
+      input element).
+    - JSON encoding is now slightly different for errors returned in a responseObject.
+      They now contain an 'externalMessage' key for the end user-readable message.
+    - Report model now only accepts predefined filters or the whitelisted column aliases
+      from the OrgList and AssetOrgList widgets.
+    - The AjaxRequest's controller `getAnswer` method now takes an `objectID` parameter
+      instead of an `answerID` parameter.
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+3.2.6:
+  release: "15.5"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 285
+    date: 05/26/2015
+    description: Allow CP Facebook pages to work with CP_COOKIES_ENABLED set to 0.
+    level: nano
+    refno: 140326-000136
+    sortPosition: Middle
+3.2.5:
+  release: "15.2"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 282
+    date: 12/16/2014
+    description: SessionID used in form token for anonymous users
+    details:
+    - To provide better security, the sessionID value is used for anonymous users
+      in the form token.
+    - For anonymous users, both the SUBMIT\_TOKEN\_EXP config and the VISIT\_INACTIVITY\_TIMEOUT
+      config will influence when a user may receive an expiration warning popup on
+      a page with a form.
+    - Logic has also been added to the FormSubmit widget to also take the CP\_LOGIN\_COOKIE\_EXP
+      config into account for displaying the expiration warning popup.
+    level: nano
+    refno: 141208-000223
+    sortPosition: Middle
+  - account: spage
+    category: Bug Fix
+    changelogID: 277
+    date: 10/24/2014
+    description: Standard controller endpoints that return JSON now set the appropriate
+      mime type
+    details:
+    - Standard controller AJAX endpoints now set the content type headers as 'application/json'
+      as well as setting content length.
+    level: nano
+    refno: 141010-000017
+    sortPosition: Middle
+3.2.4:
+  release: "14.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 268
+    date: 08/29/2014
+    description: Added better validation of fltr_id to the report model
+    level: nano
+    refno: 140821-000245
+    sortPosition: Middle
+  - account: rlund
+    category: Bug Fix
+    changelogID: 264
+    date: 07/22/2014
+    description: Incident create now sets ResponseEmailAddressType in some cases
+    details:
+    - When an incident is created from the ask page or from feedback submission, if
+      a contact's alternate email address is used, then the ResponseEmailAddressType
+      flag on the Incident object is set to match. This is in order to make sure the
+      response to the incident is sent to the same email address that it was submitted
+      under.
+    level: nano
+    refno: 140304-000179
+    sortPosition: Middle
+3.2.3:
+  release: "14.8"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 261
+    date: 07/01/2014
+    description: Added support for custom menu attributes
+    details:
+    - Menu type custom attributes that reference menu only custom objects are now
+      supported.
+    level: nano
+    refno: 140626-000065
+    sortPosition: Middle
+  - account: eturner
+    category: Bug Fix
+    changelogID: 251
+    date: 04/02/2014
+    description: Modified the regular expression used in the isValidUrl methods to
+      support more URLs
+    details:
+    - The regular expression that was used in the \RightNow\Utils\Text::isValidUrl
+      (PHP) and RightNow.Text.isValidUrl (Javascript) methods was very restrictive
+      and didn't correctly validate numerous URLs which are actually valid. The regular
+      expression for these two methods has been updated to support many more valid
+      URLs.
+    level: nano
+    refno: 140319-000119
+    sortPosition: Middle
+3.2.2:
+  release: "14.5"
+  entries:
+  - account: jwatson
+    category: New Feature
+    changelogID: 247
+    date: 07/07/2014
+    description: Added support for Siebel integration
+    details:
+    - It is now possible to use Customer Portal for the end user interaction and use
+      Siebel to record incidents (Service Requests). Please consult documentation
+      for more information.
+    level: nano
+    refno: 130728-000001
+    sortPosition: Middle
+  - account: jwatson
+    category: New Feature
+    changelogID: 242
+    date: 02/19/2014
+    description: Added support for view partials
+    details:
+    - Shared and widget view partials can now be used in widget views. They are helpful
+      in view code organization by allowing you to separate view code into different
+      files instead of one complicated view file. With shared partials, they can also
+      be shared among different widgets, reducing code duplication. Shared view partials
+      can be used with the call `$this->render('Partials.RequiredLabel')`, where the
+      shared partial is located at Partials/RequiredLabel.html.php. Widget view partials
+      can be used with the call `$this->render('buttonView')`, where the widget partial
+      is located within the widget's folder (or a parent's folder) and the file is
+      called buttonView.html.php. You can also look at the feedback/AnswerFeedback
+      widget for an example of using widget view partials.
+    level: nano
+    refno: 130819-000156
+    sortPosition: Middle
+  - account: rlund
+    category: New Feature
+    changelogID: 236
+    date: 02/03/2014
+    description: Support using 'sub_id' and 'sub:' attributes on widgets to allow
+      sub-widget configuration
+    level: nano
+    refno: 130819-000157
+    sortPosition: Middle
+  - account: eturner
+    category: Bug Fix
+    changelogID: 224
+    date: 01/21/2014
+    description: All query string parameters present in the URL will now be ignored
+    details:
+    - Previously, query string parameters that were found in the URL (e.g. ?a=b) would
+      be ignored, but only if they appeared after the controller or page were specified.
+      Now, requests that look like {site}/?a=b or {site}/app?a=b will also work and
+      cause the CP home page to load correctly. Although these query string parameters
+      are ignored, they can still be retrieved within PHP by using the $_GET array.
+    level: nano
+    refno: 140116-000060
+    sortPosition: Middle
+3.2.1:
+  release: "14.2"
+  entries:
+  - account: bbukowski
+    category: Bug Fix
+    changelogID: 225
+    date: 01/22/2014
+    description: Fixes contact model current password validation when the current
+      password value exceeds the maximum length of 20 characters
+    details:
+    - When validating a password change, the length of the current password was not
+      validated, resulting in an internal API error if the length exceeded the maximum
+      length of 20 characters. Now the length of the current password value is validated
+      prior to calling the internal API in order to determine if its hash matches
+      the password hash in the database.
+    level: minor
+    refno: 140116-000000
+    sortPosition: Middle
+  - account: ryan.peterson
+    category: Bug Fix
+    changelogID: 220
+    date: 01/08/2014
+    description: Added abuse detection for when Notifications are deleted
+    details:
+    - Added abuse detection check (AbuseDetection::check) to AjaxRequest controller's
+      deleteNotification method
+    level: nano
+    refno: 131224-000012
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 219
+    date: 01/07/2014
+    description: Add 'Close' label to close button on all dialogs
+    details:
+    - Previously, all dialogs had the multiplication character for the close button,
+      which did not convey well to screen readers. Now, we will include a 'Close'
+      label on that button.
+    - There should be no perceived impact upon upgrade as long as your template includes
+      YUI's panel/assets/skins/sam/panel.css CSS file (i.e. the theme meta tag contains
+      "{YUI}/panel/assets/skins/sam/panel.css" in the CSS attribute).
+    level: minor
+    refno: 131203-000174
+    sortPosition: Middle
+  - account: rodger
+    category: Bug Fix
+    changelogID: 215
+    date: 01/22/2014
+    description: "Added check to verify that answer\u2019s access level matches contact\u2019s
+      access levels before displaying previously viewed answers"
+    level: minor
+    refno: 131209-000116
+    sortPosition: Middle
+  - account: pranab.g.garad
+    category: New Feature
+    changelogID: 214
+    date: 01/22/2014
+    description: Added support for Registered Products
+    details:
+    - 'Users can perform the following functions with registered products: register,
+      update, view details of a registered product, view list of products, and create
+      an incident for a product.'
+    - 'The following widgets have been added: AssetCheck, ProductCatalogInput, ProductCatalogDisplay,
+      ProductCatalogSearchFilter, and AssetOrgList.'
+    level: minor
+    refno: 131104-000092
+    sortPosition: Middle
+  - account: jwatson
+    category: Deprecation
+    changelogID: 213
+    date: 12/02/2013
+    description: Removed ClientLoader's getCanUseAria function and RightNow.Interface.Constants.CAN_USE_ARIA
+    details:
+    - The ClientLoader exposed a function getCanUseAria that has been removed. It
+      was largely unused, so there should be minimal impact.
+    - The JavaScript value RightNow.Interface.Constants.CAN_USE_ARIA has been removed,
+      since it was tied to the getCanUseAria function.
+    level: minor
+    refno: 130530-000050
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 205
+    date: 11/19/2013
+    description: Handle column sorting correctly if there are hidden columns
+    details:
+    - Previously, sorting on columns at the end of a report could fail if there were
+      hidden columns set before the end of a report.  Now, sorting will work correctly,
+      regardless of the number of hidden columns in a report or where they are set
+      in the report.
+    level: nano
+    refno: 131011-000091
+    sortPosition: Middle
+  - account: spage
+    category: API Change
+    changelogID: 204
+    date: 11/11/2013
+    description: Calls to 'AbuseDetection::check' within models replaced with 'isAbuse'
+      to prevent models unexpectedly exiting with JavaScript Captcha code.
+    details:
+    - When a site was in an abusive state, certain model calls (below) would call
+      AbuseDetection's 'check' method causing the model to exit with the JS Captcha
+      code.
+    - 'With this change, methods now return the standard model ResponseObject having
+      a "falsey" return value (null or false) and containing an error message explaining
+      the reason the request terminated (something like: ''The request could not be
+      performed as the site is in an abusive state.'').'
+    - Custom code calling into any of the modified functions will need to ensure they
+      are correctly handling the response object and where needed, are first calling
+      'AbuseDetection::check()' to ensure a Captcha is presented in abusive situations.
+      The newly introduced ability to put a site in 'Abuse Mode' via the development
+      header will facilitate the testing of any custom code that is expected to trigger
+      a Captcha.
+    - 'Code example:'
+    - '`$response = $this->model(''Incident'')->submitFeedback(...);`'
+    - '`if ($response->error) {`'
+    - '`''   // $response->result would be false in this scenario''`'
+    - '`''   exit($response->errors[0]->externalMessage); // The request could not
+      be performed as the site is in an abusive state.''`'
+    - '`}`'
+    - 'Model functions changed:'
+    - '- Incident.php'
+    - -- submitFeedback()
+    - '- Contact.php'
+    - -- getProfileSid()
+    - -- sendResetPasswordEmail()
+    - '- Notification.php'
+    - -- prepareUpdate()
+    - '- Answer.php'
+    - -- emailToFriend()
+    - In addition to the list above, any model calls to create or update an object
+      (e.g. Contact, Incident, Answer, etc) will need to take the same precautions
+      outlined above.
+    level: minor
+    refno: 131021-000206
+    sortPosition: Top
+  - account: eturner
+    category: Bug Fix
+    changelogID: 201
+    date: 11/06/2013
+    description: RSS endpoint will now return a 403 when the CP\_CONTACT\_LOGIN\_REQUIRED
+      config is set
+    details:
+    - When the CP\_CONTACT\_LOGIN\_REQUIRED config is enabled, the /ci/cache/rss endpoint
+      will now return a 403 Permission Denied error code. Previously, hitting this
+      endpoint with this config enabled would cause an infinite redirect.
+    level: minor
+    refno: 131105-000088
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 195
+    date: 11/01/2013
+    description: Added a `setConstraint` method to the Field module and a `constraintChange`
+      event to Input widgets for Dynamic Forms
+    details:
+    - A new `setConstraint` method has been added to the Field module which allows
+      the `required`, `required_lvl` and `min_required_attachments` attributes to
+      be dynamically alter based upon the new Field `change` event. Additionally,
+      a `constraintChange` event has been added which is triggered anytime the `setConstraint`
+      method is called on a field. Custom widgets can subscribe to this event to dynamically
+      update their content based on a constraint change.
+    level: nano
+    refno: 131021-000234
+    sortPosition: Middle
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 193
+    date: 10/29/2013
+    description: Allow EJS files to be overridden in extended widgets
+    details:
+    - When extending a widget and overriding the view and logic files, EJS files will
+      also be overwritten. In previous releases EJS files could be extended, but not
+      overridden.
+    level: minor
+    refno: 130808-000103
+    sortPosition: Middle
+  - account: eturner
+    category: Bug Fix
+    changelogID: 192
+    date: 10/29/2013
+    description: Fixed image references in YUI gallery-treeview module CSS to point
+      to local files
+    details:
+    - Previously, there were a handful of gallery-treeview CSS files that had image
+      references that were pointing to YUI's CDN which caused mixed content warnings
+      in certain browsers. These have been fixed to point to the local image file.
+    level: minor
+    refno: 130820-000031
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 190
+    date: 10/30/2013
+    description: Added new JavaScript widget instantiation events
+    details:
+    - Support has been added for two new JavaScript events, `evt_WidgetInstantiated`
+      and `evt_WidgetInstantiationComplete`. The first event, `evt_WidgetInstantiated`
+      is fired whenever a widget constructor is called in CP. The event includes information
+      about which widget was instantiated, what its widget ID is and the base selector
+      for the widget DOM container. The second event, `evt_WidgetInstantiationComplete`
+      is fired when all the widgets on the page have been instantiated.
+    level: nano
+    refno: 121002-000060
+    sortPosition: Middle
+  - account: spage
+    category: API Change
+    changelogID: 189
+    date: 10/24/2013
+    description: MIN_DATE define increased by 1 day
+    details:
+    - The date contained in the 'MIN_DATE' define was changed from '1970-01-02 00:00:00'
+      to '1970-01-03 00:00:00' to facilitate GMT+12 timezones.
+    - Custom code utilizing 'MIN_DATE' will need to be evaluated to determine if any
+      changes are necessary.
+    level: minor
+    refno: 131018-000065
+    sortPosition: Middle
+  - account: dmadsen
+    category: Bug Fix
+    changelogID: 186
+    date: 11/06/2013
+    description: Changed the INTLIST\_LEN define from 100 character limit to 150 so
+      that the list of p, c, chain and c\_id URL parameters can be longer
+    level: nano
+    refno: 130923-000032
+    sortPosition: Middle
+  - account: spage
+    category: Bug Fix
+    changelogID: 185
+    date: 10/23/2013
+    description: The 'Connect::isFileAttachmentType' method now returns true for file
+      attachments shared between sibling answers.
+    details:
+    - File Attachments shared between Answers designated as siblings are now correctly
+      identified as a File Attachment type.
+    - 'Example: \RightNow\Utils\Connect::isFileAttachmentType($answer->CommonAttachments)
+      // True'
+    level: minor
+    refno: 130712-000078
+    sortPosition: Middle
+  - account: bbukowski
+    category: Bug Fix
+    changelogID: 182
+    date: 10/23/2013
+    description: Added a new "responseError" event to the events that the JavaScript
+      `RightNow.Form` module fires
+    details:
+    - The JavaScript `RightNow.Form` module now fires a "responseError" event when
+      the server responds to an AJAX form submission with a non-"200 OK" status code.
+      Now widgets that extend from `RightNow.Form` can be notified when a server error
+      occurs.
+    level: minor
+    refno: 130906-000057
+    sortPosition: Middle
+  - account: eturner
+    category: API Change
+    changelogID: 177
+    date: 10/22/2013
+    description: Custom hook errors that occur during a call to the Models/Incident::submitFeedback
+      will now be returned within a ResponseObject
+    details:
+    - Previously if a custom hook was throwing an error in either a pre_feedback_create
+      or pre_contact_create hook during an answer feedback creation, the error message
+      would be returned directly instead of within a ResponseObject. Now the error
+      message will be in the ResponseObjects error property and will be correctly
+      displayed to end users.
+    level: minor
+    refno: 130425-000075
+    sortPosition: Middle
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 176
+    date: 10/22/2013
+    description: Page Set Mapping Validation
+    details:
+    - When updating or enabling existing page set mappings validation will be performed
+      to ensure the page set exists on disk
+    level: minor
+    refno: 130725-000046
+    sortPosition: Middle
+  - account: rlund
+    category: Bug Fix
+    changelogID: 174
+    date: 01/22/2014
+    description: Corrected zIndex order for field hints
+    details:
+    - Hints for fields are now displayed in full.
+    level: minor
+    refno: 130606-000105
+    sortPosition: Bottom
+  - account: reji.nair
+    category: Bug Fix
+    changelogID: 173
+    date: 01/22/2014
+    description: Fixed the issue of IPHONE, ANDROID and PALM texts being replaced
+      by codes
+    details:
+    - Previously, the texts IPHONE, ANDROID and PALM were standard defines so they
+      were being replaced with numbers 1,2 and 3 respectively in the customer portal
+      pages during staging. These texts have been removed from the standard defines
+      list and will no longer be changed during staging.
+    level: minor
+    refno: 130913-000131
+    sortPosition: Middle
+  - account: reji.nair
+    category: API Change
+    changelogID: 172
+    date: 01/22/2014
+    description: Changed the return for the getAnswerSummary method of the Answer
+      model
+    details:
+    - Previously the getAnswerSummary method returned the answer status, creating
+      display issues in previews of Guided Assistant answers. The method now returns
+      the answer status type.
+    level: minor
+    refno: 130524-000093
+    sortPosition: Middle
+  - account: ramanpreet.dhunna
+    category: API Change
+    changelogID: 171
+    date: 10/25/2013
+    description: YUI upgraded to 3.13.0
+    details:
+    - '''[YUI release notes](https://github.com/yui/yui3/wiki)'''
+    level: minor
+    refno: 131002-000053
+    sortPosition: Top
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 167
+    date: 10/16/2013
+    description: Longtext fields in reports will now be escaped
+    details:
+    - Previously, longtext fields (other than answers.solution and answers.description)
+      would be displayed in reports (e.g. the Grid and Multiline widgets) without
+      modification.  This could increase the chance that HTML code within a field
+      could break the entire page.  All longtext fields will now be escaped, similar
+      to other (short) text fields.
+    level: minor
+    refno: 130429-000038
+    sortPosition: Middle
+  - account: eturner
+    category: Deprecation
+    changelogID: 166
+    date: 10/16/2013
+    description: Removed support for the MobileEmailAnswerLink and ContactNameDisplay
+      widgets
+    details:
+    - The MobileEmailAnswerLink and ContactNameDisplay widgets no longer claim support
+      for this framework. These two widgets didn't actually function and just displayed
+      errors, so there should be minimal impact. The MobileEmailAnswerLink widget
+      can be replaced with the EmailAnswerLink widget, and the ContactNameDisplay
+      widget can be replaced by using an rn:condition tags language_in attribute.
+    level: minor
+    refno: 130715-000144
+    sortPosition: Middle
+  - account: bbukowski
+    category: Bug Fix
+    changelogID: 165
+    date: 10/15/2013
+    description: Fixed `Framework::isOpenLogin` PHP Method
+    details:
+    - Fixed a bug causing the `\RightNow\Utils\Framework::isOpenLogin()` PHP method
+      to always return FALSE. This affects the evaluation of `<rn:condition external_login_used="true|false">`
+      tags, whose results are determined by whether the logged-in contact used OpenLogin
+      or PTA to log in.
+    level: nano
+    refno: 131003-000035
+    sortPosition: Middle
+  - account: jwatson
+    category: New Feature
+    changelogID: 153
+    date: 09/03/2013
+    description: Form submission timeouts can be set with a `timeout` data field on
+      an EventObject
+    details:
+    - If data.timeout is set on the eventObject sent in the `send` event, it will
+      be used instead of the default timeout when a form is submitted. The standard
+      FormSubmit widget leverages this functionality. The value is expected to be
+      in milliseconds.
+    level: nano
+    refno: 130820-000105
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 146
+    date: 08/16/2013
+    description: Add two new hooks `pre_attachment_upload` and `pre_attachment_download`
+    details:
+    - Two new hooks have been added to the framework which give developers additional
+      control over file attachment uploads and downloads.
+    - The `pre_attachment_upload` hook can be used to prevent certain attachments
+      from being uploaded based on the file type, MIME type or file size. To prevent
+      a file from being uploaded, return an error message from the hook function.
+    - The `pre_attachment_download` hook can be used to prevent certain attachments
+      from being rendered in a client's browser based upon the file type, MIME type
+      or file size. To prevent a file from being displayed in the browser set the
+      `$data` array property `preventBrowserDisplay` to true. Targeted attachments
+      will be downloaded by the client's browser instead of being displayed.
+    level: nano
+    refno: 130626-000061
+    sortPosition: Middle
+3.1.3:
+  release: "13.11"
+  entries:
+  - account: alexander.vanderpol
+    category: New Feature
+    changelogID: 198
+    date: 11/04/2013
+    description: Adds the Virtual Assistant feature to automate common customer interactions
+    details:
+    - 'Virtual Assistant can be setup in the Agent Console and then uses standard
+      chat widgets to interact with the customer.  In addition to the standard chat
+      widgets, you may also use any of these:'
+    - "Virtual Assistant Static Avatar widget: Enables the use of a series of static
+      images to represent the emotional states of your Virtual Assistant, as triggered
+      through a dialog \u2018emotion\u2019 setting.  Pictures need to be provided
+      by the customer and emotions associated to them in the .css."
+    - 'Virtual Assistant Banners widget: Enables the display of relevant banners for
+      cross- and up-sell opportunities at appropriate points in the Virtual Assistant
+      conversation.  Banners are set up in the Virtual Assistant Suite, and displayed
+      automatically.'
+    - 'Virtual Assistant Similar Matches widget: Enables the display of similar question
+      matches, which the user can click on, within the interface.  No extra set up
+      is required.'
+    - 'Virtual Assistant Feedback widget: Enables the user to provide feedback at
+      any point during the Virtual Assistant interaction.  No extra set up is required.'
+    level: nano
+    refno: 130415-000030
+    sortPosition: Top
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 170
+    date: 10/18/2013
+    description: Reset output widget name attributes to their most recent equivalent
+      values
+    details:
+    - Widgets extending from \\RightNow\\Libraries\\Widget\\Output class and using
+      the old style in the name attribute (e.g. 'incidents.fattach' and not 'Incident.FileAttachments')
+      will now consistently have the name attribute set to the new style.
+    level: nano
+    refno: 131003-000066
+    sortPosition: Middle
+  - account: jwatson
+    category: New Feature
+    changelogID: 163
+    date: 10/09/2013
+    description: Adds getReportHeaders function to the Report model
+    details:
+    - The new `getReportHeaders` function was added to the Report model to allow customers
+      to get header column information from a report without a search being captured
+      in clickstreams.
+    level: nano
+    refno: 130912-000111
+    sortPosition: Middle
+  - account: ldavison
+    category: New Feature
+    changelogID: 147
+    date: 10/09/2013
+    description: Adds the Connect Object Explorer
+    details:
+    - The Connect Object Explorer provides developers with a tool for testing ROQL
+      queries and exploring both Connect objects and meta data.
+    - The feature is available at Tools > Connect Object Explorer on the Customer
+      Portal Administration site.
+    level: nano
+    refno: 130422-000178
+    sortPosition: Middle
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 145
+    date: 10/09/2013
+    description: Replaces invalid file name characters
+    details:
+    - 'The following characters are invalid and will be replaced by underscores if
+      found in the file name of an attachment: \r \n / : * ? " < > |'
+    level: nano
+    refno: 130711-000070
+    sortPosition: Middle
+  - account: rlund
+    category: New Feature
+    changelogID: 143
+    date: 10/09/2013
+    description: Adds the ClickjackPrevention widget to the reference implementation
+    details:
+    - The utils/ClickjackPrevention widget was added to the reference implementation
+      to stop attempts to clickjack a support site. Adding this widget will prevent
+      your customer portal pages from being rendered inside an iframe.
+    - Your customer portal will automatically include the widget if you have a November
+      2013 installation of Oracle RightNow CX or newer.
+    - If you upgrade to the November 2013 release, you should migrate to Framework
+      Version 3.1 or later and add this widget to your template files.
+    level: nano
+    refno: 130702-000142
+    sortPosition: Middle
+  - account: ldavison
+    category: New Feature
+    changelogID: 113
+    date: 10/11/2013
+    description: Exposes contact profile data in JavaScript through `RightNow.Profile`
+    details:
+    - 'The following methods are available:'
+    - '`RightNow.Profile.isLoggedIn()`'
+    - '`RightNow.Profile.previouslySeenEmail()` (Note: this may contain a value even
+      if the contact is not logged in)'
+    - '`RightNow.Profile.firstName()`'
+    - '`RightNow.Profile.lastName()`'
+    - '`RightNow.Profile.fullName()` (Note: value returned will take `intl_nameorder`
+      config into account)'
+    - '`RightNow.Profile.contactID()`'
+    - '`RightNow.Profile.emailAddress()`'
+    level: nano
+    refno: 130513-000052
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 112
+    date: 10/09/2013
+    description: Makes Session and Profile cookies interface specific
+    details:
+    - Previously, malicious hackers could copy cookies from one interface on a site
+      to another, which allowed them to be logged in to both interfaces. This posed
+      a potential security risk if one interface allowed only certain users to log
+      in. Any users who are logged in during migration of the Customer Portal framework
+      will be logged out. After re-authentication, no additional impact occurs.
+    level: nano
+    refno: 120424-000044
+    sortPosition: Top
+3.1.2:
+  release: "13.8"
+  entries:
+  - account: tlivengood
+    category: New Feature
+    changelogID: 148
+    date: 10/09/2013
+    description: Adds the Code Assistant feature to support migration of custom code
+    details:
+    - 'The Code Assistant, available at Tools > Code Assistant on the Customer Portal
+      Administration site, offers the following help for migrating custom code from
+      one version of the framework to another:'
+    - Helps migrate widgets to Framework Version 3 by creating a useful template for
+      a new custom widget and carrying over configurations and customizations of widgets
+      from older framework versions.
+    - Identifies areas in the code base that use YUI 2 and provides useful suggestions
+      on how to move them over to YUI 3.
+    - Removes the deprecated Intent Guide feature.
+    level: nano
+    refno: 130311-000107
+    sortPosition: Top
+  - account: rlund
+    category: Bug Fix
+    changelogID: 109
+    date: 07/17/2013
+    description: Updates the alt text used by screen readers for URL answer types
+    details:
+    - "Screen readers reading a URL type answer now read \u201CLink to a URL\u201D
+      instead of \u201CFile Type URL.\u201D"
+    level: nano
+    refno: 130429-000017
+    sortPosition: Bottom
+  - account: rlund
+    category: API Change
+    changelogID: 105
+    date: 07/17/2013
+    description: Uses widget default values when they are different from custom attribute
+      defaults
+    details:
+    - Custom attribute fields now follow the same default precedence order as standard
+      fields and legacy custom fields. Widget default values (set using a widget attribute)
+      take precedence over any default value set for a custom attribute in the Object
+      Designer.
+    level: nano
+    refno: 130417-000127
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 90
+    date: 07/17/2013
+    description: Simplifies error messages when Connect exceptions occur
+    details:
+    - "Instead of potentially confusing error messages, all Connect exception errors
+      (except those related to previously entered passwords) will display \u201CSorry,
+      there was an error with your submission\u201D to end users."
+    level: nano
+    refno: 130320-000068
+    sortPosition: Middle
+  - account: eturner
+    category: API Change
+    changelogID: 88
+    date: 07/17/2013
+    description: Supports PHP4 style constructors for widget controller classes
+    details:
+    - PHP4 style constructors are now supported when class names are validated during
+      the deployment process; however, their use is discouraged.
+    level: nano
+    refno: 130311-000044
+    sortPosition: Middle
+3.1.1:
+  release: "13.5"
+  entries:
+  - account: eturner
+    category: API Change
+    changelogID: 106
+    date: 06/24/2013
+    description: Acceptance of ID-type Connect fields is now more thorough and will
+      ignore falsey values
+    details:
+    - 'When specifying an ID-type field (Product, Category, SLA, etc) during a create
+      or update operation through our standard Models, the following rules will apply:'
+    - Integer values will be left untouched, even if they are negative
+    - String values will casted to integers via intval
+    - Falsey values will be ignored (previously only null and empty string values
+      were ignored)
+    level: minor
+    refno: 130426-000030
+    sortPosition: Middle
+  - account: ldavison
+    category: API Change
+    changelogID: 101
+    date: 04/29/2013
+    description: Removals will no longer be automatically staged
+    details:
+    - During the Staging process, removals must now be explicitly selected in order
+      to be staged.
+    level: minor
+    refno: 130404-000034
+    sortPosition: Middle
+  - account: ldavison
+    category: Deprecation
+    changelogID: 100
+    date: 05/06/2013
+    description: Removal of reports/SearchTruncation widget
+    details:
+    - The standard/reports/SearchTruncation widget has been removed and no longer
+      exists in this version. However, the `SEARCH_RESULT_LIMITING` config will still
+      continue to work.
+    level: minor
+    refno: 130327-000084
+    sortPosition: Middle
+  - account: ldavison
+    category: Deprecation
+    changelogID: 99
+    date: 06/18/2013
+    description: Removal of Intent Guide functionality
+    details:
+    - Removal of knowledgebase/IntentGuideDisplay widget. You might have existing
+      pages at /views/pages/answers/intent.php and /views/pages/mobile/answers/intent.php
+      which reference this widget. If so, delete these pages before attempting to
+      deploy this framework version.
+    - Removal of Intentguide model
+    - Removal of Intent Guide functionality from search/CombinedSearchResults widget
+    - Removal of Intent Guide functionality from reports/ResultInfo widget
+    level: minor
+    refno: 130404-000094
+    sortPosition: Middle
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 97
+    date: 04/29/2013
+    description: Notification model will return an error if unable to determine Contact
+    details:
+    - The Notification model was updated to return an error in the ResponseObject
+      if it is unable to determine a Contact. In prior framework versions, this was
+      returned as a warning.
+    level: minor
+    refno: 130408-000119
+    sortPosition: Middle
+  - account: rlund
+    category: API Change
+    changelogID: 95
+    date: 04/29/2013
+    description: Updated error text for existing email accounts
+    details:
+    - The error that is shown on the account profile form when a user attempts to
+      use an email that is already in use on a different account now includes which
+      email address caused the error. This should help reduce ambiguity when the error
+      is encountered.
+    level: minor
+    refno: 130321-000060
+    sortPosition: Middle
+  - account: eturner
+    category: Bug Fix
+    changelogID: 92
+    date: 04/30/2013
+    description: Previously seen email values will now be escaped using `htmlspecialchars()`
+      prior to storing their values within a user's session cookie.
+    level: nano
+    refno: 130306-000049
+    sortPosition: Middle
+  - account: bbukowski
+    category: API Change
+    changelogID: 91
+    date: 04/30/2013
+    description: Added support for a CSS selector to limit the Enter key event subscription
+      for `RightNow.UI.Dialog.addDialogEnterKeyListener`
+    details:
+    - 'The JavaScript `RightNow.UI.Dialog.addDialogEnterKeyListener` function now
+      accepts a fourth, optional parameter: a CSS selector string to use to limit
+      the Enter keypress to specific elements.'
+    - e.g. `RightNow.UI.Dialog.addDialogEnterKeyListener(dialog, callback, callbackContext,
+      "input")` calls `callback` whenever the Enter key is pressed while on an input
+      element.
+    level: minor
+    refno: 130321-000054
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 89
+    date: 04/29/2013
+    description: Dates with invalid year, month, and day combinations will not be
+      accepted
+    details:
+    - Previously, if a custom widget submitted an invalid year, month, and day combination
+      (e.g., February 31, 2007), the framework would accept the date and set the field
+      as March 3, 2007.  Invalid dates are no longer accepted and an error message
+      is displayed to the end user. (The standard DateInput widget continues to prevent
+      invalid date submissions.)
+    level: minor
+    refno: 130320-000031
+    sortPosition: Middle
+  - account: rlund
+    category: API Change
+    changelogID: 85
+    date: 04/29/2013
+    description: Moved post vars up in order of prefill precedence
+    details:
+    - Post vars (used primarily in the basic page set) now take precedence for prefilling
+      input fields. Prefill behavior is unchanged for the standard page set.
+    level: minor
+    refno: 130312-000003
+    sortPosition: Middle
+  - account: eturner
+    category: API Change
+    changelogID: 83
+    date: 04/29/2013
+    description: Trims username values before validating credentials
+    details:
+    - Since contact logins cannot contain spaces, in the Contact model's `getProfileSid`
+      method, the `$username` parameter will be trimmed prior to validating the username/password
+      combination.
+    level: nano
+    refno: 130305-000139
+    sortPosition: Middle
+  - account: eturner
+    category: API Change
+    changelogID: 80
+    date: 04/29/2013
+    description: All object content displayed via rn:field or with standard/output
+      widgets is now HTML escaped
+    details:
+    - 'All fields displayed to the user have the following actions applied to their
+      content:'
+    - Spaces are converted to `&nbsp;` (i.e., multiple consecutive spaces render as
+      such)
+    - All HTML content is escaped
+    - URLs and email addresses are converted to links
+    - Newlines are converted to `<br/>` tags
+    - The only exceptions are Answer fields, which are not modified. However, Answer
+      custom fields are HTML escaped as described above.
+    level: minor
+    refno: 130208-000024
+    sortPosition: Middle
+  - account: tlivengood
+    category: API Change
+    changelogID: 79
+    date: 04/29/2013
+    description: Some methods of `\RightNow\Utils\Connect` have been moved into `\RightNow\Utils\Validation`
+    details:
+    - As part of the effort to offer better server-side validation of data constraints
+      for the Basic page set, two methods, `getPasswordRequirements` and  `getConstraints`,
+      have been moved from the `\RightNow\Utils\Connect` class into the new `\RightNow\Utils\Validation`
+      class. Additionally, the `getConstraints` method has been renamed `getConstraintsById`
+      to better signify its usage.
+    level: minor
+    refno: 130213-000130
+    sortPosition: Middle
+  - account: tlivengood
+    category: API Change
+    changelogID: 78
+    date: 04/29/2013
+    description: Provides additional error messages for the Contact and Incident models
+    details:
+    - Because Contact and Incident models now perform validation on additional constraints,
+      they return additional error messages when data is validated. By default, all
+      standard Connect MetaData constraints are validated. Additional constraints
+      can be provided via the `constraints` property on the field object submitted
+      via the formData parameter of the Create and Update methods. The valid constraints
+      are listed in the `\RightNow\Utils\Validation::getSupportedConstraints` method.
+    level: minor
+    refno: 130213-000130
+    sortPosition: Middle
+  - account: tlivengood
+    category: API Change
+    changelogID: 77
+    date: 04/29/2013
+    description: Masks are now stripped on the server
+    details:
+    - Mask formatting characters were previously stripped in JavaScript before being
+      sent to the API. The server expected the incoming value to be both a valid mask
+      and properly stripped. The API now validates masks and performs the stripping.
+      The logic to strip masks has been removed from JavaScript.
+    - Any customizations which use a custom `Contact` or `Incident` model should add
+      a call to `\RightNow\Utils\Connect::checkAndStripMask` on the field values before
+      saving those values to Connect.
+    - If a customization overwrote the `_stripMaskFromFieldValue` method in the Standard
+      TextInput widget, that method is no longer called and the custom reformatting
+      will need to be performed in either a custom AJAX endpoint or model call.
+    level: minor
+    refno: 130213-000130
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 70
+    date: 04/29/2013
+    description: Form response errors are easier to return
+    details:
+    - 'The AJAX response to a form submission now allows a simpler return of custom
+      error messages. A custom controller endpoint of `echo json_encode(array(''errors''
+      => array(''Error with your request: EXPLANATION'')));` displays the message,
+      "''Error with your request: EXPLANATION," in a popup to the end user.'
+    level: nano
+    refno: 121026-000074
+    sortPosition: Middle
+  - account: jwatson
+    category: New Feature
+    changelogID: 69
+    date: 04/29/2013
+    description: Reserves `asset_id` as a special URL parameter
+    details:
+    - For use in future projects, `asset_id` has been reserved as a special integer
+      parameter. Similar to the `i_id` URL parameter, an end user must log in if `asset_id`
+      appears in the URL; the parameter is preserved during that login redirect. Since
+      no current functionality supports `asset_id`, the logged-in user is redirected
+      to an error page. If you currently use `asset_id` as a URL parameter for specific
+      business logic, you are required to change the name.
+    level: minor
+    refno: 130108-000109
+    sortPosition: Middle
+  - account: ldavison
+    category: API Change
+    changelogID: 68
+    date: 04/29/2013
+    description: Public methods in Guidedassistance model return a ResponseObject
+    details:
+    - All public methods in the `Guidedassistance` and `Intentguide` models were updated
+      to return a `ResponseObject`.
+    - The `Intentguide` method `pruneAnswers` no longer takes the `$reportResults`
+      parameter as a reference or returns boolean; it now returns the `$reportResults`
+      in the `ResponseObject`.
+    level: minor
+    refno: 130121-000035
+    sortPosition: Middle
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 66
+    date: 04/29/2013
+    description: Enables validation of password constraints for the Contact model
+    details:
+    - The Contact model now provides appropriate password validation messages to end
+      users when validation is not met. The change is driven by new Basic pageset,
+      but will benefit any pre-existing customization that performed password validation.
+      The functions that have been altered are `\RightNow\Utils\Connect::validate`
+      and `\RightNow\Utils\Connect::getConstraints.` Both functions have slightly
+      different return values. The first includes additional error messages and the
+      second alters the list of returned constraints to include additional API validation
+      functions. Also, the behavior of the Contact Model Create and Update functions
+      has changed to return additional error messages when an invalid password field
+      is submitted.
+    level: minor
+    refno: 130204-000107
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 57
+    date: 06/11/2013
+    description: "Requires an array of IDs instead of just the incident ID to update
+      the Field model\u2019s `sendForm` and the AjaxRequest controller's `sendForm`
+      functions"
+    details:
+    - The second parameter to the Field model's `sendForm` method is now an array
+      of various records to update, and the AjaxRequest controller's `sendForm` function
+      now expects an `updateIDs` array POST parameter instead of an `i_id` POST parameter.
+      Currently only incidents are supported.
+    - Both arrays should be keyed by the object's URL parameter key, and the value
+      should be the ID to update, e.g., `array('i_id' => 353)`
+    - The response is now in a different format with a `transaction` key that may
+      contain a `contact` key and/or an `incident` key, depending on what data was
+      processed in the form submission.
+    level: minor
+    refno: 121224-000013
+    sortPosition: Top
+  - account: spage
+    category: API Change
+    changelogID: 55
+    date: 06/11/2013
+    description: YUI upgraded to version 3.8.1
+    details:
+    - 'YUI release notes:'
+    - '- [3.8.0](https://github.com/yui/yui3/wiki/YUI-3.8.0-Change-History-Rollup)'
+    - '- [3.8.1](https://github.com/yui/yui3/wiki/YUI-3.8.1-Change-History-Rollup)'
+    level: minor
+    refno: 130108-000110
+    sortPosition: Top
+  - account: spage
+    category: New Feature
+    changelogID: 51
+    date: 05/06/2013
+    description: Adds new `MIN_DATE` and `MAX_DATE` defines
+    details:
+    - These defines specify the minimum and maximum limits for date fields using a
+      string format of YYYY-MM-DD HH:II:SS.
+    - 'Usage example: `$min = new \DateTime(MIN_DATE);`'
+    level: nano
+    refno: 130102-000078
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 50
+    date: 05/06/2013
+    description: Supports new RN tags in `<rn:widget>` and `<rn:form>` attributes
+    details:
+    - 'Prior to this change, pages supported six different RN replacement patterns
+      -- #rn:msg#, #rn:config#, #rn:url\_param#, #rn:session#, #rn:community\_token#
+      and #rn:language\_code#. However, all six of these attributes were not supported
+      in `<rn:widget>` and `<rn:form>` attributes. Now #rn:session# and #rn:language\_code#
+      are supported in attributes, providing parity between these two areas of the
+      codebase. There is no impact to pre-existing code.'
+    level: nano
+    refno: 130102-000074
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 49
+    date: 05/06/2013
+    description: Adds support for the `<rn:form>` tag
+    details:
+    - The new `<rn:form>` tag supports form submission and validation on the basic
+      page set only using standard HTML forms. Additional details about both the Basic
+      page set and the new tag can be found in the quarterly release notes for Customer
+      Portal.
+    level: minor
+    refno: 130102-000074
+    sortPosition: Middle
+  - account: bbukowski
+    category: API Change
+    changelogID: 44
+    date: 06/11/2013
+    description: Removal of hash-based history management for report searching in
+      older browsers
+    details:
+    - Older browsers that do not support the [history session management API](http://caniuse.com/#feat=history)
+      now resort to doing new page loads for report searches rather than using YUI's
+      hash-based history manager to save the state of same-page AJAX searches. Hash-based
+      history management is prone to browser [url length restriction](http://support.microsoft.com/kb/208427)
+      and other error-prone behavior; new page load searches result in a better, more
+      consistent user experience across older browsers. Searching behavior, search
+      results, and analytics are unaffected by this change. [Newer browsers](http://caniuse.com/#feat=history)
+      are unaffected by this change.
+    - Customer Portal pages with multiple reports that have runtime filters will be
+      impacted by this change when viewed by end users in older browsers. The page
+      loads will cause any selected filters to be applied to all reports on the page.
+      If searching is only intended for one of the reports, the other reports on the
+      page should be modified to not have any runtime filters.
+    level: minor
+    refno: 130110-000113
+    sortPosition: Top
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 38
+    date: 04/30/2013
+    description: "Excludes the parent widget\u2019s logic.js file when using the overrideViewAndLogic
+      directive"
+    details:
+    - A new widget that uses the overrideViewAndLogic directive no longer includes
+      the parent widget's logic.js file if the child (new) widget does not define
+      one. If necessary, define a logic.js file for the child widget.
+    level: minor
+    refno: 121227-000025
+    sortPosition: Middle
+  - account: tlivengood
+    category: API Change
+    changelogID: 37
+    date: 04/29/2013
+    description: Keyword search filter data is now read from both the URL and the
+      POST data
+    details:
+    - The `\RightNow\Utils\Url` namespace function `setFiltersFromAttributesAndUrl`
+      now populates the keyword from both the URL and POST data. Because all standard
+      requests to render pages do not contain POST data, you should expect very little
+      impact from this change.
+    - The exception occurs if you POST to an endpoint that uses this function with
+      the `kw` key in your POST data. To mitigate unexpected results, change the `kw`
+      key in POST data to another key.
+    level: minor
+    refno: 121204-000080
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 33
+    date: 04/29/2013
+    description: Identifies widgets that are incompatible with the framework during
+      a change to a different framework version
+    details:
+    - Before you change framework versions, you are notified about any widgets that
+      do not have a version that is compatible with the selected framework version.
+    level: nano
+    refno: 130102-000081
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 32
+    date: 04/29/2013
+    description: Functions  `getParametersFromList` and `getParameterWithKey` now
+      default to examining POST data as well as URL parameters.
+    details:
+    - In the `\RightNow\Utils\Url` class, the functions `getParametersFromList` and
+      `getParameterWithKey` now have an additional parameter (`$checkPostData`) to
+      examine POST data as well as URL parameters.  The parameter is set to true by
+      default.
+    level: minor
+    refno: 121226-000047
+    sortPosition: Middle
+  - account: jwatson
+    category: API Change
+    changelogID: 27
+    date: 04/30/2013
+    description: Adds User-Agent to the Vary header if page set configurations are
+      enabled
+    details:
+    - 'When any page set configuration is enabled, `User-Agent` is added to the Vary
+      header for page requests. If no page sets are enabled but you are using the
+      pre_page_set_selection hook to enable themes, `User-Agent` is not added to the
+      Vary header. In that case:'
+    - 'Add the header manually (header(''Vary: User-Agent'', false);).'
+    - Be sure to add the second 'false' parameter so that any other additions to the
+      Vary header are not overwritten.
+    level: nano
+    refno: 121105-000074
+    sortPosition: Middle
+  - account: spage
+    category: Bug Fix
+    changelogID: 31
+    date: 04/29/2013
+    description: Validates widget references during the staging process
+    details:
+    - When widgets that are being staged extend from another widget or contain another
+      widget, those parent or child widgets must also be compatible with the stated
+      framework to prevent staging errors.
+    level: minor
+    refno: 121024-000056
+    sortPosition: Middle
+3.0.2:
+  release: "13.2"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 45
+    date: 04/29/2013
+    description: Screen reader text updates
+    details:
+    - Text used by screen readers has been added or improved for clarity.
+    level: nano
+    refno: 130111-000021
+    sortPosition: Middle
+  - account: eturner
+    category: Bug Fix
+    changelogID: 29
+    date: 04/30/2013
+    description: No framework dependency for widgets created with the widget builder
+    details:
+    - When a custom widget is created with the widget builder, the info.yml file will
+      not contain a framework dependency. Therefore, the file won't require updating
+      when migrating to a new framework version. Widget functionality should be verified
+      after migration.
+    level: nano
+    refno: 121205-000102
+    sortPosition: Middle
+  - account: rlund
+    category: Bug Fix
+    changelogID: 28
+    date: 04/29/2013
+    description: Prevention of staging for disabled page sets
+    details:
+    - If a page set is disabled, the Copy to Staging option is not available for that
+      page set during the staging process.
+    level: nano
+    refno: 121214-000048
+    sortPosition: Middle
+  - account: bbukowski
+    category: New Feature
+    changelogID: 25
+    date: 04/29/2013
+    description: PHP error warnings
+    details:
+    - PHP error reporting is enabled in development mode so errors can be corrected.
+    level: nano
+    refno: 121101-000041
+    sortPosition: Middle
+3.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

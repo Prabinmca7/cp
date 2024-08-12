@@ -1,0 +1,12 @@
+<% if (label) { %>
+    <rn:block id="preLabel"/>
+    <label for="rn_<%= instanceID %>_<%= fieldName %>" id="rn_<%= instanceID %>_Label" class="rn_Label" aria-hidden="true">
+    <%= label %>
+    <% if (required) { %>
+        <rn:block id="preRequired"/>
+            <%= getRequiredLabel() %>
+        <rn:block id="postRequired"/>
+    <% } %>
+    </label>
+    <rn:block id="postLabel"/>
+<% } %>

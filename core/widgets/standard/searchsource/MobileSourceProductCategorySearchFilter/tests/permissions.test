@@ -1,0 +1,26 @@
+input: <rn:widget path='standard/searchsource/MobileSourceProductCategorySearchFilter' source_id='SocialSearch' verify_permissions='true'/>
+contact: userprodonly
+removecontent: true
+template: mobile
+output:
+<div id="rn_MobileSourceProductCategorySearchFilter_0" class="rn_MobileSourceProductCategorySearchFilter rn_ProductCategorySearchFilter">
+         <form id="rn_MobileSourceProductCategorySearchFilter_0_Product_Level1Input" class="rn_Hidden rn_Input rn_MobileSourceProductCategorySearchFilter rn_Level1" onsubmit="return false;">
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileSourceProductCategorySearchFilter_0_Product_Level1" id="rn_MobileSourceProductCategorySearchFilter_0_Product_Input1_1" value="0"/>
+                        <label class="" id="rn_MobileSourceProductCategorySearchFilter_0_Product_Label1_1" for="rn_MobileSourceProductCategorySearchFilter_0_Product_Input1_1">All Products                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileSourceProductCategorySearchFilter_0_Product_Level1" id="rn_MobileSourceProductCategorySearchFilter_0_Product_Input1_2" value="128"/>
+                        <label class="rn_HasChildren" id="rn_MobileSourceProductCategorySearchFilter_0_Product_Label1_2" for="rn_MobileSourceProductCategorySearchFilter_0_Product_Input1_2">p1            <span class="rn_ParentMenuAlt"> More Options</span>            </label>
+        </div>
+        </form>
+        <div id="rn_MobileSourceProductCategorySearchFilter_0_Product_FilterDisplay" class="rn_FilterDisplay">
+        <div class="rn_Heading">
+            <a id="rn_MobileSourceProductCategorySearchFilter_0_Product_Launch" href="javascript:void(0);" class="rn_Opener rn_LinkOpener">Filter by product</a>
+            <a href="javascript:void(0);" id="rn_MobileSourceProductCategorySearchFilter_0_Product_FilterRemove" class="rn_Remove rn_Hidden">
+                Remove            </a>
+        </div>
+        <div id="rn_MobileSourceProductCategorySearchFilter_0_Product_Filters" class="rn_Filters">
+                </div>
+    </div>
+</div>

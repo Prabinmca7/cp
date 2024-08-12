@@ -1,0 +1,44 @@
+@import 'widget-includes';
+
+.rn_TextInput {
+    clear: both;
+    margin-bottom: 1.6em;
+    overflow: visible;
+    position: relative;
+
+    textarea {
+        margin: 0;
+    }
+
+    .rn_Label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    .rn_Mask {
+        color: #555;
+        font-style: italic;
+        margin: 4px 12px;
+    }
+
+    .rn_MaskBuffer {
+        margin-top: 1.1em;
+    }
+
+    .rn_MaskOverlay {
+        background-color: #EEE;
+        border: 1px solid #CCC;
+        border-radius: 11px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        box-shadow: 2px 2px 2px #888;
+        color: #222;
+        opacity: .9;
+        padding: 11px;
+    }
+
+    .rn_TextInputValidate {
+        margin-top: 8px;
+    }
+}

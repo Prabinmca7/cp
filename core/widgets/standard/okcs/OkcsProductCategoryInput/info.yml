@@ -1,0 +1,63 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [panel, overlay, gallery-treeview, RightNowTreeView, RightNowTreeViewDialog, RightNowTreeViewDropdown]
+attributes:
+  label_screen_reader_accessible_option:
+    name: rn:msg:ACCESSIBLE_OPTION_LABEL_LBL
+    description: rn:msg:TXT_LINK_DISPLAYED_SCREEN_READERS_MSG
+    default: rn:msg:SCREEN_READER_USERS_PRESS_ENTER_SEL_MSG
+    type: STRING
+  label_accessible_interface:
+    name: rn:msg:ACCESSIBLE_INTERFACE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYED_SCREEN_EFFECTIVELY_MSG
+    default: rn:msg:BTN_SCREEN_READERS_PLS_PREV_LINK_MSG
+    type: STRING
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: rn:msg:PRODUCT_LBL
+    type: STRING
+  label_nothing_selected:
+    name: rn:msg:NOTHING_SELECTED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_VALUE_SELECTED_LBL
+    default: rn:msg:SELECT_A_PRODUCT_LBL
+    type: STRING  
+  label_all_values:
+    name: rn:msg:ALL_VALUES_LABEL_LBL
+    type: STRING
+    description: Label to indicate that no value is selected 
+    default: rn:msg:ALL_PRODUCTS_LBL
+  label_more_link:
+    name: rn:msg:MORE_LINK_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_LINK_SHOWS_CATEGORIES_DISPLAYED_LBL
+    default: rn:msg:WAP_MORE_LBL
+  is_required:
+    name: rn:msg:REQUIRED_FLAG_LBL
+    description: rn:msg:FLAG_INDICATE_IF_A_FIELD_IS_REQUIRED_LBL
+    default: false
+    type: BOOLEAN
+  child_categories_to_display:
+    name: rn:msg:CHILD_CATEGORIES_TO_DISPLAY_LBL
+    type: INT
+    description: rn:msg:CHILD_CATEGORIES_DISPLAYED_MORE_CLICKED_LBL
+    default: 20
+  filter_type:
+    name: rn:msg:FILTER_TYPE_LBL
+    type: OPTION
+    required: true
+    description: rn:msg:FILTER_DISP_DROPDOWN_INFORMATION_LBL
+    default: Product
+    options:
+    - Product
+    - Category
+    - ContentType
+  get_okcs_data_ajax:
+    name: rn:msg:AJAX_COMMAND_TO_GET_DET_OF_IM_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+info:
+  description: rn:msg:TH_CT_HR_RR_DT_PRD_CT_TYP_SBM_VLS_SBSCRP_MSG

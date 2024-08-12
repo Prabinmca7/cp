@@ -1,0 +1,45 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "14.11"
+  entries:
+  - account: weichuan.dong
+    category: Bug Fix
+    changelogID: 273
+    date: 09/10/2014
+    description: Support for Cobrowse Premium so that it does not display the 'End
+      Screen Share' button when using Premium
+    details:
+    - You can only use one of ChatCoBrowseButton or ChatCobrowsePremium widgets on
+      the chat_landing page. The changes made in this version make sure that the 'End
+      Screen Share' button does not display when using Premium. The ChatCoBrowseButton
+      widget is deprecated and will be removed from a future release of the Customer
+      Portal. It is recommended to use the ChatCobrowsePremium widget going forward.
+    level: nano
+    refno: 140825-000158
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of chat/ChatCoBrowseButton
+    category: API Change
+    sortPosition: Middle

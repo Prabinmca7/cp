@@ -1,0 +1,29 @@
+<rn:block id="preItem"/>
+    <div class="rn_Notification" data-id="<%=id%>">
+        <rn:block id="preInfo"/>
+        <div class="rn_Notification_Info">
+            <rn:block id="summary">
+            <a href="<%=url%>" target="_blank"><%=summary%></a>
+            </rn:block>
+            <rn:block id="startDate">
+            <span><%=subscribedLabel%></span>
+            </rn:block>
+            <rn:block id="expiration">
+            <span><%=expiresLabel%></span>
+            </rn:block>
+        </div>
+        <rn:block id="postInfo"/>
+        <rn:block id="preActions"/>
+        <div class="rn_Notification_Actions">
+            <% if(includeRenew) { %>
+                <rn:block id="preRenew"/>
+                <button class="rn_Notification_Renew"><%=renewLabel%></button>
+                <rn:block id="postRenew"/>
+            <% } %>
+            <rn:block id="preDelete"/>
+            <button class="rn_Notification_Delete"><%=deleteLabel%></button>
+            <rn:block id="postDelete"/>
+        </div>
+        <rn:block id="postActions"/>
+    </div>
+<rn:block id="postItem"/>

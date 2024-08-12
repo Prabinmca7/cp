@@ -1,0 +1,18 @@
+@import 'widget-includes';
+
+.rn_ChatQueueWaitTime {
+    background: #EFEFF4;
+    border: 1px solid #BBB;
+    border-width: 1px;
+    padding: .5em;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+.rn_ChatQueueWaitTime .rn_ChatQueuePosition, .rn_ChatQueueWaitTime .rn_ChatEstimatedWaitTime, .rn_ChatQueueWaitTime .rn_ChatAverageWaitTime {
+    padding-right: 2px;
+}
+
+.rn_BrowserWarning {
+    color: #F00;
+}

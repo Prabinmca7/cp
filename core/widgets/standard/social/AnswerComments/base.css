@@ -1,0 +1,37 @@
+.rn_AnswerComments ul{
+    padding-left:0;
+}
+.rn_AnswerComments li{
+    margin:0;
+}
+.rn_AnswerComments ul li,
+.rn_NestedComment li{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none !important;
+}
+.rn_AnswerComments .rn_CommentContent{
+    word-wrap: break-word;
+}
+.rn_AnswerComments .rn_CommentContent a.rn_AuthorImage{
+    float:left;
+}
+.rn_AnswerComments .rn_CommentContent a img{
+    height: 30px;
+    width: 30px;
+}
+.rn_AnswerComments .rn_CommentDetails,
+.rn_AnswerComments .rn_CommentActions{
+    float:right;
+}
+
+.rn_AnswerComments .rn_NewComment{
+    clear: right;
+    list-style-type: none;
+}
+.rn_AnswerComments .rn_NewComment textarea{
+    width: 99%;
+}
+.rn_AnswerComments .rn_NestedComment{
+    margin: 10px 0 0 30px;
+}

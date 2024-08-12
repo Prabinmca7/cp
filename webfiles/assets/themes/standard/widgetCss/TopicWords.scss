@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_TopicWords {
+    background: #EFEFEF;
+    margin: 8px 0 20px;
+    padding: 1.5em;
+
+    .rn_Title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    dl {
+        margin: 0;
+    }
+
+    dt a.rn_ExternalLinkIcon {
+        @include list-externallink-icon;
+        padding-right: 5px;
+    }
+
+    img {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    a {
+        color: darken($base-link-color, 20%);
+    }
+}

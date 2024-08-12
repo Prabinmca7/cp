@@ -1,0 +1,90 @@
+@import 'widget-includes';
+
+.rn_UserList {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+
+    .rn_LoadingIcon {
+        padding: 25px 30px;
+    }
+    .rn_ErrorMsg {
+        padding: 25px 10px;
+    }
+    .rn_UsersTableView {
+        table {
+           border-top: 1px solid #888;
+           border-spacing: 0;
+           border-collapse: separate;
+           table-layout: auto;
+
+           th {
+               padding: 4px 10px 4px 6px;
+               background-color: white;
+               text-align: center;
+           }
+
+           tr:nth-child(2n+1) {
+               background-color: lighten($light-gray, 9);
+           }
+
+           td {
+               padding: 4px 10px 4px 6px;
+               text-overflow: ellipsis;
+               overflow: hidden;
+
+              .rn_ProfileAvatar {
+                    float: left;
+                    display: inline-block;
+                    margin-right: 0.3em;
+                    a {
+                          padding : 0;
+                          span, img {
+                              vertical-align: bottom;
+                          }
+                      }
+                }
+
+
+                .rn_DisplayName {
+                    font-size: 0.8em;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    max-width: 70%;
+                }
+           }
+
+           .rn_Count {
+               text-align: center;
+           }
+       }   
+    }
+    
+    .rn_UsersListView {
+        .rn_UserItem {
+            .rn_UserListAvatar {
+                display: inline-block;
+                width: 20%;
+                margin-right: 1em;
+            }
+            .rn_UserListDetails {
+                display: inline-block;
+                vertical-align: top;
+                width: 70%;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                
+                span {
+                    display: block;
+                    line-height: 1.5em;
+                    font-size: 0.8em;
+                    
+                    a {
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+    }
+}

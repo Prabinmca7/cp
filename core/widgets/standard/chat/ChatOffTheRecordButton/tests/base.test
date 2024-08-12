@@ -1,0 +1,9 @@
+input: <rn:widget path='standard/chat/ChatOffTheRecordButton'/>
+removecontent: true
+output:
+<span id="rn_ChatOffTheRecordButton_0" class="rn_ChatOffTheRecordButton rn_Hidden">
+    <button id="rn_ChatOffTheRecordButton_0_Button" title="Send an 'Off The Record' message">
+                    <img src="images/chatOffTheRecordSend.png" alt="Send an 'Off The Record' message" />
+         
+            </button>
+</span>

@@ -1,0 +1,8 @@
+package: Site Info Custom Object
+folder: input
+additionalFiles:
+  models: SiteInfo.php
+  controllers: AjaxSiteLocation.php
+  exports: 
+    - Site_Location_Custom_Object.zip
+    - Sites_Location_Report.xml

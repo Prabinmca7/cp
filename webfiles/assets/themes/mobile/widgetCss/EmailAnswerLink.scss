@@ -1,0 +1,7 @@
+@import 'widget-includes';
+
+.rn_EmailAnswerLink {
+    > a {
+        @include icon($fa-var-envelope);
+    }
+}

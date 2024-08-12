@@ -1,0 +1,11 @@
+input: <rn:widget path="standard/moderation/ModerationAction" object_type="CommunityUser" report_id="15102"/>
+contact: usermoderator
+removecontent: true
+output:
+<div id="rn_ModerationAction_0" class="rn_ModerationAction">
+        <div id="rn_ModerationAction_0_ActionButtons">
+                            <button type="button" name="suspend" id="rn_ModerationAction_0_SuspendButton" value="39" disabled="disabled">Suspend</button>
+                                        <button type="button" name="restore" id="rn_ModerationAction_0_RestoreButton" value="38" disabled="disabled">Approve/Restore</button>
+                                                    <button type="button" name="archive" id="rn_ModerationAction_0_ArchiveButton" value="41" disabled="disabled">Archive</button>
+                                                                    </div>
+        </div>

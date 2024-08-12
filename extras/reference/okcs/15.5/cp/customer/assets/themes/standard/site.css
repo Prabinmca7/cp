@@ -1,0 +1,1505 @@
+/*********************************
+Global Style
+
+Index:
+    01. Reset
+    02. Font multiplier table
+    03. Global Settings for Common
+         HTML elements
+    04. Template Structure
+    05. Text Colors
+    06. Navigation Bar
+    07. Shared/General Components
+    08. Answer & Question Detail Pages
+    09. Home Page
+    10. Account Pages
+    11. General Accessiblity
+    12. Print Style
+    13. Chat Related
+    14. High Contrast Mode
+**********************************/
+
+/********************
+    01. Reset
+********************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+fieldset,img{
+    border:0;
+}
+address,caption,cite,code,dfn,th,var{
+    font-style:normal;
+    font-weight:normal;
+}
+ul, ol, li, dl, dt, dd{
+    list-style:none;
+}
+caption,th{
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after{
+    content:'';
+}
+abbr,acronym {
+    border:0;
+    font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+    vertical-align:text-top;
+}
+sub {
+    vertical-align:text-bottom;
+}
+/*because legend doesn't inherit in IE */
+legend{
+    color:#000;
+    padding:0;
+}
+a img, iframe {
+    border: none;
+}
+
+/*************************************
+    02. Font multiplier table
+**************************************
+Pixels  EMs   Percent    Points
+6px   0.500     50.00%     5pt
+7px     0.583     58.30%     5pt
+8px     0.667     66.70%     6pt
+9px     0.750     75.00%     7pt
+10px     0.833     83.30%     8pt
+11px     0.917     91.70%     8pt
+(12px is our body default)
+12px     1.000     100.0%     9pt
+13px     1.083     108.3%     10pt
+14px     1.167     116.7%     11pt
+15px     1.250     125.0%     11pt
+16px     1.333     133.3%     12pt
+17px     1.417     141.7%     13pt
+18px     1.500     150.0%     14pt
+19px     1.583     158.3%     14pt
+20px     1.667     166.7%     15pt
+21px     1.750     175.0%     16pt
+22px     1.833     183.3%     17pt
+23px     1.917     191.7%     17pt
+24px     2.000     200.0%     18pt
+***************************************/
+
+/*************************************
+    03. Global Settings for Common
+          HTML elements
+*************************************/
+html {
+    background:#FFF url(images/layout/royalGrayBackground.png) repeat-x;
+    font-family:Helvetica, Arial, sans-serif;
+}
+/*Japanese charset support*/
+html[lang="ja-JP"],
+html[lang="ja-JP"] input, html[lang="ja-JP"] textarea, html[lang="ja-JP"] select {
+    font-family:"Hiragino Kaku Gothic Pro", "?????? Pro W3", Meiryo, "????", "MS PGothic", "MS P????", Helvetica, Arial, sans-serif;
+}
+body {
+    font-size:.75em;
+    line-height:1.250em;
+    text-align:left;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+}
+h1 { /* 25px */
+    font-size:2.083em;
+    font-weight:normal;
+    line-height:1.8em;
+}
+h2 { /* 16px */
+    font-size:1.333em;
+    line-height:1.4em;
+}
+h3 { /* 14px */
+    color:#2F2F2F;
+    font-size:1.167em;
+    line-height:1.3em;
+}
+h4 { /* 12px */
+    color:#404040;
+    font-size:1em;
+    line-height:1.3em;
+}
+h5 { /* 11px */
+    color:#505050;
+    font-size:0.917em;
+    line-height:1.0em;
+}
+h6 { /* 10px */
+    color:#505050;
+    font-size:0.833em;
+    line-height:.8em;
+}
+p {
+    line-height:1.4em;
+    margin-bottom:1em;
+}
+table {
+    border-collapse:separate;
+    border-spacing:0.3em;
+}
+hr {
+    margin:10px 0;
+}
+strong {
+    font-weight: bolder;
+}
+caption {
+    color:#404040;
+    font-size:1em;
+    font-weight:bold;
+    line-height:1.3em;
+}
+blockquote {
+    margin:10px 30px;
+}
+a:visited {
+    color:#3C0D68;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+    height:18px;
+}
+input, textarea, select {
+    border:solid 1px #B1B1B1;
+    /*font-family bears repeating for IE6/7*/
+    font-family:Helvetica, Arial, sans-serif;
+    padding:2px;
+    margin:0;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    border-color:#AAA;
+    background-color:#F8F8F8;
+}
+input[type="submit"],
+button {
+    /*  button gradient 1x60 sprite image */
+    background:#0E53A7 url(images/buttonGradientCombo.png) 0 0 repeat-x;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    border:1px solid #304764;
+    color:#FFF;
+    cursor:pointer;
+    font:bold 12px Helvetica,Arial,sans-serif;
+    line-height:normal;
+    margin-right:6px;
+    padding:5px 8px;
+    text-decoration:none;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.25);
+    /*Fix for IE6/7 button width bug*/
+    *width:auto;
+    *overflow:visible;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+button:hover,
+button:focus {
+    background-position: 0 -40px;
+    border-color:#46494D;
+    cursor:pointer;
+}
+input[type="submit"][disabled],
+button[disabled] {
+    background-color:#304764;
+    background-position: 0 -40px;
+    border-color:#333;
+    color:#DDD;
+}
+
+/********************************
+    04. Template Structure:
+    rn_Container
+        rn_Header
+        rn_Navigation
+        rn_Body
+            rn_MainColumn
+            rn_SideBar
+        rn_Footer
+            rn_RightNowCredit
+********************************/
+#rn_Container {
+    height:100%;
+    margin:0 auto;
+    overflow:visible;
+    text-align:left;
+    width:1025px;
+}
+#rn_Header {
+    color:#FFF;
+    height:72px;
+    min-height:72px;
+    overflow:visible;
+    padding:0 10px;
+}
+#rn_Header a {
+    color:#FFF;
+}
+#rn_Logo {
+    cursor:pointer;
+    float:left;
+    font-family:"Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    height:70px;
+    letter-spacing:-0.8px;
+    margin-top:4px;
+    position:relative;
+    width:32%;
+}
+#rn_Logo a {
+    bottom:0;
+    color:#FFF;
+    cursor:pointer;
+    font-size:2.083em;
+    font-weight:normal;
+    left:0;
+    line-height:1em;
+    text-decoration:none;
+}
+#rn_Logo a span.rn_LogoTitle {
+    cursor:pointer;
+    top:20px;
+    position:relative;
+}
+#rn_Logo a img {
+    display:block;
+}
+#rn_LoginStatus{
+    font-size:0.917em;
+    text-align:right;
+}
+#rn_LoginStatus a{
+    font-weight:bold;
+    text-decoration:none;
+}
+#rn_Navigation {
+    background:transparent none repeat scroll center top;
+    height:31px;
+    /*IE6*/
+    _height:28px;
+    margin-left:1px;
+    padding:3px 10px 0 0;
+}
+#rn_NavigationBar {
+    float:left;
+    height:14px;
+}
+#rn_NavigationBar ul li {
+    float:left;
+}
+#rn_Footer, #rn_Body {
+    background:#FFF;
+    border-right:1px solid #DDD;
+    border-left:1px solid #DDD;
+    overflow:hidden;
+    padding:0 0 20px 10px;
+    text-align:left;
+    width:99%;
+    -moz-box-shadow:3px 3px 3px #888;
+    -webkit-box-shadow:3px 3px 3px #888;
+    box-shadow:3px 3px 3px #888;
+}
+#rn_MainColumn {
+    background:#FFF;
+    float:left;
+    margin-right:8px;
+    min-height:650px;
+    height:auto !important;
+    height:650px;
+    overflow:visible;
+    padding:0 0 10px 6px;
+    width:74%;
+    position:relative;
+}
+#rn_SideBar {
+    float:right;
+    margin-right:12px;
+    width:23%;
+}
+#rn_Footer {
+    border-bottom:1px solid #E2E2E2;
+}
+#rn_RightNowCredit {
+    border-top:1px solid #DDD;
+    clear:both;
+    padding:10px 0;
+    text-align:right;
+    margin:auto 20px;
+}
+
+/*************************************
+    05. Text Colors
+*************************************/
+body,
+fieldset legend {
+    color:#000;
+}
+a:link {
+    color:#00C;
+}
+
+/*************************************
+    06. Sidebar Content
+*************************************/
+#rn_SideBar .rn_Padding {
+    padding:16px 4px 2px 10px;
+    overflow:auto;
+}
+/**Sprite for help resources**/
+.rn_HelpResources {
+    margin:0 4px 10px 4px;
+}
+.rn_HelpResources .rn_Questions,
+.rn_HelpResources .rn_Community,
+.rn_HelpResources .rn_Contact,
+.rn_HelpResources .rn_Chat,
+.rn_HelpResources .rn_Feedback{
+    margin-top:10px;
+}
+.rn_HelpResources a{
+    background:url(images/layout/contactDiscs.png) no-repeat;
+    color:#464646;
+    display:block;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:4px;
+    min-height:22px;
+    /*min-height for IE6/7*/
+    height:auto !important;
+    height:22px;
+    padding:10px 0 0 40px;
+    text-decoration:none;
+}
+.rn_HelpResources a:hover {
+    text-decoration:underline;
+}
+.rn_HelpResources span{
+    display:block;
+    margin:0 0 0 44px;
+}
+
+/* image is 32 x 220 : icons are 32 x 32 */
+.rn_HelpResources .rn_Questions a{
+    background-position: 0 -4px;
+}
+.rn_HelpResources .rn_Contact a{
+    background-position: 0 -48px;
+}
+.rn_HelpResources .rn_Chat a{
+    background-position: 0 -96px;
+}
+.rn_HelpResources .rn_Feedback a{
+    background-position: 0 -140px;
+}
+.rn_HelpResources .rn_Community a{
+    background-position: 0 -184px;
+}
+
+/***********************************************************
+    07. Shared / General Styling
+***********************************************************/
+/*************
+Main search form at the top of many pages
+(answers/list, questions/list, questions/detail, home)
+*************/
+#rn_SearchControls {
+    background:#EFEFF4 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==) repeat-x scroll 0 0;
+    *background:#EFEFF4; /* IE6/7 don't support data URI */
+    border:1px solid #BBB;
+    clear:left;
+    float:left;
+    overflow:visible;
+    padding:8px 0 8px 12px;
+    position:relative;
+    width:97.4%;
+}
+#rn_SearchControls form {
+    padding:0 0 6px;
+    _margin-bottom:20px;
+}
+#rn_SearchControls form input[type="submit"],
+#rn_SearchControls form input[type="image"] {
+    margin:1.3em 0 0 1.3em;
+    padding:.4em 1em;
+}
+/**IE6 doesn't use attr selectors*/
+#rn_SearchControls input {
+    _margin:1.3em 0 0 1.3em;
+    _padding:.4em 1em;
+}
+#rn_SearchControls .rn_SearchInput {
+    float:left;
+    position:relative;
+    width:50%;
+}
+#rn_SearchControls .rn_SearchInput a {
+    color:#25383C;
+    display:block;
+    float:right;
+    font-size:.917em;
+    margin-right:-8px;
+    /*IE6/7*/
+    *margin-right:0;
+    *position:absolute;
+    *right:-8px;
+    _right:0;
+    text-decoration: none;
+}
+#rn_SearchControls .rn_SearchInput label {
+    bottom:0;
+    position:absolute;
+    /*IE6/7*/
+    *bottom:-50px !important;
+    *position:relative !important;
+}
+#rn_SearchControls .rn_SearchInput input {
+    font-weight:bold;
+    height:1.3em;
+    margin-bottom:20px;
+    /*IE6*/
+    _margin: 0;
+    padding:4px 4px 3px;
+    width:100%;
+}
+
+/************************
+PageTitle -
+Appears at the top of each page
+************************/
+#rn_PageTitle {
+    border-bottom:1px solid #E2E2E0;
+    color:#25383C;
+    overflow:hidden;
+    padding:16px 0 0;
+}
+#rn_PageTitle.rn_Home,
+#rn_PageTitle.rn_Search,
+#rn_PageTitle.rn_QuestionList,
+#rn_PageTitle.rn_AnswerList {
+    border-bottom:0;
+    overflow:visible;
+}
+#rn_PageTitle.rn_AnswerDetail {
+    padding:16px 0 5px;
+    line-height: 1.2em;
+}
+#rn_PageTitle.rn_Home {
+    margin-bottom:10px;
+}
+#rn_PageTitle h1,
+#rn_PageTitle h2,
+#rn_PageTitle h3,
+#rn_PageTitle h4,
+#rn_PageTitle h5,
+#rn_PageTitle h6 {
+    clear:left;
+    word-wrap:break-word;
+}
+#rn_PageTitle p {
+    clear:both;
+}
+/************************
+PageContent
+************************/
+#rn_PageContent {
+    clear:both;
+    overflow:visible;
+}
+
+/*************************************
+Forms
+*************************************/
+#rn_PageContent form h2,
+.rn_HeadingBar {
+    background:#F9F9F9;
+    border:1px solid #CCC;
+    clear:both;
+    color:#414142;
+    letter-spacing:-0.03em;
+    padding:4px;
+    margin:20px 0 10px;
+}
+/**generic form legend only visible for screen readers (forms mode)*/
+form legend {
+    font-size:0;
+    visibility:hidden;
+}
+form fieldset {
+    padding-left:8px;
+}
+form button {
+    margin:4px 2px;
+}
+form .rn_Column {
+    margin-bottom:10px;
+}
+.rn_HintBox {
+    background-color:#F2F2F2;
+    border:1px solid #DBDBDB;
+    color:#222;
+    display:block;
+    opacity:0.7;
+    padding:4px 16px 2px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+    -moz-border-radius-bottomright:10px;
+    -moz-border-radius-topright:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.rn_HintText {
+    color:#222;
+    display:block;
+    font-size:.963em;
+    font-style:italic;
+    max-width:500px;
+    width:99%;
+}
+.rn_Required, .rn_ErrorLabel {
+    color:#C10000;
+}
+.rn_ErrorField {
+    background-color:#FEFDA0 !important;
+}
+.rn_MessageBox {
+    background-color:#FFFFE0;
+    border:1px solid #808080;
+    color:#900;
+    margin:10px 0;
+    padding:6px;
+}
+.rn_ErrorMessage {
+    background:#FFFFE0 url(images/layout/important.png) no-repeat;
+    padding:8px 6px 8px 40px !important;
+    word-wrap: break-word;
+}
+.rn_ErrorMessage a {
+    color:#900;
+}
+.rn_InfoMessage {
+    background:#FFFFE0 url(images/layout/info.png) no-repeat;
+    padding:6px 6px 4px 40px !important;
+}
+/***************
+Dialogs
+****************/
+.rn_Dialog {
+    overflow:visible;
+}
+.rn_Dialog ol,
+.rn_Dialog ul {
+    padding:0.4em 0 0 1.8em;
+}
+.rn_Dialog ol li {
+    list-style:decimal outside none;
+}
+.rn_Dialog ul li {
+    list-style:disc outside none;
+}
+/**Overwriting the Width of yui3-button-close(Panel.css) from 13px to 16px.
+   Ticket# 2532849 was opened with YUI for the issue*/
+.yui3-skin-sam .rn_Dialog.yui3-panel-content .yui3-widget-hd .yui3-button-close {
+    width: 16px;
+}
+.rn_MessageDialogIcon.rn_HelpContent,
+.rn_MessageDialogIcon.rn_WarningContent,
+.rn_MessageDialogIcon.rn_TipContent,
+.rn_MessageDialogIcon.rn_AlertContent,
+.rn_MessageDialogIcon.rn_AlarmContent,
+.rn_MessageDialogIcon.rn_BlockContent {
+    background-image: url(images/icons/messageDialog.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 17px;
+    margin-right: 10px;
+    vertical-align: sub;
+    width: 20px;
+}
+.rn_MessageDialogIcon.rn_HelpContent {
+    background-position:0 -50px;
+}
+.rn_MessageDialogIcon.rn_WarningContent {
+    background-position:0 3px;
+}
+.rn_MessageDialogIcon.rn_TipContent {
+    background-position:0 -31px;
+    height: 17px;
+}
+.rn_MessageDialogIcon.rn_AlertContent {
+    background-position:0 -14px;
+}
+.rn_MessageDialogIcon.rn_AlarmContent {
+    background-position:0 -86px;
+}
+.rn_MessageDialogIcon.rn_BlockContent {
+    background-position:0 -68px;
+    height: 17px;
+}
+/**************
+Module Box
+**************/
+.rn_Module {
+    background:#F7F7F7;
+    border:1px solid #CCC;
+    clear:both;
+    margin-bottom: 12px;
+    overflow:hidden;
+    padding-bottom:8px;
+}
+.rn_Module h3,
+.rn_Module h2 {
+    background:#EBEFF5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==) repeat-x scroll 0 0;
+    *background:#EBEFF5; /* IE6/7 don't support data URI */
+    border-bottom:1px solid #CCC;
+    font-family:"Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    font-weight:normal;
+    margin-bottom:8px;
+    padding:4px;
+}
+/**************
+Icons for attachments
+**************/
+.rn_FileTypeIcon {
+    background:url(images/icons/fileIcons.png) no-repeat;
+    display:inline-block;
+    vertical-align:top;
+    height:16px;
+    width:16px;
+}
+.rn_FileTypeIcon.rn_url {
+    background-position: 0 -17px;
+}
+.rn_FileTypeIcon.rn_doc,
+.rn_FileTypeIcon.rn_docx {
+    background-position: 0 -34px;
+}
+.rn_FileTypeIcon.rn_xls,
+.rn_FileTypeIcon.rn_xlsx {
+    background-position: 0 -51px;
+}
+.rn_FileTypeIcon.rn_ppt,
+.rn_FileTypeIcon.rn_pptx {
+    background-position: 0 -68px;
+}
+.rn_FileTypeIcon.rn_txt,
+.rn_FileTypeIcon.rn_rtf {
+    background-position: 0 -85px;
+}
+.rn_FileTypeIcon.rn_gif,
+.rn_FileTypeIcon.rn_png,
+.rn_FileTypeIcon.rn_jpg,
+.rn_FileTypeIcon.rn_jpeg {
+    background-position: 0 -102px;
+}
+.rn_FileTypeIcon.rn_zip {
+    background-position: 0 -119px;
+}
+.rn_FileTypeIcon.rn_pdf {
+    background-position: 0 -136px;
+}
+.rn_FileTypeIcon.rn_rightnow {
+    background-position: 0 -153px;
+}
+
+/***********
+Misc Common rules
+**********/
+.rn_FloatRight {
+    float:right;
+}
+.rn_FloatLeft {
+    float:left;
+}
+.rn_Padding {
+    padding:8px 10px 2px 10px;
+}
+.rn_ClearBoth {
+    clear:both;
+}
+.rn_Highlight {
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:inherit;
+}
+.rn_Bold {
+    font-weight:bold;
+}
+/**********
+Columns
+**********/
+.rn_ColumnContainer {
+    width:100%;
+}
+.rn_Column {
+    width:48%;
+}
+.rn_LeftColumn {
+    float: left;
+    padding:0 4px 0 0;
+}
+.rn_RightColumn {
+    float:right;
+    padding: 0 0 0 4px;
+}
+.rn_LargeText {
+    font-size:1.333em;
+    font-weight:bold;
+    line-height:1.4em;
+}
+
+/*******************************************
+    08. Answer & Question Detail
+*******************************************/
+#rn_Summary {
+    padding: 7px 0 0 0;
+    line-height:1em;
+    letter-spacing:-.01em;
+}
+#rn_AnswerInfo {
+    color:#666;
+    margin:6px 0 20px;
+}
+#rn_AnswerInfo div {
+    display:inline;
+}
+#rn_AnswerText {
+    clear:both;
+    line-height:1.4em;
+}
+#rn_FileAttach {
+    padding-bottom:1em;
+}
+/************
+List styles for answer content
+*************/
+.rn_QuestionDetail ol,
+.rn_QuestionDetail ul,
+.rn_AnswerDetail ol,
+.rn_AnswerDetail ul {
+    padding-left:2em;
+    clear: both;
+}
+.rn_QuestionDetail > ol,
+.rn_QuestionDetail > ul,
+.rn_AnswerDetail > ol,
+.rn_AnswerDetail > ul,
+#rn_AnswerText > ol,
+#rn_AnswerText > ul {
+    margin-bottom:1em;
+}
+.rn_QuestionDetail li,
+.rn_AnswerDetail li {
+    line-height:1.4em;
+    margin:4px 0;
+}
+/* Unordered lists */
+.rn_QuestionDetail ul li,
+.rn_AnswerDetail ul li {
+    list-style: disc;
+}
+.rn_QuestionDetail li ul li,
+.rn_AnswerDetail li ul li {
+    list-style: circle;
+}
+.rn_QuestionDetail li li ul li,
+.rn_AnswerDetail li li ul li {
+    list-style: square;
+}
+/* Ordered lists */
+.rn_QuestionDetail ol li,
+.rn_QuestionDetail li ol li,
+.rn_QuestionDetail li li ol li,
+.rn_AnswerDetail ol li,
+.rn_AnswerDetail li ol li,
+.rn_AnswerDetail li li ol li {
+    list-style: decimal;
+}
+
+
+/* Incident thread */
+#rn_UpdateQuestion textarea {
+    width:98%;
+}
+#rn_QuestionThread {
+    margin:4px;
+}
+#rn_AdditionalInfo, #rn_DetailTools {
+    background:#EEE url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==) repeat-x scroll 0 0;
+    *background:#EEE; /* IE6/7 don't support data URI */
+    border:1px solid #BBB;
+}
+/** Additional Details box **/
+#rn_AdditionalInfo {
+    margin:1em;
+    overflow:hidden;
+    padding:12px;
+    width:560px;
+    word-wrap: break-word;
+}
+/** Print/Email/Notif/Share Container **/
+#rn_DetailTools {
+    line-height:1em;
+    margin-top:2em;
+    padding:8px 0;
+    text-align: right;
+}
+/** OKCS Integration **/
+.rn_StartOver {
+    margin-left: 73%;
+    margin-top: 15px;
+    position: absolute;
+}
+.rn_OkcsLeftContainer {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    vertical-align: top;
+    width: 33%;
+}
+#rn_OkcsRightContainer a {
+    text-decoration: none !important;
+}
+.rn_OkcsRightContainer {
+    display: inline-block;
+    margin-left: 11px; 
+    width: 64.5%;
+}
+.rn_ResultPadding {
+    padding: 15px 0 0 0;
+}
+/**.rn_AnswerListContainer {
+    margin-top: 30px;
+}*/
+.rn_OkcsLoading {
+    background: url(images/loading.gif) no-repeat center center #EEE;
+    height:100%;
+    opacity: 0.6;
+    position: absolute;
+    margin-left: -6px;
+    width: 100%;
+    z-index: 500;
+    clear: both;
+}
+.rn_AnswerListContainer {
+    border-top: 30px;
+    margin-top: 30px;
+}
+.rn_SectionTitle{
+    border-top: 1px solid #DDD;
+    clear: both;
+    padding: 10px 0;
+    text-align: right;
+}
+
+
+/*************************************
+    09. Home Page : Top Answers
+*************************************/
+#rn_PageContent.rn_Home{
+    overflow: hidden;
+}
+#rn_PageContent.rn_Home .rn_Module ul{
+    margin:12px;
+    overflow:hidden;
+}
+#rn_PageContent.rn_Home .rn_Module ul li{
+    float:left;
+    margin:0;
+    padding:4px;
+    width:48%;
+}
+#rn_PageContent.rn_Home .rn_Module ul li span.rn_FileTypeIcon{
+    display:none;
+}
+#rn_PageContent.rn_Home .rn_Module ul li a{
+    float:left;
+    margin:4px;
+}
+#rn_PageContent.rn_Home .rn_AnswersLink {
+    display:inline-block;
+    font-size:120%;
+    font-weight:bold;
+    margin:10px 0 10px 16px;
+}
+
+/*************************************
+    10. Account Pages
+*************************************/
+/*********************
+Sprite for overview page
+*********************/
+.rn_Overview {
+    padding:12px 10px 2px;
+}
+.rn_Overview h2 {
+    background-color:#F9F9F9;
+    border:1px solid #DDD;
+    margin-top:10px;
+}
+/* image is 32 x 148 : icons are 32 x 32 */
+.rn_Overview h2 a,
+.rn_Overview h2 strong {
+    background:url(images/layout/accountOverview.png) no-repeat;
+    color:#505050;
+    display:block;
+    height:26px;
+    margin:4px;
+    outline:none;
+    padding:8px 0 0 40px;
+    text-decoration:none;
+}
+.rn_Overview a:focus,
+.rn_Overview a:hover {
+    text-decoration:underline;
+}
+.rn_Overview a.rn_Questions {
+    background-position: 0 2px;
+}
+.rn_Overview a.rn_Profile {
+    background-position: 2px -38px;
+}
+.rn_Overview a.rn_Notifs {
+    background-position: 0 -74px;
+}
+.rn_Overview strong.rn_Contracts {
+    background-position: 0 -114px;
+}
+.rn_Overview div.rn_Questions,
+.rn_Overview div.rn_Notifs,
+.rn_Overview div.rn_Profile,
+.rn_Overview div.rn_Contracts {
+    margin:10px 0 40px 15px;
+}
+.rn_QuestionList caption {
+    font-size:1.333em;
+    font-weight:bold;
+    line-height:1.4em;
+}
+/*********************
+login page
+*********************/
+.rn_Account.rn_LoginForm h2{
+    color:#404040;
+    font-size:1em;
+    line-height:1.3em;
+}
+.rn_Account.rn_LoginForm .rn_Column.rn_RightColumn{
+    width:47%;
+    position: relative;
+    left:20px;
+}
+.rn_Account.rn_LoginForm .rn_Column.rn_LeftColumn{
+    border-right:1px solid #CCC;
+    min-height: 350px;
+    *position:relative;
+}
+.rn_Account.rn_LoginForm .rn_MiddleBuffer{
+    background:#FFF;
+    bottom:-80px;
+    left:-9px;
+    padding:4px 0;
+    position:relative;
+}
+.rn_Account.rn_LoginForm .rn_ThirdPartyLogin{
+    /*To ensure proper IE7 behavior with presentation CSS*/
+    *position: relative;
+}
+/**********************
+Create account page
+***********************/
+.rn_CreateAccount .rn_ThirdPartyLogin{
+    width:550px;
+    min-height:115px;
+    padding-left: 5px;
+}
+/********************************
+    11. General Accessibility
+*********************************/
+#rn_SkipNav a {
+    left:0;
+    height:1px;
+    overflow:hidden;
+    position:absolute;
+    top:-500px;
+    width:1px;
+}
+#rn_SkipNav a:active, #rn_SkipNav a:focus {
+    background-color:#FFF;
+    height:auto;
+    left:auto;
+    top:auto;
+    width:auto;
+}
+
+/****************************
+    12. Print Style
+    (only display content)
+****************************/
+/**@media print{
+    body{
+        font-size:1em;
+    }
+    #rn_DetailTools, #rn_Header, #rn_Navigation, #rn_SideBar, #rn_Footer{
+        display:none;
+    }
+    #rn_Footer, #rn_Body, #rn_PageContent, #rn_PageTitle, #rn_AdditionalInfo{
+        overflow:visible;
+    }
+    #rn_Body {
+        border: 0;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}*/
+
+/*******************************************
+    13. Chat Related
+*******************************************/
+#rn_ChatLaunchFormDiv.rn_ChatForm.rn_Loading {
+    background: url(images/loading.gif) no-repeat center center;
+    height:auto !important;
+    height:66px;
+    min-height:66px;
+}
+
+/**#rn_ChatContainer {
+    height:100%;
+    margin:0 auto;
+    overflow:hidden;
+    text-align:left;
+}
+
+#rn_ChatDialogContainer {
+    background-color:#EBEFF5;
+    border:1px solid #555;
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:relative;
+    min-height: 450px;
+}**/
+
+#rn_ChatDialogHeaderContainer {
+    height:30px;
+    overflow:visible;
+    padding:4px;
+    text-align:right;
+    vertical-align:middle;
+}
+
+#rn_ChatDialogTitle {
+    margin-top: 8px;
+    font-weight: bold;
+    color:#2F2F2F;
+    font-size:1.167em;
+    line-height:1.3em;
+}
+
+#rn_ChatDialogHeaderButtonContainer button{
+    background: none;
+    border-color: transparent;
+    color: #555;
+    margin-right: .25em;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 2px;
+}
+
+#rn_ChatDialogHeaderButtonContainer button:hover,
+#rn_ChatDialogHeaderButtonContainer button:focus{
+    background-color: #F8F8F8;
+    border-color: #CCC #555 #555 #CCC;
+    color: #000;
+}
+
+#rn_InChatButtonContainer {
+    overflow: visible;
+    text-align: right;
+    margin-top: 1em;
+}
+
+#rn_PreChatButtonContainer{
+    overflow: visible;
+    text-align: right;
+}
+
+#rn_ChatQueueSearchContainer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#rn_ChatQueueSearchContainer div.rn_ScreenReaderOnly {
+    display: none;
+}
+
+#rn_ChatFooter {
+    padding: 10px;
+}
+
+#rn_ChatLogo {
+    height:100px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width:135px;
+}
+
+@media print{
+    #rn_ChatDialogHeaderContainer,
+    #rn_InChatButtonContainer,
+    #rn_PreChatButtonContainer,
+    #rn_ChatQueueSearchContainer,
+    #rn_ChatLogo {
+        display:none;
+    }
+
+    #rn_ChatContainer {
+        border:0;
+        /*overflow: visible;*/
+        height: auto;
+    }
+
+    #rn_ChatDialogContainer {
+        overflow: visible;
+        height: auto;
+    }    
+}
+
+#rn_VirtualAssistantContainer {
+    clear: both;
+    margin: 0 1em 0;
+    overflow: hidden;
+    min-width: 333px;
+}
+
+#rn_ChatDialogVAContainer {
+    background-color:#EBEFF5;
+    border:1px solid #555;
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:relative;
+}
+
+/*******************************************
+    14. High Contrast Mode
+    Microsoft® Windows® has an accessibility
+    feature known as High Contrast Mode.
+    This mode sets all background-images
+    to `none`, so remediation steps are
+    needed to add back in icon indicators.
+    The following rules take advantage of
+    the :before pseudo element, so IE > IE7
+    display unicode character equivalents
+    for icons in backgrounds (e.g. x, >, <).
+*******************************************/
+.rn_HighContrastMode input,
+.rn_HighContrastMode input[type="submit"],
+.rn_HighContrastMode button,
+.rn_HighContrastMode textarea,
+.rn_HighContrastMode select {
+    /* In FF, if border is set to anything other than
+      the UA default then the border won't show up.
+      Strangely, it does become visible if you set
+      the border style to inset or outset.
+      So, Hello 1995! */
+    border: 1px outset;
+}
+/* Dialog close icon */
+.rn_HighContrastMode.yui-skin-sam .container-close {
+    text-indent: 0;
+}
+.rn_HighContrastMode.yui-skin-sam .container-close:before {
+    content: "\00D7";
+    display: block;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+}
+/* YUI TreeView */
+.rn_HighContrastMode .ygtvfocus {
+    border: 1px solid #000;
+}
+.rn_HighContrastMode .ygtvtp:before,
+.rn_HighContrastMode .ygtvlp:before,
+.rn_HighContrastMode .ygtvlph:before,
+.rn_HighContrastMode .ygtvtph:before,
+.rn_HighContrastMode .ygtvloading:before {
+    content: "\25BA";
+    position: relative;
+    top: 6px;
+}
+.rn_HighContrastMode .ygtvtm:before,
+.rn_HighContrastMode .ygtvlm:before,
+.rn_HighContrastMode .ygtvlmh:before,
+.rn_HighContrastMode .ygtvtmh:before {
+    content: "\25BC";
+    position: relative;
+    top: 6px;
+}
+
+/**
+* From treeview-menu.css
+*/
+/* first or middle sibling, no children */
+.ygtvtn {
+    background: transparent;
+    width:1em;
+    height:20px;
+}
+
+/* first or middle sibling, collapsable */
+.ygtvtm {
+    background: url(images/treeview-menu-sprite.gif) 0 6px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* first or middle sibling, collapsable, hover */
+.ygtvtmh {
+    background: url(images/treeview-menu-sprite.gif) 0 -794px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* first or middle sibling, expandable */
+.ygtvtp {
+    background: url(images/treeview-menu-sprite.gif) 0 -2392px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* first or middle sibling, expandable, hover */
+.ygtvtph {
+    background: url(images/treeview-menu-sprite.gif) 0 -3191px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* last sibling, no children */
+.ygtvln {
+    background: transparent;
+    width:1em;
+    height:20px;
+}
+
+/* Last sibling, collapsable */
+.ygtvlm {
+    background: url(images/treeview-menu-sprite.gif) 0 6px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* Last sibling, collapsable, hover */
+.ygtvlmh {
+    background: url(images/treeview-menu-sprite.gif) 0 -794px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* Last sibling, expandable */
+.ygtvlp {
+    background: url(images/treeview-menu-sprite.gif) 0 -2392px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* Last sibling, expandable, hover */
+.ygtvlph {
+    background: url(images/treeview-menu-sprite.gif) 0 -3191px no-repeat;
+    width:1em;
+    height:22px;
+    cursor:pointer;
+}
+
+/* Loading icon */
+.ygtvloading {
+    background: url(images/treeview-menu-loading.gif) -2px 4px no-repeat;
+    width:1em;
+    height:22px;
+}
+
+/* the style for the empty cells that are used for rendering the depth
+ * of the node */
+.ygtvdepthcell {
+    background: transparent;
+    width:1em;
+    height:20px;
+}
+
+.ygtvblankdepthcell {
+    background: transparent;
+    width:1em;
+    height:20px;
+}
+
+/* the style of the div around each node */
+.ygtvitem {
+    border: 0 solid grey;
+}
+
+/* the style of the div around each node's collection of children */
+* html .ygtvchildren {
+    height:1%;
+}
+
+/* the style of the text label in ygTextNode */
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+    color:#111;
+    margin-left:2px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/**Added to default yui css **/
+.ygtvfocus {
+    background-color: #c0e0e0;
+    border: none;
+}
+.ygtvfocus .ygtvlabel, .ygtvfocus .ygtvlabel:link, .ygtvfocus .ygtvlabel:visited, .ygtvfocus .ygtvlabel:hover {
+    background-color: #c0e0e0;
+}
+
+.ygtvfocus  a {
+    outline-style:none;
+}
+
+a.ygtvspacer {
+    display:block;
+    text-decoration:none;
+    width:100%;
+}
+/* AnswerList widget styles */
+.rn_AnswerList .yui3-datatable-caption{
+    color:#000;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #EBEFF5;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    font-weight:normal;
+    font-size:1.333em;
+}
+
+.rn_AnswerList .yui3-datatable-caption h2 {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    font-weight: normal;
+}
+
+.rn_AnswerList .yui3-datatable-header{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #EBEFF5;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+.rn_AnswerList .yui3-datatable-cell{
+    background-color:transparent;
+}
+
+.rn_AnswerList .yui3-datatable-even .yui3-datatable-cell{
+    background-color:#fff;
+}
+
+.rn_AnswerList .yui3-datatable-odd .yui3-datatable-cell{
+    background-color:#F7F7F7;
+}
+
+.rn_ArticlesSortAsc:after {
+    font-size: 15px;
+}
+
+.rn_ArticlesSortDesc:after {
+    font-size: 16px;
+}
+
+/* Facet widget styles */
+.rn_Facet .rn_ClearFacets {
+    font-weight: normal;
+    color: #00C;
+}
+
+.rn_Facet .rn_Content ul li {
+    font-weight: bold;
+}
+
+.rn_Facet .rn_FacetsList {
+    border: 1px solid #BEBEBE;
+}
+
+.rn_Facet .rn_FacetsTitle {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #EBEFF5;
+    font-weight: normal;
+    border: 1px solid #CCC;
+}
+
+.rn_Facet .rn_ActiveFacet {
+    background: #e1eefd;
+    border: 1px solid #CCC;
+}
+
+.rn_Facet .rn_FacetLink {
+    color: #00C;
+    font-weight: lighter;
+}
+
+/* OkcsProductCategorySearchFilter widget styles */
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton {
+    background:#FFF url(../images/split_Button_Arrow.png) no-repeat scroll right center;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_Panel {
+    background:#FFF;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_SelectionButtons {
+    background:#F8F8F8;
+}
+
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton:hover,
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton:focus {
+    background-color:#F8F8F8;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_Label {
+    color:#333;
+    font-weight:bold;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_OkcsProductCategorySearchFilterExplorerView {
+    border: 1px solid #BEBEBE;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorer {
+    border:1px solid #CCC;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorerTitleDiv {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #EBEFF5;
+    font-weight: normal;
+    border-bottom: 1px solid #CCC;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorerLinkSelected {
+    background: #EBEFF5;
+    border: 1px solid #CCC;
+}

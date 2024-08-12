@@ -1,0 +1,12 @@
+input: <rn:widget path="standard/utils/TwitterPosts" twitter_account="OracleServCloud"/>
+removecontent: true
+output:
+<div id="rn_TwitterPosts_0" class="rn_TwitterPosts">
+    <div class="rn_displayTimeline" aria-live="polite">
+        <a class="twitter-timeline"
+           href="OracleServCloud"
+           data-width="300"
+           data-height="500"
+            >Tweets</a>
+    </div>
+</div>

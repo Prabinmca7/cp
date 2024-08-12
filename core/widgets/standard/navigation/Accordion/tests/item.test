@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/navigation/Accordion' toggle='toggleID'/><div id='toggleID'></div><div id='itemToToggleID'></div>
+jstestfile: base.test.js
+removecontent: true
+template: mobile
+output: <div id='toggleID'></div><div id='itemToToggleID'></div>

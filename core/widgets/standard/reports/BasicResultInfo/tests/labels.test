@@ -1,0 +1,9 @@
+input: <rn:widget path='standard/reports/BasicResultInfo' label_suggestion='MyLabelSuggestion' label_dictionary='MyLabelDict' label_spell='MyLabelSpell' label_no_results='MyLabelNoResults' label_no_results_suggestions='MyLabelNoResults' label_common='MyLabelCommon' label_results='Result %d of %d out of %d' label_results_search_query='Result %d of %d out of %d for %s'/>
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+template: basic
+output:
+<div class="rn_BasicResultInfo rn_ResultInfo">
+                                    <div class="rn_Results">
+            Result 1 of 10 out of 19        </div>
+    </div>

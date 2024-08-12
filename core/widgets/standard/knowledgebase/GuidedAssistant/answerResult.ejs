@@ -1,0 +1,10 @@
+<rn:block id="preAnswersResult"/>
+<div class="rn_Result rn_ResultLink">
+<% if (heading) { %>
+    <div class="rn_ResultHeading"><%= heading %></div>
+<% } %>
+<% for (var i = 0; i < answers.length; i++) { %>
+    <a href="<%= answers[i].link %>" data-answer="<%= answers[i].id %>" data-guide="<%= guideID %>" data-question="<%= questionID %>" data-response="<%= responseID %>" target="<%= target %>"><%= answers[i].summary %></a>
+<% } %>
+</div>
+<rn:block id="postAnswersResult"/>

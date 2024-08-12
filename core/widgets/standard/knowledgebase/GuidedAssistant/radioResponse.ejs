@@ -1,0 +1,11 @@
+<fieldset>
+    <legend>
+        <span class="rn_ScreenReaderOnly"><%= accessibleText %></span>
+    </legend>
+<% for (var i = 0; i < responses.length; i++) { %>
+    <div>
+        <input type="radio" data-level="<%= level %>" data-guide="<%= guideID %>" data-question="<%= questionID %>" data-response="<%= responses[i].responseID %>" id="<%= id + responses[i].responseID %>" name="<%= id + '_' + questionID %>" value="<%= responses[i].responseID %>"/>
+        <label for="<%= id + responses[i].responseID %>"><%= responses[i].text %></label>
+    </div>
+<% } %>
+</fieldset>

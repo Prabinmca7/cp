@@ -1,0 +1,3 @@
+input: <rn:widget path="standard/input/SocialUserAvatar"/>
+removecontent: true
+output: 

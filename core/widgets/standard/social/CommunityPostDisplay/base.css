@@ -1,0 +1,8 @@
+.rn_CommunityPostDisplay p{
+    line-height: normal;
+    margin-bottom: 0;
+}
+.rn_CommunityPostDisplay .rn_CommentText,
+.rn_CommunityPostDisplay input[type="button"]{
+    display: block;
+}

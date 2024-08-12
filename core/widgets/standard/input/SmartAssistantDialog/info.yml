@@ -1,0 +1,123 @@
+version: "3.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  get_answer_content:
+    name: rn:msg:GET_ANSWER_CONTENT_LBL
+    type: AJAX
+    description: rn:msg:DEFINES_ANS_ENDPOINT_ACCESSING_ANS_MSG
+    default: /ci/ajaxRequest/getAnswer
+  get_discussion_content:
+    name: rn:msg:GET_SOCIAL_DISCUSSION_CONTENT_LBL
+    type: AJAX
+    description: rn:msg:DEFINES_S_DISC_TO_ANS_S_CONT_ID_MSG
+    default: /ci/ajaxRequest/getDiscussion
+  label_banner:
+    name: rn:msg:BANNER_LABEL_LBL
+    description: rn:msg:LABEL_DISP_BANNER_SA_RES_LBL
+    default: rn:msg:QUESTION_HASNT_SUBMITTED_MSG
+    type: STRING
+  label_prompt:
+    name: rn:msg:PROMPT_LABEL_LBL
+    description: rn:msg:LABEL_DISP_INTRODUCTION_SA_RES_LBL
+    default: rn:msg:FLLOWING_ANS_HELP_IMMEDIATELY_MSG
+    type: STRING
+  label_no_results:
+    name: rn:msg:SMARTASSISTANT_NO_RESULTS_LABEL_LBL
+    description: rn:msg:LABEL_DISP_SMARTASSISTANT_RES_FND_MSG
+    default: rn:msg:SORRY_NO_SUGGESTIONS_WERE_FOUND_MSG
+    type: STRING
+  label_submit_button:
+    name: rn:msg:SUBMIT_BUTTON_LABEL_CMD
+    description: rn:msg:LABEL_DISP_BTN_CONTINUE_SUBMITTING_MSG
+    default: rn:msg:FINISH_SUBMIT_QUESTION_CMD
+    type: STRING
+  label_cancel_button:
+    name: rn:msg:CANCEL_BUTTON_LABEL_CMD
+    description: rn:msg:LBEL_DISP_BTN_CLOSES_DIALOG_MSG
+    default: rn:msg:EDIT_QUESTION_CMD
+    type: STRING
+  label_solved_button:
+    name: rn:msg:SOLVED_BUTTON_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LBL_DSP_BTN_CLSES_DIALOG_MSG), 'solved_url')
+    type: STRING
+    default: rn:msg:MY_QUESTION_IS_ANSWERED_MSG
+  label_dialog_title:
+    name: rn:msg:DIALOG_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_DIALOG_TITLE_LBL
+    default: rn:msg:FINISH_SUBMITTING_YOUR_QUESTION_CMD
+    type: STRING
+  label_collapsed:
+    name: rn:msg:COLLAPSED_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_TRUE_LABEL_PLACED_ANS_LINK_MSG),
+      'display_inline')
+    default: rn:msg:CLOSED_DOUBLE_TAP_PRESS_ENTER_OPEN_LBL
+    type: STRING
+  label_expanded:
+    name: rn:msg:EXPANDED_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_TRUE_LBEL_PLACED_ANS_LINK_MSG), 'display_inline')
+    default: rn:msg:OPEN_DOUBLE_TAP_PRESS_ENTER_CLOSE_LBL
+    type: STRING
+  label_accesskey:
+    name: rn:msg:ACCESSKEY_LABEL_LBL
+    description: rn:msg:SCREEN_READER_USERS_LABELPLACED_MSG
+    default: rn:msg:PREFER_KEYBOARD_PCT_S_PLUS_1_PCT_D_LBL
+    type: STRING
+  label_download_attachment:
+    name: rn:msg:DOWNLOAD_ATTACHMENT_LABEL_CMD
+    description: rn:msg:DISPLAYINLINE_TRUE_L_ATTACHMENT_ANSWER_MSG
+    default: rn:msg:DOWNLOAD_ATTACHMENT_CMD
+    type: STRING
+  label_view_guide:
+    name: rn:msg:VIEW_ANSWER_WITH_GUIDE_LABEL_CMD
+    description: rn:msg:DISPLAYINLINE_T_L_TAG_GDD_ASST_RESPONSE_MSG
+    default: rn:msg:VIEW_ANSWER_WITH_GUIDE_CMD
+    type: STRING
+  solved_url:
+    name: rn:msg:SOLVED_URL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(URL_NAVIGATED_CLICKS_BUTTON_PCT_S_MSG),
+      'label_solved_button')
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_HOME_URL)
+    type: STRING
+  accesskeys_enabled:
+    name: rn:msg:ACCESSKEYS_ENABLED_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_TRUE_SPECIFIES_ACCESSKEYS_ADD_MSG),
+      'display_inline')
+    default: true
+    type: BOOLEAN
+  display_inline:
+    name: rn:msg:ANSWERS_SOCIAL_DISCUSSIONS_INLINE_LBL
+    description: rn:msg:L_DT_DSC_DT_DT_PPND_CT_XPD_DSP_CNT_CD_SS_MSG
+    default: true
+    type: BOOLEAN
+  button_ordering:
+    name: rn:msg:BUTTON_ORDERING_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(COMMA_SEPARATED_L_PCT_S_PCT_S_PCT_S_LBL),
+      'label_solved_button', 'label_submit_button', 'label_cancel_button')
+    default: label_solved_button, label_submit_button, label_cancel_button
+    type: STRING
+  display_button_as_link:
+    name: rn:msg:DISPLAY_BUTTON_AS_LINK_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(COMMA_SEPARATED_L_PCT_S_PCT_S_PCT_S_MSG),
+      'label_solved_button', 'label_submit_button', 'label_cancel_button')
+    type: STRING
+    default: label_cancel_button
+  dnc_label_cancel_button:
+    name: rn:msg:CREATE_INCIDENT_LABEL_CANCEL_BTN_MSG
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CREATE_INC_RULE_ENC_LABEL_PCT_S_MSG), 'label_cancel_button')
+    type: STRING
+  dnc_label_banner:
+    name: rn:msg:CREATE_INCIDENT_LABEL_BANNER_MSG
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CREATE_INC_RULE_ENC_LABEL_PCT_S_MSG), 'label_banner')
+    type: STRING
+  dnc_label_dialog_title:
+    name: rn:msg:CREATE_INCIDENT_LABEL_PROMPT_MSG
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CREATE_INC_RULE_ENC_LABEL_PCT_S_MSG), 'label_dialog_title')
+    type: STRING
+  dnc_redirect_url:
+    name: rn:msg:CREATE_INCIDENT_REDIRECT_URL_MSG
+    description: rn:msg:CREATE_INC_RLE_ENC_DIRECTED_URL_MSG
+    type: STRING
+info:
+  description: rn:msg:T_SGG_SGG_SSS_PR_CRT_QST_DD_SGG_CR_RL_CC_MSG

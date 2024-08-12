@@ -1,0 +1,6 @@
+input: <rn:widget path="standard/searchsource/SourceResultDetails" source_id="KFSearch" per_page="1"/>
+removecontent: true
+urlparameters: /kw/phone
+output:
+<div id="rn_SourceResultDetails_0" class="rn_SourceResultDetails">
+                    Results 1 - 1 of 18            </div>

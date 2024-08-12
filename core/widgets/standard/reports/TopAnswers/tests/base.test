@@ -1,0 +1,57 @@
+input: <rn:widget path="standard/reports/TopAnswers"/>
+removecontent: true
+output:
+<div id="rn_TopAnswers_0" class="rn_TopAnswers">
+    <ul>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/52" >Enabling MMS on iPhone 3G and iPhone 3GS</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/54" >iPhone: Basic troubleshooting</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/55" >iPhone not recognized in iTunes for Windows</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/56" >iPhone backups</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/57" >iPhone: Charging the battery</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/59" >Understanding cellular data networks</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/60" >iPhone: About the SIM PIN</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/62" >DROID - Transfer files to/from my computer</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/63" >DROID - Airplane mode</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/64" >DROID - Tips for extending battery life</a></h3>
+                </div>
+                        </li>
+            </ul>
+</div>

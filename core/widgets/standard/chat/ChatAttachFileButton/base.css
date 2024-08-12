@@ -1,0 +1,29 @@
+.rn_ChatAttachFileButton img {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.rn_ChatAttachFileButton input[type="file"] {
+    display: none;
+}
+
+.rn_ChatFileAttachContent input[type="file"] {
+    width: 275px;
+}
+
+.rn_ChatFileAttachContent span {
+    display:block;
+}
+
+.rn_ChatAttachFileButton form button {
+    margin: auto;
+}
+
+.rn_ChatAttachFileButtonForm div {
+    display: inline;
+}
+
+.rn_FileAttachmentUpload label {
+    display:none;
+}

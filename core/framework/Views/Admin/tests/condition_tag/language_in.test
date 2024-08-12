@@ -1,0 +1,69 @@
+input:
+<rn:condition language_in="en-GB,en-AU">
+    Language not listed: fail
+<rn:condition_else/>
+    Language not listed: success
+</rn:condition>
+<rn:condition language_in="en-US,en-AU">
+    Language first of two: success
+<rn:condition_else/>
+    Language first of two: fail
+</rn:condition>
+<rn:condition language_in="en-AU,en-US">
+    Language second of two: success
+<rn:condition_else/>
+    Language second of two: fail
+</rn:condition>
+<rn:condition language_in="en-US">
+    Language alone: success
+<rn:condition_else/>
+    Language alone: fail
+</rn:condition>
+<rn:condition language_in="en-GB">
+    Language not listed: fail
+<rn:condition_else/>
+    Language not listed: success
+</rn:condition>
+<rn:condition language_in="en-GB,en-US,en-AU">
+    Language in middle: success
+<rn:condition_else/>
+    Language in middle: fail
+</rn:condition>
+<rn:condition language_in="en-GB    en_US ,   en-AU">
+    Language in middle dirty 1: success
+<rn:condition_else/>
+    Language in middle dirty 1: fail
+</rn:condition>
+<rn:condition language_in="en-GB ,   en_US en-AU">
+    Language in middle dirty 2: success
+<rn:condition_else/>
+    Language in middle dirty 2: fail
+</rn:condition>
+<rn:condition language_in="en-GB,en_US,en-AU">
+    Language in middle underscore: success
+<rn:condition_else/>
+    Language in middle underscore: fail
+</rn:condition>
+<rn:condition language_in="en-GB ,   EN_us en-AU">
+    Language in middle dirty 2: success
+<rn:condition_else/>
+    Language in middle dirty 2: fail
+</rn:condition>
+<rn:condition language_in="en-GB ,   EN_Vs en-AU">
+    Language not listed dirty: fail
+<rn:condition_else/>
+    Language not listed dirty: success
+</rn:condition>
+removecontent: true
+output:
+Language not listed: success
+    Language first of two: success
+    Language second of two: success
+    Language alone: success
+    Language not listed: success
+    Language in middle: success
+    Language in middle dirty 1: success
+    Language in middle dirty 2: success
+    Language in middle underscore: success
+    Language in middle dirty 2: success
+    Language not listed dirty: success

@@ -1,0 +1,12 @@
+@import 'widget-includes';
+
+.rn_VirtualAssistantBanner {
+    float: right;
+    max-height: 100px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.rn_VirtualAssistantBanner a:focus img {
+    border: 2px solid #666;
+}

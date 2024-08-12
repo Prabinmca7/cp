@@ -1,0 +1,90 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard]
+attributes:
+  object_type:
+    name: rn:msg:OBJECT_TYPE_LBL
+    description: rn:msg:TYPE_OF_THE_SOCIAL_OBJECT_MSG
+    default: CommunityQuestion
+    type: OPTION
+    options:
+    - CommunityComment
+    - CommunityQuestion
+    - CommunityUser
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_TO_DISPLAY_ABOVE_THE_BREADCRUMBS_MSG
+    default: rn:msg:FILTERS_APPLIED_LBL
+  label_date_filter:
+    name: rn:msg:DATE_FILTER_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_DATE_FILTER_MSG
+    default: rn:msg:UPDATED_DATE_LBL
+    type: STRING
+  label_status_filter:
+    name: rn:msg:STATUS_FILTER_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_STATUS_FILTER_MSG
+    default: rn:msg:STATUS_LBL
+    type: STRING
+  label_flag_filter:
+    name: rn:msg:FLAG_FILTER_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_FLAG_FILTER_MSG
+    default: rn:msg:FLAG_LBL
+    type: STRING
+  label_product_filter:
+    name: rn:msg:PRODUCT_FILTER_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_PRODUCT_FILTER_MSG
+    default: rn:msg:PRODUCT_LBL
+    type: STRING
+  label_category_filter:
+    name: rn:msg:CATEGORY_FILTER_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_CATEGORY_FILTER_MSG
+    default: rn:msg:CATEGORY_LBL
+    type: STRING
+  label_prod_cat_no_value:
+    name: rn:msg:PRODUCTCATEGORY_NO_VALUE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_USE_PRODUCT_CATEGORY_FILTER_WHEN_LBL
+    default: rn:msg:NO_VAL_LBL
+  label_filter_remove:
+    name: rn:msg:FILTER_REMOVE_LABEL_LBL
+    type: STRING
+    description: rn:msg:TOOLTIP_HOVERS_OVER_ICON_CLEAR_FILTER_MSG
+    default: rn:msg:REMOVE_FILTER_LBL
+  date_filter_options:
+    name: rn:msg:DATE_FILTER_OPTIONS_UC_LBL
+    description: rn:msg:CMM_FLTRS_VLS_DF_LBL_LST24HRS_2_HRS_LST_MSG
+    type: STRING
+    default: rn:php:sprintf('all > %s, last_24_hours > %s, last_7_days > %s, last_30_days > %s, last_90_days > %s, last_365_days > %s, custom > %s',
+            \RightNow\Utils\Config::getMessage(ALL_LBL),
+            \RightNow\Utils\Config::getMessage(LAST_24_HOURS_LBL),
+            \RightNow\Utils\Config::getMessage(LAST_7_DAYS_LBL),
+            \RightNow\Utils\Config::getMessage(LAST_30_DAYS_LBL),
+            \RightNow\Utils\Config::getMessage(LAST_90_DAYS_LBL),
+            \RightNow\Utils\Config::getMessage(LAST_365_DAYS_LBL),
+            \RightNow\Utils\Config::getMessage(CUSTOM_LBL))
+  report_id:
+    name: rn:msg:REPORT_LBL
+    type: INT
+    description: rn:msg:ID_NUM_OF_MODER_RPT_TO_USE_MSG
+    default: 15100
+  max_date_range_interval:
+    name: rn:msg:MAX_DATE_RANGE_INTERVAL_LBL
+    description: rn:msg:MAXIMUM_EXPR_FMT_EX_90_DAYS_2_YEARS_ETC_MSG
+    default: 90 days
+    type: string
+  hide_pending_status:
+    name: rn:msg:HIDE_PENDING_STATUS_LBL
+    description: rn:msg:HIDE_PENDING_STATUS_LBL
+    default: true
+    type: BOOLEAN
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Community
+    - Moderation
+  description: rn:msg:L_MDRTN_CFG_MDRTNFLTRDLG_RM_FLTR_FLTR_VL_MSG

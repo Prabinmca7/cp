@@ -1,0 +1,16 @@
+.rn_ChatCoBrowseButton img {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+/* QA 100128-000064: make IFRAME visible and its size at least (1,1).
+   Its position is made to (-1000, -1000) to ensure it won't show up in the screen. */
+.rn_ChatCoBrowseButton iframe {
+    visibility: visible;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+}

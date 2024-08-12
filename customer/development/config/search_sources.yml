@@ -1,0 +1,14 @@
+#
+# Search Source Model Extensions
+#
+# The standard search source mapping file (framework/Config/search_sources.yml) will load the standard model specific to the source key. This custom mapping file 
+# can override that model and will load it when that source key is used on any page. Also make sure that your custom source model extends the standard source
+# model. The array name ('SocialSearch' in the below example) is the search source key and the value to the array's key 'model' is your custom model name. 
+#
+#
+# Example:
+# -Overriding the standard search source model with a model at development/models/custom/MySocialSearch.php
+#
+# SocialSearch:
+#     model: MySocialSearch
+#

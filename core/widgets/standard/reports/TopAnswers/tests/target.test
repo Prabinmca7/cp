@@ -1,0 +1,60 @@
+input: <rn:widget path="reports/TopAnswers" url_type_target="_top"/>
+config: CACHE_KF_API_ENABLED|0
+postsql: update answers set solved_count=0 where a_id=50
+presql: update answers set solved_count=50 where a_id=50
+removecontent: true
+output:
+<div id="rn_TopAnswers_0" class="rn_TopAnswers">
+    <ul>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/50" target='_top'>url type</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/52" >Enabling MMS on iPhone 3G and iPhone 3GS</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/54" >iPhone: Basic troubleshooting</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/55" >iPhone not recognized in iTunes for Windows</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/56" >iPhone backups</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/57" >iPhone: Charging the battery</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/59" >Understanding cellular data networks</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/60" >iPhone: About the SIM PIN</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/62" >DROID - Transfer files to/from my computer</a></h3>
+                </div>
+                        </li>
+                    <li>
+                <div class="rn_Title">
+                                        <h3><a href="/app/answers/detail/a_id/63" >DROID - Airplane mode</a></h3>
+                </div>
+                        </li>
+            </ul>
+</div>

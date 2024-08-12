@@ -1,0 +1,6 @@
+<% if(currentRow === 0){ %>
+	<span class="rn_ScreenReaderOnly"><%= selectAll %></span>
+    <input <%= rowExist ? '' : 'disabled="disabled" ' %>type="checkbox" value="1" title="<%= selectAll %>">
+<% }else{ %>
+    <%= headers[currentRow].heading %>
+<% } %>

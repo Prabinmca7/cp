@@ -1,0 +1,20 @@
+input: <rn:widget path="standard/login/OpenLogin" controller_endpoint="/ci/openlogin/openid/authorize" openid="true" label_process_explanation="You'll be taken to your OpenID provider. Once you log in, your provider will send you back here where you'll be logged in!" label_service_button="AOL" label_login_button="Log in using your AOL account" openid_placeholder="ENTER YOUR AOL USERNAME" preset_openid_url="http://openid.aol.com/[username]"/>
+jstestfile: openid.test.js
+removecontent: true
+validate: false
+output:
+<div id="rn_OpenLogin_0" class="rn_OpenLogin">
+    <a href="javascript:void(0)" id="rn_OpenLogin_0_ProviderButton" class="rn_LoginProvider rn_AOL">AOL</a>
+    <div id="rn_OpenLogin_0_ActionArea" class="rn_ActionArea rn_Hidden" aria-live="assertive">
+        <form id="rn_OpenLogin_0_Info" class="rn_OpenLoginForm rn_OpenIDForm" onsubmit="return false;">
+                    <label for="rn_OpenLogin_0_ProviderUrl" class="rn_ScreenReaderOnly">Enter your OpenID provider URL</label>
+            <input id="rn_OpenLogin_0_ProviderUrl" type="text" autocorrect="off" autocapitalize="off" value="ENTER YOUR AOL USERNAME"/>
+                    <input type="submit" id="rn_OpenLogin_0_LoginButton" aria-labelledby="rn_OpenLogin_0_LoginButtonLabel" class="rn_LoginButton rn_AOL" value="Log in using your AOL account"/>
+            <div class="rn_Explanation">
+                <label for="rn_OpenLogin_0_LoginButton" id="rn_OpenLogin_0_LoginButtonLabel">
+                    <span class="rn_Header">What will happen:<em></em></span>
+                    You'll be taken to your OpenID provider. Once you log in, your provider will send you back here where you'll be logged in!                </label>
+            </div>
+        </form>
+    </div>
+</div>

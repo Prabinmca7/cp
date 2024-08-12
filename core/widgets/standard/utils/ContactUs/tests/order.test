@@ -1,0 +1,12 @@
+input: <rn:widget path="standard/utils/ContactUs" channels="community,question" label_header="dont call us"/>
+removecontent: true
+output:
+<div id="rn_ContactUs_0" class="rn_ContactUs">
+    <div class="rn_Well">
+        <h2>dont call us</h2>
+                    <div class="rn_CommunityLink">
+    <a href="/app/social/ask">Ask the Community</a>
+    </div>                    <div class="rn_QuestionLink">
+    <a href="/app/ask">Ask a Question</a>
+    </div>            </div>
+</div>

@@ -1,0 +1,12 @@
+input: <rn:widget path="standard/searchsource/SocialResultListing" source_id="SocialSearch"/>
+removecontent: true
+output:
+<div id="rn_SocialResultListing_0" class="rn_SocialResultListing rn_SourceResultListing">
+    <div id="rn_SocialResultListing_0_Alert" aria-live="polite" class="rn_ScreenReaderOnly"></div>
+        <div id="rn_SocialResultListing_0_Content" class="rn_Content">
+            <span class="rn_NoResults">No results found.</span>
+    </div>
+    <div class="rn_AdditionalResults">
+            </div>
+            <script type="text/json" id="rn_SocialResultListing_0_HistoryData">{"filters":{"query":{"value":null,"key":"kw","type":"query"},"sort":{"value":null,"key":"sort","type":"sort"},"direction":{"value":null,"key":"dir","type":"direction"},"page":{"value":1,"key":"page","type":"page"},"product":{"value":null,"key":"p","type":"product"},"category":{"value":null,"key":"c","type":"category"},"author":{"value":null,"key":"author","type":"author"},"updatedTime":{"value":null,"key":"updated","type":"updatedTime"},"createdTime":{"value":null,"key":"created","type":"createdTime"},"numberOfBestAnswers":{"value":null,"key":"ba","type":"numberOfBestAnswers"},"offset":{"value":0,"key":null,"type":"offset"},"limit":{"value":10},"status":{"value":"29","key":"status","type":"status"}},"offset":0,"query":"","results":[],"size":0,"total":0}</script>
+    </div>

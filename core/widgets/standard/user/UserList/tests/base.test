@@ -1,0 +1,42 @@
+input: <rn:widget path="standard/user/UserList" max_user_count="1"/>
+filter: @(?:\/user\/\d+|[0-9]{1,}                        </td>)@
+removecontent: true
+output:
+<div id="rn_UserList_0" class="rn_UserList">
+    <div class="rn_UsersView">
+                    <div class="rn_UsersTableView">
+    <table id="rn_UserList_0_UserListTable">
+        <caption><span class='rn_ScreenReaderOnly'>Table containing list of top users</span></caption>
+        <thead>
+            <tr>
+                <th class="rn_DisplayName" scope="col">User</th>
+                <th class="rn_Count" scope="col">Questions</th>
+            </tr>
+        </thead>
+                    <tbody>
+                                    <tr>
+                        <td class="rn_DisplayNameDetails">
+                                                            <div class="rn_ProfileAvatar">
+                                                                                    <span class="rn_UserAvatar" title="useractive1">
+            <a itemprop="url" href="/app/public_profile/">
+            <span class="rn_Avatar rn_Small rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor1" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_ScreenReaderOnly">useractive1 Avatar</span>
+                </a>
+    </span>
+                                                                        </div>
+                                                        <div class="rn_DisplayName">
+                                    <a href="/app/public_profile">useractive1</a>
+                            </div>
+                        </td>
+                        <td class="rn_Count">
+                                
+                    </tr>
+                            </tbody>
+            </table>
+</div>
+            </div>
+    </div>

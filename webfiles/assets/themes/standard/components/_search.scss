@@ -1,0 +1,19 @@
+// Provides sizing for widgets on the search pages when page width is reduced
+@mixin medium-search-width() {
+    @include media($rn-medium) {
+        @include row;
+        @include shift(2);
+        @include span-columns(8);
+
+        margin-bottom: 1em;
+    }
+}
+
+// Provides sizing for widgets on the search pages when page width is reduced even more
+@mixin small-search-width() {
+    @include media($rn-small) {
+        @include row;
+        @include shift(0);
+        @include span-columns(12);
+    }
+}

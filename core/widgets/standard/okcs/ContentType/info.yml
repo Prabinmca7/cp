@@ -1,0 +1,99 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  default_content_type:
+    name: rn:msg:DEFAULT_CONTENT_TYPE_LBL
+    type: STRING
+    description: rn:msg:RF_KY_RF_KY_FND_PP_TYP_TYP_WRKS_DSPLYLL_MSG
+  content_type_list:
+    name: rn:msg:CONTENT_TYPE_L_LBL
+    type: STRING
+    description: rn:msg:SPC_TYP_TYP_SBST_TYP_DD_CMMSPRTD_RF_TYP_MSG
+  list_display:
+    name: rn:msg:LIST_DISPLAY_LBL
+    type: OPTION
+    description: rn:msg:SPCIFIES_HOW_THE_L_OF_THE_CONTENT_MSG
+    default: horizontal
+    options:
+    - horizontal
+    - vertical
+  display_all_content:
+    name: rn:msg:DISPLAY_ALL_CONTENT_LBL
+    type: BOOLEAN
+    description: rn:msg:PRDCTCTGRY_TYP_SCTNTB_LBLD_TT_LBLDSPLY_D_C_MSG
+    default: false
+  toggle_selection:
+    name: rn:msg:TGGLE_SELECTION_LBL
+    type: BOOLEAN
+    description: rn:msg:SETS_T_EVENT_CONT_SELECTEDDESELECTED_MSG
+    default: false
+  toggle_state:
+    name: rn:msg:TGGLE_STATE_LBL
+    type: OPTION
+    description: rn:msg:INIT_TOGGLESTATE_WORKS_ONLY_IF_MSG
+    default: collapsed
+    options:
+    - expanded
+    - collapsed
+  item_to_toggle:
+    name: rn:msg:ITEM_TO_TOGGLE_LBL
+    type: STRING
+    description: rn:msg:ID_HTML_ELMENT_HIDDEN_SHOWN_TOGGLE_MSG
+  toggle:
+    name: rn:msg:TOGGLE_LBL
+    type: STRING
+    description: rn:msg:ID_HTML_ELEMENT_PRESSED_TOGGLES_LBL
+  expanded_css_class:
+    name: rn:msg:EXPANDED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_EXPANDED_MSG
+    default: rn_Expanded
+  collapsed_css_class:
+    name: rn:msg:COLLAPSED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_COLLAPSED_MSG
+    default: rn_Collapsed
+  label_collapsed:
+    name: rn:msg:COLLAPSED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_PLACED_TOGGLE_ELEMENT_NOTIF_MSG
+    default: rn:msg:SECTION_CLOSED_CLICK_DOUBLE_TAP_LBL
+  label_expanded:
+    name: rn:msg:EXPANDED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LBEL_PLACED_TOGGLE_ELEMENT_NOTIF_MSG
+    default: rn:msg:SECT_OPENED_CLICK_DOUBLE_TAP_CLOSE_LBL
+  label_no_content_type:
+    name: rn:msg:NO_CONTENT_TYPE_LABEL_LBL
+    description: rn:msg:MSG_DISPLAYED_WHEN_NO_CONTENT_TYPES_MSG
+    default: rn:msg:NO_CONTENT_TYPES_FOUND_MSG
+    type: STRING
+  label_display_all_content:
+    name: rn:msg:DISPLAY_ALL_CONTENT_LABEL_LBL
+    description: rn:msg:NAV_PRODUCTCATEGORY_TYP_CONF_ADDR_TYP_MSG
+    default: rn:msg:ALL_LBL
+    type: STRING
+  dom_id_loading_icon:
+    name: rn:msg:ARTICLES_LOADING_ICON_LBL
+    description: rn:msg:ID_OF_THE_NODE_ELEMENT_FOR_SHOWING_MSG
+    default: rn_Articles_Loading
+    type: STRING
+  label_content_type_selected:
+    name: rn:msg:CONTENT_TYPE_SELECTED_LABEL_LBL
+    type: STRING
+    description: rn:msg:SCREEN_READER_LABEL_FOR_SEL_CONTENT_LBL
+    default: rn:msg:THE_SELECTED_CONTENT_TYPE_IS_PCT_S_MSG
+  expand_icon_collapsed_css:
+    name: rn:msg:COLLAPSED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_COLLAPSED_MSG
+    default: rn_Expand
+  expand_icon_expanded_css:
+    name: rn:msg:EXPANDED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_EXPANDED_MSG
+    default: rn_Collapse
+info:
+  description: rn:msg:THIS_WIDGET_ALLOWS_A_USER_TO_VIEW_MSG

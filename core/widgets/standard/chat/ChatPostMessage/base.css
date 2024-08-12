@@ -1,0 +1,10 @@
+.rn_ChatPostMessage textarea{
+    overflow: auto;
+    resize: none;
+}
+.rn_ChatPostMessage span{
+    display: block;
+}
+.rn_ChatPostMessage legend{
+    display: none;
+}

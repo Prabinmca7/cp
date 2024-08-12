@@ -1,0 +1,107 @@
+@import 'widget-includes';
+
+.rn_TopicBrowse {
+    color: #484848;
+    background-color: #F5F8FA;
+    border: solid 1px #D7D7D7;
+    margin-right: 16px;
+    width: 230px;
+}
+
+.rn_TopicBrowse .rn_Loading {
+    background: url('#{$theme-images}/loading.gif') no-repeat center center;
+    /*min-height fix for IE6*/
+    height: auto !important;
+    min-height: 100px;
+}
+
+.rn_TopicBrowse .ygtvlabel .rn_Title {
+    display: block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.rn_TopicBrowse .rn_Matches {
+    color: #1F5162;
+}
+
+.rn_TopicBrowse .rn_Meter {
+    background-color: #F2F2F2;
+    border: 1px solid #FFF;
+    display: inline-block;
+    height: 10px;
+    margin: 4px 10px 0 0;
+    position: relative;
+    vertical-align: sub;
+    width: 50px;
+}
+
+.rn_TopicBrowse .rn_Meter .rn_Score {
+    background-color: #67A7E3;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.rn_TopicBrowse .rn_Meter .rn_Score .rn_ScoreTop {
+    background-color: #7EB4E7;
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+}
+
+/*Override YUI treeview-menu.css defaults*/
+.rn_TopicBrowse .rn_Topics .ygtvtable {
+    margin: 6px 0 10px;
+    width: 101%;
+}
+
+/*clicked-on node*/
+.rn_TopicBrowse .ygtvtable.rn_Selected {
+    background-color: #FFF;
+    border: 1px solid #D7DCE0;
+    border-width: 1px 0 1px 1px;
+    -moz-box-shadow: 0 1px #888;
+    -webkit-box-shadow: 0 1px #888;
+    box-shadow: 0 1px #888;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.rn_TopicBrowse .ygtvtable.rn_Selected .ygtvlabel {
+    color: #001DA7;
+}
+
+.rn_TopicBrowse .ygtvtn a {
+    outline: none;
+}
+
+.rn_TopicBrowse .ygtvlabel,
+.rn_TopicBrowse .ygtvlabel:link,
+.rn_TopicBrowse .ygtvlabel:visited,
+.rn_TopicBrowse .ygtvlabel:hover {
+    color: #192E8E;
+    display: block;
+    font-size: 12px;
+    margin-left: 0;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rn_TopicBrowse .ygtvfocus {
+    background-color: transparent;
+}
+
+.rn_TopicBrowse .ygtvfocus .ygtvlabel,
+.rn_TopicBrowse .ygtvfocus .ygtvlabel:link,
+.rn_TopicBrowse .ygtvfocus .ygtvlabel:visited,
+.rn_TopicBrowse .ygtvfocus .ygtvlabel:hover {
+    background-color: transparent;
+    outline: dotted 1px;
+}

@@ -1,0 +1,42 @@
+@import 'widget-includes';
+
+.rn_ResultInfo {
+    overflow: hidden;
+    padding-bottom: 6px;
+
+    .rn_Results {
+        float: right;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .rn_Spell {
+        color: #F00;
+        font-size: medium;
+        margin: 10px 0 20px;
+
+        a {
+            color: #039;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+
+    .rn_NoResults {
+        background-color: #F2F2F2;
+        border: 1px solid #A1A5A9;
+        padding: 10px;
+    }
+
+    .rn_Suggestion {
+        color: #222;
+        font-style: italic;
+        padding: 10px 0;
+
+        a {
+            font-style: normal;
+        }
+    }
+}

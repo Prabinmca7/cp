@@ -1,0 +1,54 @@
+# File: info.yml
+# Abstract: Definition of FilteredTopAnswers widget
+# Version: 1.0
+
+version: "1.0"
+requires:
+  framework: ["3.0", "3.1", "3.2"]
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  product_filter_id:
+    name: Product Filter ID
+    type: int
+    description: ID of the product to filter results on.
+    default: ~
+    min: 1
+  category_filter_id:
+    name: Category Filter ID
+    type: int
+    description: ID of the category to filter results on.
+    default: ~
+    min: 1
+  allow_url_filter_modification:
+    name: allow_url_filter_modification
+    type: boolean
+    description: Denotes if this widget will allow the product and category parameters provided in the URL to modify the results. If true, a product or category ID in the URL will overwrite the '*_filter_id' attributes value. If false, the '*_filter_id' attributes will always be used and no modification will occur.
+    default: false
+    required: false
+    required: true
+  report_id:
+    name: report_id
+    type: int
+    description: ID of the report used to display data.
+    default: 176
+    min: 1
+    required: true
+  limit:
+    name: Result Limit
+    type: int
+    description: Maximum number of results to display
+    default: 5
+    min: 1
+info:
+  description: This widget displays results from a report which are runtime filtered by the product and/or category ID provided by widget attributes.
+  urlParameters:
+    p:
+      name: Product ID filter
+      description: ID of product to filter results on. Only applies if the 'allow_url_filter_modification' attribute is set to true.
+      example: p/3
+    c:
+      name: Category ID filter
+      description: ID of category to filter results on. Only applies if the 'allow_url_filter_modification' attribute is set to true.
+      example: c/1

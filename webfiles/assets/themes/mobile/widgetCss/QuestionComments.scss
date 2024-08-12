@@ -1,0 +1,559 @@
+@import 'widget-includes';
+
+.rn_QuestionComments {
+    $comment-border-color: lighten($light-gray, 6);
+    $comment-background-color: lighten($light-gray, 9);
+
+    .rn_CommentsTitle {
+        @include span-columns(9);
+        display: inline-block;
+        width: auto;
+
+        h2 {
+            @include icon($fa-var-comment) {
+                color: #4A4A85;
+            }
+
+            font-size: $h3-font-size;
+            margin-bottom: 1em;
+        }
+    }
+
+    .rn_SortOrder {
+        text-align: right;
+
+        button {
+            background: none;
+            border: 0;
+            box-shadow: none;
+            background-color: #FFFFFF;
+            color: #3B6DB1;
+            font-weight: normal;
+            font-size: smaller;
+            letter-spacing: normal;
+            text-shadow: none;
+            padding: 0;
+        }
+
+        .rn_Disabled {
+            color: black;
+            font-weight: bold;
+            pointer-events: none;
+        }
+
+        .rn_Separator::before {
+            content: '';
+            border: 1px solid #555;
+            margin: 0.3em;
+            border-color: #3B6DB1;
+        }
+    }
+
+    .rn_Comments {
+        position: relative;
+	display: inline-block;
+        width: 100%;
+
+        &.rn_Loading {
+            &:before {
+                // Move the loading indicator to the center of the comment list.
+                @include prefixer(transform, translateX(-50%), webkit ms moz spec);
+                left: 50%;
+                position: absolute;
+                top: 45%;
+                z-index: 1;
+            }
+
+            &:after {
+                // Semi-opaque loading mask that covers the comment list.
+                background: rgba(255, 255, 255, .9);
+                bottom: 0;
+                content: "";
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+    .rn_CommentContainer {
+        @include row;
+        margin-bottom: 1em;
+
+        &:focus {
+            @include transition(background .5s);
+            outline: none;
+
+            .rn_CommentContent {
+                $focused-border-color: darken($light-blue, 6);
+
+                border-color: $focused-border-color;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+
+                &::after {
+                    border-right-color: $focused-border-color;
+                }
+            }
+        }
+    }
+
+    .rn_CommentInfo {
+        @include span-columns(2);
+        font-size: $base-font-size * .8;
+        line-height: 1.2em;
+        padding-top: .5em;
+
+        .rn_CommentAvatarImage {
+            font-size: 1.5em;
+        }
+
+        .rn_CommentCreatedByUser {
+            @include media($rn-small) {
+                @include span-columns(3);
+            }
+        }
+
+        time {
+            @include text-overflow;
+        }
+
+        @include media($rn-small) {
+            @include span-columns(12);
+            border: 1px solid $comment-border-color;
+            border-width: 1px 1px 0;
+            padding-left: .5em;
+
+            .rn_CommentAvatarImage {
+                @include span-columns(12);
+                margin-bottom: .6em;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .rn_CommentContent {
+        @include span-columns(10);
+        @include clearfix;
+        @include omega;
+        background: $comment-background-color;
+        border: 1px solid $comment-border-color;
+        border-radius: 2px;
+        padding: 1em;
+        position: relative;
+
+        @include caret(left) {
+            position: absolute;
+            left: -8px;
+            top: 25px;
+            font-size: 1.5em;
+            color: $comment-background-color;
+            z-index: 1;
+        }
+
+        @include caret(left, after) {
+            position: absolute;
+            left: -15px;
+            top: 25px;
+            font-size: 1.6em;
+            color: $comment-border-color;
+        }
+
+        .rn_CommentText {
+            padding-top: .4em;
+        }
+
+        @include media($rn-small) {
+            @include span-columns(12);
+
+            &:before, &:after {
+                content: none;
+            }
+        }
+    }
+
+    .rn_CommentRating {
+        padding-top: .5em;
+        margin-top: 1em;
+    }
+
+    .rn_HighlightComment {
+        @include icon($fa-var-tag, before);
+        background: #bcf2dd;
+        padding: 4px;
+        font-style: italic;
+        font-size: 1em;
+        float: left;
+        word-break: break-word;
+    }
+
+    .rn_HeaderToolbar {
+        @include fill-parent;
+        @include row;
+
+        font-size: small;
+
+        .rn_BestAnswerInfo {
+            display: inline;
+
+            .rn_BestAnswerLabel {
+                color: $dark-gray;
+                font-size: 1.5em;
+                font-weight: bold;
+                white-space: nowrap;
+
+                @include icon($fa-var-check-circle-o) {
+                    color: #008000;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .rn_ModerationInlineAction {
+            @include span-columns(6);
+            float: right;
+            margin-right: 0;
+            text-align: right;
+        }
+
+        @include media($rn-medium) {
+            margin-right: 0;
+            text-align: right;
+
+            .rn_BestAnswerInfo {
+
+                .rn_BestAnswerLabel {
+                    color: $dark-gray;
+                    font-size: 1.5em;
+                    font-weight: bold;
+
+                    &:before {
+                        content: "";
+                    }
+
+                    @include icon($fa-var-check-circle-o, after) {
+                        color: #008000;
+                    }
+                }
+            }
+        }
+    }
+
+    .rn_CommentFooter {
+        @include row;
+
+        .rn_Timestamps {
+            color: darken($light-gray, 50%);
+            font-size: smaller;
+
+            .rn_Created {
+                display: block;
+            }  
+        }
+    }
+
+    .rn_CommentToolbar {
+        @include fill-parent;
+        @include row;
+
+        line-height: 1.5em;
+        font-size: smaller;
+
+        .rn_CommentToolbarLeft {
+            @include span-columns(4);
+
+            > ul > li {
+                float: left;
+                margin-right: .6em;
+            }
+        }
+
+        .rn_CommentToolbarRight {
+            @include span-columns(8);
+            text-align: right;
+            float: right;
+
+            > ul > li {
+                margin-left: .6em;
+            }
+        }
+
+        .rn_CommentToolbarLeft,
+        .rn_CommentToolbarRight {
+            // Style only the top-level list items
+            // without affecting any list items in
+            // their sub-widget content.
+            > ul {
+                @include clearfix;
+                margin-right: 1em;
+                margin-bottom: 0;
+                padding: 0;
+
+                > li {
+                    display: inline-block;
+                    list-style: none;
+                    padding-top: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    line-height: 1.8em;
+
+                    > div {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .rn_CommentRating {
+                margin-top: 0;
+
+                .rn_UpvoteButton {
+                    font-size: 1.8em;
+                }
+
+                .rn_StarVoteButton, .rn_StarVotedButton {
+                    font-size: 1.1em;
+                }
+
+                .rn_ThumbsUpButton {
+                    font-size: 1.8em;
+                }
+
+                .rn_ThumbsDownButton {
+                    font-size: 1.8em;
+                }
+            }
+        }
+
+        @include media($rn-small) {
+            .rn_CommentToolbarLeft, .rn_CommentToolbarRight {
+                @include span-columns(12);
+                text-align: left;
+
+                li {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    $best-answer-color: #62C2FF;
+
+    .rn_Banner {
+        font-style: italic;
+        text-align: center;
+    }
+
+    .rn_PendingComment {
+        background: #FFA;
+    }
+
+    .rn_SuspendedComment {
+        background: #FFD5CF;
+    }
+
+    .rn_BestAnswerActions {
+        @include fill-parent;
+
+        .rn_BestAnswerAssignment,
+        .rn_BestAnswerRemoval {
+            @include fill-parent;
+            @include row;
+        }
+
+        button {
+            @include icon($fa-var-trophy);
+            background: none;
+            border: 0;
+            box-shadow: none;
+            color: $base-link-color;
+            font-weight: normal;
+            font-size: smaller;
+            letter-spacing: normal;
+            padding: 0;
+            text-shadow: none;
+            white-space: normal;
+            line-height: 1.5em;
+            text-align: left;
+        }
+    }
+
+    .rn_NewComment {
+        margin-top: 2em;
+
+        .rn_NeedSocialInfo,
+        .rn_SocialLogin {
+            @include icon($fa-var-comment);
+            font-weight: bold;
+        }
+
+        .rn_CommentContent {
+            padding: .5em;
+
+            &:only-child {
+                @include span-columns(12);
+                padding: .5em;
+
+                &:before, &:after {
+                    content: normal;
+                }
+            }
+        }
+
+        .rn_FormSubmit {
+            text-align: right;
+        }
+    }
+
+    .rn_CommentForm {
+        @include row;
+
+        .rn_CommentContent {
+            padding: .5em;
+        }
+
+        .rn_CommentEditOptions {
+            font-size: smaller;
+        }
+
+        .rn_CommentCancelAndEdit {
+            float: right;
+
+            div {
+                display: inline;
+            }
+
+            .rn_CancelEdit {
+                margin-right: 1em;
+            }
+        }
+    }
+
+    .rn_CommentReplyForm {
+        @include shift(1);
+        @include span-columns(11);
+        margin-bottom: 1em;
+
+        .rn_DeleteCommentAction {
+            display: none;
+        }
+    }
+
+    .rn_CommentEditForm {
+        margin-bottom: 1em;
+
+        .rn_DeleteCommentAction {
+            @include icon($fa-var-trash-o);
+            background: none;
+            border: 1px solid $dark-gray;
+            box-shadow: none;
+            color: #8B0303;
+            float: left;
+            text-shadow: none;
+            font-weight: normal;
+
+            &:hover, &:active, &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .rn_Replies {
+        @include shift(1);
+        @include clearfix;
+
+        margin-top: .5em;
+        margin-bottom: 1em;
+        border-top: 1px solid $medium-gray;
+        border-bottom: 1px solid $medium-gray;
+
+        > a {
+            @include icon($fa-var-chevron-circle-down);
+            display: block;
+            padding: 1em 0 1em 1em;
+            font-size: 1.3em;
+        }
+
+        > .rn_CommentContainer:last-of-type {
+            padding-bottom: 0;
+        }
+
+        .rn_CommentReplyForm {
+            @include shift(0);
+            @include span-columns(12);
+        }
+
+        &.rn_Collapsed {
+            > a {
+                @include icon($fa-var-chevron-circle-right);
+            }
+
+            .rn_CommentContainer {
+                display: none;
+            }
+        }
+    }
+
+    .rn_ShareBox.yui3-panel-content.yui3-widget-stdmod {
+        border: 1px solid darken($light-gray, 10);
+        border-radius: 3px;
+        margin-top: .4em;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin-right: 7px;
+        }
+    }
+
+    .rn_Paginator {
+        clear: left;
+        text-align: right;
+        padding: 10px 0;
+        font-size: $base-font-size * 1.4;
+
+        .rn_CurrentPage {
+            font-weight: bold;
+        }
+
+        a, .rn_CurrentPage {
+            line-height: 2em;
+            padding: 4px;
+        }
+
+        .rn_BackLink a {
+            @include icon($fa-var-chevron-left);
+        }
+
+        .rn_ForwardLink a {
+            @include icon($fa-var-chevron-right, after); // fa-chevron-right
+        }
+    }
+
+    .rn_TwitterLink {
+        @include icon($fa-var-twitter) {
+            color: #55acee;
+        }
+    }
+
+    .rn_FacebookLink {
+        @include icon($fa-var-facebook) {
+            color: #3b5998;
+        }
+    }
+
+    .rn_LinkedinLink {
+        @include icon($fa-var-linkedin-square) {
+            color: #3692c3;
+        }
+    }
+
+    .rn_RedditLink {
+        @include icon($fa-var-reddit) {
+            color: #336699;
+        }
+    }
+}

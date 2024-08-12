@@ -1,0 +1,20 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicSelectionInput" name="Incident.CustomFields.c.priority" required="true"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicSelectionInput/tests/required"><div><div class="rn_BasicSelectionInput rn_SelectionInput rn_Input">
+            <label for="rn_BasicSelectionInput_0_Incident.CustomFields.c.priority" class="rn_Label">Priority                        <span class="rn_Required" aria-label="Required">
+    *</span>                             -  hint for menu                </label><br/>
+        <select id="rn_BasicSelectionInput_0_Incident.CustomFields.c.priority" class="rn_BasicSelection" name="formData[Incident.CustomFields.c.priority]">
+            <option value="">--</option>
+                            <option value="11" >1</option>
+                    <option value="12" >2</option>
+                    <option value="13" >3</option>
+                    <option value="14" >4</option>
+                    <option value="15" >5</option>
+                </select>
+</div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5DdXN0b21GaWVsZHMuYy5wcmlvcml0eSI6eyJyZXF1aXJlZCI6dHJ1ZSwibGFiZWxzIjp7ImxhYmVsX2lucHV0IjoiUHJpb3JpdHkifX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

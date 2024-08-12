@@ -1,0 +1,98 @@
+var glbVar;UnitTest.addSuite({
+    type:       UnitTest.Type.Widget,
+    instanceID: 'AnswerList_0'
+}, function (Y, widget, baseSelector) {
+    var suite = new Y.Test.Suite({
+        name: "standard/okcs/AnswerList",
+
+        setUp: function(){
+            var testExtender = {
+                initValues : function() {
+                    this.instanceID = 'AnswerList_0';
+                    this.instance = RightNow.Widgets.getWidgetInstance(this.instanceID);
+                    this.widgetData = this.instance.data;
+                    this.viewType = this.instance.data.js.viewType;
+                    this.type = widget.data.attrs.type;
+                    this.answerIdDOM = Y.one('li a');
+                    if (this.viewType === 'table') {
+                        this.tableHeaders = Y.all('th');
+                        this.tableCaption = Y.one('caption');
+                        this.titleDOM = this.tableHeaders.item(0);
+                        this.postedDOM = this.tableHeaders.item(1);
+                        this.dataDOM = Y.one('.yui3-datatable-data');
+                        this.answerIdDOM = Y.one('.yui3-datatable-data tr td a');
+                    } else {
+                        this.listTitle = Y.one('#rn_' + this.instanceID + '_Content h2');
+                    }
+                }
+            };
+
+            for (var item in this.items) {
+                Y.mix(this.items[item], testExtender);
+            }
+        }
+    });
+
+    suite.add(new Y.Test.Case({
+        name: "Event Handling and Operation",
+        
+        "Accessibility Tests": function() {
+            this.initValues();
+            if (this.viewType === 'table') {
+                var tableHeader = Y.one('thead');
+                Y.Assert.isNotNull(tableHeader);
+
+                var dataCell = Y.all("td");
+                for (var i = 0; i < dataCell.size(); i++) {
+                    Y.Assert.isNotNull(dataCell.item(i).getAttribute('headers'));
+                }
+            }
+            else {
+                Y.Assert.isNotNull(Y.one('ul'));
+            }
+        },
+
+        "Validate answer link to have answerId attribute and article click": function() {
+            this.initValues();
+            if(this.answerIdDOM !== null){
+                var answerIdUrl = this.answerIdDOM.get('href');
+                Y.Assert.isTrue(answerIdUrl.indexOf('/a_id/') > -1);
+            }      
+        },
+
+        "Validate if history source id is identical to widget source id": function() {
+            this.initValues();
+            Y.Assert.areSame(widget.data.attrs.source_id, widget.searchSource().options.history_source_id);
+        },
+
+        "Verify that an updated response from the server updates the widget": function() {
+            this.initValues();
+            var data = '{"error":null,"articles":[{"contentType":{"recordID":"082020204574de750147a1909bd9007f94","referenceKey":"SOLUTIONS","name":"Solutions"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"08\/18\/2014","dateAdded":"08\/18\/2014","dateModified":"08\/18\/2014","displayStartDate":"08\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"08\/18\/2014","checkedOut":false,"publishedVersion":"1.0","recordID":"08202020e3271dd0147ac1c3c13002cb6","versionID":"08202020e3271dd0147ac1c3c13002caf","documentID":"SO4","title":"Test&#039;s Special characters -- !@#$%*() &amp;lt;b&amp;gt; html &amp;lt;\/b&amp;gt;","version":"1.0","answerID":1000030,"encryptedTitle":"ZlVJc2oycFN6WVhPMGdRcjR6aDNIQk9tOHYwck9BdzN_ZGFKTDVxZXFqZnBkVlFmdHlxfkUxTmZkSElKcEVhZFI3RERYT2xjc1VlZk82STBRd2RDM2Z5WGhsTXlBT2ZpS2ozVEpwS3RQNlljcnR2R0FPbE12QjY2RVp5QVROSElNczhLZVA2UkxZa0E4IQ!!"},{"contentType":{"recordID":"082020204574de750147a1909bd9007f94","referenceKey":"SOLUTIONS","name":"Solutions"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"08\/14\/2014","dateAdded":"08\/14\/2014","dateModified":"08\/14\/2014","displayStartDate":"08\/14\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"lastModifier":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"creator":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"published":true,"publishDate":"08\/14\/2014","checkedOut":false,"publishedVersion":"2.0","recordID":"08202020e3271dd0147ac1c3c130070fe","versionID":"08202020e3271dd0147ac1c3c130070e5","documentID":"SO3","title":"Demo Content  ","version":"2.0","answerID":1000025,"encryptedTitle":"ZlVUYXJfRFpZeXZic18wcnAwS1MwS21MTkNiY01zWmVKcFBRbzlJdTNTcGxmOW9OeEdTMVdWYUxFT0x_cDl_ODJTelRxVHFvcVlac2pka0plcmM5XzRTZzdQR2RTandjWXI5Ml94amY3Y35qZ05JMGkybWVtX1hBISE!"},{"contentType":{"recordID":"082020204574de750147a1909bd9007f94","referenceKey":"SOLUTIONS","name":"Solutions"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"08\/07\/2014","dateAdded":"08\/27\/2014","dateModified":"08\/27\/2014","displayStartDate":"08\/07\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"published":true,"publishDate":"08\/27\/2014","checkedOut":false,"publishedVersion":"2.0","recordID":"08202020e3271dd0147ac1c3c13007f05","versionID":"08202020e3271dd0147ac1c3c130477a","documentID":"SO2","title":"Creating User roles in Windows Server Management  ","version":"2.0","answerID":1000024,"encryptedTitle":"ZlVxQmxVUXJDUmJaRmQ1dWNVM3VvUE43Y1NId3RDTDBNNmcyc3o1U08zYzQzdzY4Q05SN1BaZ3Y1eW1PNU1RQzVnUFBXd2JFb1BwYkZqSWxTTEtrUG1GVl9OREp5TDdNYzdpZnd2flkzaTdFbE1VdXFSMm9mVzY5aTN1amxLaX5fVHJEWmZnbl9namdjZmFwUTJvN3NoSUtIOEVnTWgzZnpn"},{"contentType":{"recordID":"082020204574de750147a1909bd9007f94","referenceKey":"SOLUTIONS","name":"Solutions"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"08\/05\/2014","dateAdded":"08\/05\/2014","dateModified":"08\/05\/2014","displayStartDate":"08\/05\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"84FB7F963CA24219B27563D4CE1C5F2A","name":"Administrator LastName","externalID":2,"externalType":"ACCOUNT"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"08\/05\/2014","checkedOut":false,"publishedVersion":"2.0","recordID":"082020204574de750147a1909bd9007f73","versionID":"082020204574de750147a1909bd9007f3d","documentID":"SO1","title":"Installing IIS 7 on Windows Server 2008 or Windows Server 2008 R2   ","version":"2.0","answerID":1000016,"encryptedTitle":"ZlVCaUNEajlOYjllNmV1MWFsUjRrSH5xU2k1N3h0X3k2SUJjYl9KQjRRbVoxRXc0ZThheHdGRWw1R1prcWxiajA2RFZJamcyaWRocWVlb3VjdHlzOX5EUmlfbGNpMnp2ZXZMeVdCME9EQWxPa1Z5QzFUMjI3ZW5TeEJUN1k3eUdNNHdzZF9UTkZxOWZjNnJqemEyeUhDYmpMWGptUHI1Zm1FTGZMbURqMFJFM1lnfkFUYjFaMlpmQSEh"}],"filters":"","columnID":0,"sortDirection":0,"selectedChannel":"SOLUTIONS","hasMore":false,"currentPage":0,"category":[{"recordID":"082020204574de750147a1909bd9007fea","referenceKey":"COMPANY","name":"Company","externalType":"PRODUCT","dateAdded":1407216464000,"dateModified":1407216478000,"objectID":"002","sortOrder":2,"hasChildren":true},{"recordID":"082020204574de750147a1909bd9007ff8","referenceKey":"OPERATING_SYSTEMS","name":"Operating Systems","externalType":"CATEGORY","dateAdded":1407215649000,"dateModified":1407216292000,"objectID":"001","sortOrder":1,"hasChildren":true}]}',
+                eo = new RightNow.Event.EventObject(null, {
+                data: RightNow.JSON.parse(data)
+            });
+            this.instance.searchSource().fire("response", eo);
+            if (this.viewType === 'table') {
+                this.answerIdDOM = Y.one('.yui3-datatable-data tr td a');
+                Y.Assert.isFalse(this.answerIdDOM.hasClass('rn_NoSearchResultMsg'));
+                Y.Assert.isTrue(this.answerIdDOM.get('href').indexOf('/a_id/') > -1);
+                Y.Assert.areSame("Test's Special characters -- !@#$%*() &lt;b&gt; html &lt;/b&gt;", this.answerIdDOM.get('text').trim());
+            }
+        },
+
+        "Verify default descending sort for publish date ": function() {
+            this.initValues();
+            var data = '{"error":null,"articles":[{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/30\/2014","dateAdded":"12\/30\/2014","dateModified":"12\/30\/2014","displayStartDate":"12\/30\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/30\/2014","checkedOut":false,"publishedVersion":"1.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007c6a","versionID":"020147010106c8b014a0fc20dd3007c6c","documentID":"FA21","title":"Test Html Align Image - Test1","version":"1.0","answerID":1000026,"encryptedTitle":"ZlU5aDgwdFpXdkZsQXk4N0ZWUVZpN212R05VdF9pY0RYR2UxaEdCZHNHOGVjaW5fZmIwTGNramNkYllLWkJtSHI2aGxLVVhuWjBWRXB0V3JiMGszZjNVdzFta1Fid0lHeWlwbXE5WUkyZHVkVFdfYUNoNnp1Rk5iQWRFNnpPUlBEM0tCQjU5YnY5cXdNIQ!!"},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/30\/2014","dateAdded":"12\/30\/2014","dateModified":"12\/30\/2014","displayStartDate":"12\/30\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/30\/2014","checkedOut":false,"publishedVersion":"2.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007c8f","versionID":"020147010106c8b014a0fc20dd3007c7b","documentID":"FA20","title":"Test Html Align Image","version":"2.0","answerID":1000025,"encryptedTitle":"ZlVhakpWN282RUdDc2tMb2NORDRSTE96a08wbjFqdkoyRjdYVmhYejJQZUNTMGRVMTJORm9CS2x_Z2poZTNHSDNYcH5EWVVUQUM4REl3alZrbnl1SnlPOHFxZlk4S0lzNmpGVDBSZjE2YXdESml0S1lDbTlPM2x3ISE!"},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/23\/2014","dateAdded":"12\/23\/2014","dateModified":"12\/23\/2014","displayStartDate":"12\/23\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/23\/2014","checkedOut":false,"publishedVersion":"7.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e3e","versionID":"020147010106c8b014a0fc20dd3007d01","documentID":"FA19","title":"No Title","version":"7.0","answerID":1000022,"encryptedTitle":false},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/23\/2014","dateAdded":"12\/23\/2014","dateModified":"12\/23\/2014","displayStartDate":"12\/23\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/23\/2014","checkedOut":false,"publishedVersion":"3.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e54","versionID":"020147010106c8b014a0fc20dd3007e47","documentID":"FA18","title":"Test image alignment","version":"3.0","answerID":1000021,"encryptedTitle":"ZlVPSktSNjFFQWxhMWtRREVZbmJIV2NwZlVya1hBdmYxVjFoVTdnTWg0cG95XzJFYUd2WnFXSUhUWkFwMV92OHNER3I4dTkxRnNnYnVCMDkzZ1RBeHpUbnpiUjZ4cHFHVnpYeEJXRjIwS3A0ZjY1MG9GNnBacmdnISE!"},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/18\/2014","dateAdded":"12\/21\/2014","dateModified":"12\/21\/2014","displayStartDate":"12\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/21\/2014","checkedOut":false,"publishedVersion":"2.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e74","versionID":"020147010106c8b014a0fc20dd3007e58","documentID":"FA14","title":"image","version":"2.0","answerID":1000017,"encryptedTitle":"ZlVCdmd1YXUwRzNOWmxFSlpfVEVyNDJ2bE1qdjNPbWVLQkRXMVN3bHNmZ0pGbVpyZjl5VExyZm85R3dSQzE4SjMxNDNUQjVuSW9QR1RPTk9BaEZmZkFUVjhRVDlLaktlQnY!"},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/18\/2014","dateAdded":"12\/18\/2014","dateModified":"12\/18\/2014","displayStartDate":"12\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/18\/2014","checkedOut":false,"publishedVersion":"1.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e60","versionID":"020147010106c8b014a0fc20dd3007e63","documentID":"FA17","title":"No Title","version":"1.0","answerID":1000020,"encryptedTitle":false},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/18\/2014","dateAdded":"12\/18\/2014","dateModified":"12\/18\/2014","displayStartDate":"12\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/18\/2014","checkedOut":false,"publishedVersion":"1.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e68","versionID":"020147010106c8b014a0fc20dd3007e67","documentID":"FA16","title":"imagenew","version":"1.0","answerID":1000019,"encryptedTitle":false},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/18\/2014","dateAdded":"12\/18\/2014","dateModified":"12\/18\/2014","displayStartDate":"12\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/18\/2014","checkedOut":false,"publishedVersion":"1.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e70","versionID":"020147010106c8b014a0fc20dd3007e6e","documentID":"FA15","title":"No Title","version":"1.0","answerID":1000018,"encryptedTitle":false},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/18\/2014","dateAdded":"12\/18\/2014","dateModified":"12\/18\/2014","displayStartDate":"12\/18\/2014","displayEndDate":"12\/31\/1969","owner":{"recordID":"677C400458F3466ABCCAB769C1FD6BC8","name":"okcs hms"},"lastModifier":{"recordID":"677C400458F3466ABCCAB769C1FD6BC8","name":"okcs hms"},"creator":{"recordID":"677C400458F3466ABCCAB769C1FD6BC8","name":"okcs hms"},"published":true,"publishDate":"12\/18\/2014","checkedOut":false,"publishedVersion":"1.0","displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e81","versionID":"020147010106c8b014a0fc20dd3007e82","documentID":"FA13","title":"Another answer with lists and multiple paragraphs","version":"1.0","answerID":1000016,"encryptedTitle":"ZlVJZ0VxTTZIRWtqRDRzNlhKOVlDN0VCUGdvQWNZYmJvN0xUMWdUX1puNVd2RDM3azMwVmxVR0czZk5OSmhDck1UUldQSU5fRTY0bEFBUmZmUVNERnlGMTRETVhjZmFXaUVoZUFpWl9xNzUzUmUwT2xMMVVHVjhqaDJZWnpRVkcxNkI0QmlzNlJ0STY0dEY4amp0YnFVT2U5ZEdxUH5vSDVM"},{"contentType":{"recordID":"020147010106c8b014a0fc20dd3007ffc","referenceKey":"FAQ","name":"FAQ"},"locale":{"recordID":"en_US"},"priority":"PRIORITY_0","createDate":"12\/16\/2014","dateAdded":"12\/16\/2014","dateModified":"12\/16\/2014","displayStartDate":"12\/15\/2014","displayEndDate":"12\/15\/2014","owner":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"lastModifier":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"creator":{"recordID":"1921681235663a2-ed25809901-7f5d","name":"Super Admin"},"published":true,"publishDate":"12\/16\/2014","checkedOut":false,"displayPosition":"PLACE_AT_TOP","recordID":"020147010106c8b014a0fc20dd3007e91","versionID":"020147010106c8b014a0fc20dd3007e8c","documentID":"FA12","title":"Expired content?","version":"2.0","answerID":1000015,"encryptedTitle":"ZlVPUnBuVXpxQTI5U2FzS0dtelBDWFNYRDBUdDVaRXp1NEZvZFd0UENXaWdTZmxfSGt1SDhEQlBKam42Vm1tc2pYMnJzNGFyN3JUMkFjOFZWWnhaX3lqakdtS0pOS3Y2QXhQdEpZR29SeDZ0T2dNQTRmWEJEbzRBISE!"}],"filters":"","columnID":"publishDate","sortDirection":"DESC","selectedChannel":"FAQ","hasMore":true,"currentPage":0,"category":[{"recordID":"0201472d87ef40014a0fb285df007fc1","referenceKey":"COMPANIES","name":"Companies","externalID":3,"externalType":"PRODUCT","dateAdded":1417602907000,"dateModified":1417603025000,"objectID":"002","sortOrder":2,"hasChildren":true},{"recordID":"0201472d87ef40014a0fb285df007fc2","referenceKey":"OPERATING_SYSTEMS","name":"Operating Systems","externalID":4,"externalType":"CATEGORY","dateAdded":1417602897000,"dateModified":1417602922000,"objectID":"001","sortOrder":1,"hasChildren":true}]}',
+                eo = new RightNow.Event.EventObject(null, {
+                data: RightNow.JSON.parse(data)
+            });
+            this.instance.searchSource().fire("response", eo);
+            if (this.viewType === 'table') {
+                this.publishDateHeaderDOM = Y.one('th.yui3-datatable-col-c1');
+                Y.Assert.isTrue(this.publishDateHeaderDOM.one('span.rn_SortIndicator').hasClass('rn_ArticlesSortDesc'));
+            }
+        }
+    }));
+
+    return suite;
+}).run();

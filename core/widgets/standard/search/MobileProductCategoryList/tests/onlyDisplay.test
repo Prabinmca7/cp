@@ -1,0 +1,18 @@
+input: <rn:widget path='standard/search/MobileProductCategoryList' only_display='1,7'/>
+removecontent: true
+template: mobile
+output:
+<div id="rn_MobileProductCategoryList_0" class="rn_MobileProductCategoryList rn_ProductCategoryList">
+        <span class="rn_Title">Products</span>
+            <div class="rn_HierList rn_HierList_1">
+    <a href="/app/answers/list/p/1">Mobile Phones</a>
+                <ul>
+                <li><a href="/app/answers/list/p/1,2">Android</a></li>
+                <li><a href="/app/answers/list/p/1,3">Blackberry</a></li>
+                <li><a href="/app/answers/list/p/1,4">iPhone</a></li>
+                </ul>
+            </div>
+        <div class="rn_HierList rn_HierList_7">
+    <a href="/app/answers/list/p/7">Replacement/Repair Coverage</a>
+            </div>
+    </div>

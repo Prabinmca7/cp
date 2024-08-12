@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_ForumList {
+    table {
+        border: 1px solid #888;
+        border-spacing: 0;
+        border-collapse: separate;
+        margin-top: 0;
+
+        td:first-child, th {
+            font-weight: bold;
+            background-color: lighten($light-gray, 9);
+        }
+
+        td {
+            text-align: center;
+        }
+
+        th, td {
+            border-right: 1px solid #DDD;
+            padding: 4px 10px 4px 6px;
+
+            p {
+                font-size: small;
+                font-weight: normal;
+                font-style: italic;
+            }
+        }
+    }
+}

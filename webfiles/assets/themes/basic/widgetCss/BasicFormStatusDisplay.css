@@ -1,0 +1,12 @@
+.rn_BasicFormStatusDisplay {
+    font-weight:bold;
+}
+.rn_BasicFormStatusDisplay_error {
+    color:#E80000;
+}
+.rn_BasicFormStatusDisplay_info {
+    color:#008000;
+}
+.rn_BasicFormStatusDisplay_Field {
+    font-size:1.2em;
+}

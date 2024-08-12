@@ -1,0 +1,27 @@
+@import 'widget-includes';
+
+.rn_Unsubscribe {
+    .rn_AnswerSummaryDisplay {
+        border-bottom: 2px dashed #b7cce7;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+
+    fieldset {
+        border: 0;
+        border-bottom: 2px dashed #b7cce7;
+        margin: 20px 0;
+        background: none;
+        padding: 0;
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    button {
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,17 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive1
+  Subject: Question with active user with product
+  Body: Test question body
+  Attributes.ContentLocked: false
+  StatusWithType.Status.LookupName: Active
+  _comments:
+    - fixture: CommentActiveUserActive
+      parameters:
+        CommunityQuestion: this.ID
+  BestCommunityQuestionAnswers:
+    - fixture: BestAnswerAuthor
+      parameters:
+        CommunityQuestion: this.ID
+  Product: 120

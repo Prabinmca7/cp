@@ -1,0 +1,25 @@
+<div class="rn_DialogContent">
+    <div class="rn_DialogNote">
+        <p class="rn_DialogAvatarMessage"><span class="rn_DialogNoteLabel"><%= RightNow.Interface.getMessage('NOTE_COLON_LBL') %></span> <%= RightNow.Interface.getMessage('PICTURE_NO_SAVE_JUST_ABLE_GET_UC_BACK_MSG') %></p>
+        <p class="rn_DialogAvatarQuestion"><%= RightNow.Interface.getMessage('DO_WANT_SAVE_SELECTED_PROFILE_PICTURE_LBL') %></p>
+    </div>
+    <div class="rn_DialogAvatarImages">
+        <div class="rn_UserAvatar">
+            <img class="rn_Large" src="<%= currentAvatar %>" alt="<%= RightNow.Interface.getMessage('CURRENT_AVATAR_LBL') %>"/>
+            <span><%= RightNow.Interface.getMessage('CURRENT_PROFILE_PICTURE_LBL') %></span>
+        </div>
+        <div class="rn_UserAvatar">
+            <% if(selectedAvatar) { %>
+                <img class="rn_Large" src="<%= selectedAvatar %>" alt="<%= RightNow.Interface.getMessage('SELECTED_AVATAR_LBL') %>"/>
+            <% }
+            else { %>
+                <div class="<%= 'rn_Default rn_DefaultColor' + (defaultAvatar.color) %>">
+                    <span class="rn_Liner">
+                        <%= defaultAvatar.text %>   
+                    </span>
+                </div>
+            <% } %>
+            <span><%= RightNow.Interface.getMessage('SELECTED_PROFILE_PICTURE_LBL') %></span>
+        </div>
+    </div>
+</div>

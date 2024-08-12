@@ -1,0 +1,5 @@
+input: <rn:widget path="standard/user/UserStatus"/>
+fixture: UserActive1
+removecontent: true
+urlparameters: /user/%CommunityUser%
+output: 

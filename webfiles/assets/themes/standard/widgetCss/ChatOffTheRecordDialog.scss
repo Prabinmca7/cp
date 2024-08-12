@@ -1,0 +1,14 @@
+@import 'widget-includes';
+
+.rn_ChatOffTheRecordDialog {
+    width: 325px;
+}
+
+.rn_ChatOffTheRecordDialog label {
+    display: block;
+}
+
+.rn_Dialog.rn_ChatOffTheRecordDialogContainer.rn_ActionDialog {
+    background: #FFF;
+    border: 1px solid #000;
+}

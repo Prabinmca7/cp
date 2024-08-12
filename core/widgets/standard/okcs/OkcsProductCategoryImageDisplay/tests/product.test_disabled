@@ -1,0 +1,10 @@
+input: <rn:widget path="standard/okcs/OkcsProductCategoryImageDisplay"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|5000
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /categoryRecordID/RN_PRODUCT_1
+output:
+<div id="rn_OkcsProductCategoryImageDisplay_0" class="rn_OkcsProductCategoryImageDisplay">
+<h1>Iphone</h1>
+    <span class="rn_ProductImageContainer"></span>
+</div>

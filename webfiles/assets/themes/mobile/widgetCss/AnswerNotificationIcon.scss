@@ -1,0 +1,13 @@
+@import 'widget-includes';
+
+.rn_AnswerNotificationIcon {
+    margin-right: 10px;
+
+    a {
+        @include icon($fa-var-bell-o);
+    }
+
+    .rn_AnswerNotificationStatusDialog {
+        width: 300px;
+    }
+}

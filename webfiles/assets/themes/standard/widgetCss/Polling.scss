@@ -1,0 +1,57 @@
+@import 'widget-includes';
+
+.rn_Polling {
+    .rn_PollTitle {
+        text-decoration: underline;
+    }
+
+    .rn_PollQuestion {
+        margin: 0;
+        padding: 0;
+        visibility: inherit;
+        font-size: 1em;
+        display: inline;
+        zoom: 1;
+
+        span {
+            white-space: normal;
+            display: block;
+            zoom: 1;
+        }
+    }
+
+    .rn_PollAnswerArea {
+        label {
+            display: inline;
+        }
+
+        input[type="text"] {
+            margin-top: 5px;
+        }
+
+        td {
+            border: 0;
+        }
+    }
+
+    .rn_PollFieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: #FFF;
+    }
+
+    .rn_ViewResultsLink {
+        margin: 0 50px 0 0;
+        float: left;
+    }
+
+    .rn_PollSubmit {
+        float: left;
+        margin: 5px 0;
+    }
+
+    .rn_SimpleChartBar {
+        background-color: #1B35E0;
+    }
+}

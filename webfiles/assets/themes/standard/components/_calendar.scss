@@ -1,0 +1,225 @@
+$black: #000000;
+$gray: #CCCCCC;
+$white: #FFFFFF;
+$hover-color: #0066CC;
+$linear-gradient-stop1-color: #f9f9f9;
+$linear-gradient-stop2-color: #f2f2f2;
+$day-selected-background: #B3D4FF;
+$content-border-color: #808080;
+$disabled-day-font-color: #A6A6A6;
+$highlighted-day-background-color: #DCDEF5;
+$highlighted-selected-day-background-color: #758FBB;
+
+.yui3-calendar-pane, .yui3-calendar-grid {
+    width: 100%;
+}
+
+.yui3-calendar-column-hidden, .yui3-calendar-hidden {
+    display: none;
+}
+
+.yui3-skin-sam .yui3-calendar-content {
+    padding: 10px;
+    color: $black;
+    border: 1px solid $content-border-color;
+    @include linear-gradient(top, $linear-gradient-stop1-color 0%, $linear-gradient-stop2-color 100%);
+    border-radius: 5px;
+}
+
+.yui3-skin-sam .yui3-calendar-grid {
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.yui3-skin-sam .yui3-calendar-header {
+    padding-bottom: 10px;
+}
+
+.yui3-skin-sam .yui3-calendar-header-label {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.yui3-skin-sam .yui3-calendar-day,
+.yui3-skin-sam .yui3-calendar-prevmonth-day,
+.yui3-skin-sam .yui3-calendar-nextmonth-day {
+    padding: 5px;
+    border: 1px solid $gray;
+    background: $white;
+    text-align: center;
+}
+
+
+.yui3-skin-sam .yui3-calendar-day:hover {
+    background: $hover-color;
+    color: $white;
+}
+
+.yui3-skin-sam .yui3-calendar-selection-disabled,
+.yui3-skin-sam .yui3-calendar-selection-disabled:hover {
+    color: $disabled-day-font-color;
+    background: $gray;
+}
+
+.yui3-skin-sam .yui3-calendar-weekday {
+    font-weight: bold;
+}
+
+.yui3-skin-sam .yui3-calendar-prevmonth-day, .yui3-skin-sam .yui3-calendar-nextmonth-day {
+    color: $disabled-day-font-color;
+}
+
+.yui3-skin-sam .yui3-calendar-day {
+    font-weight: bold;
+}
+
+.yui3-skin-sam .yui3-calendar-day-selected {
+    background-color: $day-selected-background;
+    color: $black;
+}
+
+.yui3-skin-sam .yui3-calendar-left-grid {
+    margin-right: 1em;
+}
+
+[dir="rtl"] .yui3-skin-sam .yui3-calendar-left-grid,
+.yui3-skin-sam [dir="rtl"] .yui3-calendar-left-grid {
+    margin-right: auto;
+    margin-left: 1em;
+}
+
+.yui3-skin-sam .yui3-calendar-right-grid {
+    margin-left: 1em;
+}
+
+[dir="rtl"] .yui3-skin-sam .yui3-calendar-right-grid,
+.yui3-skin-sam [dir="rtl"] .yui3-calendar-right-grid {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+.yui3-skin-sam .yui3-calendar-day-highlighted {
+    background-color: $highlighted-day-background-color;
+}
+
+.yui3-skin-sam .yui3-calendar-day-selected.yui3-calendar-day-highlighted {
+    background-color: $highlighted-selected-day-background-color;
+}
+
+.yui3-calendar-day {
+    cursor: pointer;
+}
+
+.yui3-calendar-selection-disabled {
+    cursor: default;
+}
+
+.yui3-calendar-prevmonth-day {
+    cursor: default;
+}
+
+.yui3-calendar-nextmonth-day {
+    cursor: default;
+}
+
+.yui3-calendar-content:hover .yui3-calendar-day,
+.yui3-calendar-content:hover .yui3-calendar-prevmonth-day,
+.yui3-calendar-content:hover .yui3-calendar-nextmonth-day {
+    -moz-user-select: none;
+} 
+
+.yui3-calendar-header {
+    text-align: center;
+    position: relative;
+    /* ie6 width fix */
+    width: 100%;
+}
+
+.yui3-calendar-header-label {
+    display: inline;
+}
+
+.yui3-calendarnav-prevmonth {
+    cursor: pointer;
+}
+
+.yui3-calendarnav-nextmonth {
+    cursor: pointer;
+}
+
+.yui3-skin-sam .yui3-calendarnav-prevmonth, .yui3-skin-sam .yui3-calendarnav-nextmonth {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 10px solid transparent;
+    position: absolute;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+}
+
+.yui3-skin-sam .yui3-calendarnav-prevmonth:hover,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-nextmonth:hover,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-nextmonth:hover {
+    border-right-color: $hover-color;
+}
+
+.yui3-skin-sam .yui3-calendarnav-nextmonth:hover,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-prevmonth:hover,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-prevmonth:hover {
+    border-left-color: $hover-color;
+}
+
+.yui3-skin-sam .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled,
+.yui3-skin-sam .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled:hover,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled:hover,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled:hover {
+    cursor: default;
+    border-right-color: $gray;
+    border-left-color: transparent;
+}
+
+.yui3-skin-sam .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled,
+.yui3-skin-sam .yui3-calendarnav-nextmonth.yui3-calendarnav-month-disabled:hover,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled,
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled:hover,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-prevmonth.yui3-calendarnav-month-disabled:hover {
+    cursor: default;
+    border-left-color: $gray;
+    border-right-color: transparent;
+}
+
+.yui3-skin-sam .yui3-calendarnav-prevmonth {
+    border-right-color: $black;
+    left: 0;
+    margin-left: -10px;
+}
+
+.yui3-skin-sam .yui3-calendarnav-nextmonth {
+    border-left-color: $black;
+    right: 0;
+    margin-right: -10px;
+}
+
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-prevmonth,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-prevmonth {
+    left: auto;
+    right: 0;
+    border-left-color: $black;
+    border-right-color: transparent;
+}
+
+[dir="rtl"] .yui3-skin-sam .yui3-calendarnav-nextmonth,
+.yui3-skin-sam [dir="rtl"] .yui3-calendarnav-nextmonth {
+    left: 0;
+    right: auto;
+    border-right-color: $black;
+    border-left-color: transparent;
+}

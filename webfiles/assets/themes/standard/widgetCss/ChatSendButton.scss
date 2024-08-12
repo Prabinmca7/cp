@@ -1,0 +1,15 @@
+@import 'widget-includes';
+
+.rn_ChatSendButton {
+    margin: 1em 5px;
+}
+
+.rn_ChatSendButtonShown {
+    display: inline;
+}
+
+@media print {
+    .rn_ChatSendButton {
+        display: none;
+    }
+}

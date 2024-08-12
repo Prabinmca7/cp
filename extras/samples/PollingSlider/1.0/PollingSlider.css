@@ -1,0 +1,42 @@
+/**
+ * PollingSlider.css: Presentation CSS
+ */
+.rn_PollingSlider.rn_Polling {
+    position: fixed;
+    bottom: 0;
+    width: 250px;
+    right: 250px;
+    border-left: 1px solid #fff;
+}
+.rn_PollTitle {
+    text-decoration: none;
+    background: none;
+}
+.rn_PollTitle h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    width: 160px;
+    background: #EBEFF5;
+    color: #464646;
+    text-align: center;
+    border-top: 1px solid #fff;
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 3px #888;
+    box-shadow: 3px 3px 3px #888;
+}
+.rn_PollingSlider form {
+    padding: 20px 10px 40px 10px;
+    background: #EBEFF5;
+    color: #464646;
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 3px #888;
+    box-shadow: 3px 3px 3px #888;
+}
+.rn_PollAnswerArea {
+    min-height:40px;
+}
+.rn_PollSubmit {
+    margin-top: 20px;
+}

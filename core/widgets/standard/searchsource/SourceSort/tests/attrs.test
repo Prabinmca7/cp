@@ -1,0 +1,15 @@
+input: <form><rn:widget path="searchsource/SourceSort" source_id="KFSearch" column_order="0,1" label_column_input="columnlabel" label_column_default="none" column_label_list="what,who" direction_order="0,1" label_direction_input="directionlabel" label_direction_default="nodir" direction_label_list="left,right"/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form><div id="rn_SourceSort_0" class="rn_SourceSort">
+        <label for="rn_SourceSort_0_Column">
+        columnlabel    </label>
+    <select id="rn_SourceSort_0_Column">
+        <option selected value="-1">none</option>            <option  value="1">what</option>            <option  value="2">who</option>        </select>
+        <label for="rn_SourceSort_0_Direction">
+        directionlabel    </label>
+    <select id="rn_SourceSort_0_Direction">
+        <option selected value="-1">nodir</option>            <option  value="1">left</option>            <option  value="2">right</option>        </select>
+</div>
+</form>

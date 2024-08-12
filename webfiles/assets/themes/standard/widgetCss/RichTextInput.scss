@@ -1,0 +1,34 @@
+@import 'widget-includes';
+
+.rn_RichTextInput {
+    min-width: 200px;
+    $button-background: lighten($light-gray, 7%);
+
+    .cke_reset {
+        border-radius: .1875em;
+    }
+    
+    .cke_top {
+        border-radius: .1875em .1875em 0 0;
+    }
+
+    .cke_bottom {
+        border-radius: 0 0 .1875em .1875em;
+    }
+    
+    .cke_reset body{
+        background-color: #efefef;
+    }
+    
+    .rn_Loading {
+        @include loading-icon(1.4em);
+    }
+    
+    .rn_HelpText {
+        @include icon($fa-var-exclamation);
+    }
+}
+
+.rn_CkeDialogInputError {
+    color: #c31c24 !important;
+}

@@ -1,0 +1,81 @@
+.rn_Hero {
+    background: $hero-background;
+    color: $hero-color;
+    padding: 1em 0;
+    text-shadow: #000 0 1px;
+
+    .rn_Label {
+        text-shadow: #000 0 1px;
+    }
+
+    .rn_HeroLogo img {
+        height: 3em;
+        margin-bottom: 1em;
+    }
+
+    .rn_HeroInner {
+        @include outer-container;
+        @include clearfix;
+        margin: auto;
+        padding: 3em 0;
+
+        @include media($rn-xlarge) {
+            margin: 0 1em;
+        }
+
+        @include media($rn-small) {
+            margin: 0;
+            max-width: none;
+        }
+
+        @include media($rn-large) {
+            padding: 4em 1em 3em;
+        }
+
+        > a,
+        > p a {
+            // Normal link colors don't have enough contrast
+            // against the hero background color. Make them
+            // appear as outlined pill buttons.
+            border: 1px solid $hero-color;
+            border-radius: $base-border-radius;
+            color: $hero-color;
+            padding: 3px 8px;
+        }
+
+        a {
+            @include media($rn-medium) {
+                display: block;
+                margin-bottom: .8em;
+            }
+        }
+
+        .rn_HeroCopy {
+            h1 {
+                font-size: 1.4em;
+                font-weight: 200;
+                margin-bottom: .2em;
+
+                @include media($large-screen) {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                margin: auto;
+                margin-bottom: 3em;
+                font-weight: 200;
+            }
+        }
+
+        .col {
+            @include span-columns(6);
+            @include small-full-width;
+        }
+
+        input,
+        button {
+            min-height: 2.35em;
+        }
+    }
+}

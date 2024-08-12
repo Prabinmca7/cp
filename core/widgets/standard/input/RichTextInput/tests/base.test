@@ -1,0 +1,34 @@
+input: <form id='form' onsubmit="return false;"><rn:widget path='input/RichTextInput' name='CommunityQuestion.Body'/><rn:widget path='input/FormSubmit'/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div class="rn_RichTextInput rn_TextInput rn_Input" id="rn_RichTextInput_0">
+    <label id="rn_RichTextInput_0_Label" class="rn_Label">
+        <span class="rn_LabelInput">
+            Body        </span>
+                    </label>
+    <div id="rn_RichTextInput_0_Editor" class="rn_InputEditor">
+        <textarea id="rn_RichTextInput_0_ckeditor" name="CommunityQuestion.Body" class="rn_Hidden" ></textarea>
+        <div class="rn_Loading" id="rn_RichTextInput_0_LoadingIcon">
+            <span class="rn_ScreenReaderOnly">
+                Loading editor            </span>
+        </div>
+    </div>
+    <div class="rn_HelpArea">
+        <div class="rn_ContextualTip rn_Hidden">
+            <p class="rn_HelpText"></p>
+        </div>
+        <div class="rn_Hidden rn_AdvancedHelp">
+            <p></p>
+        </div>
+    </div>
+    </div>
+<div id="rn_FormSubmit_1" class="rn_FormSubmit">
+    <button type="submit" class="rn_DisplayButton" id="rn_FormSubmit_1_Button" disabled>
+    Submit    </button>
+    <span class="rn_Hidden">
+        <input id="rn_FormSubmit_1_Submission" type="checkbox" class="rn_Hidden"/>
+        <label for="rn_FormSubmit_1_Submission" class="rn_Hidden">&nbsp;</label>
+    </span>
+</div>
+</form>

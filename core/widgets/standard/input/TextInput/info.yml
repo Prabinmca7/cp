@@ -1,0 +1,122 @@
+version: "1.8.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: '{default_label}'
+  label_error:
+    name: rn:msg:ERROR_LABEL_LBL
+    type: string
+    description: rn:msg:PCT_S_IDENTIFY_FLD_NAME_ERR_MSGS_MSG
+  label_required:
+    name: rn:msg:REQUIRED_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_REQUIREMENT_MESSAGE_LBL
+    default: rn:msg:PCT_S_IS_REQUIRED_MSG
+  name:
+    name: rn:msg:NAME_LBL
+    type: string
+    description: rn:msg:INDICATES_BUS_OBJECT_FLD_DISP_MSG
+    required: true
+  required:
+    name: rn:msg:REQUIRED_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FLD_CONT_VAL_CF_SET_REQD_MSG
+  hint:
+    name: rn:msg:HINT_LBL
+    type: string
+    description: rn:msg:HINT_TXT_DISP_FLD_CF_VAL_OVRRIDE_MSG
+  always_show_hint:
+    name: rn:msg:ALWAYS_SHOW_HINT_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FLD_HINT_HINT_DISPED_MSG
+  tooltip_accessibility_message:
+    name: rn:msg:TOOLTIP_ACCESSIBILITY_MESSAGE_LBL
+    type: string
+    description: rn:msg:READR_INFORM_ERR_OVRRIDE_TB_RN_PCT_NPT_MSG
+    default: rn:msg:PRESS_R_O_THEN_DOWN_O_KEY_TOOLTIP_LBL
+  initial_focus:
+    name: rn:msg:INITIAL_FOCUS_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FIELD_FOCUSED_PAGE_LOADED_MSG
+  validate_on_blur:
+    name: rn:msg:VALIDATE_ON_BLUR_LBL
+    type: boolean
+    description: rn:msg:USED_WITH_EMAIL_ADDR_FLDS_AND_THE_MSG
+  always_show_mask:
+    name: rn:msg:ALWAYS_SHOW_MASK_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FLD_MASK_VAL_EXPECTED_MSG
+    default: true
+  default_value:
+    name: rn:msg:DEFAULT_VALUE_LBL
+    type: string
+    description: rn:msg:DF_VL_PPULATE_FLD_CF_VAL_OVRRIDE_MSG
+  allow_external_login_updates:
+    name: rn:msg:ALLOW_EXTERNAL_LOGIN_UPDATES_LBL
+    type: boolean
+    description: rn:msg:ALLWS_USERS_AUTHENTICATE_CP_EXT_MSG
+  hide_hint:
+    name: rn:msg:HIDE_HINT_CMD
+    type: boolean
+    description: rn:msg:SPECIFIES_HINTS_HIDDEN_DISPLAYED_MSG
+  existing_contact_check_ajax:
+    name: rn:msg:EXISTING_CONTACT_CHECK_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_EXISTING_CONT_CHECK_AJAX_LBL
+    default: /ci/ajax/widget
+  require_validation:
+    name: rn:msg:REQUIRE_VALIDATION_FIELD_LBL
+    type: boolean
+    description: rn:msg:DDTL_VLD_RQD_FLL_DD_TXTR_VLDTNBLR_VR_LVL_MSG
+  maximum_length:
+    name: rn:msg:MAXIMUM_FIELD_LENGTH_LBL
+    type: int
+    description: rn:msg:RESTRICTION_MAX_CHARS_ALLOWED_MSG
+    default: 0
+    min: 0
+  minimum_length:
+    name: rn:msg:MINIMUM_FIELD_LENGTH_LBL
+    type: int
+    description: rn:msg:RESTRICTION_MINIMUM_CHARS_ENTERED_MSG
+    default: 0
+    min: 0
+  maximum_value:
+    name: rn:msg:MAXIMUM_FIELD_VALUE_LBL
+    type: int
+    description: rn:msg:RESTRICTION_MAX_INT_VAL_ALLOWED_MSG
+  minimum_value:
+    name: rn:msg:MINIMUM_FIELD_VALUE_LBL
+    type: int
+    description: rn:msg:RESTRICTION_MINIMUM_INT_VAL_ENTERED_MSG
+  label_validation_incorrect:
+    name: rn:msg:LABEL_VALIDATION_INCORRECT_LBL
+    type: string
+    description: rn:msg:ERR_LABEL_DISP_VALIDATION_FLD_PRIM_MSG
+    default: rn:msg:VALIDATION_FOR_THE_FIELD_S_FAILED_LBL
+  label_validation:
+    name: rn:msg:LABEL_VALIDATION_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_VALIDATION_FIELD_MSG
+    default: rn:msg:REENTER_A_VALUE_FOR_THE_FIELD_S_LBL
+  textarea:
+    name: rn:msg:TEXT_AREA_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_DISP_FLD_MULTI_LN_TXT_MSG
+  hide_on_load:
+    name: rn:msg:HIDE_ON_LOAD_CMD
+    type: boolean
+    description: rn:msg:WDGETS_FLD_HIDDEN_FORM_PG_LOAD_MSG
+  read_only:
+    name: rn:msg:READ_ONLY_LBL
+    description: rn:msg:WHEN_SET_TRUE_CONTENT_IS_NOT_EDITABLE_MSG
+    type: boolean
+info:
+  description: rn:msg:WDGT_ALLWS_USRS_SET_FLD_VALS_DB_MSG
+contains:
+- widget: standard/output/FieldDisplay
+  versions: ["1.2"]

@@ -1,0 +1,47 @@
+@import 'widget-includes';
+
+.rn_VirtualAssistantAvatar {
+    float: left;
+    max-height: 100px;
+    max-width: 81px;
+    border: solid #bbb;
+    border-width: 1px 0 0 1px;
+}
+
+/* Avatar images are 81x100 */
+.rn_VirtualAssistantAvatar > .rn_DefaultEmotion {
+    height: 100px;
+    width: 81px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.rn_VirtualAssistantAvatar > .rn_Emotion {
+    margin-top: -100px;
+    height: 100px;
+    width: 81px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.rn_VirtualAssistantAvatar > div.listen {
+    background: #fff url('#{$theme-images}/avatar_sprite.png') 0 0 no-repeat;
+}
+
+.rn_VirtualAssistantAvatar > div.happy {
+    background: #fff url('#{$theme-images}/avatar_sprite.png') 0 -100px no-repeat;
+}
+
+.rn_VirtualAssistantAvatar > div.stop {
+    background: #fff url('#{$theme-images}/avatar_sprite.png') 0 -200px no-repeat;
+}
+
+.rn_VirtualAssistantAvatar > div.angry {
+    background: #fff url('#{$theme-images}/avatar_sprite.png') 0 -300px no-repeat;
+}
+
+.rn_VirtualAssistantAvatar > div.chat_default {
+    background: #fff url('/euf/assets/images/avatar_photo.jpg') -15px 0 no-repeat;
+}

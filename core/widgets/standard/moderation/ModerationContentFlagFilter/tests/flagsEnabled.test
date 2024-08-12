@@ -1,0 +1,25 @@
+input: <rn:widget path="standard/moderation/ModerationContentFlagFilter" flag_types="inappropriate,spam"/>
+jstestfile: flagsEnabled.test.js
+removecontent: true
+output:
+<div id="rn_ModerationContentFlagFilter_0" class="rn_ModerationContentFlagFilter">
+    <form class="rn_Padding">
+            <div class="rn_SocialFilterItem">
+                <fieldset class="rn_SocialFilterItem_FieldSet">
+                    <h3 id="rn_ModerationContentFlagFilter_0_Title">Flag</h3>
+                    <ul aria-labelledby="rn_ModerationContentFlagFilter_0_Title">
+                                                    <li>
+                                    <input name="rn_ModerationContentFlagFilter_0_FlagFilter_1" id="rn_ModerationContentFlagFilter_0_FlagFilter_1" type="checkbox" value="1">
+                                    <label class="rn_Label" for="rn_ModerationContentFlagFilter_0_FlagFilter_1">
+                                        Inappropriate                                    </label>
+                            </li>
+                                                    <li>
+                                    <input name="rn_ModerationContentFlagFilter_0_FlagFilter_2" id="rn_ModerationContentFlagFilter_0_FlagFilter_2" type="checkbox" value="2">
+                                    <label class="rn_Label" for="rn_ModerationContentFlagFilter_0_FlagFilter_2">
+                                        Spam                                    </label>
+                            </li>
+                                            </ul>
+                </fieldset>
+            </div>
+    </form>
+</div>

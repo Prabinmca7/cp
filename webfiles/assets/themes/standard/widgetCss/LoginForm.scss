@@ -1,0 +1,23 @@
+@import 'widget-includes';
+
+.rn_LoginForm {
+    .rn_ThirdPartyLogin {
+        @include span-columns(6);
+        border-right: 1px solid $base-border-color;
+        padding-right: 2em;
+
+        .rn_LoginUsingMessage {
+            margin: 1em 0;
+        }
+
+        .rn_OpenLogins {
+            @include clearfix;
+        }
+    }
+
+    .rn_StandardLogin {
+        @include span-columns(6);
+        @include omega;
+        padding-left: 2em;
+    }
+}

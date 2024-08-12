@@ -1,0 +1,78 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  category:
+    - Community
+  description: rn:msg:COMMUNITY_WHO_L_CONTRIBUTED_COMMUNITY_MSG
+attributes:
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - none
+    - small
+    - medium
+    - large
+    default: medium
+  content_display_type:
+    name: rn:msg:CONTENT_DISPLAY_TYPE_LBL
+    description: rn:msg:THE_FORMAT_TO_DISPLAY_THE_CONTENT_LBL
+    type: OPTION
+    default: grid_view
+    options:
+      - grid_view
+      - list_view
+  last_active_label:
+    name: rn:msg:LAST_ACTIVE_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_LAST_ACTIVE_LBL
+    type: STRING
+    default: rn:msg:LAST_ACTIVE_LBL
+  label_caption:
+    name: rn:msg:TABLE_CAPTION_LBL
+    description: rn:msg:C_L_TB_S_TG_SSS_PRACTICE_ACCESSIBILTY_MSG
+    type: STRING
+    default: rn:php:sprintf("<span class='rn_ScreenReaderOnly'>%s</span>", \RightNow\Utils\Config::getMessage(CONTAINING_RECENT_CONT_CONTRIBUTORS_LBL))
+  label_no_recent_users:
+    name: rn:msg:LABEL_NO_RECENT_USERS_LBL
+    description: rn:msg:DISPLAYED_THERE_RECENTLY_ACTIVE_USERS_MSG
+    type: STRING
+    default: rn:msg:NO_RECENT_ACTIVITY_LBL
+  max_user_count: 
+    name: rn:msg:MAXIMUM_USER_COUNT_LBL
+    description: rn:msg:MAXIMUM_USERS_TO_DISPLAY_IN_GRIDLIST_LBL
+    type: int
+    default: 25
+  specify_list_view_metadata:
+    name: rn:msg:SPECIFY_LIST_VIEW_METADATA_LABEL_LBL
+    description: rn:msg:DETERMINES_METAD_SHOW_END_S_PROVIDED_MSG
+    type: MULTIOPTION
+    options:
+    - user_avatar
+    - display_name
+    - last_active
+    default:  
+    - user_avatar    
+    - display_name
+    - last_active
+  show_users_active_in:
+    name: rn:msg:SHOW_USERS_ACTIVE_IN_LABEL_LBL
+    description: rn:msg:PERIOD_CONSIDER_DETERMINING_RECENCY_LBL
+    type: option
+    options:
+    - past_day
+    - past_week
+    - past_month
+    default: past_month    
+  last_active_date_format:
+    name: rn:msg:LAST_ACTIVE_DATE_FORMAT_LBL
+    description: rn:msg:MNTH_RPT_CT_FLDBR_PT_1_FLLTXTL_TXTL_RPRS_MSG
+    displaySpecialCharsInTagGallery: true
+    type: OPTION
+    options:
+    - full_textual
+    - short_textual
+    - numeric
+    default: short_textual

@@ -1,0 +1,138 @@
+1.7.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.6.1:
+  release: "20.8"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: New Feature
+    changelogID: 754
+    date: 05/05/2020
+    description: Added functionality for multi-selection of facets
+    details:
+    - Added new functionality for multi-selection of facets to further refine search
+      results.
+    level: minor
+    refno: 200120-000048
+    sortPosition: Middle
+1.5.1:
+  release: "19.8"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: Bug Fix
+    changelogID: 736
+    date: 07/04/2019
+    description: Addition of attribute results\_per\_page
+    details:
+    - Added new attribute results\_per\_page to support per_page configuration for
+      search results display
+    level: minor
+    refno: 190530-000196
+    sortPosition: Middle
+1.4.1:
+  release: "19.5"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: Bug Fix
+    changelogID: 717
+    date: 01/07/2019
+    description: Addition of attribute doc\_id\_navigation
+    details:
+    - Added new attribute doc\_id\_navigation to control the document Id based search
+      functionality
+    level: minor
+    refno: 181223-000010
+    sortPosition: Middle
+1.3.1:
+  release: "17.5"
+  entries:
+  - account: vikas.adavani
+    category: Bug Fix
+    changelogID: 627
+    date: 02/13/2017
+    description: Fetch all facets from search when clicked on More link and display
+      according to the max\_sub\_facet\_size attribute value
+    level: minor
+    refno: 170124-000012
+    sortPosition: Middle
+1.2.1:
+  release: "16.5"
+  entries:
+  - account: akshay.shenoy
+    category: Bug Fix
+    changelogID: 492
+    date: 03/21/2016
+    description: Modified processChildren method signature in Facet widget to fix
+      HTML Validation errors
+    level: minor
+    refno: 160224-000069
+    sortPosition: Middle
+1.1.2:
+  release: "15.11"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 387
+    date: 09/08/2015
+    description: Facet selection is now retained when opening search results in a
+      new tab
+    level: nano
+    refno: 150626-000000
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: New Feature
+    changelogID: 383
+    date: 02/28/2017
+    description: Added support for searching by Document Id
+    details:
+    - Added support for searching by Document Id by specifying document\_id\_reg\_ex
+    level: nano
+    refno: 141106-000114
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 356
+    date: 09/09/2015
+    description: Removed unused parameters, attributes and other defect fixes
+    level: minor
+    refno: 150528-000209
+    sortPosition: Middle
+  - account: arvind.gopalakrishnan
+    category: API Change
+    changelogID: 355
+    date: 06/11/2015
+    description: API versioning changes
+    details:
+    - OKCS API consumed by these widgets now supports versioning. Each of the widgets
+      is now associated with a particular version of the API. This change will be
+      transparent to end users.
+    level: minor
+    refno: 150303-000052
+    sortPosition: Middle
+1.0.1:
+  release: "15.5"
+  entries:
+  - date: 27/11/2013
+    level: major
+    description: Initial version of okcs/Facet
+    category: API Change
+    sortPosition: Middle

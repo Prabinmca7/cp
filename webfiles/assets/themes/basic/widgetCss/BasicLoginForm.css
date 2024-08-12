@@ -1,0 +1,12 @@
+.rn_BasicLoginForm label{
+    display:block;
+}
+.rn_BasicLoginForm input[type="text"],
+.rn_BasicLoginForm input[type="password"] {
+    width: 63%;
+    max-width: 250px;
+}
+/* this is separate in case a browser doesn't support attribute css selector, make sure the inputs still get the bottom margin */
+.rn_BasicLoginForm input {
+    margin-bottom: 4px;
+}

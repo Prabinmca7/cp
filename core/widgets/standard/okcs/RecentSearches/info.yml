@@ -1,0 +1,46 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [node, autocomplete, autocomplete-sources]
+attributes:
+  get_okcs_data_ajax:
+    name: rn:msg:AJAX_ENDPOINT_FOR_OKCS_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+  no_of_suggestions:
+    name: rn:msg:NUMBER_OF_RECENT_SEARCHES_BE_DISPLAYED_LBL
+    type: INT
+    description: rn:msg:SUGG_DT_SEL_EE_FND_PARENTSELECTOR_MSG
+    default: 5
+    min: 0
+    max: 10
+  parent_selector:
+    name: rn:msg:CLASS_OF_THE_SEARCH_CONTAINER_LBL
+    description: rn:msg:T_SET_LOC_STNDRDSRCHSRCSRC_RR_SRCH_FLD_MSG
+    required: true
+    default: rn_SearchInput
+    type: STRING
+  label_recent_search:
+    name: rn:msg:RECENT_SEARCHES_LABEL_LBL
+    description: rn:msg:LABEL_BE_PLACED_RECENT_SEARCHES_LIST_LBL
+    default: rn:msg:RECENT_SRCHS_LBL
+    type: STRING
+  display_tooltip:
+    name: rn:msg:DISPLAY_TOOLTIP_ATTRIBUTE_LBL
+    description: rn:msg:ATTRIBUTE_TOOLTIP_RECENT_SEARCHES_LBL
+    default: false
+    type: BOOLEAN
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAMES_OFSRCH_SOURCES_TO_BE_USED_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - OKCSSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+info:
+  description: rn:msg:T_SRCH_WRKS_NS_HD_PRNTSLCT_TL_RPT_RPT_SS_MSG

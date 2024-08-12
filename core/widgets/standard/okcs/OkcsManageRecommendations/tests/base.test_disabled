@@ -1,0 +1,98 @@
+input: <rn:widget path="standard/okcs/OkcsManageRecommendations" source_id="OKCSBrowse" view_type="table"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,CP_ANSWERS_DETAIL_URL|answers/answer_view
+contact: eturner@rightnow.com.invalid
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_OkcsManageRecommendations_0" class="rn_OkcsManageRecommendations rn_SourceResultListing">
+    <div id="rn_OkcsManageRecommendations_0_Alert" aria-live="polite" class="rn_ScreenReaderOnly"></div> 
+        <div id="rn_OkcsManageRecommendations_0_Loading"></div>
+    <div id="rn_OkcsManageRecommendations_0_Content" class="rn_Content">
+                    <table id="rn_OkcsManageRecommendations_0_Grid" class="yui3-datatable-table" role="grid">
+    <caption class="yui3-datatable-caption rn_ScreenReaderOnly">Recommendation List</caption>
+    <thead class="yui3-datatable-columns ">
+        <tr>
+                                <th id="rn_OkcsManageRecommendations_0_Header_0" data-yui3-col-id="c0" scope="col" class="yui3-datatable-header ">
+                                                    Title                                            </th>
+                                <th id="rn_OkcsManageRecommendations_0_Header_1" data-yui3-col-id="c1" scope="col" class="yui3-datatable-header ">
+                                                    Case Number                                            </th>
+                                <th id="rn_OkcsManageRecommendations_0_Header_2" data-yui3-col-id="c2" scope="col" class="yui3-datatable-header ">
+                                                    Priority                                            </th>
+                                <th id="rn_OkcsManageRecommendations_0_Header_3" data-yui3-col-id="c3" scope="col" class="yui3-datatable-header ">
+                                                    Status                                            </th>
+                                <th id="rn_OkcsManageRecommendations_0_Header_4" data-yui3-col-id="c4" scope="col" class="yui3-datatable-header ">
+                                                    Date Added                                            </th>
+                    </tr>
+    </thead>
+    <tbody class="yui3-datatable-data">
+                <tr role="row" class='yui3-datatable-cell'>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_0">
+                                                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="60E42DF5E60C4ACB86D308849C24BABF" title="RE: First Guide">RE: First Guide</a>
+                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_1">
+                                                    123324                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_2">
+                                                    Low                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_3">
+                                                    New                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_4">
+                                                    12/14/2015                                            </td>
+                    </tr>
+                <tr role="row" class='yui3-datatable-cell'>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_0">
+                                                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="114EF7784294464A92DAFD79EB03E0D7" title="RE: First Guide">RE: First Guide</a>
+                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_1">
+                                                    234234                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_2">
+                                                    Low                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_3">
+                                                    New                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_4">
+                                                    12/14/2015                                            </td>
+                    </tr>
+                <tr role="row" class='yui3-datatable-cell'>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_0">
+                                                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="42D40617813647FEB75D24512E571DBC" title="RE: First Guide">RE: First Guide</a>
+                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_1">
+                                                    234234                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_2">
+                                                    Low                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_3">
+                                                    New                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_4">
+                                                    12/14/2015                                            </td>
+                    </tr>
+                <tr role="row" class='yui3-datatable-cell'>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_0">
+                                                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="6D2B8855614C432F9B5A8275B63A6CB9" title="RECombination content Three  ">RECombination content Three  </a>
+                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_1">
+                                                    1223                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_2">
+                                                    Low                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_3">
+                                                    New                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_4">
+                                                    12/09/2015                                            </td>
+                    </tr>
+                <tr role="row" class='yui3-datatable-cell'>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_0">
+                                                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="167A5C07B52842F3B9074A0FA95CC57A" title="RECombination content Three  ">RECombination content Three  </a>
+                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_1">
+                                                    1234                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_2">
+                                                    Low                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_3">
+                                                    New                                            </td>
+                                <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsManageRecommendations_0_Header_4">
+                                                    12/09/2015                                            </td>
+                    </tr>
+            </tbody>
+</table>            </div>
+    <div class="rn_AdditionalResults">
+            </div>
+    </div>

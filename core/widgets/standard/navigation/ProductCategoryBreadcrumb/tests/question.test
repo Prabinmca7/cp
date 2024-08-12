@@ -1,0 +1,26 @@
+input: <rn:widget path="standard/navigation/ProductCategoryBreadcrumb"/>
+removecontent: true
+urlparameters: /qid/1
+output:
+<div id="rn_ProductCategoryBreadcrumb_0" class="rn_ProductCategoryBreadcrumb">
+    <nav role="navigation">
+        <p id="rn_ProductCategoryBreadcrumb_0_Label" class="rn_ScreenReaderOnly">Current product hierarchy</p>
+        <ol aria-labelledby="rn_ProductCategoryBreadcrumb_0_Label">
+                                                            <li class="rn_BreadcrumbLevel rn_Level0 " itemscope itemtype="Breadcrumb">
+                    <a href="/app/products/detail/p/1" itemprop="url">
+                        <span itemprop="title">Mobile Phones</span>
+                    </a>
+                </li>
+                                                            <li class="rn_BreadcrumbLevel rn_Level1 " itemscope itemtype="Breadcrumb">
+                    <a href="/app/products/detail/p/2" itemprop="url">
+                        <span itemprop="title">Android</span>
+                    </a>
+                </li>
+                                                            <li class="rn_BreadcrumbLevel rn_Level2 rn_CurrentItem" itemscope itemtype="Breadcrumb">
+                    <a href="/app/products/detail/p/10" itemprop="url">
+                        <span itemprop="title">HTC</span>
+                    </a>
+                </li>
+                    </ol>
+    </nav>
+</div>

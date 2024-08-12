@@ -1,0 +1,16 @@
+@import 'widget-includes';
+
+.rn_RelatedKnowledgebaseAnswers.rn_TopAnswers {
+    ul {
+        padding-top: 0;
+    }
+
+    .rn_RelatedKnowledgebaseAnswersItem {
+        margin-bottom: 0;
+        @include list-kbanswer-icon;
+
+        .rn_Title {
+            font-size: 1em;
+        }
+    }
+}

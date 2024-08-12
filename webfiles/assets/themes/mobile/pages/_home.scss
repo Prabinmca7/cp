@@ -1,0 +1,16 @@
+.rn_Home {
+    padding: 0;
+
+    .rn_PopularKB .rn_Container,
+    .rn_Container .rn_VisualProductCategorySelector {
+        border-bottom: $dashed-border;
+    }
+
+    h2, .rn_VisualProductSelector .rn_BreadCrumb {
+        @extend %heading;
+    }
+
+    &.hero {
+        min-height: 200px;
+    }
+}

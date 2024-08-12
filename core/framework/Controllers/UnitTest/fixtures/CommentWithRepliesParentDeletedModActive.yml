@@ -1,0 +1,12 @@
+type: CommunityComment
+object:
+  CreatedByCommunityUser:
+    fixture: UserModActive
+  Body: Deleted comment by an active moderator.
+  StatusWithType.Status.LookupName: Deleted
+  BodyContentType.LookupName: text/x-markdown
+  _comments:
+    - fixture: CommentToUseWithDeletedParent
+      parameters:
+        Parent: this.ID
+        CommunityQuestion: this.CommunityQuestion

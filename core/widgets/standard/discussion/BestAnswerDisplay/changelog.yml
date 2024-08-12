@@ -1,0 +1,168 @@
+1.8.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.7.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+1.6.1:
+  release: "17.8"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 650
+    date: 05/17/2017
+    description: Users are now provided with ability to rate a best answer through
+      best answer display section.
+    level: minor
+    refno: 140605-000143
+    sortPosition: Middle
+1.5.1:
+  release: "17.5"
+  entries:
+  - account: aviroop.karmakar@oracle.com
+    category: New Feature
+    changelogID: 632
+    date: 02/23/2017
+    description: Added Role Set and Original Poster call outs to Best Answer area
+    details:
+    - Added original\_poster\_callout attribute which when enabled highlights any
+      best answers in a discussion that were posted by the original poster (OP) of
+      the question.
+    - Added author\_roleset\_callout attribute which highlights the best answers which
+      were posted by users having the specified role set ids.
+    level: minor
+    refno: 161222-000042
+    sortPosition: Middle
+1.4.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 543
+    date: 08/30/2016
+    description: Updated default message for label\_dynamic\_notice
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: New Feature
+    changelogID: 541
+    date: 02/28/2017
+    description: Updated description with additional details on usage of the widget
+      in accordance with QuestionComments widgets best\_answer\_types attribute.
+    level: minor
+    refno: 160225-000089
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 535
+    date: 08/10/2016
+    description: Removed role ="button" from ReplyToComment, ShowAllCommentText, and
+      CollapseAllCommentText links
+    details:
+    - Before JAWS would incorrectly say press spacebar to activate the ReplyToComment,
+      ShowAllCommentText, and CollapseAllCommentText links. After removing role ="button"
+      they are now correctly read as links to screen reader users.
+    level: nano
+    refno: 160715-000126
+    sortPosition: Middle
+1.3.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+  - account: milan.pandya
+    category: Bug Fix
+    changelogID: 479
+    date: 01/25/2016
+    description: Removal of unused attribute jump\_to\_link\_url
+    level: minor
+    refno: 151130-000121
+    sortPosition: Middle
+1.2.1:
+  release: "16.2"
+  entries:
+  - account: aswin.kolli
+    category: Bug Fix
+    changelogID: 435
+    date: 11/16/2015
+    description: Attributes label\_unmark\_best\_answer\_author\_title and label\_unmark\_best\_moderator\_title
+      have been renamed and label\_created\_time has been removed.
+    details:
+    - The attributes label\_unmark\_best\_answer\_author\_title and label\_unmark\_best\_answer\_moderator\_title
+      have been renamed to label\_unmark\_best\_answer\_author\_tooltip and label\_unmark\_best\_answer\_moderator\_tooltip
+      respectively.
+    - The attribute label\_created\_time has been removed as it is no longer used.
+    level: minor
+    refno: 150803-000169
+    sortPosition: Middle
+1.1.1:
+  release: "15.11"
+  entries:
+  - account: kanchan.karjee
+    category: Bug Fix
+    changelogID: 382
+    date: 09/09/2015
+    description: Best answer edits/deletions now prompt the user to refresh the page.
+    level: nano
+    refno: 150821-000081
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 373
+    date: 03/31/2016
+    description: The heading tags have been modified so that it will obey the accessibility
+      heading-order.
+    details:
+    - The heading tags have been modified so that they will abide to the accessibility
+      heading-order criterion.
+    - The CSS files need to be updated so that there will not be any look and feel
+      issues.
+    level: minor
+    refno: 150705-000007
+    sortPosition: Middle
+1.0.1:
+  release: "15.8"
+  entries:
+  - date: 18/07/2014
+    level: major
+    description: Initial version of discussion/BestAnswerDisplay
+    category: API Change
+    sortPosition: Middle

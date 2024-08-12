@@ -1,0 +1,24 @@
+operations:
+-   type: conversion
+    title: rn:msg:WIDGET_MIGRATION_LBL
+    description: rn:msg:TL_WRKS_FRMWRK_VRS_FRMWRK_30_MJRTY_TL_TB_MSG
+    instructions: rn:msg:FLLOWING_WIDGETS_PRE_CP_FRAMEWORK_MSG
+    success: rn:msg:FOLLOWING_WIDGETS_CONVERTED_MSG
+    failure: rn:msg:FOLLOWING_WIDGETS_CONVERTED_PROCESS_MSG
+    postExecuteMessage: rn:msg:SUCC_MIGRATED_WIDGETS_ACTIVATED_LBL
+    destinationVersion: "3.0"
+    file: WidgetConverter.php
+-   type: suggestion
+    title: rn:msg:YUI_2_TO_YUI_3_SUGGESTIONS_LBL
+    description: rn:msg:TOOL_HELP_LOCATE_IDENTIFY_REFS_YUI_MSG
+    instructions: rn:msg:FOLLOWING_FILES_PRE_YUI_3_0_MSG
+    destinationVersion: "3.0"
+    file: Yui3Suggestions.php
+-   type: conversion
+    title: rn:msg:INTENT_GUIDE_CLEANUP_LBL
+    description: rn:msg:TOOL_REM_INTENT_GUIDE_PAGES_SUPP_CP_MSG
+    instructions: rn:msg:FOLLOWING_PGS_SUPP_SEL_PGS_REM_MSG
+    success: rn:msg:FOLLOWING_PAGE_S_REMOVED_MSG
+    failure: rn:msg:FOLLOWING_PG_S_REM_PLS_REM_MAN_MSG
+    destinationVersion: "3.1"
+    file: IntentPageRemoval.php

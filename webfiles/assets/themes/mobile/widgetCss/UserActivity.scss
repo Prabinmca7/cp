@@ -1,0 +1,64 @@
+@import 'widget-includes';
+
+.rn_UserActivity {
+    margin-bottom: 1em;
+
+    .rn_ActivityTitleLabel {
+        // Activity-type icon
+        &::before {
+            border-radius: 50%;
+            padding: 10px;
+            background: $light-gray;
+            border: 1px solid darken($light-gray, 1%);
+        }
+    }
+
+    .rn_Activity {
+        margin-bottom: .5em;
+
+        .rn_ActivityTitle {
+            @include row;
+            font-weight: normal;
+        }
+
+        .rn_Time {
+            color: darken($light-gray, 50%);
+            font-size: $base-font-size * .75;
+        }
+
+        .rn_ActivityContent {
+            @include row;
+            clear: both;
+            padding: .5em;
+            background-color: #f4f4f4;
+            border: 1px solid #ececec;
+
+            .rn_ParentContent {
+                @include row;
+
+                .rn_Info {
+                    @include span-columns(10);
+                }
+            }
+
+            .rn_SubContent {
+                @include row;
+                @include shift(2);
+                margin-top: 1em;
+
+                .rn_Info {
+                    @include span-columns(10);
+                }
+            }
+
+            .rn_ActivityUser {
+                @include span-columns(2);
+            }
+
+            .rn_Info {
+                @include omega;
+                word-wrap: break-word;
+            }
+        }
+    }
+}

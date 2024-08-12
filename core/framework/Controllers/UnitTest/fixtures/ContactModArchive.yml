@@ -1,0 +1,7 @@
+type: Contact
+object:
+  Login: IzaArchivedModerator
+  Name.First: Iza
+  Name.Last: Moderator
+  Emails.0.Address: usermodarchived@social.com.invalid
+  NewPassword: ''

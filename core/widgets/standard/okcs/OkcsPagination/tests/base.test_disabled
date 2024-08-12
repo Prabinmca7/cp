@@ -1,0 +1,17 @@
+input: <rn:widget path="standard/okcs/OkcsPagination" source_id="OKCSSearch"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/Windows
+output:
+<div id="rn_OkcsPagination_0" class="rn_OkcsPagination rn_SourcePagination">
+    <div class="rn_PaginationLinks" role="navigation" aria-label="Result pages">
+        <ul>
+                                                            <li>
+        <a href="/app/unitTest/rendering/widgets/standard/okcs/OkcsPagination/tests/base/kw/Windows/page/1" class="rn_NextPage" data-rel="next" rel="next">
+        <span>Next</span>
+    </a>
+        </li>
+                        </ul>
+    </div>
+</div>

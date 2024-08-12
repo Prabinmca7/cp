@@ -1,0 +1,36 @@
+<rn:block id="preItemList"/>
+<ul>
+<% for (var i = 0, slug, className, href; i < items.length; i++) { %>
+<% slug = RightNow.Text.slugify(items[i].label); %>
+<% className = (items[i].hasChildren) ? 'rn_WithSubItems' : ''; %>
+<% className = ((i + 1) % 6 === 0) ? className + ' rn_LastItem' : className %>
+<% href = url + '/' + hierarchyBase + '/' + items[i].id + '/~/' + slug; %>
+<rn:block id="itemListTop"/>
+<li class="rn_Item rn_ItemWithID<%= items[i].id %> <%= slug %> <%= className %>">
+    <rn:block id="preItem"/>
+    <div class="rn_VisualItemContainer" data-id="<%= items[i].id %>">
+        <rn:block id="preItemImage"/>
+        <div class="rn_ImageContainer">
+            <a href="<%= href %>" class="rn_ItemLink" data-id="<%= items[i].id %>">
+                <img src="<%= imageBase %>/<%= slug %>.png" alt="<%= slug %>"/>
+            </a>
+        </div>
+        <rn:block id="postItemImage"/>
+
+        <div class="rn_ActionContainer">
+            <rn:block id="preItemLink"/>
+                <a href="<%= href %>" class="rn_ItemLink" data-id="<%= items[i].id %>"><%= escapeHtml(items[i].label.replace(/(<([^>]+)>)/ig,"")) %></a>
+            <rn:block id="postItemLabel"/>
+            <% if (items[i].hasChildren) { %>
+            <rn:block id="preExpandItemLink"/>
+                <a href="javascript:void(0);" class="rn_ShowChildren" data-id="<%= items[i].id %>"><%= showMoreLabel %></a>
+            <rn:block id="postExpandItemLink"/>
+            <% } %>
+        </div>
+    </div>
+    <rn:block id="postItem"/>
+</li>
+<rn:block id="itemListBottom"/>
+<% } %>
+</ul>
+<rn:block id="postItemList"/>

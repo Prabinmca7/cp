@@ -1,0 +1,16 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/FormInput" name="Incident.Subject" required="true" minimum_length="10"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+replace: name='validationToken'$1value=''
+output:
+<form method='post' action="/app/unitTest/rendering/Views/Admin/tests/rn_form/widget"><div><div id="rn_TextInput_1" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_1_LabelContainer">
+        <label for="rn_TextInput_1_Incident.Subject" id="rn_TextInput_1_Label" class="rn_Label">
+        Subject                        <span class="rn_Required" aria-label="Required">
+    *</span>                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_1_Incident.Subject" name="Incident.Subject" class="rn_Text" maxlength='240' required  />
+    </div>
+<input type='hidden' name='validationToken' value=''/>
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5TdWJqZWN0Ijp7InJlcXVpcmVkIjp0cnVlLCJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJTdWJqZWN0IiwibGFiZWxfZXJyb3IiOiIiLCJsYWJlbF92YWxpZGF0aW9uIjoiUmUtZW50ZXIgYSB2YWx1ZSBmb3IgdGhlIGZpZWxkICclcycifSwibWluTGVuZ3RoIjoxMH19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

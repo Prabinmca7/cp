@@ -1,0 +1,15 @@
+<% if (label) { %>
+    <rn:block id="preLabel"/>
+    <label for="rn_<%= instanceID %>_<%= fieldName %>" id="rn_<%= instanceID %>_Label" class="rn_Label">
+    <%= label %>
+    <% if (required) { %>
+        <rn:block id="preRequired"/>
+            <%= getRequiredLabel() %>
+        <rn:block id="postRequired"/>
+    <% } %>
+    <% if (hint) { %>
+        <span class="rn_ScreenReaderOnly"><%= hint %></span>
+    <% } %>
+    </label>
+    <rn:block id="postLabel"/>
+<% } %>

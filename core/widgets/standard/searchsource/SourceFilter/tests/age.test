@@ -1,0 +1,20 @@
+input: <form><rn:widget path="searchsource/SourceFilter" source_id="SocialSearch" filter_type="updatedTime" label_default="--" labels="Last day,Last week,Last month,Last year" label_input="#rn:msg:FILTER_BY_AGE_LBL#"/></form>
+removecontent: true
+output:
+<form><div id="rn_SourceFilter_0" class="rn_SourceFilter">
+    <label for="rn_SourceFilter_0_Dropdown">
+        Filter by age    </label>
+    <select id="rn_SourceFilter_0_Dropdown">
+            <option selected value="-1">
+            --        </option>
+                <option value="day" >
+            Last day        </option>
+            <option value="week" >
+            Last week        </option>
+            <option value="month" >
+            Last month        </option>
+            <option value="year" >
+            Last year        </option>
+        </select>
+</div>
+</form>

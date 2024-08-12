@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_ChatEngagementStatus {
+    background: #EFEFF4;
+    border: solid #BBB;
+    border-width: 1px 0;
+    padding: 5px;
+    line-height: 1.25em;
+    margin: 0 0 .5em;
+}
+
+.rn_ChatEngagementStatus .rn_SearchingDetailMessage,
+.rn_ChatEngagementStatus .rn_RequeuedDetailMessage,
+.rn_ChatEngagementStatus .rn_CanceledUserDetailMessage,
+.rn_ChatEngagementStatus .rn_CanceledSelfServiceDetailMessage,
+.rn_ChatEngagementStatus .rn_CanceledNoAgentsAvailDetailMessage,
+.rn_ChatEngagementStatus .rn_CanceledQueueTimeoutDetailMessage,
+.rn_ChatEngagementStatus .rn_CanceledDequeuedDetailMessage {
+    padding: 10px;
+}
+
+.rn_ChatEngagementStatus h2 {
+    font-size: 1em;
+}
+
+@media print {
+    .rn_ChatEngagementStatus {
+        display: none;
+    }
+}

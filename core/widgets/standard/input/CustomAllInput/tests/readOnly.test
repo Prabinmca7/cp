@@ -1,0 +1,6 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/input/CustomAllInput' table='Incident' read_only="true"/></form>
+contact: useractive1
+removecontent: true
+output:
+<form onsubmit="return false;">
+</form>

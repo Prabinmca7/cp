@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/navigation/Accordion' toggle='toggleID' item_to_toggle='itemToToggleID' collapsed_css_class='rn_rn_collapse'/><div id='toggleID' class='rn_rn_collapse'></div><div id='itemToToggleID' style='display:none;'></div>
+jstestfile: collapsed.test.js
+removecontent: true
+template: mobile
+output: <div id='toggleID' class='rn_rn_collapse'></div><div id='itemToToggleID' style='display:none;'></div>

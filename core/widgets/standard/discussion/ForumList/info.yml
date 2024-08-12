@@ -1,0 +1,112 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  category:
+    - Community
+  description: rn:msg:FRMS_PRD_CT_TB_FMT_VT_DT_CNT_CNT_CT_BRF_MSG
+attributes:
+  type:
+    name: rn:msg:TYPE_LBL
+    description: rn:msg:TYPE_OF_HIERARCHY_LBL
+    type: option
+    default: product
+    options:
+      - product
+      - category
+  label_caption:
+    name: rn:msg:TABLE_CAPTION_LBL
+    description: rn:msg:C_L_TB_S_TG_SSS_PRACTICE_ACCESSIBILTY_MSG
+    type: STRING
+    default: rn:php:sprintf("<span class='rn_ScreenReaderOnly'>%s</span>", \RightNow\Utils\Config::getMessage(TABLE_CONTAINING_FORUM_STATISTICS_LBL))
+  label_forum:
+    name: rn:msg:FORUM_LABEL_LBL
+    description: rn:msg:FORUM_PRODUCTS_CATEGORIES_COLUMN_HEADER_LBL
+    type: STRING
+    default: rn:msg:FORUM_LBL
+  label_question_count:
+    name: rn:msg:QUESTIONS_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_QUESTIONS_TOTAL_MSG
+    type: STRING
+    default: rn:msg:QUESTIONS_LBL
+  label_comment_count:
+    name: rn:msg:COMMENTS_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_COMMENTS_TOTAL_MSG
+    type: STRING
+    default: rn:msg:COMMENTS_LBL
+  label_last_activity:
+    name: rn:msg:LAST_ACTIVITY_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_LAST_ACTIVITY_HEADER_LBL
+    type: STRING
+    default: rn:msg:LAST_ACTIVITY_LBL
+  label_no_activity:
+    name: rn:msg:NO_ACTIVITY_LABEL_LBL
+    description: rn:msg:THERE_HAS_BEEN_NO_ACTIVITY_AROUND_FORUM_LBL
+    type: STRING
+    default: rn:msg:NO_ACTIVITY_LBL
+  max_forum_count: 
+    name: rn:msg:MAXIMUM_FORUM_COUNT_LBL
+    description: rn:msg:MAX_ITEMS_DISPLAY_ONE_LEVEL_LBL
+    type: int
+    default: 10
+    max: 40
+  show_forum_description:
+    name: rn:msg:SHOW_FORUM_DESCRIPTION_LBL
+    description: rn:msg:DETERMINES_T_S_HIDE_FORUM_DESCRIPTION_LBL
+    type: boolean
+    default: true
+  maximum_description_length:
+    name: rn:msg:MAXIMUM_DESCRIPTION_LENGTH_LBL
+    type: int
+    description: rn:msg:MAXIMUM_CHARACTER_ALLOWED_DESC_FIELD_LBL
+    default: 128
+  remove_html_from_description:
+    name: rn:msg:REMOVE_HTML_FROM_DESCRIPTION_LABEL_LBL
+    description: rn:msg:WHETHER_REM_HTML_TAGS_FORUM_DESCRIPTION_MSG
+    type: boolean
+    default: true
+  specify_forums:
+    name: rn:msg:SPECIFY_FORUMS_LBL
+    description: rn:msg:CMMSPRTD_SPC_FRMS_PRD_CT_DSP_SPC_DD_TB_F_O_MSG
+    type: STRING
+  sticky_forums:
+    name: rn:msg:STICKY_FORUMS_LBL
+    description: rn:msg:CMMSPRTD_SPC_FRMS_PRD_CT_DSP_SPC_DD_TB_R_MSG
+    type: STRING
+  show_columns:
+    name: rn:msg:SHOW_COLUMNS_LBL
+    description: rn:msg:CLS_FRM_PRV_CMMSPRTD_VLS_SPC_DD_CLS_TBL_MSG
+    type: MULTIOPTION
+    options:
+    - question_count
+    - comment_count
+    - last_activity
+    default:  
+    - question_count
+    - comment_count
+    - last_activity
+  last_activity_date_format:
+    name: rn:msg:LAST_ACTIVITY_DATE_FORMAT_LBL
+    description: rn:msg:MNTH_RPT_CT_DTBRL_1_FLLTXTL_TXTL_MNTH_JN_MSG
+    displaySpecialCharsInTagGallery: true
+    type: OPTION
+    options:
+    - full_textual
+    - short_textual
+    - numeric
+    default: short_textual
+  sort_order:
+    name: rn:msg:SORT_ORDER_LBL
+    description: rn:msg:COLUMN_BASED_SORTING_SHOULD_HAPPEN_LBL
+    type: OPTION
+    options:
+    - question_count
+    - comment_count
+    - last_activity
+    - prodcat_id
+    default: last_activity
+  show_sub_items_for:
+    name: rn:msg:SHOW_SUBITEMS_FOR_LBL
+    type: int
+    description: rn:msg:PRODUCTCATEGORY_S_T_LIMIT_S_BR_SUBITEMS_MSG

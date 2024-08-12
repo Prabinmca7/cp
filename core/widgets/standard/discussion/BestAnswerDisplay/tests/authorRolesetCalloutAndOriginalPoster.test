@@ -1,0 +1,140 @@
+input: <rn:widget path="discussion/BestAnswerDisplay" original_poster_callout="true" author_roleset_callout="5|Posted by a moderator"/>
+removecontent: true
+urlparameters: /qid/2037
+output:
+<div id="rn_BestAnswerDisplay_0" class="rn_BestAnswerDisplay">
+    <h2>Best Answer</h2>
+        <ul class="rn_BestAnswerList" aria-live="polite">
+<li class="rn_BestAnswerContainer" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="Answer">
+    <div class="rn_BestAnswerInfo">
+            <div class="rn_CommentAuthorAvatar" itemprop="author" itemscope itemtype="Person">
+                <span class="rn_UserAvatar" title="modactive2">
+            <a itemprop="url" href="/app/public_profile/user/%DatabaseSocialUser_3%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor0" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">M</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">modactive2</span>
+                </a>
+    </span>
+            </div>
+    </div>
+    <div class="rn_BestAnswerContent" aria-live="polite">
+        <div class="rn_BestAnswerHeader">
+            <div class="rn_CommentSelectedBy">
+                Selected Best by                                    <a class="rn_SelectedByUser" href="/app/public_profile/user/%DatabaseSocialUser_2%/">
+                                                    Moderator                                            </a>
+                                                </div>
+        </div>
+        <div class="rn_BestAnswerBody rn_CommentCollapsed">
+                            <div class="rn_BestAnswerLabel">
+                                                                    <div class="rn_HighlightBestAnswer rn_AuthorStyle_1">
+                            Posted by a moderator                        </div>
+                                                                <div class="rn_HighlightBestAnswer rn_OriginalPosterStyle">
+                            Posted by Original Poster                        </div>
+                                    </div>
+                        <div itemprop="text" id="rn_BestAnswerDisplay_0_BestAnswerCommentText_1281" class="rn_CommentText">
+                <div class="rn_CommentLiner">
+                    <p>Comment by (modactive2/modactive2) with status = active and comment marked best answer by moderator</p>
+                </div>
+            </div>
+            <div class="rn_BestAnswerActions">
+                <div class="rn_BestAnswerRemoval">
+                                    &nbsp;
+                                </div>
+                <div class="rn_BestAnswerRating">
+                    <div id="rn_SocialContentRating_1" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="Upvote" >
+    <span class="rn_ScreenReaderOnly" aria-live="polite">Upvote</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Be the first to vote                	</span>
+        	        </span>
+    </div>
+                </div>
+                <div class="rn_BestAnswerCommentActions">
+                    <a itemprop="url" class="rn_ReplyToComment " href="javascript:void(0)" data-commentid="1281">
+                        Jump To                    </a>
+                    <a class="rn_ShowAllCommentText" href="javascript:void(0)" data-commentid="1281">
+                        Expand                    </a>
+                    <a class="rn_CollapseCommentText rn_Hidden" href="javascript:void(0)" data-commentid="1281">
+                        Collapse                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="rn_BestAnswerContainer" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="Answer">
+    <div class="rn_BestAnswerInfo">
+            <div class="rn_CommentAuthorAvatar" itemprop="author" itemscope itemtype="Person">
+                <span class="rn_UserAvatar" title="inactive">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor5" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">!</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName rn_DisplayNameDisabled" itemprop="name">[inactive]</span>
+        </span>
+            </div>
+    </div>
+    <div class="rn_BestAnswerContent" aria-live="polite">
+        <div class="rn_BestAnswerHeader">
+            <div class="rn_CommentSelectedBy">
+                Selected Best by                                    <a class="rn_SelectedByUser" href="/app/public_profile/user/%DatabaseSocialUser_3%/">
+                                                    Author                                            </a>
+                                                </div>
+        </div>
+        <div class="rn_BestAnswerBody rn_CommentCollapsed">
+                            <div class="rn_BestAnswerLabel">
+                                                        </div>
+                        <div itemprop="text" id="rn_BestAnswerDisplay_0_BestAnswerCommentText_1286" class="rn_CommentText">
+                <div class="rn_CommentLiner">
+                    <p>Comment by (usersuspended/usersuspended) with status = active</p>
+
+<p><em>reply level 2</em>
+ and comment marked best answer by author</p>
+                </div>
+            </div>
+            <div class="rn_BestAnswerActions">
+                <div class="rn_BestAnswerRemoval">
+                                    &nbsp;
+                                </div>
+                <div class="rn_BestAnswerRating">
+                    <div id="rn_SocialContentRating_2" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="Upvote" >
+    <span class="rn_ScreenReaderOnly" aria-live="polite">Upvote</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Be the first to vote                	</span>
+        	        </span>
+    </div>
+                </div>
+                <div class="rn_BestAnswerCommentActions">
+                    <a itemprop="url" class="rn_ReplyToComment " href="javascript:void(0)" data-commentid="1286">
+                        Jump To                    </a>
+                    <a class="rn_ShowAllCommentText" href="javascript:void(0)" data-commentid="1286">
+                        Expand                    </a>
+                    <a class="rn_CollapseCommentText rn_Hidden" href="javascript:void(0)" data-commentid="1286">
+                        Collapse                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+</ul>
+    </div>

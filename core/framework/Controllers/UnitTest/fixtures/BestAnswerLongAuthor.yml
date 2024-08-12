@@ -1,0 +1,7 @@
+type: BestCommunityQuestionAnswer
+object:
+  CommunityUser:
+    fixture: UserActive1
+  BestAnswerType.LookupName: Author Selected
+  CommunityComment:
+    fixture: CommentActiveLongUserActive

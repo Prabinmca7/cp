@@ -1,0 +1,85 @@
+@import 'widget-includes';
+
+.rn_MobileProductCategoryInput {
+    @include row;
+    margin-bottom: 8px;
+
+    &.rn_HideEmpty {
+        visibility: hidden;
+    }
+
+    .rn_Label {
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    /* Dialog styling */
+    &.rn_Input,
+    &.rn_PanelContent {
+        padding: 0;
+    }
+
+    &.rn_Input {
+        margin-bottom: .5em;
+
+        .rn_Selected {
+            background-color: rgba(56, 121, 217, .6);
+        }
+
+        .rn_Parent,
+        .rn_SubItem {
+            border-bottom: 1px solid #DDD;
+        }
+
+        .rn_Parent label,
+        .rn_SubItem label {
+            color: #000;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1.2em;
+            padding: 20px 16px;
+            width: auto;
+        }
+
+        label.rn_HasChildren {
+            @include icon($fa-var-angle-right, after);
+        }
+    }
+
+    .rn_LoadingIcon {
+        @include loading-icon(1em) {
+            right: 10px;
+            position: absolute;
+            color: $dark-gray;
+        }
+    }
+    button.rn_DisplayButton {
+        @include span-columns(4);
+        @media screen and (-ms-high-contrast: active) {
+         /* All high contrast styling rules */
+            border: 1px solid $medium-gray;
+            font-weight: normal;
+            margin-top: auto;
+            min-height: 1.5em;
+            padding: 4px 20px 4px 4px;
+            position: relative;
+            text-align: left;
+            text-shadow: none;
+            margin-right: 0;
+            border-radius: 0;
+            box-shadow: none;
+
+            @include caret(down, after) {
+                position: absolute;
+                right: 5px;
+            }
+
+            &:hover,
+            &:focus {
+                box-shadow: none;
+                background-color: $light-gray;
+            }
+        }
+    }
+}

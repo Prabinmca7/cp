@@ -1,0 +1,9 @@
+input: <rn:widget path="standard/user/UserStatus" label_pending="blah" label_pending_tooltip="blee"/>
+contact: modactive2
+fixture: UserPending
+removecontent: true
+urlparameters: /user/%CommunityUser%
+output:
+<div id="rn_UserStatus_0" class="rn_UserStatus rn_Pending">
+    <span class="rn_StatusContainer" title="blee">blah</span>
+</div>

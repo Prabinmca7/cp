@@ -1,0 +1,25 @@
+@import 'widget-includes';
+
+.rn_SupportedLanguages {
+    max-width: 82%;
+
+    a:link {
+        line-height: 30px;
+        color: $hero-color;
+    }
+
+    fieldset {
+        display: inline;
+        padding: .5em;
+        background: $hero-background;
+        border: 0;
+
+        label {
+            padding-left: 5px;
+            color: $hero-color;
+            font-weight: normal;
+            float: right;
+            line-height: 2.35em;
+        }
+    }
+}

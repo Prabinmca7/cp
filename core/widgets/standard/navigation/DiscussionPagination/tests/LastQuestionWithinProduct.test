@@ -1,0 +1,14 @@
+input: <rn:widget path='standard/navigation/DiscussionPagination'/>
+removecontent: true
+urlparameters: /qid/102
+output:
+<div id="rn_DiscussionPagination_0" class="rn_DiscussionPagination">
+                    <div id="rn_DiscussionPagination_0_DiscussionPagination" class="rn_DiscussionPaginationLinks">
+                            <a href="javascript:void(0);" role="link" data-type="oldestQuestion" id="rn_DiscussionPagination_0_FirstDiscussion" class="rn_FirstDiscussion" title="Click to go to the first and oldest discussion in Voice Plans">
+                    First                </a>
+                <span class="rn_PageHellip">&hellip;</span>
+                <a href="javascript:void(0);" role="link" data-type="prevQuestion" id="rn_DiscussionPagination_0_PreviousDiscussion" class="rn_PreviousDiscussion" title="Click to go to the previous discussion in Voice Plans">
+                    Previous Discussion                </a>
+                            <span class="rn_Separator"></span>
+                        </div>
+        </div>

@@ -1,0 +1,7 @@
+@import 'widget-includes';
+
+.rn_AnswerStatus .rn_AnswerInfo {
+    color: darken($medium-gray, 20);
+    font-size: small;
+    margin: 6px 0 16px;
+}

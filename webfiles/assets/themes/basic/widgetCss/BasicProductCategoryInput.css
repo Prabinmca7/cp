@@ -1,0 +1,5 @@
+.rn_BasicProductCategoryInput select {
+    width: 63%;
+    max-width: 250px;
+    margin-bottom: 4px;
+}

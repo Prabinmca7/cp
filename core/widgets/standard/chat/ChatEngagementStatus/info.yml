@@ -1,0 +1,89 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  loading_icon_path:
+    name: rn:msg:LOADING_ICON_URL_LBL
+    description: rn:msg:URL_IMAGE_DISPLAY_WHEN_LOADING_LBL
+    default: images/indicator.gif
+    type: FILEPATH
+  label_status_prefix:
+    name: rn:msg:PREFIX_TEXT_LABEL_MSG
+    description: rn:msg:LABEL_DISPLAY_PREFIX_TEXT_LBL
+    default: rn:php:\RightNow\Utils\Config::getMessage(STATUS_COLON_LBL) . ' '
+    type: STRING
+  label_status_searching:
+    name: rn:msg:STTS_TXT_LBEL_STATUS_EQS_MSG
+    description: rn:msg:LABEL_DISP_STATUS_TXT_SEARCHING_MSG
+    default: rn:msg:SEARCHING_LBL
+    type: STRING
+  label_status_canceled:
+    name: rn:msg:STATUS_TXT_LABEL_STATUS_EQUALS_MSG
+    description: rn:msg:LABEL_DISP_STATUS_TXT_CHAT_REQ_MSG
+    default: rn:msg:CANCELED_LBL
+    type: STRING
+  label_status_connected:
+    name: rn:msg:STATUS_TXT_LABEL_STATUS_EQS_MSG
+    description: rn:msg:LABEL_DISP_STATUS_TEXT_CONN_AGT_MSG
+    default: rn:msg:CONNECTED_LBL
+    type: STRING
+  label_status_reconnecting:
+    name: rn:msg:STTS_TXT_LABEL_STATUS_EQS_MSG
+    description: rn:msg:LABEL_DISP_STATUS_TXT_RECONNECTING_MSG
+    default: rn:msg:RECONNECTING_LBL
+    type: STRING
+  label_status_disconnected:
+    name: rn:msg:STTUS_TXT_LABEL_STATUS_EQS_MSG
+    description: rn:msg:LBEL_DISP_STATUS_TXT_CHAT_REQ_MSG
+    default: rn:msg:DISCONNECTED_LBL
+    type: STRING
+  label_detail_searching:
+    name: rn:msg:SEARCHING_AGENT_DETAIL_MESSAGE_MSG
+    description: rn:msg:DETAIL_MSG_DISP_SEARCHING_AVAIL_MSG
+    default: rn:msg:SEARCHING_FOR_AN_AVAILABLE_AGENT_LBL
+    type: STRING
+  label_detail_requeued:
+    name: rn:msg:CHAT_REQUEST_REQUEUED_DETAIL_MSG_MSG
+    description: rn:msg:DETAIL_MSG_DISP_CHAT_REQ_REQUEUED_MSG
+    default: rn:msg:YOU_HAVE_BEEN_RE_QUEUED_MSG
+    type: STRING
+  label_detail_canceled_user:
+    name: rn:msg:CHAT_REQUEST_CANCELED_DETAIL_MSG_MSG
+    description: rn:msg:DETAIL_MSG_DISP_A_L_Q_SEARCHING_MSG
+    default: rn:msg:LEFT_QUEUE_ASSISTANCE_PLEASE_TRY_MSG
+    type: STRING
+  label_detail_canceled_self_service:
+    name: rn:msg:USER_SELF_SERVICE_DETAIL_MESSAGE_MSG
+    description: rn:msg:DETAIL_MSG_DISP_L_Q_SEARCHING_KB_MSG
+    default: rn:msg:LEFT_QUEUE_HOPE_FOUND_LOOKING_MSG
+    type: STRING
+  label_detail_canceled_no_agents_avail:
+    name: rn:msg:AGENTS_AVAILABLE_DETAIL_MESSAGE_MSG
+    description: rn:msg:DETAIL_MESSAGE_DISPLAY_AGT_AVAIL_MSG
+    default: rn:msg:AGENTS_AVAILABLE_CHAT_PLEASE_TRY_MSG
+    type: STRING
+  label_detail_canceled_queue_timeout:
+    name: rn:msg:QUEUE_TIMEOUT_DETAIL_MESSAGE_MSG
+    description: rn:msg:DETAIL_MSG_DISP_REQ_TIMED_WAITING_MSG
+    default: rn:msg:AGENTS_AVAILABLE_CHAT_PLEASE_TRY_MSG
+    type: STRING
+  label_detail_canceled_dequeued:
+    name: rn:msg:DEQUEUED_BY_RULE_DETAIL_MESSAGE_MSG
+    description: rn:msg:DETAIL_MSG_DISP_REQ_REM_Q_RULE_MSG
+    default: rn:msg:REMOVED_QUEUE_PLEASE_CONT_EMAIL_MSG
+    type: STRING
+  label_close_window_message:
+    name: rn:msg:CLOSE_WINDOW_MESSAGE_CMD
+    description: rn:msg:CLOSE_WINDOW_MESSAGE_CMD
+    default: rn:msg:PLEASE_CLOSE_THIS_WINDOW_MSG
+    type: STRING
+  label_detail_canceled_browser:
+    name: rn:msg:CHAT_CANCELED_DUE_UNSUP_BROWSER_LBL
+    description: rn:msg:MSG_DISPLAYED_CHAT_CANCELED_BROWSER_MSG
+    default: rn:msg:DISCON_UNSUP_BROWSER_PLS_UPD_MSG
+    type: STRING
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISP_STATUS_CHAT_MSG

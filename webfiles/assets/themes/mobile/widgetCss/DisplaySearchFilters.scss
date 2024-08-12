@@ -1,0 +1,65 @@
+@import 'widget-includes';
+
+.rn_DisplaySearchFilters {
+    padding: 16px 6px 0;
+
+    .rn_Heading {
+        color: #404040;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .rn_Filter {
+        overflow: hidden;
+        padding: 6px 0;
+    }
+
+    .rn_Label {
+        color: #505050;
+        font-size: .917em;
+        font-weight: bold;
+        margin-bottom: 4px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    }
+
+    .rn_FilterItem {
+        background-color: #FFF;
+        border-color: #D2D2D2;
+        border-style: solid;
+        border-width: 1px 0;
+        color: #333;
+        float: left;
+        margin-left: -6px;
+        padding: 3px 4px 0 10px;
+        text-decoration: none;
+    }
+
+    .rn_Selected {
+        background-color: #F0F0F0;
+        color: #000;
+        cursor: default;
+        font-weight: bold;
+    }
+
+    .rn_Separator {
+        background: transparent url('#{$theme-images}/breadCrumb.png') no-repeat scroll 0 center;
+        float: left;
+        height: 0;
+        padding-top: 29px;
+        position: relative;
+        width: 8px;
+        margin-left: -1px;
+
+        &.rn_Selected {
+            background-position: right center !important;
+        }
+    }
+}

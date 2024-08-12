@@ -1,0 +1,17 @@
+input: <rn:widget path='standard/reports/ResultInfo' add_params_to_url='kw,p,c'/>
+filter: @"r_tok":"[^"]*",?@
+jstestfile: keywordParmAndAddParmsToUrl.test.js
+removecontent: true
+urlparameters: /kw/phone/c/74/p/1
+output:
+<div id="rn_ResultInfo_0" class="rn_ResultInfo">
+        <div id="rn_ResultInfo_0_Suggestion" class="rn_Suggestion rn_Hidden">
+        Other Suggested Searches            </div>
+        <div id="rn_ResultInfo_0_Spell" class="rn_Spell rn_Hidden">
+        Did you mean:            </div>
+        <div id="rn_ResultInfo_0_NoResults" class="rn_NoResults rn_Hidden">
+        No results found.        <br/><br/>
+        Suggestions:<ul><li>Make sure all words are spelled correctly</li><li>Use different words that mean the same thing</li></ul>    </div>
+            <div id="rn_ResultInfo_0_Results" class="rn_Results ">
+                                                                Results <span>1</span> - <span>10</span> of <span>16</span> for <a href="/app/unitTest/rendering/widgets/standard/reports/ResultInfo/tests/keywordParmAndAddParmsToUrl/search/1/kw/phone/search/1/p/1/c/74">phone</a>         </div>
+    </div>

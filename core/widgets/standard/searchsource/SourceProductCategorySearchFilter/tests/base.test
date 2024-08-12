@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/searchsource/SourceProductCategorySearchFilter" source_id="KFSearch"/>
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_SourceProductCategorySearchFilter_0" class="rn_SourceProductCategorySearchFilter rn_ProductCategorySearchFilter">
+        <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_SourceProductCategorySearchFilter_0_LinksTrigger">Screen Reader users press enter to select a Filter by product.&nbsp;<span id="rn_SourceProductCategorySearchFilter_0_TreeDescription"></span></a>
+                <span class="rn_Label">Filter by product</span>
+                <button type="button" id="rn_SourceProductCategorySearchFilter_0_Product_Button" class="rn_DisplayButton"><span id="rn_SourceProductCategorySearchFilter_0_ButtonVisibleText">Select a product</span></button>
+        <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_SourceProductCategorySearchFilter_0_Links"></div>
+        <div id="rn_SourceProductCategorySearchFilter_0_TreeContainer" class="rn_PanelContainer rn_Hidden">
+            <div id="rn_SourceProductCategorySearchFilter_0_Tree" class="rn_Panel"></div>
+                </div>
+</div>

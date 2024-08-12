@@ -1,0 +1,19 @@
+1.0.2:
+  release: "14.5"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 222
+    date: 01/14/2014
+    description: Properly encode quote characters in the search text box
+    level: nano
+    refno: 140113-000020
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/06/2012
+    level: major
+    description: Initial version of search/BasicKeywordSearch
+    category: API Change
+    sortPosition: Middle

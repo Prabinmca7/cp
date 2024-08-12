@@ -1,0 +1,24 @@
+input: <form id='banana'><rn:widget path='standard/input/PasswordInput' name='Contact.NewPassword'/></form>
+config: CP_FORCE_PASSWORDS_OVER_HTTPS|0
+contact: asdh@fkjb.df.invalid
+jstestfile: mobile.test.js
+redirecttohttps: false
+removecontent: true
+template: mobile
+output:
+<form id='banana'><div id="rn_PasswordInput_0" class="rn_PasswordInput rn_Input">
+    <div id="rn_PasswordInput_0_LabelContainer">
+        <label for="rn_PasswordInput_0_Contact.NewPassword" id="rn_PasswordInput_0_Label" class="rn_Label">
+        NewPassword                </label>
+    </div>
+    <input type="password" aria-describedby="rn_PasswordInput_0_PasswordHelp" id="rn_PasswordInput_0_Contact.NewPassword" name="Contact.NewPassword" class="rn_Password" maxlength='20' autocomplete="off" />
+        <div id="rn_PasswordInput_0_PasswordHelp"></div>
+    <div class="rn_PasswordInputValidate">
+        <div id="rn_PasswordInput_0_LabelValidateContainer">
+            <label for="rn_PasswordInput_0_Contact.NewPassword_Validate" id="rn_PasswordInput_0_Contact.NewPassword_LabelValidate" class="rn_Label">Re-enter a value for the field 'NewPassword'                        </label>
+        </div>
+        <input type="password" aria-describedby="rn_PasswordInput_0_PasswordValidationHelp" id="rn_PasswordInput_0_Contact.NewPassword_Validate" name="Contact.NewPassword_Validation" class="rn_Password rn_Validation" maxlength='20' autocomplete="off" />
+        <div id="rn_PasswordInput_0_PasswordValidationHelp" class="rn_ScreenReaderOnly">Must match NewPassword</div>
+    </div>
+</div>
+</form>

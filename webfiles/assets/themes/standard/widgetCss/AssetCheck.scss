@@ -1,0 +1,35 @@
+@import 'widget-includes';
+
+.rn_AssetCheck .rn_Text {
+    width: 250px;
+    height: 1.4em;
+}
+
+.rn_AssetCheck .rn_Label {
+    font-weight: bold;
+}
+
+.rn_AssetCheck {
+    clear: both;
+    margin-bottom: 8px;
+}
+
+.rn_AssetCheck legend,
+.rn_AssetCheck label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.rn_AssetCheck fieldset {
+    padding: 0;
+}
+
+.rn_AssetCheck fieldset label {
+    display: inline;
+    margin: 0 4px;
+}
+
+.rn_AssetCheck .rn_Submit {
+    margin-top: 10px;
+}

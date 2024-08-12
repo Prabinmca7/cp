@@ -1,0 +1,65 @@
+1.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.3.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 559
+    date: 08/30/2016
+    description: Updated default message for label\_enter\_search\_keyword.
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.2.1:
+  release: "16.5"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 506
+    date: 03/30/2016
+    description: Disable button while search is being performed
+    level: minor
+    refno: 160324-000090
+    sortPosition: Top
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 347
+    date: 05/11/2015
+    description: Blank searches are not allowed
+    details:
+    - Blank searches are not allowed, but we do allow a search on '*'.
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of searchsource/SourceSearchButton
+    category: API Change
+    sortPosition: Middle

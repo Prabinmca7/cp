@@ -1,0 +1,8 @@
+input: <rn:widget path="standard/user/UserStatus" display_active="true"/>
+fixture: UserActive1
+removecontent: true
+urlparameters: /user/%CommunityUser%
+output:
+<div id="rn_UserStatus_0" class="rn_UserStatus rn_Active">
+    <span class="rn_StatusContainer" title="The user is currently active.">Active</span>
+</div>

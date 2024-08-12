@@ -1,0 +1,26 @@
+input: <rn:widget path="viewpartialtest/ExtendedCustomAnswerFeedback" options_count="4"/>
+removecontent: true
+urlparameters: /a_id/52
+output:
+<div id="rn_ExtendedCustomAnswerFeedback_0" class="rn_ExtendedCustomAnswerFeedback rn_CustomAnswerFeedback rn_AnswerFeedback">
+    <div class='custom-insert'>
+        ☟☟ ExtendedCustomAnswerFeedback - block top ☟☟
+    </div>
+    <div id="rn_ExtendedCustomAnswerFeedback_0_AnswerFeedbackControl" class="rn_AnswerFeedbackControl">
+                    <h2 class="rn_Title">Was this answer helpful?</h2>
+                            <div id="rn_ExtendedCustomAnswerFeedback_0_RatingMeter" class="rn_RatingMeter " role="application">
+        <div class="partial-insert">
+        <span>ExtendedCustomAnswerFeedback - ratingMeter partial</span>
+        <span class="mr">(☟ ՞ਊ ՞)☟</span>
+    </div>
+                    <a id='rn_ExtendedCustomAnswerFeedback_0_RatingCell_1' href='javascript:void(0)' class='rn_RatingCell' title='0%' ><span class="rn_ScreenReaderOnly">Rate answer 1 of 4</span>&nbsp;</a>                    <a id='rn_ExtendedCustomAnswerFeedback_0_RatingCell_2' href='javascript:void(0)' class='rn_RatingCell' title='25%' ><span class="rn_ScreenReaderOnly">Rate answer 2 of 4</span>&nbsp;</a>                    <a id='rn_ExtendedCustomAnswerFeedback_0_RatingCell_3' href='javascript:void(0)' class='rn_RatingCell' title='75%' ><span class="rn_ScreenReaderOnly">Rate answer 3 of 4</span>&nbsp;</a>                    <a id='rn_ExtendedCustomAnswerFeedback_0_RatingCell_4' href='javascript:void(0)' class='rn_RatingCell' title='100%' ><span class="rn_ScreenReaderOnly">Rate answer 4 of 4</span>&nbsp;</a>            <div class="partial-insert">
+        <span>ExtendedCustomAnswerFeedback - ratingMeter partial</span>
+        <span class="mr">(☝ ՞ਊ ՞)☝</span>
+    </div>
+    
+    </div>
+            </div>
+    <div class="custom-insert">
+        ☝ CustomAnswerFeedback Custom block - bottom ☝
+    </div>
+</div>

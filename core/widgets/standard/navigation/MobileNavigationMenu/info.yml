@@ -1,0 +1,26 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [mobile]
+attributes:
+  label_button:
+    name: rn:msg:BUTTON_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_TO_DISPLAY_ON_THE_BUTTON_LBL
+    default: rn:msg:MENU_LBL
+  label_parent_menu_alt:
+    name: rn:msg:PARENT_MENU_ALTERNATE_TEXT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAYED_MENU_ITEMS_SUBMENUS_MSG
+    default: rn:msg:MORE_OPTIONS_LBL
+  submenu:
+    name: rn:msg:SUBMENU_LBL
+    type: STRING
+    description: rn:msg:ID_HTML_ELEMENT_TOGGLE_DISP_BTN_MSG
+  css_class:
+    name: rn:msg:CSS_CLSS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_BTN_ELEMENT_MSG
+    default: rn_Selected
+info:
+  description: rn:msg:WIDGET_DISP_BTN_PG_PRESSED_TOGGLES_LBL

@@ -1,0 +1,105 @@
+@import 'widget-includes';
+
+.rn_LoginDialog {
+    @include clearfix;
+    padding: 2em;
+
+    @include media($rn-small) {
+        padding: 0;
+    }
+
+    .rn_FormContent {
+        @include span-columns(8);
+
+        input::-webkit-input-placeholder {
+            color: #4c4c4c;
+            opacity: 1;
+        }
+
+        input:-moz-placeholder { /* Firefox 18- */
+            color: #4c4c4c;
+            opacity: 1;
+        }
+
+        input::-moz-placeholder {  /* Firefox 19+ */
+            color: #4c4c4c;
+            opacity: 1;
+        }
+
+        input:-ms-input-placeholder {
+            color: #4c4c4c;
+            opacity: 1;
+        }
+    }
+
+    .rn_OpenLoginAlternative {
+        @include span-columns(4);
+        padding-right: 1em;
+        border-right: 1px solid $light-gray;
+
+        @include media($rn-medium) {
+            border-bottom: 1px solid $light-gray;
+            margin-bottom: 1.5em;
+        }
+
+    }
+
+    .rn_FormContent,
+    .rn_OpenLoginAlternative {
+        @include media($rn-medium) {
+            border-left: 0;
+            padding: 0 0 1.5em;
+            @include span-columns(12);
+        }
+    }
+
+    .rn_OpenLoginIntro,
+    .rn_FormTypeToggle {
+        display: block;
+        font-size: larger;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+
+    .rn_FormTypeToggle a {
+        border: 1px solid #CCC;
+        background: none;
+        border-radius: 5px;
+        padding: 2px 10px 4px;
+        white-space: nowrap;
+    }
+
+    .rn_LoginDialogContent,
+    .rn_SignUpDialogContent {
+        @include animation-name(fadeIn);
+        @include animation-duration(.5s);
+        @include animation-timing-function(ease);
+        @include animation-iteration-count(1);
+        @include animation-fill-mode(both);
+    }
+
+    &.rn_ContentLoading {
+        .rn_FormContent {
+            @include loading-icon(2em);
+            > * {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .rn_WarningMessage {
+        margin: 1.75em 0 0;
+    }
+}
+
+@include keyframes(fadeIn) {
+    0% {
+        opacity: 0;
+        @include transform(translateY(4px));
+    }
+
+    100% {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}

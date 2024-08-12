@@ -1,0 +1,161 @@
+version: "3.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  category:
+    - Community
+  description: rn:msg:L_BY_DAT_PROV_TAB_QS_AUTH_ED_QUESTIN_MSG
+  urlParameters:
+    qid:
+      name: Question Id
+      description: rn:msg:THE_ID_OF_THE_QUESTION_TO_DISPLAYEDIT_LBL
+      example: qid/6
+attributes:
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - none
+    - small
+    - medium
+    - large
+    - xlarge
+    default: large
+  use_rich_text_input:
+    name: rn:msg:RICH_TEXT_INPUT_LBL
+    description: rn:msg:TRUE_T_INPUT_EDITING_FALSE_T_USED_MSG
+    type: BOOLEAN
+    default: true
+  use_file_attachments:
+    name: rn:msg:USE_FILE_ATTACHMENTS_LBL
+    type: BOOLEAN
+    description: rn:msg:TRUE_MODIFY_FILES_REL_CONT_QUESTIONS_MSG
+    default: true
+  mobile_enabled:
+    name: rn:msg:MOBILE_ENABLED_LBL
+    description: rn:msg:SHOULD_MOBILE_SPEC_CHILD_WIDGETS_NOT_MSG
+    type: BOOLEAN
+  label_created_time:
+    name: rn:msg:CREATED_TIME_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_WITH_COMMENT_WAS_CREATED_LBL
+    default: rn:msg:CREATED_S_LBL
+    type: STRING
+  label_updated_time:
+    name: rn:msg:UPDATED_TIME_LABEL_LBL
+    description: rn:msg:NEXT_DATE_TIMESTAMP_AFTER_UPD_OCCURRED_MSG
+    default: rn:msg:EDITED_S_LBL
+    type: STRING
+  label_edit:
+    name: rn:msg:EDIT_LINK_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_LINK_TO_SHOW_THE_EDIT_FORM_LBL
+    default: rn:msg:EDIT_CMD
+  label_edit_question_subject:
+    name: rn:msg:EDIT_QUESTION_SUBJECT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_SUBJECT_WHILE_BEING_EDITED_LBL
+    default: rn:msg:SUBJECT_LBL
+  label_edit_question_body:
+    name: rn:msg:EDIT_QUESTION_BODY_LABEL_LBL
+    type: string
+    description: rn:msg:L_BG_ED_BY_TL_LABELBODYNOT_ATTRIB_INSTD_MSG
+    default: rn:msg:QUESTION_BODY_LBL
+  label_save_edit_button:
+    name: rn:msg:SAVE_EDIT_BUTTON_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_THE_EDIT_FORM_SUBMIT_BUTTON_LBL
+    default: rn:msg:SAVE_CMD
+  label_delete_button:
+    name: rn:msg:DELETE_BUTTON_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_THE_EDIT_FORM_DELETE_BUTTON_LBL
+    default: rn:msg:DELETE_THIS_QUESTION_LBL
+  label_delete_confirm:
+    name: rn:msg:COMMENT_DELETE_CONFIRM_LABEL_MSG
+    description: rn:msg:LABEL_CONFIRM_DELETION_QUESTION_LBL
+    default: rn:msg:ARE_YOU_SURE_YOU_WISH_DELETE_QUESTION_LBL
+    type: STRING
+  label_delete_confirm_title:
+    name: rn:msg:QUESTION_DELETE_CONFIRM_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISP_DIALOG_TITLE_DELETION_MSG
+    default: rn:msg:CONFIRM_DELETE_UC_LBL
+    type: STRING
+  label_deleting:
+    name: rn:msg:LABEL_DELETING_MESSAGE_LBL
+    description: rn:msg:BUTTON_DISPLAYS_WHILE_BEING_DELETED_LBL
+    type: STRING
+    default: rn:msg:DELETING_LBL
+  label_cancel_button:
+    name: rn:msg:CANCEL_CMD
+    type: string
+    description: rn:msg:LABEL_FOR_THE_EDIT_FORM_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_CMD
+  label_body_not_editable:
+    name: rn:msg:BODY_NOT_EDITABLE_LABEL_LBL
+    type: string
+    description: rn:msg:TEXT_DISPLAYED_QUESTION_BODY_EDITABLE_LBL
+    default: rn:msg:BODY_EDITABLE_DUE_ITS_CONTENT_TYPE_LBL
+  label_confirm_delete_button:
+    name: rn:msg:LABEL_CONFIRM_DELETE_BUTTON_LBL
+    type: STRING
+    description: rn:msg:LABEL_BUTTON_CONFIRM_DELETE_ACTION_LBL
+    default: rn:msg:YES_LBL
+  label_cancel_delete_button:
+    name: rn:msg:LABEL_CANCEL_DELETE_BUTTON_LBL
+    type: STRING
+    description: rn:msg:LABEL_BUTTON_USED_CANCEL_DELETE_ACTION_LBL
+    default: rn:msg:NO_LBL
+  successfully_deleted_question_banner:
+    name: rn:msg:SUCCESSFULLY_DELETED_QUESTION_BANNER_LBL
+    description: rn:msg:DISPLAYED_USERS_AFTER_SUCC_DELETED_LBL
+    default: rn:msg:QUEST_DELETED_NO_WS_MSG
+    type: STRING
+  deleted_question_redirect_url:
+    name: rn:msg:DELETED_QUESTION_REDIRECT_URL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(TT_QST_DL_DSP_DD_RNCNDT_TG_KY_FLSHDTVLFR_F_MSG), 'info')
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_HOME_URL)
+    type: STRING
+  edit_question_ajax:
+    name: rn:msg:EDIT_QUESTION_ENDPOINT_LBL
+    type: ajax
+    description: rn:msg:EDIT_QUESTION_AJAX_ENDPOINT_LBL
+    default: /ci/ajax/widget
+  delete_question_ajax:
+    name: rn:msg:DELETE_QUESTION_ENDPOINT_LBL
+    type: ajax
+    description: rn:msg:DELETE_QUESTION_AJAX_ENDPOINT_LBL
+    default: /ci/ajax/widget
+  highlight:
+    name: rn:msg:HIGHLIGHT_LBL
+    type: BOOLEAN
+    description: rn:msg:HIGHLIGHTS_TXT_FLDS_SRCH_TERM_LBL
+    default: true
+  author_roleset_callout:
+    name: rn:msg:AUTHOR_ROLE_SET_CALLOUT_LBL
+    type: STRING
+    description: rn:msg:CMM_TH_MDRT_PSSNG_0_PPRNG_MLT_CLLT_LN_SL_L_MSG
+    default: "0"
+    displaySpecialCharsInTagGallery: true
+contains:
+- widget: standard/input/TextInput
+  versions: ["1.8"]
+- widget: standard/input/RichTextInput
+  versions: ["3.1"]
+- widget: standard/input/FormSubmit
+  versions: [ "1.7"]
+- widget: standard/moderation/ModerationInlineAction
+  versions: ["1.4"]
+- widget: standard/feedback/SocialContentFlagging
+  versions: ["1.4"]
+- widget: standard/feedback/SocialContentRating
+  versions: ["1.6"]
+- widget: standard/input/ProductCategoryInput
+  versions: ["2.3"]
+- widget: standard/input/MobileProductCategoryInput
+  versions: ["1.6"]
+- widget: standard/input/SocialFileAttachmentUpload
+  versions: ["1.5"]
+- widget: standard/output/DataDisplay
+  versions: ["1.6"]

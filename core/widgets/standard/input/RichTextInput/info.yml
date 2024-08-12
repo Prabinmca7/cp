@@ -1,0 +1,109 @@
+version: "3.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  - mobile
+  yui:
+  - frame
+  - anim
+  - array-extras
+  - event-valuechange
+  - event-resize
+  - yui-throttle
+  - overlay
+extends:
+  widget: standard/input/TextInput
+  components:
+  - php
+  overrideViewAndLogic: true
+  versions: ["1.8"]
+info:
+  category:
+    - Community
+  description: rn:msg:ARE_ACC_MARKDOWN_FMT_UC_BOLD_ITLCS_LSTS_MSG
+attributes:
+  always_show_mask: unset
+  allow_external_login_updates: unset
+  existing_contact_check_ajax: unset
+  textarea: unset
+  require_validation: unset
+  maximum_value: unset
+  minimum_value: unset
+  hide_hint: unset
+  validate_on_blur: unset
+  label_validation: unset
+  label_validation_incorrect: unset
+  name:
+    name: rn:msg:NAME_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(INDICATE_BUSINES_OBJECT_L_SUPPORT_S_MSG), 'CommunityQuestion.Body', 'CommunityComment.Body')
+    required: true
+  required:
+    name: rn:msg:REQUIRED_LBL
+    type: boolean
+    description: rn:msg:IF_SET_TRUE_FIELD_MUST_CONTAIN_A_VALUE_MSG
+  label_change_link:
+    name: rn:msg:CHANGE_LABEL_LBL
+    description: rn:msg:APPEARS_TOOLTIPS_LINKS_L_EU_CHG_LINKS_LBL
+    type: string
+    default: rn:msg:CHANGE_CMD
+  label_remove_link:
+    name: rn:msg:REMOVE_LINK_LABEL_LBL
+    description: rn:msg:APPEARS_TOOLTIPS_LINKS_L_EU_REM_LINKS_LBL
+    type: string
+    default: rn:msg:REMOVE_CMD
+  label_link_text:
+    name: rn:msg:LINK_TEXT_LABEL_LBL
+    description: rn:msg:INPUT_CAPTURES_BEING_INSERTED_LBL
+    type: string
+    default: rn:msg:LINK_TEXT_LBL
+  label_link_to:
+    name: rn:msg:LINK_TO_LABEL_LBL
+    description: rn:msg:INPUT_CAPTURES_HREF_BEING_INSERTED_LBL
+    type: string
+    default: rn:msg:LINKS_TO_LBL
+  label_insert_link_dialog:
+    name: rn:msg:INSERT_LINK_DIALOG_LABEL_LBL
+    description: rn:msg:INS_L_L_SCREENREADER_BUTT_ACC_DIALOG_LBL
+    type: string
+    default: rn:msg:INSERT_LINK_LBL
+  label_advanced_mode:
+    name: rn:msg:ADVANCED_MODEL_LABEL_LBL
+    description: rn:msg:MENU_BUTT_TOGGLES_MARKDOWN_EDITING_MODE_LBL
+    type: string
+    default: rn:msg:ADV_MODE_LBL
+  label_help_link:
+    name: rn:msg:EDITOR_HELP_LINK_LABEL_LBL
+    description: rn:msg:DISPLAYS_LINK_ADVANCED_EDITOR_HELP_PAGE_LBL
+    type: string
+    default: rn:msg:EDITOR_HELP_LBL
+  label_error_fieldname:
+    name: rn:msg:ERROR_FIELDNAME_ERROR_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DISPLAY_SIGNIFY_ENC_DEF_ROWS_SPECIFIED_MSG), \RightNow\Utils\Config::getMessage(QUESTION_LBL), 'CommunityQuestion.Body', \RightNow\Utils\Config::getMessage(COMMENT_LBL), 'CommunityComment.Body')
+    type: string
+  label_parsing_error:
+    name: rn:msg:PARSING_VALUE_ERROR_LABEL_LBL
+    description: rn:msg:DISPLAYED_ENCOUNTERED_PARSING_CONTENT_MSG
+    default: rn:msg:WA_ENC_PARSING_TRY_AGAIN_INTF_VALUE_MSG
+    type: string
+  label_content_stripped:
+    name: rn:msg:CONTENT_STRIPPED_LABEL_LBL
+    description: rn:msg:DISP_REQD_EE_TT_ERROR_UNRECOG_L_CONTENT_MSG
+    type: string
+    default: rn:msg:EMPTY_AFTER_REMOVING_UNRECOGNIZED_HTML_LBL
+  editor_help_url:
+    name: rn:msg:EDITOR_HELP_URL_LBL
+    description: rn:msg:URL_TO_THE_ADVANCED_EDITOR_HELP_PAGE_LBL
+    type: string
+    default: /app/utils/editing_help
+  read_only:
+    name: rn:msg:READ_ONLY_LBL
+    description: rn:msg:WHEN_SET_TRUE_CONTENT_IS_NOT_EDITABLE_MSG
+    type: boolean
+    default: false
+  label_data_uris_error:
+    name: rn:msg:DATA_URIS_ERROR_LBL
+    description: rn:msg:DISPLAYED_ENTERS_URIS_IMAGE_INPUT_LBL
+    type: string
+    default: rn:msg:DATA_URIS_ARE_NOT_ALLOWED_MSG

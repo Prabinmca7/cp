@@ -1,0 +1,22 @@
+input: <rn:widget path='standard/reports/Paginator' per_page='21'/>
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_Paginator_0" class="rn_Paginator">
+    <div class="rn_PaginationLinks" role="navigation" aria-label="Result pages">
+        <ul>
+            <li class="rn_PreviousPage rn_Hidden">
+                <span>
+                    <a data-rel="previous" href="/app/unitTest/rendering/widgets/standard/reports/Paginator/tests/noPageLink/page/0" data-pageid="0">
+                        Previous                    </a>
+                </span>
+            </li>
+                        <li class="rn_NextPage rn_Hidden">
+                <span>
+                    <a data-rel="next" href="/app/unitTest/rendering/widgets/standard/reports/Paginator/tests/noPageLink/page/2" data-pageid="2">
+                        Next                    </a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

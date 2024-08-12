@@ -1,0 +1,26 @@
+input: <rn:widget path="standard/notifications/DiscussionSubscriptionIcon"/>
+contact: useractive1
+jstestfile: product.test.js
+removecontent: true
+urlparameters: /qid/3
+output:
+<div id="rn_DiscussionSubscriptionIcon_0" class="rn_DiscussionSubscriptionIcon">
+    <div class="rn_Loading rn_Hidden" id="rn_DiscussionSubscriptionIcon_0_LoadingIcon">
+        <span class="rn_ScreenReaderOnly">
+            Loading        </span>
+    </div>
+    <div id="rn_DiscussionSubscriptionIcon_0_Subscription" class="rn_Subscription">
+        <div id="rn_DiscussionSubscriptionIcon_0_Unsubscribe" class="rn_Show rn_Unsubscribe" aria-label="Required">
+            <a href="javascript:void(0);" title="Click to stop receiving email notifications for this discussion">
+                <span>
+                    Unsubscribe                </span>
+            </a>
+        </div>
+                    <div id="rn_DiscussionSubscriptionIcon_0_ProdSubscribed" class="rn_Hidden rn_Unsubscribe">
+                <a href="/app/products/detail/p/6" title="You are already subscribed to receive email notifications for all discussions in this area.">
+                    <span>
+                        Subscribed to Voice Plans                    </span>
+                </a>
+            </div>
+            </div>
+</div>

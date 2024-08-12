@@ -1,0 +1,38 @@
+input: <rn:widget path='standard/search/BrowserSearchPlugin'/>
+removecontent: false
+output:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>no title</title>
+        <link type="text/css" rel="stylesheet" href="/rnt/rnw/yui_3.18/overlay/assets/overlay-core.css">
+
+<style type='text/css'>
+ <!-- 
+.rn_ScreenReaderOnly{position:absolute; height:1px; left:-10000px; overflow:hidden; top:auto; width:1px;}
+.rn_Hidden{display:none !important;}
+ --></style>
+
+
+</head>
+    <body>
+                <script src="/rnt/rnw/yui_3.18/combined-yui.js"></script>
+        <script type="text/javascript" src="/euf/core/debug-js/tests/RightNow.UnitTest.js"></script>
+<script>var YUI_config={"fetchCSS":false,"modules":{"RightNowTreeView":"/min/modules/ui/treeview.js","RightNowTreeViewDialog":"/min/modules/ui/treeviewdialog.js","RightNowTreeViewDropdown":"/min/modules/ui/treeviewdropdown.js"},"lang":["en-US","en-US"],"injected":true,"comboBase":"/ci/cache/yuiCombo/","groups":{"gallery-treeview":{"base":"/rnt/rnw/yui_3.18/gallery-treeview/","modules":{"gallery-treeview":{"path":"gallery-treeview-min.js"}}}}};</script>
+<script type="text/javascript" src="/min/RightNow.js"></script>
+<script>
+/* <![CDATA[ */
+RightNow.Env=(function(){var _props={module:'standard',coreAssets:'/euf/core/',yuiCore:'/rnt/rnw/yui_3.18/',profileData:{"isLoggedIn":false,"previouslySeenEmail":null}};return function(prop){return _props[prop];};})();RightNow.;
+RightNow.;
+RightNow.Url.setParameterSegment(11);
+RightNow.Interface.Constants = 
+{"API_VALIDATION_REGEX_EMAIL":"((([-_!#$%&'*+\/=?^~`{|}\\w]+([.][-_!#$%&'*+\/=?^~`{|}\\w]*)*)|(\"[^\"]+\"))@[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*(\\.[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*)+[;, ]*)+"};
+YUI().use('event-base',function(Y){Y.on('domready',function(){})});
+/* ]]> */
+</script>
+<script type="text/javascript">
+var _rnq=_rnq||[];
+(function(e){var b,d,a=document.createElement("iframe"),c=document.getElementsByTagName("script");a.src="javascript:false";a.title="Action Capture";a.role="presentation";(a.frameElement||a).style.cssText="position:absolute;width:0;height:0;border:0";c=c[c.length-1];c.parentNode.insertBefore(a,c);try{b=a.contentWindow.document}catch(f){d=document.domain,a.src="javascript:var d=document.open();d.domain='"+d+"';void(0);",b=a.contentWindow.document}b.open()._l=function(){for(var a;e.length;)a=this.createElement("script"),
+d&&(this.domain=d),a.src=e.pop(),this.body.appendChild(a)};b.write('<head><title>Action Capture</title></head><body onload="document._l();">');b.close()})(["","//rnengage.qaload.lan/api/1/javascript/acs.js"]);
+</script></body>
+</html>

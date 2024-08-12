@@ -1,0 +1,7 @@
+type: Contact
+object:
+  Login: SuspendedUser2
+  Name.First: Suspended
+  Name.Last: User
+  Emails.0.Address: usersuspended2@social.com.invalid
+  NewPassword: ''

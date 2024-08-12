@@ -1,0 +1,29 @@
+input: <rn:widget path='standard/okcs/OkcsEmailAnswerLink'/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,CP_ANSWERS_DETAIL_URL|answers/answer_view
+jstestfile: mobile.test.js
+removecontent: true
+template: mobile
+urlparameters: /a_id/1000000
+output:
+<div id="rn_OkcsEmailAnswerLink_0" class="rn_OkcsEmailAnswerLink rn_EmailAnswerLink">
+    <a id="rn_OkcsEmailAnswerLink_0_Link" href="javascript:void(0);" title="Email a link to this answer">
+        <span>Email this page</span>
+    </a>
+        <div id="rn_OkcsEmailAnswerLink_0_EmailAnswerLinkForm" class="rn_EmailAnswerLinkForm rn_Hidden">
+        <div id="rn_OkcsEmailAnswerLink_0_ErrorMessage"></div>
+        <form onsubmit="return false;">
+        <label id="rn_OkcsEmailAnswerLink_0_LabelRecipientEmail" for="rn_OkcsEmailAnswerLink_0_InputRecipientEmail">
+            Recipient Email            <span class="rn_Required" aria-label="Required">
+    *</span>        </label>
+        <input id="rn_OkcsEmailAnswerLink_0_InputRecipientEmail" type="email"/>
+                                    <label id="rn_OkcsEmailAnswerLink_0_LabelSenderEmail" for="rn_OkcsEmailAnswerLink_0_InputSenderEmail">
+                    Your Email                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+                <input id="rn_OkcsEmailAnswerLink_0_InputSenderEmail" type="email" value=""/>
+                                        <label id="rn_OkcsEmailAnswerLink_0_LabelSenderName" for="rn_OkcsEmailAnswerLink_0_InputSenderName">
+                    Your Name                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+                <input id="rn_OkcsEmailAnswerLink_0_InputSenderName" maxlength="70" type="text" value=""/>
+                            </form>
+    </div>
+</div>

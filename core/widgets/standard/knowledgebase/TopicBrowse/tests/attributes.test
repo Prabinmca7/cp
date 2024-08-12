@@ -1,0 +1,3 @@
+input: <rn:widget path='standard/knowledgebase/TopicBrowse 'depth_limit='12' display_answer_relevancy='false' filter_name='parent2' label_description='label desc'/>
+removecontent: true
+output: 

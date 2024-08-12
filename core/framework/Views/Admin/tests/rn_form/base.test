@@ -1,0 +1,5 @@
+input: <rn:form></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+replace: name='validationToken'$1value=''
+output: <form method='post' action="/app/unitTest/rendering/Views/Admin/tests/rn_form/base"><div></div></form>

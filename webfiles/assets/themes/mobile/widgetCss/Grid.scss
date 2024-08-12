@@ -1,0 +1,27 @@
+@import 'widget-includes';
+
+.rn_Grid {
+    font-size: $base-font-size * .7;
+
+    .yui3-datatable-sort-liner {
+        position: relative;
+    }
+
+    .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort);
+        padding-left: 8px;
+    }
+
+    .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort-asc);
+    }
+
+    .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort-desc);
+    }
+
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+}

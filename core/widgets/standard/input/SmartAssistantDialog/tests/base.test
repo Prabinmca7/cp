@@ -1,0 +1,11 @@
+input: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path='standard/input/SmartAssistantDialog'/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><div id="rn_SmartAssistantDialog_0" class="rn_SmartAssistantDialog rn_Hidden">
+    <div class="rn_MessageBox rn_InfoMessage" role="alert">
+        <span id="rn_SmartAssistantDialog_0_DialogHeading"></span>
+    </div>
+    <div id="rn_SmartAssistantDialog_0_DialogContent"></div>
+</div>
+</form>

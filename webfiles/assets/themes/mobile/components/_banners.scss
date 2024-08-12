@@ -1,0 +1,80 @@
+// Flash Alerts
+
+// Common between AlertBoxes and Banners.
+.rn_Alert {
+    overflow: hidden;
+    padding: 1em;
+
+    a.rn_CloseLink {
+        float: right;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .rn_AlertMessage {
+        cursor: default;
+    }
+}
+
+// Alert boxes
+.rn_AlertBox {
+    border-radius: 3px;
+    font-size: 1.1em;
+    margin: .8em 0;
+
+    &.rn_SuccessAlert {
+        background: #E1F5E3;
+        border: 1px solid #A6E0A6;
+        color: #013A01;
+
+        a {
+            color: #013A01;
+        }
+    }
+
+    a.rn_CloseLink {
+        color: #666;
+    }
+}
+
+.rn_InfoAlert {
+    background: #d9EDF7;
+    border: 1px solid #C6CBE9;
+    color: #161664;
+}
+
+.rn_ErrorAlert {
+    background: #F2DEDE;
+    border: 1px solid #E99999;
+    color: #690505;
+}
+
+// Banners
+.rn_BannerAlert {
+    color: #FFF;
+    font-size: 1.3em;
+    padding: 1em 10%;
+    text-align: center;
+    z-index: 100;
+
+    &.rn_SuccessAlert {
+        background: #335B33;
+    }
+
+    &.rn_InfoAlert {
+        background: rgba(114, 114, 236, .94);
+    }
+
+    &.rn_ErrorAlert {
+        background: rgba(225, 34, 33, .94);
+    }
+
+    &.rn_WarningAlert {
+        background: rgba(254, 253, 160, .94);
+        color: #000;
+    }
+
+    a {
+        color: #FFF;
+    }
+}

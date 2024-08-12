@@ -1,0 +1,201 @@
+2.7.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+2.6.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 740
+    date: 07/31/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+2.5.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 696
+    date: 03/27/2018
+    description: It contains widget FormSubmit which was minor bumped
+    details:
+    - In widget FileAttachmentUpload, added the form token as a salt to the local
+      name (or tmp\_name) of the file to be uploaded and validate it in form submit.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+2.4.1:
+  release: "17.2"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 609
+    date: 02/22/2017
+    description: '''contains'' dependency was updated with latest widget versions.'
+    level: minor
+    refno: 161020-000077
+    sortPosition: Middle
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 601
+    date: 11/16/2016
+    description: Updated description on LoginDialog widget
+    level: nano
+    refno: 161017-000195
+    sortPosition: Middle
+2.3.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 568
+    date: 02/22/2017
+    description: '''contains'' dependency was updated with latest widget versions.'
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 528
+    date: 07/20/2016
+    description: Added screen reader notification for new dialog opening
+    level: nano
+    refno: 160715-000125
+    sortPosition: Middle
+2.2.1:
+  release: "16.5"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+2.1.1:
+  release: "16.2"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 433
+    date: 11/16/2015
+    description: We now remove the OpenLogin options when having the user create a
+      display name, since a contact has already been created.
+    level: minor
+    refno: 151028-000078
+    sortPosition: Middle
+2.0.2:
+  release: "15.11"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 378
+    date: 03/28/2016
+    description: The create\_account\_fields attribute now supports spaces between
+      the semi-colon-separated fields
+    level: nano
+    refno: 150728-000142
+    sortPosition: Middle
+2.0.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 320
+    date: 05/11/2015
+    description: Added support for inline account creation
+    level: major
+    refno: 150501-000032
+    sortPosition: Middle
+1.1.2:
+  release: "14.2"
+  entries:
+  - account: spage
+    category: Bug Fix
+    changelogID: 223
+    date: 01/15/2014
+    description: Password field no longer trimmed of leading and trailing whitespace.
+    details:
+    - To maintain consistency with the password field in the create_account page as
+      well as the rest of the product, this widget will no longer trim leading and
+      trailing whitespace from the password field.
+    level: nano
+    refno: 131213-000029
+    sortPosition: Middle
+  - account: spage
+    category: API Change
+    changelogID: 209
+    date: 11/26/2013
+    description: Added a 'maxlength' parameter of 20 to the 'password' input field.
+    details:
+    - Passwords entered from LoginDialog will now be constrained to 20 characters
+      on the client side.
+    - This is consistent with the behavior of the LoginForm widget, as well as the
+      constraints imposed at the server level.
+    level: nano
+    refno: 131120-000045
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: rlund
+    category: API Change
+    changelogID: 61
+    date: 04/29/2013
+    description: Password fields now default to having autocomplete disabled
+    details:
+    - All input fields for contact passwords now have autocomplete="off" set by default.
+      To re-enable autocomplete simply add the `disable_password_autocomplete` attribute
+      to your rn:widget tag for LoginDialog and set it to false.
+    level: minor
+    refno: 130124-000068
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

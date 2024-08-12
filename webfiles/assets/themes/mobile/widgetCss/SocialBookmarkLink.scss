@@ -1,0 +1,57 @@
+@import 'widget-includes';
+
+.rn_SocialBookmarkLink {
+    margin-top: 1em;
+
+    > a {
+        @include icon($fa-var-share-square);
+    }
+
+    a:hover {
+        white-space: normal;
+    }
+
+    .rn_Panel {
+        border-radius: 2px;
+        background: #FFF;
+        border: 1px solid $light-gray;
+        padding: 6px 9px 10px;
+
+        li {
+            height: 16px;
+            line-height: 1.4em;
+            margin: 4px;
+
+            /* Each link that appears in the overlay has a numerically increasing "rn_Link" class.
+               Links appear in the order specified in the widget's `sites` attribute. */
+
+            /* Facebook */
+            &.rn_Link1 {
+                @include icon($fa-var-facebook) {
+                    color: #3b5998;
+                }
+            }
+
+            /* Twitter */
+            &.rn_Link2 {
+                @include icon($fa-var-twitter) {
+                    color: #55acee;
+                }
+            }
+
+            /* LinkedIn */
+            &.rn_Link3 {
+                @include icon($fa-var-linkedin-square) {
+                    color: #3692c3;
+                }
+            }
+
+            /* Reddit */
+            &.rn_Link4 {
+                @include icon($fa-var-reddit) {
+                    color: #336699;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import 'font-awesome/variables';
+
+$theme-images: 'images' !default;
+
+$rn-small-size: 400px;
+$rn-medium-size: 720px;
+$rn-large-size: 960px;
+$rn-xlarge-size: 1088px;
+
+$rn-small: new-breakpoint(max-width $rn-small-size 12);
+$rn-medium: new-breakpoint(max-width $rn-medium-size 12);
+$rn-large: new-breakpoint(max-width $rn-large-size 12);
+$rn-xlarge: new-breakpoint(max-width $rn-xlarge-size 12);
+
+$base-link-color: #3B6DB1;
+$error-field: #FEFDA0;
+
+$aqua: #62C2FF;
+$pink: #FFCCD5;
+$light-blue: #ABCFE9;
+
+$hero-background: desaturate(darken($base-accent-color, 20), 30);
+$hero-color: #FFF;
+
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+$dashed-border: 2px dashed #b7cce7;
+
+$h1-font-size: $base-font-size * 1.75;
+$h2-font-size: $base-font-size * 1.5;
+$h3-font-size: $base-font-size * 1.2;
+$h4-font-size: $base-font-size * 1.1;
+$h5-font-size: $base-font-size * 0.83;
+$h6-font-size: $base-font-size * 0.75;
+
+$social-discussion-icon: $fa-var-comments;
+$kb-answer-icon: $fa-var-lightbulb-o;
+$chat-icon: $fa-var-comment-o;
+$feedback-icon: $fa-var-bullhorn;
+$ask-icon: $fa-var-question;
+$more-icon: $fa-var-chevron-right;
+$external-link-icon: $fa-var-external-link-square;

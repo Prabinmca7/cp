@@ -1,0 +1,13 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+
+extends:
+  widget: standard/navigation/ProductCategoryBreadcrumb
+  versions: ["1.2"]
+  components: [php, view, js, css]
+
+info:
+  description: rn:msg:BREADCRUMB_REF_KY_FND_PARAM_CATGRYRCRDD_MSG

@@ -1,0 +1,22 @@
+input: <form id='rn_form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path="sample/SampleWidget" name="Incident.CustomFields.c.priority"/></form>
+removecontent: true
+output:
+<form id='rn_form' onsubmit="return false;"><div id="hereBeErrors"></div><div id="rn_SampleWidget_0" class="rn_SampleWidget rn_SelectionInput rn_Input">
+    <span id="rn_SampleWidget_0_CustomPre">before  ☞</span>
+    <div>
+Partial data: (ﾉಥ益ಥ）ﾉ﻿ ┻━┻</div>
+    <div id="rn_SampleWidget_0_LabelContainer">
+        <label for="rn_SampleWidget_0_Incident.CustomFields.c.priority" id="rn_SampleWidget_0_Label" class="rn_Label">Priority                            <span class="rn_ScreenReaderOnly">hint for menu</span>
+                </label>
+    </div>
+    <select id="rn_SampleWidget_0_Incident.CustomFields.c.priority" name="Incident.CustomFields.c.priority">
+            <option value="">--</option>
+                            <option value="11" >1</option>
+                    <option value="12" >2</option>
+                    <option value="13" >3</option>
+                    <option value="14" >4</option>
+                    <option value="15" >5</option>
+                </select>
+        <span id="rn_SampleWidget_0_CustomPost">☜ after</span>
+</div>
+</form>

@@ -1,0 +1,39 @@
+1.2.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.1.1:
+  release: "13.11"
+  entries:
+  - account: jlindh
+    category: New Feature
+    changelogID: 125
+    date: 10/09/2013
+    description: Lets users know if a chat has been disconnected because no agents
+      are available.
+    level: minor
+    refno: 121210-000104
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

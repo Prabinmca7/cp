@@ -1,0 +1,66 @@
+input: <rn:widget path='standard/search/ProductCategoryList' report_page_url='app/home' label_title='TitleLabel' data_type="products" levels="2"/>
+removecontent: true
+output:
+<div id="rn_ProductCategoryList_0" class="rn_ProductCategoryList">
+            <h2>TitleLabel</h2>
+        <div class="rn_ListColumns">
+                    <ul class="rn_LeftColumn">
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/1">
+    Mobile Phones</a>
+    <ul class="rn_SubItemList">
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/1,2">
+                Android            </a>
+        </li>
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/1,3">
+                Blackberry            </a>
+        </li>
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/1,4">
+                iPhone            </a>
+        </li>
+        </ul>
+                    </li>
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/6">
+    Voice Plans</a>
+                    </li>
+                            </ul>
+                    <ul class="rn_MiddleColumn">
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/162">
+    Text Messaging</a>
+                    </li>
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/163">
+    Mobile Broadband</a>
+                    </li>
+                            </ul>
+                    <ul class="rn_RightColumn">
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/7">
+    Replacement/Repair Coverage</a>
+                    </li>
+                                    <li class="rn_ProductCategoryItem">
+                        <a class="rn_ListItemLink" href="app/home/p/128">
+    p1</a>
+    <ul class="rn_SubItemList">
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/128,132">
+                p1a            </a>
+        </li>
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/128,133">
+                p1b            </a>
+        </li>
+            <li class="rn_ProductCategorySubItem">
+            <a href="app/home/p/128,129">
+                p2            </a>
+        </li>
+        </ul>
+                    </li>
+                            </ul>
+            </div>
+</div>

@@ -1,0 +1,35 @@
+input: <rn:widget path="standard/feedback/SocialContentRating" content_type="question" rating_type="star" question_id="1"/>
+contact: useractive1
+removecontent: true
+urlparameters: /qid/1
+output:
+<div id="rn_SocialContentRating_0" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <div class="rn_StarVoting">
+    <span class="rn_ScreenReaderOnly rn_Hidden" aria-live="polite">You are unable to vote 0</span>
+        	<button class="rn_StarButton rn_Vote" aria-hidden="true" title="You are unable to vote" disabled value="5">
+        	<span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+    	</button>
+        	<button class="rn_StarButton rn_Vote" aria-hidden="true" title="You are unable to vote" disabled value="4">
+        	<span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+    	</button>
+        	<button class="rn_StarButton rn_Vote" aria-hidden="true" title="You are unable to vote" disabled value="3">
+        	<span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+    	</button>
+        	<button class="rn_StarButton rn_Vote" aria-hidden="true" title="You are unable to vote" disabled value="2">
+        	<span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+    	</button>
+        	<button class="rn_StarButton rn_Vote" aria-hidden="true" title="You are unable to vote" disabled value="1">
+        	<span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+    	</button>
+    </div>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="starCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		You are unable to vote                	</span>
+        	        </span>
+    </div>

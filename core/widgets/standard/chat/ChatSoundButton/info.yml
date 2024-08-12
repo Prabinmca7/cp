@@ -1,0 +1,68 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [swf]
+attributes:
+  label_tooltip_sound_on:
+    name: rn:msg:SOUND_IS_ON_TOOLTIP_LABEL_MSG
+    description: rn:msg:LABEL_USE_TOOLTIP_SOUND_IS_BTN_MSG
+    default: rn:msg:MUTE_SOUND_MSG
+    type: STRING
+  label_sound_on:
+    name: rn:msg:SOUND_IS_ON_LABEL_MSG
+    description: rn:msg:LABEL_ON_THE_SOUND_IS_ON_BUTTON_MSG
+    type: STRING
+  label_tooltip_sound_off:
+    name: rn:msg:SOUND_IS_OFF_TOOLTIP_LABEL_MSG
+    description: rn:msg:LABEL_USE_TOOLTIP_SOUND_IS_BUTTON_MSG
+    default: rn:msg:UNMUTE_SOUND_MSG
+    type: STRING
+  label_sound_off:
+    name: rn:msg:SOUND_IS_OFF_LABEL_MSG
+    description: rn:msg:LABEL_ON_THE_SOUND_IS_OFF_BUTTON_MSG
+    type: STRING
+  sound_on_icon_path:
+    name: rn:msg:SOUND_ON_ICON_PATH_LBL
+    description: rn:msg:ICON_USED_ON_THE_SOUND_ON_BUTTON_MSG
+    default: images/chatSoundOn.png
+    type: FILEPATH
+  sound_off_icon_path:
+    name: rn:msg:SOUND_OFF_ICON_PATH_LBL
+    description: rn:msg:ICON_USED_ON_THE_SOUND_OFF_BUTTON_MSG
+    default: images/chatSoundOff.png
+    type: FILEPATH
+  sound_on_by_default:
+    name: rn:msg:SOUND_ON_BY_DEFAULT_LBL
+    description: rn:msg:TRUE_SOUND_ENABLED_DEFAULT_MSG
+    default: true
+    type: BOOLEAN
+  enable_flash_support:
+    name: rn:msg:ENABLE_FLASH_SUPPORT_CMD
+    description: rn:msg:TRUE_FLASH_SUPPORT_ENABLED_HTML5_MSG
+    default: true
+    type: BOOLEAN
+  receive_sound_ogg_path:
+    name: rn:msg:RECEIVE_SOUND_OGG_LBL
+    description: rn:msg:SOUND_PLAYED_RECEIVES_MSG_OGG_MSG
+    default: sounds/chatReceive.ogg
+    type: FILEPATH
+  receive_sound_wav_path:
+    name: rn:msg:RECEIVE_SOUND_WAV_LBL
+    description: rn:msg:SOUND_PLAYED_RECEIVES_MSG_WAV_OGG_MSG
+    default: sounds/chatReceive.wav
+    type: FILEPATH
+  receive_sound_flash_path:
+    name: rn:msg:RECEIVE_SOUND_FLASH_LBL
+    description: rn:msg:SOUND_PLAYED_RECEIVES_MSG_FLASH_MSG
+    default: sounds/chatReceive.swf
+    type: FILEPATH
+  receive_sound_mp3_path:
+    name: rn:msg:RECEIVE_SOUND_MP3_LBL
+    description: rn:msg:APP_RECEIVES_MP3_TO_TREE_SL_OGG_WV_NSTD_MSG
+    default: sounds/chatReceive.mp3
+    type: FILEPATH
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_SOUND_CHAT_OPTIONALLY_PLAYS_MSG

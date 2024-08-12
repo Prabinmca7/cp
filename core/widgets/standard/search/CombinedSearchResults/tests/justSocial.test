@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/search/CombinedSearchResults" social_results="0" intent_guide_results="0" display_knowledgebase_results="false" maximum_social_results="1" label_social_results_heading="BANANA" label_more_social_results="more bananas"/>
+config: COMMUNITY_VERSION|15.11.0.0,COMMUNITY_ENABLED|1,COMMUNITY_PRIVATE_KEY|OXaX8ctYifSiwonq,COMMUNITY_PUBLIC_KEY|5JbzLXNAJ0Y3sxAn,COMMUNITY_BASE_URL|http://den01tpo.us.oracle.com
+filter: @"r_tok":"[^"]*",?@
+jstestfile: justSocial.test.js
+removecontent: true
+urlparameters: /kw/people
+output:
+<div id="rn_CombinedSearchResults_0" class="rn_CombinedSearchResults rn_Multiline">
+    <div id="rn_CombinedSearchResults_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_CombinedSearchResults_0_Loading"></div>
+    <div id="rn_CombinedSearchResults_0_Content" class="rn_Content">
+                    </div>
+</div>

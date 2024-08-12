@@ -1,0 +1,23 @@
+1.1.1:
+  release: "14.5"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 246
+    date: 02/20/2014
+    description: Renamed emailCredentials controller function to sendEmailCredentials
+    details:
+    - In order to not conflict with the EmailCredentials widget's class name, the
+      function emailCredentials was renamed to sendEmailCredentials. The BasicEmailCredentials
+      widget is impacted because it inherits this function.
+    level: minor
+    refno: 140212-000057
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 01/24/2013
+    level: major
+    description: Initial version of login/BasicEmailCredentials
+    category: API Change
+    sortPosition: Middle

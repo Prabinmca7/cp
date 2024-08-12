@@ -1,0 +1,70 @@
+input: <form id='banana'><rn:widget path='standard/input/ProductCatalogInput' table='B2B_Int$Asset' show_confirm_button_in_dialog='true' label_confirm_button='confirm it' label_cancel_button='cancel it'/></form>
+contact: ejergan
+jstestfile: defaultProductAttribute.test.js
+removecontent: false
+output:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>no title</title>
+        <link type="text/css" rel="stylesheet" href="/rnt/rnw/yui_3.18/overlay/assets/overlay-core.css">
+
+<style type='text/css'>
+ <!-- 
+.rn_ScreenReaderOnly{position:absolute; height:1px; left:-10000px; overflow:hidden; top:auto; width:1px;}
+.rn_Hidden{display:none !important;}
+ --></style>
+
+<style type="text/css">
+<!--
+.rn_ProductCatalogInput button.rn_DisplayButton{display:inline;background:none;color:#000;cursor:pointer;overflow:hidden;text-overflow:ellipsis;}
+.rn_ProductCatalogInput .ygtvlabel, .rn_ProductCatalogInput .ygtvlabel:link, .rn_ProductCatalogInput .ygtvlabel:visited, .rn_ProductCatalogInput .ygtvlabel:hover{font-size:inherit;}
+.rn_ProductCatalogInput .rn_HintBox{z-index:1;}
+.rn_ProductCatalogInput .rn_HintBox.rn_AlwaysVisibleHint{z-index:0;}
+.rn_ProductCatalogInput .rn_PanelContainer .yui3-widget-hd{display: none;}
+-->
+</style>
+
+</head>
+    <body>
+        <form id='banana'><div id="rn_ProductCatalogInput_0" class="rn_ProductCatalogInput rn_Input">
+    <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_ProductCatalogInput_0_LinksTrigger">Screen Reader users press Enter to access the Product Catalog.&nbsp;<span id="rn_ProductCatalogInput_0_TreeDescription"></span></a>
+    <span class="rn_Label" id="rn_ProductCatalogInput_0_Label">
+        Product Catalog    </span>
+    <button type="button" id="rn_ProductCatalogInput_0_ProductCatalog_Button" class="rn_DisplayButton"><span class="rn_ScreenReaderOnly">This button does not work with screen readers. Please use the previous link instead.</span> <span id="rn_ProductCatalogInput_0_Button_Visible_Text">Select a product</span></button>
+    <div class="rn_ProductCatalogLinks rn_Hidden" id="rn_ProductCatalogInput_0_Links"></div>
+    <div id="rn_ProductCatalogInput_0_TreeContainer" class="rn_PanelContainer rn_Hidden">
+        <div id="rn_ProductCatalogInput_0_Tree" class="rn_Panel">
+                    </div>
+            <div id="rn_ProductCatalogInput_0_SelectionButtons" class="rn_SelectionButtons">
+            <button type="button" id="rn_ProductCatalogInput_0_ProductCatalog_ConfirmButton">confirm it</button>
+            <button type="button" id="rn_ProductCatalogInput_0_ProductCatalog_CancelButton">cancel it</button>
+        </div>
+        </div>
+</div>
+</form>        <script src="/rnt/rnw/yui_3.18/combined-yui.js"></script>
+        <script type="text/javascript" src="/euf/core/debug-js/tests/RightNow.UnitTest.js"></script>
+<script>var YUI_config={"fetchCSS":false,"modules":{"RightNowTreeView":"/min/modules/ui/treeview.js","RightNowTreeViewDialog":"/min/modules/ui/treeviewdialog.js","RightNowTreeViewDropdown":"/min/modules/ui/treeviewdropdown.js"},"lang":["en-US","en-US"],"injected":true,"comboBase":"/ci/cache/yuiCombo/","groups":{"gallery-treeview":{"base":"/rnt/rnw/yui_3.18/gallery-treeview/","modules":{"gallery-treeview":{"path":"gallery-treeview-min.js"}}}}};</script>
+<script type="text/javascript" src="/min/RightNow.js"></script>
+<script type="text/javascript" src="pages/unitTest/rendering/widgets/standard/input/ProductCatalogInput/tests/confirmButtons"></script>
+<script>
+/* <![CDATA[ */
+RightNow.Env=(function(){var _props={module:'standard',coreAssets:'/euf/core/',yuiCore:'/rnt/rnw/yui_3.18/',profileData:{"isLoggedIn":true,"previouslySeenEmail":null,"contactID":2,"socialUserID":null,"firstName":"Elizabeth","lastName":"Jergan","email":"ejergan@latisan.example.invalid"}};return function(prop){return _props[prop];};})();RightNow.;
+RightNow.;
+RightNow.Url.setParameterSegment(11);
+RightNow.Interface.Constants = 
+{"API_VALIDATION_REGEX_EMAIL":"((([-_!#$%&'*+\/=?^~`{|}\\w]+([.][-_!#$%&'*+\/=?^~`{|}\\w]*)*)|(\"[^\"]+\"))@[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*(\\.[0-9A-Za-z]+([\\-]+[0-9A-Za-z]+)*)+[;, ]*)+"};
+YUI().use('event-base',function(Y){Y.on('domready',function(){var n=RightNow.namespace,W=RightNow.Widgets,c='createWidgetInstance';
+n('RightNow.Widgets.ProductCatalogInput').requires=["panel","overlay","gallery-treeview"];
+W.setInitialWidgetCount(1);
+
+})});
+/* ]]> */
+</script>
+<script type="text/javascript">
+var _rnq=_rnq||[];
+(function(e){var b,d,a=document.createElement("iframe"),c=document.getElementsByTagName("script");a.src="javascript:false";a.title="Action Capture";a.role="presentation";(a.frameElement||a).style.cssText="position:absolute;width:0;height:0;border:0";c=c[c.length-1];c.parentNode.insertBefore(a,c);try{b=a.contentWindow.document}catch(f){d=document.domain,a.src="javascript:var d=document.open();d.domain='"+d+"';void(0);",b=a.contentWindow.document}b.open()._l=function(){for(var a;e.length;)a=this.createElement("script"),
+d&&(this.domain=d),a.src=e.pop(),this.body.appendChild(a)};b.write('<head><title>Action Capture</title></head><body onload="document._l();">');b.close()})(["","//rnengage.qaload.lan/api/1/javascript/acs.js"]);
+</script>
+</body>
+</html>

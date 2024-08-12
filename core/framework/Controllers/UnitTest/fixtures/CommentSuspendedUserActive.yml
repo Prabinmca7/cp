@@ -1,0 +1,7 @@
+type: CommunityComment
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive1
+  Body: Comment by an active user.
+  StatusWithType.Status.LookupName: Suspended
+  BodyContentType.LookupName: text/x-markdown

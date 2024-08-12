@@ -1,0 +1,103 @@
+<rn:block id="preResultList"/>
+    <div class="rn_SearchResultTitle">
+        <div class="rn_SearchResultTitleAnswer"><%= title %></div>
+    </div>
+    <% if(defaultCount) { %>
+        <div class="rn_ResultsPerPage">
+            <span><%= attrs.label_results_per_page %></span>
+            <div class="rn_DropdownButton">
+                <button type="button" id="<%= widgetInstanceID + '_DropdownButton'%>" class="rn_DisplayButton">
+                    <rn:block id="preDropdownTrigger"/>
+                        <span id="<%= widgetInstanceID + '_ResultCount' %>" class="rn_ResultCount"><%= defaultCount %>
+                        <span class="rn_ScreenReaderOnly"><%= attrs.label_drop_down_accessibility %></span>
+                        </span>
+                    <rn:block id="postDropdownTrigger"/>
+                </button>
+                <div id="<%= widgetInstanceID + '_SubNavigationParent' %>" class="rn_SubNavigationParent" tabindex="-1">
+                    <ul id="<%= widgetInstanceID + '_SubNavigation' %>" class="rn_SubNavigation rn_Hidden">
+                    <% for (var i = 0; i < resultCountArray.length; ++i) { %>
+                            <% if(resultCountArray[i] === defaultCount) { %>
+                                <li class="rn_Item rn_DefaultCount" ><%= resultCountArray[i] %></li>
+                            <% } else { %>
+                                <li class="rn_Item" ><%= resultCountArray[i] %></li>
+                            <% } %>
+                    <% } %>
+                    </ul>
+                    <ul id="<%= widgetInstanceID + '_SubNavigationHidden' %>" class="rn_SubNavigationHidden"></ul>
+                </div>
+            </div>
+        </div>
+    <% } %>
+    <table>
+        <rn:block id="topResultList"/>
+            <% for (var i = 0; i < data.length; i++) { %>
+                <rn:block id="resultListItem">
+                    <tr>
+                        <td class="rn_SearchResultAnswer">
+                            <%  var resultItemStyle = '';
+                                var docID= '';
+                                var openArticle = '';
+                                var openArticleHref = '';
+                                if(data[i].type === 'template') {
+                                data[i].fileType = 'intent';
+                                if(attrs.apply_style_on_intents) {
+                                    resultItemStyle = 'rn_IntentResult';
+                                }
+                            }
+                            var fileCss = 'rn_ResultIcon rn_File_' + data[i].fileType.replace(new RegExp('-', 'g'), '_').toLowerCase(); %>
+                            <div class="rn_ResultElement <%= resultItemStyle %>">
+                                <span class="<%= fileCss %>"></span>
+                                <span class="rn_Element1">
+                                <% var fileType = data[i].fileType, type = data[i].type, typeOfFile;
+                                if(fileType) {
+                                    typeOfFile = fileType.toLowerCase().replace(new RegExp('-', 'g'), '_');
+                                }
+                                else if(type === 'template') {
+                                    typeOfFile = 'intent';
+                                } %>
+                                <span class="rn_SearchResultIcon rn_File_<%= typeOfFile %>">
+                                </span>
+                                    <% var dataHref = (data[i].href.indexOf('ci/okcs') > 0) ? data[i].href : answerPageUrl.concat(data[i].href); %>
+                                    <% var href = (data[i].href.indexOf('ci/okcs') > 0) ? data[i].dataHref : (answerPageUrl.concat(data[i].dataHref) + (session ? '/session/' + session : '')); %>
+                                    <a id="<%= widgetInstanceID + '_' + data[i].answerId %>" data-id="<%= data[i].docId %>" href="<%= href %>" data-href="<%= dataHref %>" data-url="<%= data[i].clickThroughUrl %>" data-isHighlighted="<%= data[i].isHighlightingEnabled %>">
+                                        <%= data[i].title %>
+                                <% var doc_Id = (data[i].link).split(':');    
+                                     if(attrs.open_parent_answer && (data[i].fileType != 'CMS-XML' && data[i].type !== 'template' && data[i].link.startsWith("IM:"))){
+                                            openArticle =  'rn_ResultIcon rn_File_Open_article';
+                                    }
+                                     if(attrs.display_doc_id && (typeof(doc_Id[5]) !== 'undefined')){
+                                            docID = '('+doc_Id[5] +') ';
+                                    }   
+                                    openArticleHref = answerPageUrl + '/a_id/' + data[i].globalAnswerId;
+                                %>
+                                <%= docID %> 
+                                    </a>
+                                </span>
+                                <a href="<%= openArticleHref %>" target="_blank"> <span class="<%= openArticle %> " title="<%= attrs.label_open_article %>"> </span> </a>
+                                <% if(data[i].textElements && data[i].textElements.length > 0) { %>
+                                    <div class="rn_SearchResultExcerpt">
+                                    <% var excerptElement = ''; %>
+                                        <% for (var j = 0; j < data[i].textElements.length; j++) { %>
+                                            <% if(data[i].textElements[j].snippets && data[i].textElements[j].snippets.length > 0) { %>
+                                                <% for (var k = 0; k < data[i].textElements[j].snippets.length; k++) {%>
+                                                    <% var contentType = data[i].textElements[j].type, searchExcerpt; %>
+                                                    <% if(type === 'template'&& contentType === 'HTML') { %>
+                                                        <% searchExcerpt = data[i].textElements[j].snippets[k].text; %>
+                                                    <% } else{ %>
+                                                        <% searchExcerpt = this.yuiObj.Escape.html(data[i].textElements[j].snippets[k].text); %>
+                                                    <% } %>
+                                                    <% excerptElement += '<span class="rn_SnippetLevel' +  data[i].textElements[j].snippets[k].level + '">' + searchExcerpt + '</span>'; %>
+                                                <% } %>
+                                            <% } %>
+                                        <% } %>
+                                        <%= excerptElement %>
+                                    </div>
+                                <% } %>
+                            </div>
+                        </td>
+                    </tr>
+                </rn:block>
+            <% } %>
+        <rn:block id="bottomResultList"/>
+    </table>
+<rn:block id="postResultList"/>

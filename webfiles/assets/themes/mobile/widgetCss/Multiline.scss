@@ -1,0 +1,34 @@
+@import 'widget-includes';
+
+.rn_Multiline {
+    overflow: hidden;
+
+    .rn_Loading {
+        font-size: 2.5em;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .rn_Element3 {
+        display: block;
+    }
+
+    .rn_ElementsHeader,
+    .rn_ElementsData {
+        color: darken($light-gray, 50%);
+        font-size: .8em;
+    }
+
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    ol, ul {
+        padding-top: .5em;
+
+        li {
+            margin-bottom: .5em;
+        }
+    }
+}

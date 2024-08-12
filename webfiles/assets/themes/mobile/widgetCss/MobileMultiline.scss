@@ -1,0 +1,52 @@
+@import 'widget-includes';
+
+.rn_MobileMultiline {
+    overflow: hidden;
+
+    .rn_Loading {
+        @include loading-icon();
+    }
+
+    .rn_Element1,
+    .rn_Element1 a,
+    .rn_Element2,
+    .rn_Element3 {
+        display: block;
+    }
+
+    .rn_Element1 {
+        font-size: 1.333em;
+        line-height: 1.4em;
+        margin-bottom: .3em;
+
+        .rn_FileTypeIcon {
+            float: right;
+            position: relative;
+            top: 10px;
+        }
+    }
+
+    .rn_Element2,
+    .rn_Element3 {
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+
+    .rn_ElementsHeader,
+    .rn_ElementsData {
+        display: none;
+    }
+
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    ol, ul {
+        padding-top: 3px;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}

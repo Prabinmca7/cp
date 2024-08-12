@@ -1,0 +1,10 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: custom/viewpartialtest/CustomAnswerFeedback
+  components:
+  - view
+  - css

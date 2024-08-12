@@ -1,0 +1,46 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LC_LBL
+    type: STRING
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: rn:def:CP_NOV09_ANSWERS_DEFAULT
+  label_text:
+    name: rn:msg:LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_TO_DISPLAY_LBL
+    default: rn:msg:SEARCH_TYPE_LBL
+  search_on_select:
+    name: rn:msg:SEARCH_ON_SELECTED_CMD
+    type: BOOLEAN
+    description: rn:msg:START_SEARCH_SOON_ITEM_IS_SELECTED_MSG
+    default: false
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:PG_DISP_ITEM_SEL_SRCH_SEL_SET_TRUE_MSG
+  search_type_only:
+    name: rn:msg:ONLY_SEARCH_TYPE_LBL
+    type: BOOLEAN
+    description: rn:msg:TRUE_DISP_FLTRS_SRCH_FALSE_DISP_LBL
+    default: false
+  filter_list:
+    name: rn:msg:FILTER_LIST_LBL
+    type: STRING
+    description: rn:msg:COMMA_SEPERATED_L_LIMITED_SET_FLTRS_MSG
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Report Search
+  description: rn:msg:WIDGET_DEFINESOPTS_LISTED_SRCH_MSG
+  urlParameters:
+    st:
+      name: rn:msg:SEARCH_TYPE_LBL
+      description: rn:msg:SETS_SEARCH_TYPE_URL_PARAM_VALUE_LBL
+      example: st/6

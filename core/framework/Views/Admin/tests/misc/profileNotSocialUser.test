@@ -1,0 +1,18 @@
+input:
+<h2>rn:profile checks</h2>
+#rn:profile:socialUserID#
+<br/>
+#rn:profile:email#
+<br/>
+#rn:profile:firstName#
+<br/>
+#rn:profile:contactID#
+<br/>
+contact: eturner@rightnow.com.invalid
+removecontent: true
+output:
+<h2>rn:profile checks</h2>
+<br/>
+eturner@rightnow.com.invalid<br/>
+Ernie<br/>
+1268<br/>

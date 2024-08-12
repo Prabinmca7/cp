@@ -1,0 +1,19 @@
+input: <form onsubmit="return false;"><rn:widget path="input/TextInput" name="Contact.Emails.PRIMARY.Address" require_validation="true" required="true" label_validation_incorrect="doesn't match %s" label_validaton="ReEnter %s"/></form>
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_TextInput_0" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_0_LabelContainer">
+        <label for="rn_TextInput_0_Contact.Emails.PRIMARY.Address" id="rn_TextInput_0_Label" class="rn_Label">
+        Address                        <span class="rn_Required" aria-label="Required">
+    *</span>                                </label>
+    </div>
+    <input type="email" id="rn_TextInput_0_Contact.Emails.PRIMARY.Address" name="Contact.Emails.PRIMARY.Address" class="rn_Email" maxlength='255' required  />
+        <div class="rn_TextInputValidate">
+        <div id="rn_TextInput_0_LabelValidateContainer">
+            <label for="rn_TextInput_0_Contact.Emails.PRIMARY.Address_Validate" id="rn_TextInput_0_Contact.Emails.PRIMARY.Address_LabelValidate" class="rn_Label">Re-enter a value for the field 'Address'                                <span class="rn_Required" aria-label="Required">
+    *</span>                        </label>
+        </div>
+        <input type="email" id="rn_TextInput_0_Contact.Emails.PRIMARY.Address_Validate" name="Contact.Emails.PRIMARY.Address_Validation" class="rn_Email rn_Validation" maxlength='255' required value=""/>
+    </div>
+   </div>
+</form>

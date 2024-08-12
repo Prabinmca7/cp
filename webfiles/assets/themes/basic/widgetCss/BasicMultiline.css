@@ -1,0 +1,7 @@
+.rn_BasicMultiline ul{
+    padding: 0;
+}
+.rn_BasicMultiline ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}

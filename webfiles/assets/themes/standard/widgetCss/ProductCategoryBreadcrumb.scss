@@ -1,0 +1,33 @@
+@import 'widget-includes';
+
+.rn_ProductCategoryBreadcrumb {
+    ol {
+        @include clearfix;
+        padding: 0;
+
+        li {
+            line-height: 3em;
+
+            a {
+                cursor: default;
+
+                @include icon($fa-var-angle-right) {
+                    margin-left: 10px;
+                    font-size: 3em;
+                    line-height: .75em;
+                    vertical-align: -25%;
+                }
+
+                span {
+                    cursor: pointer;
+                }
+            }
+
+            &:first-child a {
+                &:before {
+                    content: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_FileListDisplay {
+    .rn_DataLabel {
+        display: block;
+        font-weight: bold;
+    }
+
+    .rn_DataValue ul {
+        margin: 0;
+    }
+
+    .rn_DataValue li {
+        padding: 10px 0;
+    }
+
+    .rn_FileSize {
+        color: #555;
+        font-style: italic;
+        padding-left: 4px;
+    }
+
+    .rn_FileTypeImageThumbnail {
+        border: 2px solid #fff;
+        height: 64px;
+        margin-right: 6px;
+        vertical-align: middle;
+        width: 64px;
+    }
+}

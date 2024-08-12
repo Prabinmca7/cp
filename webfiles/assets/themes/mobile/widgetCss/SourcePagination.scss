@@ -1,0 +1,67 @@
+@import 'widget-includes';
+
+.rn_SourcePagination {
+    margin-top: 10px;
+    font-size: 1.5em;
+
+    ul {
+        @include clearfix;
+    }
+
+    li {
+        border: 0;
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 .2em;
+        margin-right: 4px;
+
+        &:hover, &:focus {
+            background: #EBEFF5;
+        }
+    }
+
+    a {
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .rn_PaginationLinks {
+        text-align: right;
+    }
+
+    .rn_CurrentPage {
+        color: $base-link-color;
+        cursor: default;
+        font-weight: bold;
+
+        &:hover, &:focus {
+            background: none;
+        }
+    }
+
+    .rn_NextPage,
+    .rn_PreviousPage {
+        color: $base-link-color;
+        font-size: .8em;
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+
+    .rn_NextPage {
+        a {
+            @include icon($fa-var-chevron-right, after) {
+                font-size: .8em;
+            }
+        }
+    }
+
+    .rn_PreviousPage {
+        a {
+            @include icon($fa-var-chevron-left) {
+                font-size: .8em;
+            }
+        }
+    }
+}

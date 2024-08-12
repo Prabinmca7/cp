@@ -1,0 +1,16 @@
+@import 'widget-includes';
+
+.rn_LoginForm {
+    @include row;
+
+    margin-bottom: .5em;
+
+    .rn_StandardLogin,
+    .rn_ThirdPartyLogin {
+        @include span-columns(6);
+
+        @include media($rn-large) {
+            @include span-columns(12);
+        }
+    }
+}

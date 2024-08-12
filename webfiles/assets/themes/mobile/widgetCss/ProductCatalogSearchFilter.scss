@@ -1,0 +1,98 @@
+@import 'widget-includes';
+
+.rn_ProductCatalogSearchFilter {
+    button.rn_DisplayButton {
+        @include fill-parent;
+
+        background: #FFF;
+        border: 1px solid $medium-gray;
+        font-weight: normal;
+        margin-top: auto;
+        min-height: 1.5em;
+        padding: 4px 20px 4px 4px;
+        position: relative;
+        text-align: left;
+        text-shadow: none;
+        margin-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+        @include caret(down, after) {
+            position: absolute;
+            right: 5px;
+            font-size: $base-font-size;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            background-color: $light-gray;
+        }
+    }
+
+    .rn_Panel {
+        @include fill-parent;
+
+        background: #FFF;
+        border: 1px solid $medium-gray;
+        max-height: 200px;
+        overflow: auto;
+        padding: 6px;
+    }
+
+    .rn_PanelContainer {
+        border: 1px solid $medium-gray;
+        border-top: 0;
+
+        width: 350px;
+
+        @include media($rn-large) {
+            width: 300px;
+        }
+
+        @include media($rn-small) {
+            width: 100%;
+        }
+
+        .rn_Panel {
+            border: 0;
+        }
+    }
+
+    .rn_SelectionButtons {
+        background: $light-gray;
+        border-top: 1px solid $medium-gray;
+
+        button {
+            font-size: .95em;
+            margin: 7px 0 7px 5px;
+            padding: 5px;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+
+        td {
+            padding: 0;
+            border: 0;
+
+            a {
+                text-shadow: none;
+            }
+        }
+    }
+
+    .rn_Label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 2px;
+        width: 36%;
+    }
+}
+
+.rn_Dialog .rn_ProductCatalogLinks {
+    ol {
+        padding-left: 1em;
+    }
+}

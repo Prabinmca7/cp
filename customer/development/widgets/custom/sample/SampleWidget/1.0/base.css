@@ -1,0 +1,4 @@
+/* Core css for widget functionality goes here. */
+.rn_SampleWidget.rn_SelectionInput label {
+    font-size: 2em;
+}

@@ -1,0 +1,95 @@
+@import 'widget-includes';
+
+.rn_RecentlyAskedQuestions {
+    @include outer-container;
+
+    @mixin bubble ($background) {
+        border-radius: 6px;
+        padding: 10px;
+        background: $background;
+    }
+
+    .rn_Author {
+        @include span-columns(2);
+    }
+
+    .rn_RecentlyAskedQuestionsItem {
+        @include bubble(lighten($light-gray, 10));
+        @include span-columns(6);
+        @include omega(2n);
+        @include small-full-width;
+        border: 1px solid $base-border-color;
+        margin-top: 1em;
+    }
+
+    .rn_QuestionInfo {
+        @include clearfix;
+
+        .rn_QuestionSubject {
+            @include span-columns(10);
+        }
+
+        .rn_AvatarLink {
+            visibility: hidden;
+
+            @include icon($fa-var-question-circle) {
+                visibility: visible;
+                font-size: 1.6em;
+                color: $base-font-color;
+            }
+        }
+    }
+
+    .rn_AnswerInfo {
+        @include shift(1);
+        @include span-columns(11);
+        @include row;
+
+        .rn_AnswerContent {
+            @include shift(1);
+            @include span-columns(9);
+
+            $background: lighten($light-gray, 6);
+            $border: $base-border-color;
+
+            @include bubble($background);
+            border: 1px solid $border;
+            box-shadow: 0 1px 2px rgba(20, 20, 20, .1);
+            color: #222;
+            padding-bottom: 1em;
+            position: relative;
+
+            @mixin caret ($size, $bg, $left, $z-index) {
+                content: "";
+                position: absolute;
+                left: $left;
+                top: 10px;
+                @include triangle($size, $bg, left);
+                z-index: $z-index;
+            }
+
+            &:before {
+                @include caret(2em, $background, -30px, 1);
+            }
+
+            &:after {
+                // Border for the caret that matches the bubble's border.
+                @include caret(2.1em, $border, -31px, 0);
+            }
+
+            .rn_AnswerMoreLink {
+                display: block;
+                padding-right: 1em;
+                text-align: right;
+
+                a {
+                    color: darken($base-link-color, 10);
+                }
+            }
+        }
+    }
+
+    .rn_ContentLocked {
+        @include icon($fa-var-lock, after);
+    }
+}

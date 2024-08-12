@@ -1,0 +1,10 @@
+input: <rn:widget path='standard/reports/BasicResultInfo'/>
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+template: basic
+urlparameters: /kw/phone
+output:
+<div class="rn_BasicResultInfo rn_ResultInfo">
+                                    <div class="rn_Results">
+                                                                Results <span>1</span> - <span>10</span> of <span>18</span> for <a href="/app/unitTest/rendering/widgets/standard/reports/BasicResultInfo/tests/resultsFromKeywordParm/search/1/kw/phone/search/1">phone</a>         </div>
+    </div>

@@ -1,0 +1,6 @@
+type: CommunityUser
+object:
+  DisplayName: Suspended User2
+  StatusWithType.Status.LookupName: Suspended
+  Contact:
+    fixture: ContactSuspended2

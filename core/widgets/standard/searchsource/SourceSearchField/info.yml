@@ -1,0 +1,47 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAMES_OFSRCH_SOURCES_TO_BE_USED_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - OKCSSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  filter_label:
+    name: rn:msg:FILTER_LABEL_LBL
+    type: STRING
+    description: rn:msg:THE_LABEL_USED_BY_THE_FLTR_WHEN_LBL
+  filter_type:
+    name: rn:msg:FILTER_NAME_LBL
+    type: STRING
+    description: rn:msg:THE_FLTR_TYPE_FOR_THIS_WIDGET_MAPS_S_UHK
+    default: query
+  label_input:
+    name: rn:msg:LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISP_WARN_MODIFICATION_LBL
+    default: rn:msg:SEARCH_BY_KEYWORD_CMD
+  label_placeholder:
+    name: rn:msg:LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISP_WARN_MODIFICATION_LBL
+    default: rn:msg:SEARCH_ELLIPSIS_LBL
+  initial_focus:
+    name: rn:msg:INITIAL_FOCUS_LBL
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_FIELD_FOCUSED_PAGE_LOADED_MSG
+  access_type:
+    name: rn:astr:access_type
+    type: STRING
+    description: rn:msg:SOURCE_OF_ACCESS_LBL
+    default: rn:astr:search
+info:
+  category:
+    - Source Search
+  description: rn:msg:THIS_WIDGET_DISP_AN_INPUT_TEXTBOX_MSG

@@ -1,0 +1,174 @@
+1.7.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.6.2:
+  release: "17.11"
+  entries:
+  - account: ryan.peterson@oracle.com
+    category: Bug Fix
+    changelogID: 662
+    date: 09/27/2017
+    description: PasswordInput now indicates the appropriate input field is incorrect
+      when verifying passwords.
+    details:
+    - When validating passwords, the PasswordInput widget now specifies which input
+      field is incorrect or different. Previously the wrong input field was indicated
+      as being incorrect or different.
+    level: nano
+    refno: 170606-000185
+    sortPosition: Middle
+1.6.1:
+  release: "15.11"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 403
+    date: 09/26/2015
+    description: Defaults changed for label\_validation and label\_validation\_incorrect
+      attributes to improve messaging in foreign languages
+    details:
+    - 'The new default value for label\_validation is "Re-enter a value for the field
+      ''%s''" (was: "Re-enter %s").'
+    - 'The new default value for label\_validation\_incorrect is "Validation for the
+      field ''%s'' failed" (was: "%s does not match %s"). Note that there is no longer
+      a ''%s'' placeholder for the second field name, which may impact your override
+      of the attribute.'
+    level: minor
+    refno: 150827-000025
+    sortPosition: Middle
+1.5.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 312
+    date: 05/11/2015
+    description: Added a z-index to support layered dialogs
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.4.1:
+  release: "15.2"
+  entries:
+  - account: pkolpin
+    category: Bug Fix
+    changelogID: 278
+    date: 11/13/2014
+    description: Corrected behavior when label_input is empty
+    details:
+    - If the label\_input attribute is empty, the required asterisk will also not
+      display. The empty value will be output since some widgets, notably the ProductCategoryInput
+      widget, expect the input label to be displayed and causes a JavaScript error
+      when it cannot be found.  While providing a useful label\_input value is necessary
+      for providing good accessibility to screen readers, rather than forcing the
+      label\_input attribute to be required, this change instead causes the empty
+      element to be output.  This small change in the view of the widget requires
+      the minor bump of the widget.
+    level: minor
+    refno: 141010-000016
+    sortPosition: Middle
+1.3.1:
+  release: "14.2"
+  entries:
+  - account: bbukowski
+    category: Bug Fix
+    changelogID: 226
+    date: 01/22/2014
+    description: The current password field now outputs constraints such as maxlevel
+    details:
+    - Previously, the current password field, when appearing due to the `require_current_password`
+      attribute, did not output validation constraints such as the `maxlength` html
+      input attribute. This could result in server-side validation errors if users
+      entered password values exceeding the maximum allowable 20 character limit.
+      Now constraints such as `maxlength` are included on the current password field.
+    level: nano
+    refno: 140116-000000
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 194
+    date: 11/01/2013
+    description: Added support for `constraintChange` Dynamic Forms event
+    details:
+    - Restructured the label area of the widget to support dynamically changing the
+      required-ness of an input field. This change can impact custom code which overrides
+      the `preLabel` or `postLabel` RN Blocks. To consume this change, EJS extension
+      will need to be used to override the blocks in their new locations in addition
+      to their original locations.
+    level: minor
+    refno: 131021-000234
+    sortPosition: Middle
+1.2.1:
+  release: "13.8"
+  entries:
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 111
+    date: 07/17/2013
+    description: Adds the autocomplete attribute to the Current Password field
+    details:
+    - In the previous version this widget was updated to have the `autocomplete` attribute
+      default to `off` on input fields, which disables autocomplete in compliant browsers.
+      This change adds the same attribute to the Current Password field, which appears
+      in the widget when the `require_current_password` attribute is used. Autocomplete
+      is now enabled by default on all input fields in the PasswordInput widget.
+    level: minor
+    refno: 130423-000118
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: eturner
+    category: API Change
+    changelogID: 81
+    date: 04/29/2013
+    description: Password fields no longer display when field is read-only
+    details:
+    - When contact password fields on this widget are designated read-only, the field
+      does not display. Fields are marked as read-only when the user authenticates
+      via PTA/Openlogin or is on the chat launch form.
+    level: nano
+    refno: 130222-000090
+    sortPosition: Middle
+  - account: rlund
+    category: API Change
+    changelogID: 60
+    date: 04/29/2013
+    description: Password fields now default to having autocomplete disabled
+    details:
+    - All input fields for contact passwords now have autocomplete="off" set by default.
+      To re-enable autocomplete simply add the `disable_password_autocomplete` attribute
+      to your rn:widget tag for PasswordInput and set it to false.
+    level: minor
+    refno: 130124-000068
+    sortPosition: Middle
+1.0.2:
+  release: "13.2"
+  entries:
+  - account: bbukowski
+    category: API Change
+    changelogID: 23
+    date: 04/29/2013
+    description: Validation of password requirements
+    details:
+    - Requirements for character repetitions and character occurrences now appear
+      on the password overlay even when the password length is set to 0.
+    level: nano
+    refno: 120906-000063
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

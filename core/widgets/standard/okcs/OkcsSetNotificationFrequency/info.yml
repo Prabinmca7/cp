@@ -1,0 +1,52 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_dont_send_emails:
+    name: rn:astr:DONTSEND_EMAILS_LABEL_LBL
+    description: rn:astr:LABEL_ON_THE_DONTSEND_EMAIL_LBL
+    default: rn:msg:DO_NOT_SEND_EMAILS_LBL
+    type: STRING
+  label_immediately:
+    name: rn:astr:LABEL_IMMEDIATELY_LABEL_LBL
+    description: rn:astr:LABEL_ON_IMMEDIATELY_LBL
+    default: rn:msg:IMMEDIATELY_LBL
+    type: STRING
+  label_once_per_day:
+    name: rn:astr:ONCE_PER_DAY_LABEL_LBL
+    type: STRING
+    description: rn:astr:MESSAGE_ONCE_PER_DAY_LBL
+    default: rn:msg:ONCE_PER_DAY_LBL
+  label_once_per_week:
+    name: rn:astr:ONCE_PER_WEEK_LABEL_LBL
+    type: STRING
+    description: rn:astr:MESSAGE_ONCE_PER_WEEK_LABEL_LBL
+    default: rn:msg:ONCE_PER_WEEK_LBL
+  label_notification_frequency:
+    name: rn:astr:send_subscription_notification_LBL
+    type: STRING
+    description: rn:astr:MESSAGE_send_subscription_notification_LBL
+    default: rn:msg:NOTIFICATION_FREQUENCY_LBL
+  label_submit_button:
+    name: rn:astr:SUBMIT_BUTTON_LABEL_LBL
+    type: STRING
+    description: rn:astr:LABEL_ON_THE_SUBMIT_BUTTON_LBL
+    default: rn:msg:SUBMIT_CMD
+  label_subscription_schedule_msg:
+    name: rn:msg:SUBSCRIPTION__SCHEDULE_SUCCESS_LABEL_LBL
+    type: STRING
+    description: rn:astr:MESSAGE_USE_SUCCESSFUL_SUBSCRIPTIONS_SCHEDULE_LBL
+    default: rn:msg:NOTIFICATION_FREQ_UPDATED_SUCCESSFULLY_MSG
+  label_subscription_schedule_failure_msg:
+    name: rn:msg:SUBSCRIPTION__SCHEDULE_FAILURE_LABEL_LBL
+    type: STRING
+    description: rn:astr:MESSAGE_USE_FAILURE_SUBSCRIPTIONS_SCHEDULE_LBL
+    default: rn:msg:NOTIFICATION_FREQUENCY_UPDATION_FAILED_MSG
+  get_okcs_data_ajax:
+    name: rn:msg:RATING_SUBMIT_AJAX_URL_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+info:
+  description: rn:msg:ADD_A_DESCRIPTION_CMD

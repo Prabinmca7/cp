@@ -1,0 +1,31 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "15.8"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 323
+    date: 05/18/2015
+    description: Added `focus_item_on_open_selector` attribute to specify a child
+      element to focus on after the item is toggled
+    level: nano
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of navigation/Accordion
+    category: API Change
+    sortPosition: Middle

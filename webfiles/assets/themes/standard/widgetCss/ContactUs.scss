@@ -1,0 +1,41 @@
+@import 'widget-includes';
+
+.rn_ContactUs {
+    $icon-color: #505050;
+
+    fieldset {
+        background: #FFF;
+    }
+
+    legend {
+        display: block;
+    }
+
+    div:before {
+        color: $icon-color;
+    }
+
+    .rn_QuestionLink {
+        @include list-ask-icon;
+    }
+
+    .rn_CommunityLink {
+        @include list-socialquestion-icon;
+    }
+
+    .rn_ChatLink a {
+        @include list-chat-icon;
+    }
+
+    .rn_FeedbackLink .rn_SiteFeedback {
+        @include list-feedback-icon;
+    }
+
+    .rn_SiteFeedback, .rn_ConditionalChatLink, .rn_Chat {
+        display: inline;
+    }
+
+    .rn_Chat span {
+        display: block;
+    }
+}

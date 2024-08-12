@@ -1,0 +1,114 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label:
+    name: rn:msg:FIELD_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_TO_DISP_FOR_THE_FLD_IF_1_IS_MSG
+  display_media_inline:
+    name: rn:msg:DISPLAY_MEDIA_INLINE_LBL
+    type: BOOLEAN
+    description: rn:msg:ID_VD_TTCH_SUPPORTEDFORMATSMEDNLN_TTRBT_MSG
+    default: false
+  supported_formats_media_inline:
+    name: rn:msg:SUPPORTED_FORMATS_L_MEDIA_INLINE_LBL
+    type: STRING
+    description: rn:msg:DISPLAYMEDIA_FMT_IMG_VD_DSP_SPP_BRWSR_MSG
+    default: IMAGE=png,jpeg,gif,jpg|AUDIO=mp3|VIDEO=mpeg,mpg,mpe,mp4
+  answer_key:
+    name: rn:msg:FIELD_KEY_LBL
+    type: STRING
+    description: rn:msg:THIS_FLD_ALLOWS_YOU_TO_DISP_STATUS_MSG
+    options:
+    - docID
+    - version
+    - status
+    - publishedDate
+  value:
+    name: rn:msg:FLD_VAL_LBL
+    type: STRING
+    description: rn:msg:VALUE_OF_THE_FIELD_LBL
+  type:
+    name: rn:msg:FLD_TYPE_LBL
+    type: OPTION
+    description: rn:msg:TYPE_OF_THE_FIELD_LBL
+    default: DISPLAY
+    options:
+    - NODE
+    - LIST
+    - CHECKBOX
+    - FILE
+    - DISPLAY
+  xpath:
+    name: rn:msg:FIELD_PATH_LBL
+    type: STRING
+    description: rn:msg:PATH_OF_THE_FIELD_TO_BE_DISPLAYED_MSG
+  label_aggregate_rating:
+    name: rn:msg:AGGREGATE_RATING_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_AGGREGATE_RATING_LBL
+    default: rn:msg:AGGREGATE_RATING_LBL
+  label_owner:
+    name: rn:msg:OWNER_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_OWNER_LBL
+    default: rn:msg:OWNER_LBL
+  label_answer_id:
+    name: rn:msg:ANSWER_ID_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_ANSWER_ID_LBL
+    default: rn:msg:ANSWER_ID_LBL
+  label_last_modifier:
+    name: rn:msg:LAST_MODIFIER_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_LAST_MODIFIER_LBL
+    default: rn:msg:LAST_MODIFIER_LBL
+  label_last_modified:
+    name: rn:msg:LAST_MODIFIED_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_LAST_MODIFIED_LBL
+    default: rn:msg:LAST_MODIFIED_LBL
+  label_creator:
+    name: rn:msg:CREATOR_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_CREATOR_LBL
+    default: rn:msg:CREATOR_LBL
+  label_no_support_video_tag:
+    name: rn:msg:NO_SUPPORT_VIDEO_TAG_LABEL_LBL
+    type: STRING
+    description: rn:msg:DISPLAYED_VIDEO_TAG_SUPPORTED_BROWSER_MSG
+    default: rn:msg:YOUR_BROWSER_DOES_SUPPORT_VIDEO_TAG_MSG
+  label_no_support_audio_tag:
+    name: rn:msg:NO_SUPPORT_AUDIO_TAG_LABEL_LBL
+    type: STRING
+    description: rn:msg:DISPLAYED_AUDIO_TAG_SUPPORTED_BROWSER_MSG
+    default: rn:msg:BROWSER_DOES_SUPPORT_AUDIO_ELEMENT_MSG
+  label_user_group:
+    name: rn:msg:USER_GROUP_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_USER_GROUP_LBL
+    default: userGroup
+  label_more:
+    name: rn:msg:MORE_LINK_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_MORE_LINK_LBL
+    default: rn:msg:ELLIPSIS_MORE_LBL
+  label_less:
+    name: rn:msg:LESS_LINK_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_LESS_LINK_LBL
+    default: rn:msg:LESS_LBL
+  label_none_assigned:
+    name: rn:msg:NONE_ASSIGNED_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_NONE_ASSIGNED_LBL
+    default: rn:msg:NONE_ASSIGNED_UC_LBL
+  usergroup_count:
+    name: rn:msg:USER_GROUP_COUNT_LABEL_LBL
+    type: INT
+    description: rn:msg:T_CUSTOMMETADATA_OKCSANSWERSTATS_WDGT_M_LBL
+    default: 5
+info:
+  description: rn:msg:RNDRS_DT_L_TTRB_PRV_TTRB_BG_DSP_PRV_DF_L_K_MSG

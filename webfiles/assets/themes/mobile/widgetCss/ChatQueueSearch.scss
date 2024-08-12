@@ -1,0 +1,24 @@
+@import 'widget-includes';
+
+.rn_ChatQueueSearch {
+    background: #EFEFF4;
+    border: 1px solid #BBB;
+    line-height: 1.25em;
+    margin-top: .5em;
+    padding: .5em;
+    text-align: center;
+
+    .rn_KeywordText {
+        @include span-columns(8);
+
+        input {
+            margin-bottom: 0;
+            padding: .4em .5em;
+        }
+    }
+
+    .rn_SearchButton {
+        @include span-columns(4);
+        @include omega();
+    }
+}

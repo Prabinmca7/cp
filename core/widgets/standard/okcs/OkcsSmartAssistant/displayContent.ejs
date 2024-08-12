@@ -1,0 +1,29 @@
+<rn:block id="topHeader"/>
+<% if (attrs.display_metadata && attrs.metadata_position.toLowerCase() === 'top') { %>
+    <div class="rn_AnswerInfo rn_AnswerInfo_Top">
+        <% for(var i = 0; i < metaContentArray.length; i++) { %>
+            <section><span class="rn_InfoLabel"><%= metaContentArray[i].label %></span><span><%= metaContentArray[i].value %></span></section>
+        <% } %>
+    </div>
+<% } %>
+<rn:block id="bottomHeader"/>
+<rn:block id="topBody"/>
+    <div class="rn_AnswerDetail">
+        <rn:block id="topChannelView"/>
+            <div class="rn_AnswerText"><%= channelView %></div>
+        <rn:block id="bottomChannelView"/>
+        <% if (metaView !== '') { %>
+            <rn:block id="topMetaView"/>
+                <div class="rn_SectionTitle"></div>
+                <div id="rn_AnswerText"><%= metaView %></div>
+            <rn:block id="bottomMetaView"/>
+        <% } %>
+    </div>
+    <% if (attrs.display_metadata && attrs.metadata_position.toLowerCase() === 'bottom') { %>
+        <div class="rn_AnswerInfo">
+            <% for(var i = 0; i < metaContentArray.length; i++) { %>
+                <section><span class="rn_InfoLabel"><%= metaContentArray[i].label %></span><span><%= metaContentArray[i].value %></span></section>
+            <% } %>
+        </div>
+    <% } %>
+<rn:block id="bottomBody"/>

@@ -1,0 +1,14 @@
+.rn_IncidentThreadDisplay .rn_ThreadContent{
+    word-wrap:break-word;
+}
+.rn_IncidentThreadDisplay p.MsoNormal,
+.rn_IncidentThreadDisplay li.MsoNormal,
+.rn_IncidentThreadDisplay div.MsoNormal{
+    margin:0;
+}
+
+.rn_IncidentThreadDisplay p.MsoListParagraph,
+.rn_IncidentThreadDisplay li.MsoListParagraph,
+.rn_IncidentThreadDisplay div.MsoListParagraph{
+    margin: 0 0 0 48px;
+}

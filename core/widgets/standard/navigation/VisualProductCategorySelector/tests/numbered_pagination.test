@@ -1,0 +1,22 @@
+input: <rn:widget path='standard/navigation/VisualProductCategorySelector' numbered_pagination='true' per_page='2'/>
+jstestfile: numbered_pagination.test.js
+removecontent: true
+output:
+<div id="rn_VisualProductCategorySelector_0" class="rn_VisualProductCategorySelector">
+    <div class="rn_Items">
+        <div id="rn_VisualProductCategorySelector_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+        <div class="rn_NavigationArea rn_Hidden">
+                                    <span class="rn_BreadCrumb" role="navigation"></span>
+                    </div>
+            </div>
+                <ul class="rn_ItemPagination rn_Hidden">
+                <li>
+                    <a href="javascript:void(0);" aria-label="Previous Page" title="Previous Page" class="rn_PreviousPage">
+                                                    Previous                                            </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" aria-label="Forward Page" title="Forward Page" class="rn_ForwardPage">
+                                                    Next                                            </a>
+                </li>
+            </ul>
+    </div>

@@ -1,0 +1,32 @@
+1.2.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 818
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.1.1:
+  release: "21.2"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: New Feature
+    changelogID: 763
+    date: 10/23/2020
+    description: Filter suggestions based on products/categories
+    details:
+    - Filter suggestions based on products/categories
+    level: minor
+    refno: 191016-000006
+    sortPosition: Middle
+1.0.1:
+  release: "18.8"
+  entries:
+  - date: 09/04/2018
+    level: major
+    description: Initial version of okcs/OkcsSuggestions
+    category: API Change
+    sortPosition: Middle

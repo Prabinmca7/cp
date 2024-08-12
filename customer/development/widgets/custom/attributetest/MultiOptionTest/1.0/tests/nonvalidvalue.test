@@ -1,0 +1,3 @@
+input: <rn:widget path="custom/attributetest/MultiOptionTest" multioption1="a,b,f"/>
+removecontent: true
+output: 

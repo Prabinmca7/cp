@@ -1,0 +1,12 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive1
+  Subject: Question with product assoc
+  Body: Test question body
+  StatusWithType.Status.LookupName: Active
+  _comments:
+    - fixture: CommentActiveModActive
+      parameters:
+        CommunityQuestion: this.ID
+  Product: 120

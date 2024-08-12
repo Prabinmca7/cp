@@ -1,0 +1,14 @@
+input: <rn:widget path='standard/utils/ProgressBar' current_step="2" step_descriptions="Product Validation, Product Validation" label_screen_reader_progress="%s of %s steps completed"/>
+removecontent: true
+output:
+<div id="rn_ProgressBar_0" class="rn_ProgressBar">
+    <span class="rn_ScreenReaderOnly">2 of 2 steps completed</span>
+    <ol class="rn_2Elements">
+            <li class="rn_ProgressStep rn_CompleteStep rn_FirstStep">
+            <span>Product Validation</span>
+        </li>
+            <li class="rn_ProgressStep rn_CurrentStep rn_LastStep">
+            <span>Product Validation</span>
+        </li>
+        </ol>
+</div>

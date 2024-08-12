@@ -1,0 +1,55 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "15.5"
+  entries:
+  - account: Sridhar
+    category: Bug Fix
+    changelogID: 287
+    date: 02/16/2015
+    description: Capture Cobrowse session events in ACS
+    level: nano
+    refno: 140829-000063
+    sortPosition: Middle
+1.0.1:
+  release: "14.11"
+  entries:
+  - account: Sridhar
+    category: New Feature
+    changelogID: 265
+    date: 08/12/2014
+    description: Initial Version
+    details:
+    - This new widget displays a code that can be given to an agent. Agent can use
+      the code to start a screen-sharing session with the end user from an incident
+      workspace. This widget is different than its predecessor, CoBrowseLink widget,
+      in that it allows for faster connections when using the instant mode to see
+      the customer portal pages, but can also be configured to operate in an advanced
+      mode for desktop sharing. Agent will also have the ability to escalate from
+      instant to an advanced mode. To consume this widget make sure that Cobrowse
+      Premium is provisioned for the site and interface.
+    - It is recommended that this widget be included on all customer portal pages
+      or at a minimum on all pages that the agent needs viewing for instant mode to
+      work correctly.
+    - As a final note, the CoBrowseLink widget is deprecated and will be removed in
+      a future version of Customer Portal.
+    level: major
+    refno: 131017-000057
+    sortPosition: Middle

@@ -1,0 +1,9 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicSelectionInput" name="Contact.Address.StateOrProvince" required="true"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicSelectionInput/tests/hideEmptySelect"><div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJDb250YWN0LkFkZHJlc3MuU3RhdGVPclByb3ZpbmNlIjp7InJlcXVpcmVkIjp0cnVlLCJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJTdGF0ZU9yUHJvdmluY2UifX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

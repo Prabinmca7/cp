@@ -1,0 +1,6 @@
+input: <rn:widget path='standard/chat/ChatCancelButton'/>
+removecontent: true
+output:
+<div id="rn_ChatCancelButton_0" class="rn_ChatCancelButton rn_Hidden">
+    <button id="rn_ChatCancelButton_0_Button"  title="Terminate the Chat Request"> Leave</button>
+</div>

@@ -1,0 +1,23 @@
+<rn:block id="cobrowseInvitationResponseTop"/>
+<span class="rn_MessagePost">
+<% if(attrs.cobrowse_icon_path){ %>
+    <rn:block id="preCobrowseInvitationResponseIcon"/>
+    <img alt="" src="<%= attrs.cobrowse_icon_path %>"/>
+    <rn:block id="postCobrowseInvitationResponseIcon"/>
+<% } %> 
+<span class="rn_Action">
+    <%= message.replace('{0}', agentName) %>
+    <span class="rn_CoBrowseAction">
+        <%= attrs.label_click %>
+        <a href="javascript: void(0);" onclick="javascript: RightNow.Widgets.ChatTranscript.sendCoBrowseResponse(true, '<%= url %>'); return false;">
+            <%= attrs.label_allow %>
+        </a>
+        <%= attrs.label_or %>
+        <a href="javascript: void(0);" onclick="javascript: RightNow.Widgets.ChatTranscript.sendCoBrowseResponse(false); return false;">
+            <%= attrs.label_deny %>
+        </a>
+    </span>
+</span>
+<br/>
+</span>
+<rn:block id="cobrowseInvitationResponseBottom"/>

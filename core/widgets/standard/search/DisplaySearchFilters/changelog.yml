@@ -1,0 +1,129 @@
+1.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.3.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 597
+    date: 10/25/2016
+    description: Fixed label\_filter\_remove issue
+    details:
+    - '''%s'' in the label\_filter\_remove attribute was not getting replaced with
+      the filter label in the next/previous page results via pagination.'
+    level: nano
+    refno: 161019-000113
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 519
+    date: 06/15/2016
+    description: Updated last filter to a span tag instead of href
+    level: minor
+    refno: 160229-000219
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 517
+    date: 06/14/2016
+    description: Added a more specific remove filter label
+    level: minor
+    refno: 160324-000140
+    sortPosition: Middle
+1.2.2:
+  release: "16.2"
+  entries:
+  - account: dmadsen
+    category: Bug Fix
+    changelogID: 432
+    date: 11/11/2015
+    description: Need to add in a new attribute to override the current page
+    details:
+    - Previously the DisplaySearchFilters widget would default to the current page
+      when a search filter was selected. A new attribute, report\_page\_url, is used
+      to redirect the widget when a search filter is selected.
+    level: nano
+    refno: 150918-000218
+    sortPosition: Middle
+1.2.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: New Feature
+    changelogID: 369
+    date: 09/30/2015
+    description: The remove\_icon\_path attribute was removed
+    details:
+    - The `remove_icon_path` was removed in favor of icons being purely CSS-based.  A
+      `show_filter_label` attribute was also introduced in case the label was preferred
+      over an icon.  If `show_filter_label` is set to false, the `label_filter_remove`
+      attribute will still be used in a screenreader-only span element.
+    level: minor
+    refno: 150710-000139
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: spage
+    category: Bug Fix
+    changelogID: 86
+    date: 04/29/2013
+    description: Displays all category search filters specified in a URL, even if
+      product linking is enabled and some or all of the categories are not linked
+      to the specified product
+    details:
+    - Previously, category search filters matched only the linked categories specified
+      in the URL parameters, omitting those that were not linked.
+    - For example, assume that category 456 is linked to product 123, but category
+      789 is not. Before this change, requesting answers/list/p/123/c/456,789 displayed
+      only the category search filter for 456. But the search produced no results
+      since it uses the last category in the chain (789). This was not obvious to
+      the end user because the filter for 789 was not displayed.
+    - This behavior was changed so that all category filters are displayed, even if
+      the categories are not linked to the specified product.
+    - This change affects only those sites using product/category linking, and where
+      chained categories are specified in URL parameters.
+    level: minor
+    refno: 130107-000040
+    sortPosition: Middle
+  - account: ldavison
+    category: Bug Fix
+    changelogID: 75
+    date: 04/29/2013
+    description: Prevents HTML entities within search filter labels from being double-escaped
+    details:
+    - Added `_escapeHtml()` to avoid entities from being double-escaped
+    - HTML entities within a search filter label are escaped when added to the cache
+      via `addFilterToCache()` using `_escapeHtml()`
+    - Widgets extending the logic file overloading `_onReportResponse()` should remove
+      calls to `Y.Escape.html()`
+    - Widgets extending the logic file overloading `addFilterToCache()` should escape
+      `filterData` labels with `_escapeHtml()`
+    level: minor
+    refno: 130208-000045
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

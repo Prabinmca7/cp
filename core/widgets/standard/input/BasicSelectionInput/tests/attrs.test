@@ -1,0 +1,19 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicSelectionInput" name="Incident.CustomFields.c.priority" label_input="banana" hint="banana hint" default_value="12"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicSelectionInput/tests/attrs"><div><div class="rn_BasicSelectionInput rn_SelectionInput rn_Input">
+            <label for="rn_BasicSelectionInput_0_Incident.CustomFields.c.priority" class="rn_Label">banana                             -  banana hint                </label><br/>
+        <select id="rn_BasicSelectionInput_0_Incident.CustomFields.c.priority" class="rn_BasicSelection" name="formData[Incident.CustomFields.c.priority]">
+            <option value="">--</option>
+                            <option value="11" >1</option>
+                    <option value="12" selected="selected">2</option>
+                    <option value="13" >3</option>
+                    <option value="14" >4</option>
+                    <option value="15" >5</option>
+                </select>
+</div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5DdXN0b21GaWVsZHMuYy5wcmlvcml0eSI6eyJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJiYW5hbmEifX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

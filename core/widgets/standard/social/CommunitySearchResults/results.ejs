@@ -1,0 +1,55 @@
+<rn:block id="topContent"/>
+<% if (newData && newData.length) { %>
+    <rn:block id="preResultList"/>
+    <ul>
+        <rn:block id="topResultList"/>
+    <% for (var i = 0, result; i < newData.length; i++) { 
+        result = newData[i]; %>
+        <rn:block id="listItem">
+        <% if (attributes.show_profile_picture) { %>
+        <li class="rn_HasProfilePicture">
+        <% } else { %>
+        <li>
+        <% } %>
+            <rn:block id="topListItem"/>
+            <span class="rn_PostTitle"><a href="<%= result.webUrl + (attributes.post_link_base_url ? '' : ssoToken) %>"><%= result.name %></a></span>
+        <% if (attributes.show_post_content) { %>
+            <span class="rn_PostContent"><%= result.preview %></span>
+        <% } %>
+        <% if (attributes.show_author_name) { %>
+            <span class="rn_PostSubContent rn_PostAuthor">
+                <%= RightNow.Text.sprintf(attributes.label_author, link_to(result.createdByName, baseUrl + "/people/" + result.createdByHash + (attributes.author_link_base_url ? '' : ssoToken))) %>
+            <% if (attributes.show_profile_picture) { %>
+                <img src="<%= result.createdByAvatar %>" alt=""/>
+            <% } %>
+            </span>
+        <% } %>
+        <% if (attributes.show_updated_date) { %>
+            <span class="rn_PostSubContent rn_PostDate">
+                <%= RightNow.Text.sprintf(attributes.label_updated, result.lastActivity) %>
+            </span>
+        <% } %>
+        <% if (attributes.show_rating_count && result.ratingTotal && (rating = parseInt(result.ratingTotal / 100, 10)) > 0) { %>
+            <span class="rn_PostSubContent rn_PostRating">
+                <%= RightNow.Text.sprintf(((rating === 1) ? attributes.label_single_rating : attributes.label_rating), rating) %>
+            </span>
+        <% } %>
+        <% if (attributes.show_comment_count) { %>
+            <span class="rn_PostSubContent rn_PostCount">
+                <%= RightNow.Text.sprintf(attributes.label_comment, result.commentCount) %>
+            </span>
+        <% } %>
+            <rn:block id="bottomListItem"/>
+        </li>
+        </rn:block>
+    <% } %>
+        <rn:block id="bottomResultList"/>
+    </ul>
+    <rn:block id="postResultList"/>
+    <% if (attributes.show_all_results_link) { %>
+    <a href="<%= fullResultsUrl %>" class="rn_AllResults"><%= attributes.label_all_results %></a>
+    <% } %>
+<% } else { %>
+    <span class="rn_NoResults"><%= attributes.label_no_results %></span>
+<% } %>
+<rn:block id="bottomContent"/>

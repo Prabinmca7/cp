@@ -1,0 +1,26 @@
+input: <rn:widget path="standard/moderation/ModerationStatusFilter"/>
+contact: slatest
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_ModerationStatusFilter_0" class="rn_ModerationStatusFilter">
+    <form class="rn_Padding">
+            <div class="rn_SocialFilterItem">
+                <fieldset class="rn_SocialFilterItem_FieldSet">
+                    <h3 id="rn_ModerationStatusFilter_0_Title">Status</h3>
+                    <ul aria-labelledby="rn_ModerationStatusFilter_0_Title">
+                                                    <li>
+                                    <input name="rn_ModerationStatusFilter_0_StatusFilter_29" id="rn_ModerationStatusFilter_0_StatusFilter_29" type="checkbox" value="29">
+                                    <label class="rn_Label" for="rn_ModerationStatusFilter_0_StatusFilter_29">
+                                        Active                                    </label>
+                            </li>
+                                                    <li>
+                                    <input name="rn_ModerationStatusFilter_0_StatusFilter_30" id="rn_ModerationStatusFilter_0_StatusFilter_30" type="checkbox" value="30">
+                                    <label class="rn_Label" for="rn_ModerationStatusFilter_0_StatusFilter_30">
+                                        Suspended                                    </label>
+                            </li>
+                                            </ul>
+                </fieldset>
+            </div>
+    </form>
+</div>

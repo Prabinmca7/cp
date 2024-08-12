@@ -1,0 +1,11 @@
+input: <rn:widget path="viewhelpertest/HelperExtender"/>
+removecontent: true
+output:
+<pre>
+        ~~
+      ~
+    _u__
+   /____\
+   |[][]|
+   |[]..|
+   '--'''</pre>

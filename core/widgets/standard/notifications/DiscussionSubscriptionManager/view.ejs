@@ -1,0 +1,12 @@
+<rn:block id="resultListItem">
+<li class="rn_Discussions" data-id="<%= data[i][0] %>">
+    <div class="rn_Discussion_Info" >
+        <span class="rn_Element1"><%= data[i][1] %></span>
+        <span class='rn_ElementsHeader'><%= ((headers[2].heading) ? headers[2].heading + ': ' : '') %></span>
+        <span class='rn_ElementsData'><%= data[i][2] %></span>
+    </div>
+    <div class="rn_Discussion_Actions">
+        <button class="rn_Discussion_Delete"><%= label_unsubscribe %></button>
+    </div>
+</li>
+</rn:block>

@@ -1,0 +1,33 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "13.5"
+  entries:
+  - account: eturner
+    category: Bug Fix
+    changelogID: 46
+    date: 04/30/2013
+    description: Removes the alt attribute from the avatar image tag
+    details:
+    - No alt text (for screen reader use) is associated with an end user's avatar,
+      according to good accessibility practices.
+    level: nano
+    refno: 130103-000051
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

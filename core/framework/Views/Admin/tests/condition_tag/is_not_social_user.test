@@ -1,0 +1,17 @@
+input:
+<rn:condition is_social_user="true"/>
+Fail
+<rn:condition_else>
+Pass
+</rn:condition>
+
+<rn:condition is_social_user="false"/>
+Pass
+<rn:condition_else>
+Fail
+</rn:condition>
+contact: eturner@rightnow.com.invalid
+removecontent: true
+output:
+Pass
+Pass

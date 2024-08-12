@@ -1,0 +1,38 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "15.8"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 360
+    date: 06/22/2015
+    description: Fixed a potential XSS vulnerability
+    level: nano
+    refno: 150504-000199
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 01/17/2013
+    level: major
+    description: Initial version of utils/CapabilityDetector
+    category: API Change
+    sortPosition: Middle

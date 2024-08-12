@@ -1,0 +1,19 @@
+input: <rn:widget path='standard/chat/ChatHours'/>
+filter: @It is currently.*?</div>@
+removecontent: true
+output:
+<div id="rn_ChatHours_0" class="rn_ChatHours">
+    <div id="rn_ChatHours_0_HoursLabel" class="rn_HoursLabel">
+        Chat hours are listed below.    </div>
+    <div id="rn_ChatHours_0_HoursBlock" class="rn_HoursBlock">
+                    <div>
+                <span id="rn_ChatHours_0_HoursPrefix_0" class="rn_HoursPrefix">
+                    Monday - Sunday:&nbsp;
+                </span>
+                <span id="rn_ChatHours_0_Hours_0" class="rn_Hours">
+                    24 Hours                </span>
+            </div>
+            </div>
+        <div id="rn_ChatHours_0_CurrentTime" class="rn_CurrentTime">
+        
+</div>

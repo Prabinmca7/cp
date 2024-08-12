@@ -1,0 +1,25 @@
+@import 'widget-includes';
+
+.rn_SourceResultListing {
+    li {
+        clear: both;
+        margin: 10px 0;
+        overflow: hidden;
+        padding: 6px 0;
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .rn_AdditionalResults {
+        text-align: right;
+
+        a {
+            @include list-more-icon;
+        }
+    }
+}

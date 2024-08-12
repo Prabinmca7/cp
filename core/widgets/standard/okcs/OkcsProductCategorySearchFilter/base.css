@@ -1,0 +1,21 @@
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton {
+    background:none;
+    color:#000;
+    cursor:pointer;
+    font-weight:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-radius:0;
+    box-shadow:none;
+    z-index:0 !important;
+}
+/* make the text label font relative*/
+.rn_OkcsProductCategorySearchFilter .ygtvlabel,
+.rn_OkcsProductCategorySearchFilter .ygtvlabel:link,
+.rn_OkcsProductCategorySearchFilter .ygtvlabel:visited,
+.rn_OkcsProductCategorySearchFilter .ygtvlabel:hover {
+    font-size:inherit;
+}
+.rn_OkcsProductCategorySearchFilter .rn_PanelContainer .yui3-widget-hd {
+    display: none;
+}

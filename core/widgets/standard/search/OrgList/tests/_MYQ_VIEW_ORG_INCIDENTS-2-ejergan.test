@@ -1,0 +1,15 @@
+input: <form onsubmit="return false;"><rn:widget path="standard/search/OrgList" /></form>
+config: MYQ_VIEW_ORG_INCIDENTS|2
+contact: ejergan
+jstestfile: base.test.js
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_OrgList_0" class="rn_OrgList">
+    <label for="rn_OrgList_0_Options">Show incidents</label>
+    <select id="rn_OrgList_0_Options">
+            <option value='0' selected="selected">Only my Incidents</option>
+            <option value='1' >From anyone in my Organization</option>
+            <option value='2' >From my Organization and all subsidiaries</option>
+        </select>
+</div>
+</form>

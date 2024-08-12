@@ -1,0 +1,5 @@
+<div class="name">
+<% for (var i = 0; i < responses.length; i++) { %>
+    <button data-level="<%= level %>" data-guide="<%= guideID %>" data-question="<%= questionID %>" data-response="<%= responses[i].responseID %>"><%= responses[i].text %></button>
+<% } %>
+</div>

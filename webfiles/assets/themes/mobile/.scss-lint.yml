@@ -1,0 +1,58 @@
+exclude:
+  - bitters/**
+  - bourbon/**
+  - neat/**
+  - font-awesome/**
+# <https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md>
+linters:
+  ZeroUnit:
+    enabled: true
+    exclude:
+      # bourbon's position mixin ignores unit-less values
+      - widgetCss/ProductCategoryBreadcrumb.scss
+  BorderZero:
+    enabled: true
+  Indentation:
+    enabled: true
+    width: 4
+  EmptyRule:
+    enabled: true
+  SpaceAfterComma:
+    enabled: true
+  ColorKeyword:
+    enabled: true
+  DuplicateProperty:
+    enabled: true
+  EmptyLineBetweenBlocks:
+    enabled: true
+  LeadingZero:
+    enabled: true
+  MergeableSelector:
+    enabled: true
+  NameFormat:
+    enabled: true
+  PropertySortOrder:
+    enabled: true
+  SelectorDepth:
+    enabled: true
+    max_depth: 6
+  Shorthand:
+    enabled: true
+  PropertySpelling:
+    enabled: true
+  SpaceAfterPropertyName:
+    enabled: true
+  UrlFormat:
+    enabled: true
+  Comment:
+    enabled: false
+  StringQuotes:
+    enabled: false
+  CapitalizationInSelector:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  HexFormat:
+    enabled: false
+  SingleLinePerSelector:
+    enabled: false

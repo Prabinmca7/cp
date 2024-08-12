@@ -1,0 +1,12 @@
+<?php
+namespace RightNow\Widgets;
+
+class <%= widgetName %> extends <%= (extendsFrom) ? '\\RightNow\\Widgets\\' + extendsFrom[:widget].split('/')[1] : '\\RightNow\\Libraries\\Widget\\Base' %> {
+    function __construct($attrs) {
+        parent::__construct($attrs);
+    }
+
+    function getData() {
+
+    }
+}

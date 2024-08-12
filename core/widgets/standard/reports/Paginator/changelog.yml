@@ -1,0 +1,96 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.2:
+  release: "16.11"
+  entries:
+  - account: aswin.kolli
+    category: Bug Fix
+    changelogID: 585
+    date: 09/15/2016
+    description: The tabindex attribute for the currently selected page has been moved
+      from the &lt;li&gt; tag to the &lt;span&gt; tag.
+    details:
+    - The tabindex attribute for the currently selected page has been moved from the
+      &lt;li&gt; tag to the &lt;span&gt; tag as JAWS doesn't read the attribute in
+      Internet Explorer.
+    level: nano
+    refno: 160408-000028
+    sortPosition: Middle
+1.2.1:
+  release: "15.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 411
+    date: 09/29/2015
+    description: Fixed improper link ID
+    level: minor
+    refno: 150929-000143
+    sortPosition: Middle
+  - account: abbas.kathermeeran
+    category: Bug Fix
+    changelogID: 379
+    date: 09/07/2015
+    description: Added attribute max\_date\_range\_interval
+    details:
+    - 'Attribute max\_date\_range\_interval is introduced. The value of max\_date\_range\_interval
+      is the limit for the date range of question and comment moderation dashboards.
+      Attribute max\_date\_range\_interval can be only in the format of # years/months/days.
+      For example, 90 days, 5 years etc.'
+    level: nano
+    refno: 150729-000086
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 333
+    date: 05/18/2015
+    description: Rather than using the `maximum_page_links` attribute, only a few
+      specific pages will be listed, including the first and last pages
+    details:
+    - As part of this change, also removed the base.css file.
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.2:
+  release: "13.11"
+  entries:
+  - account: rlund
+    category: New Feature
+    changelogID: 130
+    date: 10/09/2013
+    description: Fires the evt_switchPagesRequest event when a new page is requested
+    details:
+    - Data for the evt_switchPagesRequest event includes the Paginator eventObject,
+      which contains the current filters for `report_id`, `page`, and `per_page`.
+      This ensures that report filters persist across multiple pages.
+    level: nano
+    refno: 130624-000013
+    sortPosition: Bottom
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

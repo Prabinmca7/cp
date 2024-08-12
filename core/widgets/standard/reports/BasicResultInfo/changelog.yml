@@ -1,0 +1,8 @@
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/19/2012
+    level: major
+    description: Initial version of reports/BasicResultInfo
+    category: API Change
+    sortPosition: Middle

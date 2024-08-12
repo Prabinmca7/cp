@@ -1,0 +1,69 @@
+version: "1.9.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: '{default_label}'
+  label_required:
+    name: rn:msg:REQUIRED_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_REQUIREMENT_MESSAGE_LBL
+    default: rn:msg:PCT_S_IS_REQUIRED_MSG
+  name:
+    name: rn:msg:NAME_LBL
+    type: string
+    description: rn:msg:INDICATES_BUS_OBJECT_FLD_DISP_MSG
+    required: true
+  required:
+    name: rn:msg:REQUIRED_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FLD_CONT_VAL_CF_SET_REQD_MSG
+  hint:
+    name: rn:msg:HINT_LBL
+    type: string
+    description: rn:msg:HINT_TXT_DISP_FLD_CF_VAL_OVRRIDE_MSG
+  always_show_hint:
+    name: rn:msg:ALWAYS_SHOW_HINT_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FLD_HINT_HINT_DISPED_MSG
+  initial_focus:
+    name: rn:msg:INITIAL_FOCUS_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_FIELD_FOCUSED_PAGE_LOADED_MSG
+  validate_on_blur:
+    name: rn:msg:VALIDATE_ON_BLUR_LBL
+    type: boolean
+    description: rn:msg:VALIDATES_INPUT_FLD_DATA_REQS_FOCUS_LBL
+  default_value:
+    name: rn:msg:DEFAULT_VALUE_LBL
+    type: string
+    description: rn:msg:DF_VL_PPULATE_FLD_CF_VAL_OVRRIDE_MSG
+  allow_external_login_updates:
+    name: rn:msg:ALLOW_EXTERNAL_LOGIN_UPDATES_LBL
+    type: boolean
+    description: rn:msg:ALLWS_USERS_AUTHENTICATE_CP_EXT_MSG
+  hide_hint:
+    name: rn:msg:HIDE_HINT_CMD
+    type: boolean
+    description: rn:msg:SPECIFIES_HINTS_HIDDEN_DISPLAYED_MSG
+  display_as_checkbox:
+    name: rn:msg:DISPLAY_AS_CHECKBOX_CMD
+    type: boolean
+    description: rn:msg:CHGS_RADIO_TYPE_FLDS_SNGL_MSG
+  hide_on_load:
+    name: rn:msg:HIDE_ON_LOAD_CMD
+    type: boolean
+    description: rn:msg:WDGETS_FLD_HIDDEN_FORM_PG_LOAD_MSG
+  read_only:
+    name: rn:msg:READ_ONLY_LBL
+    description: rn:msg:WHEN_SET_TRUE_CONTENT_IS_NOT_EDITABLE_MSG
+    type: boolean
+info:
+  description: rn:msg:WDGT_ALLWS_USERS_SET_FLD_VALS_DB_MSG
+contains:
+- widget: standard/output/FieldDisplay
+  versions: ["1.2"]

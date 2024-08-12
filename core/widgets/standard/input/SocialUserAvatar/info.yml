@@ -1,0 +1,290 @@
+version: "1.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  create_user_on_load:
+    name: rn:msg:CREATE_SOCIAL_USER_ON_LOAD_LBL
+    type: boolean
+    description: rn:msg:OPTI_ASK_A_S_L_LOAD_DOES_ADDR_EXIST_MSG
+    default: true
+  label_gravatar_account:
+    name: rn:msg:GRAVATAR_ACCOUNT_LABEL_LBL
+    type: string
+    description: rn:msg:USE_GRAVATAR_ACCOUNT_INPUT_DISPLAYED_MSG
+    default: rn:msg:USE_YOUR_GRAVATAR_PROFILE_PICTURE_LBL
+  label_gravatar_hint:
+    name: rn:msg:GRAVATAR_HINT_LABEL_LBL
+    type: string
+    description: rn:msg:HINT_BENEATH_GRAVATAR_INPUT_FIELD_LBL
+    default: rn:php:sprintf(\RightNow\Utils\Config::getMessage(SURE_HREFS_TARGETBLANKGRAVATAR_ACCOUNT_MSG), '//www.gravatar.com')
+  label_choose_avatar_library:
+    name: rn:msg:CHOOSE_FROM_AVATAR_LIBRARY_LBL
+    type: string
+    description: rn:msg:CHOOSE_A_PROFILE_PICTURE_FIELD_LABEL_LBL
+    default: rn:msg:CHOOSE_A_PROFILE_PICTURE_LBL
+  label_close_avatar_library:
+    name: rn:msg:CLOSE_AVATAR_LIBRARY_LABEL_LBL
+    type: string
+    description: rn:msg:SCREENREADER_AVATAR_LIB_CLOSE_BUTTON_MSG
+    default: rn:msg:CLOSE_AVATAR_LIBRARY_LBL
+  label_avatar_library_hint:
+    name: rn:msg:AVATAR_LIBRARY_HINT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAYS_BELOW_CHOOSE_BUTTON_MSG
+    default: rn:msg:CHOOSE_FROM_A_GALLERY_PROFILE_PICTURES_LBL
+  label_click_to_choose_avatar_library:
+    name: rn:msg:CHOOSE_FROM_AVATAR_LIBRARY_LABEL_LBL
+    type: string
+    description: rn:msg:AVATAR_LIBRARY_CHANGING_OWN_PICTURE_MSG
+    default: rn:msg:CLICK_IMAGE_BELOW_CHOOSE_PICTURE_MSG
+  label_click_to_choose_avatar_library_user:
+    name: rn:msg:CHOOSE_AVATAR_LIBRARY_ANOTHER_LABEL_LBL
+    type: string
+    description: rn:msg:AVATAR_LIBRARY_CHG_PICTURE_ANOTHER_USER_MSG
+    default: rn:msg:CLICK_IMAGE_BELOW_CHOOSE_USERS_PICTURE_MSG
+  label_chosen_gravatar:
+    name: rn:msg:CHOSEN_GRAVATAR_LABEL_LBL
+    type: string
+    description: rn:msg:READ_SCREEN_READERS_GRAVATAR_AVATAR_LBL
+    default: rn:msg:CURRENTLY_GRAVATAR_PROFILE_PICTURE_LBL
+  label_apply_button:
+    name: rn:msg:APPLY_BUTTON_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_BUTTON_SELECT_PROFILE_PICTURE_MSG
+    default: rn:msg:APPLY_CMD
+  label_choose_button:
+    name: rn:msg:CHOOSE_BUTTON_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_CHOOSE_BUTTON_LBL
+    default: rn:msg:CHOOSE_LBL
+  label_close_button_hint:
+    name: rn:msg:CLOSE_BUTTON_HINT_LABEL_LBL
+    type: STRING
+    description: rn:msg:BUTTON_LABEL_CLOSING_AVATAR_LIBRARY_LBL
+    default: rn:msg:CLOSE_AVATAR_LIBRARY_BUTTON_LBL
+  label_using_default_avatar:
+    name: rn:msg:USING_DEFAULT_AVATAR_LABEL_LBL
+    type: string
+    description: rn:msg:DISPLAYED_YOURE_PROFILE_PICTURE_DEFAULT_MSG
+    default: rn:msg:CURRENTLY_USING_DEFAULT_PROFILE_PICTURE_LBL
+  label_default:
+    name: rn:msg:DEFAULT_AVATAR_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_USE_FOR_DEFAULT_PROFILE_PICTURE_MSG
+    default: rn:msg:USE_A_DEFAULT_PROFILE_PICTURE_LBL
+  label_default_hint:
+    name: rn:msg:DEFAULT_HINT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAYS_BENEATH_INPUT_FIELD_LBL
+    default: rn:msg:GENERATED_FROM_YOUR_DISPLAY_NAME_LBL
+  label_default_hint_user:
+    name: rn:msg:HINT_WHEN_BEING_EDITED_ANOTHER_LABEL_LBL
+    type: string
+    description: rn:msg:BENEATH_INPUT_BEING_EDITED_ANOTHER_USER_MSG
+    default: rn:msg:GENERATED_FROM_THE_USERS_DISPLAY_NAME_LBL
+  label_update_picture:
+    name: rn:msg:UPDATE_PROFILE_PICTURE_LABEL_LBL
+    type: string
+    description: rn:msg:HEADING_SECT_INTF_OPTS_COULD_UPD_UC_TO_LBL
+    default: rn:msg:UPDATE_YOUR_PROFILE_PICTURE_LBL
+  label_loading_icon_message:
+    name: rn:msg:LOADING_ICON_MESSAGE_LBL
+    type: string
+    description: rn:msg:DISPLAYED_MOUSEOVER_SCREEN_ADD_ID_ICON_LBL
+    default: rn:msg:LOADING_LBL
+  label_success_icon_message:
+    name: rn:msg:SUCCESS_ICON_MESSAGE_LBL
+    type: string
+    description: rn:msg:DISPLAYED_MOUSEOVER_SESS_ADD_SUCC_ICON_LBL
+    default: rn:msg:IMAGE_SUCC_SUBMIT_FORM_SAVE_CHANGES_MSG
+  label_error_icon_message:
+    name: rn:msg:ERROR_ICON_MESSAGE_LBL
+    type: string
+    description: rn:msg:DISPLAYED_MOUSEOVER_SCREEN_READERS_ICON_LBL
+    default: rn:msg:THERE_WAS_A_PROBLEM_SETTING_THE_IMAGE_MSG
+  label_add_public_profile:
+    name: rn:msg:ADD_PUBLIC_PROFILE_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_LINK_TO_ADD_A_PUBLIC_PROFILE_LBL
+    default: rn:msg:ADD_ONE_LBL
+  label_no_public_profile:
+    name: rn:msg:NO_PUBLIC_PROFILE_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAYED_DOESNT_PUBLIC_PROFILE_LBL
+    default: rn:msg:UNFORTUNATELY_DO_PUBLIC_PROFILE_YET_MSG
+  avatar_library_count:
+    name: rn:msg:AVATAR_LIBRARY_COUNT_LBL
+    type: INT
+    description: rn:msg:SETS_MAXIMUM_AVATARS_PULLED_ANS_FOLDER_MSG
+    default: 100
+    max: 500
+  avatar_library_page_size:
+    name: rn:msg:LIBRARY_LIST_DISPLAY_LBL
+    type: INT
+    description: rn:msg:SETS_MAXIMUM_AVATARS_DISP_PER_PAGE_MSG
+    default: 18
+    max: 100
+  avatar_library_image_types:
+    name: rn:msg:AVATAR_LIBRARY_FILE_TYPES_LBL
+    type: STRING
+    description: rn:msg:SUPPORTED_FILE_TYPES_AVATARS_DISPLAYED_MSG
+    default: jpg, jpeg, gif, png
+  avatar_library_image_location_display:
+    name: rn:msg:AVATAR_IMAGE_DISPLAY_LOCATION_LBL
+    type: STRING
+    description: rn:msg:LB_FLDR_RPT_SSTSMGS_FLDR_VTRS_PLLD_TH_DS_MSG
+    default: /euf/assets/images/avatar_library/display/
+  avatar_library_image_location_gallery:
+    name: rn:msg:AVATAR_IMAGE_GALLERY_LOCATION_LBL
+    type: STRING
+    description: rn:msg:LB_FLDR_RPT_SSTSMGS_FLDR_VTRS_PLLD_RR_VT_MSG
+    default: /euf/assets/images/avatar_library/gallery/
+  avatar_library_max_image_size:
+    name: rn:msg:AVATAR_FILE_SIZE_CHECK_LBL
+    type: INT
+    description: rn:msg:SETS_MAX_SIZE_KILOBYTES_V_AVATAR_FILE_MSG
+    default: 150
+    max: 250
+  avatar_selection_options:
+    name: rn:msg:AVATAR_SELECTION_OPTIONS_LBL
+    description: rn:msg:SEL_OPTS_T_REQD_L_AU_INSERT_BOTTOM_MSG
+    type: MULTIOPTION
+    options:
+    - default
+    - gravatar
+    - facebook
+    - avatar_library
+    default:
+    - default
+    - gravatar
+    - avatar_library
+  submit_avatar_library_action_ajax:
+    name: rn:msg:AJAX_ENDPOINT_FOR_AVATAR_LIBRARY_LBL
+    type: AJAX
+    description: rn:msg:AJAX_ENDPOINT_L_AVATAR_LIBRARY_IMAGES_LBL
+    default: /ci/ajax/widget
+  avatar_library_folder_roleset_map:
+    name: rn:msg:AVATAR_LIBRARY_FOLDER_ROLE_SET_MAP_LBL
+    type: STRING
+    description: rn:msg:MPS_VTR_LB_TB_DSP_PG_CMM_WF_FLDR_TB_SL_M_MSG
+    default: rn:php:sprintf('1|everyone|%s', \RightNow\Utils\Config::getMessage(ALL_USERS_LBL))
+    displaySpecialCharsInTagGallery: true
+  label_yes_button:
+    name: rn:msg:LABEL_FOR_YES_BUTTON_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_YES_BUTTON_LBL
+    default: rn:msg:YES_LBL
+  label_no_button:
+    name: rn:msg:LABEL_FOR_NO_BUTTON_LBL
+    type: string
+    description: rn:msg:LABEL_FOR_NO_BUTTON_LBL
+    default: rn:msg:NO_LBL
+  label_reset_avatar:
+    name: rn:msg:LABEL_TO_RESET_AVATAR_SELECTION_LBL
+    type: string
+    description: rn:msg:LABEL_TO_RESET_AVATAR_SELECTION_LBL
+    default: rn:msg:RESET_CMD
+  label_reset_avatar_tooltip:
+    name: rn:msg:TOOLTIP_TO_RESET_AVATAR_SELECTION_LBL
+    type: string
+    description: rn:msg:TOOLTIP_TO_RESET_AVATAR_SELECTION_LBL
+    default: rn:msg:CLICK_RESET_PROFILE_PICTURE_SELECTION_LBL
+  label_avatar_library_no_image:
+    name: rn:msg:LABEL_FOR_NO_IMAGE_DISPLAY_LBL
+    type: string
+    description: rn:msg:THERE_IMAGES_DISPLAYED_AVATAR_LIBRARY_LBL
+    default: rn:msg:NO_IMAGES_AVAILABLE_LBL
+    description: rn:msg:TOOLTIP_TO_RESET_AVATAR_SELECTION_LBL
+  success_url_for_own_avatar:
+    name: rn:msg:SUCCESS_URL_FOR_OWN_AVATAR_LBL
+    description: rn:msg:REDIRECTI_SUCC_SAVING_OWN_PICTURE_MSG
+    type: STRING
+    default: /app/account/profile
+  success_url_for_another_user_avatar:
+    name: rn:msg:SUCCESS_URL_FOR_ANOTHER_USERS_AVATAR_LBL
+    description: rn:msg:REDIRECTI_SUCC_SAVING_ANOTHER_PICTURE_MSG
+    type: STRING
+    default: /app/public_profile_update/user/
+  label_success_message:
+    name: rn:msg:SUCCESS_MESSAGE_LBL
+    type: string
+    description: rn:msg:DISPLAYED_PICTURE_SUCCESSFULLY_UPDATED_MSG
+    default: rn:msg:PROFILE_PICTURE_SUCCESSFULLY_UPDATED_MSG
+  save_profile_picture_ajax:
+    name: rn:msg:AJAX_ENDPOINT_SAVING_PROFILE_PICTURE_LBL
+    type: AJAX
+    description: rn:msg:AJAX_ENDPOINT_SAVING_PROFILE_PICTURE_LBL
+    default: /ci/ajax/widget
+  cancel_profile_picture_ajax:
+    name: rn:msg:AJAX_ENDPOINT_CANCEL_PICTURE_PAGE_LBL
+    type: AJAX
+    description: rn:msg:AJAX_ENDPOINT_CANCEL_PICTURE_PAGE_LBL
+    default: /ci/ajax/widget
+  label_save_changes_button:
+    name: rn:msg:SAVE_CHANGES_BUTTON_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_SAVE_CHANGES_BUTTON_LBL
+    default: rn:msg:SAVE_CHANGE_CMD
+  label_cancel_button:
+    name: rn:msg:CANCEL_BUTTON_LABEL_CMD
+    type: STRING
+    description: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+  label_facebook_account:
+    name: rn:msg:FACEBOOK_USERNAME_LABEL_LBL
+    type: string
+    description: rn:msg:INPUT_AGT_KB_S_DD_ERR_KB_UC_U_DISPLAYED_MSG
+    default: rn:msg:USE_YOUR_FACEBOOK_PROFILE_PICTURE_LBL
+  label_chosen_facebook:
+    name: rn:msg:CHOSEN_FACEBOOK_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_USING_FACEBOOK_AVATAR_LBL
+    default: rn:msg:CURRENTLY_FACEBOOK_PROFILE_PICTURE_LBL
+  label_facebook_profile_picture:
+    name: rn:msg:FACEBOOK_PROFILE_PICTURE_LBL
+    type: string
+    description: rn:msg:ALTERNATE_FACEBOOK_PROFILE_PICTURE_LBL
+    default: rn:msg:FACEBOOK_PROFILE_PICTURE_LBL
+  label_page:
+    name: rn:msg:LABEL_PAGE_LBL
+    description: rn:msg:DISP_PAGE_INDICATOR_HOVERS_PAGE_LBL
+    default: rn:msg:PAGE_PCT_S_OF_PCT_S_LBL
+    type: STRING
+  label_previous_link:
+    name: rn:msg:PREVIOUS_LINK_LC_LBL
+    type: STRING
+    description: rn:msg:DFLT_LABEL_FOR_PREVIOUS_LINK_LBL
+    default: rn:msg:PREVIOUS_LBL
+  label_next_link:
+    name: rn:msg:NEW_LINK_LABEL_LC_LBL
+    type: STRING
+    description: rn:msg:DFLT_LABEL_FOR_NEXT_LINK_LBL
+    default: rn:msg:NEXT_CMD
+  avatar_library_hint_enable:
+    name: rn:msg:AVATAR_LIBRARY_HINT_ENABLE_LBL
+    type: boolean
+    description: rn:msg:TURNS_VTR_VTR_LIB_MOUSES_MG_INCL_XTNSN_MSG
+    default: true
+  label_facebook_hint:
+    name: rn:msg:FACEBOOK_HINT_LABEL_LBL
+    type: STRING
+    description: rn:msg:HINT_BENEATH_FACEBOOK_LOGIN_BUTTON_LBL
+    default: rn:msg:AUTHORIZE_YOUR_FACEBOOK_ACCOUNT_LBL
+  label_facebook_success_message:
+    name: rn:msg:FACEBOOK_SUCCESS_LOGIN_MESSAGE_LBL
+    type: STRING
+    description: rn:msg:DISPLAYS_SUCCESS_UPON_FACEBOOK_LOGIN_LBL
+    default: rn:msg:SUCCESS_FACEBOOK_PROF_PIC_AUTH_MSG
+  label_chosen_avatar_library:
+    name: rn:msg:CHOSEN_AVATAR_LIBRARY_LABEL_LBL
+    type: string
+    description: rn:msg:READ_SCREEN_READ_AVATAR_LIBRARY_PICTURE_LBL
+    default: rn:msg:CURRENTLY_AVATAR_LIBRARY_SEL_PICTURE_LBL
+info:
+  category:
+    - Community
+  description: rn:msg:SPC_VTR_MG_THRGHT_VTR_DT_PLLD_VTR_KB_CCT_MSG
+contains:
+- widget: standard/login/OpenLogin
+  versions: ["1.6"]

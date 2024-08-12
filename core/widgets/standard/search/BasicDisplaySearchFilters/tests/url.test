@@ -1,0 +1,14 @@
+input: <rn:widget path="search/BasicDisplaySearchFilters" label_title="label title" label_filter_remove="label filter remove" label_product_title="label product title" label_category_title="label category title" />
+removecontent: true
+template: basic
+urlparameters: /p/129/c/161
+output:
+<div id="rn_BasicDisplaySearchFilters_0" class="rn_BasicDisplaySearchFilters">
+                    <a id="rn_BasicDisplaySearchFilters_0_Remove_0" href="app/unitTest/rendering/widgets/standard/search/BasicDisplaySearchFilters/tests/url/c/161">
+                                All Products                            </a> &gt;
+                                                    <a href="app/unitTest/rendering/widgets/standard/search/BasicDisplaySearchFilters/tests/url/p/128" class="rn_FilterItem " id="rn_BasicDisplaySearchFilters_0_Filter128">p1</a>
+                        &gt;                                    p2                                        <br/>
+                            <a id="rn_BasicDisplaySearchFilters_0_Remove_1" href="app/unitTest/rendering/widgets/standard/search/BasicDisplaySearchFilters/tests/url/p/129">
+                                All Categories                            </a> &gt;
+                                                    Basics                                        <br/>
+        </div>

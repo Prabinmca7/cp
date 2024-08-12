@@ -1,0 +1,4 @@
+input: <rn:widget path='standard/okcs/AnswerField' label='Title' value='Test Document' type='TEXT_FIELD' xpath='TEST_NODE/TITLE'/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+removecontent: true
+output: 

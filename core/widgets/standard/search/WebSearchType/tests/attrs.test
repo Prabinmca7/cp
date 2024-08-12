@@ -1,0 +1,14 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/search/WebSearchType' label_search='search' report_id='10016'/></form>
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /st/3
+output:
+<form onsubmit="return false;"><div id="rn_WebSearchType_0" class="rn_WebSearchType">
+    <label for='rn_WebSearchType_0_Options'>search</label>
+    <select id='rn_WebSearchType_0_Options'>
+        <option value="1">Any</option>
+        <option value="2">All</option>
+        <option value="3" selected="selected">Complex</option>
+            </select>
+</div>
+</form>

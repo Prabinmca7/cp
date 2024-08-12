@@ -1,0 +1,21 @@
+@import 'widget-includes';
+
+.rn_CommunityPostSubmit textarea,
+.rn_CommunityPostSubmit input[type="text"] {
+    clear: both;
+    margin-bottom: 0;
+    resize: none;
+    width: 60%;
+}
+
+.rn_CommunityPostSubmit input[type="submit"] {
+    display: block;
+    margin-top: 8px;
+}
+
+.rn_CommunityPostSubmit .rn_Label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}

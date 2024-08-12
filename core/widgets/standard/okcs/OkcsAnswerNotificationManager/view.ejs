@@ -1,0 +1,17 @@
+<rn:block id="topBody"/>
+<% for (var i = 0; i < subscriptionList.length; i++) { %>
+    <rn:block id="preBodyRow"/>
+    <tr id="rn_<%= widgetInstanceID %>_<%= subscriptionList[i].recordId %>" role="row" class="<%= (i % 2 === 0) ? 'yui3-datatable-even' : 'yui3-datatable-odd' %>">
+        <% for (var j = 0; j < fields.length; j++) { %>
+            <td role="gridcell" class="yui3-datatable-cell" headers="rn_<%= widgetInstanceID %>_Header_<%= j %>">
+                <% if(fields[j].name === 'title') { %>
+                    <a href="<%= answerUrl %><%= subscriptionList[i].answerId %>" target="<%= target %>" ><%= subscriptionList[i][fields[j].name] %></a>
+                <% } else { %>
+                    <%= subscriptionList[i][fields[j].name] %>
+                <% } %>
+            </td>
+        <% } %>
+    </tr>
+    <rn:block id="postBodyRow"/>
+<% } %>
+<rn:block id="bottomBody"/>

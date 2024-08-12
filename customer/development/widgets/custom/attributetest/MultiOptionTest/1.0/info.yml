@@ -1,0 +1,54 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+info:
+  category:
+    - Community2
+    - Moderation2
+attributes:
+  multioption1:
+    name: multioption1
+    type: multioption
+    description: Multioption attribute with no defaults
+    options:
+    - a
+    - b
+    - c
+    required: false
+  multioption2:
+    name: multioption2
+    type: multioption
+    description: Multioption attribute with one default
+    options:
+    - a
+    - b
+    - c
+    default:
+    - a
+    required: false
+  multioption3:
+    name: multioption3
+    type: multioption
+    description: Multioption attribute with multiple defaults
+    options:
+    - a
+    - b
+    - c
+    default:
+    - a
+    - b
+    - c
+    required: true
+  multioption4:
+    name: multioption4
+    type: multioption
+    description: Multioption attribute with null option
+    options:
+    -
+    - a
+    - b
+    default:
+    - a
+    required: true

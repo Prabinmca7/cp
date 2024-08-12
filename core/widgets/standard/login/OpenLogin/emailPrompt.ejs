@@ -1,0 +1,12 @@
+<rn:block id="prePromptForm"/>
+<form method='post' onsubmit='javascript:void(0);'>
+    <%= promptLabel %>
+    <label class='rn_EmailLabel' for='<%= inputID %>'>
+        <%= inputLabel %>
+        <%= getRequiredLabel() %>
+    </label>
+    <rn:block id="preEmailInput"/>
+    <input type='email' id='<%= inputID %>' maxlength='255' class='rn_EmailInput'/>
+    <rn:block id="postEmailInput"/>
+</form>
+<rn:block id="postPromptForm"/>

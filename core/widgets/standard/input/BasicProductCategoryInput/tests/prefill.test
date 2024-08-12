@@ -1,0 +1,43 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path='standard/input/BasicProductCategoryInput' name='Incident.Product' default_value="7" data_type="Products"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+post: Incident_Product=1
+removecontent: false
+template: basic
+urlparameters: /Incident.Product/6
+output:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="1999/xhtml">
+    <head>
+        <title>no title</title>
+
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+<style type='text/css'>
+ <!-- 
+.rn_ScreenReaderOnly{position:absolute; height:1px; left:-10000px; overflow:hidden; top:auto; width:1px;}
+.rn_Hidden{display:none !important;}
+ --></style>
+</base>
+
+</head>
+    <body>
+        <div>
+        <form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicProductCategoryInput/tests/prefill/Incident.Product/6"><div><div class="rn_BasicProductCategoryInput rn_ProductCategoryInput rn_Input">
+                        <label class="rn_Label" for="rn_BasicProductCategoryInput_0_Incident.Product">
+                Product            </label>
+                                        <div>
+        <select id="rn_BasicProductCategoryInput_0_Incident.Product" name="formData[Incident.Product]">
+                    <option value="" >--</option>
+                    <option value="1"  selected="selected">Mobile Phones</option>
+                    <option value="2" > - Android</option>
+                    <option value="3" > - Blackberry</option>
+                    <option value="4" > - iPhone</option>
+                </select>
+    </div>
+    </div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5Qcm9kdWN0Ijp7ImxhYmVscyI6eyJsYWJlbF9pbnB1dCI6IlByb2R1Y3QiLCJsYWJlbF9lcnJvciI6IiJ9fX0='/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>
+        </div>
+</body>
+</html>

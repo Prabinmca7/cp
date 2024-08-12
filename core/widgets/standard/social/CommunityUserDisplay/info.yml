@@ -1,0 +1,24 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  show_profile_picture:
+    name: rn:msg:SHOW_PROFILE_PICTURE_CMD
+    description: rn:msg:DENOTES_USERS_PROFILE_PICTURE_LBL
+    default: true
+    type: BOOLEAN
+  user_hash:
+    name: rn:msg:USER_HASH_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(HASH_DISP_OVERRIDDEN_PRESENCE_PCT_S_LBL),
+      'people')
+    type: STRING
+info:
+  category:
+     - Legacy Community
+  description: rn:msg:WIDGET_DISP_DATA_MULTILINE_FMT_MSG
+  urlParameters:
+    people:
+      name: rn:msg:PEOPLE_LBL
+      description: rn:msg:HASH_COMMUNITY_USER_DISPLAY_LBL
+      example: people/88af22078d

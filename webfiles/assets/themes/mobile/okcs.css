@@ -1,0 +1,359 @@
+/*search button alignment*/
+.rn_SearchControls .rn_SearchButton, .rn_SearchControls .rn_SourceSearchButton{
+    margin-right: 0;
+}
+.rn_SourceResultListing li {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0;
+}
+
+.rn_StartOver {
+    display: inline-block;
+    float: right;
+    margin-right: 9%;
+    margin-top: 15px;
+}
+
+.rn_StartOver a{
+    color: #fff;
+}
+
+.rn_Expand:after {
+    content: "\f0d7";/*FontAwesome icon fa-caret-down*/
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+}
+
+.rn_Collapse:after {
+    content: "\f0da";/*FontAwesome icon fa-caret-right*/
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+}
+
+.rn_Expanded .rn_Expand:after, .rn_Expanded .rn_Expand.rn_Expanded:after, .rn_Collapsed .rn_Expand.rn_Expanded:after {
+    content: "\f0d7";/*FontAwesome icon fa-caret-down*/
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+}
+
+.rn_Collapsed .rn_Expand:after, .rn_Expanded .rn_Expand.rn_Collapsed:after, .rn_Collapsed .rn_Expand.rn_Collapsed:after {
+    content: "\f0da";/*FontAwesome icon fa-caret-right*/
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+}
+
+.rn_Home_Hidden{
+    display: none;
+}
+
+.rn_OkcsMobileBrowseHeader {
+    background: none repeat scroll 0 0 #40526b;
+    color: #fff;
+}
+
+.rn_OkcsMobileBrowseHeader h2 {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.rn_OkcsMobileBrowseHeader .rn_ButtonOff::before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1em;
+    line-height: 1em;
+    margin-right: 6px;
+    padding: 0.6em;
+}
+
+.rn_OkcsMobileBrowseHeader .rn_ButtonOff {
+    font-style: normal;
+}
+
+.rn_Footer .rn_Misc {
+    text-align: left;
+}
+
+.rn_Home .rn_RecentKB .rn_Container{
+    border-bottom: 0;
+}
+
+.rn_SourceSearchButton {
+    display: block;
+    float: left;
+}
+
+.rn_Hero .rn_HeroInner a {
+    display: inline;
+}
+
+.rn_Hero .rn_HeroInner .rn_HeroCopy h1 {
+    font-size: 2em;
+}
+/*Widget related css*/
+.rn_SourcePagination {
+    font-size: 1em;
+}
+
+.rn_SearchRating {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.rn_SearchRating h2 {
+    background: #536a8b;
+    background: -moz-linear-gradient(top, #536a8b, #536a8b);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#536a8b), to(#536a8b));
+    font-size: 1em;
+    font-weight: normal;
+    padding: 12px;
+    color: #fff;
+}
+
+.rn_Facet .rn_Content ul li {
+    padding-left: 13px;
+}
+
+.rn_SearchResult {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.rn_AnswerDetail .rn_AnswerHeader h1{
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    padding: 7px 0 0;
+    font-size: 1.286em;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+#rn_FileAttach, #rn_AnswerText {
+    clear: both;
+    font-size: 1.0em;
+    line-height: 1.4em;
+    padding: 15px 10px;
+}
+
+.rn_AnswerField .rn_Info {
+    display: inline-block;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.rn_SectionTitle {
+    border-top: 2px dashed #b7cce7;
+    padding-top: 1.5em;
+}
+
+.rn_AnswerHide {
+    display: none;
+}
+
+.rn_OkcsSmartAssistant  .rn_ExpandAnswer, .rn_SmartAssistantDialog  .rn_InlineAnswerLink {
+    font-size:1em;
+    border-bottom: none;
+}
+
+.rn_SmartAssistantDialog .rn_List > li {
+    font-size: 1.2em;
+}
+
+.rn_OkcsSmartAssistant .rn_InlineAnswersExplorer li a {
+    font-weight: normal;
+}
+
+.rn_SmartAssistantDialog .rn_KBAnswerImage::before {
+    display:none;
+}
+
+.rn_Panel .rn_MobileDialogButton {
+    display: block;
+}
+/*This is to display the ask.php page related buttons bigger*/
+button, input[type="submit"] {
+    width: 100%;
+}
+.rn_MobileDialogButton a{
+    background: #3873c4 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0.1875em;
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 1.1px;
+    padding: 0.4em 1em;
+    transition: all 0.2s ease-in-out 0s;
+    display: block;
+}
+
+.rn_Content {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+}
+
+.rn_OkcsSmartAssistant .rn_Loading {
+    background: none;
+}
+
+.rn_OkcsProductCategorySearchFilter.rn_ProductCategorySearchFilter .rn_PanelContainer{
+    width: 101%;
+}
+
+.rn_OkcsProductCategorySearchFilter.rn_ProductCategorySearchFilter span.rn_Label {
+    color: white;
+    line-height: 2em;
+}
+
+.rn_OkcsProductCategorySearchFilter.rn_ProductCategorySearchFilter button.rn_DisplayButton {
+    color: white;
+}
+
+.rn_OkcsProductCategorySearchFilter.rn_ProductCategorySearchFilter button.rn_DisplayButton:hover, .rn_ProductCategorySearchFilter button.rn_DisplayButton:focus{
+    color: black;
+}
+
+.rn_FloatRight {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.rn_SearchInput .yui3-aclist-item-active, .rn_SearchInput .yui3-aclist-item:hover {
+    background: #ebeff5 none repeat scroll 0 0;
+    outline: 0;
+}
+
+.rn_OkcsSimpleSearch .rn_SearchInput.rn_OkcsSuggestions {
+    width: 175% !important;
+    font-size: 0.9em;
+}
+
+.rn_SearchInput .yui3-aclist-content {
+    background-color: #fff;
+    border: 1px solid;
+    color: #3b6db1;
+    padding: 5px 10px;
+    position: absolute;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    cursor: text;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.58);
+    text-shadow: none;
+    line-height: 1.5em;
+}
+
+.rn_SearchInput .yui3-aclist-hidden {
+    visibility: hidden;
+}
+
+.rn_SearchInput .yui3-aclist-item:before {
+    font-family: 'FontAwesome';
+    content: "\f002";
+    margin-right: .5em;
+}
+
+.rn_SearchInput .yui3-aclist-aria {
+    display: none;
+}
+
+.rn_SearchInput .yui3-aclist-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rn_SearchInput .yui3-aclist-list li {
+    cursor: pointer;
+}
+
+.rn_SearchInput .rn_ResultFormat {
+    display: inline;
+}
+
+.rn_SearchInput .yui3-aclist-item:hover .list-item-tooltip {
+    display: block;
+}
+
+.rn_SearchInput .list-item-tooltip {
+    background: #ffc none repeat scroll 0 0;
+    border: 1px solid;
+    cursor: text;
+    display: none;
+    font-size: .8em;
+    margin-left: 4em;
+    padding: .1em;
+    position: absolute;
+    white-space: normal;
+    word-wrap: break-word;
+    z-index: 9999;
+    text-shadow: none;
+}
+
+.rn_SourcePagination .rn_NextPage a:after, .rn_SourcePagination .rn_PreviousPage a:before {
+    content: "";
+}
+
+.rn_PageContent .rn_PopularKB h2 {
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorerExpandedHidden {
+    visibility: hidden;
+}
+
+.rn_OkcsMobileBrowseHeader a {
+    color: #fff;
+}
+
+.rn_DocIdMsg {
+    background: rgba(114, 114, 236, 0.94) none repeat scroll 0 0;
+    color: white;
+    left: 0;
+    line-height: 4em;
+    padding: 0 1em;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 100;
+    transition: top 2000ms ease 0ms;
+}
+
+.rn_DocIdResults, .rn_DocIdResults:hover {
+    color: #ffa;
+    font-weight: bold;
+}
+
+.rn_hideBanner {
+    border: 2px solid;
+    border-radius: 3em;
+    color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.1em 0.35em;
+}
+
+.rn_Facet div.rn_Content .rn_FacetsTitle {
+    color: white !important;
+    padding-left: 1em !important;
+}
+
+.rn_Facet div.rn_Content .rn_FacetsTitle a {
+    color: white;
+}
+
+.rn_ResultIcon.rn_File_Open_article:before{
+    font-family: "FontAwesome";
+    color: #3b6db1;
+    content: "\f08e";
+    background-color: #cccccc69;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}

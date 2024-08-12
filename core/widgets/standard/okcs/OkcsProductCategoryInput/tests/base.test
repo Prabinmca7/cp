@@ -1,0 +1,18 @@
+input: <rn:widget path="standard/okcs/OkcsProductCategoryInput"/>
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_OkcsProductCategoryInput_0" class="rn_OkcsProductCategoryInput">
+    <a href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_OkcsProductCategoryInput_0_LinksTrigger"><span id="rn_OkcsProductCategoryInput_0_TreeDescription"></span>&nbsp;Screen Reader users press enter to select a Product.</a>
+    <span class="rn_Label" id="rn_OkcsProductCategoryInput_0_Label">
+        Product                    <span id="rn_OkcsProductCategoryInput_0_RequiredLabel" class="rn_Required rn_Hidden"> *</span>
+            <span id="rn_OkcsProductCategoryInput_0_ErrorLabel" class="rn_ErrorLabel">
+                            </span>
+            </span>
+    <button type="button" id="rn_OkcsProductCategoryInput_0_Product_Button" class="rn_DisplayButton"><span class="rn_ScreenReaderOnly">This button does not work with screen readers. Please use the previous link instead.</span> <span id="rn_OkcsProductCategoryInput_0_ButtonVisibleText">Select a product</span></button>
+    <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_OkcsProductCategoryInput_0_Links"></div>
+    <div id="rn_OkcsProductCategoryInput_0_TreeContainer" class="rn_PanelContainer rn_Hidden">
+        <div id="rn_OkcsProductCategoryInput_0_Tree" class="rn_Panel">
+                    </div>
+    </div>
+</div>

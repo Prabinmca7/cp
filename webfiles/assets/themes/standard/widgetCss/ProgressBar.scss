@@ -1,0 +1,35 @@
+@import 'widget-includes';
+
+.rn_ProgressBar {
+    .rn_ProgressStep {
+        padding: 5px 0;
+        font-size: 1.2em;
+        text-align: center;
+        border-top: 5px solid #FFF;
+    }
+
+    ol {
+        border: solid #3B6299;
+        border-width: 3px 0;
+        overflow: hidden;
+    }
+
+    .rn_CurrentStep {
+        border-top: 5px solid #3B6299;
+        font-weight: bold;
+    }
+
+    .rn_IncompleteStep {
+        color: #555;
+        font-style: italic;
+    }
+
+    .rn_CompleteStep {
+        color: #555;
+
+        span {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sBEhAmGlHHKcYAAACWUExURQAAABVxARdsARh3BBd0AxhpARlpAhRoABh3BBdpABdpARZyAhVnABlxAxNnABZoABZpARRoABJmABRsABh2AxVxARd1Axp+BhaFBiWZESGTDx6QDCOZEB6RDBaUCBiXCRibCySgEzXoKT/2MkX5NhSKBRd5BBunDhypEB+sESCiECPCGCu+HC6/Hi7hJDTBIjzeLP///9Ii36cAAAAldFJOUwAICQkPFRYYGiUlLTExNDZNUl9fanGUqM7b4OLl5vX4+v3+/v4uam+GAAAAAWJLR0Qx2dsdcgAAAFJJREFUGNNjYKAMiKhxIHOZJFR5kflc8nJsyHx+dQVWZD6PpgYnjM0tKcXIrqUtAJcU1VcRl9YTQ1IuZKCrJItiv4yyDh+KgLCiIKoLmVlI8Q8ARqgEmZGEMTEAAAAASUVORK5CYII=') no-repeat;
+            padding-left: 15px;
+        }
+    }
+}

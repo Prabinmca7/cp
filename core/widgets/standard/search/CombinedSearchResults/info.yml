@@ -1,0 +1,84 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  hide_when_no_results: unset
+  hide_columns: unset
+  combined_search_ajax:
+    name: rn:msg:COMBINED_SEARCH_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_COMBINED_SEARCHES_LBL
+    default: /ci/ajax/widget
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    type: string
+    description: rn:msg:NAMED_ID_ADDITIONAL_SEARCH_SOURCES_LBL
+    default: social
+  add_params_to_url:
+    name: rn:msg:ADD_PRMS_TO_URL_CMD
+    type: string
+    description: rn:msg:CMMA_SPRTED_L_URL_PARMS_LINKS_MSG
+    default: kw
+  display_social_author_link:
+    name: rn:msg:DISPLAY_SOCIAL_AUTHOR_LINK_CMD
+    type: boolean
+    description: rn:msg:DENOTES_LINKS_AUTHOR_PROFILE_PAGES_MSG
+  social_author_link_base_url:
+    name: rn:msg:AUTHOR_LINK_BASE_URL_LBL
+    type: string
+    description: rn:msg:SHOW_AUTHOR_NAME_SET_TRUE_VAL_BASE_MSG
+  social_post_link_base_url:
+    name: rn:msg:POST_LINK_BASE_URL_LBL
+    type: string
+    description: rn:msg:VAL_BASE_URL_POST_HASH_APPENDED_MSG
+  display_knowledgebase_results:
+    name: rn:msg:KNOWLEDGEBASE_RESULTS_LBL
+    type: boolean
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(SPECIFIES_KB_ANS_RPT_DESIGNATED_PCT_MSG), 'report_id')
+    default: true
+  social_results:
+    name: rn:msg:SOCIAL_RESULTS_LBL
+    type: int
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(SPECIFIES_ORDER_BLOCK_SOCIAL_RES_MSG), 'display_knowledgebase_results')
+    default: 5
+    min: 0
+  social_resource_id:
+    name: rn:msg:RESOURCE_ID_LBL
+    type: string
+    description: rn:msg:FLTRS_RS_RET_CONTENT_RESRCS_VAL_MSG
+  maximum_social_results:
+    name: rn:msg:MAXIMUM_NUMBER_OF_SOCIAL_RESULTS_LBL
+    type: int
+    description: rn:msg:MAX_TOTAL_RES_DISP_SOCIAL_RES_LBL
+    default: 3
+    min: 1
+    max: 20
+  label_more_social_results:
+    name: rn:msg:MORE_SOCIAL_RESULTS_LABEL_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LBEL_DISP_LINK_APPEARS_PCT_S_MSG), 'maximum_social_results')
+    default: rn:msg:PCT_D_MORE_COMMUNITY_POSTS_LBL
+  label_single_social_result:
+    name: rn:msg:SINGLE_SOCIAL_RESULT_LABEL_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_DISP_CIRCUMSTANCES_PCT_S_SNGL_MSG), 'label_more_social_results', 'maximum_social_results')
+    default: rn:msg:PCT_D_MORE_COMMUNITY_POST_LBL
+  label_social_results_heading:
+    name: rn:msg:SOCIAL_RESULTS_HEADING_LABEL_LBL
+    type: string
+    description: rn:msg:LBEL_DISP_HEADING_LINK_APPEARS_MSG
+    default: rn:msg:COMMUNITY_POSTS_LBL
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+extends:
+  widget: standard/reports/Multiline
+  versions: ["1.3"]
+  components: [php, view, js]
+info:
+  category:
+    - Report Search
+    - Legacy Community
+  description: rn:msg:PUBLISHED_LEGACY_COMMUNITY_POSTS_MSG

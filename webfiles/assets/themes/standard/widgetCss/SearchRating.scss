@@ -1,0 +1,49 @@
+@import 'widget-includes';
+
+.rn_SearchRating {
+    .rn_HiddenMessage {
+        margin-top: 60px;
+    }
+
+    .rn_SearchRatingDiv {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .rn_SearchCommentDiv {
+        margin-bottom: 10px;
+    }
+
+    .rn_SearchTextArea {
+        width: 240px;
+        height: 80px;
+    }
+
+    .rn_SubmitButtonDiv {
+        margin-top: 10px;
+    }
+
+    .rn_SearchRatingTitle {
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .rn_Rating, .rn_Selected {
+        padding: .5em;
+        background: none;
+        border: 0;
+        box-shadow: none;
+        font-size: 1.3em;
+        font-family: 'FontAwesome';
+        color: #294F88;
+        float: left;
+    }
+
+    .rn_Rating {
+        @include icon($fa-var-star-o);
+    }
+
+    .rn_Selected {
+        @include icon($fa-var-star);
+    }
+}

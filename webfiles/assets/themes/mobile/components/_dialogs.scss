@@ -1,0 +1,220 @@
+// Widget stack
+.yui3-widget-stacked .yui3-widget-shim {
+    opacity: 0;
+    border: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+// Widget modality
+
+.yui3-skin-sam .yui3-widget-mask {
+    background: #000;
+    opacity: .4;
+    @include transition(all .5s);
+}
+
+#yui3-css-stamp {
+    display: none;
+}
+
+// Overlay core
+
+.yui3-overlay {
+    position: absolute;
+}
+
+.yui3-panel-hidden,
+.yui3-overlay-hidden {
+    visibility: hidden;
+}
+
+.yui3-widget-tmp-forcesize .yui3-overlay-content {
+    overflow: hidden !important;
+}
+
+.yui3-panel {
+    $panel-background-color: #FFF;
+
+    @include outer-container;
+
+    position: absolute;
+
+    &.yui3-panel-focused {
+        outline: 0;
+    }
+
+    .yui3-widget-hd {
+        background: $panel-background-color;
+        padding: 8px 1em 8px 8px;
+        position: relative;
+        min-height: 1em;
+
+        .yui3-widget-buttons {
+            position: absolute;
+            padding: 2px;
+            top: 0;
+            right: 0;
+        }
+
+        .yui3-button-close {
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+            overflow: hidden;
+            vertical-align: top;
+            color: #222;
+            font-size: .8em;
+            height: 1em;
+            width: .9em;
+
+            &::before {
+                content: "\d7";
+                text-align: center;
+                margin-right: 1em;
+            }
+        }
+    }
+
+    .yui3-widget-bd {
+        @include clearfix;
+        padding: 10px;
+        min-height: 80px;
+    }
+
+    .yui3-widget-ft {
+        background: #edf5ff;
+        padding: 8px;
+        text-align: right;
+
+        .yui3-widget-buttons {
+            display: inline-block;
+            zoom: 1;
+        }
+
+        .yui3-button {
+            margin-left: 8px;
+        }
+    }
+
+    .yui3-panel-content {
+        background: $panel-background-color;
+
+        &.rn_ActionDialog {
+            @include span-columns(12);
+            @include clearfix;
+            border: 1px solid $light-gray;
+
+            .yui3-widget-hd,
+            .yui3-widget-bd,
+            .yui3-widget-ft {
+                padding: .5em;
+            }
+
+            .yui3-widget-hd {
+                color: inherit;
+                font-size: 1.6em;
+                margin-bottom: 1em;
+                padding-right: 1.2em;
+            }
+
+            .yui3-widget-ft {
+                @include span-columns(12);
+                @include clearfix;
+
+                margin-top: 1em;
+
+                @include media($rn-small) {
+                    margin-top: 0;
+                }
+
+                .yui3-widget-buttons {
+                    @include media($rn-small) {
+                        display: block;
+
+                        .yui3-button {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: .5em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.rn_MessageDialog {
+            border: 1px solid $light-gray;
+
+            .yui3-widget-hd {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@include media($rn-small) {
+    .yui3-skin-sam .yui3-widget-mask {
+        background: $light-gray;
+        opacity: 1;
+    }
+
+    .yui3-panel .yui3-panel-content.rn_ActionDialog {
+        background: none;
+
+        .yui3-widget-hd,
+        .yui3-widget-ft {
+            background: none;
+        }
+    }
+}
+
+.rn_Panel {
+    padding: .5em;
+
+    .rn_Title {
+        font-size: 1.4em;
+        padding-bottom: .8em;
+    }
+
+    .rn_ProdCatBack {
+        margin-left: 1em;
+
+        @include icon($fa-var-angle-left);
+    }
+
+    .rn_MobileDialogButton {
+        display: inline-block;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.rn_OverlayDialog {
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+
+    .rn_DialogTitle {
+        font-weight: bold;
+    }
+
+    .rn_DialogContent {
+        padding: .5em;
+    }
+
+    .rn_MobileDialogButton {
+        margin: 1em 0;
+    }
+}

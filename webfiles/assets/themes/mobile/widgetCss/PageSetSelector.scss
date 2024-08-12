@@ -1,0 +1,22 @@
+@import 'widget-includes';
+
+.rn_PageSetSelector {
+    display: block;
+    margin: 8px 0;
+
+    .rn_Bold {
+        font-weight: bold;
+    }
+
+    a, span.rn_Bold {
+        @include media($rn-medium) {
+            display: block;
+        }
+    }
+
+    .rn_PageSetDivider {
+        @include media($rn-medium) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:THIS_WIDGET_DISP_ANS_CONTENT_AS_MSG
+contains:
+- widget: standard/okcs/AnswerField
+  versions: ["1.3"]

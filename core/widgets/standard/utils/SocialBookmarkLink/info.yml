@@ -1,0 +1,53 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [panel]
+info:
+  description: rn:msg:ALLOWS_S_QS_POSTED_MANY_L_S_WEBSITES_MSG
+  category:
+  - Community
+  urlParameters:
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      key: a_id
+      description: rn:msg:ANSWER_TO_POST_LBL
+      example: a_id/3
+    qid:
+      name: rn:msg:SOCIAL_QUESTION_ID_LBL
+      key: qid
+      description: rn:msg:SOCIAL_QUESTION_TO_POST_LBL
+      example: qid/3
+attributes:
+  label_link:
+    name: rn:msg:LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_DISPLAYS_LINK_PAGE_LBL
+    default: rn:msg:SHARE_CMD
+  label_tooltip:
+    name: rn:msg:TOOLTIP_LBL
+    type: STRING
+    description: rn:msg:STRING_DISPLAYS_HOVERS_LINK_LBL
+    default: rn:msg:SHARE_THIS_PAGE_ON_SOCIAL_NETWORKS_LBL
+  object_type:
+    name: rn:msg:OBJECT_TYPE_LBL
+    description: rn:msg:TYPE_OBJECT_POSSIBLE_VALUES_QUESTION_MSG
+    default:  answer
+    type: OPTION
+    options:
+    - answer
+    - question
+  sites:
+    name: rn:msg:SITES_LBL
+    type: STRING
+    displaySpecialCharsInTagGallery: true
+    description: rn:msg:STS_L_COMMA_SEPARATED_L_SITE_NAME_MSG
+    default: rn:php:sprintf('Facebook > %s > https://facebook.com/sharer.php?m2w&amp;u=|URL|,
+             Twitter > %s > https://twitter.com/intent/tweet?text=|TITLE|+|URL|,
+             LinkedIn > %s > https://www.linkedin.com/shareArticle?mini=true&amp;url=|URL|&amp;title=|TITLE|&amp;summary=|TITLE|&amp;source=|URL|,
+             Reddit > %s > https://reddit.com/submit?url=|URL|&amp;title=|TITLE|', \RightNow\Utils\Config::getMessage(POST_TO_FACEBOOK_LBL), \RightNow\Utils\Config::getMessage(TWEET_THIS_LBL), \RightNow\Utils\Config::getMessage(POST_TO_LINKEDIN_LBL), \RightNow\Utils\Config::getMessage(POST_TO_REDDIT_LBL))
+  check_question_exist_ajax:
+    name: rn:msg:CHECK_QUESTION_EXISTS_AJAX_LBL
+    type: AJAX
+    description: rn:msg:AJAX_ENDPOINT_CHECK_WHETHER_EXISTS_LBL
+    default: /ci/ajax/widget

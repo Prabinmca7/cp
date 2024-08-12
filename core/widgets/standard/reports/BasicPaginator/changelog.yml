@@ -1,0 +1,31 @@
+1.1.2:
+  release: "15.11"
+  entries:
+  - account: abbas.kathermeeran
+    category: Bug Fix
+    changelogID: 421
+    date: 10/08/2015
+    description: Removed the page links text when the page size is 1
+    level: nano
+    refno: 150630-000068
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 330
+    date: 05/18/2015
+    description: Rather than using the `maximum_page_links` attribute, only a few
+      specific pages will be listed, including the first and last pages
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/19/2012
+    level: major
+    description: Initial version of reports/BasicPaginator
+    category: API Change
+    sortPosition: Middle

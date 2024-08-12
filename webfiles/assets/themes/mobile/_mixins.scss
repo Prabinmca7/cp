@@ -1,0 +1,196 @@
+// When the viewport is small, pop out to full-width.
+@mixin small-full-width {
+    @include media($rn-small) {
+        @include span-columns(12);
+        @content;
+    }
+}
+
+// Include a font awesome font icon.
+// $code: specify the font-awesome hex code character
+// $position: which pseudo element to apply to before or after
+@mixin icon ($code, $position: before) {
+    &:#{$position} {
+        font-family: 'FontAwesome';
+        line-height: 1em;
+        @if $position == before {
+            margin-right: 6px;
+        }
+        @else {
+            margin-left: 6px;
+        }
+        content: "#{$code}";
+        @content;
+    }
+}
+
+// Include font awesome icons stacked on top of each other
+// $frontIcon: specify the font awesome code for the icon to be placed in front
+// $backIcon: specify the font awesome code for the icon to be placed in the background
+@mixin stacked-icons($frontIcon, $backIcon) {
+    @extend .fa-stack;
+    &:before {
+        @extend .fa-stack-2x;
+        font-family: 'FontAwesome';
+        content: $backIcon;
+    }
+    &:after {
+        @extend .fa-stack-1x;
+        font-family: 'FontAwesome';
+        content: $frontIcon;
+    }
+}
+
+// Animated font awesome spinner icon.
+@mixin loading-icon ($font-size: 1em) {
+    // icon-spinner
+    @include icon($fa-var-spinner) {
+        @include animation(fa-spin 2s infinite linear);
+
+        display: block;
+        font-size: $font-size;
+        position: relative;
+        text-align: center;
+        @content;
+    }
+}
+
+// Check square font awesome icon.
+@mixin check-square-icon ($font-size: 1em) {
+    @include icon($fa-var-check-square-o) {
+        font-size: $font-size;
+    }
+}
+
+// Exclamation circle font awesome icon.
+@mixin exclamation-circle-icon ($font-size: 1em) {
+    @include icon($fa-var-exclamation-circle) {
+        font-size: $font-size;
+    }
+}
+
+// Defines the necessary CSS properties to enable
+// text overflow behavior. Any value for the CSS
+// `text-overflow` property may be specified.
+@mixin text-overflow($behavior: ellipsis) {
+    display: block;
+    overflow: hidden;
+    text-overflow: $behavior;
+    white-space: nowrap;
+}
+
+// Fades out the bottom of an element.
+// Mainly used to fade out text to indicate
+// there is more to read
+@mixin fade-text($height: 5em, $fade-color: rgb(241,255,255)) {
+    @include linear-gradient(top, transparentize($fade-color, 1.00) 0%, transparentize($fade-color, 0.20) 50%, $fade-color 100%);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $height;
+    width: 100%;
+}
+
+// General mixin for icons used in large headers.
+@mixin header-icon($code, $color: $aqua, $position: before) {
+    @include icon($code, $position) {
+        width: auto;
+        line-height: 1em;
+        font-size: 2em;
+        color: $color;
+    }
+}
+
+// Preformatted icon used in side-rail
+// list widgets that display Social Questions
+@mixin list-socialquestion-icon($font-size: 1em) {
+    @include icon($social-discussion-icon) {
+        margin-right: 3px;
+        font-size: $font-size;
+    }
+}
+
+// Preformatted icon used in side-rail
+// list widgets that display KB Answers
+@mixin list-kbanswer-icon($font-size: 1.4em) {
+    @include icon($kb-answer-icon) {
+        margin-left: 1px;
+        margin-right: 5px;
+        font-size: $font-size;
+    }
+}
+
+// Preformatted icon used in side-rail
+// list widgets that display Chat
+@mixin list-chat-icon($font-size: 1em) {
+    @include icon($chat-icon) {
+        margin-right: 2px;
+        font-size: $font-size;
+    }
+}
+
+// Preformatted icon used in side-rail
+// list widgets that display Feedback
+@mixin list-feedback-icon($font-size: 1em) {
+    @include icon($feedback-icon) {
+        margin-right: 2px;
+        font-size: $font-size;
+    }
+}
+
+// Preformatted icon used in side-rail
+// list widgets that display Ask A Question
+@mixin list-ask-icon($font-size: 1em) {
+    @include icon($ask-icon) {
+        margin-left: 3px;
+        margin-right: 7px;
+    }
+}
+
+// "More" chevron icon used to signify
+// there are more of something
+@mixin list-more-icon($font-size: smaller) {
+    @include icon($more-icon, after) {
+        font-size: $font-size;
+    };
+}
+
+// FA alternative to bourbon triangle.
+// Works well with high-contrast mode
+@mixin caret($direction, $position: before) {
+    &:#{$position} {
+        font-family: 'FontAwesome';
+        @if $position == before {
+            margin-right: 6px;
+        }
+        @else {
+            margin-left: 6px;
+        }
+    }
+
+    @if $direction == up {
+        &:#{$position} {
+            content: "#{$fa-var-caret-up}";
+            @content;
+        }
+    }
+    @else if $direction == right {
+        &:#{$position} {
+            content: "#{$fa-var-caret-right}";
+            @content;
+        }
+    }
+    @else if $direction == down {
+        &:#{$position} {
+            content: "#{$fa-var-caret-down}";
+            @content;
+        }
+    }
+    @else if $direction == left {
+        &:#{$position} {
+            content: "#{$fa-var-caret-left}";
+            @content;
+        }
+    }
+}

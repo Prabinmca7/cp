@@ -1,0 +1,43 @@
+input: <form id="abc"><rn:widget path='standard/input/MobileProductCategoryInput' table='Incident' name='Incident.Category'/></form>
+jstestfile: base.test.js
+removecontent: true
+template: mobile
+urlparameters: /Incident.Category/71
+output:
+<form id="abc"><div id="rn_MobileProductCategoryInput_0" class="rn_MobileProductCategoryInput rn_Input">
+        <div id="rn_MobileProductCategoryInput_0_Category_Level1Input" class="rn_Hidden rn_Input rn_MobileProductCategoryInput rn_Level1">
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_1" value="0"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_1" for="rn_MobileProductCategoryInput_0_Category_Input1_1">All Categories                                </label>
+            </div>
+                <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_2" value="161"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_2" for="rn_MobileProductCategoryInput_0_Category_Input1_2">Basics                                </label>
+            </div>
+                <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_3" value="153"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_3" for="rn_MobileProductCategoryInput_0_Category_Input1_3">Mobile Services                                </label>
+            </div>
+                <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_4" value="68"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_4" for="rn_MobileProductCategoryInput_0_Category_Input1_4">Account and Billing                                </label>
+            </div>
+                <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_5" value="158"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_5" for="rn_MobileProductCategoryInput_0_Category_Input1_5">Rollover Minutes                                </label>
+            </div>
+                <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_6" value="70"/>
+                                <label class="" id="rn_MobileProductCategoryInput_0_Category_Label1_6" for="rn_MobileProductCategoryInput_0_Category_Input1_6">Mobile Broadband                                </label>
+            </div>
+                <div class="rn_Parent rn_Selected">
+            <input type="radio" name="rn_MobileProductCategoryInput_0_Category_Level1" id="rn_MobileProductCategoryInput_0_Category_Input1_7" value="71"/>
+                                <label class="rn_HasChildren" id="rn_MobileProductCategoryInput_0_Category_Label1_7" for="rn_MobileProductCategoryInput_0_Category_Input1_7">Troubleshooting                <span class="rn_ParentMenuAlt"> More Options</span>                </label>
+            </div>
+            </div>
+        <label class="rn_Label" id="rn_MobileProductCategoryInput_0_Category_Label" for="rn_MobileProductCategoryInput_0_Category_Launch" aria-hidden="true">
+        Category                        <span class="rn_ScreenReaderOnly">Troubleshooting<br></span>
+    </label>
+    <button type="button" id="rn_MobileProductCategoryInput_0_Category_Launch" class="rn_DisplayButton" aria-labelledby="rn_MobileProductCategoryInput_0_Category_Label">Troubleshooting<br></button>
+</div>
+</form>

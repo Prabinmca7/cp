@@ -1,0 +1,11 @@
+input: <rn:widget path='standard/chat/ProactiveChat'/>
+removecontent: true
+output:
+<div id="rn_ProactiveChat_0" class="rn_ProactiveChat rn_Hidden" >
+    <div id="rn_ProactiveChat_0_ProactiveChatBox" class="rn_ProactiveChatBox">
+        <div id="rn_ProactiveChat_0_ProactiveChatBoxContent" class="rn_ProactiveChatBoxContent">
+        </div>
+        <div id="rn_ProactiveChat_0_ProactiveChatBoxDescription">
+            A Chat Assistant is available to help. Would you like to start the session?        </div>
+    </div>
+</div>

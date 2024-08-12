@@ -1,0 +1,23 @@
+<rn:block id="videoChatInvitationResponseTop"/>
+<span class="rn_MessagePost">
+<% if(attrs.video_chat_icon_path){ %>
+    <rn:block id="preVideoChatInvitationResponseIcon"/>
+    <img alt="" src="<%= attrs.video_chat_icon_path %>"/>
+    <rn:block id="postVideoChatInvitationResponseIcon"/>
+<% } %> 
+<span class="rn_Action">
+    <%= message.replace(/\{0\}/g, agentName) %>
+    <span class="rn_VideoChatAction">
+        <%= attrs.label_click %>
+        <a href="javascript: void(0);" class='rn_VideoChatAllow' role='button'>
+            <%= attrs.label_allow %>
+        </a>
+        <%= attrs.label_or %>
+        <a href="javascript: void(0);" class='rn_VideoChatDecline' role='button' >
+            <%= attrs.label_deny %>
+        </a>
+    </span>
+</span>
+<br/>
+</span>
+<rn:block id="videoChatInvitationResponseBottom"/>

@@ -1,0 +1,108 @@
+@import 'widget-includes';
+
+.rn_FacetFilter {
+    .rn_FacetFilter_Content {
+        background: #EBEFF5;
+        border: 1px solid #CCC;
+        padding: 7px 7px 0 7px;
+        display: flex;
+    }
+
+    .rn_FacetFilterTitle {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border: 1px solid #ccc;
+        background: #475e80;
+        color: #FFF;
+        margin-bottom: 0.5em;
+        font-size: 1.1em;
+    }
+
+    .rn_FacetFilterList>li {
+        display: inline-flex;
+        margin: 0 0 5px 5px;
+        padding: 0 0 6px 10px;
+        line-height: 1.9em;
+        box-sizing: border-box;
+        border: 1px solid #ded9e1;
+        background: #eaf1fa;
+
+        .rn_ResetFilter {
+            border: none;
+            line-height: 2em;
+            display: inline-block;
+            margin-bottom: 8px;
+            margin-left: 0.4em;
+        }
+    }
+
+    .rn_FilterChoiceTitle {
+        color: #000;
+        font-weight: unset;
+    }
+
+    .rn_filterChoice {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        word-break: break-all;
+        font-style: italic;
+        font-weight: 700;
+        color: #3c4a65;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .rn_FacetFilterClearIcon {
+        @include icon($fa-var-times, after);
+        margin: 0 8px 0 0;
+
+        &:after {
+            display: inline-block;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: brown;
+        }
+    }
+
+    .rn_FacetFilterProduct, .rn_FacetFilterCategory {
+        border: 1px solid #999;
+        line-height: unset;
+        padding: 0.4em ;
+        margin-bottom: 0.5em;
+        display: block;
+    }
+
+    .rn_ResetFilterBtn {
+        line-height: 1.2em;
+        margin-top: -0.2em;
+    }
+
+    .rn_FilterItem {
+        display: inline-block;
+        padding-left: 0.5em;
+    }
+    
+    .rn_FilterLabel {
+      display: block;
+      text-align: center;
+    }
+
+    .rn_FilterContent {
+        margin-top:0.5em;
+    }
+
+    .rn_FacetFilterTitle::after {
+        color: #475e80;
+        content: ':';
+        position: absolute;
+        transform: translate(-100%, 0);
+        font-weight: bold;
+        width: 5px;
+    }
+}

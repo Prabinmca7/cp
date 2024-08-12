@@ -1,0 +1,27 @@
+input: <rn:widget path='standard/utils/EmailAnswerLink'/>
+removecontent: true
+session: {"previouslySeenEmail":"bananas@banana.ape"}
+urlparameters: /a_id/1
+output:
+<div id="rn_EmailAnswerLink_0" class="rn_EmailAnswerLink">
+    <a id="rn_EmailAnswerLink_0_Link" href="javascript:void(0);" title="Email a link to this answer">
+        <span>Email this page</span>
+    </a>
+        <div id="rn_EmailAnswerLink_0_EmailAnswerLinkForm" class="rn_EmailAnswerLinkForm rn_Hidden">
+        <div id="rn_EmailAnswerLink_0_ErrorMessage"></div>
+        <form onsubmit="return false;">
+        <label id="rn_EmailAnswerLink_0_LabelRecipientEmail" for="rn_EmailAnswerLink_0_InputRecipientEmail">
+            Recipient Email            <span class="rn_Required" aria-label="Required">
+    *</span>        </label>
+        <input id="rn_EmailAnswerLink_0_InputRecipientEmail" type="email"/>
+                                    <label id="rn_EmailAnswerLink_0_LabelSenderEmail" for="rn_EmailAnswerLink_0_InputSenderEmail">
+                    Your Email                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+                <input id="rn_EmailAnswerLink_0_InputSenderEmail" type="email" value="bananas@banana.ape"/>
+                                        <label id="rn_EmailAnswerLink_0_LabelSenderName" for="rn_EmailAnswerLink_0_InputSenderName">
+                    Your Name                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+                <input id="rn_EmailAnswerLink_0_InputSenderName" maxlength="70" type="text" value=""/>
+                            </form>
+    </div>
+</div>

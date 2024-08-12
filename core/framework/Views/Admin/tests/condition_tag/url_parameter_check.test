@@ -1,0 +1,139 @@
+input:
+<h2>String URL Parameter Checks</h2>
+<rn:condition url_parameter_check="kw == 'roaming'"/>
+String URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="kw != 'phone'"/>
+String URL Parameter Checks #2: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #2: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="kw != null"/>
+String URL Parameter Checks #3: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #3: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="kw != false"/>
+String URL Parameter Checks #4: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #4: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="kw == true"/>
+String URL Parameter Checks #5: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #5: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="kw == roaming"/>
+String URL Parameter Checks #6: Success<br/>
+<rn:condition_else>
+String URL Parameter Checks #6: Fail<br/>
+</rn:condition>
+
+
+
+<h2>Integer URL Parameter Checks</h2>
+<rn:condition url_parameter_check="a_id == 1"/>
+Integer URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id > 0"/>
+Integer URL Parameter Checks #2: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #2: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id >= 1"/>
+Integer URL Parameter Checks #3: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #3: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id < 5"/>
+Integer URL Parameter Checks #4: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #4: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id <= 1"/>
+Integer URL Parameter Checks #5: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #5: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id == '1'"/>
+Integer URL Parameter Checks #6: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #6: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="a_id > '0'"/>
+Integer URL Parameter Checks #7: Success<br/>
+<rn:condition_else>
+Integer URL Parameter Checks #7: Fail<br/>
+</rn:condition>
+
+
+
+<h2>Non existant URL Parameter Checks</h2>
+<rn:condition url_parameter_check="p == null"/>
+Non existant URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Non existant URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="p == false"/>
+Non existant URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Non existant URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="p != true"/>
+Non existant URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Non existant URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="p == "/>
+Non existant URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Non existant URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition url_parameter_check="p == ''"/>
+Non existant URL Parameter Checks #1: Success<br/>
+<rn:condition_else>
+Non existant URL Parameter Checks #1: Fail<br/>
+</rn:condition>
+removecontent: true
+urlparameters: /a_id/1/kw/roaming
+output:
+<h2>String URL Parameter Checks</h2>
+String URL Parameter Checks #1: Success<br/>
+String URL Parameter Checks #2: Success<br/>
+String URL Parameter Checks #3: Success<br/>
+String URL Parameter Checks #4: Success<br/>
+String URL Parameter Checks #5: Success<br/>
+<div><b>RN:CONDITION tag error: Invalid syntax within the url_parameter_check attribute. The value 'kw == roaming' is not in the format expected.</b></div><br/>String URL Parameter Checks #6: Success<br/>
+<h2>Integer URL Parameter Checks</h2>
+Integer URL Parameter Checks #1: Success<br/>
+Integer URL Parameter Checks #2: Success<br/>
+Integer URL Parameter Checks #3: Success<br/>
+Integer URL Parameter Checks #4: Success<br/>
+Integer URL Parameter Checks #5: Success<br/>
+Integer URL Parameter Checks #6: Success<br/>
+Integer URL Parameter Checks #7: Success<br/>
+<h2>Non existant URL Parameter Checks</h2>
+Non existant URL Parameter Checks #1: Success<br/>
+Non existant URL Parameter Checks #1: Success<br/>
+Non existant URL Parameter Checks #1: Success<br/>
+<div><b>RN:CONDITION tag error: Invalid syntax within the url_parameter_check attribute. The value 'p == ' is not in the format expected.</b></div><br/>Non existant URL Parameter Checks #1: Success<br/>
+Non existant URL Parameter Checks #1: Success<br/>

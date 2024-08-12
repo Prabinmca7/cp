@@ -1,0 +1,103 @@
+2.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+2.3.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 552
+    date: 08/25/2016
+    description: Updated default messaage for label\_notif\_renewed. Updated error
+      message on delete and renew.
+    details:
+    - Updated default messaage for label\_notif\_renewed. Updated error message on
+      delete and renew to "There was a problem with the request and the action could
+      not be completed."
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+2.2.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 454
+    date: 12/18/2015
+    description: Notification Managers are now smarter about re-focusing elements
+      after a banner displays and disappears
+    details:
+    - The NotificationManager widgets now utilize the improved version of displayBanner
+      which allows elements to be re-focused once the banner displays and disappears.
+    level: minor
+    refno: 150821-000157
+    sortPosition: Middle
+2.1.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 327
+    date: 05/11/2015
+    description: Modified messages and displayed them in banner style
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+2.0.1:
+  release: "13.8"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 119
+    date: 07/17/2013
+    description: Uses new framework method to obtain a formatted time stamp
+    details:
+    - The `Framework::formatDate` function is new to framework version 3.1.
+    - There should be no noticeable difference to the resulting timestamp.
+    level: nano
+    refno: 130605-000074
+    sortPosition: Middle
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 115
+    date: 07/17/2013
+    description: Changes the AnswerNotificationManager widget to use Event Delegation
+    details:
+    - The AnswerNotificationManager did not correctly handle the renew or delete events
+      when multiple notifications were in use. This change refactors the widget to
+      handle events correctly, but in doing so causes significant changes to the widget's
+      interface.
+    - If you have custom widgets that are extended from this widget, you will need
+      to upgrade them before consuming the new version.
+    - Additionally, this fixes the bug that causes the widget to display the incorrect
+      notifications after renewing a notification subscription.
+    level: major
+    refno: 130607-000053
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

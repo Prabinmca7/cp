@@ -1,0 +1,24 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile, none]
+info:
+  description: rn:msg:OV_EU_RL_DD_XXSSPRTCTN_XCNTNTTYPPTNS_TC_MSG
+attributes:
+  content_type_options:
+    name: rn:msg:XCONTENTTYPEOPTIONS_HEADER_LBL
+    type: OPTION
+    options:
+      - nosniff
+      - disabled
+    default: nosniff
+    description: rn:msg:PREVENTS_RN_LG_CHRM_MMSNFFNG_HDR_NTRLY_MSG
+  xss_protection:
+    name: rn:msg:XXSSPROTECTION_HEADER_LBL
+    type: STRING
+    default: "1; mode=block"
+    description: rn:msg:CRSSST_SC_RSS_SLLY_RSS_TB_PCT_HDR_NTRLY_MSG
+  content_security_policy:
+    name: rn:msg:CONTENTSECURITYPOLICY_HEADER_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(XRCS_CTN_HDR_RQ_WL_PP_RQ_RJ_CNTNTSCRTY_R_MSG), "script-src https://*.rnengage.com http://*.rnengage.com https://my-site.custhelp.com http://my-site.custhelp.com https://my-site.widget.custhelp.com http://my-site.widget.custhelp.com *.google-analytics.com 'unsafe-inline' 'unsafe-eval' https://*.akamaihd.net http://*.akamaihd.net; style-src * 'unsafe-inline'; connect-src https://my-site.custhelp.com http://my-site.custhelp.com https://*.akamaihd.net http://*.akamaihd.net;")

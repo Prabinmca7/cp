@@ -1,0 +1,36 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserModActive
+  Subject: Question with active admin
+  Body: Test question body
+  Attributes.ContentLocked: false
+  StatusWithType.Status.LookupName: Active
+  _ratings:
+    - fixture: RatingSocialQuestion
+      parameters:
+        CommunityQuestion: this.ID
+  _comments:
+    - fixture: CommentActiveLongUserActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentPendingModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentDeletedModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentWithRepliesUserArchive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentSuspendedModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentActiveUserArchive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentPendingUserActive
+      parameters:
+        CommunityQuestion: this.ID
+  BestCommunityQuestionAnswers:
+    - fixture: BestAnswerLongAuthor

@@ -1,0 +1,5 @@
+package: Extended AnswerFeedback
+folder: feedback
+additionalFiles:
+  models: CustomIncidentModel.php
+  images: ["preview/source custom attribute.png", "preview/type custom attribute.png", "preview/menu custom object.png"]

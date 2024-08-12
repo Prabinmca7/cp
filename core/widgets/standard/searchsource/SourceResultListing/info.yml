@@ -1,0 +1,84 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  per_page:
+    name: rn:msg:ITEMS_PER_PAGE_LBL
+    type: INT
+    description: rn:msg:INDICATES_HOW_MANY_RES_TO_DISP_PER_LBL
+    default: 10
+    min: 1
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  search_results_ajax:
+    name: rn:msg:SEARCH_RESULTS_AJAX_ENDPOINT_CMD
+    type: ajax
+    description: rn:msg:AJAX_ENDPOINT_TO_RETRIEVE_SRCH_RES_LBL
+    default: /ci/ajax/widget
+  link_truncate_size:
+    name: rn:msg:LINK_TRUNCATE_SIZE_LBL
+    type: INT
+    description: rn:msg:TRNCT_TRNCT_SSS_OR_BREAK_0_OP_TRUNCATIN_MSG
+    default: 0
+    min: 0
+  truncate_size:
+    name: rn:msg:WRAP_SIZE_LBL
+    type: INT
+    description: rn:msg:TRNCT_RPT_SL_TRNCT_SSS_KFSRCH_SCLSRCH_SR_MSG
+    default: 200
+    min: 1
+  highlight:
+    name: rn:msg:HIGHLIGHTING_LBL
+    type: BOOLEAN
+    description: rn:msg:HIGHLIGHTS_TXT_FLDS_SRCH_TERM_LBL
+    default: true
+  label_screen_reader_search_success_alert:
+    name: rn:msg:SCREEN_READER_SEARCH_SUCCESS_ALERT_LBL
+    type: STRING
+    description: rn:msg:MSG_ANNOUNCD_SCREEN_READER_USERS_MSG
+    default: rn:msg:YOUR_SEARCH_IS_COMPLETE_MSG
+  label_screen_reader_search_no_results_alert:
+    name: rn:msg:SCREEN_READER_SEARCH_RESULTS_ALERT_LBL
+    type: STRING
+    description: rn:msg:MSG_ANNOUNCED_SCREEN_READER_USERS_MSG
+    default: rn:msg:YOUR_SEARCH_RETURNED_NO_RESULTS_LBL
+  hide_when_no_results:
+    name: rn:msg:HIDE_WHEN_NO_RESULTS_CMD
+    type: BOOLEAN
+    description: rn:msg:HIDES_ENTIRE_WIDGET_CONTENT_CSS_RES_MSG
+  label_no_results:
+    name: rn:msg:NO_RESULTS_LABEL_LBL
+    type: string
+    description: rn:msg:DISPLAYS_WHEN_NO_RESULTS_ARE_FOUND_MSG
+    default: rn:msg:NO_RESULTS_FOUND_MSG
+  label_more_link:
+    name: rn:msg:MORE_LINK_LABEL_LBL
+    type: string
+    description: rn:msg:IF_MORE_LINKURL_IS_SPEC_THIS_LABEL_MSG
+    default: rn:msg:SHOW_MORE_LBL
+  more_link_url:
+    name: rn:msg:MORE_LINK_URL_LBL
+    type: string
+    description: rn:msg:IF_SPEC_A_LINK_THAT_DIRECTS_USERS_MSG
+    default: /app/answers/list
+  label_heading:
+    name: rn:msg:HEADING_LABEL_LBL
+    type: string
+    description: rn:msg:IF_SPEC_A_HEADING_IS_RENDERED_ABOVE_MSG
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:DETERMINES_THE_NEW_PG_TARG_NOTE_MSG
+    default: _self
+    type: string
+info:
+  category:
+    - Source Search
+  description: rn:msg:SUBJ_BRIEF_RPT_RPT_SUMMRYRSLTLSTNG_NSTD_MSG

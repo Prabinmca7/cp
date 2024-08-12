@@ -1,0 +1,31 @@
+<ul class="rn_SocialList">
+    <li>
+        <% if (attrs.label_social_results_heading) { %>
+        <a class="rn_Link rn_Heading" href="javascript:void(0);"><%= attrs.label_social_results_heading %></a>
+        <% } %>
+        <ul class="rn_Links">
+            <% for (var i = 0, result, className = ''; i < data.length; i++) { %>
+            <%  result = data[i];
+                if (i === attrs.maximum_social_results) { className = 'rn_Hidden'; } %>
+            <li class="<%= className %>">
+                <span class="rn_PostAuthor"><img src="<%= result.createdByAvatar %>" alt=""/></span>
+                <span class="rn_PostTitle"><a href="<%= result.webUrl + ((attrs.social_post_link_base_url) ? '' : ssoToken ) %>"><%= result.name %></a></span>
+                <span class="rn_PostSnippet"><%= result.preview %></span>
+                <span class="rn_PostAuthorName">
+                    <% if (authorLink) { %>
+                    <%= link_to(result.createdByName, authorLink + '/people/' + result.createdByHash) %>
+                    <% } else { %>
+                        <%= result.createdByName %>                        
+                    <% } %>
+                </span>
+                <span class="rn_PostDate"><%= result.lastActivity %></span>
+            </li>
+            <% } %>
+        </ul>
+        <% if (attrs.label_more_social_results && i > attrs.maximum_social_results) { %>
+        <% var moreResults = i - attrs.maximum_social_results,
+               moreResultsLabel = (moreResults === 1) ? attrs.label_single_social_result : attrs.label_more_social_results; %>
+        <a href="javascript:void(0);" class="rn_More"><%= sprintf(moreResultsLabel, moreResults) %> <span class="rn_ScreenReaderOnly"><%= message.expand %></span></a>
+        <% } %>
+    </li>
+</ul>

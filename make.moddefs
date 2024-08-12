@@ -1,0 +1,5 @@
+#
+# Module specific defines for script compiling
+#
+MODULE := cp
+HEADERS += $(MODULE)/mod_info.m4 rnwintf.m4 rnwintf_generated.m4 config/rnl.m4 htdig.m4 msgbase/rnl.m4 config/ma.m4 views/view_defines.m4

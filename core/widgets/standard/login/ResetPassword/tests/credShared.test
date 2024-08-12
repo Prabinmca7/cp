@@ -1,0 +1,6 @@
+input: <rn:widget path='standard/login/ResetPassword'/><? /* cred: 0/1577836800/login/stuff, 1577836800 => Wed, 01 Jan 2020 00:00:00 GMT */ ?>
+redirecttohttps: true
+removecontent: true
+urlparameters: /cred/aUZP26g6nrU7HuWqX~8ejUAfwY026HmAs3ee4GpmJrg~0g0CgkgLVu_XPVpAvdwfug2o_wctIxnHk!
+validate: false
+output: <br/>The link you used to access this page has expired.<br/>To request another password reset message, please visit <a href='/app/utils/account_assistance'>Account Assistance</a>.

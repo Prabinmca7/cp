@@ -1,0 +1,19 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_holiday:
+    name: rn:msg:HOLIDAY_LABEL_LBL
+    description: rn:msg:MSG_DISP_VIEWS_CHAT_HRS_HOLIDAY_MSG
+    default: rn:msg:IT_IS_CURRENTLY_A_HOLIDAY_MSG
+    type: STRING
+  label_chat_hours:
+    name: rn:msg:CHAT_HOURS_LABEL_LBL
+    description: rn:msg:MESSAGE_DISPLAY_CHAT_HOUR_LISTING_LBL
+    default: rn:msg:CHAT_HOURS_ARE_LISTED_BELOW_MSG
+    type: STRING
+info:
+  category:
+    - Chat
+  description: rn:msg:DISP_AVAIL_CHAT_HOURS_INTERFACE_LBL

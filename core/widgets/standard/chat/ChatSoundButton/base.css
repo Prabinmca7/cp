@@ -1,0 +1,9 @@
+.rn_ChatSoundButton img {
+    vertical-align: middle;
+}
+
+.rn_ChatSoundButton .rn_FlashContainer {
+    position: absolute;
+    top: -500px;
+    left: -500px;
+}

@@ -1,0 +1,109 @@
+input: <rn:widget path="standard/reports/BasicMultiline" report_id="101445" truncate_size="20" max_wordbreak_trunc="7" hide_when_no_results="true" highlight="false" hide_empty_columns="true" per_page="10" hide_empty_columns="false" />
+contact: slatest
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+output:
+<div class="rn_BasicMultiline rn_Multiline">
+            <ul>
+                    <li>
+                <span>James</span><br/>
+                                <span>Walker</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MD</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>21401</span><br/>
+                                                </li>
+                    <li>
+                <span>Elizabeth</span><br/>
+                                <span>Jergan</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Brandon</span><br/>
+                                <span>Tenjour</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Skylar</span><br/>
+                                <span>Melovia</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Mathew</span><br/>
+                                <span>Johnson</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Sean</span><br/>
+                                <span>Emerson</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Kari</span><br/>
+                                <span>Brooke</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Thomas</span><br/>
+                                <span>Jasperson</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Melissa</span><br/>
+                                <span>Berg</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Janessa</span><br/>
+                                <span>Welter</span><br/>
+                                                                                                            <span>Street: </span>
+                    <span></span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                </ul>
+    </div>

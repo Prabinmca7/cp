@@ -1,0 +1,10 @@
+<% if (label) { %>
+    <rn:block id="preLabel"/>
+    <%= label %>
+    <% if (required) { %>
+        <rn:block id="preRequired"/>
+            <%= getRequiredLabel() %>
+        <rn:block id="postRequired"/>
+    <% } %>
+    <rn:block id="postLabel"/>
+<% } %>

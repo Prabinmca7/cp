@@ -1,0 +1,132 @@
+@import 'widget-includes';
+
+.rn_RecentlyAnsweredQuestions {
+    @include outer-container;
+
+    @mixin bubble ($background) {
+        border-radius: 6px;
+        padding: 10px;
+        background: $background;
+    }
+
+    .rn_Author {
+        @include span-columns(1);
+
+        @include media($rn-medium) {
+            @include span-columns(2);
+        }
+    }
+
+    .rn_RecentlyAnsweredQuestionsItem {
+        @include bubble(lighten($light-gray, 10));
+        @include span-columns(12);
+        @include small-full-width;
+
+        border: 1px solid $base-border-color;
+        margin-bottom: 1em;
+    }
+
+    .rn_RecentlyAnsweredQuestionsItem:first-child {
+        margin-top: 0;
+    }
+
+    .rn_QuestionInfo {
+        @include clearfix;
+
+        margin-bottom: 1em;
+
+        .rn_QuestionSubject {
+            @include span-columns(11);
+
+            @include media($rn-medium) {
+                @include span-columns(10);
+            }
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        .rn_AvatarLink {
+            visibility: hidden;
+
+            @include icon($fa-var-question-circle) {
+                visibility: visible;
+                font-size: 1.6em;
+                color: $base-font-color;
+            }
+        }
+    }
+
+    .rn_AnswerInfo {
+        @include shift(1);
+        @include span-columns(11);
+        @include row;
+        margin-top: 10px;
+
+        .rn_AnswerContent {
+            @include shift(1);
+            @include span-columns(11);
+
+            @include media($rn-medium) {
+                @include span-columns(10);
+            }
+
+            $background: #EFEFEF;
+            $border: $light-gray;
+
+            @include bubble($background);
+            border: 1px solid $border;
+            box-shadow: 0 1px 2px rgba(20, 20, 20, .1);
+            color: #222;
+            padding-bottom: 1em;
+            position: relative;
+
+            @include caret(left) {
+                font-size: 1.5em;
+                position: absolute;
+                left: -8px;
+                top: 10px;
+                color: $background;
+                z-index: 1;
+            }
+
+            @include caret(left, after) {
+                font-size: 1.6em;
+                position: absolute;
+                left: -15px;
+                top: 10px;
+                color: $border;
+            }
+
+            .rn_AnswerText {
+                word-wrap: break-word;
+            }
+
+            .rn_BestAnswerLabel {
+                font-weight: bold;
+            }
+
+            .rn_AnswerMoreLink {
+                display: block;
+                text-align: right;
+                color: darken($base-link-color, 10);
+
+                @include icon($more-icon, after) {
+                    font-size: smaller;
+                    margin-left: 0;
+                };
+            }
+        }
+    }
+
+    .rn_ContentLocked {
+        @include icon($fa-var-lock, after);
+    }
+}
+
+.rn_HighContrastMode .rn_RecentlyAnsweredQuestions .rn_AnswerContent {
+    &:before, &:after {
+        content: none;
+    }
+}

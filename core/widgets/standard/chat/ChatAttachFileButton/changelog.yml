@@ -1,0 +1,240 @@
+1.11.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.10.1:
+  release: "23.11"
+  entries:
+  - account: praveen.puvvada@oracle.com
+    category: Bug Fix
+    changelogID: 797
+    date: 10/27/2023
+    description: Minor Bump in CP attachment widgets for honouring the valid\_file\_extensions
+      config verb
+    details:
+    - The CP file attachment widgets were enhanced to honor the file extensions configured
+      in the "VALID\_FILE\_EXTENSIONS" configuration setting. All allowed file extensions
+      configured in the siteConfig JSON file must be copied into the "VALID\_FILE\_EXTENSIONS"
+      configuration setting. The siteConfig JSON file allowed file extension values
+      are not honored by the new CP framework version. This enhancement streamlines
+      allowed file extension configuration.
+    - The default valid file extensions list remains the same "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    level: minor
+    refno: 230825-000040
+    sortPosition: Middle
+1.9.1:
+  release: "22.11"
+  entries:
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 776
+    date: 09/01/2022
+    description: Added default list of valid file extension types
+    details:
+    - To improve security, moved FileAttachmentUpload widget attribute valid_file_extensions
+      to /customer/development/config/siteConfig.json as CP.ValidFileExtensions.
+    - Default valid file extensions are "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    - 'If the CP.ValidFileExtensions configuration settings is not defined in your
+      siteConfig.json file, the default sets listed above will be used.To allow a
+      restricted set of file types only to be uploaded, define the configuration settings
+      with the desired extensions in your siteConfig.json file.For example, if we
+      want to allow only "png,jpg,txt,gif,pdf,doc,xlsx,xls" then define this in the
+      siteConfig.json "CP.ValidFileExtensions" : "png,jpg,txt,gif,pdf,doc,xlsx,xls"'
+    level: minor
+    refno: 210908-000095
+    sortPosition: Middle
+1.8.1:
+  release: "21.5"
+  entries:
+  - account: steven.cottrell@oracle.com
+    category: Bug Fix
+    changelogID: 770
+    date: 04/19/2021
+    description: Added default list of valid file extensions
+    details:
+    - File upload widgets now ship with a default list of valid file extensions to
+      improve out-of-the-box security.  The default list is "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls".  In
+      order to allow file extensions other than these to be uploaded, set the valid_file_extensions
+      widget attribute to the desired list of valid extensions.
+    level: minor
+    refno: 210129-000086
+    sortPosition: Middle
+1.7.2:
+  release: "19.2"
+  entries:
+  - account: b.bo.wang@oracle.com
+    category: Bug Fix
+    changelogID: 713
+    date: 12/04/2018
+    description: Fix ChatAttachFileButton [x] button _resetDialog error
+    details:
+    - Fix its dialog [x] button click error.
+    level: nano
+    refno: 181203-000028
+    sortPosition: Middle
+1.7.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 694
+    date: 03/27/2018
+    description: Parent widget FileAttachmentUpload was minor bumped
+    details:
+    - In widget FileAttachmentUpload, added the form token as a salt to the local
+      name (or tmp\_name) of the file to be uploaded and validate it in form submit.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+1.6.2:
+  release: "18.2"
+  entries:
+  - account: ramanpreet.dhunna@oracle.com
+    category: Bug Fix
+    changelogID: 686
+    date: 12/11/2017
+    description: Removed unwanted thumbnail attributes
+    details:
+    - Removed the attributes display\_thumbnail and max\_thumbnail\_height from the
+      info.yml file as they were never inherited from its parent widget (FileAttachmentUpload).
+    level: nano
+    refno: 171114-000121
+    sortPosition: Middle
+1.6.1:
+  release: "17.8"
+  entries:
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 672
+    date: 06/29/2017
+    description: Parent widget FileAttachmentUpload was minor bumped
+    level: minor
+    refno: 170606-000184
+    sortPosition: Middle
+1.5.3:
+  release: "17.5"
+  entries:
+  - account: matthew
+    category: Bug Fix
+    changelogID: 628
+    date: 02/08/2017
+    description: Pass valid file extension constraints to FAttach upload controller
+      for validation
+    level: nano
+    refno: 161101-000188
+    sortPosition: Middle
+1.5.2:
+  release: "17.2"
+  entries:
+  - account: rene.ouendag
+    category: Bug Fix
+    changelogID: 621
+    date: 01/04/2017
+    description: Disable upload button when an upload is already in progress
+    details:
+    - When an upload is in progress, the 'Choose File' button will be disabled.
+    - In addition a message will be shown to notify the user that an upload is in
+      progress. This message can be overridden when desired.
+    level: nano
+    refno: 161215-000409
+    sortPosition: Middle
+1.5.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 569
+    date: 02/22/2017
+    description: Minor bump per updates to 'extends' dependency to include latest
+      widget versions.
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.4.2:
+  release: "16.5"
+  entries:
+  - account: rene.ouendag
+    category: Bug Fix
+    changelogID: 450
+    date: 12/10/2015
+    description: Override default error handler by creating an empty failureHandler
+      in case of timeouts (that cause empty responses to be parsed by JSON parser)
+    level: nano
+    refno: 140930-000053
+    sortPosition: Middle
+1.4.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 303
+    date: 05/11/2015
+    description: Forced minor bump due to parent FileAttachmentUpload changes
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.3.1:
+  release: "15.2"
+  entries:
+  - account: pkolpin
+    category: Bug Fix
+    changelogID: 278
+    date: 11/13/2014
+    description: Corrected behavior when label_input is empty
+    details:
+    - If the label\_input attribute is empty, the required asterisk will also not
+      display. The empty value will be output since some widgets, notably the ProductCategoryInput
+      widget, expect the input label to be displayed and causes a JavaScript error
+      when it cannot be found.  While providing a useful label\_input value is necessary
+      for providing good accessibility to screen readers, rather than forcing the
+      label\_input attribute to be required, this change instead causes the empty
+      element to be output.  This small change in the view of the widget requires
+      the minor bump of the widget.
+    level: minor
+    refno: 141010-000016
+    sortPosition: Middle
+1.1.2:
+  release: "13.11"
+  entries:
+  - account: jlindh
+    category: Bug Fix
+    changelogID: 184
+    date: 10/23/2013
+    description: File upload error message is now centered on the UI
+    level: nano
+    refno: 131021-000091
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: jlindh
+    category: API Change
+    changelogID: 94
+    date: 04/29/2013
+    description: Added _sendUploadRequest function which may be overridden.
+    level: minor
+    refno: 130403-000060
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

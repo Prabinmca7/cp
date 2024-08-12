@@ -1,0 +1,131 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [panel]
+attributes:
+  object_id:
+    name: rn:msg:SOCIAL_OBJECT_ID_LBL
+    type: INT
+    description: rn:msg:ID_QUESTION_OR_COMMENT_BEING_MODERATED_MSG
+    required: true
+  label_on_success_banner:
+    name: rn:msg:SUCCESS_BANNER_LABEL_LBL
+    description: rn:msg:MODERATOR_ACTION_PERFORMED_SUCCESSFULLY_MSG
+    default: rn:msg:REQUESTED_ACTION_HAS_BEEN_PERFORMED_MSG
+    type: STRING
+  label_on_failure_banner:
+    name: rn:msg:FAILURE_BANNER_LABEL_LBL
+    description: rn:msg:THERE_ERROR_PERFORMING_MODERATOR_ACTION_MSG
+    default: rn:msg:THERE_WAS_A_PROBLEM_WITH_YOUR_REQUEST_MSG
+    type: STRING
+  object_type:
+    name: rn:msg:OBJECT_TYPE_LC_LBL
+    type: OPTION
+    options:
+    - CommunityComment
+    - CommunityQuestion
+    - CommunityUser
+    required: true
+    description: rn:msg:TYPE_CONTENT_MODERATOR_ACTION_WITH_MSG
+  submit_moderator_action_ajax:
+    name: rn:msg:SUBMIT_MODERATOR_ACTION_AJAX_ENDPOINT_LBL
+    type: AJAX
+    description: rn:msg:AJAX_ENDPOINT_TO_SAVE_MODERATOR_ACTION_MSG
+    default: /ci/ajax/widget
+  label_action_menu:
+    name: rn:msg:MODERATION_ACTION_MENU_LABEL_LBL
+    description: rn:msg:LABEL_MODERATOR_ACTIONS_BUTTON_LINK_MSG
+    default: rn:msg:MODERATE_LBL
+    required: true
+    type: STRING
+  label_action_suspend_question:
+    name: rn:msg:SUSPEND_ACTION_LABEL_FOR_QUESTION_LBL
+    description: rn:msg:LABEL_FOR_SUSPEND_ACTION_ON_QUESTION_MSG
+    default: rn:msg:SUSPEND_QUESTION_LBL
+    type: STRING
+  label_action_approve_restore_question:
+    name: rn:msg:APPROVERESTORE_ACTION_LABEL_QUESTION_LBL
+    description: rn:msg:LABEL_APPROVERESTORE_ACTI_QUESTION_MSG
+    default: rn:msg:APPROVERESTORE_QUESTION_LBL
+    type: STRING
+  label_action_suspend_comment:
+    name: rn:msg:SUSPEND_ACTION_LABEL_FOR_COMMENT_LBL
+    description: rn:msg:LABEL_FOR_SUSPEND_ACTION_ON_COMMENT_MSG
+    default: rn:msg:SUSPEND_COMMENT_LBL
+    type: STRING
+  label_action_approve_restore_comment:
+    name: rn:msg:APPROVERESTORE_ACTION_LABEL_COMMENT_LBL
+    description: rn:msg:LABEL_APPROVERESTORE_ACTION_ON_COMMENT_MSG
+    default: rn:msg:APPROVERESTORE_COMMENT_LBL
+    type: STRING
+  label_action_suspend_user:
+    name: rn:msg:SUSPEND_ACTION_LABEL_FOR_USER_LBL
+    description: rn:msg:LABEL_SUSPEND_ACTION_ON_CONTENT_AUTHOR_MSG
+    default: rn:msg:SUSPEND_USER_LBL
+    type: STRING
+  label_action_approve_restore_user:
+    name: rn:msg:APPROVERESTORE_ACTION_LABEL_FOR_USER_LBL
+    description: rn:msg:APPROVERESTORE_ACTI_CONTENT_AUTHOR_MSG
+    default: rn:msg:APPROVERESTORE_USER_LBL
+    type: STRING
+  label_action_archive_user:
+    name: rn:msg:ARCHIVE_ACTION_LABEL_FOR_USER_LBL
+    description: rn:msg:LABEL_FOR_ARCHIVE_ACTION_ON_USER_MSG
+    default: rn:msg:ARCHIVE_USER_LBL
+    type: STRING
+  label_action_delete_user:
+    name: rn:msg:DELETE_ACTION_LABEL_FOR_USER_LBL
+    description: rn:msg:LABEL_FOR_DELETE_ACTION_ON_USER_MSG
+    default: rn:msg:DELETE_USER_LBL
+    type: STRING
+  label_user_delete_confirm:
+    name: rn:msg:USER_DELETE_CONFIRM_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_CONFIRM_DELETION_OF_USER_MSG
+    default: rn:msg:ARE_YOU_SURE_YOU_WISH_DELETE_THIS_USER_LBL
+    type: STRING
+  label_user_delete_confirm_title:
+    name: rn:msg:USER_DELETE_CONFIRM_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISP_DIALOG_TITLE_DELETION_MSG
+    default: rn:msg:CONFIRM_DELETE_UC_LBL
+    type: STRING
+  label_action_lock_question:
+    name: rn:msg:LOCK_ACTION_LABEL_FOR_QUESTION_LBL
+    description: rn:msg:LABEL_FOR_LOCK_ACTION_ON_THE_QUESTION_MSG
+    default: rn:msg:LOCK_QUESTION_LBL
+    type: STRING
+  label_action_unlock_question:
+    name: rn:msg:UNLOCK_ACTION_LABEL_FOR_QUESTION_LBL
+    description: rn:msg:LABEL_FOR_UNLOCK_ACTION_ON_QUESTION_MSG
+    default: rn:msg:UNLOCK_QUESTION_LBL
+    type: STRING
+  label_user_not_found_error:
+    name: rn:msg:USER_NOT_FOUND_LABEL_LBL
+    description: rn:msg:MESSAGE_DISPLAY_WHEN_USER_DOES_EXIST_MSG
+    default: rn:msg:USER_DOES_NOT_EXIST_MSG
+    type: STRING
+  label_invalid_moderator_action_error:
+    name: rn:msg:INVALID_ACTION_LABEL_LBL
+    description: rn:msg:MESSAGE_REQUESTED_ACTION_SUPPORTED_MSG
+    default: rn:msg:YOUR_REQUESTED_ACTION_IS_NOT_SUPPORTED_MSG
+    type: STRING
+  label_menu_accessibility:
+    name: rn:msg:MENU_LABEL_FOR_ACCESSIBILITY_LBL
+    type: STRING
+    description: rn:msg:SCREENREADER_MODERATE_DROPDOWN_LINK_LBL
+    default: rn:msg:PRES_ENT_OPEN_CLOSE_MENU_TAB_NAVIGATE_MSG
+  refresh_page_on_moderator_action:
+    name: rn:msg:REFRESH_PAGE_ON_MODERATOR_ACTION_LBL
+    description: rn:msg:REFRESH_REQ_ACTION_OF_SUCCESSFULLY_MSG
+    default: false
+    type: BOOLEAN
+  deleted_user_redirect_url:
+    name: rn:msg:DELETED_USER_REDIRECT_URL_LBL
+    description: rn:msg:URL_REDIRECT_AFTER_HAS_BEEN_DELETED_MSG
+    default: /app/social/moderate/overview
+    type: STRING
+info:
+  category:
+    - Community
+    - Moderation
+  description: rn:msg:TAB_OP_INLINE_MODERATI_S_CONTENT_MSG

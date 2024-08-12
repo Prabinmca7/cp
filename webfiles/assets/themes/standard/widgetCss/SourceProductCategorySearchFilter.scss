@@ -1,0 +1,36 @@
+@import 'widget-includes';
+@import '../components/search';
+
+.rn_SourceProductCategorySearchFilter {
+    @include span-columns(4);
+
+    text-shadow: none;
+
+    @include medium-search-width();
+    @include small-search-width();
+
+    .rn_SelectionButtons {
+        background: $light-gray;
+        border-top: 1px solid $medium-gray;
+
+        button {
+            font-size: .95em;
+            margin: 7px 0 7px 5px;
+            padding: 5px;
+            transition: none;
+        }
+    }
+
+    .rn_Label {
+        display: block;
+        font-weight: normal;
+        margin-bottom: 2px;
+        width: 100%;
+    }
+}
+
+.rn_Dialog .rn_ProductCategoryLinks {
+    ol {
+        padding-left: 1em;
+    }
+}

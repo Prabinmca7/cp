@@ -1,0 +1,45 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LBL
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: rn:def:CP_NOV09_ANSWERS_DEFAULT
+    type: int
+    min: 1
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    description: rn:msg:URL_CLICK_PROD_CAT_LEAVE_BLANK_STAY_MSG
+    type: string
+  label_title:
+    name: rn:msg:LABEL_LBL
+    description: rn:msg:LABEL_TO_DISPLAY_ABOVE_WIDGET_LBL
+    default: rn:msg:NARROW_RESULTS_BY_LBL
+    type: string
+  add_params_to_url:
+    name: rn:msg:ADD_PRMS_TO_URL_CMD
+    description: rn:msg:CMMA_SEP_L_URL_PARMS_LINKS_IGNORE_MSG
+    type: string
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Knowledge Foundation
+  description: rn:msg:T_SGG_SRCH_CFG_SRCHSGGSTNSDSPLY_CFG_CFG_MSG
+  urlParameters:
+    kw:
+      name: rn:msg:KEYWORD_LBL
+      description: rn:msg:KEYWORD_SEARCH_TEXT_LBL
+      example: kw/search
+    p:
+      name: rn:msg:PRODUCT_LBL
+      description: rn:msg:CMMA_SPARATED_IDS_COMMAS_DENOTING_MSG
+      example: p/1,2,3
+    c:
+      name: rn:msg:CATEGORY_LBL
+      description: rn:msg:COMMA_SEPARATED_IDS_COMMAS_DENOTING_MSG
+      example: c/1

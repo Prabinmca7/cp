@@ -1,0 +1,28 @@
+input: <rn:widget path='standard/reports/Grid' report_id="15156" static_filter="created_by=101"/>
+contact: modactive1
+filter: @(?:>.*<\/a|\/qid\/\d+|[0-9]{2}/[0-9]{2}/[0-9]{4})@
+removecontent: true
+output:
+<div id="rn_Grid_0" class="rn_Grid">
+    <div id="rn_Grid_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Grid_0_Loading"></div>
+    <div id="rn_Grid_0_Content" class="yui3-skin-sam">
+        <table id="rn_Grid_0_Grid" class="yui3-datatable-table" role="grid">
+        <caption></caption>
+                    <thead class="yui3-datatable-columns">
+                <tr>
+                                                                                                                 <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_1" style='width:"360%"'>Title<span class="rn_ScreenReaderOnly">sortable</span></th>
+                                                                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_2" style='width:"129%"'>Discussion Question Creation Date<span class="rn_ScreenReaderOnly">sortable</span></th>
+                                                                                        </tr>
+            </thead>
+                            <tbody class="yui3-datatable-data">
+                            <tr role="row" class="yui3-datatable-even">
+                                                                        <td role="gridcell" class="yui3-datatable-cell">
+                            <a href='/app/social/questions/detail'>                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+                                                </td>
+                                                    </tr>
+                        </tbody>
+                </table>
+    </div>
+</div>

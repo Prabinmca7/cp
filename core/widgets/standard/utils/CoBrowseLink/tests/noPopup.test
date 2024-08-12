@@ -1,0 +1,12 @@
+input: <rn:widget path='standard/utils/CoBrowseLink' popup_window='false'/>
+removecontent: true
+validate: false
+output:
+<div id="rn_CoBrowseLink_0" class="rn_CoBrowseLink">
+    <a id="rn_CoBrowseLink_0_Link" title="Start a screen sharing session with an agent"
+        href="new_client.asp?CustomUI=RN&amp;logo=&amp;lang=en-US"
+                    target="_blank">
+                        <img id="rn_CoBrowseLink_0_Image" src="images/CoBrowseLink.png" alt="" />
+                <span>Co-browse</span>
+    </a>
+</div>

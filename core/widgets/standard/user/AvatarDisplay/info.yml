@@ -1,0 +1,28 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:SIMPLY_PUBLIC_PROFILE_PICTURE_USER_LBL
+  category:
+  - Community
+  urlParameters:
+    user:
+      name: rn:msg:USER_ID_LBL
+      description: rn:msg:ID_OF_USER_TO_DISPLAY_AVATAR_FOR_LBL
+      example: user/10
+attributes:
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - small
+    - medium
+    - large
+    - xlarge
+    default: xlarge
+  user_id:
+    name: rn:msg:USER_ID_LBL
+    description: rn:msg:ID_OF_USER_TO_DISPLAY_AVATAR_FOR_LBL
+    type: INT

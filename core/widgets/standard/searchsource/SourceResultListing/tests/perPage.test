@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/searchsource/SourceResultListing" source_id="KFSearch" per_page="33"/>
+jstestfile: perPage.test.js
+removecontent: true
+output:
+<div id="rn_SourceResultListing_0" class="rn_SourceResultListing">
+    <div id="rn_SourceResultListing_0_Alert" aria-live="polite" class="rn_ScreenReaderOnly"></div>
+        <div id="rn_SourceResultListing_0_Content" class="rn_Content">
+            <span class="rn_NoResults">No results found.</span>
+    </div>
+    <div class="rn_AdditionalResults">
+            </div>
+            <script type="text/json" id="rn_SourceResultListing_0_HistoryData">{"filters":{"query":{"value":null,"key":"kw","type":"query"},"sort":{"value":null,"key":"sort","type":"sort"},"direction":{"value":null,"key":"dir","type":"direction"},"page":{"value":1,"key":"page","type":"page"},"product":{"value":null,"key":"p","type":"product"},"category":{"value":null,"key":"c","type":"category"},"offset":{"value":0,"key":null,"type":"offset"},"limit":{"value":33}},"offset":0,"query":"","results":[],"size":0,"total":0}</script>
+    </div>

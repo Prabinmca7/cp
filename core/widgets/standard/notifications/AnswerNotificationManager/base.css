@@ -1,0 +1,22 @@
+.rn_AnswerNotificationManager {
+    overflow:hidden;
+}
+.rn_AnswerNotificationManager .rn_Notification {
+    overflow:auto;
+    /**IE6/7*/
+    *overflow:none;
+    padding:8px 0;
+    width:80%;
+}
+.rn_AnswerNotificationManager .rn_Notification_Actions {
+    float:right;
+    width:34%;
+}
+.rn_AnswerNotificationManager .rn_Notification_Info {
+    float:left;
+    overflow:hidden;
+    width:62%;
+}
+.rn_AnswerNotificationManager .rn_Notification_Info span {
+    display:block;
+}

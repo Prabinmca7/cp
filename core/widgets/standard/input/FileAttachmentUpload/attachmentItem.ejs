@@ -1,0 +1,15 @@
+<li id="<%= id %>">
+    <rn:block id="attachmentItemTop"/>
+    <% if (displayThumbnail) { %>
+        <rn:block id="preThumbnail"/>
+        <span class="rn_Thumbnail"></span>
+        <rn:block id="postThumbnail"/>
+    <% } %>
+    <rn:block id="preFileName"/>
+    <%= escapeHtml(name) %>
+    <rn:block id="postFileName"/>
+    <rn:block id="preRemoveLink"/>
+    <a href='javascript:void(0)' id='<%= id %>_Remove' class='rn_fileRemove' data-fileid='<%= fileId %>'><%= attrs.label_remove %><span class='rn_ScreenReaderOnly'><%= escapeHtml(name) %></span></a>
+    <rn:block id="postRemoveLink"/>
+    <rn:block id="attachmentItemBottom"/>
+</li>

@@ -1,0 +1,27 @@
+@import 'widget-includes';
+
+.rn_SummaryResultListing {
+    li {
+        clear: none;
+        margin: 0;
+        padding: 0 0 0 10px;
+        overflow: auto;
+
+        &.rn_SocialSearch {
+            @include list-socialquestion-icon(1.6em);
+        }
+
+        &.rn_KFSearch {
+            @include list-kbanswer-icon(1.6em);
+        }
+    }
+
+    .rn_AdditionalResults {
+        text-align: left;
+        font-size: .8em;
+    }
+
+    .rn_NoResults {
+        font-style: italic;
+    }
+}

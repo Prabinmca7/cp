@@ -1,0 +1,17 @@
+input: <rn:widget path="moderation/ModerationInlineAction" label_action_suspend_user="Suspend Author" label_action_approve_restore_user="Approve/Restore Author" object_type="CommunityQuestion" object_id="13"/>
+contact: slatest
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_ModerationInlineAction_0" class="rn_ModerationInlineAction">
+    <div role="status" aria-live="assertive" class="rn_Loading rn_Hidden" id="rn_ModerationInlineAction_0_LoadingIcon">
+        <span class="rn_ScreenReaderOnly">
+            Loading        </span>
+    </div>
+    <div class="rn_ActionMenu">
+        <a href="javascript:void(0);" role="button" id="rn_ModerationInlineAction_0_Button" aria-label="Press enter to open or close the Moderate menu. Use Tab to navigate" title="Moderate">
+            <span>
+                Moderate            </span>
+        </a>
+    </div>
+</div>

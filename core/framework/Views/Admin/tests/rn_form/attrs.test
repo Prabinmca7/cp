@@ -1,0 +1,9 @@
+input: <rn:form action="/app/#rn:config:CP_HOME_URL#/p/#rn:url_param_value:p#" post_handler="postRequest/sendForm" name="special"></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+replace: name='validationToken'$1value=''
+urlparameters: /p/1
+output:
+<form method='post' action='/app/home/p/1' name='special'><div><input type='hidden' name='validationToken' value=''/>
+                <input type='hidden' name='constraints' value='W10='/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

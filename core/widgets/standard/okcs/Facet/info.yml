@@ -1,0 +1,149 @@
+version: "1.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  max_sub_facet_size:
+    name: rn:msg:MAX_SUB_FACET_SIZE_LBL
+    type: INT
+    description: rn:msg:SUBFACETS_SEL_AESTHETIC_RES_RL_DSC_WDGT_MSG
+    default: 4
+    min: 1
+    max: 10
+  toggle_title:
+    name: rn:msg:TGGLE_TITLE_LBL
+    type: BOOLEAN
+    description: rn:msg:SETS_TGGLE_L_CNT_LLWS_TGGL_BY_CLCK_TTL_MSG
+    default: false
+  toggle_state:
+    name: rn:msg:TGGLE_STATE_LBL
+    type: OPTION
+    description: rn:msg:INITTOGGLE_STATE_WORKS_ONLY_IF_MSG
+    default: collapsed
+    options:
+    - expanded
+    - collapsed
+  expanded_css_class:
+    name: rn:msg:EXPANDED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_EXPANDED_MSG
+    default: rn_Expanded
+  collapsed_css_class:
+    name: rn:msg:COLLAPSED_CSS_CLASS_LBL
+    type: STRING
+    description: rn:msg:CSS_CLASS_TOGGLE_ELEMENT_COLLAPSED_MSG
+    default: rn_Collapsed
+  label_collapsed:
+    name: rn:msg:COLLAPSED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_PLACED_TOGGLE_ELEMENT_NOTIF_MSG
+    default: rn:msg:SECTION_CLOSED_CLICK_DOUBLE_TAP_LBL
+  label_expanded:
+    name: rn:msg:EXPANDED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LBEL_PLACED_TOGGLE_ELEMENT_NOTIF_MSG
+    default: rn:msg:SECT_OPENED_CLICK_DOUBLE_TAP_CLOSE_LBL
+  label_filter:
+    name: rn:msg:FLTR_TITLE_LBL
+    type: STRING
+    description: rn:msg:TITLE_FOR_FACET_WIDGET_LBL
+    default: rn:msg:FILTER_LBL
+  label_clear:
+    name: rn:msg:CLEAR_LNK_CMD
+    type: STRING
+    description: rn:msg:LABEL_FOR_CLEAR_LINK_LBL
+    default: rn:msg:CLEAR_CMD
+  label_more:
+    name: rn:msg:LBEL_FOR_MORE_LINK_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_LINK_THAT_DISP_WHEN_MORE_MSG
+    default: rn:msg:WAP_MORE_LBL
+  label_clear_screenreader:
+    name: rn:msg:CLEAR_LINK_DESC_CMD
+    type: STRING
+    description: rn:msg:MSG_ANNOUNCED_TO_SCREEN_CLEAR_MSG
+    default: rn:msg:UNSELECT_ALL_FILTERS_LBL
+  label_active_filter_screenreader:
+    name: rn:msg:ACT_FILTER_DESCRIPTION_LBL
+    type: STRING
+    description: rn:msg:MSG_TO_BE_ANNOUNCD_TO_SCREEN_MSG
+    default: rn:msg:ACTIVE_FILTER_CLICK_TO_UNSELECT_MSG
+  label_more_link_screenreader:
+    name: rn:msg:MORE_LINK_DESC_LBL
+    type: STRING
+    description: rn:msg:MSG_ANNOUNCED_SCREEN_MORE_MSG
+    default: rn:msg:SELECT_TO_SHOW_MORE_FILTERS_MSG
+  label_expand_icon:
+    name: rn:msg:EXPAND_LABEL_LBL
+    type: STRING
+    description: rn:msg:SCREEN_READR_LABEL_INSTRUCTION_FOR_LBL
+    default: rn:msg:COLLAPSE_CMD
+  label_collapse_icon:
+    name: rn:msg:COLLAPSE_LABEL_LBL
+    type: STRING
+    description: rn:msg:SCREEN_READER_LABEL_INSTRUCTION_FOR_LBL
+    default: rn:msg:EXPAND_CMD
+  label_no_categories:
+    name: rn:msg:NO_CATEGORIES_LABEL_LBL
+    description: rn:msg:FILTERTYPE_CAT_VIEWTYPE_EXPLORER_MSG
+    default: rn:msg:NO_CATEGORIES_AVAIL_MSG
+    type: STRING
+  label_no_products:
+    name: rn:msg:NO_PRODUCTS_AVAILABLE_LABEL_LBL
+    description: rn:msg:FILTERTYPE_PROD_VIEWTYPE_EXPLORER_MSG
+    default: rn:msg:NO_PRODUCTS_AVAIL_LBL
+    type: STRING
+  retain_facet_on_new_search:
+    name: rn:msg:RETAIN_FACET_ON_NEW_SEARCH_UC_LBL
+    type: BOOLEAN
+    description: rn:msg:WHEN_SET_TO_TRUE_THE_FACET_FROM_THE_MSG
+    default: false
+  document_id_reg_ex:
+    name: rn:msg:REGULAR_EXPRESSION_FOR_DOCUMENT_ID_LBL
+    type: STRING
+    description: rn:msg:T_AR_EXPR_DOC_EXCTLY_XPR_RS_RS_DC_MPTY_MSG
+  doc_id_navigation:
+    name: rn:msg:DOCUMENT_ID_NAVIGATION_FLAG_LBL
+    type: STRING
+    description: rn:msg:TH_SS_DC_DB_CCT_DC_DB_TT_NVGTD_DC_RN_TT_MSG
+    default: rn:msg:FLSE_LBL
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    type: STRING
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    options:
+    - KFSearch
+    - OKCSSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  top_facet_list:
+    name: rn:msg:LIST_FOR_THE_ORDER_OF_THE_FACETS_LBL
+    type: STRING
+    description: rn:msg:SQ_DSP_TT_PCT_CMM_DCTYPS_DC_TYPSCLLCTNS_C_MSG
+  results_per_page:
+    name: rn:msg:RESULTS_PER_PAGE_LBL
+    type: STRING
+    description: rn:msg:TH_NBL_PP_DD_LLWS_PP_DD_CMMSPRTD_VLS_102_MSG
+  enable_multi_select:
+    name: rn:msg:ENABLE_MULTI_SELECT_LBL
+    type: BOOLEAN
+    description: rn:msg:MLTSLCTN_CND_NTF_SNGL_SPCTS_PRD_CT_FTCHD_MSG
+    default: false
+  invoke_multiFacet_search_ajax:
+    name: rn:msg:AJAX_URL_FOR_CREATING_RECOMMENDATIONS_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_SUBMIT_RES_VIA_AJAX_REQUESTS_MSG
+    default: /ci/okcsAjaxRequest/invokeMultiFacetSearch
+  child_categories_to_display:
+    name: rn:msg:CHILD_CATEGORIES_TO_DISPLAY_LBL
+    type: INT
+    description: rn:msg:CHILD_CATEGORIES_DISPLAYED_MORE_CLICKED_LBL
+    default: 5
+  get_okcs_data_ajax:
+    name: rn:msg:AJAX_COMMAND_TO_GET_DET_OF_IM_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+info:
+  description: rn:msg:FACET_WIDGET_DISP_FLTRS_TO_LIMIT_MSG

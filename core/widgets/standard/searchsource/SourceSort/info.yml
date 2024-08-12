@@ -1,0 +1,70 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  column_order:
+    name: rn:msg:COLUMN_ORDER_LBL
+    type: MULTIOPTION
+    description: rn:msg:ORDER_OF_COLUMN_OPTIONS_IN_DROP_DOWN_LBL
+    options:
+    - 1
+    - 0
+    default:
+      - 1
+      - 0
+  label_column_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAY_COLUMN_DROPDOWN_ELEMENT_LBL
+    default: rn:msg:SORT_BY_UC_LBL
+  label_column_default:
+    name: rn:msg:DEFAULT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_USE_NONSELECTED_DROPDOWN_ITEM_LBL
+    required: true
+    default: --
+  column_label_list:
+    name: rn:msg:EUI_COLUMN_LABELS_LBL
+    type: STRING
+    description: rn:msg:COMMASEPARATED_LABELS_SORT_COLUMN_LBL
+    default: rn:php:sprintf("%s,%s", \RightNow\Utils\Config::getMessage(UPDATED_LBL), \RightNow\Utils\Config::getMessage(CREATED_LBL))
+  direction_order:
+    name: rn:msg:DIRECTION_ORDER_LBL
+    type: MULTIOPTION
+    description: rn:msg:ORDER_DIRECTION_OPTIONS_IN_DROP_DOWN_LBL
+    options:
+    - 1
+    - 0
+    default:
+      - 1
+      - 0
+  label_direction_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DIRECTION_DROPDOWN_ELEMENT_LBL
+    default: rn:msg:DIRECTION_LBL
+  label_direction_default:
+    name: rn:msg:DEFAULT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_USE_NONSELECTED_DROPDOWN_ITEM_LBL
+    required: true
+    default: --
+  direction_label_list:
+    name: rn:msg:DIRECTION_LABELS_LBL
+    type: STRING
+    description: rn:msg:COMMASEPARATED_LABELS_DIRECTION_LBL
+    default: rn:php:sprintf("%s,%s", \RightNow\Utils\Config::getMessage(DESCENDING_LBL), \RightNow\Utils\Config::getMessage(ASCENDING_LBL))
+info:
+  category:
+    - Source Search
+  description: rn:msg:SORTING_OPTIONS_REORDER_RESULTS_MSG

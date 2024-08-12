@@ -1,0 +1,24 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_button:
+    name: rn:msg:LABEL_LBL
+    description: rn:msg:LABEL_TO_DISPLAY_ON_BUTTON_LBL
+    default: rn:msg:REQUEST_EMAIL_RESPONSE_LBL
+    type: STRING
+  page_url:
+    name: rn:msg:PAGE_URL_LBL
+    description: rn:msg:PG_URL_OPENED_CLICKS_BTN_DEF_S_APP_MSG
+    default: /app/ask
+    type: STRING
+  label_tooltip:
+    name: rn:msg:TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_BTN_MSG
+    default: rn:php:sprintf(\RightNow\Utils\Config::getMessage(BROWSER_WINDOW_NAVIGATE_PCT_S_PAGE_LBL), \RightNow\Utils\Config::getMessage(ASK_QUESTION_LBL))
+    type: STRING
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISP_BTN_CHAT_REQ_CANCELED_MSG

@@ -1,0 +1,85 @@
+.pageMode{
+    padding:0 10px 14px;
+}
+.pageMode h3{
+    padding:0;
+}
+.pageMode h4{
+    color:#1A1F26;
+    margin-left:-4px;
+    padding-top:5px;
+}
+.pageMode em{
+    display:block;
+    font-style:normal;
+    font-weight:bold;
+}
+.pageMode section{
+    border-bottom:4px solid #B8CADA;
+    clear:both;
+    display:block;
+    overflow:visible;
+    padding:20px 10px;
+}
+.pageMode section h4{
+    font-weight:bold;
+}
+.pageMode section#submit{
+    background:#f3faff;
+    border-width:0 0 1px;
+}
+.pageMode label{
+    display:block;
+}
+.pageMode button{
+    font-size:1.175em;
+    padding:14px 20px;
+    *position:relative;
+}
+.pageMode button small{
+    float:right;
+    *position:absolute;
+    *right:10px;
+    *float:none;
+}
+.pageMode button,.pageMode .dropdown{
+    min-width:300px;
+}
+.pageMode #itsGoTime {
+    *min-width:auto;
+}
+.pageMode .dropdown{
+    /*@codingStandardsIgnoreStart*/
+    min-width /*\**/: 340px\9;
+    /*@codingStandardsIgnoreEnd*/
+}
+.pageMode .dropdown li{
+    z-index:12;
+}
+.pageMode .dropdown .selected a{
+    color:#fff;
+    background:#1188c1;
+}
+#enableAbuse, #userAgent{
+    height:20px;
+    vertical-align:bottom;
+    width:20px;
+}
+#enableAbuseLabel, #userAgentLabel{
+    display:inline;
+}
+#enableAbuseLabel.disabled{
+    color:#808080;
+}
+#userAgentHelper{
+    right:0;
+    top:20%;
+}
+#abuseDetectionTooltip{
+    right:0;
+    bottom:10%;
+}
+#abuseDetectionHelp {
+    text-decoration: none;
+    color: #000;
+}

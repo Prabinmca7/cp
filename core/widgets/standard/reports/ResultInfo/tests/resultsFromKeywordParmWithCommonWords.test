@@ -1,0 +1,16 @@
+input: <rn:widget path='standard/reports/ResultInfo'/>
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+urlparameters: /kw/address%20and%20the%20phones
+output:
+<div id="rn_ResultInfo_0" class="rn_ResultInfo">
+        <div id="rn_ResultInfo_0_Suggestion" class="rn_Suggestion rn_Hidden">
+        Other Suggested Searches            </div>
+        <div id="rn_ResultInfo_0_Spell" class="rn_Spell rn_Hidden">
+        Did you mean:            </div>
+        <div id="rn_ResultInfo_0_NoResults" class="rn_NoResults rn_Hidden">
+        No results found.        <br/><br/>
+        Suggestions:<ul><li>Make sure all words are spelled correctly</li><li>Use different words that mean the same thing</li></ul>    </div>
+            <div id="rn_ResultInfo_0_Results" class="rn_Results ">
+                                                                                                                                                                                                            Results <span>1</span> - <span>10</span> of <span>18</span> for <a href="/app/unitTest/rendering/widgets/standard/reports/ResultInfo/tests/resultsFromKeywordParmWithCommonWords/search/1/kw/address/search/1">address</a> <span class='rn_Strike' title='This word is very common and was excluded from the search.'>and</span> <span class='rn_Strike' title='This word is very common and was excluded from the search.'>the</span> <a href="/app/unitTest/rendering/widgets/standard/reports/ResultInfo/tests/resultsFromKeywordParmWithCommonWords/search/1/kw/phones/search/1">phones</a>         </div>
+    </div>

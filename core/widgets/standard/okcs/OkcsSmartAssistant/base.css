@@ -1,0 +1,38 @@
+.rn_OkcsSmartAssistant .rn_Solution,
+.rn_OkcsSmartAssistant .rn_Response {
+    max-height:300px;
+    overflow-y:auto;
+}
+.rn_OkcsSmartAssistant .rn_InlineAnswers{
+    overflow: hidden;
+}
+.rn_OkcsSmartAssistant .rn_InlineAnswerLink{
+    display: block;
+}
+.rn_OkcsSmartAssistant .rn_InlineAnswersExplorer{
+    width: 27%;
+    float: left;
+    margin-right: 2%;
+}
+.rn_OkcsSmartAssistant .rn_InlineAnswersExplorer li a{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rn_OkcsSmartAssistant .rn_ExpandedAnswerContent{
+    display: block;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.rn_OkcsSmartAssistant .rn_ExpandedAnswerContentExplorer{
+    width: 68%;
+    max-height: 550px;
+    display: block;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.rn_ButtonContainer{
+    text-align: right;
+    margin-bottom: 5px;
+}

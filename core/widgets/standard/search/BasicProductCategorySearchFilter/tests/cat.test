@@ -1,0 +1,42 @@
+input: <rn:widget path="search/BasicProductCategorySearchFilter" filter_type="categories"/>
+removecontent: true
+template: basic
+output:
+<div id="rn_BasicProductCategorySearchFilter_0" class="rn_BasicProductCategorySearchFilter">
+    <span class="rn_RefineLabel"><a href="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/cat">Select a category</a></span>
+                <ul>
+                        <li>
+                <a href="/app/answers/list">All Categories</a>
+            </li>
+                                <li>
+                <a href="/app/answers/list/c/161">Basics</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/c/153">Mobile Services</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/c/68">Account and Billing</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/c/158">Rollover Minutes</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/c/70">Mobile Broadband</a>
+                            </li>
+                    <li>
+                <a href="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/cat/c/71">Troubleshooting</a>
+                 &gt;             </li>
+                </ul>
+        <div class="rn_AdvancedSearchButtons">
+            <form class="rn_AdvancedSearchSubmit" method="get" action="/app/answers/list">
+            <div>
+                <input type="submit" value="Search" />
+            </div>
+        </form>
+            <form method="get" action="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/cat">
+            <div>
+                <input type="submit" value="Clear Product" />
+            </div>
+        </form>
+    </div>
+</div>

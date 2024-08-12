@@ -1,0 +1,72 @@
+input: <rn:widget path='standard/reports/Multiline' date_format="date_time"/>
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+output:
+<div id="rn_Multiline_0" class="rn_Multiline">
+    <div id="rn_Multiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Multiline_0_Loading"></div>
+    <div id="rn_Multiline_0_Content" class="rn_Content">
+                            <ol start="1">
+                            <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/52'>Enabling MMS on iPhone 3G and iPhone 3GS</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">AT&amp;T MMS requires iPhone OS 3.1 or later and a carrier-settings update. Use these steps to update your iPhone to the latest iPhone OS and carrier settings: Make sure that you have a working...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/54'>iPhone: Basic troubleshooting</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">If iPhone doesn't appear in iTunes or you can't sync iPhone The iPhone battery might need to be recharged. For information about charging iPhone, see "Charging the Battery" in the iPhone User's...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/55'>iPhone not recognized in iTunes for Windows</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Check the iPhone Display When you connect iPhone to your computer, the iPhone should display an image or message on the display. If you do not see any image, refer to this article &#160;to...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/56'>iPhone backups</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">About Syncing and Backups You can use iTunes to sync content on your computer (such as music, applications, podcasts, videos, ringtones, photos, notes, email account settings, contacts, calendars...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/57'>iPhone: Charging the battery</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">An icon in the upper-right corner of the screen shows battery charging status. If you charge the battery while syncing or using iPhone or iPod touch, it might take longer to charge. Note : If using a...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/59'>Understanding cellular data networks</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Q: Why does original iPhone show a different number of bars than iPhone 3G in the same location? A: The original iPhone uses 2G only (EDGE and GPRS), while iPhone 3G uses 3G and 2G and will use the...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/60'>iPhone: About the SIM PIN</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">You can enable, disable, or change your SIM PIN from Settings &gt; Phone &gt; SIM PIN. Some carriers provide SIM cards with a default SIM PIN already enabled. Click the link below to see a list of...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/62'>DROID - Transfer files to/from my computer</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Transfer files to / from the computer: Ensure that your memory card is inserted. Note : If your memory card is not inserted, you will receive "Please insert a disk" when trying to access the phone...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/63'>DROID - Airplane mode</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Airplane mode allows you to turn off all of your wireless connections. This can be very useful when flying. To activate and deactivate Airplane mode: Press and hold the power button on the top right...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/64'>DROID - Tips for extending battery life</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Things you should know about charging your battery. New batteries are not fully charged. Plug the battery charger into your phone and an electrical outlet. Your phone might take several seconds to...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData"><span>03/24/2010</span> <span>12:10 AM </span></span>
+                                                                        </li>
+                            </ol>
+                    </div>
+</div>

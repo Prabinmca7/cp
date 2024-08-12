@@ -1,0 +1,48 @@
+@import 'widget-includes';
+
+.rn_Paginator {
+    margin-top: 10px;
+    text-align: right;
+
+    ul {
+        @include clearfix;
+    }
+
+    li {
+        border: 0;
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 .2em;
+        margin-right: 4px;
+    }
+
+    a {
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .rn_CurrentPage {
+        color: $base-link-color;
+        cursor: default;
+        font-weight: bold;
+    }
+
+    .rn_NextPage,
+    .rn_PreviousPage {
+        color: $base-link-color;
+        font-size: .8em;
+        cursor: pointer;
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+
+    .rn_NextPage {
+        @include icon($fa-var-chevron-right, after);
+    }
+
+    .rn_PreviousPage {
+        @include icon($fa-var-chevron-left);
+    }
+}

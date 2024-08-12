@@ -1,0 +1,13 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicTextInput" name="Contact.Address.Street" textarea="true"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicTextInput/tests/textarea"><div><div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_0_Contact.Address.Street" class="rn_Label">
+    Street            </label><br/>
+    <textarea id="rn_BasicTextInput_0_Contact.Address.Street" class="rn_TextArea" rows="5" cols="20" name="formData[Contact.Address.Street]"></textarea>
+</div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJDb250YWN0LkFkZHJlc3MuU3RyZWV0Ijp7ImxhYmVscyI6eyJsYWJlbF9pbnB1dCI6IlN0cmVldCIsImxhYmVsX2Vycm9yIjoiIiwibGFiZWxfdmFsaWRhdGlvbiI6IlJlLWVudGVyIGEgdmFsdWUgZm9yIHRoZSBmaWVsZCAnJXMnIn19fQ=='/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

@@ -1,0 +1,184 @@
+1.7.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.6.1:
+  release: "24.5"
+  entries:
+  - account: monika.chanda@oracle.com
+    category: New Feature
+    changelogID: 807
+    date: 02/15/2014
+    description: Added a new attribute access\_type to enhance reports by incorporating
+      access type information
+    level: minor
+    refno: 231113-000079
+    sortPosition: Middle
+1.5.1:
+  release: "21.8"
+  entries:
+  - account: shwetha.sadashivaiah@oracle.com
+    category: New Feature
+    changelogID: 769
+    date: 03/26/2021
+    description: Addition of new attributes  display\_doc\_id, open\_parent\_answer,
+      label\_open_\article
+    details:
+    - These attributes are used to display docID and OpenArticle icon next to article
+      title in search result.
+    level: minor
+    refno: 210127-000024
+    sortPosition: Middle
+1.4.1:
+  release: "20.2"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: New Feature
+    changelogID: 747
+    date: 10/14/2019
+    description: Implement styles specific to intent results
+    details:
+    - Implement specific styles to intent results only, to visually differentiate
+      them from the other search results
+    level: minor
+    refno: 190923-000003
+    sortPosition: Middle
+1.3.1:
+  release: "19.8"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: Bug Fix
+    changelogID: 735
+    date: 07/04/2019
+    description: Addition of attribute results\_per\_page
+    details:
+    - Added new attribute results\_per\_page to support per_page configuration for
+      search results display
+    level: minor
+    refno: 190530-000196
+    sortPosition: Middle
+1.2.1:
+  release: "19.5"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: Bug Fix
+    changelogID: 719
+    date: 01/07/2019
+    description: Addition of attribute doc\_id\_navigation
+    details:
+    - Added new attribute doc\_id\_navigation to control the document Id based search
+      functionality
+    level: minor
+    refno: 181223-000010
+    sortPosition: Middle
+1.1.5:
+  release: "18.2"
+  entries:
+  - account: vikas.adavani@oracle.com
+    category: Bug Fix
+    changelogID: 689
+    date: 01/08/2018
+    description: Modified No Results found message
+    level: nano
+    refno: 171220-000015
+    sortPosition: Middle
+1.1.4:
+  release: "16.8"
+  entries:
+  - account: kanthi.kamath
+    category: Bug Fix
+    changelogID: 523
+    date: 06/23/2016
+    description: Added new widget attribute - 'request\_time\_out\_msg'
+    level: nano
+    refno: 160509-000036
+    sortPosition: Middle
+1.1.3:
+  release: "16.5"
+  entries:
+  - account: vamsikrishna.nadupalli
+    category: Bug Fix
+    changelogID: 507
+    date: 04/21/2016
+    description: Fixed issue related to intent display
+    details:
+    - Removed fixed height related to intent responses.
+    level: nano
+    refno: 151123-000127
+    sortPosition: Middle
+1.1.2:
+  release: "15.11"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 390
+    date: 09/08/2015
+    description: Fixed issues related to opening text attachments
+    level: nano
+    refno: 150819-000059
+    sortPosition: Middle
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 388
+    date: 09/08/2015
+    description: 'File attachments with # in filename can now be viewed in search
+      results'
+    level: nano
+    refno: 150823-000047
+    sortPosition: Middle
+  - account: nick.moore@oracle.com
+    category: New Feature
+    changelogID: 383
+    date: 02/28/2017
+    description: Added support for searching by Document Id
+    details:
+    - Added support for searching by Document Id by specifying document\_id\_reg\_ex
+    level: nano
+    refno: 141106-000114
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 356
+    date: 09/09/2015
+    description: Removed unused parameters, attributes and other defect fixes
+    level: minor
+    refno: 150528-000209
+    sortPosition: Middle
+  - account: arvind.gopalakrishnan
+    category: API Change
+    changelogID: 355
+    date: 06/11/2015
+    description: API versioning changes
+    details:
+    - OKCS API consumed by these widgets now supports versioning. Each of the widgets
+      is now associated with a particular version of the API. This change will be
+      transparent to end users.
+    level: minor
+    refno: 150303-000052
+    sortPosition: Middle
+1.0.1:
+  release: "15.5"
+  entries:
+  - date: 27/11/2013
+    level: major
+    description: Initial version of okcs/SearchResult
+    category: API Change
+    sortPosition: Middle

@@ -1,0 +1,76 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard]
+  yui: [panel, gallery-treeview]
+attributes:
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: rn:msg:PRODUCT_CATALOG_LBL
+  report_id:
+    name: rn:msg:REPORT_LBL
+    type: STRING
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: 228
+    min: 1
+  label_nothing_selected:
+    name: rn:msg:NOTHING_SELECTED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAY_VALUE_SELECTED_LBL
+    default: rn:msg:SELECT_A_PRODUCT_LBL
+  label_confirm_button:
+    name: rn:msg:CONFIRM_BUTTON_LABEL_MSG
+    type: STRING
+    description: rn:msg:LABEL_CONFIRMATION_BTN_CONFIRM_BTN_MSG
+    default: rn:msg:OK_LBL
+  label_cancel_button:
+    name: rn:msg:CANCEL_BUTTON_LABEL_CMD
+    type: STRING
+    description: rn:msg:LABEL_CONFIRMATION_BTN_CONFIRM_BTN_MSG
+    default: rn:msg:CANCEL_CMD
+  label_accessible_interface:
+    name: rn:msg:ACCESSIBLE_INTERFACE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAYED_SCREEN_EFFECTIVELY_MSG
+    default: rn:msg:BTN_SCREEN_READERS_PLS_PREV_LINK_MSG
+  label_screen_reader_selected:
+    name: rn:msg:VALUES_SELECTED_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISP_SCREEN_READERS_MSG
+    default: rn:msg:VALUES_SEL_LBL
+  label_screen_reader_accessible_option:
+    name: rn:msg:ACCESSIBLE_OPTION_LABEL_LBL
+    type: STRING
+    description: rn:msg:TXT_LINK_DISPLAYED_SCREEN_READERS_MSG
+    default: rn:msg:SCREEN_READER_USERS_PRESS_ENTER_ACC_MSG
+  label_all_values:
+    name: rn:msg:ALL_VALUES_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_INDICATE_FILTER_SELECTED_MSG
+    default: rn:msg:ALL_PRODUCTS_LBL
+  label_level:
+    name: rn:msg:LEVEL_LABEL_LBL
+    description: rn:msg:LABEL_ACCESS_INTF_ANNOUNCE_LVL_MSG
+    default: rn:msg:LEVEL_LBL
+    type: STRING
+  show_confirm_button_in_dialog:
+    name: rn:msg:SHOW_CONFIRM_BUTTONS_IN_DIALOG_MSG
+    type: BOOLEAN
+    description: rn:msg:ENBLD_TREE_POPUP_CONT_CANCEL_MSG
+    default: false
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Assets
+    - Report Search
+  description: rn:msg:WDGT_DSP_DRPDOWN_MENU_MSG
+  urlParameters:
+    pc:
+      name: rn:msg:PRODUCT_LBL
+      description: rn:msg:ID_SA_PROD_POPULATED_DEF_OVERRIDES_MSG
+      example: pc/1

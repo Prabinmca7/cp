@@ -1,0 +1,7 @@
+input: <rn:widget path='standard/navigation/MobileNavigationMenu' />
+removecontent: true
+template: mobile
+output:
+<span id="rn_MobileNavigationMenu_0" class="rn_MobileNavigationMenu">
+<button type="button" id="rn_MobileNavigationMenu_0_Link">Menu</button>
+</span>

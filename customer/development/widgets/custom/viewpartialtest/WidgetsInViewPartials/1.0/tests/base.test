@@ -1,0 +1,31 @@
+input: <rn:widget path="viewpartialtest/WidgetsInViewPartials"/>
+removecontent: true
+output:
+<div id="rn_WidgetsInViewPartials_0">
+Print: <span id="rn_PrintPageLink_1" class="rn_PrintPageLink">
+    <a onclick="window.print(); return false;" href="javascript:void(0);" title="Print this page">
+        <span>Print</span>
+    </a>
+</span>
+<span class="rn_Required" aria-label="Required">
+    *</span><form id="id">
+    <div id="rn_SampleWidget_2" class="rn_SampleWidget rn_SelectionInput rn_Input">
+    <span id="rn_SampleWidget_2_CustomPre">before  ☞</span>
+    <div>
+Partial data: (ﾉಥ益ಥ）ﾉ﻿ ┻━┻</div>
+    <div id="rn_SampleWidget_2_LabelContainer">
+        <label for="rn_SampleWidget_2_Incident.CustomFields.c.priority" id="rn_SampleWidget_2_Label" class="rn_Label">Priority                            <span class="rn_ScreenReaderOnly">hint for menu</span>
+                </label>
+    </div>
+    <select id="rn_SampleWidget_2_Incident.CustomFields.c.priority" name="Incident.CustomFields.c.priority">
+            <option value="">--</option>
+                            <option value="11" >1</option>
+                    <option value="12" >2</option>
+                    <option value="13" >3</option>
+                    <option value="14" >4</option>
+                    <option value="15" >5</option>
+                </select>
+        <span id="rn_SampleWidget_2_CustomPost">☜ after</span>
+</div>
+</form>
+</div>

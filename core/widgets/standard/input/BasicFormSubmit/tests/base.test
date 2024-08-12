@@ -1,0 +1,12 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicFormSubmit"/></rn:form>
+filter: /value=['"][a-zA-Z0-9_+\/!~]{20,}['"]/
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicFormSubmit/tests/base"><div><div class="rn_BasicFormSubmit">
+        <input type="submit" id="rn_BasicFormSubmit_0_Button" value="Submit"/>
+    <input type="hidden" name="f_tok" />
+                            </div>
+<input type='hidden' name='validationToken' />
+                <input type='hidden' name='constraints' value='W10='/>
+                <input type='hidden' name='handler' /></div></form>

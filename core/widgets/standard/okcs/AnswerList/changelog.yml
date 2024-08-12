@@ -1,0 +1,191 @@
+1.8.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.7.1:
+  release: "24.5"
+  entries:
+  - account: monika.chanda@oracle.com
+    category: New Feature
+    changelogID: 809
+    date: 02/15/2014
+    description: Added a new attribute access\_type to enhance reports by incorporating
+      access type information
+    level: minor
+    refno: 231113-000079
+    sortPosition: Middle
+1.6.1:
+  release: "21.5"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: Bug Fix
+    changelogID: 768
+    date: 03/11/2021
+    description: Remove attribute static\_filter
+    details:
+    - Removal of unused attribute static\_filter
+    level: minor
+    refno: 210304-000031
+    sortPosition: Middle
+1.5.1:
+  release: "20.11"
+  entries:
+  - account: kanthi.kamath@oracle.com
+    category: New Feature
+    changelogID: 755
+    date: 07/06/2020
+    description: Addition of new attribute get\_okcs\_data\_ajax
+    details:
+    - This attribute is used to fetch all articles in an AJAX manner and thereby improve
+      on load page performance
+    level: minor
+    refno: 200604-000037
+    sortPosition: Middle
+1.4.2:
+  release: "17.2"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 590
+    date: 10/03/2016
+    description: Addition of new attribute label\_sortable
+    details:
+    - This attribute is used to configure the value to be read out for sortable columns.
+    level: nano
+    refno: 160915-000198
+    sortPosition: Middle
+1.4.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 581
+    date: 02/07/2017
+    description: Accessibility - Updated the aria alert to include the label heading
+      once the search is complete
+    details:
+    - Screen reader will read the label heading and will either say "search is complete"
+      or "no results returned"
+    level: minor
+    refno: 160229-000221
+    sortPosition: Middle
+  - account: prashant.chaturvedi
+    category: Bug Fix
+    changelogID: 563
+    date: 08/24/2016
+    description: Set min value of per\_page widget attribute to 1.
+    level: nano
+    refno: 160419-000238
+    sortPosition: Middle
+1.3.1:
+  release: "16.2"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 471
+    date: 01/29/2016
+    description: The default behavior of the view\_type attribute is 'table' regardless
+      of how the type attribute is set.  To display answers in a list, you must explicitly
+      set view\_type equal to 'list'.
+    level: minor
+    refno: 151014-000119
+    sortPosition: Middle
+1.2.1:
+  release: "15.11"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 430
+    date: 11/09/2015
+    description: Change in 'display\_fields' attribute values for Document ID and
+      Answer ID fields
+    details:
+    - display\_fields values need to be modified ('documentID', 'answerID' need to
+      be modified to 'documentId', 'answerId')
+    level: minor
+    refno: 151024-000003
+    sortPosition: Middle
+  - account: arvind.gopalakrishnan
+    category: Bug Fix
+    changelogID: 427
+    date: 10/21/2015
+    description: Removed the limit attribute as it conflicts with per\_page and could
+      cause performance issues.
+    details:
+    - If you use the limit attribute on your widget, stop specifying it. The per\_page
+      attribute will continue to let you control the number of records displayed per
+      page.
+    level: minor
+    refno: 151016-000117
+    sortPosition: Middle
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 424
+    date: 10/08/2015
+    description: Support filtering based on multiple content types
+    level: nano
+    refno: 151001-000260
+    sortPosition: Middle
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 385
+    date: 09/08/2015
+    description: AnswerList Attribute truncate\_size is now retained upon navigating
+      across pages
+    level: nano
+    refno: 150715-000136
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 356
+    date: 09/09/2015
+    description: Removed unused parameters, attributes and other defect fixes
+    level: minor
+    refno: 150528-000209
+    sortPosition: Middle
+  - account: arvind.gopalakrishnan
+    category: API Change
+    changelogID: 355
+    date: 06/11/2015
+    description: API versioning changes
+    details:
+    - OKCS API consumed by these widgets now supports versioning. Each of the widgets
+      is now associated with a particular version of the API. This change will be
+      transparent to end users.
+    level: minor
+    refno: 150303-000052
+    sortPosition: Middle
+  - account: spage
+    category: API Change
+    changelogID: 299
+    date: 05/11/2015
+    description: Forced minor bump due to parent SourceResultListing changes
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.1:
+  release: "15.5"
+  entries:
+  - date: 16/01/2014
+    level: major
+    description: Initial version of okcs/AnswerList
+    category: API Change
+    sortPosition: Middle

@@ -1,0 +1,39 @@
+<div id="rn_<%= instanceID %>" class="rn_FileListDisplay rn_Output">
+    <rn:block id="top"/>
+    <% if (attrs.label) { %>
+        <rn:block id="label">
+        <span class="rn_DataLabel"><%= attrs.label %></span>
+        </rn:block>
+    <% } %>
+    <div class="rn_DataValue">
+        <rn:block id="preList"/>
+        <ul>
+        <% for(var i=0; i < fileAttachments.length; i++) { %>
+            <rn:block id="listItem">
+            <li id="<%='rn_File_' + fileAttachments[i].ID %>">
+                <rn:block id="topListItem"/>
+                <a href="<%= fileAttachments[i].AttachmentUrl %>" rel="nofollow" target="_blank">
+                    <% if (attrs.display_thumbnail && fileAttachments[i].ThumbnailScreenReaderText) { %>
+                        <rn:block id="preThumbnail"/>
+                        <img class='rn_FileTypeImageThumbnail' alt="<%= thumbnailAltText %>"/>
+                        <span class="rn_ScreenReaderOnly"><%= fileAttachments[i].ThumbnailScreenReaderText %></span>
+                        <rn:block id="postThumbnail"/>
+                    <% } %>
+                    <rn:block id="fileName">
+                    <%= fileAttachments[i].FileName %>
+                    </rn:block>
+                </a>
+               <% if(attrs.display_file_size) { %>
+                <rn:block id="fileSize">
+                <span class="rn_FileSize">(<%= fileAttachments[i].FileSize %>)</span>
+                </rn:block>
+               <% } %>
+                <rn:block id="bottomListItem"/>
+            </li>
+            </rn:block>
+        <% } %>
+        </ul>
+        <rn:block id="postList"/>
+   </div>
+   <rn:block id="bottom"/>
+</div>

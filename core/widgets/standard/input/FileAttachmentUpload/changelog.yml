@@ -1,0 +1,268 @@
+1.12.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.11.1:
+  release: "23.11"
+  entries:
+  - account: praveen.puvvada@oracle.com
+    category: Bug Fix
+    changelogID: 797
+    date: 10/27/2023
+    description: Minor Bump in CP attachment widgets for honouring the valid\_file\_extensions
+      config verb
+    details:
+    - The CP file attachment widgets were enhanced to honor the file extensions configured
+      in the "VALID\_FILE\_EXTENSIONS" configuration setting. All allowed file extensions
+      configured in the siteConfig JSON file must be copied into the "VALID\_FILE\_EXTENSIONS"
+      configuration setting. The siteConfig JSON file allowed file extension values
+      are not honored by the new CP framework version. This enhancement streamlines
+      allowed file extension configuration.
+    - The default valid file extensions list remains the same "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    level: minor
+    refno: 230825-000040
+    sortPosition: Middle
+1.10.1:
+  release: "22.11"
+  entries:
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 776
+    date: 09/01/2022
+    description: Added default list of valid MIME file types
+    details:
+    - To improve security, moved FileAttachmentUpload widget attribute valid_file_extensions
+      to /customer/development/config/siteConfig.json as CP.ValidFileExtensions.
+    - Default valid file extensions are "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    - 'If the CP.ValidFileExtensions configuration settings is not defined in your
+      siteConfig.json file, the default sets listed above will be used.To allow a
+      restricted set of file types only to be uploaded, define the configuration settings
+      with the desired extensions in your siteConfig.json file.For example, if we
+      want to allow only "png,jpg,txt,gif,pdf,doc,xlsx,xls" then define this in the
+      siteConfig.json "CP.ValidFileExtensions" : "png,jpg,txt,gif,pdf,doc,xlsx,xls"'
+    level: minor
+    refno: 210908-000095
+    sortPosition: Middle
+1.9.1:
+  release: "21.5"
+  entries:
+  - account: steven.cottrell@oracle.com
+    category: Bug Fix
+    changelogID: 770
+    date: 04/19/2021
+    description: Added default list of valid file extensions
+    details:
+    - File upload widgets now ship with a default list of valid file extensions to
+      improve out-of-the-box security.  The default list is "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls".  In
+      order to allow file extensions other than these to be uploaded, set the valid_file_extensions
+      widget attribute to the desired list of valid extensions.
+    level: minor
+    refno: 210129-000086
+    sortPosition: Middle
+1.8.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 692
+    date: 03/27/2018
+    description: Added the form token as a salt to the local name (or tmp\_name) of
+      the file to be uploaded and validate it in form submit.
+    details:
+    - If form token mismatches with the local name (or tmp\_name), it will skip the
+      file attachment but the form will be submitted.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+1.7.1:
+  release: "17.8"
+  entries:
+  - account: hussain.nayak
+    category: Bug Fix
+    changelogID: 676
+    date: 07/19/2017
+    description: File attachment upload max attachment limit defaults to 100 if the
+      value is set to zero or any number greater than 100
+    details:
+    - The 'max\_attachments' attribute is set to 100 if the value is set to 0 or any
+      number greater than 100.
+    level: minor
+    refno: 170608-000050
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 671
+    date: 06/28/2017
+    description: A javascript function was replaced in FileAttachmentUpload
+    details:
+    - The 'displayStatus' javascript method of FileAttachmentUpload was replaced by
+      'setStatusMessage'.
+    level: minor
+    refno: 170606-000184
+    sortPosition: Middle
+1.6.2:
+  release: "17.5"
+  entries:
+  - account: matthew
+    category: Bug Fix
+    changelogID: 628
+    date: 02/08/2017
+    description: Pass valid file extension constraints to FAttach upload controller
+      for validation
+    level: nano
+    refno: 161101-000188
+    sortPosition: Middle
+1.6.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 549
+    date: 08/30/2016
+    description: Updated error message on file upload.
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.5.1:
+  release: "16.5"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+1.4.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 308
+    date: 05/11/2015
+    description: Add name attribute to support file attachments for multiple fields
+      in the future
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.3.1:
+  release: "15.2"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 284
+    date: 01/02/2015
+    description: File attachment status messages now show in a consistent location
+    level: nano
+    refno: 141230-000049
+    sortPosition: Middle
+  - account: pkolpin
+    category: Bug Fix
+    changelogID: 278
+    date: 11/13/2014
+    description: Corrected behavior when label_input is empty
+    details:
+    - If the label\_input attribute is empty, the required asterisk will also not
+      display. The empty value will be output since some widgets, notably the ProductCategoryInput
+      widget, expect the input label to be displayed and causes a JavaScript error
+      when it cannot be found.  While providing a useful label\_input value is necessary
+      for providing good accessibility to screen readers, rather than forcing the
+      label\_input attribute to be required, this change instead causes the empty
+      element to be output.  This small change in the view of the widget requires
+      the minor bump of the widget.
+    level: minor
+    refno: 141010-000016
+    sortPosition: Middle
+1.2.1:
+  release: "14.2"
+  entries:
+  - account: tlivengood
+    category: New Feature
+    changelogID: 194
+    date: 11/01/2013
+    description: Added support for `constraintChange` Dynamic Forms event
+    details:
+    - Restructured the label area of the widget to support dynamically changing the
+      required-ness of an input field. This change can impact custom code which overrides
+      the `preLabel` or `postLabel` RN Blocks. To consume this change, EJS extension
+      will need to be used to override the blocks in their new locations in addition
+      to their original locations.
+    level: minor
+    refno: 131021-000234
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: jlindh
+    category: API Change
+    changelogID: 94
+    date: 04/29/2013
+    description: Added _sendUploadRequest function which may be overridden.
+    level: minor
+    refno: 130403-000060
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 87
+    date: 04/29/2013
+    description: Prevents end users from submitting their form while a file upload
+      is in progress
+    details:
+    - End users cannot submit their form if the page is still uploading a file.
+    - If the `evt_fileUploadRequest` event is cancelled with custom code, the uploading
+      indicators are removed.
+    - If the `evt_fileUploadResponse` event is cancelled with custom code, the uploading
+      indicators are removed.
+    level: minor
+    refno: 130228-000075
+    sortPosition: Middle
+  - account: spage
+    category: New Feature
+    changelogID: 34
+    date: 04/29/2013
+    description: Displays thumbnails next to the attachment name for image type files
+    details:
+    - Enabling the new 'display_thumbnail' attribute will cause a thumbnail image
+      to be displayed next to the attachment name for image type attachments.
+    - Thumbnails are displayed only on browsers supporting the FileReader interface
+      to the [File API](http://www.w3.org/TR/FileAPI)
+    - The default value is set to 'true.'
+    level: minor
+    refno: 110224-000025
+    sortPosition: Middle
+1.0.2:
+  release: "13.2"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 43
+    date: 05/01/2013
+    description: Customer uploading of large file attachments
+    details:
+    - The widget's logic file now uses the value from the configuration setting `CP_FILE_UPLOAD_MAX_TIME`
+      to prevent timeout errors when uploading files that fall within size limits.
+    level: nano
+    refno: 130104-000029
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

@@ -1,0 +1,12 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/input/ContactNameInput' initial_focus_on_first_field='true' required='true' short_name='true'/></form>
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_TextInput_2" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_2_LabelContainer">
+        <label for="rn_TextInput_2_Contact.Name.First" id="rn_TextInput_2_Label" class="rn_Label">
+        First Name                        <span class="rn_Required" aria-label="Required">
+    *</span>                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_2_Contact.Name.First" name="Contact.Name.First" class="rn_Text" maxlength='80' required  />
+    </div>
+</form>

@@ -1,0 +1,14 @@
+input: <form onsubmit="return false;"><rn:widget path="standard/search/OrgList" label_title="CUSTOM_TITLE" label_sub="CUSTOM SUB" label_org="CUSTOM ORG" label_individual="CUSTOM INDIVIDUAL" display_type="1"/></form>
+config: MYQ_VIEW_ORG_INCIDENTS|2
+contact: ejergan
+removecontent: true
+urlparameters: /org/1
+output:
+<form onsubmit="return false;"><div id="rn_OrgList_0" class="rn_OrgList">
+    <label for="rn_OrgList_0_Options">CUSTOM_TITLE</label>
+    <select id="rn_OrgList_0_Options">
+            <option value='0' >CUSTOM INDIVIDUAL</option>
+            <option value='1' selected="selected">CUSTOM ORG</option>
+        </select>
+</div>
+</form>

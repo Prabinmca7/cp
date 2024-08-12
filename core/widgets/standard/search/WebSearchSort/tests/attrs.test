@@ -1,0 +1,16 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/search/WebSearchSort' label_sort='sort' report_id='10016'/></form>
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /sort/3
+output:
+<form onsubmit="return false;"><div id="rn_WebSearchSort_0" class="rn_WebSearchSort">
+    <label for='rn_WebSearchSort_0_Options'>sort</label>
+    <select id='rn_WebSearchSort_0_Options'>
+        <option value="1">Score</option>
+        <option value="2">Time</option>
+        <option value="3" selected="selected">Title</option>
+        <option value="5">Reverse Time</option>
+        <option value="6">Reverse Title</option>
+            </select>
+</div>
+</form>

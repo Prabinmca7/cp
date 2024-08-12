@@ -1,0 +1,8 @@
+input: <rn:widget path='standard/login/OpenLogin' redirect_url="/app/ask" one_click_access_enabled="true"/>
+config: FACEBOOK_OAUTH_APP_ID|3sfsdf,FACEBOOK_OAUTH_APP_SECRET|asdfsdf
+jstestfile: oneclick.test.js
+removecontent: true
+output:
+<div id="rn_OpenLogin_0" class="rn_OpenLogin">
+    <a href="javascript:void(0)" id="rn_OpenLogin_0_ProviderButton" class="rn_LoginProvider rn_Facebook">Facebook</a>
+</div>

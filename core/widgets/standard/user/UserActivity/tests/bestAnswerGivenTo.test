@@ -1,0 +1,9 @@
+input: <rn:widget path="standard/user/UserActivity" type="bestAnswerGivenToUser" user_id="217"/>
+removecontent: true
+output:
+<div id="rn_UserActivity_0" class="rn_UserActivity">
+    <div class="rn_Activities">
+        <h2>
+    Recent Activity</h2>
+    User has no activity to see here.    </div>
+</div>

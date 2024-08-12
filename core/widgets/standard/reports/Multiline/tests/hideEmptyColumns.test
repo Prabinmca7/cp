@@ -1,0 +1,54 @@
+input: <rn:widget path="standard/reports/Multiline" report_id="101445" per_page="5" />
+contact: slatest
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_Multiline_0" class="rn_Multiline">
+    <div id="rn_Multiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Multiline_0_Loading"></div>
+    <div id="rn_Multiline_0_Content" class="rn_Content">
+                            <ul>
+                            <li>
+                                                                                        <div class="rn_Element1"><h3>James</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Walker</span>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">State/Province: </span>
+                            <span class="rn_ElementsData">MD</span>
+                                                                                                                                <span class="rn_ElementsHeader">Postal Code: </span>
+                            <span class="rn_ElementsData">21401</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3>Elizabeth</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Jergan</span>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">State/Province: </span>
+                            <span class="rn_ElementsData">GA</span>
+                                                                                                                                <span class="rn_ElementsHeader">Postal Code: </span>
+                            <span class="rn_ElementsData">30909</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3>Brandon</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Tenjour</span>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">State/Province: </span>
+                            <span class="rn_ElementsData">GA</span>
+                                                                                                                                <span class="rn_ElementsHeader">Postal Code: </span>
+                            <span class="rn_ElementsData">30909</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3>Skylar</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Melovia</span>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">State/Province: </span>
+                            <span class="rn_ElementsData">GA</span>
+                                                                                                                                <span class="rn_ElementsHeader">Postal Code: </span>
+                            <span class="rn_ElementsData">30909</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3>Mathew</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Johnson</span>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">State/Province: </span>
+                            <span class="rn_ElementsData">MN</span>
+                                                                                                                                <span class="rn_ElementsHeader">Postal Code: </span>
+                            <span class="rn_ElementsData">56303</span>
+                                                                        </li>
+                            </ul>
+                    </div>
+</div>

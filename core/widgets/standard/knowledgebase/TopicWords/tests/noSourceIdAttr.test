@@ -1,0 +1,14 @@
+input: <rn:widget path='standard/knowledgebase/TopicWords' />
+removecontent: true
+urlparameters: /kw/whatever
+output:
+<div id="rn_TopicWords_0" class="rn_TopicWords">
+    <div class="rn_Title">Recommended Links</div>
+        <dl id="rn_TopicWords_0_List">
+            <dt>
+                    <a href="" target="_self" class="rn_ExternalLinkIcon" >Hot Deals!</a>
+        </dt>
+        <dd>
+            We are offering a service upgrade for a limited time.  Check it out!        </dd>
+        </dl>
+    </div>

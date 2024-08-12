@@ -1,0 +1,24 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_text:
+    name: rn:msg:LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISP_WARN_MODIFICATION_LBL
+    default: rn:msg:YOU_CAN_SEARCH_ANSWER_YOU_WAIT_LBL
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:PG_DISP_BTN_CLICKED_VAL_QUALIFIED_MSG
+    default: /app/answers/list
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_PROV_ABILITY_SRCH_ANS_MSG
+contains:
+- widget: standard/search/KeywordText
+  versions: ["1.2"]
+- widget: standard/search/SearchButton
+  versions: ["1.2"]

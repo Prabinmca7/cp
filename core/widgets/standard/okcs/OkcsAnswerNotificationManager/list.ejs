@@ -1,0 +1,33 @@
+<%  if(subscriptionListLength > 0) %>
+    <rn:block id="preList"/>
+    <% for (var i = 0; i < subscriptionListLength; i++) { %>
+    <rn:block id="preItem"/>
+    <div class="rn_Notification" id="<%= widgetInstanceID %>_<%= subscriptionList.items[i].subscriptionID %>">
+        <rn:block id="preInfo"/>
+        <div class="rn_Notification_Info">
+                <rn:block id="summary">
+                 <a href="<%= answerUrl %><%= subscriptionList.items[i].answerId %>" target="<%= target %>" ><%= subscriptionList.items[i].title %></a>
+                </rn:block>
+                <rn:block id="documentId">
+                <span><%= subscriptionList.items[i].documentId %></span>
+                </rn:block>
+               <rn:block id="startDate">
+                <span><%= subscriptionList.items[i].expires %></span>
+                </rn:block>
+                <rn:block id="expiration">
+                <span><%= subscriptionList.items[i].expiresTime %></span>
+                </rn:block>
+        </div>
+        <rn:block id="postInfo"/>
+        <rn:block id="preActions"/>
+        <div class="rn_Notification_Actions">
+            <rn:block id="preDelete"/>
+            <button id="<%= subscriptionList.items[i].subscriptionID %>" class="rn_Notification_Delete"><%= labelDeleteButton %></button>
+            <rn:block id="postDelete"/>
+        </div>
+        <rn:block id="postActions"/>
+        </div>
+        <rn:block id="postItem"/>
+    <% } %>
+    <rn:block id="postList"/>
+<? endif;?>

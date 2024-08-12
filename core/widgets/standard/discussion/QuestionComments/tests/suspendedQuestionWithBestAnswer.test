@@ -1,0 +1,344 @@
+input: <rn:widget path='standard/discussion/QuestionComments'/>
+contact: modactive1
+filter: @datetime="[^"]+">[^<]+</time>@
+fixture: QuestionSuspendedBestAnswer
+removecontent: true
+replace: datetime=""></time>
+urlparameters: /qid/%CommunityQuestion%
+validate: false
+output:
+<div id="rn_QuestionComments_0" class="rn_QuestionComments">
+        <div class="rn_CommentsTitle" role="heading" aria-level="2">
+        <h2>Comments</h2>
+    </div>
+        <div class="rn_SortOrder">
+        <button class="rn_NewestButton" type="button" data-sort="ASC" title="Newest First">Newest First</button>
+        <span class="rn_Separator"></span>
+        <button class="rn_OldestButton rn_Disabled" type="button" data-sort="DESC" title="Oldest First">Oldest First</button>
+    </div>
+    <div id="rn_QuestionComments_0_Comments" aria-live="polite">
+        <div class="rn_Comments">
+                <div id="rn_QuestionComments_0_%CommunityComment_0%" data-commentid="%CommunityComment_0%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="Active User1">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_0%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor1" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">A</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">Active User1</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_0%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by an active user.</p>
+            </div>
+                            <div id="rn_FileListDisplay_3" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                                    <div id="rn_QuestionComments_0_%CommunityComment_5%" data-commentid="%CommunityComment_5%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="Archived User">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_2%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor3" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">A</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">Archived User</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_5%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by an archived user.</p>
+            </div>
+                            <div id="rn_FileListDisplay_7" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <div id="rn_QuestionComments_0_Replies_%CommunityComment_5%" data-commentid="%CommunityComment_5%" class="rn_Replies">
+            <a class="rn_ReplyTitle" href="javascript:void(0);" data-toggle-parent="rn_Collapsed">
+                Replies            </a>
+                <div id="rn_QuestionComments_0_%CommunityComment_3%" data-commentid="%CommunityComment_3%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="moderator">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_3%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">M</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">moderator</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_3%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by a moderator.</p>
+            </div>
+                            <div id="rn_FileListDisplay_11" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                        <div id="rn_QuestionComments_0_%CommunityComment_4%" data-commentid="%CommunityComment_4%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="moderator">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_1%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">M</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">moderator</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_4%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by a moderator.</p>
+            </div>
+                            <div id="rn_FileListDisplay_15" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                <div id="rn_QuestionComments_0_%CommunityComment_6%" data-commentid="%CommunityComment_6%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="moderator">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_1%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">M</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">moderator</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_6%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText rn_RemovedComment">This comment is unavailable</div>
+                            <div id="rn_FileListDisplay_19" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                        <div id="rn_QuestionComments_0_%CommunityComment_7%" data-commentid="%CommunityComment_7%" data-contenttype="text/x-markdown" class="rn_CommentContainer" itemprop="suggestedAnswer" itemscope itemtype="Answer" aria-label="Required">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="Archived User">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_2%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor3" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">A</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">Archived User</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_7%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                                            </div>
+                </div>
+                                                            </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by an archived user.</p>
+            </div>
+                            <div id="rn_FileListDisplay_23" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+    </div>
+    </div>

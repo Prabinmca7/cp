@@ -1,0 +1,11 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  ajax_ajax:
+    name: foo
+    type: ajax
+    description: foo
+    default: /ci/ajax/widget

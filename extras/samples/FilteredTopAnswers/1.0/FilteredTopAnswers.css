@@ -1,0 +1,12 @@
+/**
+ * File: FilteredTopAnswers.css
+ * Abstract: Provides styling for FilteredTopAnswers widget
+ * Version: 1.0
+ */
+.rn_FilteredTopAnswers ul{
+    list-style:none;
+}
+.rn_FilteredTopAnswers li{
+    font-size:1.333em;
+    padding:4px;
+}

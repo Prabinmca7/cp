@@ -1,0 +1,83 @@
+1.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.3.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+1.2.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 560
+    date: 08/30/2016
+    description: Updated default message for label\_on\_failure\_banner.
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.1.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+1.0.2:
+  release: "15.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 423
+    date: 10/08/2015
+    description: Fixed screenreader issue with dropdown
+    level: nano
+    refno: 150929-000198
+    sortPosition: Middle
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 418
+    date: 10/01/2015
+    description: Added an attribute to support accessibility
+    details:
+    - label\_menu\_accessibility attribute was added to support accessibility. Screenreader
+      will read its text when the dropdown link is focused. Default value is for standard
+      pageset. Please specify your custom value for mobile pageset as done in 'mobile/public_profile.php'
+      page.
+    level: nano
+    refno: 150929-000155
+    sortPosition: Middle
+1.0.1:
+  release: "15.8"
+  entries:
+  - date: 19/05/2014
+    level: major
+    description: Initial version of moderation/ModerationInlineAction
+    category: New Feature
+    sortPosition: Middle

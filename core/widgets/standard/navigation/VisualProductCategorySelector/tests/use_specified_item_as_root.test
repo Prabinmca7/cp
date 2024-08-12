@@ -1,0 +1,12 @@
+input: <rn:widget path='standard/navigation/VisualProductCategorySelector' show_sub_items_for="4" limit_sub_items_branch="true"/>
+jstestfile: use_specified_item_as_root.test.js
+removecontent: true
+output:
+<div id="rn_VisualProductCategorySelector_0" class="rn_VisualProductCategorySelector">
+    <div class="rn_Items">
+        <div id="rn_VisualProductCategorySelector_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+        <div class="rn_NavigationArea rn_Hidden">
+                                    <span class="rn_BreadCrumb" role="navigation"></span>
+                    </div>
+            </div>
+    </div>

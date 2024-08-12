@@ -1,0 +1,16 @@
+input: <rn:widget path="reports/BasicPaginator" per_page="2" maximum_page_links="2" forward_icon_path="/path/forward" back_icon_path="/path/backward" label_page="label page %s %s" label_forward="label forward" label_back="label back" />
+removecontent: true
+template: basic
+urlparameters: /page/2
+output:
+<div class="rn_BasicPaginator rn_Paginator">
+            <a href="/app/unitTest/rendering/widgets/standard/reports/BasicPaginator/tests/icon/page/1" class="">label back</a>
+                <span class="rn_PageLinks">
+                                                                                    <a href="/app/unitTest/rendering/widgets/standard/reports/BasicPaginator/tests/icon/page/1" title="label page 1 10">1<span class="rn_ScreenReaderOnly">label page 1 10</span></a>
+                                                                                                <span class="rn_CurrentPage">2</span>
+                                                                                                                    <a href="/app/unitTest/rendering/widgets/standard/reports/BasicPaginator/tests/icon/page/3" title="label page 3 10">3<span class="rn_ScreenReaderOnly">label page 3 10</span></a>
+                                                                                                <span class="rn_PageHellip">&hellip;</span>
+                                                                                                                                                                                                                                                                                                                                <a href="/app/unitTest/rendering/widgets/standard/reports/BasicPaginator/tests/icon/page/10" title="label page 10 10">10<span class="rn_ScreenReaderOnly">label page 10 10</span></a>
+                                                    </span>
+                <a href="/app/unitTest/rendering/widgets/standard/reports/BasicPaginator/tests/icon/page/3" class="">label forward</a>
+    </div>

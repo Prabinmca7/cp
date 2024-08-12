@@ -1,0 +1,320 @@
+input: <rn:widget path='standard/social/CommunitySearchResults' limit="256" truncate_size="100" highlight="false" show_post_content="false" show_updated_date="false" show_author_name="false" show_profile_picture="false" show_comment_count="true" show_rating_count="true" show_all_results_link="true" label_all_results="every single result" label_no_results="sadface :(" label_author="poster: %s" author_link_base_url="/cx/facebook/foo" post_link_base_url="/cx/facebook/bar"/>
+config: COMMUNITY_VERSION|15.11.0.0,COMMUNITY_ENABLED|1,COMMUNITY_PRIVATE_KEY|OXaX8ctYifSiwonq,COMMUNITY_PUBLIC_KEY|5JbzLXNAJ0Y3sxAn,COMMUNITY_BASE_URL|http://den01tpo.us.oracle.com
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_CommunitySearchResults_0" class="rn_CommunitySearchResults">
+    <div id="rn_CommunitySearchResults_0_Loading"></div>
+    <div id="rn_CommunitySearchResults_0_Content">
+                <ul>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/d69a236120">C & C white background + shadow</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/7baa4d52f9">Merge reports</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/f0951207b0">Fatal Windows Error</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/1e6a5a1179">“Invalid column name ‘cXXX_xx.” Error</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/24d51f7438">Feedback on Rave 5.6</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/155052b143">Email configuration</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/4d77283dfa">Droid email</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/a4dbf1e00b">Sepia effect</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/cfbcf8e9cd">Kam K7</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/ad485025a3">Focus Problem</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/bd3f5004fd">Kam K7 Blurry</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/9485ad1407">Extending warranties</a>
+                    </span>
+                                                                                    <span class="rn_PostSubContent rn_PostRating">
+                        0 people like this                    </span>
+                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/6847371ca1">Join the Kam K7 Camera Club!</a>
+                    </span>
+                                                                                    <span class="rn_PostSubContent rn_PostRating">
+                        0 people like this                    </span>
+                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/a1b1fe7476">Color Management - when i think i understand... i really don't!!!  </a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/f1ab4aca1f">How would you fix this photo?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 2                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/b1a85c194d">Tips For Traveling with SLR's - Yosemite Park and Asia</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/4bcd2f7226">best way to learn photography</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/ea4c130b71">New camera for a mom</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/13af4d1374">which point & shoot would you recommend me?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/c3e7b7d049">Low contrast when facing the sun</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/0515121073">How to use a circular polarizer?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 6                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/6ba1fed594">UV or Clear Protection</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/dfeb0bdad8">Two New Forums Added Based on Member Feedback</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/d097aeaad3">question on ISO settings (same for all cameras?)</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/d5e749f61c">Difficulty in retaining true colour and sharpness of GREEN, especially grass</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 0                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/144fb3958e">Why can't I find my perfect camera? Please help</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 5                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/3e770000c9">Explanation of lens terminology</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/2a076c7654">can you sharpen the little girl ?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/ab82247baa">Twilight imagery recreation</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/6d1b2d84bb">Restoring an old photo</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/7db80968bc">Depth of Field Tutorial</a>
+                    </span>
+                                                                                    <span class="rn_PostSubContent rn_PostRating">
+                        0 people like this                    </span>
+                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/7ba5d12874">Too Much Post Processing or Nice?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/f1ebe3ee15">Granddaughter CC at Play</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/e5ccd81b56">Natural light from a big window</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 5                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/a33a7bc5c7">fashion shoot</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/073fa991c0">Wedding Under Different Lights (multiple images)</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/bffb7c649f">Would like C & C on the background please</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 5                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/783b2c608a">How to reduce pupil size in studio lighting?</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/376841cefa">reflectors - is a 5-1 worth it?  [</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 3                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/159ab26104">is it soft ? (softlighter)</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 4                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/3fe6797d53">The truth about that battery pack little curly cord</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 5                    </span>
+                                </li>
+                                            <li>
+                                    <span class="rn_PostTitle">
+                        <a href="/cx/facebook/bar/posts/d9cb37003b">Remove Red Eye</a>
+                    </span>
+                                                                                                    <span class="rn_PostSubContent rn_PostCount">
+                        Comments: 1                    </span>
+                                </li>
+                        </ul>
+                    <a href="/cx/facebook/foo/search?find=" class="rn_AllResults">every single result</a>
+                </div>
+            <div id="rn_CommunitySearchResults_0_Pagination" class="rn_Pagination rn_Hidden">
+            <a href="javascript:void(0)" id="rn_CommunitySearchResults_0_Back" data-page="-1" class="">&lt; Previous</a>
+            <span id="rn_CommunitySearchResults_0_Pages" class="rn_PageLinks">
+                                                            <span class="rn_CurrentPage"></span>
+                                                </span>
+            <a href="javascript:void(0)" id="rn_CommunitySearchResults_0_Forward" data-page="1" class="">Next &gt;</a>
+        </div>
+    </div>

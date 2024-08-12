@@ -1,0 +1,146 @@
+// DOM Structure:
+// div.rn_UserAvatar
+//   a (optional)
+//     span.rn_Avatar.rn_(Small|Medium|Large|XLarge).rn_(Image|Placeholder)
+//       img
+//       OR
+//       span.rn_Default.rn_DefaultColor(0-5)
+//         span.rn_Liner
+//
+.rn_UserAvatar {
+    $small: 24px;
+    $medium: 48px;
+    $large: 96px;
+    $xlarge: 160px;
+    $avatar-border-radius: 2px;
+
+    display: block;
+    line-height: .9em;
+    overflow: hidden;
+
+    a {
+        /* Required for text-overflow:ellipsis and placeholder aspect ratio. */
+        display: block;
+    }
+
+    .rn_Avatar {
+        display: inline-block;
+        position: relative;
+        max-width: 100%;
+        line-height: 1em;
+    }
+
+    .rn_Placeholder:before {
+        /* Ensure that the placeholder maintains a 1:1 aspect ratio. */
+        padding-top: 100%;
+        content: '';
+        font-size: 0;
+        display: block;
+    }
+
+    .rn_Small {
+        font-size: .5em;
+        width: $small;
+    }
+
+    .rn_Medium {
+        font-size: 1em;
+        width: $medium;
+    }
+
+    .rn_Large {
+        font-size: 2em;
+        width: $large;
+    }
+
+    .rn_XLarge {
+        font-size: 2.8em;
+        width: $xlarge;
+    }
+
+    img {
+        /* Image scales to fit inside its container
+           as well as maintaining its aspect ratio. */
+        height: auto;
+        width: 100%;
+        border-radius: $avatar-border-radius;
+    }
+
+    .rn_Default {
+        @include prefixer(user-select, none, webkit moz ms spec);
+        border-radius: $avatar-border-radius;
+        display: block;
+        bottom: 0;
+        font-weight: bold;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+
+        .rn_Liner {
+            /* Vertically and horizontally centered. */
+            @include prefixer(transform, translate(-50%, -50%), moz webkit ms spec);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+    $default-avatar-black-text: #111;
+    $default-avatar-white-text: #FFF;
+    $default-avatar-black: #002B36;
+    $default-avatar-blue: #05F;
+    $default-avatar-green: #24E84B;
+    $default-avatar-green-alt: #A5C24D;
+    $default-avatar-yellow: #FFA;
+    $default-avatar-gray: #636363;
+
+    @mixin avatar-colors($bg, $color) {
+        background: $bg;
+        color: $color;
+    }
+
+    .rn_DefaultColor0 {
+        @include avatar-colors($default-avatar-blue, $default-avatar-white-text);
+    }
+
+    .rn_DefaultColor1 {
+        @include avatar-colors($default-avatar-green, $default-avatar-black-text);
+    }
+
+    .rn_DefaultColor2 {
+        @include avatar-colors($default-avatar-black, $default-avatar-white-text);
+    }
+
+    .rn_DefaultColor3 {
+        @include avatar-colors($default-avatar-green-alt, $default-avatar-black-text);
+    }
+
+    .rn_DefaultColor4 {
+        @include avatar-colors($default-avatar-yellow, $default-avatar-black-text);
+    }
+
+    .rn_DefaultColor5 {
+        @include avatar-colors($default-avatar-gray, $default-avatar-white-text);
+    }
+
+    .rn_DisplayName {
+        display: block;
+        font-size: .7em;
+        margin-top: .2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        &.rn_DisplayNameDisabled {
+            color: #545454;
+        }
+    }
+}
+
+.rn_AvatarLink {
+    @include clearfix;
+    display: inline-block;
+}

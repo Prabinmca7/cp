@@ -1,0 +1,14 @@
+input: <div id="error"></div><form id="unitTestID"><rn:widget path='standard/input/FormSubmit' error_location='error'/></form>
+filter: @"f_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="error"></div><form id="unitTestID"><div id="rn_FormSubmit_0" class="rn_FormSubmit">
+    <button type="submit" class="rn_DisplayButton" id="rn_FormSubmit_0_Button" disabled>
+    Submit    </button>
+    <span class="rn_Hidden">
+        <input id="rn_FormSubmit_0_Submission" type="checkbox" class="rn_Hidden"/>
+        <label for="rn_FormSubmit_0_Submission" class="rn_Hidden">&nbsp;</label>
+    </span>
+</div>
+</form>

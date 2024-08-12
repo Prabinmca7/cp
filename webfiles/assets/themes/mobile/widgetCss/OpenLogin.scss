@@ -1,0 +1,103 @@
+@import 'widget-includes';
+
+.rn_OpenLogin {
+    position: relative;
+    @include clearfix;
+
+    .rn_ActionArea {
+        clear: both;
+        margin-top: 20px;
+
+        @include media($rn-medium) {
+            opacity: 1;
+            background: #FFF;
+            padding: 10px;
+            z-index: 10;
+            border-radius: .1875em;
+            border: 1px solid #999;
+            margin: 0 5%;
+            width: 90%;
+        }
+    }
+
+    input {
+        margin: 0 auto 18px;
+        min-width: 210px;
+
+        &[type="text"] {
+            min-width: 210px;
+        }
+    }
+
+    .rn_Explanation {
+        background-color: #EBEFF5;
+        border: 1px solid #CCC;
+        font-size: 1.11em;
+        line-height: 1.2em;
+        padding: 10px;
+        position: relative;
+        text-shadow: 1px 0 0 #FFF;
+    }
+
+    .rn_Header {
+        color: #404040;
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.3em;
+        margin: 4px 0 10px;
+        text-shadow: 0 1px 0 #FFF;
+
+        em {
+            left: -18px;
+            height: 40px;
+            position: absolute;
+            top: -18px;
+            width: 22px;
+        }
+    }
+
+    .rn_LoginProvider {
+        @include transition(box-shadow .5s);
+        float: left;
+        margin: 4px 6px 8px;
+        width: 120px;
+
+        border: 1px solid $light-gray;
+        border-radius: 3px;
+        text-align: center;
+        padding: 6px;
+    }
+
+    .rn_HighContrastMode {
+        .rn_Header em {
+            display: none;
+        }
+
+        .rn_LoginProvider {
+            color: #000;
+            font-size: 1.4em;
+            height: 22px;
+            padding: 10px 0 4px 30px;
+            text-decoration: none;
+            width: 100px;
+        }
+    }
+
+    &.rn_OpenLoginDialog {
+        .rn_ActionArea {
+            position: static;
+        }
+
+        .rn_EmailLabel {
+            display: block;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .rn_EmailInput {
+            margin-bottom: 8px;
+            width: 92%;
+        }
+    }
+}

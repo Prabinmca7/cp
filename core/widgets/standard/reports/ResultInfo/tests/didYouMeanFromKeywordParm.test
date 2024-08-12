@@ -1,0 +1,18 @@
+input: <rn:widget path='standard/reports/ResultInfo'/>
+filter: @"r_tok":"[^"]*",?@
+jstestfile: didYouMeanFromKeywordParm.test.js
+removecontent: true
+urlparameters: /kw/addres
+output:
+<div id="rn_ResultInfo_0" class="rn_ResultInfo">
+        <div id="rn_ResultInfo_0_Suggestion" class="rn_Suggestion rn_Hidden">
+        Other Suggested Searches            </div>
+        <div id="rn_ResultInfo_0_Spell" class="rn_Spell ">
+        Did you mean:                <a href="/app/unitTest/rendering/widgets/standard/reports/ResultInfo/tests/didYouMeanFromKeywordParm/search/1/kw/address/dym/1">address</a>
+            </div>
+        <div id="rn_ResultInfo_0_NoResults" class="rn_NoResults ">
+        No results found.        <br/><br/>
+        Suggestions:<ul><li>Make sure all words are spelled correctly</li><li>Use different words that mean the same thing</li></ul>    </div>
+            <div id="rn_ResultInfo_0_Results" class="rn_Results rn_Hidden">
+                                                                Results <span>0</span> - <span>0</span> of <span>0</span> for <a href="/app/unitTest/rendering/widgets/standard/reports/ResultInfo/tests/didYouMeanFromKeywordParm/search/1/kw/addres/search/1">addres</a>         </div>
+    </div>

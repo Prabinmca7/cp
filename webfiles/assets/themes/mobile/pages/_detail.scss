@@ -1,0 +1,200 @@
+.rn_SideRail {
+    @include span-columns(3);
+    @include media($rn-medium) {
+        @include span-columns(12);
+    }
+
+    margin-top: 0;
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    > div {
+        &.rn_AnswerFeedback {
+            button {
+                font-size: smaller;
+            }
+
+            .rn_Title {
+                @include icon($fa-var-thumbs-o-up);
+            }
+        }
+    }
+
+    .rn_PreviousAnswers h2 {
+        @include icon($fa-var-calendar-o);
+    }
+}
+
+
+.rn_RecordDetail {
+    padding: 0;
+    margin-bottom: .5em;
+
+    &:empty {
+        padding: 0;
+    }
+
+    ol, ul {
+        clear: both;
+        padding-left: 2em;
+        margin-bottom: .5em;
+    }
+
+    > ol, > ul {
+        margin-bottom: 1em;
+    }
+
+    li {
+        line-height: 1.4em;
+        margin: 4px 0;
+    }
+
+    ul li {
+        list-style: disc;
+    }
+
+    li ul li {
+        list-style: circle;
+    }
+
+    li li ul li {
+        list-style: square;
+    }
+
+    ol li,
+    li ol li,
+    li li ol li {
+        list-style: decimal;
+    }
+
+    .rn_Highlight {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .rn_RecordInfo {
+        color: darken($light-gray, 50%);
+        padding-bottom: .5em;
+        padding-top: .5em;
+        margin-bottom: 1em;
+    }
+
+    .rn_SecondaryQuestionContent {
+        padding-bottom: 2em;
+        border-bottom: $dashed-border;
+    }
+
+    .rn_DetailTools {
+        @include clearfix;
+        padding: 1em 0;
+        margin: 3em 0 1em;
+        border-bottom: $dashed-border;
+
+        > div,
+        > span {
+            float: right;
+            margin-left: 1em;
+        }
+    }
+
+    .rn_AdditionalInfo {
+        @include flash(lighten($light-gray, 10));
+        font-weight: normal;
+    }
+
+    blockquote {
+        border: 0;
+        padding-left: 1em;
+    }
+}
+
+.rn_ContentDetail {
+    @include span-columns(12);
+    margin-bottom: 1em;
+
+    /* Prevent div from collapsing when there is no content */
+    &:after {
+        content: '\A0';
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    h1.rn_Summarry {
+        font-size: 2em;
+    }
+
+    .rn_Container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.rn_Product {
+    padding: 0;
+
+    .rn_RelatedSocial {
+        h2{
+            @include span-columns(12);
+
+            @include icon($social-discussion-icon, before) {
+                @include span-columns(1);
+                font-size: 2em;
+                width: auto;
+                color: #62C2FF;
+                line-height: 0.5em;
+            }
+
+            font-size: 1.75em;
+            margin-bottom: 1em;
+            display: inline-block;
+        }
+    }
+
+    &.rn_Hero .rn_HeroInner {
+        padding: 1em 0 0;
+
+        .rn_ProductCategoryBreadcrumb li {
+            background: none;
+
+            a {
+                color: $light-gray;
+            }
+
+            &:after {
+                border-left-color: $hero-background;
+            }
+        }
+
+        .rn_ProductHero {
+            @include span-columns(8);
+        }
+
+        .rn_ProductSubscription {
+            @include span-columns(12);
+
+            margin-top: 2em;
+
+            .rn_DiscussionSubscriptionIcon {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.rn_IncidentDetail {
+    h2 {
+        @extend %heading;
+    }
+
+    > div,
+    > form {
+        margin-bottom: 2em;
+    }
+}

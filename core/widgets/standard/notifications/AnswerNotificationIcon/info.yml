@@ -1,0 +1,51 @@
+version: "1.8.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  add_or_renew_notification_ajax:
+    name: rn:msg:ADD_RENEW_ANSWER_NOTIFICATION_AJAX_CMD
+    type: ajax
+    description: rn:msg:ENDPOINT_ADD_RENEW_ANS_NOTIF_LBL
+    default: /ci/ajaxRequest/addOrRenewNotification
+  label_link:
+    name: rn:msg:LINK_LABEL_CMD
+    description: rn:msg:STRING_DISPLAYS_LINK_PAGE_LBL
+    default: rn:msg:NOTIFY_ME_CMD
+    type: STRING
+  label_tooltip:
+    name: rn:msg:TOOLTIP_LBL
+    description: rn:msg:STRING_DISPLAYS_HOVERS_LINK_LBL
+    default: rn:msg:NOTIFY_EMAIL_ANS_UPDATED_MSG
+    type: STRING
+  label_error:
+    name: rn:msg:ERROR_LABEL_LBL
+    description: rn:msg:DISPLAYED_AFTER_ENC_L_NOTIF_REQUEST_MSG
+    default: rn:msg:An error was encountered which prevented your request from being submitted successfully.
+    type: STRING
+  label_subscribed:
+    name: rn:msg:SUBSCRIBED_LABEL_LBL
+    description: rn:msg:DISPLAYED_AFTER_SEL_NOTIF_REQUEST_MSG
+    default: rn:msg:RECEIVE_NOTIFICATIONS_WHEN_TH_UPDATED_MSG
+    type: STRING
+  label_renewed:
+    name: rn:msg:RENEWED_LABEL_LBL
+    description: rn:msg:TT_SEL_NOTIF_REQ_ADDR_SUBSCRIBED_MSG
+    default: rn:msg:YOUR_NOTIFICATION_HAS_BEEN_RENEWED_MSG
+    type: STRING
+info:
+  category:
+    - Knowledge Foundation
+  description: rn:msg:TH_ALLOW_EU_USERS_S_GET_NOTIF_UPDATED_MSG
+  urlParameters:
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      description: rn:msg:ANSWER_ID_ASSOCIATE_NOTIFICATION_LBL
+      example: a_id/3
+    notif:
+      name: rn:msg:NOTIFICATION_SUCCESS_LBL
+      description: rn:msg:KEY_DENOTING_ANS_NOTIF_OCCURRED_LBL
+      example: notif/1
+contains:
+- widget: standard/login/LoginDialog
+  versions: ["2.7"]

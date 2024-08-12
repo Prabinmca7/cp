@@ -1,0 +1,62 @@
+version: "1.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [anim-scroll]
+attributes:
+  label_button:
+    name: rn:msg:BUTTON_LABEL_LBL
+    description: rn:msg:LABEL_TO_DISPLAY_ON_THE_BUTTON_LBL
+    default: rn:msg:SUBMIT_CMD
+    type: STRING
+  label_confirm_dialog:
+    name: rn:msg:CONFIRM_DIALOG_LBL
+    description: rn:msg:MSG_DISPLAYED_MODAL_DIALOG_MSG
+    type: STRING
+  label_submitting_message:
+    name: rn:msg:SUBMITTING_MESSAGE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYS_FORM_IS_SUBMITTING_MSG
+    type: STRING
+    default: rn:msg:SUBMITTING_ELLIPSIS_MSG
+  on_success_url:
+    name: rn:msg:ON_SUCCESS_URL_LBL
+    description: rn:msg:F_SBMSS_SCCDS_RMN_DSP_LMNT_CT_TTRB_HNRD_MSG
+    type: STRING
+  label_on_success_banner:
+    name: rn:msg:SUCCESS_BANNER_LABEL_LBL
+    description: rn:msg:ONSUCCESSURL_N_TH_S_BANNERSTYLE_ALERT_MSG
+    type: STRING
+  error_location:
+    name: rn:msg:ERROR_LOCATION_LBL
+    description: rn:msg:UNIQ_ID_LT_DIV_AMPERSAND_MSG
+    type: STRING
+  add_params_to_url:
+    name: rn:msg:ADD_PRMS_TO_URL_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CMMA_SEPARATED_L_URL_PARMS_MSG), 'on_success_url')
+    type: STRING
+  challenge_location:
+    name: rn:msg:CHALLENGE_LOCATION_LBL
+    description: rn:msg:UNQ_ID_LT_DV_AMPERSAND_MSG
+    type: STRING
+  challenge_required:
+    name: rn:msg:CHALLENGE_REQUIRED_LBL
+    description: rn:msg:INDICATES_FORM_REQS_A_VALID_HUMAN_MSG
+    default: false
+    type: BOOLEAN
+  timeout:
+    name: rn:msg:TIMEOUT_LBL
+    description: rn:msg:TIMEOUT_FORM_SUBMISSION_SET_0_DEF_MSG
+    type: INT
+    default: 0
+    min: 0
+  flash_message:
+    name: rn:msg:FLASH_MESSAGE_LBL
+    type: string
+    description: rn:msg:TIMES_DISP_INFORMING_TH_IMPENDING_FLIP_LBL
+  unsaved_data_dialog:
+    name: rn:msg:SHOWHIDE_UNSAVED_DATA_DIALOG_LBL
+    description: rn:msg:SHOWSHIDES_SAVE_DIALOG_UPON_AVG_PAGE_LBL
+    default: false
+    type: BOOLEAN
+info:
+  description: rn:msg:WDGET_DISP_HTML_SUBMIT_BTN_SUBMIT_MSG

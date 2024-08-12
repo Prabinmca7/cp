@@ -1,0 +1,12 @@
+input: <rn:widget path="standard/searchsource/SummaryResultListing" source_id="KFSearch" hide_when_no_results="true"/>
+removecontent: true
+urlparameters: /kw/*
+output:
+<div id="rn_SummaryResultListing_0" class="rn_SummaryResultListing rn_SourceResultListing rn_Hidden">
+    <div id="rn_SummaryResultListing_0_Alert" aria-live="polite" class="rn_ScreenReaderOnly"></div>
+        <div id="rn_SummaryResultListing_0_Content" class="rn_Content">
+            <span class="rn_NoResults">No results found.</span>
+    </div>
+    <div class="rn_AdditionalResults">
+            </div>
+    </div>

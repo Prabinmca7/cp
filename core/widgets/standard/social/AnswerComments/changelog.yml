@@ -1,0 +1,113 @@
+1.7.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.6.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+1.5.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 698
+    date: 03/27/2018
+    description: It contains widget LoginDialog which was minor bumped
+    details:
+    - In widget FileAttachmentUpload, added the form token as a salt to the local
+      name (or tmp\_name) of the file to be uploaded and validate it in form submit.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+1.4.1:
+  release: "17.2"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 610
+    date: 02/22/2017
+    description: '''contains'' dependency was updated with latest widget versions.'
+    level: minor
+    refno: 161020-000077
+    sortPosition: Middle
+1.3.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 566
+    date: 02/22/2017
+    description: '''contains'' dependency was updated with latest widget versions.'
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.2.1:
+  release: "15.2"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 276
+    date: 10/24/2014
+    description: Widget AJAX calls that return JSON now set the appropriate mime type
+    details:
+    - Widget AJAX endpoints now set the content type headers as 'application/json'
+      as well as setting content length.
+    level: minor
+    refno: 141010-000017
+    sortPosition: Middle
+1.1.1:
+  release: "13.8"
+  entries:
+  - account: spage
+    category: API Change
+    changelogID: 120
+    date: 07/17/2013
+    description: Uses new framework method to obtain a formatted time stamp
+    details:
+    - The `Framework::formatDate` function is new to framework version 3.1.
+    - There should be no noticeable difference to the resulting timestamp.
+    level: minor
+    refno: 130605-000074
+    sortPosition: Middle
+1.0.2:
+  release: "13.5"
+  entries:
+  - account: rlund
+    category: API Change
+    changelogID: 64
+    date: 04/29/2013
+    description: Password fields now default to having autocomplete disabled
+    details:
+    - All input fields for contact passwords now have autocomplete="off" set by default.
+      To re-enable autocomplete simply add the `disable_password_autocomplete` attribute
+      to your rn:widget tag for LoginDialog and set it to false.
+    level: nano
+    refno: 130124-000068
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

@@ -1,0 +1,56 @@
+@import 'widget-includes';
+
+.rn_OkcsRecommendContent {
+
+    float: left;
+
+    .rn_RecommendContentButton {
+        margin-top: 1em;
+        float: left;
+        margin-right:10px;;
+    }
+
+    .rn_LabelInput {
+        font-weight: bold;
+        margin-top: 1em;
+    }
+
+    .rn_Fieldset {
+        margin-top: 2em;
+    }
+
+    .rn_RecommendationHeader {
+        background: #536a8b;
+        color: #FFF;
+        font-weight: normal;
+        border-bottom: 1px solid #CCC;
+        padding: 7px;
+        line-height: 1.4em;
+        margin-bottom: 2em;
+    }
+
+    .rn_RichTextInput {
+        .rn_InputArea {
+            margin-bottom: 0;
+        }
+    }
+
+    section, button {
+        margin-top: 1em;
+        
+        select {
+            margin-bottom: 0;
+            width: 30%;
+            height: 1.75em;
+        }
+        
+        option {
+            cursor: pointer;
+            min-height: 1.5em;
+        }
+    }
+    
+    .rn_ButtonDiv {
+        display: inline;
+    }
+}

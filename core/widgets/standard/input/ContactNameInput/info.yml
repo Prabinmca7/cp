@@ -1,0 +1,24 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  initial_focus_on_first_field:
+    name: rn:msg:INITIAL_FOCUS_ON_FIRST_FIELD_LBL
+    description: rn:msg:SET_TRUE_FLD_WIDGET_FOCUS_PG_CMD
+    type: BOOL
+  required:
+    name: rn:msg:REQUIRED_LBL
+    description: rn:msg:BOOLEAN_DENOTING_FLD_CONT_VAL_APPLY_MSG
+    type: BOOL
+  short_name:
+    name: rn:msg:SHORT_NAME_LBL
+    description: rn:msg:SET_TRUE_NAMES_DISPLAYED_NAME_NAME_MSG
+    type: BOOL
+info:
+  description: rn:msg:WDGT_DSP_LABELS_INPUT_FLDS_CONT_MSG
+contains:
+- widget: standard/input/FormInput
+  versions: ["1.4"]

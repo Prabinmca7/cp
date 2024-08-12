@@ -1,0 +1,328 @@
+.rn_StartOver {
+    display: inline-block;
+    float: right;
+    margin-right: 9%;
+    margin-top: 15px;
+    a {
+        color: #FFF;
+    }
+}
+
+.rn_OkcsLeftContainer {
+    display: inline-block;
+    width: 34%;
+    margin-top: 1em;
+}
+
+.rn_OkcsRightContainer {
+    clear: both;
+    display: inline-block;
+    float: right;
+    width: 64%;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 520px) {
+    .rn_OkcsRightContainer {
+        width: 60%;
+    }
+    .rn_OkcsLeftContainer {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .rn_OkcsRightContainer {
+        width: 54%;
+    }
+    .rn_OkcsLeftContainer {
+        width: 44%;
+    }
+}
+
+.rn_StartOver a{
+    color: #FFF;
+}
+
+.rn_SourceSearchButton {
+    display: block;
+    float: left;
+}
+
+#rn_FileAttach, #rn_AnswerText {
+    clear: both;
+    font-size: 1.0em;
+    line-height: 1.4em;
+    padding: 15px 10px;
+}
+
+#rn_Summary {
+    line-height: 1.25em;
+    font-size: 1.77em;
+    font-weight: bold;
+}
+
+.rn_AnswerDetail.rn_AnswerHeader h1{
+    margin: 0;
+}
+
+.rn_AnswerStatus .rn_AnswerInfo {
+    color: #666;
+    font-size: small;
+    margin: 6px 0 16px;
+}
+
+.rn_SectionTitle {
+    border-top: 2px dashed #b7cce7;
+    padding-top: 1.5em;
+}
+
+.rn_OkcsSubmit:before {
+    font-family: 'FontAwesome';
+    margin-right: 6px;
+    content: "\f110";/*FontAwesome icon fa-spinner*/
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+}
+
+.rn_SearchControls .rn_SearchButton, .rn_SearchControls .rn_SourceSearchButton{
+    margin-right: 0;
+}
+
+.rn_Footer .rn_Misc {
+    text-align: left;
+}
+
+.rn_OracleLogo a {
+    float: left;
+}
+
+.rn_Home .rn_RecentKB .rn_Container{
+    border-bottom: 0;
+}
+
+.rn_PageContentChannel{
+    background: #40526b;
+    color: #FFF;
+    text-shadow: #000 0 1px;
+}
+
+.rn_PageContentChannelInner{
+    max-width: 68em;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+.rn_ContentType li a{
+    color: #FFF !important;
+}
+
+.rn_OkcsLeftContainer .rn_OkcsProductCategorySearchFilter {
+    float: left;
+    width: 101%;
+}
+
+.rn_AnswerHide {
+    display: none;
+}
+
+.rn_OkcsSmartAssistant .rn_ExpandAnswer, .rn_SmartAssistantDialog .rn_InlineAnswerLink {
+    font-size: 1em;
+}
+
+.rn_OkcsSmartAssistant.rn_SmartAssistantDialog div.rn_ButtonContainer button.rn_NewTabButton {
+    background-color: #3873c4;
+}
+
+.rn_OkcsSmartAssistant.rn_SmartAssistantDialog div.rn_ButtonContainer button.rn_NewTabButton:hover {
+    background-color: #5b8cd0;
+}
+
+.rn_SmartAssistantDialog .rn_List > li {
+    font-size: 1.2em;
+}
+
+.rn_OkcsSmartAssistant .rn_InlineAnswersExplorer li a {
+    font-weight: normal;
+}
+
+.rn_OkcsSmartAssistant .rn_InlineAnswersExplorer {
+    clear: both;
+}
+
+.rn_RatingLabel {
+    display: inline;
+}
+
+.rn_ResultPadding {
+    display: inline-block !important;
+}
+
+.rn_ProductCategorySearchFilter .rn_PanelContainer{
+    width: 373px;
+}
+
+.rn_FloatRight {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.rn_SearchInput .yui3-aclist-item-active, .rn_SearchInput .yui3-aclist-item:hover {
+    background: #ebeff5 none repeat scroll 0 0;
+    outline: 0;
+}
+
+.rn_SearchInput .yui3-aclist {
+    background-color: #fff;
+    border: 1px solid;
+    color: #3b6db1;
+    padding: 5px 10px;
+    position: absolute;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    cursor: text;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.58);
+    text-shadow: none;
+    z-index: 1000;
+    line-height: 1.5em;
+}
+
+.rn_SearchInput .yui3-aclist-hidden {
+    visibility: hidden;
+}
+
+.rn_SearchInput .yui3-aclist-item:before {
+    font-family: 'FontAwesome';
+    content: "\f002";
+    margin-right: .5em;
+}
+
+.rn_SearchInput .yui3-aclist-aria {
+    display: none;
+}
+
+.rn_SearchInput .yui3-aclist-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rn_SearchInput .yui3-aclist-list li {
+    cursor: pointer;
+}
+
+.rn_SearchInput .rn_ResultFormat {
+    display: inline;
+}
+
+.rn_SearchInput .yui3-aclist-item:hover .list-item-tooltip {
+    display: block;
+}
+
+.rn_SearchInput .list-item-tooltip {
+    background: #ffc none repeat scroll 0 0;
+    border: 1px solid;
+    cursor: text;
+    display: none;
+    font-size: .8em;
+    margin-left: 4em;
+    padding: .1em;
+    position: absolute;
+    white-space: normal;
+    word-wrap: break-word;
+    z-index: 9999;
+    text-shadow: none;
+    margin-top: 1.2em;
+}
+
+.rn_OkcsSimpleSearch .rn_SearchInput.rn_OkcsSuggestions {
+    width: 175% !important;
+    font-size: 0.9em;
+}
+
+.rn_SourcePagination .rn_NextPage a:after, .rn_SourcePagination .rn_PreviousPage a:before {
+    content: "";
+}
+
+.rn_SearchRating .rn_Rating:before, .rn_SearchRating .rn_Selected:before {
+    margin-right: 0;
+}
+
+.rn_OkcsAnswerAction {
+    clear: both;
+    display: block;
+    float: right;
+    width: 100%;
+}
+
+.rn_AnswerList .rn_ResultPadding {
+    width: 100%;
+}
+
+.rn_DocIdMsg {
+    background: rgba(114, 114, 236, 0.94) none repeat scroll 0 0;
+    color: white;
+    left: 0;
+    line-height: 4em;
+    padding: 0 1em;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 100;
+    transition: top 2000ms ease 0ms;
+}
+
+.rn_DocIdResults, .rn_DocIdResults:hover {
+    color: #ffa;
+    font-weight: bold;
+}
+
+.rn_hideBanner {
+    border: 2px solid;
+    border-radius: 3em;
+    color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.1em 0.35em;
+}
+
+.rn_OkcsAnswerAction .rn_SubscriptionButton, .rn_OkcsAnswerAction .rn_OkcsRecommendContent .rn_RecommendContentButton{
+    margin-top: 0;
+    margin-bottom: 0.75em;
+}
+
+@supports (display: contents) {
+    .rn_OkcsRecommendContent, .rn_RecommendButtonContainer {
+        display: contents;
+    }
+}
+
+@supports not (display: contents) {
+    .rn_OkcsRecommendContent, .rn_RecommendButtonContainer {
+        display: ruby-base-container;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .rn_OkcsRecommendContent, .rn_RecommendButtonContainer {
+        display: ruby-base-container;
+    }
+}
+
+.rn_ResultIcon.rn_File_Open_article:before{
+    font-family: "FontAwesome";
+    color: #3b6db1;
+    content: "\f08e";
+    background-color: #cccccc69;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}

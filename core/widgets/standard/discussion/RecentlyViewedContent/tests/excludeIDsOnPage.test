@@ -1,0 +1,30 @@
+input: <rn:widget path="standard/discussion/RecentlyViewedContent"/>
+removecontent: true
+session: {"urlParameters":[{"a_id":52},{"a_id":54},{"qid":2055},{"a_id":59},{"qid":2038},{"a_id":57},{"a_id":59}]}
+urlparameters: /qid/2055
+output:
+<div id="rn_RecentlyViewedContent_0" class="rn_RecentlyViewedContent">
+        <h2>Recently Viewed</h2>
+    <ul>
+            <li class="rn_AnswerContentItem">
+            <a href="/app/answers/detail/a_id/59">
+                Understanding cellular data networks            </a>
+        </li>
+            <li class="rn_AnswerContentItem">
+            <a href="/app/answers/detail/a_id/57">
+                iPhone: Charging the battery            </a>
+        </li>
+            <li class="rn_CommunityQuestionItem">
+            <a href="/app/social/questions/detail/qid/2038">
+                [ACTIVE] [AUTHOR BA] [MOD BA] Question by...            </a>
+        </li>
+            <li class="rn_AnswerContentItem">
+            <a href="/app/answers/detail/a_id/54">
+                iPhone: Basic troubleshooting            </a>
+        </li>
+            <li class="rn_AnswerContentItem">
+            <a href="/app/answers/detail/a_id/52">
+                Enabling MMS on iPhone 3G and iPhone 3GS            </a>
+        </li>
+        </ul>
+</div>

@@ -1,0 +1,58 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_twitter_link:
+    name: rn:msg:TWITTER_LINK_LABEL_LBL
+    description: rn:msg:TWITTER_WHICH_APPEAR_TWEETS_DO_LOAD_LBL
+    type: STRING
+    default: rn:msg:TWEETS_LBL
+  data_tweet_limit:
+    name: rn:msg:DATA_TWEET_LIMIT_LBL
+    description: rn:msg:TWT_T_1_0_AU_S_S_F_TWT_POP_TWEETS_MSG
+    type: INT
+    min: 1
+    max: 20
+  fetch_tweets_using:
+    name: rn:msg:FETCH_TWEETS_USING_LBL
+    description: rn:msg:PROVIDE_OPTION_SHOULD_FETCH_TWEETS_MSG
+    type: option
+    required: true
+    options:
+      - account
+      - hashtag
+      - search_query
+    default: account
+  twitter_account:
+    name: rn:msg:TWITTER_ACCOUNT_LBL
+    description: rn:msg:TWEETS_FTCHD_EG_ORACLESERVCLOUD_MSG
+    type: STRING
+    default: null
+  twitter_hashtag:
+    name: rn:msg:TWITTER_HASHTAG_LBL
+    description: rn:msg:HSHTG_TWTS_FTCHD_SVC_HSHTG_TWTTRWDGTD_TT_MSG
+    type: STRING
+    default: null
+  twitter_widget_id:
+    name: rn:msg:TWITTER_WIDGET_ID_LBL
+    description: rn:msg:TWITTER_WHICH_HASHTAG_SEARCH_QUERIES_LBL
+    type: STRING
+    default: null
+  twitter_search_query:
+    name: rn:msg:TWITTER_SEARCH_QUERY_LBL
+    description: rn:msg:TH_TWEETS_EG_FROMORACLESRVCLD_FRMRCLP_R_MSG
+    type: STRING
+    default: null
+  tweets_container_width:
+    name: rn:msg:TWEETS_CONTAINER_WIDTH_LBL
+    description: rn:msg:WIDTH_OF_THE_CONTAINER_IN_PIXELS_LBL
+    type: INT
+    default: 300
+  tweets_container_height:
+    name: rn:msg:TWEETS_CONTAINER_HEIGHT_LBL
+    description: rn:msg:T_PLS_DATATWEETLIMIT_T_EFFECTIVE_MSG
+    type: INT
+    default: 500
+info:
+  description: rn:msg:TH_TWTS_TWT_HSHTG_RR_TWT_SBJ_CHG_TWT_NS_MSG

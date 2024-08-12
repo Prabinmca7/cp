@@ -1,0 +1,3 @@
+input: <rn:widget path='standard/utils/AnnouncementText' file_path='/euf/core/css/maNO.css'/>
+removecontent: true
+output: 

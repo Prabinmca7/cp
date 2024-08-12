@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>Customer Portal</title>
+    <parser>
+        <target>output</target>
+        <extensions>
+            <extension>php</extension>
+        </extensions>
+        <visibility>public,protected</visibility>
+    </parser>
+    <transformer>
+        <target>output</target>
+        <external-class-documentation>
+            <prefix>RightNow\Connect</prefix>
+            <uri>http://documentation.custhelp.com/euf/assets/devdocs/february2013/Connect_PHP/Default.htm</uri>
+        </external-class-documentation>
+    </transformer>
+    <transformations>
+        <template name="template"/>
+    </transformations>
+    <files>
+        <ignore-symlinks>on</ignore-symlinks>
+        <ignore-hidden>on</ignore-hidden>
+        <directory>../../../core</directory>
+        <ignore>core/compatibility/Internal/*</ignore>
+        <ignore>core/compatibility/Mappings/*</ignore>
+        <ignore>core/compatibility/ActionCapture.php</ignore>
+        <ignore>core/framework/CodeIgniter/system/CoreCodeIgniter.php</ignore>
+        <ignore>core/framework/CodeIgniter/system/codeigniter/CodeIgniter.php</ignore>
+        <ignore>core/framework/CodeIgniter/system/codeigniter/Common.php</ignore>
+        <file>core/framework/CodeIgniter/system/codeigniter/Base5.php</file>
+        <ignore>core/framework/CodeIgniter/system/helpers/*</ignore>
+        <ignore>core/framework/CodeIgniter/system/libraries/*</ignore>
+        <ignore>core/framework/Controllers/Admin/*</ignore>
+        <ignore>core/framework/Controllers/UnitTest/*</ignore>
+        <ignore>core/framework/Libraries/ThirdParty/*</ignore>
+        <ignore>core/framework/Internal/*</ignore>
+        <ignore>core/framework/Views/*</ignore>
+        <ignore>core/widgets/*</ignore>
+        <ignore>core/util/*</ignore>
+        <ignore>core/framework/init.php</ignore>
+        <ignore>optimized_includes.php</ignore>
+        <ignore>tests/</ignore>
+        <ignore>/cp/core/framework/CodeIgniter3/system/*</ignore>
+    </files>
+</phpdoc>
+

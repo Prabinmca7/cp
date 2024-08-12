@@ -1,0 +1,39 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:SRC_SRC_DF_CPCSTMRDVLPMNTCNFGSRCHSRCSYML_MSG
+    required: true
+    type: STRING
+    default: SocialSearch
+    options:
+     - SocialSearch
+     - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  show_dates:
+    name: rn:msg:SHOW_DATES_LBL
+    description: rn:msg:T_DATE_DATE_RES_QS_SHOWMETADATA_ATTRIBT_MSG
+    required: true
+    type: BOOLEAN
+    default: true
+  show_metadata:
+    name: rn:msg:SHOW_METADATA_LBL
+    description: rn:msg:MTDT_RS_QS_WH_DD_BSTNSWRS_SSS_GRPHCL_MG_D_MSG
+    type: MULTIOPTION
+    options:
+    - comment_count
+    - best_answers
+    default:
+    - comment_count
+    - best_answers
+extends:
+  widget: standard/searchsource/SourceResultListing
+  versions: ["1.5"]
+  components: [php, view, js, css]
+info:
+  category:
+    - Community
+    - Source Search
+  description: rn:msg:SOURCEID_END_L_SUBJ_RPT_DATE_DATES_MSG

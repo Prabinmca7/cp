@@ -1,0 +1,14 @@
+input: <rn:widget path="search/BasicKeywordSearch" label_text="label text" report_page_url="/new/url" label_button="Search Button" />
+removecontent: true
+template: basic
+urlparameters: /kw/iphone/p/1/c/71
+output:
+<div class="rn_BasicKeywordSearch rn_KeywordText">
+    <form method="post" action="/new/url/p/1/c/71">
+        <div>
+            <label for="rn_BasicKeywordSearch_0_Text"><b>label text</b></label>
+            <input id="rn_BasicKeywordSearch_0_Text" name="kw" type="text" maxlength="255" value="iphone"/>
+            <input type="submit" id="rn_BasicKeywordSearch_0_Button" value="Search Button"/><br/>
+        </div>
+    </form>
+</div>

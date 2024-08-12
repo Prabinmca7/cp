@@ -1,0 +1,4 @@
+input: <rn:widget path='standard/social/CommunityPostSubmit'/>
+jstestfile: base.test.js
+removecontent: true
+output: 

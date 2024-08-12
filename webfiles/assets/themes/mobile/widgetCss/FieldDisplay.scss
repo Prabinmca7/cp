@@ -1,0 +1,19 @@
+@import 'widget-includes';
+
+.rn_FieldDisplay {
+    .rn_DataLabel {
+        float: left;
+        font-weight: bold;
+    }
+
+    .rn_DataValue {
+        margin-left: 180px;
+        word-wrap: break-word;
+
+        &.rn_LeftJustify {
+            clear: left;
+            margin-left: 0;
+            padding-bottom: .5em;
+        }
+    }
+}

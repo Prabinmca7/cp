@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_SimpleSearch {
+    margin: 0 1em;
+
+    span.rn_ButtonLabel { // Hide the button's text and display an icon instead.
+        @extend %screenreader;
+    }
+
+    input {
+        display: block;
+        width: 80%;
+        font-size: .85em;
+
+        // Get rid of 'x' button.
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    button {
+        @include icon($fa-var-search) {
+            margin: 0;
+        }
+
+        padding-left: 0;
+        padding-right: 0;
+        width: 18%;
+    }
+}

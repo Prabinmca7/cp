@@ -1,0 +1,17 @@
+<rn:block id="listTop"/>
+<% for (var i = 0; i < topicWordItems.length; i++) { %>
+    <rn:block id="listItem">
+    <dt>
+    <% if(!RightNow.Url.isExternalUrl(topicWordItems[i].url))
+           topicWordItems[i].url += linkString %>
+    <% if(attrs.show_topic_icon) { %>
+        <%= topicWordItems[i].icon %>
+    <% } %>
+        <a href="<%= topicWordItems[i].url %>" target="<%= attrs.target %>" <% if(attrs.show_default_icon) { %>class="rn_ExternalLinkIcon" <% } %>><%= topicWordItems[i].title %></a>
+    </dt>
+    <dd>
+        <%= topicWordItems[i].text %>
+    </dd>
+    </rn:block>
+<% } %>
+<rn:block id="listBottom"/>

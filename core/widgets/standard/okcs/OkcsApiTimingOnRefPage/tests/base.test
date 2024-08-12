@@ -1,0 +1,5 @@
+input: <rn:widget path="standard/okcs/OkcsApiTimingOnRefPage"/>
+removecontent: true
+output:
+<div id="rn_OkcsApiTimingOnRefPage_0" class="rn_OkcsApiTimingOnRefPage">
+    </div>

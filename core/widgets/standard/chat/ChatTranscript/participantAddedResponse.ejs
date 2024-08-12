@@ -1,0 +1,15 @@
+<rn:block id="participantAddedMessageTop"/>
+<span class="rn_MessagePost">
+<% if(role === "LEAD" && attrs.agent_message_icon_path){ %>
+    <rn:block id="preParticipantAddedMessageIcon"/>
+    <img alt="" src="<%= attrs.agent_message_icon_path %>"/>
+    <rn:block id="postParticipantAddedMessageIcon"/>
+<% } else if(role !== "LEAD" && attrs.alert_icon_path){ %>
+    <rn:block id="preParticipantAddedMessageIcon"/>
+    <img alt="" src="<%= attrs.alert_icon_path %>"/>
+    <rn:block id="postParticipantAddedMessageIcon"/>
+<% } %> 
+<span class="rn_AgentTextPrefix"><%= agentName %></span><%= message %> 
+<br/>
+</span>
+<rn:block id="participantAddedMessageBottom"/>

@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_OkcsSuggestions {
+
+    &.rn_SearchInput {
+        .rn_KASuggestTitle {
+            font-weight: bold;
+        }
+
+        ul.rn_Answer{
+             .yui3-aclist-item::before {
+                font-family: 'FontAwesome';
+                content: "\f15c";
+            }
+        }
+
+        .rn_SuggestionItem {
+            display: inline;
+        }
+
+        .yui3-aclist-item:hover {
+            background: none;
+        }
+
+        .yui3-aclist-item:hover.yui3-aclist-item-active {
+            background: #ebeff5 none repeat scroll 0 0;
+            outline: 0;
+        }
+    }
+}

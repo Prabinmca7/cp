@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/chat/ChatStatus'/>
+removecontent: true
+output:
+<h2 id="rn_ChatStatus_0" class="rn_ChatStatus rn_ChatHours">
+    Chat support is available</h2>

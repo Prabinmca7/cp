@@ -1,0 +1,53 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  limit:
+    name: rn:msg:NUMBER_LBL
+    description: rn:msg:MAXIMUM_PRMSSBL_VALUES_BETWEEN_1_20_MSG
+    default: 5
+    max: 20
+    type: int
+  display_link_type:
+    name: rn:astr:DISPLAY_LBL
+    type: OPTION
+    description: rn:msg:CONFIGURES_L_TH_MANUAL_L_MACH_REL_LINKS_MSG
+    default: both
+    options:
+    - manual
+    - learned
+    - both
+  label_title:
+    name: rn:msg:LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_HEADING_LBL
+    default: rn:msg:RELATED_ANS_HDG
+    type: string
+  access_type:
+    name: rn:msg:ACCESS_TYPE_LBL
+    description: rn:msg:SOURCE_OF_ACCESS_LBL
+    default: rn:astr:related
+    type: string
+  get_okcs_data_ajax:
+    name: rn:msg:OKCS_RECENTLY_VIEWED_CONTENT_AJAX_URL_LBL
+    type: AJAX
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+
+extends:
+  widget: standard/knowledgebase/RelatedAnswers
+  versions: ["1.4"]
+  components: php
+  overrideViewAndLogic: true
+
+info:
+  description: rn:msg:END_REL_EDIT_IN_AUTO_REL_DB_ENDUSER_ST_MSG
+  urlParameters:
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      description: rn:msg:ANSWER_ID_CHECK_RELATED_ANSWERS_LBL
+      example: a_id/3
+    kw:
+      name: rn:msg:KEYWORD_LBL
+      description: rn:msg:HIGHLIGHT_WORDS_ANSWERS_LINKS_MSG
+      example: kw/searchTerm

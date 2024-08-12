@@ -1,0 +1,99 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  limit:
+    name: rn:msg:NUMBER_LBL
+    description: rn:msg:MAXIMUM_COMMUNITY_RESULTS_DISPLAY_MSG
+    default: 5
+    type: INT
+    min: 1
+  truncate_size:
+    name: rn:msg:WRAP_SIZE_LBL
+    description: rn:msg:CHARACTERS_TRUNCATE_POST_CONTENT_MSG
+    default: 60
+    type: INT
+    min: 1
+    max: 200
+  sort_order:
+    name: rn:msg:DEFAULT_SORT_ORDER_LBL
+    description: rn:msg:ORDER_SORT_ENTRIES_SRCH_TERM_IGNORE_MSG
+    default: mostRecent
+    type: OPTION
+    options:
+    - alphabetical
+    - highestRating
+    - mostViews
+    - mostComments
+    - mostRecent
+  resource_id:
+    name: rn:msg:RESOURCE_ID_LBL
+    description: rn:msg:FLTRS_RS_RET_CONTENT_RESRCS_VAL_MSG
+    type: STRING
+  show_post_content:
+    name: rn:msg:SHOW_POST_CONTENT_CMD
+    description: rn:msg:DENOTES_SNIPPET_POST_CONTENT_MSG
+    default: true
+    type: BOOLEAN
+  show_updated_date:
+    name: rn:msg:SHOW_UPDATED_DATE_CMD
+    description: rn:msg:DENOTES_UPDATED_DATE_SHOWN_RESULT_MSG
+    default: true
+    type: BOOLEAN
+  show_author_name:
+    name: rn:msg:SHOW_AUTHOR_NAME_CMD
+    description: rn:msg:DENOTES_AUTHORS_NAME_SHOWN_RESULT_MSG
+    default: true
+    type: BOOLEAN
+  show_comment_count:
+    name: rn:msg:SHOW_COMMENT_COUNT_CMD
+    description: rn:msg:DENOTES_COMMENTS_SHOWN_RESULT_MSG
+    default: false
+    type: BOOLEAN
+  show_all_results_link:
+    name: rn:msg:SHOW_ALL_RESULTS_LINK_CMD
+    description: rn:msg:DENOTES_LINK_L_RES_TAKES_RES_SET_MSG
+    default: true
+    type: BOOLEAN
+  label_all_results:
+    name: rn:msg:ALL_RESULTS_LABEL_LBL
+    description: rn:msg:LABEL_DISP_LINK_ENTIRE_RESULT_SET_MSG
+    default: rn:msg:SEE_ALL_POSTS_LBL
+    type: STRING
+  label_author:
+    name: rn:msg:AUTHOR_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_AUTHOR_LINK_MSG
+    default: rn:msg:AUTHOR_PCT_S_LBL
+    type: STRING
+  label_updated:
+    name: rn:msg:UPDATED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_UPDATED_DATE_MSG
+    default: rn:msg:UPDATED_PCT_S_LBL
+    type: STRING
+  label_comment:
+    name: rn:msg:COMMENT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENT_COUNT_MSG
+    default: rn:msg:COMMENTS_PCT_S_LBL
+    type: STRING
+  filter_on_user:
+    name: rn:msg:FILTER_ON_USER_LBL
+    description: rn:msg:POSTS_CR_CONT_COMMUNITY_HASH_SHOWN_MSG
+    type: STRING
+  author_link_base_url:
+    name: rn:msg:AUTHOR_LINK_BASE_URL_LBL
+    description: rn:msg:SHOW_AUTHOR_NAME_SET_TRUE_VAL_BASE_MSG
+    type: STRING
+  post_link_base_url:
+    name: rn:msg:POST_LINK_BASE_URL_LBL
+    description: rn:msg:VAL_BASE_URL_POST_HASH_APPENDED_MSG
+    type: STRING
+info:
+  category:
+     - Legacy Community
+  description: rn:msg:WIDGET_DISP_CONFIGURABLE_POSTS_MSG
+  urlParameters:
+    people:
+      name: rn:msg:PEOPLE_LBL
+      description: rn:msg:FLTR_ON_ATTRIB_SET_URL_PARAM_VAL_MSG
+      example: people/88af22078d

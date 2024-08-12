@@ -1,0 +1,58 @@
+input: <rn:widget path="viewpartialtest/ExtendedCustomQuestionDetail"/>
+removecontent: true
+urlparameters: /qid/1
+output:
+<div id="rn_ExtendedCustomQuestionDetail_0" class="rn_ExtendedCustomQuestionDetail rn_CustomQuestionDetail rn_QuestionDetail">
+        <div class="rn_QuestionActionsBar">
+                                </div>
+    <div class="rn_QuestionContent">
+                <article class="rn_ExistingQuestionDetails">
+            <div class="rn_QuestionHeader">
+    <div class="rn_QuestionAuthor" itemprop="author" itemscope itemtype="Person">
+        <span class="rn_UserAvatar" title="nealr">
+            <a itemprop="url" href="/app/public_profile/user/101/">
+            <span class="rn_Avatar rn_Large rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor0" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">N</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">nealr</span>
+                </a>
+    </span>
+    </div>
+    <div class="rn_QuestionTitle">
+        <div id="rn_ExtendedCustomQuestionDetail_0_Summary" role="heading" aria-level="1" itemprop="name">
+            <h1>Am I first?</h1>
+        </div>
+    </div>
+</div>
+            <div class="rn_QuestionBody" itemprop="articleBody">
+                First post!                                    <div id="rn_FileListDisplay_2" class="rn_FileListDisplay rn_Output">
+    </div>
+                            </div>
+            <aside class="rn_QuestionInfo">
+    <div class="rn_QuestionTimestamps">
+        <span class="rn_DetailTimestamp">
+            Created <time itemprop='dateCreated' datetime='2014-01-01'>TIMEVALUE</time>        </span>
+            </div>
+    <div class="rn_QuestionInfoOptions">
+            <div id="rn_SocialContentRating_3" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="You are unable to vote" disabled>
+    <span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Be the first to vote                	</span>
+        	        </span>
+    </div>
+                    </div>
+</aside>
+        </article>
+    </div>
+</div>

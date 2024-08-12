@@ -1,0 +1,54 @@
+@import 'widget-includes';
+
+.rn_ProductCategoryList {
+    @include span-columns(8);
+
+    .rn_ListColumns {
+        @include row;
+
+        .rn_LeftColumn {
+            @include span-columns(4);
+        }
+
+        .rn_MiddleColumn {
+            @include span-columns(4);
+        }
+
+        .rn_RightColumn {
+            @include span-columns(4);
+        }
+
+        .rn_LeftColumn,.rn_MiddleColumn,.rn_RightColumn {
+            > ul {
+                display: block;
+            }
+
+            > li {
+                display: block;
+            }
+
+            .rn_ListItemLink {
+                &:hover {
+                    color: darken($base-accent-color, 20);
+                }
+            }
+
+            @include media($rn-medium) {
+                @include span-columns(12);
+            }
+
+            .rn_SubItemList {
+                margin-left: 10px;
+                font-size: $base-font-size * .8;
+            }
+
+            .rn_ProductCategoryItem {
+                margin-bottom: 5px;
+            }
+        }
+
+        h2 {
+            font-size: $base-font-size * 1.1;
+        }
+    }
+}

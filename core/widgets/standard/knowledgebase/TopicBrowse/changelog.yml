@@ -1,0 +1,52 @@
+1.2.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.1.1:
+  release: "14.8"
+  entries:
+  - account: spage
+    category: Bug Fix
+    changelogID: 252
+    date: 04/10/2014
+    description: Fixed a defect where topic browse results where not getting updated
+      on subsequent searches.
+    details:
+    - After a successful search was performed and matching topics were displayed,
+      a subsequent search would not update the topic browse results.
+    - Results are now updated, either to reflect new matches, or to reflect the lack
+      of search results in which case the default topics are displayed minus any 'matches'.
+    level: minor
+    refno: 140318-000017
+    sortPosition: Middle
+1.0.2:
+  release: "13.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 128
+    date: 10/09/2013
+    description: Maintains TopicBrowse filters when used with the Paginator widget
+    details:
+    - Previously, when users clicked a topic on the TopicBrowse widget and the topic
+      returned more results than could be displayed on a single page, selecting a
+      page link on the Paginator widget removed the topic filter and displayed all
+      answers instead. The filter now persists across multiple pages.
+    level: nano
+    refno: 130624-000013
+    sortPosition: Bottom
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

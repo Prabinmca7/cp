@@ -1,0 +1,11 @@
+input: <rn:widget path='standard/search/DisplaySearchFilters' report_id="10016"/>
+config: EU_WIDX_SEARCH_BY_DEFAULT|1,WIDX_MODE|1
+jstestfile: webindexer.test.js
+removecontent: true
+urlparameters: /st/5/webSearchType/1/kw/phone/page/1
+output:
+<div id="rn_DisplaySearchFilters_0" class="rn_DisplaySearchFilters rn_Hidden">
+<span class="rn_Heading">Search filters applied</span>
+<div id="rn_DisplaySearchFilters_0_FilterContainer">
+</div>
+</div>

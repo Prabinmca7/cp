@@ -1,0 +1,20 @@
+@import 'widget-includes';
+
+.rn_ProductCatalogDisplay .rn_DataLabel {
+    float: left;
+    font-weight: bold;
+}
+
+.rn_ProductCatalogDisplay .rn_DataValue {
+    margin-left: 180px;
+}
+
+.rn_ProductCatalogDisplay .rn_DataValue ul {
+    clear: none;
+}
+
+.rn_ProductCatalogDisplay .rn_DataValue.rn_LeftJustify {
+    clear: left;
+    margin-left: 0;
+    padding-bottom: .5em;
+}

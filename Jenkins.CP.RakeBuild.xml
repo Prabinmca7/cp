@@ -1,0 +1,19 @@
+<project name="RakeBuild" default="RakeCP" basedir=".">
+	<description>Targets to run cp Rake build</description>
+
+	<!-- Properties -->
+	<property name="BuildNumFile" value="${WORKSPACE}\BuildNum.txt"/>
+
+	<target name="RakeCP" description="build cp with rake">
+		<loadproperties>
+		  <file file="${BuildNumFile}"/>
+		</loadproperties>
+
+		<exec executable="/bin/sh" failonerror="true" >
+			<arg value="-c" />
+			<arg value="cd ${WORKSPACE}/scripts/cp/extras/testRunner &amp;&amp; python test.py ${SiteName} --server ${Server} --type build --branch ${GitBranch} --target ${WORKSPACE}/cp --forceBuild --buildNum ${BuildNumber} --cxBuildNum ${NextBuildNum}"/>
+        </exec>
+	</target>
+
+
+</project>

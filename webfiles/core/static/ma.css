@@ -1,0 +1,49 @@
+.rn_ErrorMessage {
+    background: #FFFFE0 url(/euf/assets/images/maImportant.png) no-repeat;
+    padding:8px 6px 8px 40px !important;
+}
+.rn_ErrorMessage a {
+    color:#900;
+}
+.rn_MessageBox {
+    background-color:#FFFFE0;
+    border:1px solid #808080;
+    color:#900;
+    margin:10px 0;
+    padding:6px;
+}
+.rn_ErrorField {
+    background-color: #FEFDA0 !important;
+}
+p input[name=prev_btn] {
+    display: inline-block;
+    margin-right: 3px;
+}
+p input[name=prev_btn] + input[name=submit_btn] {
+    display: inline-block;
+}
+
+.rn_ScreenReaderOnly {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.rn_FeedbackFieldset {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+.rn_FeedbackFieldset legend {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    visibility: inherit;
+    float:left;
+    white-space:normal;
+}

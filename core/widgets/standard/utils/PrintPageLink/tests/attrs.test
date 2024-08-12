@@ -1,0 +1,8 @@
+input: <rn:widget path='standard/utils/PrintPageLink' label_link='label_link' label_tooltip='label_tooltip' />
+removecontent: true
+output:
+<span id="rn_PrintPageLink_0" class="rn_PrintPageLink">
+    <a onclick="window.print(); return false;" href="javascript:void(0);" title="label_tooltip">
+        <span>label_link</span>
+    </a>
+</span>

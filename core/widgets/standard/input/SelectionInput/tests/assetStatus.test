@@ -1,0 +1,17 @@
+input: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path='standard/input/SelectionInput' name='Asset.StatusWithType.Status'/></form>
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><div id="rn_SelectionInput_0" class="rn_SelectionInput rn_Input">
+    <div id="rn_SelectionInput_0_LabelContainer">
+        <label for="rn_SelectionInput_0_Asset.StatusWithType.Status" id="rn_SelectionInput_0_Label" class="rn_Label">NamedIDOptList                        </label>
+    </div>
+    <select id="rn_SelectionInput_0_Asset.StatusWithType.Status" name="Asset.StatusWithType.Status">
+            <option value="">--</option>
+                            <option value="26" >Active</option>
+                    <option value="103" >Active</option>
+                    <option value="105" >&lt;Active&gt;</option>
+                    <option value="27" >Retired</option>
+                    <option value="104" >Retired</option>
+                </select>
+    </div>
+</form>

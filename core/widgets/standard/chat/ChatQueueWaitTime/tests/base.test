@@ -1,0 +1,15 @@
+input: <rn:widget path='standard/chat/ChatQueueWaitTime'/>
+removecontent: true
+jstestfile: base.test.js
+output:
+<div id="rn_ChatQueueWaitTime_0" class="rn_ChatQueueWaitTime rn_Hidden">
+    <div id="rn_ChatQueueWaitTime_0_BrowserWarning" class="rn_BrowserWarning rn_Hidden">
+        You may be using a browser that will end this chat session if you leave this screen. To ensure a complete chat, please leave this screen open for the duration of the session.        <br/><br/>
+    </div>
+    <span id="rn_ChatQueueWaitTime_0_QueuePosition" class="rn_ChatQueuePosition rn_Hidden">
+        Please wait while your queue position is calculated...    </span>
+    <span id="rn_ChatQueueWaitTime_0_EstimatedWaitTime" class="rn_ChatEstimatedWaitTime rn_Hidden">
+            </span>
+    <span id="rn_ChatQueueWaitTime_0_AverageWaitTime" class="rn_ChatAverageWaitTime rn_Hidden">
+            </span>
+</div>

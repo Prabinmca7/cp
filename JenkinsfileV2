@@ -1,0 +1,250 @@
+#!groovy
+import hudson.model.*
+//Import global library
+library 'devtools-global-library'
+
+def ver = VersionNumber (versionNumberString: '${BUILD_DATE_FORMATTED, "1.yy.MM.dd"}-b${BUILDS_TODAY, XXXX}')
+currentBuild.displayName = ver
+
+//Check whether or not the build was triggered by Orahub by checking if the gitlabSourceBranch variable was set by the GitLab plugin
+def SOURCE_BRANCH = "branch_undefined"
+def TARGET_BRANCH = "branch_undefined"
+
+echo "gitlabSourceBranch: ${env.gitlabSourceBranch}  gitlabTargetBranch: ${env.gitlabTargetBranch}"
+if ( env.gitlabSourceBranch == null ) {
+    echo "Manually triggered"
+    SOURCE_BRANCH = "${DefaultSourceBranch}"
+    TARGET_BRANCH = "${DefaultTargetBranch}"
+
+}else {
+    echo "Triggered by Orahub"
+    SOURCE_BRANCH = "${env.gitlabSourceBranch}"
+    TARGET_BRANCH = "${env.gitlabTargetBranch}"
+}
+
+def SiteName = "${SiteName}-${BUILD_NUMBER}"
+
+timeout(time: PIPELINE_TIMEOUT_MINUTES.toInteger(), unit: 'MINUTES')
+{
+	try
+	{
+		node("${NODE_LABEL}")
+		{
+			env.JAVA_HOME="${tool 'Java8'}"
+			env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
+
+			echo "My node is:${env.NODE_NAME}"
+			echo "My workspace is:${env.WORKSPACE}"
+
+			sh "rm -rf ${env.WORKSPACE}/*"
+
+			step([$class: 'CopyArtifact',
+				filter: '*.tar.gz',
+				projectName: "${ARTIFACT_SOURCE}",
+				selector: [$class: 'TriggeredBuildSelector',
+					allowUpstreamDependencies: false,
+					fallbackToLastSuccessful: true,
+					upstreamFilterStrategy: 'UseGlobalSetting']
+					]);
+
+			stage("Site Create")
+			{
+				sh 'for f in *.tar.gz ; do tar -zxf $f; done'
+
+				sh 'rm -f *.tar.gz'
+
+				// run create_test_site
+								sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q -s ${SiteName} ; create_test_site -papisite -cp-path ${env.WORKSPACE}/scripts/cp ${env.WORKSPACE}/server/src ${SiteName})'"
+
+				// restart apache
+				sh "sudo /sbin/service httpd graceful || true"
+
+				// run create_test_db
+								sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q -s ${SiteName} ; create_test_db -cannedSPM ${SiteName})'"
+
+				// Need to figure out why MOD_TC_ENABLED fails
+				// Enable Mods// Enable Mods
+				for (MOD in [ 'MOD_CHAT_ENABLED', 'SOCIAL_MONITOR_ENABLED', 'MOD_CP_DEVELOPMENT_ENABLED', 'MOD_CP_ENABLED', 'MOD_CSS_ENABLED', 'MOD_COBROWSE_ENABLED', 'MOD_DESKTOP_WORKFLOW_ENABLED', 'MOD_EA_ENABLED', 'MOD_FEEDBACK_ENABLED', 'MOD_MA_ENABLED', 'MOD_OI_ENABLED', 'MOD_SA_ENABLED', 'MOD_SCRIPTING_ENABLED', 'MOD_WORKFLOW_RULES' ])
+				{
+										sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q -s ${SiteName} ; set_config ${SiteName} $MOD 1)'"
+				}
+
+				// check site URL
+				sh "cd ${env.WORKSPACE} && curl \"http://${SiteName}.${NODE_NAME}.us.oracle.com/\" -o \"${SiteName}CurlOut.html\" -w \"%{http_code}\""
+
+				// Deploy Site
+				// sh "cd /bulk/httpd/html/per_site_html_root/${SiteName}/euf/generated/optimized/ && ls"
+				sh "wget --header='Authorization: Basic YWRtaW46' --post-data='' --output-document=- http://${SiteName}.${NODE_NAME}.us.oracle.com/ci/admin/deploy/removeDeployLock"
+				sh "wget --header='Authorization: Basic YWRtaW46' --post-data='' --output-document=- http://${SiteName}.${NODE_NAME}.us.oracle.com/ci/admin/deploy"
+
+				// Downgrade site
+				sh "wget --header='Authorization: Basic YWRtaW46' --post-data='' --output-document=- http://${SiteName}.${NODE_NAME}.us.oracle.com/ci/admin/tools/migrateFramework"
+
+				// Deploy Site2
+				sh "wget --header='Authorization: Basic YWRtaW46' --post-data='' --output-document=- http://${SiteName}.${NODE_NAME}.us.oracle.com/ci/admin/deploy/removeDeployLock"
+				sh "wget --header='Authorization: Basic YWRtaW46' --post-data='' --output-document=- http://${SiteName}.${NODE_NAME}.us.oracle.com/ci/admin/deploy"
+
+				// check framework version to see if site deployed
+				echo "Check if ${env.WORKSPACE}/scripts/cp/generated/production/optimized/frameworkVersion exists to see if site is deployed."
+				sh '''
+				export counter=0
+				while [ ! -f ${WORKSPACE}/scripts/cp/generated/production/optimized/frameworkVersion ]
+				do
+				echo "File not found. Sleeping 15s. Total time is: $counter seconds"
+				if [ $counter == 180 ]; then echo "File not found. Exiting..."; exit 0; else counter=$((counter+15)) ; fi
+				sleep 15
+				done
+				echo "File found! Site deploy finished!"
+				'''
+			}
+			parallel WebDavV2:
+			{
+				try
+				{
+					stage('WebDavV2')
+					{
+						def WEBDAV_REPORT = "${env.WORKSPACE}/WebDAV2Report.txt"
+
+						sh "rm -rf ${WEBDAV_REPORT}"
+
+											sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q ; TESTS=\\\"basic copymove locks http\\\" /nfs/local/linux/litmus/0.12.1/bin/litmus http://${SiteName}.${env.NODE_NAME}.us.oracle.com/dav/euf/development/views/pages/ admin \\\"\\\" >> ${WEBDAV_REPORT} 2>&1  )'"
+					}
+				}
+				catch (any)
+				{
+					currentBuild.result = 'FAILURE'
+					throw any
+				}
+				finally
+				{
+					archiveArtifacts artifacts: "WebDAV2Report.txt", fingerprint: false
+				}
+			},
+			RenderingV2:
+			{
+				try
+				{
+					stage('RenderingV2')
+					{
+						def RENDERINGV2_REPORT = "${env.WORKSPACE}/RenderingReportV2.html"
+
+						sh "rm -rf ${RENDERINGV2_REPORT}"
+
+						sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q -s ${SiteName} ; export REQUEST_METHOD=GET; export PATH_INFO=/bootstrap/index.php; export PATH_TRANSLATED=/bootstrap/index.php; export REQUEST_URI=/ci/unitTest/rendering/test; export REMOTE_ADDR=127.0.0.1; export SCRIPT_NAME=/cgi-bin/${SiteName}.cfg/php; cd /bulk/httpd/cgi-bin/${SiteName}.cfg; ./php -q >> ${RENDERINGV2_REPORT} 2>&1 )'"
+					}
+				}
+				catch (any)
+				{
+					currentBuild.result = 'FAILURE'
+					throw any
+				}
+				finally
+				{
+					globalHTMLPublisher {
+						allowMissing = true
+						alwaysLinkToLastBuild = true
+						keepAll = true
+						reportDir = ""
+						reportFiles = "RenderingReportV2.html"
+						reportName = "Rendering Test Report"
+						tmpDirPath = "/temptestdir"
+					}
+				}
+			},
+			FunctionLevelTestsV2:
+			{
+				try
+				{
+					stage ('FunctionLevelTestsV2')
+					{
+						def FUNCTIONLEVEL_REPORT = "${env.WORKSPACE}/FunctionalLevelV2Report.html"
+
+						sh "rm -rf ${FUNCTIONLEVEL_REPORT}"
+
+						sh "${env.WORKSPACE}/server/bin/enterChangeroot -j bash --norc -c '(export DEBUG=Y; source ${env.WORKSPACE}/server/bin/setupBuild -q -s ${SiteName} ; export REQUEST_METHOD=GET; export PATH_INFO=/bootstrap/index.php; export PATH_TRANSLATED=/bootstrap/index.php; export REQUEST_URI=/ci/unitTest/phpFunctional/test; export REMOTE_ADDR=127.0.0.1; export HTTP_AUTHORIZATION='Basic YWRtaW46'; export SCRIPT_NAME=/cgi-bin/${SiteName}.cfg; export SRCDIR=${env.WORKSPACE}; cd /bulk/httpd/cgi-bin/${SiteName}.cfg; ./php -q >> ${FUNCTIONLEVEL_REPORT} 2>&1)'"
+					}
+				}
+				catch (any)
+				{
+					currentBuild.result = 'FAILURE'
+					throw any
+				}
+				finally
+				{
+					globalHTMLPublisher {
+						allowMissing = true
+						alwaysLinkToLastBuild = true
+						keepAll = true
+						reportDir = ""
+						reportFiles = "FunctionalLevelV2Report.html"
+						reportName = "FunctionLevel Test Report"
+						tmpDirPath = "/temptestdir"
+					}
+				}
+			},
+			AnalysisV2:
+			{
+				try
+				{
+					stage ('AnalysisV2')
+					{
+						sh "ant -v RunCPAnalysisDependsV2 -f scripts/cp/Jenkins.CP.AnalysisV2.xml -DWORKSPACE=${env.WORKSPACE}"
+					}
+				}
+				catch (any)
+				{
+					currentBuild.result = 'FAILURE'
+					throw any
+				}
+				finally
+				{
+					archiveArtifacts artifacts: 'cpLintOutputV2.txt', fingerprint: false
+					archiveArtifacts artifacts: 'codeSnifferV2.xml', fingerprint: false
+				}
+			},
+			DocumentationV2:
+			{
+				try
+				{
+					stage ('DocumentationV2')
+					{
+						sh "cd ${env.WORKSPACE}/server/src/rnw/scripts/euf/doxygen; rm -rf html"
+
+						sh "cd ${env.WORKSPACE}/server/src/rnw/scripts/euf/doxygen; /nfs/local/rw/cc/bin/doxygen Doxyfile"
+					}
+				}
+				catch (any)
+				{
+					currentBuild.result = 'FAILURE'
+					throw any
+				}
+				finally
+				{
+
+				}
+			}
+			failFast: false
+		}
+	}
+	catch (any)
+	{
+		currentBuild.result = 'FAILURE'
+		throw any
+	}
+	finally
+	{
+		//Set current build result
+		def myResult = currentBuild.rawBuild.getResult()
+		//Set previous build result
+		def lastResult = currentBuild.rawBuild.getPreviousBuild()?.getResult()
+		if ("${myResult}" == "FAILURE") {
+				echo "Post build actions for a failure"
+		}
+		//email global library
+		globalMail {
+		  emailRecipients = ''
+		  buildResult = "${myResult}"
+		  previousResult = "${lastResult}"
+		}
+	}
+}

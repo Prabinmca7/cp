@@ -1,0 +1,18 @@
+@import 'widget-includes';
+
+.rn_ChatFileAttachContent {
+    width: 325px;
+}
+
+.rn_ChatAttachFileButton {
+    margin: 1em 0;
+}
+
+.rn_ChatAttachFileButtonContent, .rn_ChatAttachFileButtonForm, .rn_ChatAttachFileButtonShown {
+    display: inline;
+}
+
+.rn_Dialog.rn_ChatAttachFileDialog.rn_ActionDialog {
+    background: #FFF;
+    border: 1px solid #000;
+}

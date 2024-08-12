@@ -1,0 +1,64 @@
+#
+# Model Extensions
+#
+# Specify the standard models you wish to override here. The key to the array is the name of the standard
+# model to override and the value is the custom model to use as a replacement. The custom model must extend
+# from the standard model or an error will be thrown at runtime.
+#
+#
+# Examples:
+#
+# -Overriding the standard Answer model with a model at development/models/custom/ExtendedSample.php
+#     modelExtensions:
+#         Answer: ExtendedSample
+#
+#
+# -Overriding the standard Contact model with a model at development/models/custom/contacts/ContactCreation.php
+#     modelExtensions:
+#         Contact: contacts/ContactCreation
+#
+modelExtensions:
+#
+# View Partial Extensions
+#
+# Specify the standard view partials you wish to override here. Each item in the array is the name of the standard
+# view partial. The custom file must have the same path and file name as the standard file.
+#
+#
+# Example:
+#
+# -Overriding the standard view partial at core/framework/Views/Partials/Forms/RequiredLabel.html.php
+#  with a view at development/views/Partials/Forms/RequiredLabel.html.php
+#     viewPartialExtensions:
+#         - Partials.Forms.RequiredLabel
+#
+viewPartialExtensions:
+#
+# View Helper Extensions
+#
+# Specify the standard view helpers you wish to override here. Each item in the array is the name of the standard view helper.
+# The custom file must have the same path and file name as the standard file. If you don't wish to override the complete standard file
+# then you can extend the standard class in the custom file and override the functions you need.
+#
+#
+# Example:
+#
+# -Overriding the standard view helper at core/framework/Helpers/Social.php
+#  with a helper class at development/helpers/Social.php
+#     viewHelperExtensions:
+#         - Social
+#
+viewHelperExtensions:
+#
+# Connect Decorator Extensions
+#
+# Specify the standard Connect decorator classes you wish to override here. Each item in the array is the name of the standard
+# decorator. The custom decorator class must extend from the standard decorator class or an error will be thrown at runtime.
+#
+#
+# -Overriding the standard decorator class at core/framework/Decorators/Present/FilePresenter.php
+#  with a class at development/decorators/ExtendedFilePresenter.php
+#     decoratorExtensions:
+#         Present/FilePresenter: ExtendedFilePresenter
+#
+decoratorExtensions:

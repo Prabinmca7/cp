@@ -1,0 +1,60 @@
+version: "1.6.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  category:
+    - Report Search
+  description: rn:msg:WIDGET_PROV_SRCH_FLD_INTENDED_MSG
+  urlParameters:
+    p:
+      name: rn:msg:PRODUCT_ID_LBL
+      description: rn:msg:FILTER_FILTERTYPE_ATTRIBUTE_PRODUCT_MSG
+      example: p/1
+    c:
+      name: rn:msg:CATEGORY_ID_LBL
+      description: rn:msg:FILTER_FILTERTYPE_ATTRIBUTE_CATEGORY_MSG
+      example: c/77
+attributes:
+  filter_type:
+    name: rn:msg:FILTER_TYPE_LBL
+    description: rn:msg:OBJECT_FILTER_RESULTS_SPECIFIED_URL_LBL
+    type: option
+    default: product
+    options:
+      - product
+      - category
+      - none
+  initial_focus:
+    name: rn:msg:INITIAL_FOCUS_LBL
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_FIELD_FOCUSED_PAGE_LOADED_MSG
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:PG_DSP_BTN_CLICKED_LEAVE_BLANK_MSG
+    default: /app/answers/list
+  add_params_to_url:
+    name: rn:msg:URL_PARAMETERS_TO_ADD_LBL
+    type: STRING
+    description: rn:msg:PRM_FN_RR_FN_CSTMRDVLPMNTHLPRSRLPH_CRFRM_MSG
+  label_button:
+    name: rn:msg:SEARCH_BUTTON_LABEL_CMD
+    type: STRING
+    description: rn:msg:LABEL_THAT_DISPLAYED_ON_SEARCH_BUTTON_LBL
+    default: rn:msg:SEARCH_CMD
+  label_placeholder:
+    name: rn:msg:PLACEHOLDER_LABEL_LBL
+    type: STRING
+    description: rn:msg:PLACEHOLDER_NOTE_INPUT_SPACERS_SUPP_IE9_LBL
+    default: rn:msg:SEARCH_ELLIPSIS_LBL
+  label_filter_type_placeholder:
+    name: rn:msg:FILTER_TYPE_PLACEHOLDER_LABEL_LBL
+    type: STRING
+    description: rn:msg:PLACEHOLDER_FLTR_TO_U_SPACERS_SUPP_IE9_MSG
+    default: rn:msg:SEARCH_IN_S_LBL
+  label_enter_search_keyword:
+    name: rn:msg:ENTER_SEARCH_KEYWORD_LBL
+    type: STRING
+    description: rn:msg:MESSAGE_THERE_KEYWORD_ENTERED_SEARCH_LBL
+    default: rn:msg:PLEASE_ENTER_A_SEARCH_TERM_LBL

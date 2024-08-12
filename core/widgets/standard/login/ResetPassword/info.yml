@@ -1,0 +1,36 @@
+version: "1.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  reset_password_ajax:
+    name: rn:msg:RESET_PASSWORD_AJAX_CMD
+    type: AJAX
+    description: rn:msg:ENDPOINT_RESET_PASSWD_AJAX_REQUEST_LBL
+    default: /ci/ajax/widget
+  label_heading:
+    name: rn:msg:ACCOUNT_LANDING_LABEL_LBL
+    description: rn:msg:LABEL_DISP_WIDGET_HEADING_S_LEGEND_LBL
+    type: STRING
+  disable_password:
+    name: rn:msg:DISABLE_PASSWORD_INPUT_CMD
+    description: rn:msg:SET_TRUE_VAL_HONORED_EU_CUST_PASSWD_MSG
+    default: false
+    type: BOOLEAN
+  on_success_url:
+    name: rn:msg:ON_SUCCESS_URL_LBL
+    description: rn:msg:URL_REDIRECT_FORM_SUBMIT_SUCCEEDED_LBL
+    default: /app/account/profile
+    type: STRING
+info:
+  description: rn:msg:WIDGET_READS_ENCRED_URL_PARAM_MSG
+  urlParameters:
+    cred:
+      name: rn:msg:CREDENTIALS_LBL
+      description: rn:msg:ENCRYPTED_STRING_CONTAINING_USERS_LBL
+      example: cred/aUVCTCILuy0gb5GpOaelD~qh005DiVsKZJQKwJ638InUGE9IgcSJD4SA**
+contains:
+- widget: standard/input/FormInput
+  versions: ["1.4"]
+- widget: standard/input/FormSubmit
+  versions: ["1.7"]

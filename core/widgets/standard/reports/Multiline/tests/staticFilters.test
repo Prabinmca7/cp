@@ -1,0 +1,71 @@
+input: <rn:widget path="standard/reports/Multiline" static_filter="p=4,kw=iphone"/>
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+output:
+<div id="rn_Multiline_0" class="rn_Multiline">
+    <div id="rn_Multiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Multiline_0_Loading"></div>
+    <div id="rn_Multiline_0_Content" class="rn_Content">
+                            <ol start="1">
+                            <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/52'>Enabling MMS on <em class='rn_Highlight'>iPhone</em> 3G and <em class='rn_Highlight'>iPhone</em> 3GS</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">AT&amp;T MMS requires <em class='rn_Highlight'>iPhone</em> OS 3.1 or later and a carrier-settings update. Use these steps to update your <em class='rn_Highlight'>iPhone</em> to the latest <em class='rn_Highlight'>iPhone</em> OS and carrier settings: Make sure that you have a working...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/54'><em class='rn_Highlight'>iPhone</em>: Basic troubleshooting</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">If <em class='rn_Highlight'>iPhone</em> doesn't appear in iTunes or you can't sync <em class='rn_Highlight'>iPhone</em> The <em class='rn_Highlight'>iPhone</em> battery might need to be recharged. For information about charging <em class='rn_Highlight'>iPhone</em>, see "Charging the Battery" in the <em class='rn_Highlight'>iPhone</em> User's...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/55'><em class='rn_Highlight'>iPhone</em> not recognized in iTunes for Windows</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Check the <em class='rn_Highlight'>iPhone</em> Display When you connect <em class='rn_Highlight'>iPhone</em> to your computer, the <em class='rn_Highlight'>iPhone</em> should display an image or message on the display. If you do not see any image, refer to this article &#160;to...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/56'><em class='rn_Highlight'>iPhone</em> backups</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">About Syncing and Backups You can use iTunes to sync content on your computer (such as music, applications, podcasts, videos, ringtones, photos, notes, email account settings, contacts, calendars...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/57'><em class='rn_Highlight'>iPhone</em>: Charging the battery</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">An icon in the upper-right corner of the screen shows battery charging status. If you charge the battery while syncing or using <em class='rn_Highlight'>iPhone</em> or iPod touch, it might take longer to charge. Note : If using a...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/60'><em class='rn_Highlight'>iPhone</em>: About the SIM PIN</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">You can enable, disable, or change your SIM PIN from Settings &gt; Phone &gt; SIM PIN. Some carriers provide SIM cards with a default SIM PIN already enabled. Click the link below to see a list of...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/59'>Understanding cellular data networks</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Q: Why does original <em class='rn_Highlight'>iPhone</em> show a different number of bars than <em class='rn_Highlight'>iPhone</em> 3G in the same location? A: The original <em class='rn_Highlight'>iPhone</em> uses 2G only (EDGE and GPRS), while <em class='rn_Highlight'>iPhone</em> 3G uses 3G and 2G and will use the...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/48'>manually related answer 1</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">answer</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/49'>manually related answer 2</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">answer</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><span class='rn_FileTypeIcon rn_url'><span class='rn_ScreenReaderOnly'>Link to a URL</span></span> <a href='/app/answers/detail/a_id/50'>url type</a></h3></div>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                            </ol>
+                    </div>
+</div>

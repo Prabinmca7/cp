@@ -1,0 +1,159 @@
+<?
+// ----------------------------------------------------------------------------
+//       File Name: mod_info.phph
+//       Subsystem: cp
+//   Document Type: include file
+//         Purpose: module information and defines that don't rely on libs
+// ----------------------------------------------------------------------------
+define("MOD_NAME",          'RightNow Customer Portal');
+define("MOD_BUILD_VER",     'VER_TOKEN');
+define("MOD_CMN_BUILD_VER", 'VERCMN_TOKEN');
+define("MOD_BUILD_NUM",     'NUM_TOKEN');
+define("MOD_BUILD_DATE",    'DATE_TOKEN');
+define("MOD_BUILD_TIME",    'TIME_TOKEN');
+define("MOD_HTDIG_BUILD_VER", 'VER_HTDIG_TOKEN');
+define("MOD_BUILD_SP",      'SP_TOKEN');
+define("MOD_CX_BUILD_NUM",  'CX_NUM_TOKEN');
+
+define("CP_NOV09_ANSWERS_DEFAULT", 176);
+define("CP_NOV09_WIDX_DEFAULT", 10022);
+define("CP_FEB10_CLUSTER_DEFAULT", 178);
+
+/* GUIDED ASSISTANCE */
+define("GA_QUESTION_RESPONSE", 1);
+define("GA_GUIDE_RESPONSE", 2);
+define("GA_ANSWER_RESPONSE", 4);
+define("GA_TEXT_RESPONSE", 8);
+define("GA_BUTTON_QUESTION", 1);
+define("GA_MENU_QUESTION", 2);
+define("GA_LIST_QUESTION", 3);
+define("GA_RADIO_QUESTION", 4);
+define("GA_LINK_QUESTION", 5);
+define("GA_TEXT_QUESTION", 6);
+define("GA_IMAGE_QUESTION", 7);
+define("GA_URL_GET", 1);
+define("GA_URL_POST", 2);
+
+/* COMMUNITY */
+define('COMMENT_STATUS_ACTIVE', 1);
+define('COMMENT_STATUS_SUSPENDED', 2);
+define('COMMENT_STATUS_DELETED', 4);
+define('COMMENT_STATUS_PENDING', 8);
+define('COMMUNITY_ERROR_NO_EXISTING_USER', 4);
+define('COMMUNITY_ERROR_NON_UNIQUE_NAME', 1001);
+define('COMMUNITY_ERROR_INVALID_USER', 35);
+define('COMMUNITY_ERROR_INVALID_INPUT', 2000);
+define('COMMUNITY_DEFAULT_API_VERSION', '2009-11-20');
+define('COMMUNITY_NOV_10_API_VERSION', '2010-11-01');
+
+/* GEARMAN VALIDATOR */
+define("GEARMAN_CHECK_WAITING", -1);
+define("GEARMAN_CHECK_FAIL", 0);
+define("GEARMAN_CHECK_OKAY", 1);
+define("GEARMAN_CHECK_ERROR", 2);
+
+
+
+
+/**************************************************************************
+ * Cleansing/Security Defines
+ * Used by the CleanseData.php pre-controller-constructor hook
+ **************************************************************************/
+// Defines
+define("SIMPLE_TYPE", 1);   // int, text, etc
+define("COMPLEX_TYPE", 2);  // array or json
+
+// Constants for regular expressions.
+// This makes it easier to manage the regular expressions, so additions
+// are encouraged to use such defines.  Be careful about changing existing
+// expressions to avoid breaking things.
+//
+// Warning.  preg_match is used in the cleansing hook, so these regular
+// expression must match the PCRE standards for using Perl expressions
+// in PHP.  Note that it is not necessary to escape every non-alphanumeric
+// character, but its more reliable than keeping track of which things
+// must be.
+
+define("ALPHANUM_PREG",      "/^[[:alnum:]\ \_\.\-]*$/");
+define("ANYTHING_PREG",      "/^[[:print:][:space:][:cntrl:]\x{00000080}-\x{0010FFFF}]*$/u");
+define("BASE64_PREG",        "/^[[:alnum:]\+\/\=\_\*\~\-\!]*$/");
+define("BOOLEAN_PREG",       "/^(true|false|0|1)$/");
+define("CUSTOM_INTEGER_PREG","/^(null|[[:digit:]\ \%\+\,\;\-]*)$/");
+define("DATE_PREG",          "/^[[:digit:]\ \-]*$/");
+define("DATETIME_PREG",      "/^[[:digit:]\ \:\-]*$/");
+define("EMAIL_PREG",         "/^[[:alnum:]\x{00000080}-\x{0010FFFF}\,\.\!\#\$\%\*\/\?\|\^\{\}\`\~\&\'\@\+\=\_\ -]+$/u");
+define("FILENAME_PREG",      "/^[\x{00000020}-\x{0010FFFF}]*$/u");
+define("INTEGER_PREG",       "/^(null|(\+|-)?[[:digit:]]+$)/");
+define("INTLIST_PREG",       "/^[[:digit:]\ \%\,]*$/");
+define("LOGIN_PREG",         "/^[[:alnum:]\x{00000080}-\x{0010FFFF}\]\\\~\`\'\!\@\#\%\(\)\[\+\=\{\}\.\_\n\:\;\?  \,\/\|\=\.\*\&\^\$\-]*$/u");
+define("LINK_PREG",          "/^(undefined|[[:digit:]]*)$/");
+define("NAME_NALLOW_PREG",   "/[\<\>\%\"]+$/");
+define("PASSWORD_PREG",      "/^[][:alnum:]\x{00000080}-\x{0010FFFF}\n\\\~\`\'\!\@\#\%\(\)\[\+\=\{\}\.\_\:\;\?\ \,\/\|\=\.\*\&\^\$\-\>\<\"]*$/u");
+define("PRODCATLIST_PREG",   "/^([[:digit:]\ \%\,\;]*|(-1))$/");
+define("ANY_OR_INT_PREG",    "/^(~any~|(\+|-)?[[:digit:]]+)$/");
+
+
+define("PHONE_PREG",         "/^[[:alnum:]\#\ \+\,\.\(\)\#\-]*$/");
+define("PRINTABLE_PREG",     "/^[[:print:]]*$/");
+define("SRCH_TYPE_PREG",     "/^[[:alnum:]\.\_\$]*$/");
+define("TABLENAME_PREG",     "/^[[:alpha:]\_]*$/");
+define("TEXT_PREG",          "/^[\x{00000080}-\x{0010FFFF}[:print:][:blank:]]*$/u");
+define("TEXTLINES_PREG",     "/^[\x{00000080}-\x{0010FFFF}[:print:][:space:]]*$/u");
+define("SESSION_PREG",       "/^(undefined|[[:alnum:]\+\/\=\_\*\~\-]*)$/");
+define("URL_PREG",           "/^[[:alnum:]\x{00000080}-\x{0010FFFF}\ \/\#\%\$\_\.\+\!\*\"\'\(\)\,\~\&\+\,\/\:\;\=\?\@\-]*$/u");
+
+// Defines for maximum length values.  These should be byte lengths,
+// not character lengths, as UTF-8 will be multiple-byte per character.
+// This is inconvenient but places the determination of UTF-8'ness
+// here.
+
+define("EMAIL_LEN", 320);
+define("INTLIST_LEN", 150);
+define("MEDTEXT_LEN", 255);
+define("LONGTEXT_LEN", 300);
+define("SHORTTEXT_LEN", 100);
+define("TABLENAME_LEN", 255);
+define("TEXTLINES_LEN", 1000000);
+define("TOKEN_LEN", 512);
+define("UNDEFINED_LEN", 0);
+define("URL_LEN", 4000);
+
+//for searching and views
+define("PSEUDO_SEARCH_CPX", "search_cpx");
+define("PSEUDO_SEARCH_EX", "search_ex");
+define("PSEUDO_SEARCH_FNL", "search_fnl");
+define("PSEUDO_SEARCH_NL", "search_nl");
+
+// Password encryption modes
+define('ENCRYPT_IP', 2);
+
+// Module access flags
+define('MOD_PUBLIC', 1);
+define('MOD_ADMIN', 2);
+
+//needed for calls to cgi_url()--------------
+define('CALLED_BY_END_USER', 0);
+define('CALLED_BY_ADMIN', 1);
+// Chat agent availability defines
+define("PROACTIVE_CHAT_AVAIL_TYPE_AGENTS", "agents");
+define("PROACTIVE_CHAT_AVAIL_TYPE_SESSIONS", "sessions");
+
+define('DLLVERSFX', '.so.%s');
+
+// topic browse
+define("TBL_CLUSTER2ANSWERS", 311);
+
+// Connect array indexes
+define("CONNECT_EMAIL_PRIMARY", 0);
+define("CONNECT_EMAIL_ALT1", 1);
+define("CONNECT_EMAIL_ALT2", 2);
+
+// dates
+define("MIN_DATE", "1970-01-03 00:00:00");
+define("MAX_DATE", "2100-12-31 23:59:59");
+
+define("CONNECT_DISCUSSION_ENDUSER", 1);
+
+// fix for QA 190313-000026
+define("TBL_INCIDENTS", 1);
+define("TBL_CONTACTS", 2);

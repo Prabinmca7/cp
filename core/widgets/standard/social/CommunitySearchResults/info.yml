@@ -1,0 +1,154 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    type: string
+    description: rn:msg:NAMED_ID_OF_THE_SEARCH_SOURCES_LBL
+    default: social
+  community_search_ajax:
+    name: rn:msg:COMMUNITY_SEACH_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_COMMUNITY_AJAX_SEARCHES_LBL
+    default: /ci/ajax/widget
+  limit:
+    name: rn:msg:NUMBER_LBL
+    description: rn:msg:MAXIMUM_COMMUNITY_RESULTS_DISPLAY_MSG
+    default: 5
+    type: INT
+    min: 1
+  truncate_size:
+    name: rn:msg:WRAP_SIZE_LBL
+    description: rn:msg:CHARACTERS_TRUNCATE_POST_CONTENT_MSG
+    default: 200
+    type: INT
+    min: 1
+    max: 200
+  highlight:
+    name: rn:msg:HIGHLIGHT_LBL
+    description: rn:msg:HIGHLIGHTS_TXT_FLDS_SRCH_TERM_LBL
+    default: true
+    type: BOOLEAN
+  resource_id:
+    name: rn:msg:RESOURCE_ID_LBL
+    description: rn:msg:FLTRS_RS_RET_CONTENT_RESRCS_VAL_MSG
+    type: STRING
+  show_post_content:
+    name: rn:msg:SHOW_POST_CONTENT_CMD
+    description: rn:msg:DENOTES_SNIPPET_POST_CONTENT_MSG
+    default: true
+    type: BOOLEAN
+  show_updated_date:
+    name: rn:msg:SHOW_UPDATED_DATE_CMD
+    description: rn:msg:DENOTES_UPDATED_DATE_SHOWN_RESULT_MSG
+    default: true
+    type: BOOLEAN
+  show_author_name:
+    name: rn:msg:SHOW_AUTHOR_NAME_CMD
+    description: rn:msg:DENOTES_AUTHORS_NAME_SHOWN_RESULT_MSG
+    default: true
+    type: BOOLEAN
+  show_profile_picture:
+    name: rn:msg:SHOW_AUTHOR_PROFILE_PICTURE_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DENOTES_AUTHORS_PROFILE_PICTURE_MSG), 'show_author_name')
+    type: BOOLEAN
+    default: true
+  show_comment_count:
+    name: rn:msg:SHOW_COMMENT_COUNT_CMD
+    description: rn:msg:DENOTES_COMMENTS_SHOWN_RESULT_MSG
+    type: BOOLEAN
+  show_rating_count:
+    name: rn:msg:SHOW_RATING_COUNT_CMD
+    description: rn:msg:DENOTES_RATINGS_SHOWN_RESULT_MSG
+    type: BOOLEAN
+  show_all_results_link:
+    name: rn:msg:SHOW_ALL_RESULTS_LINK_CMD
+    description: rn:msg:DENOTES_LINK_L_RES_TAKES_RES_SET_MSG
+    type: BOOLEAN
+  label_all_results:
+    name: rn:msg:ALL_RESULTS_LABEL_LBL
+    description: rn:msg:LABEL_DISP_LINK_ENTIRE_RESULT_SET_MSG
+    default: rn:msg:SEE_ALL_POSTS_LBL
+    type: STRING
+  label_no_results:
+    name: rn:msg:NO_RESULTS_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_RESULTS_SEARCH_TERM_MSG
+    default: rn:msg:NO_RESULTS_FOUND_LBL
+    type: STRING
+  label_author:
+    name: rn:msg:AUTHOR_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_AUTHOR_LINK_MSG
+    default: rn:msg:AUTHOR_PCT_S_LBL
+    type: STRING
+  label_updated:
+    name: rn:msg:UPDATED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_UPDATED_DATE_MSG
+    default: rn:msg:UPDATED_PCT_S_LBL
+    type: STRING
+  label_comment:
+    name: rn:msg:COMMENT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENT_COUNT_MSG
+    default: rn:msg:COMMENTS_PCT_S_LBL
+    type: STRING
+  label_page:
+    name: rn:msg:LABEL_PAGE_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_DISP_PG_INDICATOR_HOVERS_PG_LBL), 'pagination_enabled')
+    default: rn:msg:PAGE_PCT_S_OF_PCT_S_LBL
+    type: STRING
+  label_forward:
+    name: rn:msg:FORWARD_LABEL_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(IF_PCT_S_LABEL_FORWARD_LINK_LBL), 'pagination_enabled')
+    default: rn:msg:NEXT_GT_WIN_G_HK
+    type: STRING
+  label_back:
+    name: rn:msg:BACK_LABEL_CMD
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(IF_PCT_S_LABEL_FOR_THE_BACK_LINK_LBL), 'pagination_enabled')
+    default: rn:msg:LT_PREVIOUS_WIN_L_HK
+    type: STRING
+  label_rating:
+    name: rn:msg:RATING_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(IF_PCT_S_LABEL_RATING_COUNT_LBL), 'show_rating_count')
+    default: rn:msg:PCT_D_PEOPLE_LIKE_THIS_LBL
+    type: STRING
+  label_single_rating:
+    name: rn:msg:SINGLE_RATING_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_SNGL_RATING_EXISTS_LABEL_LBL), 'show_rating_count')
+    default: rn:msg:PCT_D_PERSON_LIKES_THIS_LBL
+    type: STRING
+  author_link_base_url:
+    name: rn:msg:AUTHOR_LINK_BASE_URL_LBL
+    description: rn:msg:SHOW_AUTHOR_NAME_SET_TRUE_VAL_BASE_MSG
+    type: STRING
+  post_link_base_url:
+    name: rn:msg:POST_LINK_BASE_URL_LBL
+    description: rn:msg:VAL_BASE_URL_POST_HASH_APPENDED_MSG
+    type: STRING
+  pagination_enabled:
+    name: rn:msg:PAGINATION_ENABLED_LBL
+    description: rn:msg:DETERMINES_PAGINATION_LINKS_RES_LBL
+    default: true
+    type: BOOLEAN
+  maximum_page_links:
+    name: rn:msg:MAXIMUM_PAGE_LINKS_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PCT_S_DENOTES_MAX_INDIVIDUAL_PG_LBL), 'pagination_enabled')
+    default: 6
+    type: INT
+  hide_when_no_results:
+    name: rn:msg:HIDE_WHEN_NO_RESULTS_CMD
+    description: rn:msg:HIDES_ENTIRE_WIDGET_CONTENT_CSS_RES_MSG
+    type: BOOLEAN
+info:
+  category:
+     - Legacy Community
+  description: rn:msg:WDGET_DISP_CFGURABLE_SRCH_RES_MSG
+  urlParameters:
+    kw:
+      name: rn:msg:KEYWORD_LBL
+      description: rn:msg:THE_CURRENT_SEARCH_TERM_LBL
+      example: kw/search
+    page:
+      name: rn:msg:PAGE_LBL
+      description: rn:msg:SETS_PAGE_PAGE_URL_PARAMETER_LBL
+      example: page/2

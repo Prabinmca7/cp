@@ -1,0 +1,13 @@
+    <table class="yui3-datatable-table" table-layout = 'fixed'>
+        <tr>
+        <th class="rn_PerformanceTest_Header">API URL | Method Type | Status Code</th>
+        <th class="rn_PerformanceTest_Header">Time Taken (in secs)</th>
+        </tr>
+        <% for (var i = 0; i < data.ajaxTimings.length; i++) {
+            if (data.ajaxTimings[i].value){ %>
+        <tr>
+            <td class="yui3-datatable-cell rn_PerformanceTest_Cell1"><%= data.ajaxTimings[i].key %></td>
+            <td class="yui3-datatable-cell rn_PerformanceTest_Cell2"><%= data.ajaxTimings[i].value %></td>
+        </tr>
+        <% }} %>
+    </table>

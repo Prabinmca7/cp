@@ -1,0 +1,72 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  type:
+    name: rn:msg:TYPE_OF_INFORMATION_TO_DISPLAY_LBL
+    description: rn:msg:DETERMINES_TYPE_INFO_WIDGET_DISP_MSG
+    default: all
+    type: OPTION
+    options:
+    - position
+    - estimated
+    - average
+    - all
+  label_tooltip_queue_position:
+    name: rn:msg:QUEUE_POSITION_TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_Q_MSG
+    default: rn:msg:YOUR_CURRENT_POSITION_QUEUE_MSG
+    type: STRING
+  label_queue_position:
+    name: rn:msg:QUEUE_POSITION_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_Q_POSITION_WIDGET_MSG_MSG
+    default: rn:msg:QUEUE_POSITION_QUEUE_MSG
+    type: STRING
+  label_queue_position_not_available:
+    name: rn:msg:QUEUE_POSITION_AVAIALABLE_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_Q_POSITION_AVAIL_MSG
+    default: rn:msg:PLS_WAIT_Q_POSITION_CALC_ELLIPSIS_MSG
+    type: STRING
+  label_tooltip_estimated_wait_time:
+    name: rn:msg:ESTIMATED_WAIT_TIME_TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_MSG
+    default: rn:msg:ESTIMATE_BEFORE_AGT_AVAIL_CHAT_MSG
+    type: STRING
+  label_estimated_wait_time:
+    name: rn:msg:ESTIMATED_WAIT_TIME_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_ESTIMATED_WAIT_T_MSG_MSG
+    default: rn:msg:CONNECTED_AGT_ESTIMATED_WAIT_TIME_MSG
+    type: STRING
+  label_estimated_wait_time_not_available:
+    name: rn:msg:ESTIMATED_WAIT_TIME_AVAIL_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_ESTIMATED_WAIT_T_MSG
+    type: STRING
+  label_estimated_wait_time_exceeded:
+    name: rn:msg:ESTIMATED_WAIT_TIME_EXCEEDED_MSG_LBL
+    description: rn:msg:MSG_DISPLAYED_ACTUAL_WAIT_T_MSG
+    default: rn:msg:APOLOGIZE_DELAY_ASSIGN_AGT_SOON_MSG
+    type: STRING
+  label_tooltip_average_wait_time:
+    name: rn:msg:AVERAGE_WAIT_TIME_TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_AVG_MSG
+    default: rn:msg:AVERAGE_TIME_BEFORE_AGT_AVAILABLE_MSG
+    type: STRING
+  label_average_wait_time:
+    name: rn:msg:AVERAGE_WAIT_TIME_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_AVG_WAIT_T_MSG_CONT_MSG
+    default: rn:msg:AVG_AMT_T_CUST_WAIT_AVG_WAIT_T_MSG
+    type: STRING
+  label_average_wait_time_not_available:
+    name: rn:msg:AVERAGE_WAIT_TIME_AVAIL_MESSAGE_LBL
+    description: rn:msg:MSG_DISPLAYED_AVG_WAIT_T_AVAIL_I_E_MSG
+    type: STRING
+  label_leave_screen_warning:
+    name: rn:msg:LEAVE_SCREEN_WARNING_LABEL_CMD
+    description: rn:msg:MSG_DISPLAYED_BROWSER_CAUSE_CHAT_MSG
+    default: rn:msg:BROWSER_END_CHAT_SESS_LEAVE_SCREEN_MSG
+    type: STRING
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISP_Q_POSITION_ESTIMATED_MSG

@@ -1,0 +1,11 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  quote:
+    name: Quote
+    type: STRING
+    description: A movie quote from "Batman and Robin"
+    default: Let's kick some ice!

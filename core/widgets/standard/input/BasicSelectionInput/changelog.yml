@@ -1,0 +1,48 @@
+1.2.2:
+  release: "16.11"
+  entries:
+  - account: geoff.kembel@oracle.com
+    category: Bug Fix
+    changelogID: 522
+    date: 06/17/2016
+    description: Added sub_id and pre/post blocks to all uses of FieldDisplay widget
+    level: nano
+    refno: 160511-000189
+    sortPosition: Middle
+1.2.1:
+  release: "16.5"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: dmadsen
+    category: Bug Fix
+    changelogID: 292
+    date: 03/10/2015
+    description: Translated labels not being used from input widgets to output widgets
+      due to label name differences.
+    level: minor
+    refno: 150221-000000
+    sortPosition: Middle
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/06/2012
+    level: major
+    description: Initial version of input/BasicSelectionInput
+    category: API Change
+    sortPosition: Middle

@@ -1,0 +1,34 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_results:
+    name: rn:msg:RESULTS_LABEL_LBL
+    type: string
+    default: rn:msg:RESULTS_PCT_S_PCT_S_LBL
+    description: rn:msg:PRINTF_FORMATTED_LABEL_TO_DISPLAY_LBL
+  label_known_results:
+    name: rn:msg:KNOWN_RESULTS_LABEL_LBL
+    type: string
+    default: rn:msg:RESULTS_PCT_S_PCT_S_OF_PCT_S_LBL
+    description: rn:msg:PRINTF_FORMATTED_LABEL_TO_DISP_WHEN_MSG
+  per_page:
+    name: rn:msg:ITEMS_PER_PAGE_LBL
+    type: INT
+    description: rn:msg:INDICATES_HOW_MANY_RES_TO_DISP_PER_LBL
+    default: 10
+    min: 1
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+info:
+  category:
+    - Source Search
+  description: rn:msg:THIS_WIDGET_DISP_INFO_ABOUT_THE_RES_MSG

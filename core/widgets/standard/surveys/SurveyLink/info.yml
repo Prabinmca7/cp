@@ -1,0 +1,37 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  link_text:
+    name: rn:msg:LINK_TEXT_CMD
+    type: STRING
+    description: rn:msg:TEXT_TO_DISPLAY_ON_LINK_LBL
+    default: rn:msg:SURVEY_LINK_LBL
+  survey_id:
+    name: rn:msg:SURVEY_ID_LBL
+    type: INT
+    description: rn:msg:THE_ID_OF_THE_SURVEY_TO_BE_USED_MSG
+    min: 1
+    required: true
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:TARGET_WINDOW_OPENED_BTN_CLICKED_MSG
+    default: _self
+    type: OPTION
+    options:
+    - _self
+    - _blank
+  icon_path:
+    name: rn:msg:ICON_PATH_LBL
+    type: filepath
+    description: rn:msg:OPTIONAL_IMAGE_FILE_DISPLAY_LINK_LBL
+  label_icon_alt:
+    name: rn:msg:ICON_ALT_LABEL_LBL
+    type: STRING
+    description: rn:msg:ALTERNATIVE_TXT_ICON_ICONPATH_MSG
+    default: rn:msg:FOLLOW_THIS_LINK_TO_TAKE_A_SURVEY_MSG
+info:
+  description: rn:msg:WIDGET_DISP_SURVEY_LINK_CREATE_MSG

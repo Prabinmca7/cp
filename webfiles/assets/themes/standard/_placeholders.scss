@@ -1,0 +1,15 @@
+%heading {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+}
+
+%screenreader {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}

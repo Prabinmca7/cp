@@ -1,0 +1,14 @@
+input: <form id='form' onsubmit="return false;"><rn:widget path="input/SocialFileAttachmentUpload" name="CommunityQuestion.FileAttachments" max_attachments='3'/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="rn_SocialFileAttachmentUpload_0" class="rn_SocialFileAttachmentUpload rn_FileAttachmentUpload rn_Input">
+    <div id="rn_SocialFileAttachmentUpload_0_LabelContainer">
+        <label for="rn_SocialFileAttachmentUpload_0_FileInput" id="rn_SocialFileAttachmentUpload_0_Label">Attach Documents                </label>
+    </div>
+    <input name="file" id="rn_SocialFileAttachmentUpload_0_FileInput" type="file" aria-labelledby="rn_SocialFileAttachmentUpload_0_Label"/>
+        <img id="rn_SocialFileAttachmentUpload_0_LoadingIcon" class="rn_Hidden" alt="Loading" src="images/indicator.gif" />
+        <span id="rn_SocialFileAttachmentUpload_0_StatusMessage" aria-label="Status"></span>
+    <span id="rn_SocialFileAttachmentUpload_0_ErrorMessage"></span>
+</div>
+</form>

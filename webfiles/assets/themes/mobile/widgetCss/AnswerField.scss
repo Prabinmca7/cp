@@ -1,0 +1,73 @@
+@import 'widget-includes';
+
+.rn_AnswerField {
+    display: inline;
+
+    .rn_SchemaAttribute {
+        margin-bottom: 5px;
+        font-weight: bold;
+        clear: both;
+    }
+
+    .rn_SchemaAttributeValue {
+        margin-bottom: 30px;
+        
+        th, td {
+            text-align: center;
+        }
+
+        ol, ul {
+            clear: both;
+            padding-left: 2em;
+        }
+
+        > ol, > ul {
+            margin-bottom: 1em;
+        }
+
+        li {
+            line-height: 1.4em;
+            margin: 4px 0;
+        }
+
+        li ul {
+            list-style: disc;
+        }
+
+        li ul li {
+            list-style: circle;
+        }
+
+        li li ul li {
+            list-style: square;
+        }
+
+        ol li,
+        li ol li,
+        li li ol li {
+            list-style: decimal;
+        }
+    }
+
+    .rn_SchemaAttribute input {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    section {
+        display: inline-block;
+        padding: 3px;
+        width: 48%;
+        word-wrap: break-word;
+    }
+
+    .rn_SchemaAttribute .rn_AttributeCheckbox {
+        display: inline;
+        width: 10%;
+    }
+}
+
+.rn_AttributeCheckboxLabel {
+    display: inline;
+    line-height: 2em;
+}

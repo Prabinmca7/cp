@@ -1,0 +1,30 @@
+input: <rn:widget path='standard/chat/ChatEngagementStatus'/>
+removecontent: true
+output:
+<div id="rn_ChatEngagementStatus_0" class="rn_ChatEngagementStatus rn_Hidden" aria-live="assertive">
+    <h2>
+        <span id="rn_ChatEngagementStatus_0_Prefix" class="rn_StatusPrefix">
+            Status:         </span>
+        <span id="rn_ChatEngagementStatus_0_Status" class="rn_Status">
+            Searching        </span>
+    </h2>
+    <div id="rn_ChatEngagementStatus_0_Searching" class="rn_SearchingDetailMessage rn_Hidden">
+        <img alt="" src="images/indicator.gif"/>&nbsp;<span>Searching for an available agent</span>
+    </div>
+    <div id="rn_ChatEngagementStatus_0_Requeued" class="rn_RequeuedDetailMessage rn_Hidden">
+        You have been re-queued.    </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_User" role="alert" class="rn_CanceledUserDetailMessage rn_Hidden">
+        You have left the queue. If you still need assistance please try back later.&nbsp;
+                <span>Please close this window.</span>
+            </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_Self_Service" class="rn_CanceledSelfServiceDetailMessage rn_Hidden">
+        You have left the queue. We hope you have found what you were looking for.    </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_NoAgentsAvail" class="rn_CanceledNoAgentsAvailDetailMessage rn_Hidden">
+        There are no agents available to chat with you right now. Please try again later.    </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_Queue_Timeout" class="rn_CanceledQueueTimeoutDetailMessage rn_Hidden">
+        There are no agents available to chat with you right now. Please try again later.    </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_Dequeued" class="rn_CanceledDequeuedDetailMessage rn_Hidden">
+        You have been removed from the queue. Please contact us by email.    </div>
+    <div id="rn_ChatEngagementStatus_0_Canceled_Browser" class="rn_CanceledBrowserDetailMessage rn_Hidden">
+        You have been disconnected because you are using an unsupported browser. Please update your browser and try again.    </div>
+</div>

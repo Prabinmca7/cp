@@ -1,0 +1,14 @@
+input: <form id="banana" onsubmit="return false;"><rn:widget path='standard/input/FileAttachmentUpload' min_required_attachments="1"/></form>
+removecontent: true
+output:
+<form id="banana" onsubmit="return false;"><div id="rn_FileAttachmentUpload_0" class="rn_FileAttachmentUpload rn_Input">
+    <div id="rn_FileAttachmentUpload_0_LabelContainer">
+        <label for="rn_FileAttachmentUpload_0_FileInput" id="rn_FileAttachmentUpload_0_Label">Attach Documents                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+    </div>
+    <input name="file" id="rn_FileAttachmentUpload_0_FileInput" type="file" aria-labelledby="rn_FileAttachmentUpload_0_Label"/>
+        <img id="rn_FileAttachmentUpload_0_LoadingIcon" class="rn_Hidden" alt="Loading" src="images/indicator.gif" />
+        <span id="rn_FileAttachmentUpload_0_StatusMessage" aria-label="Status"></span>
+    <span id="rn_FileAttachmentUpload_0_ErrorMessage"></span>
+</div>
+</form>

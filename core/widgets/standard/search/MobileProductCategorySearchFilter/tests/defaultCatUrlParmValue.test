@@ -1,0 +1,47 @@
+input: <rn:widget path='standard/search/MobileProductCategorySearchFilter' filter_type='categories'/>
+jstestfile: base.test.js
+removecontent: true
+template: mobile
+urlparameters: /c/74,75
+output:
+<div id="rn_MobileProductCategorySearchFilter_0" class="rn_MobileProductCategorySearchFilter">
+         <form id="rn_MobileProductCategorySearchFilter_0_Category_Level1Input" class="rn_Hidden rn_Input rn_MobileProductCategorySearchFilter rn_Level1" onsubmit="return false;">
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_1" value="0"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_1" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_1">All Categories                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_2" value="161"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_2" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_2">Basics                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_3" value="153"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_3" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_3">Mobile Services                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_4" value="68"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_4" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_4">Account and Billing                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_5" value="158"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_5" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_5">Rollover Minutes                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_6" value="70"/>
+                        <label class="" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_6" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_6">Mobile Broadband                        </label>
+        </div>
+            <div class="rn_Parent ">
+            <input type="radio" name="rn_MobileProductCategorySearchFilter_0_Category_Level1" id="rn_MobileProductCategorySearchFilter_0_Category_Input1_7" value="71"/>
+                        <label class="rn_HasChildren" id="rn_MobileProductCategorySearchFilter_0_Category_Label1_7" for="rn_MobileProductCategorySearchFilter_0_Category_Input1_7">Troubleshooting            <span class="rn_ParentMenuAlt"> More Options</span>            </label>
+        </div>
+        </form>
+        <div id="rn_MobileProductCategorySearchFilter_0_Category_FilterDisplay" class="rn_FilterDisplay">
+        <div class="rn_Heading">
+            <a id="rn_MobileProductCategorySearchFilter_0_Category_Launch" href="javascript:void(0);" class="rn_Opener rn_LinkOpener">Filter by category</a>
+            <a href="javascript:void(0);" id="rn_MobileProductCategorySearchFilter_0_Category_FilterRemove" class="rn_Remove rn_Hidden">
+                Remove            </a>
+        </div>
+        <div id="rn_MobileProductCategorySearchFilter_0_Category_Filters" class="rn_Filters">
+                </div>
+    </div>
+</div>

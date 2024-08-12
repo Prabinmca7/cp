@@ -1,0 +1,107 @@
+version: "1.6.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  default_value:
+    name: rn:msg:DEFAULT_VALUE_LBL
+    description: rn:msg:CMMA_SEPARATED_IDS_COMMAS_DENOTING_MSG
+    type: STRING
+  label_data_type:
+    name: rn:msg:FILTER_TYPE_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(FLTR_DISP_DROPDOWN_INFO_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(CATEGORIES_LBL))
+    default: rn:msg:PRODUCTS_LBL
+    type: STRING
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_DISP_INPUT_CTRL_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(CATEGORY_LBL))
+    default: rn:msg:PRODUCT_LBL
+    type: STRING
+  label_all_values:
+    name: rn:msg:ALL_VALUES_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_INDICATE_FLTR_SEL_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(ALL_CATEGORIES_LBL))
+    default: rn:msg:ALL_PRODUCTS_LBL
+    type: STRING
+  label_required:
+    name: rn:msg:REQUIRED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_REQUIRED_LEVEL_MET_LBL
+    default: rn:msg:PLEASE_SELECT_AN_ITEM_UNDER_PCT_S_MSG
+    type: STRING
+  label_prompt:
+    name: rn:msg:NOTHING_SELECTED_LABEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_DISP_VAL_SEL_DEFS_PCT_S_DATA_MSG), \RightNow\Utils\Config::getMessage(SELECT_A_CATEGORY_LBL))
+    default: rn:msg:SELECT_A_PRODUCT_LBL
+    type: STRING
+  label_parent_menu_alt:
+    name: rn:msg:PARENT_MENU_ALTERNATE_TEXT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYED_MENU_ITEMS_SUBMENUS_MSG
+    default: rn:msg:MORE_OPTIONS_LBL
+    type: STRING
+  label_not_permissioned:
+    name: rn:msg:NOT_PERMISSIONED_LABEL_LBL
+    description: rn:msg:SELECTS_U_THEY_PRM_S_API_SOCIAL_FIELDS_MSG
+    default: rn:msg:DO_PERMISSION_PLEASE_DIFFERENT_ITEM_MSG
+    type: STRING
+  label_current_selection_screenreader:
+    name: rn:msg:CURRENT_SELECTION_SCREENREADER_LABEL_LBL
+    description: rn:msg:PREFIX_REGARDING_USERS_SELECTION_LBL
+    default: rn:msg:YOUR_CURRENT_SELECTION_IS_S_LBL
+    type: STRING
+  verify_permissions:
+    name: rn:msg:VERIFY_PERMISSIONS_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PERMISSIONED_DAT_PRDCTCTGRY_DD_PRMSSN_MSG), 'Read')
+    default: None
+    type: OPTION
+    options:
+    - None
+    - Create
+    - Read
+  name:
+    name: rn:msg:NAME_LBL
+    type: string
+    description: rn:msg:BS_BJ_BJ_SPC_SL_BS_NC_CCBL_NCDNTPRDCT_NC_MSG
+    required: true
+  required_lvl:
+    name: rn:msg:REQUIRED_LEVEL_LBL
+    description: rn:msg:VAL_SPECIFIYING_LVLS_SEL_BEF_VAL_MSG
+    default: 0
+    type: INT
+    max: 6
+  max_lvl:
+    name: rn:msg:MAX_LEVEL_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(VAL_SPECIFYING_MAX_LVLS_SHOWN_PCT_S_MSG),
+      "required_lvl", "max_lvl", "max_lvl", "required_lvl")
+    default: 6
+    type: INT
+    min: 1
+    max: 6
+  linking_off:
+    name: rn:msg:PROD_SLASH_CAT_LINKING_OFF_LBL
+    description: rn:msg:VALUE_OVRRIDE_PROD_CAT_LINKING_SET_MSG
+    type: BOOLEAN
+  allow_external_login_updates:
+    name: rn:msg:ALLOW_EXTERNAL_LOGIN_UPDATES_LBL
+    description: rn:msg:ALLOWS_USERS_AUTHENTICATE_CP_EXT_MSG
+    type: BOOLEAN
+  hide_on_load:
+    name: rn:msg:HIDE_ON_LOAD_CMD
+    type: boolean
+    description: rn:msg:WDGETS_FLD_HIDDEN_FORM_PG_LOAD_MSG
+info:
+  description: rn:msg:TH_CLLCTNG_HR_RR_DT_PRD_CT_SBM_VLS_QSTNS_MSG
+  urlParameters:
+    i_id:
+      name: rn:msg:INCIDENT_ID_LBL
+      description: rn:msg:INCIDENT_ID_DISPLAY_INFORMATION_LBL
+      example: i_id/7
+    Incident.Product:
+      name: rn:msg:PRODUCT_LBL
+      description: rn:msg:CMMA_SPRTED_IDS_COMMAS_DENOTING_MSG
+      example: Incident.Product/1,2,3
+    Incident.Category:
+      name: rn:msg:CATEGORY_LBL
+      description: rn:msg:CMMA_SPRATED_IDS_COMMAS_DENOTING_MSG
+      example: Incident.Category/1
+contains:
+- widget: standard/output/ProductCategoryDisplay
+  versions: ["1.2"]

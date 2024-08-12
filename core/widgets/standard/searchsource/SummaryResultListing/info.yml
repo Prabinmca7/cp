@@ -1,0 +1,40 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id: unset
+  hide_when_no_results: unset
+  label_screen_reader_search_success_alert: unset
+  label_screen_reader_search_no_results_alert: unset
+  link_truncate_size: unset
+  per_page:
+    name: rn:msg:ITEMS_PER_PAGE_LBL
+    type: INT
+    description: rn:msg:INDICATES_HOW_MANY_RES_TO_DISP_PER_LBL
+    default: 5
+    min: 1
+  results_type:
+    name: rn:msg:RESULTS_TYPE_LBL
+    description: rn:msg:WHETHER_ANSWERS_SOCIAL_QUESTIONS_MSG
+    required: true
+    type: OPTION
+    default: Answers
+    options:
+    - Answers
+    - SocialQuestions
+  truncate_size:
+    name: rn:msg:TRUNCATE_SIZE_LBL
+    type: INT
+    description: rn:msg:CHARACTERS_TRUNCATE_SOCIAL_TITLE_MSG
+    default: 35
+    min: 1
+extends:
+  widget: standard/searchsource/SourceResultListing
+  versions: ["1.5"]
+  components: [php, view, js]
+info:
+  category:
+    - Community
+    - Source Search
+  description: rn:msg:CNT_SSS_SBJ_DSC_BRF_RPT_SRCRSLTLSTNG_NST_MSG

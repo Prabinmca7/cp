@@ -1,0 +1,116 @@
+input: <rn:widget path="standard/discussion/QuestionComments" comments_per_page="2"/>
+filter: @datetime="[^"]+">[^<]+</time>@
+jstestfile: pagination.test.js
+removecontent: true
+replace: datetime=""></time>
+urlparameters: /qid/1/comment/3
+output:
+<div id="rn_QuestionComments_0" class="rn_QuestionComments">
+        <div class="rn_CommentsTitle" role="heading" aria-level="2">
+        <h2>Comments</h2>
+    </div>
+        <div class="rn_SortOrder">
+        <button class="rn_NewestButton" type="button" data-sort="ASC" title="Newest First">Newest First</button>
+        <span class="rn_Separator"></span>
+        <button class="rn_OldestButton rn_Disabled" type="button" data-sort="DESC" title="Oldest First">Oldest First</button>
+    </div>
+    <div id="rn_QuestionComments_0_Comments" aria-live="polite">
+            <div class="rn_Paginator" role="navigation">
+            <span class="rn_BackLink">
+            <a href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pageTwo/qid/1/page/1" data-pageid="1" rel="prev">
+                Previous            </a>
+        </span>
+        <span class="rn_PageLinks">
+                                                            <a data-pageid="1" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pageTwo/qid/1/page/1" title="Page 1 of 2">1<span class="rn_ScreenReaderOnly">Page 1 of 2</span></a>
+                                                                                                    <span tabindex="0" class="rn_CurrentPage" title="Page 2 of 2 selected" aria-label="Page 2 of 2 selected">2</span>
+                                    </span>
+    </div>
+<div class="rn_Comments">
+                <div id="rn_QuestionComments_0_3" data-commentid="3" data-contenttype="text/x-markdown" class="rn_CommentContainer rn_BestAnswer" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="Answer">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="hasarit">
+            <a itemprop="url" href="/app/public_profile/user/104/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor2" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">H</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">hasarit</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_3">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                            <span class="rn_BestAnswerLabel" title="This answer has been marked the best answer by the question's author">
+        Best Answer        <span class="rn_ScreenReaderOnly">
+        This answer has been marked the best answer by the question's author        </span>
+    </span>
+                    </div>
+                </div>
+                        </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Reply with practical answer</p>
+            </div>
+                            <div id="rn_FileListDisplay_2" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+            <div id="rn_SocialContentRating_3" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="You are unable to vote" disabled>
+    <span class="rn_ScreenReaderOnly" aria-live="polite">You are unable to vote</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Be the first to vote                	</span>
+        	        </span>
+    </div>
+        </li>
+                <li role="menuitem" class="rn_CommentAction" title="Flag this comment">
+                    </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    <div class="rn_Paginator" role="navigation">
+            <span class="rn_BackLink">
+            <a href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pageTwo/qid/1/page/1" data-pageid="1" rel="prev">
+                Previous            </a>
+        </span>
+        <span class="rn_PageLinks">
+                                                            <a data-pageid="1" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pageTwo/qid/1/page/1" title="Page 1 of 2">1<span class="rn_ScreenReaderOnly">Page 1 of 2</span></a>
+                                                                                                    <span tabindex="0" class="rn_CurrentPage" title="Page 2 of 2 selected" aria-label="Page 2 of 2 selected">2</span>
+                                    </span>
+    </div>
+    </div>
+    </div>

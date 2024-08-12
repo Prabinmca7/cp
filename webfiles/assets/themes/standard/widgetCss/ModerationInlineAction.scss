@@ -1,0 +1,53 @@
+@import 'widget-includes';
+
+.rn_ModerationInlineAction {
+
+    .rn_ActionMenu {
+        display: inline;
+
+        a {
+            @include icon($fa-var-chevron-down, after);
+        }
+    }
+
+    .rn_Loading {
+        @include loading-icon(1em);
+        display: inline-block;
+    }
+
+    .yui3-panel-content .yui3-widget-bd {
+        padding: 0;
+        min-height: 100%;
+    }
+
+    .rn_Dropdown.yui3-panel-content.yui3-widget-stdmod {
+        border: 1px solid darken($light-gray, 10);
+        box-shadow: 0 0 2px rgba(88, 88, 162, .3);
+        border-radius: 3px;
+        min-width: 139px;
+        word-wrap: break-word;
+        overflow: hidden;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            border: 0;
+            list-style: none;
+            margin: 0;
+            text-align: left;
+        }
+
+        a {
+            background: #FFF;
+            display: block;
+            padding: 4px;
+
+            &:hover,
+            &:focus {
+                background: lighten($light-blue, 15);
+            }
+        }
+    }
+}

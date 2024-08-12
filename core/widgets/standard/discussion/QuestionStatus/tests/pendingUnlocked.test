@@ -1,0 +1,5 @@
+input: <rn:widget path="standard/discussion/QuestionStatus"/>
+contact: slatest
+removecontent: true
+urlparameters: /qid/2042
+output: 

@@ -1,0 +1,40 @@
+@import 'widget-includes';
+
+.rn_OkcsSimpleSearch {
+    margin: auto;
+    max-width: 400px;
+    width: 180px;
+
+    .rn_SearchField {
+        border: 0;
+        color: #222;
+        font-weight: bold;
+        height: 1.8em;
+        max-width: 200px;
+        padding: 4px 4px 0;
+        width: 85%;
+        font-size: .85em;
+    }
+
+    .rn_SearchImage {
+        border: 0;
+        padding: 0;
+        position: absolute;
+        right: .2em;
+        top: .46em;
+    }
+    
+    span.rn_ButtonLabel { // Hide the button's text and display an icon instead.
+        @extend %screenreader;
+    }
+    
+    button {
+        @include icon($fa-var-search) {
+            margin: 0;
+        }
+        
+        padding-left: 0;
+        padding-right: 0;
+        width: 18%;
+    }
+}

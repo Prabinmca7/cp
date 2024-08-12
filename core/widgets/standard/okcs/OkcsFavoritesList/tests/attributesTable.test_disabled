@@ -1,0 +1,62 @@
+input: <rn:widget path='standard/okcs/OkcsFavoritesList' label_doc_id='Customized Doc Id' label_title='Customized Title' label_no_favorites_list='My Label for No Favorites' message_element='MyMessageElementDiv' url='/app/home'/><div id="MyMessageElementDiv"></div>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,CP_ANSWERS_DETAIL_URL|answers/answer_view
+contact: eturner@rightnow.com.invalid
+removecontent: true
+output:
+<div id="rn_OkcsFavoritesList_0" class="rn_OkcsFavoritesList">
+        <div id="rn_OkcsFavoritesList_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+                    <div id="rn_OkcsFavoritesList_0_Loading"></div>
+<div id="rn_OkcsFavoritesList_0_Content" class="yui3-skin-sam">
+    <table id="rn_OkcsFavoritesList_0_Grid" class="yui3-datatable-table" role="grid">
+    <caption></caption>
+        <thead class="yui3-datatable-columns">
+            <tr>
+                                                     <th id="rn_OkcsFavoritesList_0_title" class="yui3-datatable-header rn_GridColumn_1" aria-labelledby="rn_OkcsFavoritesList_0_title" tabindex="0" scope="col">
+                        Customized Title                    </th>
+                                                    <th id="rn_OkcsFavoritesList_0_documentId" class="yui3-datatable-header rn_GridColumn_2" aria-labelledby="rn_OkcsFavoritesList_0_documentId" tabindex="0" scope="col">
+                        Customized Doc Id                    </th>
+                        </tr>
+        </thead>
+                <tbody id="rn_OkcsFavoritesList_0_Body" class="yui3-datatable-data">
+                            <tr id="rn_OkcsFavoritesList_0_1000005" role="row" class="yui3-datatable-even">
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_title">
+                                                            <a href="/app/answers/answer_view/a_id/1000005" title="Steps to install and configure chat" target="_blank" >Steps to install and configure chat</a>
+                                                    </td>
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_documentId">
+                                                            SO6                                                    </td>
+                                    </tr>
+                            <tr id="rn_OkcsFavoritesList_0_1000003" role="row" class="yui3-datatable-odd">
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_title">
+                                                            <a href="/app/answers/answer_view/a_id/1000003" title="The Oracle Knowledge Widget library enables developers to embed knowledge within their applications. All that is required is knowledge of web application development skills (HTML, CSS and JavaScript)." target="_blank" >The Oracle Knowledge Widget library enables developers to embed knowledge within their applications. All that is required is knowledge of web application development skills (HTML, CSS and JavaScript).</a>
+                                                    </td>
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_documentId">
+                                                            SO4                                                    </td>
+                                    </tr>
+                            <tr id="rn_OkcsFavoritesList_0_1000002" role="row" class="yui3-datatable-even">
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_title">
+                                                            <a href="/app/answers/answer_view/a_id/1000002" title="INVESTMENT PROOF SUBMISSION GUIdELINES FOR THE FY 2014-2015" target="_blank" >INVESTMENT PROOF SUBMISSION GUIdELINES FOR THE FY 2014-2015</a>
+                                                    </td>
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_documentId">
+                                                            SO3                                                    </td>
+                                    </tr>
+                            <tr id="rn_OkcsFavoritesList_0_1000001" role="row" class="yui3-datatable-odd">
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_title">
+                                                            <a href="/app/answers/answer_view/a_id/1000001" title="Proof Submission document in Windows" target="_blank" >Proof Submission document in Windows</a>
+                                                    </td>
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_documentId">
+                                                            SO2                                                    </td>
+                                    </tr>
+                            <tr id="rn_OkcsFavoritesList_0_1000004" role="row" class="yui3-datatable-even">
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_title">
+                                                            <a href="/app/answers/answer_view/a_id/1000004" title="WAS Installation on Windows" target="_blank" >WAS Installation on Windows</a>
+                                                    </td>
+                                            <td role="gridcell" class="yui3-datatable-cell" headers="rn_OkcsFavoritesList_0_documentId">
+                                                            SO5                                                    </td>
+                                    </tr>
+                    </tbody>
+            </table>
+    <div id="rn_OkcsFavoritesList_0_PaginateDiv" class="rn_PaginateDiv">
+            </div>
+    </div>
+            </div>
+<div id="MyMessageElementDiv"></div>

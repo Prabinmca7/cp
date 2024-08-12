@@ -1,0 +1,14 @@
+input: <rn:meta include_chat="true"/><rn:widget path="standard/chat/ChatServerConnect" />
+filter: @(("dbName":"[^"]*)|(src='/cgi-bin/[^.]*.cfg))\s*@s
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_ChatServerConnect_0" class="rn_ChatServerConnect">
+            <div id="rn_ChatServerConnect_0_Connector">
+            <div id="rn_ChatServerConnect_0_ErrorLocation"></div>
+            <div id="rn_ChatServerConnect_0_ConnectionStatus">
+                                    <img alt="" id="rn_ChatServerConnect_0_ConnectingIcon" src="images/indicator.gif"/>&nbsp;
+                                <span id="rn_ChatServerConnect_0_Message">Please wait while we establish a connection to the Chat Server.</span>
+            </div>
+        </div>
+    </div>

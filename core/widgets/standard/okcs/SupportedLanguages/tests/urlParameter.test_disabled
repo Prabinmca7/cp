@@ -1,0 +1,29 @@
+input: <form><rn:widget path="standard/okcs/SupportedLanguages" source_id="okcs_search"/></form>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/iphone/loc/ar-SA%2Cen-US%2Ces-ES
+output:
+<form><div id="rn_SupportedLanguages_0" class="rn_SupportedLanguages">
+        <a id="rn_SupportedLanguages_0_Link" href="javascript:void(0);">Specified Languages</a>
+        <div id="rn_SupportedLanguages_0_Container" class="rn_Hidden" >
+                                                                    <fieldset>
+                        <label for="rn_SupportedLanguages_0_en-US">English United States</label>
+                        <input id="rn_SupportedLanguages_0_en-US" type="checkbox" value="en-US" checked='checked' class="rn_SupportedLanguagesCheckbox">
+                    </fieldset>
+                                                                    <fieldset>
+                        <label for="rn_SupportedLanguages_0_cs-CZ">Čeština Česká republika</label>
+                        <input id="rn_SupportedLanguages_0_cs-CZ" type="checkbox" value="cs-CZ"  class="rn_SupportedLanguagesCheckbox">
+                    </fieldset>
+                                                        <fieldset>
+                        <label for="rn_SupportedLanguages_0_he-IL">Hebrew Israel</label>
+                        <input id="rn_SupportedLanguages_0_he-IL" type="checkbox" value="he-IL"  class="rn_SupportedLanguagesCheckbox">
+                    </fieldset>
+                                                        <fieldset>
+                        <label for="rn_SupportedLanguages_0_it-IT">Italiano Italia</label>
+                        <input id="rn_SupportedLanguages_0_it-IT" type="checkbox" value="it-IT"  class="rn_SupportedLanguagesCheckbox">
+                    </fieldset>
+                                    </div>
+</div>
+</form>

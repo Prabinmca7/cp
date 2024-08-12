@@ -1,0 +1,29 @@
+<rn:block id="preCommentAvatar"/>
+<img class='rn_Avatar' src='<%= avatar %>' alt=''/>
+<rn:block id="postCommentAvatar"/>
+<rn:block id="preCommentUserName"/>
+<span class='rn_Commenter'><%= commenter %></span>
+<rn:block id="postCommentUserName"/>
+<rn:block id="preComment"/>
+<span class='rn_CommentText'><%= comment %></span>
+<rn:block id="postComment"/>
+<% if (showPostedDate) { %>
+<rn:block id="preCommentPostedDate"/>
+<span class='rn_CommentDate rn_SubTitle'><%= RightNow.Text.sprintf(postedDate, commentCreated) %></span>
+<rn:block id="postCommentPostedDate"/>
+<% } %>
+<% if (displayRatingControls) { %>
+<rn:block id="preCommentUserRating"/>
+<span id='rn_<%= instanceID %>_RatingControls<%= commentID %>' class='rn_CommentRatingControls'>
+    <rn:block id="preCommentUserRatingUp"/>
+    <a class='rn_Rate rn_RateUp' href='javascript:void(0);' name='rateUp<%= commentID %>'><%= positiveRating %></a>
+    <rn:block id="postCommentUserRatingUp"/>
+    <rn:block id="preCommentUserRatingDown"/>
+    <a class='rn_Rate rn_RateDown' href='javascript:void(0);' name='rateDown<%= commentID %>'><%= negativeRating %></a>
+    <rn:block id="postCommentUserRatingDown"/>
+</span>
+<rn:block id="postCommentUserRating"/>
+<% } %>
+<rn:block id="preCommentRating"/>
+<span class='rn_CommentRating' id='rn_<%= instanceID %>_Rating<%= commentID %>'><%= ratingSection %></span>
+<rn:block id="postCommentRating"/>

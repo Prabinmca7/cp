@@ -1,0 +1,12 @@
+input: <rn:widget path='standard/search/DisplaySearchFilters'/>
+config: MYQ_VIEW_ORG_INCIDENTS|2
+contact: ejergan
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /org/0
+output:
+<div id="rn_DisplaySearchFilters_0" class="rn_DisplaySearchFilters rn_Hidden">
+<span class="rn_Heading">Search filters applied</span>
+<div id="rn_DisplaySearchFilters_0_FilterContainer">
+</div>
+</div>

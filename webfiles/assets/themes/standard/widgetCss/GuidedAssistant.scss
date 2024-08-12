@@ -1,0 +1,90 @@
+@import 'widget-includes';
+
+.rn_GuidedAssistant {
+    img {
+        display: inline-block;
+        max-width: 500px;
+        max-height: 500px;
+        padding: 6px;
+    }
+
+    .rn_Node {
+        border-bottom: 1px solid #DDD;
+        margin-bottom: 26px;
+        padding-bottom: 14px;
+    }
+
+    .rn_QuestionText {
+        margin: 24px 0 10px;
+    }
+
+    .rn_Result {
+        margin: 6px 0 10px;
+    }
+
+    .rn_ResultHeading {
+        line-height: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    .rn_RadioQuestion {
+        div {
+            margin-top: 6px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        input {
+            position: absolute;
+            left: 0;
+            border: 0;
+        }
+    }
+
+    .rn_ImageQuestion input {
+        border: 0;
+    }
+
+    .rn_LinkQuestion {
+        div {
+            margin-bottom: 8px;
+        }
+
+        .rn_HighlightResponse a {
+            color: #FFF;
+            background-color: #0E53A7;
+        }
+    }
+
+    .rn_ButtonQuestion {
+        .rn_HighlightResponse {
+            font-weight: bold;
+        }
+
+        .rn_HighlightResponse.rn_SelectedButton {
+            background: #227eed;
+            border: 1px solid #333;
+            color: #FFF;
+        }
+    }
+
+    .rn_TextQuestion .rn_Label,
+    .rn_TextQuestion button {
+        display: block;
+        margin-top: 6px;
+    }
+
+    .rn_TextQuestion input {
+        width: 200px;
+    }
+
+    .rn_ResultLink a {
+        display: block;
+    }
+
+    .rn_BackButton,
+    .rn_RestartButton {
+        margin-bottom: 1em;
+        margin-right: .25em;
+    }
+}

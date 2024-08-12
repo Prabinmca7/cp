@@ -1,0 +1,12 @@
+input: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path='standard/okcs/OkcsSmartAssistant' truncate_size="100"/></form>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+jstestfile: truncateSize.test.js
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><div id="rn_OkcsSmartAssistant_0" class="rn_OkcsSmartAssistant rn_SmartAssistantDialog rn_Hidden">
+    <div class="rn_MessageBox rn_InfoMessage" role="alert">
+        <span id="rn_OkcsSmartAssistant_0_DialogHeading"></span>
+    </div>
+    <div id="rn_OkcsSmartAssistant_0_DialogContent"></div>
+</div>
+</form>

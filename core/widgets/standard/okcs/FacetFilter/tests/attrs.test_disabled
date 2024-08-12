@@ -1,0 +1,34 @@
+input: <rn:widget path="standard/okcs/FacetFilter" source_id="OKCSSearch" label_filter="FacetFilter" label_reset="Reset FacetFilter"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/Nokia/facet/CMS-PRODUCT.RN_PRODUCT_7%2CCMS-CATEGORY_REF.RN_CATEGORY_4%2CDOC_TYPES.CMS-XML%2CCOLLECTIONS.OKKB-TEST
+output:
+<div id="rn_FacetFilter_0" class="rn_FacetFilter">
+            <div id="rn_FacetFilter_0_Content" class="rn_FacetFilter_Content ">
+            <div class="rn_FilterLabel">
+            <span class="rn_FacetFilterTitle">FacetFilter:</span>
+        </div>
+        <div class="rn_FilterContent">
+                                                <span class="rn_FacetFilterProduct">
+                    <span class="rn_FilterChoiceTitle rn_Product">Document Types: </span>
+                                                                                                                    <span class="rn_filterChoice" data-id="DOC_TYPES.CMS-XML">ARTICLES</span>
+                        <span class="rn_FacetFilterClearIcon" data-id="DOC_TYPES.CMS-XML"></span>
+                                        </span>
+                                                                                            <span class="rn_FacetFilterProduct">
+                    <span class="rn_FilterChoiceTitle rn_Product">Product: </span>
+                                                                                                                    <span class="rn_filterChoice" data-id="CMS-PRODUCT.RN_PRODUCT_7">Mobile</span>
+                        <span class="rn_FacetFilterClearIcon" data-id="CMS-PRODUCT.RN_PRODUCT_7"></span>
+                                        </span>
+                                                                <span class="rn_FacetFilterProduct">
+                    <span class="rn_FilterChoiceTitle rn_Product">Category: </span>
+                                                                                                                    <span class="rn_filterChoice" data-id="CMS-CATEGORY_REF.RN_CATEGORY_4">Cat1</span>
+                        <span class="rn_FacetFilterClearIcon" data-id="CMS-CATEGORY_REF.RN_CATEGORY_4"></span>
+                                        </span>
+                                        <span class="rn_ResetFilter">
+                <button id="rn_FacetFilter_0_ResetFilterButton" class="rn_ResetFilterBtn">Reset FacetFilter</button>
+            </span>
+        </div>
+        </div>
+</div>

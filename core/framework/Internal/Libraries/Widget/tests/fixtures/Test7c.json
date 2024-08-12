@@ -1,0 +1,42 @@
+{
+  "description": "Nearly all widgets work on both frameworks. The BasicTextInput widget does not work on framework 3.0.",
+  "selectedFrameworkVersions": {
+    "Development": "3.1",
+    "Production": "3.1",
+    "Staging": "3.1"
+  },
+  "selectedWidgetVersions": {
+    "Development": {
+      "all": "1.0"
+    },
+    "Staging": {
+      "all": "1.0"
+    },
+    "Production": {
+      "all": "1.0"
+    }
+  },
+  "widgetVersions": {
+    "all": {
+      "1.0.1": {
+        "requires": {
+          "framework": ["3.0", "3.1"],
+          "jsModule": ["standard", "mobile"]
+        }
+      }
+    },
+    "standard/input/BasicTextInput": {
+      "1.0.1": {
+        "requires": {
+          "framework": ["3.1"],
+          "jsModule": ["standard", "mobile"]
+        }
+      }
+    }
+  },
+  "cxVersion": "12.11",
+  "frameworkVersions": {
+    "12.5" : "3.0.1",
+    "12.11": "3.1.1"
+  }
+}

@@ -1,0 +1,35 @@
+@import 'widget-includes';
+
+.rn_OkcsPagination {
+    li {
+        display: inline;
+        list-style-type: none;
+    }
+
+    a {
+        line-height: 30px;
+    }
+
+    .rn_CurrentPage {
+        font-weight: normal;
+        cursor: default;
+    }
+
+    .rn_PreviousPage {
+        margin-right: .7em;
+        @include icon($fa-var-chevron-left);
+        &:before {
+            font-family: 'FontAwesome';
+            margin-right: 6px;
+        }
+    }
+
+    .rn_NextPage {
+        margin-left: .7em;
+        @include icon($fa-var-chevron-right, after);
+        &:after {
+            font-family: 'FontAwesome';
+            margin-left: 6px;
+        }
+    }
+}

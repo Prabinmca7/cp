@@ -1,0 +1,52 @@
+input: <rn:widget path='standard/login/LoginDialog' trigger_element='rn_LoginLink' create_account_fields=''/><a href="javascript:void(0);" id="rn_LoginLink">Log In</a>
+config: CP_FORCE_PASSWORDS_OVER_HTTPS|0,FACEBOOK_OAUTH_APP_ID|3sfsdf,FACEBOOK_OAUTH_APP_SECRET|asdfsdf
+removecontent: true
+output:
+<div id="rn_LoginDialog_0" class="rn_LoginDialog rn_AdditionalOpenLogin rn_Hidden">
+        <div class="rn_OpenLoginAlternative">
+        <span class="rn_OpenLoginIntro">
+            Quickly log in or create an account using an existing service        </span>
+                        <div id="rn_OpenLogin_1" class="rn_OpenLogin">
+    <a href="javascript:void(0)" id="rn_OpenLogin_1_ProviderButton" class="rn_LoginProvider rn_Facebook">Facebook</a>
+    <div id="rn_OpenLogin_1_ActionArea" class="rn_ActionArea rn_Hidden" aria-live="assertive">
+        <form id="rn_OpenLogin_1_Info" class="rn_OpenLoginForm rn_OAuthForm" onsubmit="return false;">
+                    <input type="submit" id="rn_OpenLogin_1_LoginButton" aria-labelledby="rn_OpenLogin_1_LoginButtonLabel" class="rn_LoginButton rn_Facebook" value="Log into Facebook"/>
+            <div class="rn_Explanation">
+                <label for="rn_OpenLogin_1_LoginButton" id="rn_OpenLogin_1_LoginButtonLabel">
+                    <span class="rn_Header">What will happen:<em></em></span>
+                    When you click on this button you will be taken to Facebook. Once you log in, Facebook will verify you and send you back here where you'll be logged in!                </label>
+            </div>
+        </form>
+    </div>
+</div>
+                                                                                                 <div id="rn_OpenLogin_4" class="rn_OpenLogin">
+    <a href="javascript:void(0)" id="rn_OpenLogin_4_ProviderButton" class="rn_LoginProvider rn_Yahoo">Yahoo</a>
+    <div id="rn_OpenLogin_4_ActionArea" class="rn_ActionArea rn_Hidden" aria-live="assertive">
+        <form id="rn_OpenLogin_4_Info" class="rn_OpenLoginForm rn_OAuthForm" onsubmit="return false;">
+                    <input type="submit" id="rn_OpenLogin_4_LoginButton" aria-labelledby="rn_OpenLogin_4_LoginButtonLabel" class="rn_LoginButton rn_Yahoo" value="Log in using Yahoo"/>
+            <div class="rn_Explanation">
+                <label for="rn_OpenLogin_4_LoginButton" id="rn_OpenLogin_4_LoginButtonLabel">
+                    <span class="rn_Header">What will happen:<em></em></span>
+                    When you click on this button you will be taken to Yahoo. Once you log in, Yahoo will verify you and send you back here where you'll be logged in!                </label>
+            </div>
+        </form>
+    </div>
+</div>
+                    </div>
+        <div class="rn_FormContent">
+                <div id="rn_LoginDialog_0_LoginContent" class="rn_LoginDialogContent">
+            <div id="rn_LoginDialog_0_LoginErrorMessage"></div>
+            <form id="rn_LoginDialog_0_Form">
+                <label for="rn_LoginDialog_0_Username" class="rn_ScreenReaderOnly">Please log in to continue, Username</label>
+                <input id="rn_LoginDialog_0_Username" placeholder="Username" type="text" maxlength="255" name="Contact.Login" autocorrect="off" autocapitalize="off" value=""/>
+                            <label for="rn_LoginDialog_0_Password" class="rn_ScreenReaderOnly">Password</label>
+                <input id="rn_LoginDialog_0_Password" maxlength="20"  placeholder="Password" type="password" name="Contact.Password" autocomplete="off">
+                        </form>
+        </div>
+                <div class="rn_AssistanceLink">
+            <a href="/app/utils/account_assistance">Forgot your username or password?</a>
+        </div>
+                <div class="rn_MessageBox rn_WarningMessage rn_Hidden">The page will refresh upon submission. Any pending input will be lost.</div>
+            </div>
+</div>
+<a href="javascript:void(0);" id="rn_LoginLink">Log In</a>

@@ -1,0 +1,31 @@
+input: <rn:widget path="standard/okcs/SearchRating" source_id="OKCSSearch"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_SearchRating_0" class="rn_SearchRating">
+        <div id="rn_SearchRating_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_SearchRating_0_Content" class="rn_Hidden">
+            <form>
+                <div id="rn_SearchRating_0_SearchRating" class="rn_SearchRatingDiv">
+                    <div class="rn_SearchRatingTitle">Rate this Search</div>
+                                                                    <button id="rn_SearchRating_0_Rating_1" class="rn_Rating" data-rating="1" title="Rate search 1 of 5" type="button"><span class="rn_ScreenReaderOnly">Rate search 1 of 5</span></button>
+                                                                    <button id="rn_SearchRating_0_Rating_2" class="rn_Rating" data-rating="2" title="Rate search 2 of 5" type="button"><span class="rn_ScreenReaderOnly">Rate search 2 of 5</span></button>
+                                                                    <button id="rn_SearchRating_0_Rating_3" class="rn_Rating" data-rating="3" title="Rate search 3 of 5" type="button"><span class="rn_ScreenReaderOnly">Rate search 3 of 5</span></button>
+                                                                    <button id="rn_SearchRating_0_Rating_4" class="rn_Rating" data-rating="4" title="Rate search 4 of 5" type="button"><span class="rn_ScreenReaderOnly">Rate search 4 of 5</span></button>
+                                                                    <button id="rn_SearchRating_0_Rating_5" class="rn_Rating" data-rating="5" title="Rate search 5 of 5" type="button"><span class="rn_ScreenReaderOnly">Rate search 5 of 5</span></button>
+                                    </div>
+                <div id="rn_SearchRating_0_SearchComment" class="rn_SearchCommentDiv rn_Hidden">
+                    <label for="rn_SearchRating_0_FeedbackMessage" class="rn_ScreenReaderOnly">Enter your message</label>
+                    <textarea class="rn_SearchTextArea" id="rn_SearchRating_0_FeedbackMessage" aria-label="Enter your message"></textarea>
+                    <div class="rn_SubmitButtonDiv">
+                        <label for="rn_SearchRating_0_SubmitButton" class="rn_ScreenReaderOnly">Submit button</label>
+                        <input type="submit" id="rn_SearchRating_0_SubmitButton" value="Rate Search" aria-label="Submit button"/>
+                        <span id="rn_SearchRating_0_StatusMessage" class="rn_Hidden">Submitting...</span>
+                    </div>
+                </div>
+            </form>
+        <div id="rn_SearchRating_0_ThanksMessage" class="rn_HiddenMessage rn_Hidden">Thank you for your feedback!</div>
+    </div>
+</div>

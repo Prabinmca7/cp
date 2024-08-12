@@ -1,0 +1,11 @@
+@import 'widget-includes';
+
+.rn_OracleLogo {
+    @include clearfix;
+    display: block;
+
+    a {
+        float: right;
+    }
+}
+

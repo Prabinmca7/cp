@@ -1,0 +1,73 @@
+@import 'widget-includes';
+
+.rn_ModerationFilterDialog {
+    display: inline-block;
+
+    a.rn_SelectFilterLink {
+        @include icon($fa-var-filter) {
+            color: #3B6DB1;
+        }
+
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px dotted #3B6DB1;
+
+        &:hover {
+            border-bottom: 1px solid #3B6DB1;
+        }
+    }
+
+    .rn_Dialog {
+        @include span-columns(10);
+
+        .rn_DialogContent {
+            @include clearfix;
+        }
+
+        .rn_SocialFilter {
+            @include span-columns(12);
+
+            .rn_SocialDialogFilterItem {
+                @include span-columns(4);
+                @include media($rn-medium) {
+                    @include fill-parent;
+                }
+
+                margin-bottom: 1em;
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+
+                &:nth-child(3n + 1) {
+                    clear: both;
+                }
+            }
+        }
+
+        .rn_ProductCategorySearchFilter {
+            @include fill-parent;
+
+            margin-left: 0;
+            vertical-align: top;
+            border: 1px solid #cecece;
+            background: #f4f4f4;
+
+            button.rn_DisplayButton {
+                margin: 11px 4px;
+                width: 97%;
+            }
+
+            .rn_Label {
+                font-size: 1.1em;
+                background-color: darken($light-gray, 6);
+                border-bottom: 1px solid #CCC;
+                padding: 2px;
+            }
+        }
+    }
+
+    .rn_ErrorMessage a {
+        font-weight: bold;
+    }
+}

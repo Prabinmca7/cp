@@ -1,0 +1,55 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile, none]
+attributes:
+  limit:
+    name: rn:msg:LIMIT_CMD
+    type: INT
+    description: rn:msg:MAXIMUM_NUMBER_ANSWERS_DISPLAY_LBL
+    default: 10
+    min: 1
+    max: 10
+  product_filter_id:
+    name: rn:msg:PRODUCT_FILTER_ID_LBL
+    type: INT
+    description: rn:msg:ID_PRODUCT_WHICH_FILTER_RESULTS_LBL
+    min: 1
+  category_filter_id:
+    name: rn:msg:CATEGORY_FILTER_ID_LBL
+    type: INT
+    description: rn:msg:ID_CATEGORY_WHICH_FILTER_RESULTS_LBL
+    min: 1
+  show_excerpt:
+    name: rn:msg:SHOW_EXCERPT_CMD
+    type: BOOL
+    description: rn:msg:DETERMINES_EXCERPT_RESULT_LBL
+  excerpt_max_length:
+    name: rn:msg:EXCERPT_MAXIMUM_LENGTH_LBL
+    type: INT
+    description: rn:msg:LNG_QS_RPT_SHOWEXCERPT_TRNCTD_RPT_LLPSS_MSG
+    max: 256
+    default: 256
+  answers_detail_url:
+    name: rn:msg:ANSWERS_DETAIL_URL_LBL
+    type: STRING
+    description: rn:msg:PG_ITEM_SEL_DEF_VAL_ATTRIB_CP_ANS_MSG
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_ANSWERS_DETAIL_URL)
+  url_type_target:
+    name: rn:msg:URL_AND_ATTACHMENT_TYPE_TARGET_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DETERMINES_LINKS_URL_ATTACH_TYPE_MSG), '_self')
+    default: _blank
+info:
+  category:
+    - Knowledge Foundation
+  description: rn:msg:DISP_L_TOP_ANS_CONTENT_OPTIONALLY_MSG
+  urlParameters:
+    p:
+      name: rn:msg:PRODUCT_ID_LBL
+      description: rn:msg:WHICH_TOP_ANSWERS_ATTRIBUTE_PRODUCT_LBL
+      example: p/1
+    c:
+      name: rn:msg:CATEGORY_ID_LBL
+      description: rn:msg:CATEGORY_TOP_ANSWERS_ATTRIBUTE_CATEGORY_LBL
+      example: c/77

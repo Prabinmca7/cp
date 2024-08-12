@@ -1,0 +1,7 @@
+type: Contact
+object:
+  Login: ArchivedUser
+  Name.First: Archived
+  Name.Last: User
+  Emails.0.Address: userarchive@social.com.invalid
+  NewPassword: ''

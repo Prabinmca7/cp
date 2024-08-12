@@ -1,0 +1,19 @@
+input: <rn:widget path='standard/login/LoginForm' label_username="Custom Username" label_password="Custom Password" label_login_button="Custom Login"/>
+redirecttohttps: true
+removecontent: true
+validate: false
+output:
+<div id="rn_LoginForm_0" class="rn_LoginForm">
+    <div id="rn_LoginForm_0_Content">
+        <div id="rn_LoginForm_0_ErrorMessage"></div>
+        <form id="rn_LoginForm_0_Form" onsubmit="return false;">
+            <label for="rn_LoginForm_0_Username">Custom Username</label>
+            <input id="rn_LoginForm_0_Username" type="text" maxlength="255" name="Contact.Login" autocorrect="off" autocapitalize="off" value=""/>
+                    <label for="rn_LoginForm_0_Password">Custom Password</label>
+            <input id="rn_LoginForm_0_Password" type="password" maxlength="20" name="Contact.Password" autocomplete="off">
+                    <br/>
+            <input id="rn_LoginForm_0_Submit" type="submit" value="Custom Login"/>
+            <br/>
+        </form>
+    </div>
+</div>

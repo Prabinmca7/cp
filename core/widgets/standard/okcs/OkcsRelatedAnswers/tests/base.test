@@ -1,0 +1,7 @@
+input: <rn:widget path="standard/okcs/OkcsRelatedAnswers"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0,CP_ANSWERS_DETAIL_URL|answers/answer_view
+removecontent: true
+urlparameters: /a_id/48
+output:
+<div id="rn_OkcsRelatedAnswers_0" class="rn_OkcsRelatedAnswers">
+</div>

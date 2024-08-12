@@ -1,0 +1,58 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 339
+    date: 05/11/2015
+    description: Removal of `treeview_css` attribute. Use your own css styling rather
+      than incurring additional http requests and low-resolution UI icons. See reference
+      implementation styling for an example
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.1.1:
+  release: "15.2"
+  entries:
+  - account: pkolpin
+    category: Bug Fix
+    changelogID: 278
+    date: 11/13/2014
+    description: Corrected behavior when label_input is empty
+    details:
+    - If the label\_input attribute is empty, the required asterisk will also not
+      display. The empty value will be output since some widgets, notably the ProductCategoryInput
+      widget, expect the input label to be displayed and causes a JavaScript error
+      when it cannot be found.  While providing a useful label\_input value is necessary
+      for providing good accessibility to screen readers, rather than forcing the
+      label\_input attribute to be required, this change instead causes the empty
+      element to be output.  This small change in the view of the widget requires
+      the minor bump of the widget.
+    level: minor
+    refno: 141010-000016
+    sortPosition: Middle
+1.0.1:
+  release: "14.2"
+  entries:
+  - date: 07/25/2013
+    level: major
+    description: Initial version of search/ProductCatalogSearchFilter

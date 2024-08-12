@@ -1,0 +1,16 @@
+<div id="<%=domPrefix%>_SocialUserInfo" class="rn_SocialUserInfoDialogContent">
+    <rn:block id="preSocialUserInfoErrorMessage"/>
+    <div id="<%=domPrefix%>_SocialUserInfoErrorMessage"></div>
+    <rn:block id="postSocialUserInfoErrorMessage"/>
+
+    <p class="rn_SocialUserInfoDescription"><%=socialUserInfoDesc%></p>
+
+    <form id="<%=domPrefix%>_SocialUserInfoForm" onsubmit="return false;">
+        <rn:block id="preDisplayName"/>
+        <label for="<%=domPrefix%>_DisplayName" class="rn_Label"><%=labelDisplayName%>
+            <%= getRequiredLabel() %>
+        </label>
+        <input id="<%=domPrefix%>_DisplayName" type="text" maxlength="80" name="CommunityUser.DisplayName" autocorrect="off" autocapitalize="off" value=""/>
+        <rn:block id="postDisplayName"/>
+    </form>
+</div>

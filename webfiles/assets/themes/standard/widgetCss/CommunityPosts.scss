@@ -1,0 +1,33 @@
+@import 'widget-includes';
+
+.rn_CommunityPosts .rn_PostTitle {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.rn_CommunityPosts .rn_PostSubContent {
+    color: #6F6F6F;
+    font-size: .8em;
+}
+
+.rn_CommunityPosts ol {
+    padding-top: 3px;
+}
+
+.rn_CommunityPosts li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.rn_CommunityPosts li a {
+    margin: 0;
+}
+
+.rn_CommunityPosts li span {
+    display: block;
+}
+
+.rn_CommunityPosts .rn_AllResults {
+    font-weight: bold;
+    font-size: 120%;
+}

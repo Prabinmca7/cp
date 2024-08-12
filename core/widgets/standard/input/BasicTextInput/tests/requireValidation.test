@@ -1,0 +1,18 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicTextInput" name="Incident.CustomFields.c.text1" require_validation="true" label_validation="validate banana"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicTextInput/tests/requireValidation"><div><div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_0_Incident.CustomFields.c.text1" class="rn_Label">
+    text1                 -  hint for text field        </label><br/>
+    <input type="text" id="rn_BasicTextInput_0_Incident.CustomFields.c.text1" name="formData[Incident.CustomFields.c.text1]" class="rn_Text"  />
+        <div class="rn_TextInputValidate">
+        <br/>
+        <label for="rn_BasicTextInput_0_Incident.CustomFields.c.text1_Validate" class="rn_Label">validate banana                </label><br/>
+        <input type="text" id="rn_BasicTextInput_0_Incident.CustomFields.c.text1_Validate" name="Incident.CustomFields.c.text1#Validation" class="rn_Text rn_Validation" value=""/>
+    </div>
+   </div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5DdXN0b21GaWVsZHMuYy50ZXh0MSI6eyJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJ0ZXh0MSIsImxhYmVsX2Vycm9yIjoiIiwibGFiZWxfdmFsaWRhdGlvbiI6InZhbGlkYXRlIGJhbmFuYSJ9LCJyZXF1aXJlVmFsaWRhdGlvbiI6dHJ1ZX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

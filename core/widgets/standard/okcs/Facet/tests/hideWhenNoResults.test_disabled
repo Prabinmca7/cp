@@ -1,0 +1,18 @@
+input: <rn:widget path="standard/okcs/Facet" source_id="OKCSSearch"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/gaseasenlnase
+output:
+<div id="rn_Facet_0" class="rn_Facet">
+    <div id="rn_Facet_0_Content" class="rn_Content rn_Hidden">
+        <div id="rn_Facet_0_Title" class="rn_FacetsTitle">Filter            <span class="rn_ClearContainer">[<a role="button" class="rn_ClearFacets" href="javascript:void(0)">Clear<span class="rn_ScreenReaderOnly">Unselect all filters</span></a>]</span>
+        </div>
+                <div class="rn_FacetsList">
+            <div id="rn_Facet_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+            <ul>
+                            </ul>
+        </div>
+            </div>
+</div>

@@ -1,0 +1,155 @@
+version: "1.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  max_comment_depth:
+    name: rn:msg:MAX_COMMENT_DEPTH_LBL
+    description: rn:msg:DENOTES_LVLS_DEEP_USERS_ABLE_CREATE_MSG
+    default: 5
+    type: INT
+  thumbs_down_icon:
+    name: rn:msg:THUMBS_DOWN_ICON_LBL
+    description: rn:msg:ICON_COMMENT_OVERALL_NEG_RATING_MSG
+    default: images/thumbDown.png
+    type: FILEPATH
+  thumbs_up_icon:
+    name: rn:msg:THUMBS_UP_ICON_LBL
+    description: rn:msg:ICON_COMMENT_OVERALL_POSITIVE_MSG
+    default: images/thumbUp.png
+    type: FILEPATH
+  author_link_base_url:
+    name: rn:msg:AUTHOR_LINK_BASE_URL_LBL
+    description: rn:msg:VAL_BASE_URL_AUTHORS_HASH_APPENDED_MSG
+    type: STRING
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_WIDGET_HEADING_MSG
+    default: rn:msg:COMMENTS_PCT_D_LBL
+    type: STRING
+  submit_action_ajax:
+    name: rn:msg:SUBMIT_ACTION_AJAX_CMD
+    type: AJAX
+    description: rn:msg:ENDPOINT_SUBMIT_ANS_COMMENT_ACT_E_G_LBL
+    default: /ci/ajax/widget
+  label_no_comments:
+    name: rn:msg:NO_COMMENTS_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_ANSWER_COMMENTS_MSG
+    default: rn:msg:THIS_ANSWER_HAS_NO_COMMENTS_LBL
+    type: STRING
+  label_new_comment:
+    name: rn:msg:NEW_COMMENT_LABEL_LBL
+    description: rn:msg:LABEL_DISP_LINK_ADD_TOP_LVL_MSG
+    default: rn:msg:POST_A_COMMENT_LBL
+    type: STRING
+  label_create_account:
+    name: rn:msg:ACCOUNT_CREATE_LABEL_LBL
+    description: rn:msg:LABEL_DISP_LINK_LOGGED_CP_COMMUNITY_MSG
+    default: rn:msg:CREATE_COMMUNITY_ACCT_PARTICIPATE_CMD
+    type: STRING
+  label_rating:
+    name: rn:msg:COMMENT_RATING_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENTS_RATING_MSG
+    default: rn:msg:RATING_LBL
+    type: STRING
+  label_reply:
+    name: rn:msg:COMMENT_REPLY_LABEL_LBL
+    description: rn:msg:LABEL_DISP_NESTED_COMMENT_REPLY_MSG
+    default: rn:msg:REPLY_LBL
+    type: STRING
+  label_edit:
+    name: rn:msg:COMMENT_EDIT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_EDIT_COMMENT_LINK_MSG
+    default: rn:msg:EDIT_CMD
+    type: STRING
+  label_edited:
+    name: rn:msg:COMMENT_EDITED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_TIME_COMMENT_EDITED_MSG
+    default: rn:msg:EDT_LBL
+    type: STRING
+  label_delete:
+    name: rn:msg:COMMENT_DELETE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_DELETE_COMMENT_LINK_MSG
+    default: rn:msg:DELETE_CMD
+    type: STRING
+  label_delete_confirm:
+    name: rn:msg:COMMENT_DELETE_CONFIRM_LABEL_MSG
+    description: rn:msg:LABEL_DISP_CONFIRM_DELETION_MSG
+    default: rn:msg:YOU_WISH_DELETE_COMMENT_MSG
+    type: STRING
+  label_delete_confirm_title:
+    name: rn:msg:COMMENT_DELETE_CONFIRM_TITLE_LABEL_MSG
+    description: rn:msg:LABEL_DISP_DIALOG_TITLE_DELETION_MSG
+    default: rn:msg:CONFIRM_DELETE_UC_LBL
+    type: STRING
+  label_deleted:
+    name: rn:msg:COMMENT_DELETED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENT_CONTENT_DEL_MSG
+    default: rn:msg:THIS_COMMENT_HAS_BEEN_DELETED_MSG
+    type: STRING
+  label_suspended:
+    name: rn:msg:COMMENT_SUSPENDED_LABEL_LBL
+    description: rn:msg:LABEL_DISP_COMMENT_CONTENT_MSG
+    default: rn:msg:COMMENT_UNDERGOING_MODERATION_MSG
+    type: STRING
+  label_flag:
+    name: rn:msg:COMMENT_FLAG_ACTION_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_FLAG_COMMENT_LINK_MSG
+    default: rn:msg:FLAG_AS_INAPPROPRIATE_LBL
+    type: STRING
+  label_flagged:
+    name: rn:msg:COMMENT_FLAGGED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENT_FLAGGED_MSG
+    default: rn:msg:FLAGGED_LBL
+    type: STRING
+  label_rate:
+    name: rn:msg:COMMENT_RATE_ACTION_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_RATE_ACTIONS_MSG
+    default: rn:msg:RATE_IT_LBL
+    type: STRING
+  label_rate_down:
+    name: rn:msg:COMMENT_RATE_DOWN_ACTION_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_RATE_ACTION_MSG
+    default: rn:msg:RATE_DOWN_LBL
+    type: STRING
+  label_rate_up:
+    name: rn:msg:COMMENT_RATE_UP_ACTION_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_RATE_ACT_MSG
+    default: rn:msg:RATE_UP_LBL
+    type: STRING
+  label_rated:
+    name: rn:msg:COMMENT_RATED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_COMMENT_RATED_MSG
+    default: rn:msg:YOUR_RATING_LBL
+    type: STRING
+  label_notify:
+    name: rn:msg:COMMENT_NOTIFY_LABEL_LBL
+    description: rn:msg:LABEL_DISP_CHECKBOX_SEND_EMAIL_MSG
+    default: rn:msg:EMAIL_ME_WHEN_OTHERS_POST_COMMENT_LBL
+    type: STRING
+  label_submit:
+    name: rn:msg:COMMENT_SUBMIT_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_BTN_SUBMIT_COMMENT_MSG
+    default: rn:msg:SUBMIT_CMD
+    type: STRING
+  label_cancel_submit:
+    name: rn:msg:COMMENT_CANCEL_SUBMIT_LABEL_LBL
+    description: rn:msg:LABEL_DISP_BTN_CANCEL_COMMENT_MSG
+    default: rn:msg:CANCEL_CMD
+    type: STRING
+info:
+  category:
+     - Legacy Community
+  description: rn:msg:WIDGET_DISP_COMMENTS_ANS_LOGGED_MSG
+  urlParameters:
+    comment:
+      name: rn:msg:COMMENT_ID_LBL
+      description: rn:msg:ID_COMMENT_FOCUS_PAGE_LOAD_MSG
+      example: comment/7
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      description: rn:msg:ANSWER_ID_WHICH_RETRIEVE_COMMENTS_MSG
+      example: a_id/3
+contains:
+- widget: standard/login/LoginDialog
+  versions: ["2.7"]

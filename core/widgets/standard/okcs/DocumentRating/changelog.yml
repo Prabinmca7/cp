@@ -1,0 +1,106 @@
+1.4.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.3.1:
+  release: "24.2"
+  entries:
+  - account: monika.chanda@oracle.com
+    category: Bug Fix
+    changelogID: 799
+    date: 12/17/2023
+    description: Addition of new optional attribute dialog\_threshold
+    details:
+    - The attribute can be used to create an incident and gather feedback for low
+      ratings. If a user's rating is less than or equal to the value of this attribute,
+      a dialog will open prompting the user to provide additional feedback in the
+      form of comments.
+    level: minor
+    refno: 231214-000015
+    sortPosition: Middle
+1.2.1:
+  release: "17.2"
+  entries:
+  - account: vikas.adavani
+    category: Bug Fix
+    changelogID: 616
+    date: 11/28/2016
+    description: Updated widget attribute and behaviour of displaying star image to
+      support multiple star ratings. Changed the attribute from max\_rating\_count
+      to display\_stars to make the attribute description more meaningful.
+    level: minor
+    refno: 161011-000096
+    sortPosition: Middle
+1.1.3:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 595
+    date: 10/19/2016
+    description: Updated widget attribute. Changed the attribute from max\_rating\_count
+      to rating\_value\_to\_display\_star\_image to make the attribute description
+      more meaningful.
+    level: nano
+    refno: 161011-000096
+    sortPosition: Middle
+1.1.2:
+  release: "15.11"
+  entries:
+  - account: vamsikrishna.nadupalli
+    category: Bug Fix
+    changelogID: 367
+    date: 09/11/2015
+    description: Added feedback comments for the IM answer content
+    details:
+    - As a part of new feature, logged in user will be able to enter feedback comments
+      for the IM answer content.
+    level: nano
+    refno: 141204-000053
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: ravi.kodali
+    category: Bug Fix
+    changelogID: 356
+    date: 09/09/2015
+    description: Removed unused parameters, attributes and other defect fixes
+    level: minor
+    refno: 150528-000209
+    sortPosition: Middle
+  - account: arvind.gopalakrishnan
+    category: API Change
+    changelogID: 355
+    date: 06/11/2015
+    description: API versioning changes
+    details:
+    - OKCS API consumed by these widgets now supports versioning. Each of the widgets
+      is now associated with a particular version of the API. This change will be
+      transparent to end users.
+    level: minor
+    refno: 150303-000052
+    sortPosition: Middle
+1.0.1:
+  release: "15.5"
+  entries:
+  - date: 13/06/2014
+    level: major
+    description: Initial version of okcs/DocumentRating
+    category: API Change
+    sortPosition: Middle

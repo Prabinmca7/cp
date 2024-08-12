@@ -1,0 +1,58 @@
+@import 'widget-includes';
+
+.rn_ProdCatNotificationManager {
+
+    $border: 1px solid #DDD;
+
+    background: #F2FAFD;
+    border: $border;
+    margin: 10px 0 20px;
+    padding: 10px 4px 8px;
+
+    .rn_Loading {
+        @include loading-icon(2.5em);
+    }
+
+    .rn_Notification {
+        margin: 0 auto;
+    }
+
+    .rn_Notification_Info {
+        border-bottom: $border;
+        color: #6F6F6F;
+        padding: 0 4px 10px 0;
+    }
+
+    .rn_Notification_Actions button {
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+
+    .rn_ButtonGroup {
+        text-align: center;
+    }
+
+    .rn_AddButton {
+        display: inline-block;
+        margin: 10px auto;
+    }
+}
+
+/**dialog */
+.rn_ProdCatNotificationManager_Dialog {
+    overflow: auto;
+    width: 335px;
+
+    .rn_SelectionWidget {
+        float: left;
+        margin: 0 4px;
+        width: 97%;
+
+        button.rn_DisplayButton {
+            margin: 5px 0;
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}

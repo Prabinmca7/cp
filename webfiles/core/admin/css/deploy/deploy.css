@@ -1,0 +1,215 @@
+/*
+*= require yui datatable-base/assets/skins/sam/datatable-base.css
+*= require yui datatable-sort/assets/skins/sam/datatable-sort.css
+*= require yui panel/assets/skins/sam/panel.css
+*/
+
+.disabledText {
+    color:#D0D0D0;
+    white-space:nowrap;
+}
+.disabled {
+    color:#F0F0F0;
+}
+.box {
+    box-shadow: none;
+    padding: 0;
+}
+.shadedBox {
+    background-color: #eff2f5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eff2f5), to(#e9ecee));
+    background-image: -webkit-linear-gradient(top, #eff2f5, #e9ecee);
+    background-image: -moz-linear-gradient(top, #eff2f5, #e9ecee);
+    background-image: -ms-linear-gradient(top, #eff2f5, #e9ecee);
+    background-image: linear-gradient(top, #eff2f5, #e9ecee);
+    box-shadow: 0 -2px 2px rgba(0,0,0,.1) inset;
+    font-size:0.9em;
+    padding:7px 5px 0;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.lighterShadedBox{
+    background-color:#F3F2F2;
+    border:1px solid #D0D0D0;
+    font-size:0.9em;
+    padding:1em;
+    margin-top: 4em;
+}
+.table {
+    margin:1.6em 0 1.3em;
+}
+.underlinedLink a {
+    text-decoration:underline;
+}
+.error {
+    color:#000;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+.errorText {
+    color:red;
+    font-weight:bold;
+}
+.stageErrorAction {
+    margin-top:0.5em;
+}
+.successText {
+    color:green;
+    font-weight:bold;
+}
+.warnLogEntry {
+    color:#FF7F00;
+}
+.errorLogEntry {
+    color:red;
+}
+
+/* TABS */
+#content .steps ul {
+    margin:0;
+}
+#content .steps li {
+    list-style-type: none;
+    float: left;
+    margin:2px 6px 5px 0;
+}
+.steps a {
+    padding: 8px 10px;
+}
+.steps a:hover,
+.steps a:focus {
+    text-decoration: none;
+}
+.steps .selected {
+    background: #FFF;
+    color: #222;
+    font-weight: bold;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
+}
+/* NEXT STEP BUTTON */
+.nextStep, .lastStep {
+    background: #EAF2FA;
+    border-top: 1px solid #B8CADA;
+    margin-top: 28px;
+    padding: 10px;
+}
+.nextStep button,
+.lastStep button {
+    font-weight: bold;
+}
+.nextStep button[DISABLED],
+.lastStep button[DISABLED] {
+    cursor: auto;
+}
+.nextStep label,
+.lastStep label {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.nextStep label.inactive,
+.lastStep label.inactive {
+    cursor: auto;
+}
+
+/* WARNING BUTTONS */
+.steps a.warning, button.warning {
+    color:red;
+    font-weight:bold;
+}
+.steps a.warning:hover, button.warning:hover {
+    background:#fbe3e4;
+    border:1px solid #FBC2C4;
+}
+.steps a.warning:active {
+    background-color:#D12F19;
+    border:1px solid #D12F19;
+}
+
+.rn_ResponseContainer h1 {
+    line-height: 2.0em;
+}
+.rn_CommentArea textarea {
+    width: 100%;
+}
+.rn_CommentArea textarea:disabled {
+    background: #EEE9E9;
+    border: 1px solid #D8D7D7;
+}
+
+/* YUI */
+.yui3-datatable0-col-action .yui3-datatable-liner {
+    white-space:nowrap;
+}
+.yui3-datatable0-col-fileName .yui3-datatable-liner {
+    white-space:nowrap;
+    overflow:visible;
+}
+.yui3-skin-sam .yui3-datatable td.align-center {
+    text-align:center;
+}
+.yui3-datatable-hidden {
+    display: none;
+}
+.yui3-datatable-bd{
+    max-height:350px;
+}
+option[disabled]{
+    color: #907F7F;
+}
+.yui3-skin-sam .yui3-datatable td.even1 {
+    background-color: #fff;
+}
+.yui3-skin-sam .yui3-datatable td.even2 {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.yui3-skin-sam .yui3-datatable td.odd1 {
+    background-color: #EDF5FF;
+}
+
+.yui3-skin-sam .yui3-datatable td.odd2 {
+    background-color: #EDF5FF;
+    border-bottom: 1px solid #ddd;
+}
+.yui3-datatable-message-content {
+    padding: 4px;
+}
+/* Don't allow table to exceed wrapper's bounds when there's long filepaths */
+#selectedFilesContent, #widgetVersionsContent {
+    overflow-x: auto;
+    max-height: 700px;
+}
+.ie8 #selectedFilesContent {
+    max-height: none;
+}
+#contentsContainer {
+    margin-top: 16px;
+    padding: 10px;
+    overflow: auto;
+}
+#pageSetContent {
+    overflow: auto;
+}
+/* Unify width of framework / version / page set tables */
+#pageSetContent table,
+#selectedFilesContent table,
+#frameworkVersionContent table,
+#phpVersionContent table,
+#widgetVersionsContent table {
+    width: 100%;
+}
+#commentEnter {
+    padding: 4px;
+}
+#initializeArea {
+    margin-top: 1em;
+}
+.explain {
+    color: #555;
+    display: block;
+    font-style: italic;
+}

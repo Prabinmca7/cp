@@ -1,0 +1,38 @@
+version: "1.8.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [anim-scroll]
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISP_HTML_SUBMIT_BTN_MSG
+attributes:
+  on_success_url: unset
+  label_confirm_dialog: unset
+  challenge_location: unset
+  challenge_required: unset
+  launch_width:
+    name: rn:msg:LAUNCH_WIDTH_CMD
+    description: rn:msg:WIDTH_WINDOW_DISPLAY_BTN_CLICKED_MSG
+    default: 380
+    type: INT
+  launch_height:
+    name: rn:msg:LAUNCH_HEIGHT_CMD
+    description: rn:msg:HEIGHT_WINDOW_DISPLAY_BTN_CLICKED_MSG
+    default: 495
+    type: INT
+  open_in_new_window:
+    name: rn:msg:OPEN_IN_NEW_WINDOW_UC_CMD
+    description: rn:msg:SET_TRUE_CHAT_LAUNCH_WINDOW_FALSE_CMD
+    default: true
+    type: BOOLEAN
+  enable_scrollbars:
+    name: rn:msg:ENABLE_SCROLLBARS_CMD
+    description: rn:msg:TRUE_SCROLLBARS_ENABLED_OPENED_CHAT_MSG
+    default: true
+    type: BOOLEAN
+extends:
+  widget: standard/input/FormSubmit
+  versions: ["1.7"]
+  components: [php, js]

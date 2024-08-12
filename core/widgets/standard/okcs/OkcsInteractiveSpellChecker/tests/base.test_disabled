@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/okcs/OkcsInteractiveSpellChecker" source_id="OKCSSearch" kw="ValidInteractiveSpellCheck"/><div class="rn_SearchInput"><input type="search" placeholder="should be searchsource/SourceSearchField"/></div>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,CP_ANSWERS_DETAIL_URL|answers/answer_view,OKCS_API_TIMEOUT|0
+filter: @"sessionKey":"(.+)"|"clickThroughUrl":"(.+)"|data-id="(.+)" href="(.+)" data-url="(.+)"@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/ValidInteractiveSpellCheck/loc/en-US
+output:
+<div id="rn_OkcsInteractiveSpellChecker_0" class="rn_OkcsInteractiveSpellChecker">
+    <div id="rn_OkcsInteractiveSpellChecker_0_Content" class="rn_Content">
+        <div class="rn_OkcsSpellCheckerContainer ">Did you mean:<a class='rn_OkcsSpellCheckerLink' href="javascript:void(0)"><span class='rn_CorrectedWord'>Ths</span> is <span class='rn_CorrectedWord'>sample</span> <span class='rn_CorrectedWord'>test</span> <span class='rn_CorrectedWord'>content</span> for <span class='rn_CorrectedWord'>automatic</span> </a></div>
+    </div>
+</div>
+<div class="rn_SearchInput"><input type="search" placeholder="should be searchsource/SourceSearchField"/></div>

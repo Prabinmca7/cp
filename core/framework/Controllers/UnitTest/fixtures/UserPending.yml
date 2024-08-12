@@ -1,0 +1,6 @@
+type: CommunityUser
+object:
+  DisplayName: Pending User
+  StatusWithType.Status.LookupName: Pending
+  Contact:
+    fixture: ContactPending

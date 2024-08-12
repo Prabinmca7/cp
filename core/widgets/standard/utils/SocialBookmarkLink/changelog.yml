@@ -1,0 +1,93 @@
+1.5.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.4.1:
+  release: "20.11"
+  entries:
+  - account: andrew.odonnell@oracle.com
+    category: Bug Fix
+    changelogID: 762
+    date: 10/21/2020
+    description: Change Twitter URL for Share Functionality
+    details:
+    - Changed endpoint from twitter.com/intent/tweet?status to twitter.com/intent/tweet?text
+      to correctly source the links and their corresponding Twitter endpoints.
+    - Modified hard-coded links to be HTTPS compliant.
+    level: minor
+    refno: 200720-000145
+    sortPosition: Middle
+1.3.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+1.2.1:
+  release: "16.5"
+  entries:
+  - account: milan.pandya
+    category: Bug Fix
+    changelogID: 485
+    date: 03/03/2016
+    description: Upon suspending a question, share link will get hidden for social
+      discussion.
+    details:
+    - Whenever a social discussion is suspended, share link will get hidden thereby
+      preventing user from sharing a suspended question.
+    level: minor
+    refno: 160219-000000
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 482
+    date: 02/19/2016
+    description: Handled use-case to prevent sharing of deleted/suspended question.
+    details:
+    - An AJAX request is fired to check whether the question is suspended/deleted.
+      If so, an error message dialog is displayed. If not, the sharing panel will
+      be displayed.
+    level: minor
+    refno: 160121-000104
+    sortPosition: Middle
+1.1.1:
+  release: "15.8"
+  entries:
+  - account: nick.moore@oracle.com
+    category: API Change
+    changelogID: 351
+    date: 11/07/2017
+    description: Added support for emailing social questions
+    details:
+    - Added support for emailing social questions.
+    - Modified base.css file.
+    - Removed `icon_path` attribute in favor of styling just with CSS.
+    - Removed `label_icon_alt` attribute.
+    - Added URL parameter for Facebook to prevent it from opening mobile site.
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of utils/SocialBookmarkLink
+    category: API Change
+    sortPosition: Middle

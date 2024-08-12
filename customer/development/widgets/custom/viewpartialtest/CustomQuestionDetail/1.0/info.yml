@@ -1,0 +1,9 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: standard/discussion/QuestionDetail
+  components:
+  - view

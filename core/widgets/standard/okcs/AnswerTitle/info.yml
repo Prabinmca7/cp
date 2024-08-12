@@ -1,0 +1,22 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_no_title:
+    name: rn:msg:NO_TTLE_LBL
+    description: rn:msg:DEF_TITLE_WHICH_IS_DISPLAYED_WHEN_MSG
+    default: rn:msg:NO_TTLE_LBL
+    type: STRING
+  label_doc_id_redirect_msg:
+    name: rn:msg:DOC_ID_REDIRECT_MESSAGE_LBL
+    description: rn:msg:DOC_ID_REDIRECT_MESSAGE_LBL
+    default: rn:msg:HAVE_BEEN_DIRECTED_BASED_AN_ID_MATCH_MSG
+    type: STRING
+  label_see_search_results:
+    name: rn:msg:SEE_SEARCH_RESULTS_LABEL_LBL
+    description: rn:msg:SEE_SEARCH_RESULTS_LABEL_LBL
+    default: rn:msg:TO_SEE_SEARCH_RESULTS_OF_THIS_PHRASE_MSG
+    type: STRING
+info:
+  description: rn:msg:THIS_WIDGET_DISP_TITLE_OF_THE_ANS_MSG

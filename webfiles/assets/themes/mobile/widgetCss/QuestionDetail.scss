@@ -1,0 +1,164 @@
+@import 'widget-includes';
+
+.rn_QuestionDetail {
+    @include row;
+
+    padding-bottom: 1em;
+    border-bottom: $dashed-border;
+
+    .rn_QuestionContent,
+    .rn_QuestionActionsBar {
+        @include clearfix;
+    }
+    
+    .rn_HighlightQuestion {
+        @include icon($fa-var-tag, before);
+        display: inline-block;
+        background: #bcf2dd;
+        padding: 4px;
+        font-style: italic;
+        font-size: 1em;
+    }
+
+    .rn_QuestionToolbar {
+        float: right;
+    }
+
+    .rn_QuestionEdit {
+        @include row;
+        margin-bottom: 2em;
+
+        button,
+        .rn_CancelEdit a,
+        input[type="submit"] {
+            font-size: smaller;
+        }
+
+        .rn_FormSubmit {
+            display: inline;
+        }
+
+        .rn_CancelEdit {
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+
+        .rn_DeleteQuestion, .rn_DeletingQuestion {
+            background: none;
+            color: #8B0303;
+            float: left;
+            text-shadow: none;
+            font-weight: normal;
+            box-shadow: none;
+        }
+
+        .rn_DeleteQuestion {
+            @include icon($fa-var-trash-o);
+
+            border: 1px solid $dark-gray;
+
+            &:hover, &:active, &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .rn_DeletingQuestion {
+            @include loading-icon(1em);
+
+            border: 1px solid darken(#8B0303, 5);
+        }
+
+        .rn_FormControls {
+            @include row;
+            margin-top: 2em;
+            text-align: right;
+        }
+
+        .rn_QuestionEditBodyLabel {
+            font-weight: bold;
+
+            .rn_QuestionEditBodyDescription {
+                font-weight: normal;
+                font-size: .8em;
+                font-style: italic;
+            }
+        }
+    }
+
+    .rn_QuestionHeader {
+        @include row;
+        margin: 1em 0;
+
+        .rn_QuestionAuthor {
+            @include span-columns(2);
+        }
+
+        .rn_QuestionTitle {
+            @include span-columns(10);
+
+            font-size: $h2-font-size;
+            font-weight: bold;
+            line-height: 1em;
+            word-wrap: break-word;
+        }
+
+        @include media($rn-small) {
+            .rn_QuestionAuthor {
+                @include span-columns(2);
+            }
+
+            .rn_QuestionTitle {
+                @include span-columns(10);
+            }
+        }
+    }
+
+    .rn_QuestionBody {
+        margin-bottom: 1em;
+        word-wrap: break-word;
+    }
+
+    .rn_QuestionInfo {
+        @include row;
+        color: darken($light-gray, 50%);
+        font-size: smaller;
+
+        .rn_QuestionTimestamps {
+            @include span-columns(6);
+        }
+
+        .rn_DetailTimestamp {
+            display: block;
+        }
+
+        .rn_QuestionInfoOptions {
+            @include span-columns(6);
+            text-align: right;
+            line-height: 2em;
+
+            .rn_UpvoteButton {
+                font-size: 1.8em;
+            }
+
+            .rn_StarVoteButton, .rn_StarVotedButton {
+                font-size: 1.1em;
+            }
+
+            > div {
+                display: inline-block;
+            }
+
+            .rn_SocialContentRating,
+            .rn_SocialContentFlagging {
+                margin-right: .4em;
+            }
+        }
+
+        @include media($rn-small) {
+            .rn_QuestionTimestamps, .rn_QuestionInfoOptions {
+                @include span-columns(12);
+                text-align: left;
+            }
+        }
+    }
+}

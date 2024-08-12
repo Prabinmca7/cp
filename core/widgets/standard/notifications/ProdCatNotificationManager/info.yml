@@ -1,0 +1,79 @@
+version: "1.10.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  renew_notification_ajax:
+    name: rn:msg:RENEW_NOTIFICATION_AJAX_CMD
+    type: ajax
+    description: rn:msg:ENDPOINT_PRODCAT_RENEW_NOTIF_LBL
+    default: /ci/ajaxRequest/addOrRenewNotification
+  delete_notification_ajax:
+    name: rn:msg:DELETE_NOTIFICATION_AJAX_CMD
+    type: ajax
+    description: rn:msg:ENDPOINT_PRODCAT_DEL_NOTIFICATIONS_LBL
+    default: /ci/ajaxRequest/deleteNotification
+  label_renew_button:
+    name: rn:msg:LABEL_RENEW_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_RENEW_BUTTON_LBL
+    default: rn:msg:RENEW_CMD
+    type: STRING
+  label_delete_button:
+    name: rn:msg:LABEL_DELETE_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_DELETE_BUTTON_LBL
+    default: rn:msg:DELETE_CMD
+    type: STRING
+  label_notif_renewed:
+    name: rn:msg:NOTIFICATION_RENEWED_LABEL_LBL
+    description: rn:msg:MESSAGE_DISP_RENEWED_NOTIFICATION_LBL
+    default: rn:msg:YOUR_NOTIFICATION_HAS_BEEN_RENEWED_MSG
+    type: STRING
+  label_notif_deleted:
+    name: rn:msg:NOTIFICATION_DELETED_LABEL_LBL
+    description: rn:msg:MESSAGE_DISPLAY_DEL_NOTIFICATION_LBL
+    default: rn:msg:YOU_HAVE_BEEN_UNSUB_MSG
+    type: STRING
+  label_notif_added:
+    name: rn:msg:NOTIFICATION_ADDED_LABEL_LBL
+    description: rn:msg:MESSAGE_DISPLAY_HAS_ADDED_NOTIFICATION_LBL
+    default: rn:msg:YOU_HAVE_BEEN_SUBSCRIBED_MSG
+    type: STRING
+  label_no_notifs:
+    name: rn:msg:LABEL_NO_NOTIFS_LBL
+    description: rn:msg:MESSAGE_DISP_DOESNT_NOTIFICATIONS_LBL
+    default: rn:msg:CURRENTLY_DONT_ANY_NOTIFICATIONS_MSG
+    type: STRING
+  label_add_button:
+    name: rn:msg:LABEL_ADD_BUTTON_LBL
+    description: rn:msg:MSG_DISP_BTN_LAUNCHES_DIALOG_LBL
+    default: rn:msg:ADD_NOTIFICATIONS_CMD
+    type: STRING
+  prod_page_url:
+    name: rn:msg:PRODUCT_PAGE_LBL
+    description: rn:msg:LANDING_PAGE_FOR_PRODUCT_NOTIFICATIONS_LBL
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_PRODUCTS_DETAIL_URL)
+    type: STRING
+  cat_page_url:
+    name: rn:msg:CATEGORY_PAGE_LBL
+    description: rn:msg:LANDING_PAGE_CATEGORY_NOTIFICATIONS_LBL
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_CATEGORIES_DETAIL_URL)
+    type: STRING
+  message_element:
+    name: rn:msg:MESSAGE_ELEMENT_LBL
+    description: rn:msg:UNIQ_ID_DIV_PG_SUCC_MSGS_REPORTED_MSG
+    type: STRING
+  label_dialog_cancel:
+    name: rn:msg:DIALOG_CANCEL_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_DIALOG_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+    type: STRING
+  label_add_notif_dialog:
+    name: rn:msg:LABEL_ADD_NOTIFICATION_DIALOG_LBL
+    description: rn:msg:TITLE_DIALOG_ALLOWING_NOTIFICATIONS_LBL
+    default: rn:msg:ADD_ANSWER_NOTIFICATIONS_LBL
+    type: STRING
+info:
+  description: rn:msg:RCV_PDT_DT_TLZS_PRD_NTF_NTF_DDTL_RNWL_DL_MSG
+contains:
+- widget: standard/input/ProductCategoryInput
+  versions: ["2.3"]

@@ -1,0 +1,54 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile, none]
+attributes:
+  limit:
+    name: rn:msg:NUMBER_LBL
+    description: rn:msg:MAXIMUM_ANS_DISPLAY_SET_0_LIMIT_MSG
+    default: 5
+    type: int
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:CONTROLS_DOC_DISPLAYED_FOLLOWS_MSG
+    default: _self
+    type: string
+  label_title:
+    name: rn:msg:LABEL_LBL
+    description: rn:msg:LABEL_TO_USE_FOR_HEADING_LBL
+    default: rn:msg:PUBLISHED_ANSWERS_LBL
+    type: string
+  url:
+    name: rn:msg:URL_LBL
+    description: rn:msg:URL_PG_REF_LINK_ACTIVATED_DEF_VAL_MSG
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_ANSWERS_DETAIL_URL)
+    type: string
+  highlight:
+    name: rn:msg:HIGHLIGHT_LBL
+    description: rn:msg:HIGHLIGHTS_TXT_FLDS_SRCH_TERM_LBL
+    default: true
+    type: boolean
+  truncate_size:
+    name: rn:msg:TRUNCATE_SIZE_LBL
+    description: rn:msg:CHARS_LIMIT_ANS_LINK_SET_0_MSG
+    default: 0
+    min: 0
+    type: int
+  add_params_to_url:
+    name: rn:msg:ADD_PRMS_TO_URL_CMD
+    description: rn:msg:CMMA_SPRATED_L_URL_PARMS_LINKS_MSG
+    default: kw
+    type: string
+info:
+  category:
+    - Knowledge Foundation
+  description: rn:msg:WIDGET_DISP_L_REL_ANS_DETERMINED_KB_MSG
+  urlParameters:
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      description: rn:msg:ANSWER_ID_CHECK_RELATED_ANSWERS_LBL
+      example: a_id/3
+    kw:
+      name: rn:msg:KEYWORD_LBL
+      description: rn:msg:HIGHLIGHT_WORDS_ANSWERS_LINKS_MSG
+      example: kw/searchTerm

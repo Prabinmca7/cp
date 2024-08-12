@@ -1,0 +1,56 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  report_id:
+    name: rn:msg:REPORT_ID_LC_LBL
+    type: STRING
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: 159
+  label_title:
+    name: rn:msg:TITLE_LABEL_UC_LBL
+    type: STRING
+    description: rn:msg:LABEL_DESCRIBE_WIDGETS_DROPDOWN_LBL
+    default: rn:msg:SHOW_INCIDENTS_CMD
+  label_sub:
+    name: rn:msg:LABEL_SUBSIDIARIES_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISPLAY_SUBSIDIARIES_LBL
+    default: rn:msg:MY_ORGANIZATION_AND_SUBSIDIARIES_LBL
+  label_org:
+    name: rn:msg:LABEL_ORGANIZATION_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISPLAY_ORGANIZATION_LBL
+    default: rn:msg:FROM_ANYONE_IN_MY_ORGANIZATION_LBL
+  label_individual:
+    name: rn:msg:LABEL_INDIVIDUAL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_DISPLAY_INDIVIDUAL_LBL
+    default: rn:msg:ONLY_MY_INCIDENTS_LBL
+  display_type:
+    name: rn:msg:DISPLAY_TYPE_CMD
+    type: INT
+    description: rn:msg:SPECIFIES_INC_VIEW_END_LOGGED_VAL_1_MSG
+    default: 2
+    min: 1
+    max: 2
+  search_on_select:
+    name: rn:msg:SEARCH_ON_SELECTED_CMD
+    type: BOOLEAN
+    description: rn:msg:START_SEARCH_SOON_ITEM_IS_SELECTED_MSG
+    default: false
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:PG_DISP_ITEM_SEL_SRCH_SEL_SET_TRUE_MSG
+    default:
+info:
+  category:
+    - Report Search
+  description: rn:msg:DRPD_LLWS_CNT_SBSDRS_MYQVWRG_CFG_DSPLYTY_MSG
+  urlParameters:
+    org:
+      name: rn:msg:ORGANIZATION_TYPE_LBL
+      description: rn:msg:SETS_ORG_TYPE_URL_PARAMETER_VALUE_LBL
+      example: org/2

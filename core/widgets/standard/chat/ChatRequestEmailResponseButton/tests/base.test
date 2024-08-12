@@ -1,0 +1,6 @@
+input: <rn:widget path='standard/chat/ChatRequestEmailResponseButton'/>
+removecontent: true
+output:
+<div id="rn_ChatRequestEmailResponseButton_0" class="rn_ChatRequestEmailResponseButton rn_Hidden">
+    <button id="rn_ChatRequestEmailResponseButton_0_Button" title="Open a new browser window and navigate to the Ask a Question page">Request Email Response</button>
+</div>

@@ -1,0 +1,428 @@
+input: <rn:widget path="standard/reports/BasicMultiline" report_id="101445" truncate_size="20" max_wordbreak_trunc="7" hide_when_no_results="true" highlight="false" />
+contact: slatest
+filter: @"r_tok":"[^"]*",?@
+removecontent: true
+output:
+<div class="rn_BasicMultiline rn_Multiline">
+            <ul>
+                    <li>
+                <span>James</span><br/>
+                                <span>Walker</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MD</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>21401</span><br/>
+                                                </li>
+                    <li>
+                <span>Elizabeth</span><br/>
+                                <span>Jergan</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Brandon</span><br/>
+                                <span>Tenjour</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Skylar</span><br/>
+                                <span>Melovia</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Mathew</span><br/>
+                                <span>Johnson</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Sean</span><br/>
+                                <span>Emerson</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Kari</span><br/>
+                                <span>Brooke</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Thomas</span><br/>
+                                <span>Jasperson</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Melissa</span><br/>
+                                <span>Berg</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Janessa</span><br/>
+                                <span>Welter</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>OR</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Lucas</span><br/>
+                                <span>Bennett</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MD</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>21401</span><br/>
+                                                </li>
+                    <li>
+                <span>Cassidy</span><br/>
+                                <span>Jessop</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MD</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>21401</span><br/>
+                                                </li>
+                    <li>
+                <span>John</span><br/>
+                                <span>McCallister</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>June</span><br/>
+                                <span>Rosenbaum</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>OK</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>97201</span><br/>
+                                                </li>
+                    <li>
+                <span>Kristina</span><br/>
+                                <span>Delmond</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>GA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>30909</span><br/>
+                                                </li>
+                    <li>
+                <span>Jaimee</span><br/>
+                                <span>Kincaid</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>Patrick</span><br/>
+                                <span>Quinn</span><br/>
+                                                </li>
+                    <li>
+                <span>Daisy</span><br/>
+                                <span>Rausch</span><br/>
+                                                </li>
+                    <li>
+                <span>Alaina</span><br/>
+                                <span>Mahoney</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>NJ</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>08625</span><br/>
+                                                </li>
+                    <li>
+                <span>Mitchell</span><br/>
+                                <span>Jamison</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>NJ</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>48210</span><br/>
+                                                </li>
+                    <li>
+                <span>Shauna</span><br/>
+                                <span>Laramie</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>MT</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>59715</span><br/>
+                                                </li>
+                    <li>
+                <span>Juliana</span><br/>
+                                <span>Everly</span><br/>
+                                                                                                                                                                    <span>State/Province: </span>
+                    <span>KS</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>66625</span><br/>
+                                                </li>
+                    <li>
+                <span>Bill</span><br/>
+                                <span>Moriartti</span><br/>
+                </li>
+                    <li>
+                <span>Andres</span><br/>
+                                <span>Viscotti</span><br/>
+                </li>
+                    <li>
+                <span>Dexter</span><br/>
+                                <span>McGrath</span><br/>
+                </li>
+                    <li>
+                <span>Joseph</span><br/>
+                                <span>Olson</span><br/>
+                </li>
+                    <li>
+                <span>Jerry</span><br/>
+                                <span>Canlon</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Nathan</span><br/>
+                                <span>Murphy</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MT</span><br/>
+                                                </li>
+                    <li>
+                <span>Jae</span><br/>
+                                <span>Evanrude</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MT</span><br/>                                                        
+                                                                                                <span>Postal Code: </span>
+                    <span>59718</span><br/>     
+                                                </li>
+                    <li>
+                <span>Casey</span><br/>
+                                <span>O'Calloway</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MT</span><br/>                                                        
+                                                                                                <span>Postal Code: </span>
+                    <span>59718</span><br/>                                                 
+                                                </li>
+                    <li>
+                <span>Joseph</span><br/>
+                                <span>Sitton</span><br/>
+                                                <span>4156772019</span><br/>
+                                                                                            <span>Street: </span>
+                    <span>799 Market st.</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>CA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>94112</span><br/>
+                                                </li>
+                    <li>
+                <span>Sarah</span><br/>
+                                <span>Beckstein</span><br/>
+                                                <span>6508991723</span><br/>
+                                                                                            <span>Street: </span>
+                    <span>454 San Mateo st.</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>CA</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>94403</span><br/>
+                                                </li>
+                    <li>
+                <span>Thomas</span><br/>
+                                <span>Traversaro</span><br/>
+                                                <span>4095567629</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Gerald</span><br/>
+                                <span>Larkin</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Barbara</span><br/>
+                                <span>Tagliabue</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Jennifer</span><br/>
+                                <span>Capriati</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Lory</span><br/>
+                                <span>Mayflower</span><br/>
+                                                <span>7706719982</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Mary</span><br/>
+                                <span>Fernandez</span><br/>
+                                                <span>3098891723</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Kurt</span><br/>
+                                <span>Wallen</span><br/>
+                                                <span>4018890928</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Greg</span><br/>
+                                <span>Barrister</span><br/>
+                                                <span>3759950188</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Frederic</span><br/>
+                                <span>Piprio</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Peter</span><br/>
+                                <span>Weir</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Roberta</span><br/>
+                                <span>Zinni</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Neil</span><br/>
+                                <span>Bernstein</span><br/>
+                                                <span>2329989174</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Aaron</span><br/>
+                                <span>Goldstein</span><br/>
+                                                <span>2129930889</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Terrence</span><br/>
+                                <span>Hill</span><br/>
+                                                <span>6765540981</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Anita</span><br/>
+                                <span>Stones</span><br/>
+                                                <span>5402299910</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Patricia</span><br/>
+                                <span>Madison</span><br/>
+                                                <span>9052291873</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Fiona</span><br/>
+                                <span>Descartes</span><br/>
+                                                <span>2098873930</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Kathleen</span><br/>
+                                <span>Zomer</span><br/>
+                                                <span>398902884</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Nicky</span><br/>
+                                <span>Tomaly</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Amy</span><br/>
+                                <span>Jong</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Mary</span><br/>
+                                <span>Antoniette</span><br/>
+                                                <span>9827829982</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Barbara</span><br/>
+                                <span>Santini</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Boris</span><br/>
+                                <span>Karloff</span><br/>
+                                                <span>65099891021</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Laura</span><br/>
+                                <span>Terrence</span><br/>
+                                                <span>2128890092</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Jeffrey</span><br/>
+                                <span>Small</span><br/>
+                                                <span>3928829164</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Sally</span><br/>
+                                <span>Soccermom</span><br/>
+                                                <span>4455619983</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Benny</span><br/>
+                                <span>Biondi</span><br/>
+                                                <span>2123664398</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Peter</span><br/>
+                                <span>Weir</span><br/>
+                                                <span>2319930485</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Mara</span><br/>
+                                <span>Zulig</span><br/>
+                                                <span>4156629841</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Tom</span><br/>
+                                <span>Harrison</span><br/>
+                                                <span>7389906712</span><br/>
+                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Darcy</span><br/>
+                                <span>Weigh</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>Greg</span><br/>
+                                <span>Baraldini</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla contact has org first</span><br/>
+                                <span>perpetual sla contact has org last</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla sub contact first</span><br/>
+                                <span>perpetual sla sub contact last</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla sub sub contact first</span><br/>
+                                <span>perpetual sla sub sub contact last</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla sub contact first 2</span><br/>
+                                <span>perpetual sla sub contact last (Copy) 2</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla sub sub contact first</span><br/>
+                                <span>perpetual sla sub sub contact last (Copy)</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>perpetual sla contact has org first 2</span><br/>
+                                <span>perpetual sla contact has org last (Copy)</span><br/>
+                                                                                                                                                                                                                                    </li>
+                    <li>
+                <span>zxc</span><br/>
+                                <span>zxczxc</span><br/>
+                                                                                            <span>Street: </span>
+                    <span>984 Broadway Blvd.</span><br/>
+                                                                                                <span>State/Province: </span>
+                    <span>MN</span><br/>
+                                                                                                <span>Postal Code: </span>
+                    <span>56303</span><br/>
+                                                </li>
+                    <li>
+                <span>PlatinumOrg</span><br/>
+                                <span>Contact</span><br/>
+                                                                                                                                                                                                                                    </li>
+                </ul>
+    </div>

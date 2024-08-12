@@ -1,0 +1,42 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.2:
+  release: "16.5"
+  entries:
+  - account: rene.ouendag
+    category: Bug Fix
+    changelogID: 451
+    date: 12/11/2015
+    description: Re-enabled chat sound support for IE10+ by adding extra parameters
+      to flashObject
+    details:
+    - In order to (re)-enable sound support in IE10+ browsers use this version of
+      the ChatSoundButton widget.
+    level: nano
+    refno: 150123-000000
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of chat/ChatSoundButton
+    category: API Change
+    sortPosition: Middle

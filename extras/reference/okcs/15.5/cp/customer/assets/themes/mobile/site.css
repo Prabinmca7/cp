@@ -1,0 +1,935 @@
+/**********************************
+Global Style
+
+Index:
+    01. Reset
+    02. Global Settings for Common
+         HTML elements
+    03. Template Structure
+    04. Dialogs
+    05. Shared/General Components
+    06. Answer & Question Detail Pages
+    07. Home Page
+    08. Login Page
+**********************************/
+
+/********************
+    01. Reset
+********************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+fieldset,img{
+    border:0;
+}
+address,caption,cite,code,dfn,th,var{
+    font-style:normal;
+    font-weight:normal;
+}
+ul, ol, li, dl, dt, dd{
+    list-style:none;
+}
+caption,th{
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after{
+    content:'';
+}
+abbr,acronym {
+    border:0;
+    font-variant:normal;
+}
+sup{
+    vertical-align:text-top;
+}
+sub{
+    vertical-align:text-bottom;
+}
+input,textarea,select{
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    margin:0;
+    padding:0;
+}
+a img,iframe{
+    border:none;
+}
+header,footer{
+    display:block;
+}
+
+/****************************
+    02. Global Settings for Common
+          HTML elements
+***************************/
+html {
+    background:url(images/bg.png) repeat scroll;
+    font-family:Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+/*Japanese charset support*/
+html[lang="ja-JP"],
+html[lang="ja-JP"] input, html[lang="ja-JP"] textarea, html[lang="ja-JP"] select {
+    font-family:"Hiragino Kaku Gothic Pro", "?????? Pro W3", Meiryo, "????", "MS PGothic", "MS P????", Helvetica, Arial, sans-serif;
+}
+body {
+    color:#000;
+    font-size:.875em; /* 14px */
+    height:100%;
+    line-height:1.250em;
+    position:relative;
+    text-align:left;
+    text-shadow:0 1px 0 #FFF;
+}
+h2, h3, h4, h5, h6 {
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+}
+h1 { /* 18px */
+    font-size:1.286em;
+    font-weight:normal;
+    line-height:1.4em;
+}
+h2 { /* 16px */
+    font-size:1.143em;
+    line-height:1.4em;
+}
+h3 { /* 15px */
+    color:#2F2F2F;
+    font-size:1.071em;
+    line-height:1.3em;
+}
+h4 { /* 14px */
+    color:#404040;
+    font-size:1em;
+    line-height:1.3em;
+}
+h5 { /* 12px */
+    color:#505050;
+    font-size:0.857em;
+    line-height:1.0em;
+}
+h6 { /* 10px */
+    color:#505050;
+    font-size:0.714em;
+    line-height:.8em;
+}
+noscript {
+    left:30%;
+    position:absolute;
+    text-shadow:0 1px 1px #FFF;
+}
+p {
+    line-height:1.4em;
+    margin-bottom:1em;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0.3em;
+}
+hr {
+    margin:10px 0;
+}
+strong {
+    font-weight:bolder;
+}
+caption {
+    color:#404040;
+    font-size:1em;
+    font-weight:bold;
+    line-height:1.3em;
+}
+blockquote {
+    margin:10px 30px;
+}
+a {
+    color:#3E3E3E;
+    text-decoration:none;
+}
+form {
+    display:block;
+    margin:10px auto 0;
+    width:97%;
+}
+label {
+    display:block;
+}
+select,
+textarea,
+input:not([type="image"]) {
+    border:solid 1px #B1B1B1;
+    display:block;
+    font-size:1.3em;
+    padding:0.3em 4px 0;
+    width:98%;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow:0 2px 2px rgba(0, 0, 0, .2) inset;
+    -webkit-box-shadow:0 2px 2px rgba(0, 0, 0, .2) inset;
+}
+select {
+    padding:0;
+    width:100%;
+}
+input {
+    height:1.6em;
+}
+input:focus, textarea:focus, select:focus {
+    border-color:#AAA;
+    background-color:#F8F8F8;
+}
+input[type="submit"],
+button {
+    background:#717A91;
+    background: -moz-linear-gradient(top, rgba(131, 140, 160, 0.7), rgba(81, 91, 112, 1.0), rgba(34, 45, 72, 0.7));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0.0, rgba(131, 140, 160, 0.7)), color-stop(0.5, rgba(81, 91, 112, 1.0)), color-stop(1.0, rgba(34, 45, 72, 0.7)));
+    border:1px solid #304764;
+    border-color:#111 #888 #FFF;
+    color:#FFF;
+    display:block;
+    font:normal bold large Helvetica;
+    height:auto;
+    line-height:normal;
+    padding:10px 8px;
+    text-decoration:none;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.25);
+    width:100%;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 -1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 -1px 3px rgba(0,0,0,0.5);
+}
+@-webkit-keyframes pulse {
+    to {
+        background-color: rgba(187, 187, 187, 0.7);
+        -webkit-box-shadow: 0 0 9px rgba(51, 51, 51, 0.7);
+    }
+}
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+button:focus,
+button:hover {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+input[type="submit"][disabled],
+button[disabled] {
+    background-color:#304764;
+    border-color:#333;
+    color:#DDD;
+}
+
+/***********************
+    03. Template Structure:
+***********************/
+header {
+    background:#7F93AD;
+    background: -moz-linear-gradient(top, #B0BCCD, #8195AF, #6D84A2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0.0, #B0BCCD), color-stop(0.5, #8195AF), color-stop(1.0, #6D84A2));
+    color:#FFF;
+    min-height:43px;
+    overflow:visible;
+    padding:0 8px;
+    text-align:center;
+    text-shadow:0 1px 3px rgba(0, 0, 0, 0.7);
+}
+nav button img{
+    height:18px;
+    margin:-4px 0 0 6px;
+    vertical-align:middle;
+}
+footer {
+    margin:36px 4px 4px;
+    text-align:center;
+}
+
+/**************
+    04. Dialogs:
+**************/
+/* RightNow.UI.Dialog.ActionDialog */
+.rn_PanelCap {
+    background:#7F93AD;
+    background: -moz-linear-gradient(top, #B0BCCD, #8195AF, #6D84A2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0.0, #B0BCCD), color-stop(0.5, #8195AF), color-stop(1.0, #6D84A2));
+    left:0;
+    min-height:43px;
+    overflow:visible;
+    position:absolute;
+    padding:0 8px;
+    right:0;
+    text-align:center;
+    top:0;
+    z-index:12;
+}
+.rn_PanelCap .rn_Title {
+    color:#FFF;
+    display:inline-block;
+    font-weight:bold;
+    font-size:larger;
+    line-height:2.5em;
+    overflow:hidden;
+    text-shadow:1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    max-width:75%;
+    min-width:150px;
+    vertical-align:center;
+}
+.rn_PanelCap a.rn_Button {
+    background:#38547B;
+    background: -moz-linear-gradient(top, #7084A0 0%, #39567F 50%, #364F70 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0.0, #7084A0), color-stop(0.5, #39567F), color-stop(1.0, #364F70));
+    border:1px solid #AAA;
+    border-color:#444 #999 #DDD;
+    color:#FFF;
+    display:block;
+    font-size:inherit;
+    font-weight:bold;
+    margin-top:5px;
+    max-width:124px;
+    overflow:hidden;
+    padding:6px 10px;
+    text-overflow:ellipsis;
+    text-shadow:1px 1px 3px rgba(0, 0, 0, .5);
+    width:100%;
+    white-space:nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-border-radius:6px;
+    -moz-box-shadow:0 0 0 rgba(0, 0, 0, .5);
+    -webkit-box-shadow:0 0 0 rgba(0, 0, 0, .5);
+    -webkit-border-radius:6px;
+}
+.rn_PanelCap .rn_Back a.rn_Button {
+    background:none;
+    border-width:0 4px 0 12px;
+    -moz-border-image:url("images/BreadCrumbSprite.png") 0 4 75% 60% stretch stretch;
+    -webkit-border-image:url("images/BreadCrumbSprite.png") 0 4 75% 60% stretch stretch;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.rn_PanelContent {
+    background:rgba(19, 22, 17, .85);
+    bottom:0;
+    color:#FFF;
+    height:100%;
+    left:0;
+    padding:20px 12px 0;
+    position:absolute;
+    right:0;
+    text-shadow:none;
+    top:42px;
+    width:auto;
+    z-index:11;
+}
+.rn_PanelContent .rn_DefaultButton {
+    margin-top:10px;
+}
+.rn_PanelContent a {
+    color:#FFF;
+    font-weight:bold;
+}
+.rn_PanelContent button {
+    margin-bottom:12px;
+}
+.rn_PanelContent .rn_ButtonGroup {
+    margin-top:20px;
+}
+/* RightNow.UI.Dialog.MessageDialog */
+.rn_Dialog {
+    background:#3B4960;
+    background: -moz-linear-gradient(top, rgba(88, 102, 114, .9), rgba(28, 41, 74, .9));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(88, 102, 114, .9)), to(rgba(28, 41, 74, .9)));
+    border:4px solid #CCC;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-box-shadow:0 4px 6px rgba(0, 0, 0, .5);
+    -webkit-box-shadow:0 4px 6px rgba(0, 0, 0, .5);
+    color:#FFF;
+    left:15%;
+    max-width:600px;
+    min-height:200px;
+    position:fixed;
+    right:15%;
+    top:4%;
+    text-align:center;
+}
+.rn_Dialog .rn_DialogTitle {
+    font-size:1.3em;
+    font-weight:bold;
+    margin:8px 0 6%;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.rn_Dialog .rn_DialogBody {
+    font-size:1.1em;
+    line-height:1em;
+    margin:0 4px;
+    min-height:40%;
+    text-shadow:0 1px 3px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+}
+.rn_Dialog a {
+    color: #ddd;
+    text-decoration: underline;
+}
+.rn_Dialog .rn_DialogButton {
+    margin:10px auto 20px;
+    width:80%;
+}
+
+/**************************
+    05. Shared / General Styling
+**************************/
+/**************************
+PageTitle -
+Appears at the top of each page
+**************************/
+#rn_PageTitle {
+    border-bottom:1px solid #BBB;
+    color:#25383C;
+    display:block;
+    height:auto;
+    overflow:hidden;
+}
+#rn_PageTitle h1 {
+    background:#E1E1E1;
+    background: -moz-linear-gradient(top, #FEFEFE, #E0E0E0);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E0E0E0));
+    padding:6px 0 6px 4px;
+    text-shadow:1px 2px 1px #FFF;
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, .5);
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, .5);
+}
+/******************
+PageContent-
+Content for each page
+******************/
+#rn_PageContent {
+    clear:both;
+    display:block;
+    min-height:300px;
+    overflow:hidden;
+}
+/*************************
+SearchControls-
+Main search form at the top of
+answers/list, questions/list
+*************************/
+#rn_SearchControls form {
+    margin:20px auto;
+    position:relative;
+}
+#rn_SearchControls label {
+    position:absolute;
+    bottom:-20px;
+    left:4.6%;
+}
+#rn_SearchControls input[type="text"] {
+    font-weight:bold;
+    margin:auto;
+    padding:4px 28px 3px 4px;
+    width:84%;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+#rn_SearchControls form input[type="image"] {
+    height:16px;
+    padding:8px;
+    position:absolute;
+    right:4%;
+    top:12%;
+    width:16px;
+}
+#rn_SearchControls input[type="submit"] {
+    height:2.15em;
+    margin:0;
+    max-width:30%;
+    padding-top:8px;
+    position:absolute;
+    right:0;
+    top:0;
+    width:auto;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+/*Forms*/
+.rn_HintBox {
+    background-color:#F2F2F2;
+    border:1px solid #DBDBDB;
+    color:#222;
+    opacity:0.7;
+    padding:4px 16px 2px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+    -moz-border-radius-bottomright:10px;
+    -moz-border-radius-topright:10px;
+}
+.rn_HintText {
+    color:#222;
+    display:block;
+    font-size:.963em;
+    font-style:italic;
+    width:99%;
+}
+.rn_Required, .rn_ErrorLabel {
+    color:#AE0000;
+}
+.rn_ErrorField {
+    background-color:#FEFDA0 !important;
+}
+.rn_MessageBox {
+    background-color:#FFFFE0;
+    border:1px solid #808080;
+    color:#900;
+    margin:10px 0;
+    padding:6px;
+}
+.rn_MessageBox:empty {
+    height:0;
+    left:-10000px;
+    overflow:hidden;
+    position:absolute;
+    width:0;
+}
+.rn_ErrorMessage {
+    background:#FFFFE0 url(images/layout/important.png) no-repeat;
+    padding:8px 6px 8px 40px !important;
+}
+.rn_ErrorMessage a {
+    color:#900;
+}
+.rn_InfoMessage {
+    background:#FFFFE0 url(images/layout/info.png) no-repeat;
+    padding:6px 6px 4px 40px !important;
+}
+/**************
+Module Box
+**************/
+.rn_Module {
+    border-top:1px solid #CCC;
+    background-color:#FFF;
+    clear:both;
+    overflow:hidden;
+}
+.rn_Module h2 {
+    background:#E1E1E1;
+    background: -moz-linear-gradient(top, #FEFEFE, #E0E0E0);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E0E0E0));
+    font-family:"Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    font-weight:normal;
+    padding:10px 6px 13px;
+    text-shadow:1px 2px 1px #FFF;
+    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/***********
+Misc Common rules
+**********/
+.rn_Expand {
+    background:url(images/layout/downArrow.png) no-repeat scroll;
+    float:right;
+    height:12px;
+    margin-top:8px;
+    width:12px;
+}
+.rn_Collapse {
+    background:url(images/layout/rightArrow.png) no-repeat scroll;
+    float:right;
+    height:12px;
+    margin-top:6px;
+    width:12px;
+}
+.rn_Expanded .rn_Expand {
+    opacity:0.5;
+}
+.rn_FloatRight {
+    float:right;
+}
+.rn_FloatLeft {
+    float:left;
+}
+.rn_AlignRight {
+    display:block;
+    text-align:right;
+}
+.rn_Padding {
+    padding:8px;
+}
+.rn_ClearBoth {
+    clear:both;
+}
+.rn_Highlight {
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:inherit;
+}
+.rn_Bold {
+    font-weight:bold;
+}
+.rn_LargeText {
+    font-size:1.143em;
+    font-weight:bold;
+    line-height:1.4em;
+}
+
+/**************
+Icons for attachments
+**************/
+.rn_FileTypeIcon {
+    background:url(images/icons/fileIcons.png) no-repeat;
+    display:inline-block;
+    vertical-align:middle;
+    height:16px;
+    width:16px;
+}
+.rn_FileTypeIcon.rn_url {
+    background-position: 0 -17px;
+}
+.rn_FileTypeIcon.rn_doc,
+.rn_FileTypeIcon.rn_docx {
+    background-position: 0 -34px;
+}
+.rn_FileTypeIcon.rn_xls,
+.rn_FileTypeIcon.rn_xlsx {
+    background-position: 0 -51px;
+}
+.rn_FileTypeIcon.rn_ppt,
+.rn_FileTypeIcon.rn_pptx {
+    background-position: 0 -68px;
+}
+.rn_FileTypeIcon.rn_txt,
+.rn_FileTypeIcon.rn_rtf {
+    background-position: 0 -85px;
+}
+.rn_FileTypeIcon.rn_gif,
+.rn_FileTypeIcon.rn_png,
+.rn_FileTypeIcon.rn_jpg,
+.rn_FileTypeIcon.rn_jpeg {
+    background-position: 0 -102px;
+}
+.rn_FileTypeIcon.rn_zip {
+    background-position: 0 -119px;
+}
+.rn_FileTypeIcon.rn_pdf {
+    background-position: 0 -136px;
+}
+.rn_FileTypeIcon.rn_rightnow {
+    background-position: 0 -153px;
+}
+
+/***************************
+    06. Answer & Question Detail
+***************************/
+.rn_AnswerList,
+.rn_AnswerDetail,
+.rn_QuestionList,
+.rn_LoginForm {
+    background:#FFF;
+}
+#rn_PageTitle.rn_AnswerDetail {
+    border-bottom:1px solid #DDD;
+    padding:0 10px 5px;
+}
+#rn_PageTitle.rn_AnswerDetail h1 {
+    background:none;
+    font-size:1.6em;
+    margin-top:.65em;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}
+#rn_Summary {
+    padding: 7px 0 0 0;
+    line-height:1em;
+    letter-spacing:-.01em;
+}
+#rn_AnswerInfo {
+    color:#666676;
+    font-size:small;
+    margin:6px 0 16px;
+}
+#rn_FileAttach,
+#rn_AnswerText {
+    clear:both;
+    font-size:1.143em;
+    line-height:1.4em;
+    padding:15px 10px 15px;
+}
+/*Resize images in answer content to fit the screen*/
+#rn_AnswerText img{
+    height: auto;
+    max-width: 99%;
+}
+/************
+List styles for answer content
+*************/
+.rn_StandAloneGuide ol,
+.rn_StandAloneGuide ul,
+.rn_QuestionDetail ol,
+.rn_QuestionDetail ul,
+.rn_AnswerDetail ol,
+.rn_AnswerDetail ul {
+    padding-left:2em;
+    clear: both;
+}
+.rn_StandAloneGuide > ol,
+.rn_StandAloneGuide > ul,
+.rn_QuestionDetail > ol,
+.rn_QuestionDetail > ul,
+.rn_AnswerDetail > ol,
+.rn_AnswerDetail > ul,
+#rn_AnswerText > ol,
+#rn_AnswerText > ul {
+    margin-bottom:1em;
+}
+.rn_StandAloneGuide li,
+.rn_QuestionDetail li,
+.rn_AnswerDetail li {
+    line-height:1.4em;
+    margin:4px 0;
+}
+/* Unordered lists */
+.rn_StandAloneGuide ul li,
+.rn_QuestionDetail ul li,
+.rn_AnswerDetail ul li {
+    list-style: disc;
+}
+.rn_StandAloneGuide li ul li,
+.rn_QuestionDetail li ul li,
+.rn_AnswerDetail li ul li {
+    list-style: circle;
+}
+.rn_StandAloneGuide li li ul li,
+.rn_QuestionDetail li li ul li,
+.rn_AnswerDetail li li ul li {
+    list-style: square;
+}
+/* Ordered lists */
+.rn_StandAloneGuide ol li,
+.rn_StandAloneGuide li ol li,
+.rn_StandAloneGuide li li ol li,
+.rn_QuestionDetail ol li,
+.rn_QuestionDetail li ol li,
+.rn_QuestionDetail li li ol li,
+.rn_AnswerDetail ol li,
+.rn_AnswerDetail li ol li,
+.rn_AnswerDetail li li ol li {
+    list-style: decimal;
+}
+
+/* Incident thread */
+#rn_UpdateQuestion {
+    padding:20px 4px;
+}
+.rn_QuestionThreadContent img{
+    height: auto;
+    max-width: 99%;
+}
+/*Additional Details box*/
+#rn_AdditionalInfo {
+    background:#EEE;
+    border:1px solid #BBB;
+    margin:1em;
+    overflow:hidden;
+    padding:12px;
+    width:96%;
+    word-wrap: break-word;
+}
+/****************************
+    07. Home Page : Top Answers
+****************************/
+#rn_PageContent.rn_Home .rn_Report ul li {
+    padding:0;
+}
+#rn_PageContent.rn_Home .rn_Report ul li img {
+    display:none;
+}
+#rn_PageContent.rn_Home .rn_AnswersLink,
+#rn_PageContent.rn_Home .rn_Report ul li a {
+    background:url(images/layout/listArrow.png) no-repeat scroll right;
+    color:#000;
+    display:block;
+    margin:0;
+    padding:10px 30px 10px 8px;
+    text-decoration:none;
+    font-size: 0.7em;
+}
+#rn_PageContent.rn_Home .rn_Report ul li span {
+    font-size:1.3em; /*override widget default*/
+}
+#rn_PageContent.rn_Home .rn_AnswersLink {
+    color:#405288;
+    font-size:130%;
+    font-weight:bold;
+    margin:8px 0 16px;
+}
+.rn_ContactChannels a {
+    background:url(images/contact.png) no-repeat, url(images/layout/listArrow.png) no-repeat;
+    border-bottom:1px solid #DDD;
+    color:#383838;
+    display:block;
+    font-size:1.3em;
+    padding:14px 4px 14px 44px;
+    text-shadow:0 1px 0 rgba(0, 0, 0, .2);
+}
+.rn_ContactChannels a.rn_ChatChannel {
+    background-position:8px 10px, right 12px;
+}
+.rn_ContactChannels a.rn_AskChannel {
+    background-position:8px -24px, right 12px;
+}
+.rn_ContactChannels a.rn_VoiceChannel {
+    background-position:8px -60px, right 12px;
+}
+.rn_ContactChannels a.rn_CommunityChannel {
+    background-position:8px -94px, right 12px;
+}
+/****************************
+    08. Login Page
+****************************/
+#rn_PageContent.rn_LoginForm #rn_ThirdPartyLogin{
+    overflow: hidden;
+}
+#rn_PageContent.rn_LoginForm #rn_ThirdPartyLogin h1{
+    color:#2F2F2F;
+    font-size:1.071em;
+    font-weight:bold;
+    line-height:1.5em;
+}
+/****************************
+    09. Chat Related
+****************************/
+#rn_InChatButtonContainer {
+    margin: 0 1em;
+}
+#rn_VirtualAssistantContainer {
+    clear: both;
+    margin: 0 1em 0;
+    overflow: hidden;
+}
+/****************************
+    10. OKCS Related
+****************************/
+.rn_OkcsMobileBrowseHeader {
+    width: 100%;
+    background: #E1E1E1;
+    background: -moz-linear-gradient(top, #FEFEFE, #E0E0E0);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E0E0E0));
+    text-shadow: 1px 2px 1px #FFF;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+.rn_OkcsMobileBrowseHeader h2{
+    float: left;
+    margin-right: 5%;
+    background: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.rn_OkcsMobileBrowseHeader h2 span{
+    margin-left: 5px;
+}
+.rn_OkcsMobileBrowseHeader h3{
+    font-size: 1.3em;
+    padding: 18px 8px 8px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.rn_SectionTitle{
+    border-top: 1px solid #DDD;
+    clear: both;
+    padding: 10px 0;
+    text-align: right;
+}
+.rn_StartOver {
+    float: right;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+/* Facet widget styles */
+.rn_Facet .rn_ClearFacets {
+    font-weight: normal;
+    color: #00C;
+}
+.rn_Facet .rn_Content ul li {
+    font-weight: bold;
+}
+.rn_Facet .rn_FacetsTitle {
+    background: #E1E1E1;
+    background: -moz-linear-gradient(top, #FEFEFE, #E0E0E0);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#E0E0E0));
+    font-weight: normal;
+    border: 1px solid #CCC;
+}
+.rn_Facet .rn_FacetsList {
+    border: 1px solid #BEBEBE;
+}
+.rn_Facet .rn_ActiveFacet {
+    background: #e1eefd;
+    border: 1px solid #CCC;
+}
+.rn_Facet .rn_FacetLink {
+    color: #00C;
+    font-weight: lighter;
+}
+
+/* OkcsProductCategorySearchFilter widget styles */
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton {
+    border: 1px solid #B1B1B1;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_Panel {
+    background: #FFF;
+    border: 1px solid #B1B1B1;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_PanelContainer{
+    border: 1px solid #B1B1B1;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_SelectionButtons {
+    background: #F8F8F8;
+    border-top: 1px solid #B1B1B1;
+}
+
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton:hover,
+.rn_OkcsProductCategorySearchFilter button.rn_DisplayButton:focus {
+    background-color: #F8F8F8;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_Label {
+    color: #333;
+    font-weight: bold;
+}
+
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+    color: #111;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_OkcsProductCategorySearchFilterExplorerView {
+    border: 1px solid #BEBEBE;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorer {
+    border: 1px solid #CCC;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorerTitleDiv {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWP4DwABAQEANl9ngAAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #EBEFF5;
+    font-weight: normal;
+    border-bottom: 1px solid #CCC;
+}
+
+.rn_OkcsProductCategorySearchFilter .rn_CategoryExplorerLinkSelected {
+    background: #EBEFF5;
+    border: 1px solid #CCC;
+}

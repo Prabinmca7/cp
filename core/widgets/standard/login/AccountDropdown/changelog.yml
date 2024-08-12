@@ -1,0 +1,111 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 817
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.2:
+  release: "22.5"
+  entries:
+  - account: ritesh.y.yadav@oracle.com
+    category: Bug Fix
+    changelogID: 772
+    date: 04/29/2022
+    description: Nano Bump to make AccountDropdown completely accessible in all browsers.
+    details:
+    - Widget will now allow users to have complete accessibility to AccountDropdown
+      menu items using JAWS in different browsers.
+    level: nano
+    refno: 220323-000086
+    sortPosition: Middle
+1.2.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+1.1.1:
+  release: "17.2"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 584
+    date: 01/31/2017
+    description: A non-active (suspended, deleted) user's email address will now be
+      displayed in the Account dropdown
+    details:
+    - Previously, a non-active (suspended, deleted) user's display name and avatar
+      image were displayed in the Account dropdown. Now, the user's email address
+      is displayed instead.
+    level: minor
+    refno: 160906-000226
+    sortPosition: Middle
+1.0.3:
+  release: "16.2"
+  entries:
+  - account: kraig.mckernan
+    category: Bug Fix
+    changelogID: 413
+    date: 10/01/2015
+    description: PTA\_IGNORE\_CONTACT\_PASSWORD and PTA\_EXTERNAL\_LOGIN\_URL now
+      work properly
+    details:
+    - Widget will now allow login when PTA\_IGNORE\_CONTACT\_PASSWORD is set.
+    - Widget will now redirect to PTA\_EXTERNAL\_LOGIN\_URL for login when PTA\_ENABLED
+      is set but PTA\_IGNORE\_CONTACT\_PASSWORD is not set. PTA\_EXTERNAL\_LOGIN\_URL
+      must be non-empty.
+    level: nano
+    refno: 150915-000148
+    sortPosition: Middle
+1.0.2:
+  release: "15.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 423
+    date: 10/08/2015
+    description: Fixed screenreader issue with dropdown
+    level: nano
+    refno: 150929-000198
+    sortPosition: Middle
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 417
+    date: 10/01/2015
+    description: Added an attribute to support accessibility
+    details:
+    - label\_menu\_accessibility attribute was added to support accessibility. Screenreader
+      will read its text when the dropdown button is focused. Default value is for
+      standard pageset. Please specify your custom value for mobile pageset as done
+      in 'templates/mobile.php' page.
+    level: nano
+    refno: 150929-000149
+    sortPosition: Middle
+1.0.1:
+  release: "13.11"
+  entries:
+  - date: 3/04/2013
+    level: major
+    description: Initial version

@@ -1,0 +1,50 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile, none]
+attributes:
+  automatically_redirect_on_failure:
+    name: rn:msg:AUTOMATICALLY_REDIRECT_ON_FAILURE_LBL
+    type: bool
+    description: rn:msg:SET_TRUE_TESTS_FAIL_AUTO_REDIRECTED_MSG
+  display_if_no_xhr_object:
+    name: rn:msg:DISP_MSG_XMLHTTPREQUEST_OBJECT_LBL
+    type: bool
+    description: rn:msg:SET_TRUE_DETECTION_LABEL_DISPLAYED_MSG
+    default: true
+  display_tests_pass:
+    name: rn:msg:DISPLAY_MESSAGE_IF_ALL_TESTS_PASS_CMD
+    type: bool
+    description: rn:msg:SET_TRUE_MSG_DISPLAYED_JAVASCRIPT_MSG
+  label_tests_fail:
+    name: rn:msg:TESTS_FAIL_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_IF_ANY_TESTS_FAIL__LBL
+    default: rn:msg:BROWSER_OFFER_EXPERIENCE_FMT_HREF_LBL
+  label_no_link:
+    name: rn:msg:NO_LINK_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISP_JAVASCRIPT_ENABLED_LINK_MSG
+    default: rn:msg:BROWSER_JAVASCRIPT_ENABLED_APPEAR_MSG
+  label_tests_pass:
+    name: rn:msg:TESTS_PASS_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_IF_TESTS_PASS__LBL
+    default: rn:msg:BRWSER_OFFER_EXPERIENCE_FMT_HREF_LBL
+  fail_page_set:
+    name: rn:msg:PAGE_SET_TO_USE_IF_TESTS_FAIL_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PG_SET_TESTS_FAIL_INDICATE_STD_PG_LBL), 'default')
+    default: basic
+  pass_page_set:
+    name: rn:msg:PAGE_SET_TO_USE_IF_TESTS_PASS_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(PG_SET_TESTS_PASS_INDICATE_STD_PG_LBL), 'default')
+    default: default
+  perform_javascript_checks_with_no_link:
+    name: rn:msg:PERFORM_JAVASCRIPT_CHECKS_NO_LINK_CMD
+    type: bool
+    description: rn:msg:JAVASCRIPT_TESTS_RUN_PG_SET_LINK_MSG
+    default: true
+info:
+  description: rn:msg:TH_RR_STD_PR_CPBL_NV_GD_XPRNC_NBL_WB_6_D_MSG

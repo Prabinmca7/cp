@@ -1,0 +1,134 @@
+@import 'widget-includes';
+
+.rn_UserActivity {
+    margin-bottom: 1.5em;
+
+    h2 {
+        font-size: 1.75em;
+        margin-bottom: 1em;
+    }
+
+    .rn_ActivityTitleLabel {
+        position: relative;
+        left: -(2.5em + .75);
+
+        // Activity-type icon
+        &::before {
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 20px;
+            background: $light-gray;
+            border: 1px solid darken($light-gray, 1%);
+        }
+    }
+
+    .rn_Comment .rn_ActivityTitleLabel {
+        @include icon($fa-var-comment) {
+            color: $base-accent-color;
+            margin-right: 1.0em;
+        }
+    }
+
+    .rn_BestAnswerGivenByUser .rn_ActivityTitleLabel {
+        @include icon($fa-var-check-circle-o) {
+            color: #008000;
+            margin-right: 1.0em;
+        }
+    }
+
+    .rn_QuestionRatingGivenByUser .rn_ActivityTitleLabel,
+    .rn_QuestionRatingGivenToUser .rn_ActivityTitleLabel,
+    .rn_CommentRatingGivenByUser .rn_ActivityTitleLabel,
+    .rn_CommentRatingGivenToUser .rn_ActivityTitleLabel {
+        @include icon($fa-var-thumbs-o-up) {
+            margin-right: 1.0em;
+        }
+    }
+
+    .rn_Question .rn_ActivityTitleLabel {
+        @include icon($fa-var-question) {
+            padding-left: .65em;
+            padding-right: .65em;
+            margin-right: 1.0em;
+        }
+    }
+
+    .rn_BestAnswerGivenToUser .rn_ActivityTitleLabel {
+        @include icon($fa-var-trophy) {
+            color: #008000;
+            margin-right: 1.0em;
+        }
+    }
+
+    .rn_Activities .rn_Activity {
+        border-left: 6px solid lighten($light-gray, 5%);
+        padding: 0 0 1.5em 2.5em;
+    }
+
+    .rn_UserAvatar {
+        /* As the 'xlarge' avatar is limited to 102px by the span-columns width,
+           make 'large' a little smaller so there's a noticeable difference */
+        .rn_Large {
+            width: 85px;
+        }
+    }
+
+    .rn_Activity {
+        .rn_ActivityTitle {
+            @include row;
+            font-weight: normal;
+            margin-bottom: 1em;
+        }
+
+        .rn_Time {
+            color: darken($light-gray, 50%);
+            float: right;
+            font-size: smaller;
+        }
+
+        .rn_ActivityContent {
+            @include row;
+            clear: both;
+            position: relative;
+            top: -1em;
+
+            .rn_ParentContent {
+                @include row;
+                margin-top: .5em;
+
+                .rn_Info {
+                    display: inline;
+                    float: none;
+                }
+            }
+
+            .rn_ActivityUser {
+                @include span-columns(2);
+                margin-left: 0;
+                margin-right: 1em;
+
+                // Match the widths of the Avatar width settings
+                &.rn_ActivityUserSmall {
+                    width: 24px;
+                }
+
+                &.rn_ActivityUserMedium {
+                    width: 48px;
+                }
+
+                &.rn_ActivityUserLarge {
+                    width: 96px;
+                }
+
+                &.rn_ActivityUserXlarge {
+                    width: 160px;
+                }
+            }
+
+            .rn_Info {
+                @include omega;
+                word-wrap: break-word;
+            }
+        }
+    }
+}

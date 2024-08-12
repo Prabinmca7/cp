@@ -1,0 +1,12 @@
+input: <form class="rn_hidden"><rn:widget path='standard/input/TextInput' name="Incident.CustomFields.c.text1" hide_hint="true"/></form>
+filter: @"contactToken":"[^"]+"@
+removecontent: true
+output:
+<form class="rn_hidden"><div id="rn_TextInput_0" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_0_LabelContainer">
+        <label for="rn_TextInput_0_Incident.CustomFields.c.text1" id="rn_TextInput_0_Label" class="rn_Label">
+        text1                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_0_Incident.CustomFields.c.text1" name="Incident.CustomFields.c.text1" class="rn_Text" maxlength='80'  />
+    </div>
+</form>

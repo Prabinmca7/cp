@@ -1,0 +1,5 @@
+{
+   "CP.EmailConfirmationLoop.Enable" : 0,
+   "CP.ValidFileExtensions" : "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls",
+   "CP.ValidFileMimeTypes" : "image/png,image/jpeg,text/plain,image/gif,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/bmp,application/msword,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
+}

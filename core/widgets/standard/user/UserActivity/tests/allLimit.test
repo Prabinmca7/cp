@@ -1,0 +1,66 @@
+input: <rn:widget path="standard/user/UserActivity" type="question,comment,bestAnswerGivenByUser,bestAnswerGivenToUser,commentRatingGivenToUser,commentRatingGivenByUser,questionRatingGivenByUser,questionRatingGivenToUser" limit="2"/>
+removecontent: true
+urlparameters: /user/217
+output:
+<div id="rn_UserActivity_0" class="rn_UserActivity">
+    <div class="rn_Activities">
+        <h2>
+    Recent Activity</h2>
+                            <div class="rn_Activity rn_Question" itemscope itemtype="Question">
+                        <h3 class="rn_ActivityTitle">
+                <span class="rn_ActivityTitleLabel">
+                    Asked a question                </span>
+            </h3>
+                        <div class="rn_QuestionActivity">
+    <div class="rn_ActivityContent">
+        <div class="rn_ParentContent">
+            <div class="rn_ActivityUser rn_ActivityUserMedium" itemprop="author" itemscope itemtype="Person">
+    <span class="rn_UserAvatar" title="user_data_conditions_217">
+            <a itemprop="url" href="/app/public_profile/user/217/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">user_data_conditions_217</span>
+                </a>
+    </span>
+</div>
+            <div class="rn_Info">
+                <a itemprop="url" href="/app/social/questions/detail/qid/32">
+                    test question title217_1                </a>
+                <span class="rn_Time">
+                    TIMEVALUE                </span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+                                    <div class="rn_Activity rn_Question" itemscope itemtype="Question">
+                        <div class="rn_QuestionActivity">
+    <div class="rn_ActivityContent">
+        <div class="rn_ParentContent">
+            <div class="rn_ActivityUser rn_ActivityUserMedium" itemprop="author" itemscope itemtype="Person">
+    <span class="rn_UserAvatar" title="user_data_conditions_217">
+            <a itemprop="url" href="/app/public_profile/user/217/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">user_data_conditions_217</span>
+                </a>
+    </span>
+</div>
+            <div class="rn_Info">
+                <a itemprop="url" href="/app/social/questions/detail/qid/34">
+                    test question title217_                </a>
+                <span class="rn_Time">
+                    TIMEVALUE                </span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+                </div>
+</div>

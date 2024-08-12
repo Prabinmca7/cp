@@ -1,0 +1,12 @@
+input: <rn:widget path="standard/reports/Multiline" hide_when_no_results="true"/>
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/gaseasenlnase
+output:
+<div id="rn_Multiline_0" class="rn_Multiline rn_Hidden">
+    <div id="rn_Multiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Multiline_0_Loading"></div>
+    <div id="rn_Multiline_0_Content" class="rn_Content">
+                    </div>
+</div>

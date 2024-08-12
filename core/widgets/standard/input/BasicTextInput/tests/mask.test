@@ -1,0 +1,14 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicTextInput" name="Contact.CustomFields.c.pets_name"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicTextInput/tests/mask"><div><div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_0_Contact.CustomFields.c.pets_name" class="rn_Label">
+    Pet's Name            </label><br/>
+    <input type="text" id="rn_BasicTextInput_0_Contact.CustomFields.c.pets_name" name="formData[Contact.CustomFields.c.pets_name]" class="rn_Text" value='Fre' />
+        <div>
+    A@@    </div>
+</div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJDb250YWN0LkN1c3RvbUZpZWxkcy5jLnBldHNfbmFtZSI6eyJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJQZXQncyBOYW1lIiwibGFiZWxfZXJyb3IiOiIiLCJsYWJlbF92YWxpZGF0aW9uIjoiUmUtZW50ZXIgYSB2YWx1ZSBmb3IgdGhlIGZpZWxkICclcycifX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

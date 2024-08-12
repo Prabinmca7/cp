@@ -1,0 +1,11 @@
+input: <form><rn:widget path="standard/searchsource/SourceSearchField" source_id="SocialSearch"/></form>
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/%26lt%3Bhtml%26gt%3B%26lt%3Bbody%26gt%3B%26lt%3Bh1%26gt%3Bhello%20world%26lt%3B%26%23x2F%3Bh1%26gt%3B%26lt%3B%26%23x2F%3Bbody%26gt%3B%26lt%3B%26%23x2F%3Bhtml%26gt%3B/page/1
+output:
+<form><div id="rn_SourceSearchField_0" class="rn_SourceSearchField">
+    <label for="rn_SourceSearchField_0_SearchInput">
+    Search by Keyword    </label>
+    <input type="search" id="rn_SourceSearchField_0_SearchInput" name="kw" placeholder="Search..." value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;hello world&lt;&#x2F;h1&gt;&lt;&#x2F;body&gt;&lt;&#x2F;html&gt;" maxlength="255">
+</div>
+</form>

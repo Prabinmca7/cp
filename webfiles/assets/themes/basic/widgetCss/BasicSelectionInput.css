@@ -1,0 +1,12 @@
+.rn_BasicSelectionInput .rn_BasicSelection {
+    padding: 0.5%;
+    font-size: 80%;
+}
+.rn_BasicSelectionInput fieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+.rn_BasicSelectionInput select {
+    margin-bottom: 4px;
+}

@@ -1,0 +1,164 @@
+version: "2.7.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  trigger_element:
+    name: rn:msg:TRIGGER_ELEMENT_LBL
+    description: rn:msg:HTML_ELEMENT_ID_CLICK_LOGIN_DIALOG_LBL
+    type: STRING
+    required: true
+  label_username:
+    name: rn:msg:USERNAME_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_USERNAME_BOX_LBL
+    default: rn:msg:USERNAME_LBL
+    type: STRING
+  label_password:
+    name: rn:msg:LABEL_PASSWORD_LBL
+    description: rn:msg:LABEL_DISPLAY_PASSWORD_BOX_LBL
+    default: rn:msg:PASSWORD_LBL
+    type: STRING
+  label_login_button:
+    name: rn:msg:LOGIN_BUTTON_LABEL_LBL
+    description: rn:msg:DIALOGS_BUTT_OF_DISP_S_OF_TOGGLES_FRM_MSG
+    default: rn:msg:LOG_IN_LBL
+    type: STRING
+  label_create_account_button:
+    name: rn:msg:CREATE_ACCOUNT_BUTTON_LABEL_LBL
+    description: rn:msg:DIALOGS_BUTT_OF_T_L_OF_TOGGLES_FRM_MSG
+    default: rn:msg:CREATE_AN_ACCOUNT_CMD
+    type: STRING
+  label_cancel_button:
+    name: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    description: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+    type: STRING
+  label_dialog_title:
+    name: rn:msg:WINDOW_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_DIALOG_TITLE_LBL
+    default: rn:msg:PLEASE_LOG_IN_TO_CONTINUE_MSG
+    type: STRING
+  label_assistance:
+    name: rn:msg:ACCOUNT_ASSISTANCE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_LINK_ACCT_ASST_MSG
+    default: rn:msg:FORGOT_YOUR_USERNAME_OR_PASSWORD_MSG
+    type: STRING
+  label_social_user_info_desc:
+    name: rn:msg:SOCIAL_USER_INFO_DESCRIPTION_LBL
+    description: rn:msg:WHY_ADDTL_S_REQD_COMP_L_ACTION_LBL
+    default: rn:msg:PLEASE_UPDATE_PUBLIC_PROFILE_CONTINUE_MSG
+    type: STRING
+  label_social_user_finish_button:
+    name: rn:msg:SOCIAL_INFO_FORM_FINISH_BUTTON_LABEL_LBL
+    description: rn:msg:DIALOGS_SUBMIT_BUTT_SOCIAL_FORM_PRESENT_LBL
+    default: rn:msg:FINISH_CMD
+    type: STRING
+  label_incorrect_display_name:
+    name: rn:msg:INCORRECT_SOCIAL_DISPLAY_NAME_LABEL_LBL
+    description: rn:msg:ERROR_LABEL_AN_INCORRECT_DISPLAY_NAME_LBL
+    default: rn:msg:INCORRECT_DISPLAY_NAME_LBL
+    type: STRING
+  label_social_warning:
+    name: rn:msg:SOCIAL_WARNING_LABEL_LBL
+    description: rn:msg:LOGINDIALOG_TT_VI_SOCIAL_INTERACTION_MSG
+    default: rn:msg:REFRESH_UPON_SUBM_ANY_IN_INPUT_LOST_MSG
+    type: STRING
+  label_opens_new_dialog:
+    name: rn:msg:OPENS_NEW_DIALOG_SCREEN_READER_LABEL_LBL
+    type: STRING
+    description: rn:msg:READ_FOCUS_CREATE_READ_SESS_ADD_VISIBLE_LBL
+    default: rn:msg:OPENS_NEW_DIALOG_LBL
+  show_social_warning:
+    name: rn:msg:SHOW_SOCIAL_WARNING_LBL
+    description: rn:msg:WHETHER_S_WARN_S_INTERACTIONS_MSG
+    default: true
+    type: BOOLEAN
+  disable_password:
+    name: rn:msg:DISABLE_PASSWORD_INPUT_CMD
+    description: rn:msg:ST_TRUE_VAL_HONORED_EU_CUST_PASSWD_MSG
+    default: false
+    type: BOOLEAN
+  append_to_url:
+    name: rn:msg:PARAMETER_TO_APPEND_TO_URL_LBL
+    description: rn:msg:PARAM_APPEND_URL_REDIRECTED_LBL
+    type: STRING
+  redirect_url:
+    name: rn:msg:REDIRECT_PAGE_LBL
+    description: rn:msg:PG_REDIRECT_SUCCFUL_LOGIN_SET_PG_MSG
+    type: STRING
+  assistance_url:
+    name: rn:msg:ASSISTANCE_URL_LBL
+    description: rn:msg:URL_NAVIGATE_CLICK_LABEL_ASST_MSG
+    default: rn:php:'/app/' . \RightNow\Utils\Config::getConfig(CP_ACCOUNT_ASSIST_URL)
+    type: STRING
+  open_login_providers:
+    name: rn:msg:OPEN_LOGIN_PROVIDERS_LBL
+    description: rn:msg:LG_SSO_DD_EU_LG_S_OPTS_TWEET_KB_LG_YAH_MSG
+    type: STRING
+    default: "facebook,twitter,google,yahoo"
+  label_open_login_intro:
+    name: rn:msg:OPEN_LOGIN_LABEL_CMD
+    description: rn:msg:PREAMBLE_OPEN_LOGIN_PROVIDERS_SECTION_LBL
+    type: STRING
+    default: rn:msg:QUICKLY_LOG_CREATE_EXISTING_SERVICE_LBL
+  login_ajax:
+    name: rn:msg:LOGIN_AJAX_LBL
+    description: rn:msg:AJAX_ENDPOINT_LOGIN_REQUESTS_MSG
+    default: /ci/ajaxRequest/doLogin
+    type: AJAX
+  create_account_ajax:
+    name: rn:msg:CREATE_ACCOUNT_AJAX_ENDPOINT_LBL
+    description: rn:msg:THE_AJAX_ENDPOINT_TO_LBL
+    default: /ci/ajaxRequest/sendForm
+    type: AJAX
+  has_social_user_ajax:
+    name: rn:msg:HAS_SOCIAL_USER_AJAX_ENDPOINT_LBL
+    description: rn:msg:AJAX_TO_CHECK_S_PERSON_JUST_LOGGED_IN_LBL
+    default: /ci/ajax/widget
+    type: AJAX
+  create_social_user_ajax:
+    name: rn:msg:CREATE_SOCIAL_USER_AJAX_ENDPOINT_LBL
+    description: rn:msg:AJAX_TO_CREATE_USERS_SOCIAL_PROFILE_LBL
+    default: /ci/ajaxRequest/createSocialUser
+    type: AJAX
+  create_account_fields:
+    name: rn:msg:CREATE_ACCOUNT_FIELDS_LBL
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(FIELD_SEL_FUNC_SOLELY_L_DD_TT_CONFIG_MSG), 'Contact.FullName', 'First', 'Last', 'intl_nameorder')
+    default: "Contact.Emails.PRIMARY.Address;Contact.Login;CommunityUser.DisplayName;Contact.NewPassword;Contact.FullName"
+    type: STRING
+  disable_password_autocomplete:
+    name: rn:msg:DISABLE_PASSWORD_AUTO_COMPLETE_CMD
+    type: BOOLEAN
+    description: rn:msg:PREVENT_BROWSER_AUTOCOMPLETION_MSG
+    default: true
+  login_field_placeholders:
+    name: rn:msg:LOGIN_FIELD_PLACEHOLDERS_LBL
+    type: BOOLEAN
+    description: rn:msg:LBL_LBL_VLS_RRR_PSSWD_FLDS_WB_DNT_RRR_TT_MSG
+    default: true
+  email_password_message:
+    name: rn:msg:MESSAGE_DIALOG_LABEL_WHEN_EMAIL_SENT_LBL
+    description: rn:msg:TEXT_REDIRECT_LINK_SENT_THROUGH_EMAIL_MSG
+    default: rn:msg:THANK_S_UP_WE_RE_FOLLOW_COMP_LOGIN_MSG
+    type: STRING 
+info:
+  description: rn:msg:LG_SS_DD_LG_PTS_TWT_KB_LG_SYS_CFG_VRBS_D_MSG
+  urlParameters:
+    redirect:
+      name: rn:msg:REDIRECT_LBL
+      description: rn:msg:ENCODED_LOC_URL_REDIRECT_SUCCESSFUL_LBL
+      example: redirect/home
+    username:
+      name: rn:msg:USERNAME_LBL
+      description: rn:msg:POPULATES_USERNAME_FLD_VALUE_URL_MSG
+      example: username/JohnDoe
+contains:
+- widget: standard/login/OpenLogin
+  description: rn:msg:L_GOOGLES_BTN_SUBOPENLOGINGGLLBLLGNBTTN_MSG
+  versions: ["1.6"]
+- widget: standard/input/FormInput
+  description: rn:msg:L_L_SUBINPUTCONTACTLOGINLABELINPUT_MSG
+  versions: ["1.4"]
+- widget: standard/input/FormSubmit
+  versions: ["1.7"]
+

@@ -1,0 +1,102 @@
+@import '../variables';
+
+$breadcrumb-border-color: $base-border-color;
+$breadcrumb-border: 1px solid $breadcrumb-border-color;
+$breadcrumb-arrow-color: $breadcrumb-border-color;
+$breadcrumb-background: $base-body-color;
+$breadcrumb-inactive-hover-color: $breadcrumb-background;
+$breadcrumb-color: $medium-gray;
+$breadcrumb-color-hover: $base-accent-color;
+$breadcrumb-color-active: $breadcrumb-color;
+
+
+@mixin breadcrumb-container($bottom-margin) {
+    @include inline-block;
+    text-align: left;
+    margin-bottom: $bottom-margin;
+}
+
+@mixin breadcrumb-clear() {
+    @include clearfix;
+    padding: 0;
+}
+
+@mixin breadcrumb-item($margin, $fontsize, $height) {
+    $breadcrumb-height: $base-line-height * $height;
+    @include inline-block;
+    background-color: $breadcrumb-background;
+    border: $breadcrumb-border;
+    border-width: 0;
+    color: $breadcrumb-color;
+    line-height: $breadcrumb-height;
+    font-size: $fontsize;
+    padding: 0 $breadcrumb-height/4 0 $breadcrumb-height - .25;
+    position: relative;
+    text-decoration: none;
+    margin: $margin;
+
+    @include media($medium-screen) {
+        font-size: 1em;
+        padding: 0 $breadcrumb-height/2 0 $breadcrumb-height - .25;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        background-color: $breadcrumb-background;
+        color: $breadcrumb-color-active;
+        padding-right: $breadcrumb-height/2;
+    }
+}
+
+@mixin breadcrumb-item-hover() {
+    &:hover {
+        color: $breadcrumb-color-hover;
+        background-color: $breadcrumb-inactive-hover-color;
+    }
+
+    &:hover:after {
+        border-left-color: $breadcrumb-inactive-hover-color;
+    }
+}
+
+@mixin breadcrumb-after-and-before($height) {
+    $breadcrumb-height: $base-line-height * $height;
+
+    &:after,
+    &:before {
+        position: absolute;
+        right: auto;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        border-bottom: $breadcrumb-height/2 solid transparent;
+        border-left: $breadcrumb-height/4 solid transparent;
+        border-top: $breadcrumb-height/2 solid transparent;
+        content: '';
+        display: block;
+        margin: auto;
+        z-index: 2;
+    }
+
+    &:before {
+        border-left-color: $breadcrumb-arrow-color;
+        margin-left: 1px;
+        z-index: 1;
+    }
+
+    &:after {
+        border-left-color: $breadcrumb-background;
+    }
+}
+
+@mixin breadcrumb-last-item() {
+    &:last-child:after,
+    &:last-child:before {
+        border: 0;
+    }
+}
+
+

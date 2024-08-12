@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/notifications/AnswerNotificationManager'/>
+removecontent: true
+output:
+<div id="rn_AnswerNotificationManager_0" class="rn_AnswerNotificationManager">
+You currently don't have any answer notifications.</div>

@@ -1,0 +1,83 @@
+input: <rn:widget path="moderation/ModerationGrid" exclude_from_sorting="1,2,4" icon_cols="5" sanitize_data="2|text/x-markdown" truncate_size="75" label_caption="<span class='rn_ScreenReaderOnly'>#rn:msg:COMMENT_MODERATION_TABLE_LBL#</span>" object_type="CommunityComment" report_id="15101" per_page="1"/>
+contact: slatest
+filter: @\d+\/\d+\/\d+@
+fixture: QuestionActiveSingleCommentWithParenthesis
+jstestfile: base.test.js
+removecontent: true
+replace: DATE
+urlparameters: /st/6/page/1/sort/9,2/comments.updated/last_365_days
+output:
+<div id="rn_ModerationGrid_0" class="rn_ModerationGrid rn_Grid rn_CommunityComment">
+    <div id="rn_ModerationGrid_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_ModerationGrid_0_Loading"></div>
+    <div id="rn_ModerationGrid_0_Content" class="yui3-skin-sam">
+        <table id="rn_ModerationGrid_0_Grid" class="yui3-datatable-table" role="grid">
+        <caption><span class='rn_ScreenReaderOnly'>Comment moderation table</span></caption>
+                    <thead class="yui3-datatable-columns">
+                <tr>
+                                                                                 <th class="yui3-datatable-header" style='width:"3.799186%"'>
+            <span class="rn_ScreenReaderOnly">Select all</span>
+            <input type="checkbox" value="1"/>
+        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_2 rn_HideText" style='width:"10.04071%"'>
+            Comment        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_3 rn_HideText" style='width:"9.497965%"'>
+            Question        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_4 rn_HideText">
+            Product        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_5 rn_HideText" style='width:"4.613297%"'>
+            Total Flags        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_6 rn_HideText" style='width:"7.394844%"'>
+            Status        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_7 rn_HideText" style='width:"7.666214%"'>
+            Author        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_8 rn_HideText" style='width:"4.5454545%"'>
+            Author Status        </th>
+                                                                    <th class="yui3-datatable-header yui3-datatable-sortable-column rn_GridColumn_9 rn_HideText" style='width:"16.6892815%"'>
+            Updated On        </th>
+                                                                                                                                                                                                </tr>
+            </thead>
+                            <tbody class="yui3-datatable-data">
+                            <tr role="row" class="yui3-datatable-even">
+                                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c0">
+                    <input type="checkbox" aria-labelledby="rn_ModerationGrid_0_r0c1" value="[%CommunityComment%,%CommunityUser%]"/>
+            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c1">
+                    <a href='/app/social/questions/detail/qid/%CommunityQuestion%/comment/%CommunityComment%' target='_blank' >1 test of comment by an active user with ( and ) to test parenthesis. </a>            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c2">
+                    <a href='/app/social/questions/detail/qid/%CommunityQuestion%' target='_blank' >Question with active user to test ( parenthesis ) in comments</a>            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c3">
+                    &nbsp;            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c4">
+                    0            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c5">
+                    Active            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c6">
+                    <a href='/app/public_profile/user/%CommunityUser%' target='_blank' >moderator</a>            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c7">
+                    Active            </div>
+                    </td>
+                                                        <td role="gridcell" class="yui3-datatable-cell">
+    <div id="rn_ModerationGrid_0_r0c8">
+                    DATE            </div>
+                    </td>
+                                                                                                                                                                            </tr>
+                        </tbody>
+                </table>
+    </div>
+</div>

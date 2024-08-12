@@ -1,0 +1,8 @@
+<rn:block id="labelTop"/>
+<%= label %>
+<% if (requiredLevel) { %>
+    <%= getRequiredLabel(screenReaderText + requiredLabel) %>
+<% } else if (screenReaderText) { %>
+    <span class="rn_ScreenReaderOnly"><%= screenReaderText %></span>
+<% } %>
+<rn:block id="labelBottom"/>

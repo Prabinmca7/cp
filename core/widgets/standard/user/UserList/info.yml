@@ -1,0 +1,113 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_caption:
+    name: rn:msg:TABLE_CAPTION_LBL
+    description: rn:msg:C_L_TB_S_TG_SSS_PRACTICE_ACCESSIBILTY_MSG
+    type: STRING
+    default: rn:php:sprintf("<span class='rn_ScreenReaderOnly'>%s</span>", \RightNow\Utils\Config::getMessage(TABLE_CONTAINING_LIST_OF_TOP_USERS_LBL))
+  label_user:
+    name: rn:msg:USER_LABEL_LBL
+    description: rn:msg:LABEL_FOR_USERS_DISPLAY_NAME_FIELD_LBL
+    type: STRING
+    default: rn:msg:USER_LBL
+  label_count:
+    name: rn:msg:COUNT_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_COUNT_LBL
+    type: STRING
+    default: rn:msg:COUNT_LBL
+  label_question_count:
+    name: rn:msg:QUESTIONS_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_QUESTIONS_TOTAL_MSG
+    type: STRING
+    default: rn:msg:QUESTIONS_LBL
+  label_comment_count:
+    name: rn:msg:COMMENTS_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_COMMENTS_TOTAL_MSG
+    type: STRING
+    default: rn:msg:COMMENTS_LBL
+  label_best_answer_count:
+    name: rn:msg:BEST_ANSWER_LABEL_LBL
+    description: rn:msg:THE_LABEL_FOR_THE_BEST_ANSWERS_TOTAL_MSG
+    type: STRING
+    default: rn:msg:BEST_ANSWERS_LBL
+  show_avatar: 
+    name: rn:msg:SHOW_AVATAR_LBL
+    description: rn:msg:DETERMINES_WHETHER_TO_HIDESHOW_AVATAR_LBL
+    type: BOOLEAN
+    default: true
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - none
+    - small
+    - medium
+    - large
+    default: small  
+  content_display_type:
+    name: rn:msg:CONTENT_DISPLAY_TYPE_LBL
+    description: rn:msg:THE_FORMAT_TO_DISPLAY_THE_CONTENT_LBL
+    type: OPTION
+    default: table_view
+    options:
+      - table_view
+      - list_view
+  max_user_count: 
+    name: rn:msg:MAXIMUM_USER_COUNT_LBL
+    description: rn:msg:MAXIMUM_USERS_TO_DISPLAY_IN_THE_TABLE_LBL
+    type: int
+    default: 5
+  content_type:
+    name: rn:msg:TYPE_OF_CONTENT_LBL
+    description: rn:msg:TYPE_CONTENT_BASED_WHICH_SHOULD_FORMED_LBL
+    type: OPTION
+    options:
+    - questions
+    - comments
+    - best_answers
+    default: questions
+  activity_time_period:
+    name: rn:msg:ACTIVITY_TIME_PERIOD_LBL
+    description: rn:msg:TIME_PERIOD_CONSIDER_DISPLAYING_RESULTS_LBL
+    type: OPTION
+    options:
+    - past_day
+    - past_week
+    - past_month
+    - past_year
+    - any_time
+    default: any_time
+  content_load_ajax:
+    name: rn:msg:CONTENT_LOAD_AJAX_LBL
+    type: AJAX
+    description: rn:msg:DEFAULT_AJAX_ENDPOINT_LOADING_CONTENT_MSG
+    default: /ci/ajax/widget
+  label_content_load:
+    name: rn:msg:LABEL_CONTENT_LOAD_LBL
+    type: STRING
+    description: rn:msg:ID_ON_IMG_BG_ADD_SESS_READR_TECHNOLGY_MSG
+    default: rn:msg:LOADING_CONTENT_LBL
+  loading_icon_path:
+    name: rn:msg:LOADING_ICON_PATH_LBL
+    type: FILEPATH
+    description: rn:msg:FILE_PATH_TO_A_LOADING_INDICATOR_IMAGE_MSG
+    default: images/loading.gif
+  label_content_load_error:
+    name: rn:msg:CONTENT_LOAD_ERROR_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_USED_AS_THE_CONTENT_LOAD_ERROR_MSG
+    default: rn:astr:Error loading data. <a class='contentLoadError' href='javascript:void(0)'>Click to retry.</a>
+  content_load_mode:
+    name: rn:msg:CONTENT_LOAD_MODE_LBL
+    type: OPTION
+    description: rn:msg:DEFINES_HOW_CONTENT_DATA_IS_BE_LOADED_MSG
+    options:
+    - synchronous
+    - asynchronous
+    default: synchronous
+info:
+  description: rn:msg:TOP_CONT_SELF_BASED_QS_NO_BEST_S_THEM_MSG

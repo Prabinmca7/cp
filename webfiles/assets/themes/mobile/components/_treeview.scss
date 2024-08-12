@@ -1,0 +1,130 @@
+/**
+ * Styling for the TreeView UI widget that is used
+ * in a number of product / category widgets.
+ *
+ * .ygtvtn - first or middle sibling, no children
+ * .ygtvtm - first or middle sibling, collapsible
+ * .ygtvtmh - first or middle sibling, collapsible, hover
+ * .ygtvtp - first or middle sibling, expandable
+ * .ygtvtph - first or middle sibling, expandable, hover
+ * .ygtvln - last sibling, no children
+ * .ygtvlm - last sibling, collapsible
+ * .ygtvlmh - last sibling, collapsible, hover
+ * .ygtvlp - last sibling, expandable
+ * .ygtvlph - last sibling, expandable, hover
+ */
+
+.ygtvchildren {
+    table {
+        border-collapse: collapse;
+
+        td {
+            padding: 0;
+            border: 0;
+        }
+    }
+
+    .ygtvrow {
+        cursor: pointer;
+    }
+
+    a.ygtvspacer {
+        display: block;
+        text-decoration: none;
+        width: 1em;
+    }
+
+    .ygtvtm,
+    .ygtvtmh,
+    .ygtvtp,
+    .ygtvtph,
+    .ygtvln,
+    .ygtvlm,
+    .ygtvlmh,
+    .ygtvlp,
+    .ygtvlph,
+    .ygtvloading {
+        /* Left-hand gutter for all nodes where collapse/expand UI
+         * icons appear for nodes with children. */
+        cursor: pointer;
+        height: 22px;
+        width: 1em;
+
+        a {
+            color: $base-font-color;
+            text-decoration: none;
+        }
+    }
+
+    .ygtvln,
+    .ygtvtn {
+        /* No children */
+        width: 1em;
+        height: 20px;
+    }
+
+    .ygtvtm a,
+    .ygtvtmh a,
+    .ygtvlm a,
+    .ygtvlmh a {
+        /* Collapsible */
+        @include icon($fa-var-caret-down);
+        // Alternatively use icon-minus or "\f068"
+    }
+
+    .ygtvtp a,
+    .ygtvtph a,
+    .ygtvlp a,
+    .ygtvlph a {
+        /* Expandable */
+        @include icon($fa-var-caret-right);
+        // Alternatively use icon-plus or "\f067"
+    }
+
+    .ygtvloading {
+        @include loading-icon;
+
+        a.ygtvspacer {
+            // Hide the empty spacer while the loading icon
+            // is displaying to prevent the spacer's block display
+            // from shifting the node label down.
+            display: none;
+        }
+    }
+
+    .ygtvdepthcell,
+    .ygtvblankdepthcell {
+        /* Empty cells that are used for rendering the depth
+         * of the node */
+        background: transparent;
+        width: 1em;
+        height: 20px;
+    }
+
+    .ygtvlabel,
+    .ygtvlabel:link,
+    .ygtvlabel:visited,
+    .ygtvlabel:hover {
+        /* Text label in ygTextNode */
+        color: #111;
+        font-size: 12px;
+        margin-left: 2px;
+        text-decoration: none;
+    }
+
+    .ygtvfocus {
+        background-color: #c0e0e0;
+        border: 0;
+
+        .ygtvlabel,
+        .ygtvlabel:link,
+        .ygtvlabel:visited,
+        .ygtvlabel:hover {
+            background-color: #c0e0e0;
+        }
+
+        a {
+            outline-style: none;
+        }
+    }
+}

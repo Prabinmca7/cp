@@ -1,0 +1,139 @@
+version: "1.8.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  category:
+    - Community
+  description: rn:msg:TYP_MA_BESTANSWER_QUESTIONCOMMENTS_VALS_MSG
+  urlParameters:
+    qid:
+      name: rn:msg:QUESTION_ID_LBL
+      description: rn:msg:ID_OF_QUESTION_TO_DISPLAY_LBL
+      example: qid/3
+attributes:
+  best_answer_types:
+    name: rn:msg:BEST_ANSWER_TYPES_LBL
+    description: rn:msg:TYP_MA_BESTANSWER_QUESTIONCOMMENTS_VALS_MSG
+    type: MULTIOPTION
+    options:
+    - author
+    - moderator
+    default:
+    - author
+    - moderator
+  avatar_size:
+    name: rn:msg:AVATAR_SIZE_LBL
+    description: rn:msg:SIZE_TO_DISPLAY_USER_AVATARS_LBL
+    type: OPTION
+    options:
+    - none
+    - small
+    - medium
+    - large
+    - xlarge
+    default: medium
+  always_show_jump_to:
+    name: rn:msg:ALWAYS_SHOW_JUMP_TO_LINK_LBL
+    description: rn:msg:TRUE_JUMP_S_FALSE_JUMP_BEST_L_EXPANDED_MSG
+    default: true
+    type: BOOLEAN
+  refresh_ajax:
+    name: rn:msg:REFRESH_ENDPOINT_LBL
+    type: ajax
+    description: rn:msg:AJAX_TO_RELOADING_BEST_TC_T_BEST_ANSWER_LBL
+    default: /ci/ajax/widget
+  label_dynamic_notice:
+    name: rn:msg:DYNAMIC_NOTICE_LABEL_LBL
+    type: STRING
+    description: rn:msg:BANNER_ISNT_AUTH_TC_SSS_QUESTION_LBL
+    default: rn:msg:YOU_HAVE_UPDATED_A_BEST_ANSWER_MSG
+  label_refresh:
+    name: rn:msg:REFRESH_LABEL_LBL
+    type: STRING
+    description: rn:msg:L_QUESTI_AUTH_SSS_DAT_TT_TH_TC_SSS_QSTN_LBL
+    default: rn:msg:REFRESH_CMD
+  label_no_best_answers:
+    name: rn:msg:NO_BEST_ANSWERS_LABEL_LBL
+    type: STRING
+    description: rn:msg:APPEARS_CONTENT_AREA_BEST_QUESTION_LBL
+    default: rn:msg:THERE_ARE_CURRENTLY_NO_BEST_ANSWERS_LBL
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    description: rn:msg:A_SSS_ATTRIB_EE_S_REM_L_L_ENTIRELY_MSG
+    default: rn:msg:BEST_ANSWER_LBL
+    type: STRING
+  label_selected_best_by:
+    name: rn:msg:SELECTED_BEST_BY_LABEL_LBL
+    description: rn:msg:H_SSS_PP_WF_LBLSLCTDBSTMDRT_LBLSLCTDBSTT_MSG
+    default: rn:msg:SELECTED_BEST_BY_LBL
+    type: STRING
+  label_selected_by_connector:
+    name: rn:msg:SELECTED_BY_CONNECTOR_LABEL_LBL
+    description: rn:msg:CLAUSES_ERR_MULTIPLES_SNGL_COMMENT_MSG
+    default: rn:msg:AND_LBL
+    type: STRING
+  label_selected_best_moderator:
+    name: rn:msg:SELECTED_BEST_MODERATOR_LABEL_LBL
+    description: rn:msg:XPLN_MDRT_SSS_MDRT_TTRB_SRRNDNG_PRNTHSS_MSG
+    default: rn:msg:MODERATOR_LBL
+    type: STRING
+  label_selected_best_author:
+    name: rn:msg:SELECTED_BEST_AUTHOR_LABEL_LBL
+    description: rn:msg:EXPLAIN_ATH_SSS_TH_TTRB_SRRNDNG_PRNTHSS_MSG
+    default: rn:msg:AUTHOR_LBL
+    type: STRING
+  label_unmark_best_answer_author:
+    name: rn:msg:AUTHOR_UNMARK_BEST_ANSWER_LABEL_LBL
+    description: rn:msg:BUTT_L_AUTHORS_UNMARK_BEST_ANSWER_LBL
+    default: rn:msg:UNMARK_AS_THE_BEST_ANSWER_BY_AUTHOR_LBL
+    type: STRING
+  label_unmark_best_answer_moderator:
+    name: rn:msg:UNMARK_BEST_ANSWER_LABEL_LBL
+    description: rn:msg:BUTT_ALLOWING_ADD_UNMARK_BEST_ANSWER_LBL
+    default: rn:msg:UNMARK_AS_THE_BEST_ANSWER_BY_MODERATOR_LBL
+    type: STRING
+  label_expand:
+    name: rn:msg:EXPAND_LABEL_LBL
+    description: rn:msg:LABEL_FOR_EXPAND_LINK_LBL
+    default: rn:msg:EXPAND_CMD
+    type: STRING
+  label_collapse:
+    name: rn:msg:COLLAPSE_LABEL_LBL
+    description: rn:msg:LABEL_FOR_COLLAPSE_LINK_LBL
+    default: rn:msg:COLLAPSE_CMD
+    type: STRING
+  label_jump_to:
+    name: rn:msg:JUMP_TO_LABEL_LBL
+    description: rn:msg:LABEL_FOR_JUMP_TO_LINK_LBL
+    default: rn:msg:JUMP_TO_LBL
+    type: STRING
+  label_unmark_best_answer_moderator_tooltip:
+    name: rn:msg:MODERATOR_UNMARK_BEST_ANSWER_TOOLTIP_LBL
+    description: rn:msg:HOVERING_V_L_MODERAT_UNMARK_SSS_ANSWER_LBL
+    default: rn:msg:AS_MODERATOR_MAY_UNMARK_AS_BEST_ANSWER_LBL
+    type: STRING
+  label_unmark_best_answer_author_tooltip:
+    name: rn:msg:AUTHOR_UNMARK_BEST_ANSWER_TOOLTIP_LBL
+    description: rn:msg:HOVERING_V_L_AUTH_UNMARK_SSS_ANSWER_LBL
+    default: rn:msg:QUESTION_AUTHOR_MAY_UNMARK_BEST_ANSWER_LBL
+    type: STRING
+  original_poster_callout:
+    name: rn:msg:ORIGINAL_POSTER_CALLOUT_LBL
+    type: BOOLEAN
+    description: rn:msg:T_TH_NO_T_S_AUTH_S_DISCUSSION_MSG
+    default: false
+  label_original_poster:
+    name: rn:msg:ORIGINAL_POSTER_LABEL_LBL
+    description: rn:msg:COMMENT_POSTED_WHO_POSTED_QUESTION_LBL
+    default: rn:msg:POSTED_BY_ORIGINAL_POSTER_LBL
+    type: STRING
+  author_roleset_callout:
+    name: rn:msg:AUTHOR_ROLE_SET_CALLOUT_LBL
+    type: STRING
+    description: rn:msg:CMM_TH_MDRT_PSSNG_0_PPRNG_MLT_CLLT_LN_SL_MSG
+    default: null
+    displaySpecialCharsInTagGallery: true
+contains:
+- widget: standard/feedback/SocialContentRating
+  versions: ["1.6"]

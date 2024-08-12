@@ -1,0 +1,72 @@
+input: <rn:widget path="standard/okcs/Facet" source_id="OKCSSearch"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/Test
+output:
+<div id="rn_Facet_0" class="rn_Facet">
+    <div id="rn_Facet_0_Content" class="rn_Content">
+        <div id="rn_Facet_0_Title" class="rn_FacetsTitle">Filter            <span class="rn_ClearContainer">[<a role="button" class="rn_ClearFacets" href="javascript:void(0)">Clear<span class="rn_ScreenReaderOnly">Unselect all filters</span></a>]</span>
+        </div>
+                <div class="rn_FacetsList">
+            <div id="rn_Facet_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+            <ul>
+                                                                        <li>
+                                                    DocTypes<ul>
+                                                                <li>
+            <a role="button" id="DOC_TYPES.CMS-XML" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="ARTICLES" class="rn_FacetText">ARTICLES</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="DOC_TYPES.DOCUMENT" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="DOCUMENT" class="rn_FacetText">DOCUMENT</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="DOC_TYPES.PDF" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="PDF" class="rn_FacetText">PDF</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="DOC_TYPES.SPREADSHEET" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="SPREADSHEET" class="rn_FacetText">SPREADSHEET</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+    <li>
+        <a role="button" id="F:DOC_TYPES" class="rn_FacetLink" href="javascript:void(0)">More...            <span class="rn_ScreenReaderOnly">Select to show more filters.</span>
+        </a>
+    </li>                                                    </ul>
+                                                </li>
+                                                                                <li>
+                                                    Collections<ul>
+                                                                <li>
+            <a role="button" id="COLLECTIONS.OKKB-SOLUTIONS" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="OKKB-SOLUTIONS" class="rn_FacetText">OKKB-SOLUTIONS</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="COLLECTIONS.OKKB-TEST" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="OKKB-TEST" class="rn_FacetText">OKKB-TEST</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="COLLECTIONS.OKKB-MULTIPLE_NODES" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="OKKB-MULTIPLE_NODES" class="rn_FacetText">OKKB-MULTIPLE_NODES</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+            <li>
+            <a role="button" id="COLLECTIONS.OKKB-TEST_FILE_ATTACHMENT" class="rn_FacetLink" href="javascript:void(0)">
+            <span title="OKKB-TEST_FILE_ATTACHMENT" class="rn_FacetText">OKKB-TEST_FILE_ATTACHMENT</span><span class="rn_FacetClearIcon"></span>
+        </a>
+    </li>
+    <li>
+        <a role="button" id="F:COLLECTIONS" class="rn_FacetLink" href="javascript:void(0)">More...            <span class="rn_ScreenReaderOnly">Select to show more filters.</span>
+        </a>
+    </li>                                                    </ul>
+                                                </li>
+                                                                                                                                    </ul>
+        </div>
+            </div>
+</div>

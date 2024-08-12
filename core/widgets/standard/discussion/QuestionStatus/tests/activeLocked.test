@@ -1,0 +1,11 @@
+input: <rn:widget path="standard/discussion/QuestionStatus"/>
+removecontent: true
+urlparameters: /qid/2041
+output:
+<div id="rn_QuestionStatus_0" class="rn_QuestionStatus rn_Locked">
+        <span class="rn_StatusContainer" title="The question is locked and cannot currently be updated.">
+                    <span class="rn_LockedContainer" title="The question is locked and cannot currently be updated.">
+                <span class="rn_ScreenReaderOnly">Locked</span>
+            </span>
+                Locked    </span>
+</div>

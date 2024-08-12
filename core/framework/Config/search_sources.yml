@@ -1,0 +1,55 @@
+KFSearch:
+  # Name of model to use for searching
+  model: KFSearch
+  filters:
+    # Mapping from filter name -> param name
+    query: kw
+    sort: sort
+    direction: dir
+    page: page
+    product: p
+    category: c
+  # Where ajax searches end up
+  endpoint: /ci/ajaxRequest/search
+OKCSSearch:
+  model: OkcsSearch
+  filters:
+    query: kw
+    locale: loc
+    facet: facet
+    collectFacet: collectFacet
+    direction: dir
+    page: page
+    truncate: truncate
+    searchCacheId: searchCacheId
+    searchType: searchType
+    okcsSearchSession: okcsSearchSession
+    priorTransactionID: priorTransactionID
+    docIdRegEx: docIdRegEx
+    transactionID: transactionID
+    okcsNewSearch: okcsNewSearch
+    prod: product
+    cat: category
+    querySource: querySource
+    resultCount: resultCount
+    accessType: accessType
+  endpoint: /ci/ajaxRequest/search
+OKCSBrowse:
+  model: OkcsBrowse
+  filters:
+    page: page
+  endpoint: /ci/okcsAjaxRequest/getOkcsData
+SocialSearch:
+  model: SocialSearch
+  filters:
+    query: kw
+    sort: sort
+    direction: dir
+    page: page
+    product: p
+    category: c
+    author: author
+    updatedTime: updated
+    createdTime: created
+    numberOfBestAnswers: ba
+  endpoint: /ci/ajaxRequest/search

@@ -1,0 +1,17 @@
+@import 'widget-includes';
+
+.rn_PreviousAnswers {
+    padding: 10px 0;
+}
+
+.rn_PreviousAnswers h2 {
+    border-bottom: 1px solid #BBB;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+}
+
+@media print {
+    .rn_PreviousAnswers {
+        display: none;
+    }
+}

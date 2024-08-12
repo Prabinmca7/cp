@@ -1,0 +1,29 @@
+@import 'widget-includes';
+
+.rn_AnswerContent {
+    .rn_Indent {
+        margin-left: 20px;
+    }
+
+    .rn_ExternalContent {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    iframe {
+        min-height: 650px;
+    }
+
+    .normal {
+        font-weight: normal;
+    }
+
+    .ok-highlight-title {
+        background-color: #FF0;
+        font-weight: bold;
+    }
+
+    .ok-highlight-sentence {
+        background-color: #D8DFE8;
+    }
+}

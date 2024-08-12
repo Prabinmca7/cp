@@ -1,0 +1,91 @@
+input: <rn:widget path="standard/user/UserActivity" type="questionRatingGivenToUser" user_id="215"/>
+removecontent: true
+output:
+<div id="rn_UserActivity_0" class="rn_UserActivity">
+    <div class="rn_Activities">
+        <h2>
+    Recent Activity</h2>
+                            <div class="rn_Activity rn_QuestionRatingGivenToUser" itemscope itemtype="Question">
+                        <h3 class="rn_ActivityTitle">
+                <span class="rn_ActivityTitleLabel">
+                    Received a rating on a question                </span>
+            </h3>
+                        <div class="rn_QuestionRatingGivenToUserActivity">
+    <div class="rn_ActivityContent">
+        <div class="rn_ParentContent">
+            <div class="rn_ActivityUser rn_ActivityUserMedium" itemprop="author" itemscope itemtype="Person">
+    <span class="rn_UserAvatar" title="user_data_conditions_215">
+            <a itemprop="url" href="/app/public_profile/user/215/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">user_data_conditions_215</span>
+                </a>
+    </span>
+</div>
+            <div class="rn_Info">
+                <a itemprop="url" href="/app/social/questions/detail/qid/26">
+                    test question title215_1                </a>
+                <span class="rn_Time">
+                                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+                                                    <div class="rn_Activity rn_QuestionRatingGivenToUser" itemscope itemtype="Question">
+                        <div class="rn_QuestionRatingGivenToUserActivity">
+    <div class="rn_ActivityContent">
+        <div class="rn_ParentContent">
+            <div class="rn_ActivityUser rn_ActivityUserMedium" itemprop="author" itemscope itemtype="Person">
+    <span class="rn_UserAvatar" title="user_data_conditions_215">
+            <a itemprop="url" href="/app/public_profile/user/215/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">user_data_conditions_215</span>
+                </a>
+    </span>
+</div>
+            <div class="rn_Info">
+                <a itemprop="url" href="/app/social/questions/detail/qid/27">
+                    test question title215_6                </a>
+                <span class="rn_Time">
+                                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+                                                    <div class="rn_Activity rn_QuestionRatingGivenToUser" itemscope itemtype="Question">
+                        <div class="rn_QuestionRatingGivenToUserActivity">
+    <div class="rn_ActivityContent">
+        <div class="rn_ParentContent">
+            <div class="rn_ActivityUser rn_ActivityUserMedium" itemprop="author" itemscope itemtype="Person">
+    <span class="rn_UserAvatar" title="user_data_conditions_215">
+            <a itemprop="url" href="/app/public_profile/user/215/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor4" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">U</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">user_data_conditions_215</span>
+                </a>
+    </span>
+</div>
+            <div class="rn_Info">
+                <a itemprop="url" href="/app/social/questions/detail/qid/28">
+                    test question title215_                </a>
+                <span class="rn_Time">
+                                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+                                </div>
+</div>

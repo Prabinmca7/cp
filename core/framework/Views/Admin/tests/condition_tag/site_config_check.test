@@ -1,0 +1,50 @@
+input:
+<h2>Integer config checks</h2>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable == 0"/>
+Integer config checks #1: Success<br/>
+<rn:condition_else>
+Integer config checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable == 1"/>
+Integer config checks #2: Fail<br/>
+<rn:condition_else>
+Integer config checks #2: Success<br/>
+</rn:condition>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable != 1"/>
+Integer config checks #3: Success<br/>
+<rn:condition_else>
+Integer config checks #3: Fail<br/>
+</rn:condition>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable != 0"/>
+Integer config checks #4: Fail<br/>
+<rn:condition_else>
+Integer config checks #4: Success<br/>
+</rn:condition>
+
+<h2>String config checks</h2>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable == '0'"/>
+String config checks #1: Success<br/>
+<rn:condition_else>
+String config checks #1: Fail<br/>
+</rn:condition>
+
+<rn:condition site_config_check="CP.EmailConfirmationLoop.Enable == '1'"/>
+String config checks #2: Fail<br/>
+<rn:condition_else>
+String config checks #2: Success<br/>
+</rn:condition>
+removecontent: true
+output:
+<h2>Integer config checks</h2>
+Integer config checks #1: Success<br/>
+Integer config checks #2: Success<br/>
+Integer config checks #3: Success<br/>
+Integer config checks #4: Success<br/>
+<h2>String config checks</h2>
+String config checks #1: Success<br/>
+String config checks #2: Success<br/>

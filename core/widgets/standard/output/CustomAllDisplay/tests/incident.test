@@ -1,0 +1,4 @@
+input: <rn:widget path='standard/output/CustomAllDisplay' table='incidents'/>
+contact: aschubert@rightnow.com.invalid
+removecontent: true
+output: 

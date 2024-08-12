@@ -1,0 +1,23 @@
+@import 'widget-includes';
+
+.rn_ContentType {
+    
+    li {
+        border-bottom: 1px solid $light-gray;
+        padding: .5em;
+
+        a {
+            color: $hero-color;
+            display: block !important;
+            margin: 0;
+            padding: 10px 30px 10px 8px;
+            text-decoration: none;
+            font-size: 1em;
+            line-height: 1em;
+        }
+    }
+
+    .rn_Selected {
+        font-weight: bold;
+    }
+}

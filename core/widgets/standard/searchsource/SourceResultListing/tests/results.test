@@ -1,0 +1,30 @@
+input: <rn:widget path="standard/searchsource/SourceResultListing" source_id="KFSearch" per_page="2"/>
+removecontent: true
+urlparameters: /kw/phone
+output:
+<div id="rn_SourceResultListing_0" class="rn_SourceResultListing">
+    <div id="rn_SourceResultListing_0_Alert" aria-live="polite" class="rn_ScreenReaderOnly"></div>
+        <div id="rn_SourceResultListing_0_Content" class="rn_Content">
+            <ul>
+            <li data-index="1" class="rn_KFSearch">
+    <div class="rn_Title">
+        <h3><a href="/app/answers/detail/a_id/64/kw/phone" target="_self">DROID - Tips for extending battery life</a></h3>
+    </div>
+        <div class="rn_Summary">
+        Things you should know about charging your battery. New batteries are not fully charged. Plug the battery charger into your <em class='rn_Highlight'>phone</em> and an electrical outlet. Your <em class='rn_Highlight'>phone</em> might take several seconds to...    </div>
+    </li>
+            <li data-index="2" class="rn_KFSearch">
+    <div class="rn_Title">
+        <h3><a href="/app/answers/detail/a_id/66/kw/phone" target="_self">DROID - Getting Started</a></h3>
+    </div>
+        <div class="rn_Summary">
+        Insert the memory card (may already be inserted) Insert the battery Attach the battery cover Charge the <em class='rn_Highlight'>phone</em> CLICK HERE for tips on batteries.    </div>
+    </li>
+        </ul>
+    </div>
+    <div class="rn_AdditionalResults">
+                <a id="rn_SourceResultListing_0_MoreResultsLink" href="/app/answers/list/kw/phone/page/1">
+            Show more        </a>
+            </div>
+            <script type="text/json" id="rn_SourceResultListing_0_HistoryData">{"filters":{"query":{"value":"phone","key":"kw","type":"query"},"sort":{"value":null,"key":"sort","type":"sort"},"direction":{"value":null,"key":"dir","type":"direction"},"page":{"value":1,"key":"page","type":"page"},"product":{"value":null,"key":"p","type":"product"},"category":{"value":null,"key":"c","type":"category"},"offset":{"value":0,"key":null,"type":"offset"},"limit":{"value":2}},"offset":0,"query":null,"results":[{"url":"\/app\/answers\/detail\/a_id\/64\/kw\/phone","text":"DROID - Tips for extending battery life","summary":"Things you should know about charging your battery.\n\nNew batteries are not fully charged. Plug the battery charger into your phone and an electrical outlet. Your phone might take several seconds to start charging the battery.\nTips:\n\nIt may take several...","created":null,"updated":1269411000,"KFSearch":{"id":64},"type":"KFSearch"},{"url":"\/app\/answers\/detail\/a_id\/66\/kw\/phone","text":"DROID - Getting Started","summary":"\nInsert the memory card (may already be inserted)\n\n\nInsert the battery\n\n\nAttach the battery cover\n\n\nCharge the phone\n\n\n\n \nCLICK HERE for tips on batteries.\n\n","created":null,"updated":1269411000,"KFSearch":{"id":66},"type":"KFSearch"}],"size":2,"total":18}</script>
+    </div>

@@ -1,0 +1,14 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/input/TextInput' name='Contact.Emails.PRIMARY.Address'/></form>
+filter: @"contactToken":"[^"]+"@
+removecontent: true
+session: {"previouslySeenEmail":"bananas@banana.ape"}
+urlparameters: /Contact.Emails.PRIMARY.Address/thisValueWins
+output:
+<form onsubmit="return false;"><div id="rn_TextInput_0" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_0_LabelContainer">
+        <label for="rn_TextInput_0_Contact.Emails.PRIMARY.Address" id="rn_TextInput_0_Label" class="rn_Label">
+        Address                                </label>
+    </div>
+    <input type="email" id="rn_TextInput_0_Contact.Emails.PRIMARY.Address" name="Contact.Emails.PRIMARY.Address" class="rn_Email" maxlength='255' value='thisValueWins' />
+    </div>
+</form>

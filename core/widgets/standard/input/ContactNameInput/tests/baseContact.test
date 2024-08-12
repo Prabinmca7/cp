@@ -1,0 +1,19 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/input/ContactNameInput'/></form>
+contact: slatest
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_TextInput_2" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_2_LabelContainer">
+        <label for="rn_TextInput_2_Contact.Name.First" id="rn_TextInput_2_Label" class="rn_Label">
+        First Name                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_2_Contact.Name.First" name="Contact.Name.First" class="rn_Text" maxlength='80' value='perpetual sla contact no org first' />
+    </div>
+<div id="rn_TextInput_4" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_4_LabelContainer">
+        <label for="rn_TextInput_4_Contact.Name.Last" id="rn_TextInput_4_Label" class="rn_Label">
+        Last Name                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_4_Contact.Name.Last" name="Contact.Name.Last" class="rn_Text" maxlength='80' value='perpetual sla contact no org last' />
+    </div>
+</form>

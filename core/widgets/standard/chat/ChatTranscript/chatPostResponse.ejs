@@ -1,0 +1,33 @@
+<rn:block id="chatPostResponseTop"/>
+<% if(context.isEndUserPost) { %>
+    <span class="rn_MessagePost rn_CustomeUserPost">
+<%  } else { %>
+   <span class="rn_MessagePost">
+<% } %>
+<% if(context.isEndUserPost && context.isOffTheRecord && attrs.off_the_record_icon_path) { %>
+    <rn:block id="preChatPostResponseIcon"/>
+    <img alt="" src="<%= attrs.off_the_record_icon_path %>"/>
+    <rn:block id="postChatPostResponseIcon"/>
+<% } else if(context.isEndUserPost && !context.isOffTheRecord && attrs.enduser_message_icon_path) { %>
+    <rn:block id="preChatPostResponseIcon"/>
+    <img alt="" src="<%= attrs.enduser_message_icon_path %>"/>
+    <rn:block id="postChatPostResponseIcon"/>
+<% } else if(!context.isEndUserPost && attrs.agent_message_icon_path) { %>
+    <rn:block id="preChatPostResponseIcon"/>
+    <img alt="" src="<%= attrs.agent_message_icon_path %>"/>
+    <rn:block id="postChatPostResponseIcon"/>
+<% } %>
+<% if(context.isEndUserPost) { %>
+   <span class="rn_UserTextPrefix"><%= endUserName %></span>:
+<%     if(context.isOffTheRecord) { %>
+       <span class="rn_OffTheRecordMessage"><%= message %></span>
+<%     } else { %>
+       <span class="rn_NormalMessage"><%= message %></span>
+<%     }
+   } else { %>
+   <span class="rn_AgentTextPrefix"><%= agentName %></span>:
+   <span class="rn_NormalMessage"><%= message %></span>
+<% } %>
+<br/>
+</span>
+<rn:block id="chatPostResponseBottom"/>

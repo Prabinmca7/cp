@@ -1,0 +1,44 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:BASED_L_SUSP_ARCHIVE_ACT_S_ACT_USERS_MSG
+  category:
+  - Community
+attributes:
+  label_suspended:
+    name: rn:msg:SUSPENDED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYED_HAS_SUSP_STATUS_MSG
+    default: rn:msg:SUSPENDED_LBL
+    type: STRING
+  label_suspended_tooltip:
+    name: rn:msg:SUSPENDED_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_DISPLAYED_HAS_SUSPENDED_STAT_MSG
+    default: rn:msg:THE_USER_IS_CURRENTLY_SUSPENDED_MSG
+    type: STRING
+  label_archived:
+    name: rn:msg:ARCHIVED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYED_HAS_ARCHIVED_STATUS_MSG
+    default: rn:msg:ARCHIVED_LBL
+    type: STRING
+  label_archived_tooltip:
+    name: rn:msg:ARCHIVED_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_DISPLAYED_HAS_ARCHIVED_STATUS_MSG
+    default: rn:msg:ARCHIVED_CAN_NO_LONGER_CREATE_CONTENT_MSG
+    type: STRING
+  label_active:
+    name: rn:msg:ACTIVE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYED_WHEN_HAS_ACTIVE_STATUS_MSG
+    default: rn:msg:ACTIVE_LBL
+    type: STRING
+  label_active_tooltip:
+    name: rn:msg:ACTIVE_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_DISPLAYED_HAS_ACTIVE_STATUS_MSG
+    default: rn:msg:THE_USER_IS_CURRENTLY_ACTIVE_MSG
+    type: STRING
+  display_active:
+    name: rn:msg:DISPLAY_ACTIVE_LBL
+    description: rn:msg:WHETHER_ACTIVE_USERS_SHOULD_DISPLAYED_MSG
+    default: false
+    type: BOOLEAN

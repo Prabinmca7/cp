@@ -1,0 +1,25 @@
+.rn_OkcsApiTimingOnRefPage {
+    .rn_KAPerformanceContainer {
+		display: table;
+		border-collapse: collapse;
+	}
+	
+	.rn_KAPerformanceTableRow {
+		display: table-row;
+	}
+	
+	.rn_KAPerformanceTableCell {
+		padding: 0.2em;
+		word-wrap:break-word;
+		display:table-cell;
+		border: 1px solid;
+	}
+	
+	.rn_KAPerformanceTableCol1 {
+		width:70%;
+	}
+	
+	.rn_KAPerformanceTableCol2 {
+		width:10%;
+	}
+}

@@ -1,0 +1,12 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive1
+  Subject: Locked question with active user
+  Body: Test question body
+  Attributes.ContentLocked: true
+  StatusWithType.Status.LookupName: Active
+  _comments:
+    - fixture: CommentActiveModActive
+      parameters:
+        CommunityQuestion: this.ID

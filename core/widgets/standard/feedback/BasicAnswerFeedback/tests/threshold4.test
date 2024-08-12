@@ -1,0 +1,27 @@
+input: <rn:widget path="feedback/BasicAnswerFeedback" options_count="5" threshold="4" />
+filter: @<input type=['"]hidden["'] name=['"](f_tok|validationToken)['"] value=['"][^"^']*['"]/>@
+removecontent: true
+replace: <input type="hidden" name="$1" value=""/>
+template: basic
+output:
+<div id="rn_BasicAnswerFeedback_0" class="rn_BasicAnswerFeedback rn_AnswerFeedback">
+    <div id="rn_BasicAnswerFeedback_0_AnswerFeedbackControl" class="rn_AnswerFeedbackControl">
+        <form method='post' action='/app/answers/detail/a_id/'><div>
+            <input type="hidden" name="answerFeedback[OptionsCount]" value="5" />
+            <input type="hidden" name="answerFeedback[Threshold]" value="4" />
+                            <h2>Was this answer helpful?</h2>
+                                                                                    <input type="radio" id="rn_BasicAnswerFeedback_0_RatingButton_1" name="answerRating" value="1" /><label for="rn_BasicAnswerFeedback_0_RatingButton_1">0%</label><br />
+                                            <input type="radio" id="rn_BasicAnswerFeedback_0_RatingButton_2" name="answerRating" value="2" /><label for="rn_BasicAnswerFeedback_0_RatingButton_2">25%</label><br />
+                                            <input type="radio" id="rn_BasicAnswerFeedback_0_RatingButton_3" name="answerRating" value="3" /><label for="rn_BasicAnswerFeedback_0_RatingButton_3">50%</label><br />
+                                            <input type="radio" id="rn_BasicAnswerFeedback_0_RatingButton_4" name="answerRating" value="4" /><label for="rn_BasicAnswerFeedback_0_RatingButton_4">75%</label><br />
+                                            <input type="radio" id="rn_BasicAnswerFeedback_0_RatingButton_5" name="answerRating" value="5" /><label for="rn_BasicAnswerFeedback_0_RatingButton_5">100%</label><br />
+                                                            <br />
+            <div class="rn_BasicFormSubmit">
+        <input type="submit" id="rn_BasicFormSubmit_1_Button" value="Submit Feedback"/>
+    <input type="hidden" name="f_tok" value=""/>
+                            </div>
+        <input type="hidden" name="validationToken" value=""/>
+                <input type='hidden' name='constraints' value='W10='/>
+                <input type='hidden' name='handler' value='postRequest/submitAnswerRating'/></div></form>
+    </div>
+</div>

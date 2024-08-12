@@ -1,0 +1,172 @@
+header {
+    $navigation-background: darken($hero-background, 8);
+    $navigation-color: darken(#FFF, 14);
+    $navigation-color-hover: #FFF;
+    $navigation-height: 60px;
+    $input-color: #FFF;
+
+    background-color: $navigation-background;
+    color: #FFF;
+    font-family: $sans-serif;
+    height: $navigation-height;
+    width: 100%;
+
+    nav {
+        @include outer-container;
+
+        .rn_NavigationBar {
+            @include span-columns(6);
+
+            @include media($rn-xlarge) {
+                padding-left: 1em;
+            }
+
+            @include media($rn-large) {
+                @include fill-parent;
+                padding-left: 0;
+            }
+
+            .rn_NavigationMenuButton {
+                color: $navigation-color;
+                cursor: pointer;
+                display: none;
+                float: right;
+                font-family: $sans-serif;
+                font-weight: 700;
+                line-height: $navigation-height;
+                margin: 0;
+                padding-right: 1em;
+                text-transform: uppercase;
+
+                @include media($rn-large) {
+                    @include span-columns(12);
+                    padding: 0 1em;
+                }
+
+                &:hover {
+                    color: $navigation-color-hover;
+                }
+            }
+
+            #rn_NavigationMenuButtonToggle {
+                // Hidden checkbox whose label acts as a button
+                // to toggle the nav menu.
+                display: none;
+
+                &:checked ~ .rn_NavigationMenu {
+                    display: block;
+                }
+            }
+
+            .rn_NavigationMenu {
+                -webkit-transform-style: preserve-3d; // stop webkit flicker
+                margin: 0 auto;
+                overflow: hidden;
+                padding: 0;
+                @include fill-parent;
+
+                @include media($rn-large) {
+                    display: none;
+                }
+
+                li {
+                    background: transparent;
+                    display: inline;
+                    line-height: $navigation-height;
+                    padding-right: 2em;
+                    text-decoration: none;
+                    width: auto;
+
+                    @include media ($rn-large) {
+                        background: $navigation-background;
+                        display: block;
+                        line-height: $navigation-height;
+                        overflow: hidden;
+                        padding-left: .8em;
+                        width: 100%;
+                    }
+
+                    a {
+                        font-weight: 400;
+                        color: $navigation-color;
+
+                        &:hover {
+                            color: $navigation-color-hover;
+                        }
+
+                        &.rn_SelectedTab {
+                            color: $navigation-color-hover;
+                            border: 1px solid $navigation-background;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rn_SearchBar {
+            $search-button-size: 30px;
+            $navigation-search-background: lighten($navigation-background, 10);
+            $navigation-search-border: 1px solid darken($navigation-background, 5);
+            @include span-columns(3);
+            line-height: $navigation-height;
+
+            ::-webkit-input-placeholder {
+                color: $input-color;
+            }
+
+            ::-moz-placeholder {
+                color: $input-color;
+                opacity: 1;
+            }
+
+            :-ms-input-placeholder {
+                color: $input-color;
+            }
+
+            @include media($rn-large) {
+                @include span-columns(12);
+                background: #505050;
+                border-bottom: 1px solid darken($navigation-background, 10);
+                padding: 0 1em;
+            }
+
+            input[type="search"] {
+                background: $navigation-search-background;
+                border: $navigation-search-border;
+                color: $input-color;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                width: 100%;
+                height: $search-button-size + 6;
+            }
+
+            button,
+            button:active,
+            button:hover,
+            button:focus {
+                background: lighten($navigation-search-background, 6);
+                border: $navigation-search-border;
+                box-shadow: none;
+                color: $input-color;
+                font-size: small;
+                height: $search-button-size;
+                top: 3px;
+                right: 3px;
+                position: absolute;
+                width: $search-button-size;
+            }
+        }
+
+        .rn_LoginStatus {
+            @include span-columns(3);
+            float: right;
+            margin: 0;
+
+            @include media($rn-xlarge) {
+                width: auto;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+version: "1.11.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_input: unset
+  label_error: unset
+  label_max_attachment_limit: unset
+  label_min_required: unset
+  label_remove: unset
+  max_attachments: unset
+  min_required_attachments: unset
+  display_thumbnail: unset
+  max_thumbnail_height: unset
+  file_attach_icon_path:
+    name: rn:msg:ATTACH_FILE_ICON_LBL
+    description: rn:msg:ICON_USED_ATTACH_FILE_BUTTON_LBL
+    type: FILEPATH
+  label_cancel_button:
+    name: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    description: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+    type: STRING
+  label_file_attach:
+    name: rn:msg:ATTACH_FILE_BUTTON_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_ATTACH_FILE_BUTTON_LBL
+    default: rn:msg:ATTACH_FILE_CMD
+    type: STRING
+  label_dialog_title:
+    name: rn:msg:WINDOW_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_FILE_ATTACH_DIALOG_LBL
+    default: rn:msg:ATTACH_DOCUMENTS_LBL
+    type: STRING
+  label_wait_upload_finished:
+    name: rn:msg:MESSAGE_SHOW_WHEN_AN_UPLOAD_PROGRESS_LBL
+    description: rn:msg:TH_MESSAGE_DISPLAYED_UPLOAD_PROGRESS_LBL
+    default: rn:msg:UPLOAD_IN_PROGRESS_MSG
+    type: STRING
+  position_during_upload:
+    name: rn:msg:POSITION_DURING_UPLOAD_LBL
+    description: rn:msg:POSITION_FILE_ATTACH_DIALOG_FILE_MSG
+    default: bottom-right
+    type: OPTION
+    options:
+    - top-left
+    - top-right
+    - bottom-left
+    - bottom-right
+    - center
+  label_tooltip:
+    name: rn:msg:TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_ATTACH_MSG
+    default: rn:msg:ATTACH_A_FILE_TO_THE_TRANSCRIPT_LBL
+    type: STRING
+extends:
+  widget: standard/input/FileAttachmentUpload
+  versions: ["1.12"]
+  components: [php, view, js]
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_LAUNCH_CHAT_FILE_ATTACH_MSG

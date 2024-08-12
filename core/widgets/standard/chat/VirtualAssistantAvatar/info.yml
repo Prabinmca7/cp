@@ -1,0 +1,19 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  default_va_avatar:
+    name: rn:msg:DEFAULT_EMOTION_AVATAR_LBL
+    description: rn:msg:DEF_EMOTION_WIDGET_LOADED_VIRTUAL_MSG
+    type: STRING
+    default: listen
+  default_chat_avatar:
+    name: rn:msg:DEFAULT_CHAT_AVATAR_LBL
+    description: rn:msg:DEF_IMG_VIRTUAL_ASST_PARTICIPANT_MSG
+    type: STRING
+    default: chat_default
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISP_VIRTUAL_ASSISTANTS_MSG

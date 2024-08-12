@@ -1,0 +1,24 @@
+@import 'widget-includes';
+
+.rn_SiteFeedbackDialog {
+    width: 375px;
+}
+
+.rn_SiteFeedbackForm label {
+    clear: left;
+    display: block;
+}
+
+.rn_SiteFeedbackForm .rn_EmailField {
+    clear: left;
+    display: block;
+    margin-bottom: 1em;
+    width: 340px;
+}
+
+.rn_SiteFeedbackForm .rn_Textarea {
+    clear: left;
+    display: block;
+    margin-bottom: 1em;
+    width: 340px;
+}

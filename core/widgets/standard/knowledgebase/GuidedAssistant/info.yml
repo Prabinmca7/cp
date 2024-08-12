@@ -1,0 +1,72 @@
+version: "1.8.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  guide_request_ajax:
+    name: rn:msg:GUIDE_REQUEST_AJAX_LBL
+    type: ajax
+    description: rn:msg:DEFINES_AJAX_ENDPOINT_SUB_GUIDE_MSG
+    default: /ci/ajax/widget
+  static_guide_id:
+    name: rn:msg:GUIDE_ID_LBL
+    description: rn:msg:ID_GUIDE_DISP_TAKES_PRECEDENCE_G_ID_MSG
+    type: INT
+  label_question_back:
+    name: rn:msg:LABEL_QUESTION_BACK_LBL
+    description: rn:msg:LABEL_DISP_QUEST_BTN_SNGL_QUEST_MSG
+    default: rn:msg:GO_BACK_TO_PREVIOUS_QUESTION_CMD
+    type: STRING
+  label_start_over:
+    name: rn:msg:LABEL_START_OVER_LBL
+    description: rn:msg:LABEL_DISP_ST_BTN_SNGL_QUEST_DISP_MSG
+    default: rn:msg:START_OVER_UC_LBL
+    type: STRING
+  label_answer_result:
+    name: rn:msg:LABEL_ANSWER_RESULT_LBL
+    description: rn:msg:LABEL_DISPLAY_ANSWER_RESPONSE_LBL
+    default: rn:msg:PLEASE_CONSULT_FOLLOWING_INFO_MSG
+    type: STRING
+  label_text_result:
+    name: rn:msg:LABEL_TEXT_RESULT_LBL
+    description: rn:msg:LABEL_DISP_TXT_EXPLANATION_CONTENT_LBL
+    type: STRING
+  popup_window_url:
+    name: rn:msg:POPUP_WINDOW_URL_LBL
+    description: rn:msg:URL_PG_CONTAINING_INST_WIDGET_DISP_MSG
+    type: STRING
+  label_popup_launch_button:
+    name: rn:msg:LABEL_POPUP_LAUNCH_BUTTON_LBL
+    description: rn:msg:LABEL_DISP_BTN_OPENS_PG_POPUP_LBL
+    default: rn:msg:LAUNCH_THE_TROUBLESHOOTER_CMD
+    type: STRING
+  label_text_response_button:
+    name: rn:msg:LABEL_TEXT_RESPONSE_BUTTON_LBL
+    description: rn:msg:LABEL_DISP_SUBMIT_BTN_APPEARS_TXT_LBL
+    default: rn:msg:OK_LBL
+    type: STRING
+  single_question_display:
+    name: rn:msg:SINGLE_QUESTION_DISPLAY_LBL
+    description: rn:msg:SET_TRUE_QS_DISPLAYED_T_PREV_QS_MSG
+    type: BOOLEAN
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:SPECIFIES_TARG_ATTRIB_RESP_ASSOC_LBL
+    type: STRING
+  call_url_new_window:
+    name: rn:msg:CALL_URL_NEW_WINDOW_LBL
+    description: rn:msg:SPECIFIES_URLS_TYPE_INLINE_GUIDE_MSG
+    type: BOOLEAN
+info:
+  category:
+    - Knowledge Foundation
+  description: rn:msg:WIDGET_DISP_GDD_ASST_GUIDE_ASSOC_MSG
+  urlParameters:
+    a_id:
+      name: rn:msg:ANSWER_ID_LBL
+      description: rn:msg:ANS_ID_ANS_DISPLAY_ASSOC_GUIDE_LBL
+      example: a_id/7
+    g_id:
+      name: rn:msg:GUIDE_ID_LBL
+      description: rn:msg:GUIDE_GUIDE_ASSOCIATED_ANSWER_A_ID_MSG
+      example: g_id/27

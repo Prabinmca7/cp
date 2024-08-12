@@ -1,0 +1,4 @@
+{
+    "CP.ServiceRetryable.Enable" : "false",
+    "CP.ServiceRetryable.NextRequestAfter" : "5000"
+}

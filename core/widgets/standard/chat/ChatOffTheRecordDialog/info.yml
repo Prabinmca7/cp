@@ -1,0 +1,29 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [event-valuechange, event-key]
+attributes:
+  label_cancel_button:
+    name: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    description: rn:msg:LABEL_FOR_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+    type: STRING
+  label_send_button:
+    name: rn:msg:CHAT_SEND_BUTTON_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_SEND_BUTTON_LBL
+    default: rn:msg:RNW_SEND_CMD
+    type: STRING
+  label_window_title:
+    name: rn:msg:WINDOW_TITLE_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_RECORD_DIALOG_LBL
+    default: rn:msg:OFF_THE_RECORD_MESSAGE_LBL
+    type: STRING
+extends:
+  widget: standard/chat/ChatPostMessage
+  versions: ["1.3"]
+  components: js
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_DISPLAYED_POSTING_REC_MSG_MSG

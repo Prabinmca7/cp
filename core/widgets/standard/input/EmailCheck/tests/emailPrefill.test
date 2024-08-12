@@ -1,0 +1,17 @@
+input: <rn:widget path='standard/input/EmailCheck'/>
+jstestfile: base.test.js
+removecontent: true
+session: {"previouslySeenEmail":"bananas@banana.ape"}
+output:
+<div id="rn_EmailCheck_0" class="rn_EmailCheck">
+    <form onsubmit="return false;">
+        <span class="rn_EmailCheckField">
+            <label for="rn_EmailCheck_0_Email" class="rn_Label">Email Address</label>
+            <input type="email" id="rn_EmailCheck_0_Email" class="rn_Text" value="bananas@banana.ape"/>
+        </span>
+        <span class="rn_EmailCheckSubmit">
+                        <input type="submit" id="rn_EmailCheck_0_Submit" value="Continue..."/>
+                        <img id="rn_EmailCheck_0_LoadingIcon" class="rn_Hidden" alt="Loading" src="images/indicator.gif" />
+                    </span>
+    </form>
+</div>

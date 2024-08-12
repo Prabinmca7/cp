@@ -1,0 +1,159 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  get_okcs_data_ajax:
+    name: rn:msg:AJAX_ENDPOINT_FOR_OKCS_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_TO_GET_DET_OF_IM_LBL
+    default: /ci/okcsAjaxRequest/getOkcsData
+  view_type:
+    name: rn:msg:DISPLAY_VIEW_TYPE_CMD
+    type: OPTION
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DSPLYNLN_NC_TTCH_LBLNW_TTRB_TTCH_TB_WNDW_MSG), 'explorer', 'inline', 'inline')
+    default: explorer
+    options:
+    - inline
+    - explorer
+  display_metadata:
+    name: rn:msg:DISPLAY_METADATA_OF_CONTENT_CMD
+    type: BOOLEAN
+    description: rn:msg:SHOWS_OR_HIDES_METADATA_DOC_ID_LBL
+    default: true
+  metadata_position:
+    name: rn:msg:POSITION_OF_METADATA_IN_CONTENT_LBL
+    type: OPTION
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(DSPLYNLN_MTDT_DSP_MTDT_BF_MTDT_TT_CNTNT_MSG), 'top', 'bottom')
+    default: top
+    options:
+    - top
+    - bottom
+  truncate_size:
+    name: rn:msg:TRUNCATE_SIZE_LBL
+    type: INT
+    description: rn:msg:NUM_OF_CHARS_TO_TRUNCATE_THE_RES_MSG
+    default: 200
+    min: 1
+  answer_detail_url:
+    name: rn:msg:ANSWER_DETAIL_PAGE_URL_LBL
+    type: STRING
+    description: rn:msg:SPECIFIES_THE_URL_USED_TO_DISP_DET_LBL
+    default: rn:php:\RightNow\Utils\Config::getConfig(CP_ANSWERS_DETAIL_URL)
+  label_close_answer:
+    name: rn:msg:CLOSE_CONTENT_BUTTON_LABEL_CMD
+    description: rn:msg:TXTTO_DISP_ON_THE_BTN_FOR_CLOSING_MSG
+    type: STRING
+    default: rn:msg:BACK_TO_RESULTS_CMD
+  label_doc_id:
+    name: rn:msg:DOC_ID_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DOC_ONLY_USED_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:DOCUMENT_ID_LBL
+  label_version:
+    name: rn:msg:VERSION_LBL
+    type: STRING
+    description: rn:msg:LABEL_VERSION_ONLY_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:VERSION_LBL
+  label_status:
+    name: rn:msg:STATUS_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_STATUS_ONLY_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:STATUS_LBL
+  label_published_date:
+    name: rn:msg:PUBLISHED_DATE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_PUBLISHED_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:PUBLISHED_DATE_LBL
+  label_published:
+    name: rn:msg:PUBLISHED_LBL
+    type: STRING
+    description: rn:msg:PUBLISHED_DOCUMENT_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:PUBLISHED_LBL
+  label_draft:
+    name: rn:msg:DRAFT_LBL
+    type: STRING
+    description: rn:msg:UNPUBLISHED_DOCUMENT_DISPLAYINLINE_TRUE_MSG
+    default: rn:msg:DRAFT_LBL
+  label_new_tab:
+    name: rn:msg:NEW_TAB_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_BTN_TO_OPEN_DOCS_IN_A_MSG
+    default: rn:msg:OPEN_IN_NEW_TAB_CMD
+  label_not_available:
+    name: rn:msg:NOT_AVAIL_LBL
+    type: STRING
+    description: rn:msg:TITLE_DISP_LONGER_AVAILABLE_DISPLAY_LBL
+    default: rn:msg:NOT_AVAIL_LBL
+  label_answer_not_available_message:
+    name: rn:msg:ANSWER_IS_NO_LONGER_AVAILABLE_MSG
+    type: STRING
+    description: rn:msg:DISPLAYED_LONGER_AVAILABLE_DISPLAY_LBL
+    default: rn:msg:ANSWER_IS_NO_LONGER_AVAILABLE_MSG
+  label_permission_denied:
+    name: rn:msg:PERMISSION_DENIED_LBL
+    type: STRING
+    description: rn:msg:TITLE_DISPLAYED_S_PERMISSIONS_DOCUMENT_LBL
+    default: rn:msg:PERMISSION_DENIED_LBL
+  label_no_access_message:
+    name: rn:msg:NO_ACCESS_PERMISSION_MSG
+    type: STRING
+    description: rn:msg:DISPLAYED_S_PERMISSIONS_DOCUMENT_LBL
+    default: rn:msg:NO_ACCESS_PERMISSION_MSG
+  label_aggregate_rating:
+    name: rn:msg:AGGREGATE_RATING_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_AGGREGATE_RATING_LBL
+    default: rn:msg:AGGREGATE_RATING_LBL
+  label_owner:
+    name: rn:msg:OWNER_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_OWNER_LBL
+    default: rn:msg:OWNER_LBL
+  label_answer_id:
+    name: rn:msg:ANSWER_ID_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_ANSWER_ID_LBL
+    default: rn:msg:ANSWER_ID_LBL
+  label_last_modifier:
+    name: rn:msg:LAST_MODIFIER_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_LAST_MODIFIER_LBL
+    default: rn:msg:LAST_MODIFIER_LBL
+  label_last_modified:
+    name: rn:msg:LAST_MODIFIED_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_LAST_MODIFIED_LBL
+    default: rn:msg:LAST_MODIFIED_LBL
+  label_creator:
+    name: rn:msg:CREATOR_LBL
+    type: STRING
+    description: rn:msg:LABEL_FOR_THE_CREATOR_LBL
+    default: rn:msg:CREATOR_LBL
+  display_media_inline:
+    name: rn:msg:DISPLAY_MEDIA_INLINE_LBL
+    type: BOOLEAN
+    description: rn:msg:ID_VD_TTCH_SUPPORTEDFORMATSMEDNLN_TTRBT_MSG
+    default: false
+  supported_formats_media_inline:
+    name: rn:msg:SUPPORTED_FORMATS_L_MEDIA_INLINE_LBL
+    type: STRING
+    description: rn:msg:DISPLAYMEDIA_FMT_IMG_VD_DSP_SPP_BRWSR_MSG
+    default: IMAGE=png,jpeg,gif,jpg|AUDIO=mp3|VIDEO=mpeg,mpg,mpe,mp4
+  custom_metadata:
+    name: rn:msg:CUSTOM_METADATA_LBL
+    type: STRING
+    description: rn:msg:MT_DT_DSP_DT_NM_PP_CHR_NM_VRS_CCT_DSPLYD_MSG
+    default: document_id|version|status|display_date
+  dnc_label_cancel_button: unset
+  dnc_label_banner: unset
+  dnc_label_dialog_title: unset
+  dnc_redirect_url: unset
+  label_download_attachment: unset
+  label_view_guide: unset
+extends:
+  widget: standard/input/SmartAssistantDialog
+  versions: ["3.3"]
+  components: [php, view, js, css]
+info:
+  description: rn:msg:T_XTNS_NPTSMRTSSSTNTDLG_KCS_SGG_CRT_SBMS_MSG

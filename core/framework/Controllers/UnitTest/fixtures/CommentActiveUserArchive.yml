@@ -1,0 +1,8 @@
+type: CommunityComment
+object:
+  CreatedByCommunityUser:
+    fixture: UserArchive
+  Body: Comment by an archived user.
+  StatusWithType.Status.LookupName: Active
+  BodyContentType.LookupName: text/x-markdown
+

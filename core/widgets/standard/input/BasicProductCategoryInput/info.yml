@@ -1,0 +1,44 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - none
+info:
+  description: rn:msg:WIDGET_DISP_BASIC_DROPDOWN_MENU_MSG
+attributes:
+  show_confirm_button_in_dialog: unset
+  required_lvl: unset
+  max_lvl: unset
+  set_button: unset
+  label_set_button: unset
+  label_cancel_button: unset
+  label_confirm_button: unset
+  always_show_hint: unset
+  label_all_values:
+    name: rn:msg:ALL_VALUES_LABEL_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LABEL_INDICATE_VAL_SEL_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(ALL_CATEGORIES_LBL))
+    default: --
+  display_ancestors:
+    name: rn:msg:DISPLAY_ANCESTORS_CMD
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_PROD_CAT_ANCESTOR_DISP_MSG
+  hint_separator:
+    name: rn:msg:HINT_SEPARATOR_LBL
+    type: string
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(CHAR_STRING_SEPARATE_PCT_S_TXT_PCT_MSG), 'label_input', 'hint')
+    default: ' - '
+  read_only:
+    name: rn:msg:READ_ONLY_LBL
+    type: BOOLEAN
+    description: rn:msg:DISP_SEL_VAL_HIDDEN_INPUT_SUBMITTED_MSG
+  required:
+    name: rn:msg:REQUIRED_LBL
+    type: boolean
+    description: rn:msg:SET_TRUE_PRODUCT_CAT_SELECTED_MSG
+extends:
+  widget: standard/input/ProductCategoryInput
+  versions: ["2.3"]
+  components:
+  - php
+  overrideViewAndLogic: true

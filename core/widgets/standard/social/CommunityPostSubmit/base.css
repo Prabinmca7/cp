@@ -1,0 +1,11 @@
+.rn_CommunityPostSubmit .rn_HintBox {
+    border:1px solid #DBDBDB;
+    max-width:200px;
+    padding:4px 16px 2px;
+    word-wrap:break-word;
+}
+.rn_CommunityPostSubmit .rn_HintBox.rn_AlwaysVisibleHint {
+    max-width:300px;
+    opacity:1;
+    z-index:0;
+}

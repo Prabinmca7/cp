@@ -1,0 +1,148 @@
+1.8.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.7.1:
+  release: "23.2"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: Bug Fix
+    changelogID: 783
+    date: 12/05/2022
+    description: Fixes for captcha validation before initiating chat session
+    details:
+    - When ChatLaunchButton widget attribute challenge_required is set to true, user
+      should complete captcha challenge. Fixes made in ChatLaunchButton widget to
+      validate if captcha challenge is required to be completed by user before initiating
+      chat.
+    level: nano
+    refno: 220210-000002
+    sortPosition: Middle
+1.6.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 695
+    date: 03/27/2018
+    description: Parent widget FormSubmit was minor bumped
+    details:
+    - In widget FileAttachmentUpload, added the form token as a salt to the local
+      name (or tmp\_name) of the file to be uploaded and validate it in form submit.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+1.5.1:
+  release: "16.11"
+  entries:
+  - account: ben.darling
+    category: Bug Fix
+    changelogID: 515
+    date: 06/06/2016
+    description: Changing default value of `enable_scrollbars` to true
+    details:
+    - The default value of `enable_scrollbars` is changing to true. When the value
+      is true, scroll bars will display in the chat window if necessary when all elements
+      do not fit on the page.
+    level: minor
+    refno: 160317-000099
+    sortPosition: Middle
+1.4.1:
+  release: "15.11"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 375
+    date: 10/13/2015
+    description: Removed `label_form_header` atttribute from ChatLaunchButton widget
+    details:
+    - The `label_form_header` attribute has been removed from the chat/ChatLaunchButton
+      widget, as it is not being used.
+    level: minor
+    refno: 150625-000022
+    sortPosition: Middle
+1.3.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 304
+    date: 05/11/2015
+    description: Forced minor bump due to parent FormSubmit changes
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.2.1:
+  release: "14.2"
+  entries:
+  - account: tlivengood
+    category: API Change
+    changelogID: 175
+    date: 10/21/2013
+    description: Incorporate the new Form `collect` event for Dynamic Forms Enablement
+    details:
+    - As part of the new Dynamic Forms Enablement API improvements, the Form module
+      has been changed to fire a new `collect` event prior to a form submission to
+      gather only the visible fields from the Form. Any widgets which extend from
+      this widget and alter the form submission behavior should replace their previous
+      `submit` event usages with the new `collect` event.
+    level: minor
+    refno: 131010-000113
+    sortPosition: Middle
+1.1.1:
+  release: "13.11"
+  entries:
+  - account: ldavison
+    category: API Change
+    changelogID: 141
+    date: 10/09/2013
+    description: Removes contact profile data from the widget controller
+    details:
+    - The widget now pulls contact profile data from the framework using JavaScript
+      rather than having the data exposed through the widget controller.php file.
+    level: minor
+    refno: 130513-000052
+    sortPosition: Middle
+  - account: jlindh
+    category: New Feature
+    changelogID: 140
+    date: 10/09/2013
+    description: Passes referrer URL to the chat server
+    level: nano
+    refno: 130222-000034
+    sortPosition: Middle
+1.0.2:
+  release: "13.5"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 59
+    date: 04/29/2013
+    description: Widget now works with both versions 1.0 and 1.1 of the FormSubmit
+      widget
+    level: nano
+    refno: 121224-000013
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

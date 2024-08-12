@@ -1,0 +1,27 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  cancel_icon_path:
+    name: rn:msg:CANCEL_ICON_CMD
+    description: rn:msg:ICON_USED_ON_THE_CANCEL_BUTTON_LBL
+    type: FILEPATH
+  label_cancel:
+    name: rn:msg:CHAT_CANCEL_BUTTON_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAY_CANCEL_BUTTON_LBL
+    default: rn:msg:LEAVE_CMD
+    type: STRING
+  label_tooltip:
+    name: rn:msg:TOOLTIP_LBL
+    description: rn:msg:MSG_DISPLAYED_TOOLTIP_MOUSES_DISCON_MSG
+    default: rn:msg:TERMINATE_THE_CHAT_REQUEST_CMD
+    type: STRING
+  canceling_url:
+    name: rn:msg:CANCELING_URL_MSG
+    description: rn:msg:SPECIFIES_URL_PG_LOADED_END_CANCELS_MSG
+    type: STRING
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_USED_CANCEL_CHAT_REQUESTS_LBL

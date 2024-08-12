@@ -1,0 +1,17 @@
+input:
+<rn:condition answers_viewed="1"/>
+Pass
+<rn:condition_else>
+Fail
+</rn:condition>
+
+<rn:condition answers_viewed="2"/>
+Pass
+<rn:condition_else>
+Fail
+</rn:condition>
+removecontent: true
+urlparameters: /a_id/1
+output:
+Pass
+Fail

@@ -1,0 +1,21 @@
+<rn:block id="systemMessageTop"/>
+<span class="rn_MessagePost">
+<% if(attrs.alert_icon_path){ %>
+    <rn:block id="preSystemMessageIcon"/>
+    <img alt="" src="<%= attrs.alert_icon_path %>"/>
+    <rn:block id="postSystemMessageIcon"/>
+<% } 
+for(var i=0; i<messages.length; i++) {
+    if(i == 0 && context && context.isUserDisconnect && context.reason !== 'IDLE_TIMEOUT'){ %>
+        <span class="rn_UserTextPrefix">
+<%  } else if(i == 0) { %>
+        <span class="rn_Action">
+<%  } %>
+    <%= messages[i] %>
+<% if(i == 0) {%>
+    </span>
+<% }
+} %>
+<br/>
+</span>
+<rn:block id="systemMessageBottom"/>

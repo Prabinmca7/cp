@@ -1,0 +1,10 @@
+input: <rn:widget path='standard/utils/PageSetSelector'/>
+filter: @expires=.*?;'@
+removecontent: true
+template: mobile
+output:
+<span id="rn_PageSetSelector_0" class="rn_PageSetSelector">
+    View site in:                        <span class="rn_Bold">Desktop</span>
+                <span class="rn_PageSetDivider">|</span>                        <a href="/ci/redirect/pageSet/mobile/unitTest/rendering/widgets/standard/utils/PageSetSelector/tests/mobileBase">Mobile</a>
+                <span class="rn_PageSetDivider">|</span>                        <a href="/ci/redirect/pageSet/basic/unitTest/rendering/widgets/standard/utils/PageSetSelector/tests/mobileBase">Basic</a>
+                    </span>

@@ -1,0 +1,13 @@
+@import 'widget-includes';
+
+.rn_RecentlyViewedContent {
+    li {
+        &.rn_SocialQuestionItem {
+            @include list-socialquestion-icon;
+        }
+
+        &.rn_AnswerContentItem {
+            @include list-kbanswer-icon;
+        }
+    }
+}

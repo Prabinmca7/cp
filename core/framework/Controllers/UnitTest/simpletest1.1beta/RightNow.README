@@ -1,0 +1,3 @@
+This code does not ship with the product.  It is only used in development.
+
+When we were preparing to upgrade to PHP 5.3, my testing found that simpletest somehow caused PHP to code dump in the garbage collector.  I had no real desire to find that bug and submit it to PHP, so I went looking for an updated version of simpletest.  Simpltest.org has released nothing since 2008.  However, I found that the simpletest developers have given a development dump to the guys who do QCubed.  The latter have been including the dump in their releases.  So I downloaded http://qcu.be/files/releases/qcubed-2.0.0.zip and checked in the simpletest from there as simpletest1.1beta.

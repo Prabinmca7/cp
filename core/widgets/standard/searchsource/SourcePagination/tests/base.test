@@ -1,0 +1,19 @@
+input: <rn:widget path="standard/searchsource/SourcePagination" source_id="KFSearch"/>
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/phone
+output:
+<div id="rn_SourcePagination_0" class="rn_SourcePagination">
+    <div class="rn_PaginationLinks" role="navigation" aria-label="Result pages">
+        <ul>
+                                                                                                                                                    <li class="rn_CurrentPage"><span tabindex="0" title="Page 1 of 2 selected" aria-label="Page 1 of 2 selected">1</span></li>
+                                                                                                                                            <li><a data-rel="2" href="/app/unitTest/rendering/widgets/standard/searchsource/SourcePagination/tests/base/kw/phone/page/2" title="Page 2 of 2" aria-label="Page 2 of 2">2</a></li>
+                                                                                                <li class="rn_NextPage">
+                    <span>
+                        <a data-rel="next" href="/app/unitTest/rendering/widgets/standard/searchsource/SourcePagination/tests/base/kw/phone/page/2" data-pageid="2">
+                            Next                        </a>
+                    </span>
+                </li>
+                    </ul>
+    </div>
+</div>

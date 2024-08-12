@@ -1,0 +1,40 @@
+<div class="rn_RecommendationMetaData">
+    <div class="rn_RecommendationsField rn_RecommendationStatus">
+        <section>
+            <h2 class="rn_Hidden"><%= attrs.label_status %></h2>
+            <span class="rn_Info rn_Bold"><%= attrs.label_status %></span>
+            <span><%= notificationView.status %></span>
+        </section>
+    </div>
+    <div class="rn_RecommendationsField rn_RecommendationDateAdded">
+        <section>
+            <h2 class="rn_Hidden"><%= attrs.label_recommend_posted %></h2>
+            <span class="rn_Info rn_Bold"><%= attrs.label_recommend_posted %></span>
+            <span><%= notificationView.dateAdded %></span>
+        </section>
+    </div>
+    <div class="rn_RecommendationsField rn_RecommendationRequestedBy">
+        <section>
+            <h2 class="rn_Hidden"><%= attrs.label_requested_by %></h2>
+            <span class="rn_Info rn_Bold"><%= attrs.label_requested_by %></span>
+            <span><%= notificationView.requestedByUserName %></span>
+        </section>
+    </div>
+</div>
+<div class="rn_SectionTitle"></div>
+<div class="rn_RecommendationsField">
+<h2 class="rn_Hidden"><%= attrs.label_recommendation %></h2>
+<span class="rn_Info rn_Bold"><%= attrs.label_recommendation %></span>
+</div>
+<div class="rn_RecommendationContent">
+    <p><%= notificationView.comments %></p>
+</div>
+<% if (notificationView.fileName) { %>
+    <div class="rn_RecommendationsField">
+        <span class="rn_Info rn_Bold"><%= attrs.label_attachment %></span>
+    </div>
+    <div class="rn_RecommendationContent">
+        <a target='_blank' href="/ci/okcsFattach/getRecommAttachment/<%= notificationView.recordId %>"><%= notificationView.fileName %></a>
+    </div>
+<% } %>
+

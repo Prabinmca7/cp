@@ -1,0 +1,7 @@
+type: CommunityUser
+object:
+  DisplayName: moderator
+  StatusWithType.Status.LookupName: Suspended
+  Contact:
+    fixture: ContactModSuspended
+  moderatorType: moderator

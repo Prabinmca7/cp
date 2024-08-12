@@ -1,0 +1,23 @@
+input: <rn:widget path='standard/feedback/SiteFeedback'/>
+jstestfile: base.test.js
+removecontent: true
+session: {"previouslySeenEmail":"bananas@banana.ape"}
+output:
+<div id="rn_SiteFeedback_0" class="rn_SiteFeedback">
+        <a id="rn_SiteFeedback_0_FeedbackLink" href="javascript:void(0);">Give Feedback</a>
+        <div class="rn_Hidden">
+        <div id="rn_SiteFeedback_0_SiteFeedbackForm" class="rn_SiteFeedbackForm">
+            <div id="rn_SiteFeedback_0_ErrorMessage"></div>
+            <form>
+                            <label for="rn_SiteFeedback_0_EmailInput">
+                    Email                    <span class="rn_Required" aria-label="Required">
+    *</span>                </label>
+                <input id="rn_SiteFeedback_0_EmailInput" class="rn_EmailField" type="text" value="bananas@banana.ape"/>
+                        <label for="rn_SiteFeedback_0_FeedbackTextarea">
+                Your Feedback                <span class="rn_Required" aria-label="Required">
+    *</span>            </label>
+            <textarea id="rn_SiteFeedback_0_FeedbackTextarea" name="rn_SiteFeedback_0_FeedbackTextarea" class="rn_Textarea" rows="4" cols="60"></textarea>
+            </form>
+        </div>
+            </div>
+</div>

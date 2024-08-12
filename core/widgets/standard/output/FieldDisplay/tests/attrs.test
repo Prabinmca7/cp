@@ -1,0 +1,9 @@
+input: <rn:widget path='standard/output/FieldDisplay' name='answers.summary' highlight='true' label='this label' left_justify='true'/>
+removecontent: true
+urlparameters: /a_id/1/kw/address
+output:
+<div  id="rn_FieldDisplay_0" class="rn_FieldDisplay rn_Output">
+            <span class="rn_DataLabel">this label </span>
+        <div class="rn_DataValue rn_LeftJustify">
+        How do I change my <em class='rn_Highlight'>address</em>?    </div>
+</div>

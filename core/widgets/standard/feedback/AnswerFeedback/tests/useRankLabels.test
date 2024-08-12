@@ -1,0 +1,15 @@
+input: <rn:widget path="standard/feedback/AnswerFeedback" options_count="5" use_rank_labels="true"/>
+removecontent: true
+output:
+<div id="rn_AnswerFeedback_0" class="rn_AnswerFeedback">
+    <div id="rn_AnswerFeedback_0_AnswerFeedbackControl" class="rn_AnswerFeedbackControl">
+                    <h2 class="rn_Title">Was this answer helpful?</h2>
+                            <div id="rn_AnswerFeedback_0_RatingButtons" class="rn_RatingButtons">
+                        <button id="rn_AnswerFeedback_0_RatingButton_1" type="button">0%</button>
+                    <button id="rn_AnswerFeedback_0_RatingButton_2" type="button">25%</button>
+                    <button id="rn_AnswerFeedback_0_RatingButton_3" type="button">50%</button>
+                    <button id="rn_AnswerFeedback_0_RatingButton_4" type="button">75%</button>
+                    <button id="rn_AnswerFeedback_0_RatingButton_5" type="button">100%</button>
+            </div>
+            </div>
+</div>

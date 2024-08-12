@@ -1,0 +1,56 @@
+.rn_OkcsAnswerNotificationManager{
+    overflow-x:auto;
+    overflow-y:hidden;
+    /*IE6/7*/
+    *padding-bottom:10px;
+}
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table{
+    border:1px solid #888;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table th, 
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table td {
+    padding:4px 10px 4px 6px;
+}
+
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table th,
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table th a, 
+.rn_OkcsAnswerNotificationManager .yui3-datatable-table th a:hover {
+    color:#000;
+    font-weight:normal;
+    text-decoration:none;
+    vertical-align:bottom;
+}
+
+.rn_OkcsAnswerNotificationManager .yui3-datatable-sortable-column {
+    cursor:pointer;
+}
+
+.rn_OkcsAnswerNotificationManager .yui3-datatable-sort-indicator:before {
+    padding-left: 8px;
+    font-family: 'FontAwesome';
+    margin-right: 6px;
+    content: "\f0dc";
+}
+
+.rn_OkcsAnswerNotificationManager .rn_Notification {
+    overflow:auto;
+    /**IE6/7*/
+    *overflow:none;
+    padding:8px 0;
+    width:80%;
+}
+.rn_OkcsAnswerNotificationManager .rn_Notification_Actions {
+    float:right;
+    width:34%;
+}
+.rn_OkcsAnswerNotificationManager .rn_Notification_Info {
+    float:left;
+    overflow:hidden;
+    width:62%;
+}
+.rn_OkcsAnswerNotificationManager .rn_Notification_Info span {
+    display:block;
+}

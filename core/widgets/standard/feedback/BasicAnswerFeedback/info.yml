@@ -1,0 +1,51 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [none]
+info:
+  category:
+    - Basic
+    - Knowledge Foundation
+  description: rn:msg:WIDGET_EXTENSION_STD_ANSWERFEEDBACK_MSG
+  urlParameters:
+    a_id:
+      name: rn:msg:ANS_ID_LBL
+      description: rn:msg:ANSWER_ID_WHICH_ASSOCIATE_FEEDBACK_LBL
+      example: a_id/3
+attributes:
+  submit_rating_ajax: unset
+  submit_feedback_ajax: unset
+  label_dialog_title: unset
+  label_dialog_description: unset
+  feedback_page_url: unset
+  dialog_threshold: unset
+  label_feedback_submitted: unset
+  label_email_address: unset
+  label_comment_box: unset
+  label_send_button: unset
+  label_cancel_button: unset
+  use_rank_labels: unset
+  threshold:
+    name: rn:msg:THRESHOLD_LBL
+    type: int
+    description: rn:msg:RATING_LVL_ADDTL_FORM_DISP_ADDTL_MSG
+    default: 1
+    min: 0
+  post_request_handler:
+    name: rn:msg:POST_REQUEST_HANDLER_FUNCTION_LBL
+    type: string
+    description: rn:msg:SETS_LIB_HANDLER_FUNC_INVOKED_MSG
+    default: postRequest/submitAnswerRating
+  label_submit_button:
+    name: rn:msg:LABEL_FOR_SUBMIT_FEEDBACK_BUTTON_LBL
+    type: string
+    description: rn:msg:LABEL_BTN_SUBMIT_FEEDBACK_RATING_MSG
+    default: rn:msg:SUBMIT_FEEDBACK_CMD
+extends:
+  widget: standard/feedback/AnswerFeedback
+  versions: ["1.7"]
+  components: [php]
+  overrideViewAndLogic: true
+contains:
+- widget: standard/input/BasicFormSubmit
+  versions: ["1.1"]

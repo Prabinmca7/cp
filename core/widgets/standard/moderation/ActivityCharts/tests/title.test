@@ -1,0 +1,8 @@
+input: <rn:widget path="moderation/ActivityCharts" chart_title_location="top" label_chart_title="New Social Users per Day (past 7 days)" object_types="CommunityUser" />
+contact: modactive1
+removecontent: true
+output:
+<div id="rn_ActivityCharts_0" class="rn_ActivityCharts">
+            <div class="rn_ChartTitle">New Social Users per Day (past 7 days)</div>
+        <div id="rn_ActivityCharts_0_CountChart" class="rn_CountChart"></div>
+    </div>

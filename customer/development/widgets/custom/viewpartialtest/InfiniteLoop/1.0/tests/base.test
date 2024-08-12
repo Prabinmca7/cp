@@ -1,0 +1,6 @@
+input: <rn:widget path="viewpartialtest/InfiniteLoop"/>
+removecontent: true
+output:
+<div id="view"><div id="partialA"><div id="partialB"></div>
+</div>
+</div>

@@ -1,0 +1,87 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [mobile]
+attributes:
+  report_id: unset
+  report_page_url: unset
+  label_nothing_selected: unset
+  search_results_url:
+    name: rn:msg:SEARCH_RESULTS_URL_CMD
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(IF_PCT_S_IS_ENABLED_THIS_ATTRIB_MSG), 'search_on_select')
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAMES_OFSRCH_SOURCES_TO_BE_USED_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  filter_type:
+    name: rn:msg:FILTER_TYPE_LBL
+    type: OPTION
+    description: rn:msg:FILTER_DISP_DROPDOWN_INFORMATION_LBL
+    default: Product
+    options:
+    - products
+    - categories
+    - Product
+    - Category
+  linking_off:
+    name: rn:msg:PROD_SLASH_CAT_LINKING_OFF_LBL
+    type: BOOLEAN
+    description: rn:msg:SET_TRUE_PROD_CAT_LINKING_DISABLED_MSG
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LBEL_DISP_INPUT_CTRL_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(FILTER_BY_CATEGORY_LBL))
+    default: rn:php:\RightNow\Utils\Config::getMessage(FILTER_BY_PRODUCT_LBL)
+  label_filter_type:
+    name: rn:msg:FILTER_TYPE_LABEL_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(FLTR_DSP_DROPDOWN_INFO_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(CATEGORIES_LBL))
+    default: rn:msg:PRODUCTS_LBL
+  label_prompt:
+    name: rn:msg:DIALOG_TITLE_LBL_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(TOP_SEL_L_DEF_FILTERTYPE_CATEGORIES_T_MSG), \RightNow\Utils\Config::getMessage(SELECT_A_CATEGORY_LBL))
+    default: rn:msg:SELECT_A_PRODUCT_LBL
+  label_parent_menu_alt:
+    name: rn:msg:PARENT_MENU_ALTERNATE_TEXT_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAYED_MENU_ITEMS_SUBMENUS_MSG
+    default: rn:msg:MORE_OPTIONS_LBL
+  label_all_values:
+    name: rn:msg:ALL_VALUES_LABEL_LBL
+    type: STRING
+    description: rn:php:sprintf(\RightNow\Utils\Config::getMessage(LBEL_INDICATE_FLTR_SEL_DEFS_PCT_S_MSG), \RightNow\Utils\Config::getMessage(ALL_CATEGORIES_LBL))
+    default: rn:msg:ALL_PRODUCTS_LBL
+  label_filter_remove:
+    name: rn:msg:REMOVE_FILTER_LABEL_CMD
+    type: STRING
+    description: rn:msg:ALT_TEXT_IMAGE_REMOVE_ICON_PATH_LBL
+    default: rn:msg:REMOVE_CMD
+  search_on_select:
+    name: rn:msg:SEARCH_ON_SELECTED_CMD
+    type: BOOLEAN
+    description: rn:msg:START_SEARCH_SOON_ITEM_IS_SELECTED_MSG
+extends:
+  widget: standard/search/ProductCategorySearchFilter
+  versions: ["2.2"]
+  components: [php]
+  overrideViewAndLogic: true
+info:
+  category:
+    - Source Search
+  description: rn:msg:WIDGET_DISP_PROD_S_CAT_FLTRS_LBL
+  urlParameters:
+    p:
+      name: rn:msg:PRODUCT_LBL
+      description: rn:msg:CMMA_SPARATED_IDS_COMMAS_DENOTING_MSG
+      example: "p/1,2,3"
+    c:
+      name: rn:msg:CATEGORY_LBL
+      description: rn:msg:COMMA_SEPARATED_IDS_COMMAS_DENOTING_MSG
+      example: "c/1"

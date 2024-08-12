@@ -1,0 +1,7 @@
+@import 'widget-includes';
+
+.rn_PrintPageLink {
+    a {
+        @include icon($fa-var-print);
+    }
+}

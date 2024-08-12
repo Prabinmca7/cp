@@ -1,0 +1,44 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    type: STRING
+    description: rn:msg:NAME_OFSRCH_SRC_TO_BE_USED_ONLY_1_MSG
+    required: true
+    options:
+    - OKCSBrowse
+    - OKCSSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  data_source:
+    name: rn:msg:DATA_SRC_LBL
+    type: STRING
+    description: rn:msg:TH_PT_DT_SRC_DT_RPT_SRCD_SRCD_KCSBRWS_DF_MSG
+    required: false
+    options:
+    - search
+    - authoring_content
+    - authoring_recommendations
+  per_page: unset
+  label_back: unset
+  label_forward: unset
+  label_page: unset
+  label_current_page: unset
+  label_next_page_link:
+    name: rn:msg:NEXT_PAGE_LINK_LABEL_LBL
+    type: STRING
+    description: rn:msg:TEXT_TO_BE_DISPLAYED_ON_NEXT_PAGE_LINK_MSG
+    default: rn:msg:NEXT_LBL
+  label_previous_page_link:
+    name: rn:msg:PREVIOUS_PAGE_LINK_LABEL_LBL
+    type: STRING
+    description: rn:msg:TEXT_BE_DISPLAYED_ON_PREVIOUS_PAGE_LINK_MSG
+    default: rn:msg:PREVIOUS_LBL
+extends:
+  widget: standard/searchsource/SourcePagination
+  versions: ["1.2"]
+  components: [php, js, view]
+info:
+  description: rn:msg:PAGINATION_WIDGET_IS_USED_TO_DISP_MSG

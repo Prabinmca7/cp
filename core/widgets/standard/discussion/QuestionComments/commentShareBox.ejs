@@ -1,0 +1,47 @@
+<div role="dialog" aria-labelledby="<%= id %>_PopupTitle">
+    <rn:block id="top"/>
+    <div id="<%= id %>_PopupTitle"><%= labels.title %></div>
+
+    <form>
+        <label for="<%= id %>_LinkCopy" class="rn_ScreenReaderOnly">
+        <%= labels.label %>
+        </label>
+        <rn:block id="preLinkCopyInput"/>
+        <input readonly="readonly" type="url" id="<%= id %>_LinkCopy"/>
+        <rn:block id="postLinkCopyInput"/>
+    </form>
+
+    <rn:block id="preShareLinks"/>
+    <ul class="rn_Inline rn_Group">
+        <rn:block id="facebookItem">
+        <li>
+            <a data-base-href="https://facebook.com/sharer.php?m2w&u=" href="#" target="_blank" class="rn_FacebookLink">
+                <span class="rn_ScreenReaderOnly"><%= labels.fb %></span>
+            </a>
+        </li>
+        </rn:block>
+        <rn:block id="twitterItem">
+        <li>
+            <a data-base-href="https://twitter.com/intent/tweet?text=" href="#" target="_blank" class="rn_TwitterLink">
+                <span class="rn_ScreenReaderOnly"><%= labels.twitter %></span>
+            </a>
+        </li>
+        </rn:block>
+        <rn:block id="linkedinItem">
+        <li>
+            <a data-base-href="https://www.linkedin.com/shareArticle?mini=true&amp;url=" href="#" target="_blank" class="rn_LinkedinLink">
+                <span class="rn_ScreenReaderOnly"><%= labels.linkedin %></span>
+            </a>
+        </li>
+        </rn:block>
+        <rn:block id="redditItem">
+        <li>
+            <a data-base-href="https://reddit.com/submit?url=" href="#" target="_blank" class="rn_RedditLink">
+                <span class="rn_ScreenReaderOnly"><%= labels.reddit %></span>
+            </a>
+        </li>
+        </rn:block>
+    </ul>
+    <rn:block id="postShareLinks"/>
+    <rn:block id="bottom"/>
+</div>

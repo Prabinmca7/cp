@@ -1,0 +1,5 @@
+input: <rn:widget path='standard/utils/PageSetSelector'/>
+config: CP_COOKIES_ENABLED|0
+filter: @expires=.*?;'@
+removecontent: true
+output: 

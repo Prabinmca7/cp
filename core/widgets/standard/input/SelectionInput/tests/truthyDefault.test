@@ -1,0 +1,49 @@
+input:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div>       <rn:widget path='standard/input/SelectionInput' name='Contact.CustomFields.c.optin' default_value="true"/>
+       <rn:widget path='standard/input/SelectionInput' name='Contact.CustomFields.c.yesno1' default_value="1"/>
+       <rn:widget path='standard/input/SelectionInput' name='Contact.CustomFields.c.optin' display_as_checkbox="true" default_value="true"/>
+       <rn:widget path='standard/input/SelectionInput' name='Contact.CustomFields.c.yesno1' display_as_checkbox="true" default_value="1"/>
+       </form>
+removecontent: true
+output:
+<form id='form' onsubmit="return false;"><div id="hereBeErrors"></div>       <div id="rn_SelectionInput_0" class="rn_SelectionInput rn_Input rn_Radio">
+            <fieldset>
+            <legend id="rn_SelectionInput_0_Label" class="rn_Label">
+                optin                            </legend>
+                    <input type="radio" name="Contact.CustomFields.c.optin" id="rn_SelectionInput_0_Contact.CustomFields.c.optin_1" checked="checked" value="1"/>
+            <label for="rn_SelectionInput_0_Contact.CustomFields.c.optin_1">
+            Yes                            <span class="rn_ScreenReaderOnly">hint for optin</span>
+                        </label>
+                    <input type="radio" name="Contact.CustomFields.c.optin" id="rn_SelectionInput_0_Contact.CustomFields.c.optin_0"  value="0"/>
+            <label for="rn_SelectionInput_0_Contact.CustomFields.c.optin_0">
+            No                        </label>
+                        </fieldset>
+    </div>
+       <div id="rn_SelectionInput_1" class="rn_SelectionInput rn_Input rn_Radio">
+            <fieldset>
+            <legend id="rn_SelectionInput_1_Label" class="rn_Label">
+                yesno1                            </legend>
+                    <input type="radio" name="Contact.CustomFields.c.yesno1" id="rn_SelectionInput_1_Contact.CustomFields.c.yesno1_1" checked="checked" value="1"/>
+            <label for="rn_SelectionInput_1_Contact.CustomFields.c.yesno1_1">
+            Yes                            <span class="rn_ScreenReaderOnly">hint for yesno1</span>
+                        </label>
+                    <input type="radio" name="Contact.CustomFields.c.yesno1" id="rn_SelectionInput_1_Contact.CustomFields.c.yesno1_0"  value="0"/>
+            <label for="rn_SelectionInput_1_Contact.CustomFields.c.yesno1_0">
+            No                        </label>
+                        </fieldset>
+    </div>
+       <div id="rn_SelectionInput_2" class="rn_SelectionInput rn_Input">
+    <div id="rn_SelectionInput_2_LabelContainer">
+        <label for="rn_SelectionInput_2_Contact.CustomFields.c.optin" id="rn_SelectionInput_2_Label" class="rn_Label">optin                            <span class="rn_ScreenReaderOnly">hint for optin</span>
+                </label>
+    </div>
+            <input type="checkbox" id="rn_SelectionInput_2_Contact.CustomFields.c.optin" name="Contact.CustomFields.c.optin" checked="checked" value="1"/>
+            </div>
+       <div id="rn_SelectionInput_3" class="rn_SelectionInput rn_Input">
+    <div id="rn_SelectionInput_3_LabelContainer">
+        <label for="rn_SelectionInput_3_Contact.CustomFields.c.yesno1" id="rn_SelectionInput_3_Label" class="rn_Label">yesno1                            <span class="rn_ScreenReaderOnly">hint for yesno1</span>
+                </label>
+    </div>
+            <input type="checkbox" id="rn_SelectionInput_3_Contact.CustomFields.c.yesno1" name="Contact.CustomFields.c.yesno1" checked="checked" value="1"/>
+            </div>
+       </form>

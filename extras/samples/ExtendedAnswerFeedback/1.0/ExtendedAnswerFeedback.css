@@ -1,0 +1,12 @@
+/**
+ * File: ExtendedAnswerFeedback.css
+ * Abstract: Provides styling for ExtendedAnswerFeedback widget
+ * Version: 1.0
+ */
+.rn_AnswerFeedbackForm .rn_FeedbackType {
+    margin-bottom: 10px;
+    padding: 0;
+}
+.rn_AnswerFeedbackForm .rn_FeedbackType input[type="radio"] {
+    margin: 4px 0;
+}

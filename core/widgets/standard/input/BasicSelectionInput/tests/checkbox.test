@@ -1,0 +1,13 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicSelectionInput" name="Incident.CustomFields.c.yesno1" required="true" display_as_checkbox="true" label_input="banana" hint="banana hint" default_value="1"/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+template: basic
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicSelectionInput/tests/checkbox"><div><div class="rn_BasicSelectionInput rn_SelectionInput rn_Input">
+            <label for="rn_BasicSelectionInput_0_Incident.CustomFields.c.yesno1" class="rn_Label">banana                        <span class="rn_Required" aria-label="Required">
+    *</span>                             -  banana hint                </label><br/>
+                <input type="checkbox" id="rn_BasicSelectionInput_0_Incident.CustomFields.c.yesno1" name="formData[Incident.CustomFields.c.yesno1]" checked="checked" value="1"/>
+    </div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='eyJJbmNpZGVudC5DdXN0b21GaWVsZHMuYy55ZXNubzEiOnsicmVxdWlyZWQiOnRydWUsImxhYmVscyI6eyJsYWJlbF9pbnB1dCI6ImJhbmFuYSJ9LCJpc0NoZWNrYm94Ijp0cnVlfX0='/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

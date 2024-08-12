@@ -1,0 +1,114 @@
+@import 'widget-includes';
+
+.rn_AnswerComments {
+    padding: 20px 0;
+}
+
+.rn_AnswerComments h2 {
+    border-bottom: 1px solid #BBB;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+}
+
+.rn_AnswerComments .rn_PostContainer {
+    padding: 1em 1em 0;
+}
+
+.rn_AnswerComments .rn_CommentContent {
+    padding-bottom: 3px;
+}
+
+.rn_AnswerComments .rn_CommentContent pre,
+.rn_AnswerComments .rn_CommentContent p {
+    margin: 10px 0 5px 50px;
+}
+
+.rn_AnswerComments .rn_CommentContent pre {
+    font-family: inherit;
+}
+
+.rn_AnswerComments .rn_CommentContent a img {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.rn_AnswerComments .rn_CommentAuthor {
+    background: #F1F1F1 none repeat scroll 0 0;
+    height: 38px;
+    padding: 1px;
+}
+
+.rn_AnswerComments .rn_CommentAuthor img {
+    vertical-align: middle;
+}
+
+.rn_AnswerComments .rn_CommentAuthor .rn_AuthorImage {
+    margin-right: 10px;
+}
+
+.rn_AnswerComments .rn_CommentDetails,
+.rn_AnswerComments .rn_CommentActions,
+.rn_AnswerComments .rn_CommentTime {
+    font-size: 86%;
+    color: #6F6F6F;
+}
+
+.rn_AnswerComments .rn_PositiveRating {
+    color: #1B751B;
+}
+
+.rn_AnswerComments .rn_NegativeRating {
+    color: #BB291E;
+}
+
+.rn_AnswerComments .rn_CommentActions img {
+    vertical-align: middle;
+}
+
+.rn_AnswerComments .rn_Rating .rn_RatingIcon {
+    vertical-align: middle;
+    background-position: 0 0;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+}
+
+.rn_AnswerComments .rn_Rating a:hover {
+    background-position: 0 -38px;
+}
+
+.rn_AnswerComments .rn_Rating .rn_Selected {
+    background-position: 0 -19px;
+}
+
+.rn_AnswerComments .rn_ThumbUp {
+    background: transparent url('#{$theme-images}/thumbUpSprite.png') no-repeat scroll 0 0;
+}
+
+.rn_AnswerComments .rn_ThumbDown {
+    background: transparent url('#{$theme-images}/thumbDownSprite.png') no-repeat scroll 0 0;
+}
+
+.rn_AnswerComments .rn_NewComment {
+    margin: 0 0 15px 20px;
+    font-size: 117%;
+}
+
+.rn_AnswerComments .rn_NewComment button {
+    margin: 5px 10px 0 0;
+}
+
+.rn_AnswerComments .rn_NewComment textarea {
+    height: 10em;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.rn_AnswerComments .rn_Loading {
+    background: url('#{$theme-images}/indicator.gif') no-repeat center center;
+}
+
+.rn_AnswerCommentDeleteDialog {
+    width: 275px;
+}

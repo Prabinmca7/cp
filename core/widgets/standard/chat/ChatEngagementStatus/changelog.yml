@@ -1,0 +1,54 @@
+1.2.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.1.1:
+  release: "16.8"
+  entries:
+  - account: ben.darling
+    category: Bug Fix
+    changelogID: 510
+    date: 04/20/2016
+    description: Added header tag to chat status for better accessibility
+    details:
+    - A header tag was added around the displayed chat status text to allow for more
+      accessibility to screen readers. Screen readers can list all the headers on
+      a page and this allows the status to show up in those lists.
+    level: minor
+    refno: 160301-000135
+    sortPosition: Middle
+1.0.2:
+  release: "14.2"
+  entries:
+  - account: jlindh
+    category: Bug Fix
+    changelogID: 211
+    date: 11/27/2013
+    description: Display a message when the enduser attempts to use Internet Explorer
+      7 or below with the chat, as it is officially unsupported and will not function.
+    level: nano
+    refno: 131001-000045
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version of chat/ChatEngagementStatus
+    category: API Change
+    sortPosition: Middle

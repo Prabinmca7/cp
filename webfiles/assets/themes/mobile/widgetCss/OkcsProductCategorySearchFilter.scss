@@ -1,0 +1,181 @@
+@import 'widget-includes';
+
+.rn_OkcsProductCategorySearchFilter {
+    float: left;
+    width: 101%;
+    margin-bottom: 15px;
+
+    button.rn_DisplayButton {
+        font-family: 'FontAwesome';
+        display: inline-block;
+        margin-right: 5px;
+        border: 1px solid #B1B1B1;
+        @include icon($fa-var-sort-down, after);
+    }
+
+    .rn_Panel {
+        background: $hero-color;
+        border: 1px solid #B1B1B1;
+        max-height: 200px;
+        overflow: auto;
+        padding: 6px;
+    }
+
+    .rn_PanelContainer {
+        border: 1px solid #B1B1B1;
+        border-top: 0;
+
+        .rn_Panel {
+            border: 0;
+        }
+    }
+
+    .rn_SelectionButtons {
+        background: #F8F8F8;
+        border-top: 1px solid #B1B1B1;
+
+        button {
+            font-size: .95em;
+            margin: 7px 0 7px 5px;
+            padding: 5px;
+        }
+    }
+
+    button.rn_DisplayButton {
+        &:hover, &:focus {
+            background-color: #F8F8F8;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    .rn_Label {
+        color: $dark-gray;
+        float: left;
+        font-weight: bold;
+    }
+
+    .rn_OkcsProductCategorySearchFilterExplorerView {
+        border: 1px solid #B1B1B1;
+    }
+
+    .rn_CategoryExplorer {
+        border: 1px solid lighten($dark-gray, 60);
+    }
+
+    .rn_CategoryExplorerTitleDiv {
+        font-weight: normal;
+        border-bottom: 1px solid lighten($dark-gray, 60);
+        padding: 7px;
+        line-height: 2em;
+        font-size: 1.2em;
+    }
+
+    .rn_CategoryExplorerContentDiv {
+        padding: 12px;
+
+        ul {
+            list-style: none outside none;
+        }
+    }
+
+    .rn_CategoryExplorerExpandedHidden {
+        display: none;
+    }
+
+    .rn_CategoryExplorerCollapsedHidden {
+        visibility: hidden;
+        width: 16px;
+    }
+
+    .rn_CategoryExplorerCollapsed {
+        @include icon($fa-var-plus-square);
+    }
+
+    .rn_CategoryExplorerExpanded {
+        @include icon($fa-var-minus-square);
+    }
+        
+    .rn_CategoryExplorerCollapsed, .rn_CategoryExplorerExpanded {
+        
+        &:before {
+            margin-right: 4px;
+        }
+    }
+
+    .rn_CategoryExplorer a {
+        vertical-align: middle;
+        
+        &.rn_CategoryExplorerLink {
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 95%;
+            white-space: nowrap;
+            @include media($rn-medium) {
+                width: 90%;
+            }
+        }
+
+        &:link {
+            color: $hero-color;
+            font-size: 1.2em;
+            line-height: 2em;
+        }
+    }
+
+    .rn_CategoryExplorerItem {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .rn_CategoryExplorerItem ul {
+        padding-left: 17px;
+    }
+
+    .rn_CategoryExplorerListHidden {
+        display: none;
+    }
+
+    .rn_CategoryExplorerItem .rn_CategoryExplorerLinkSelected {
+        background: darken($medium-gray, 20);
+        padding: 10px;
+        word-wrap: break-word;
+        display: inline-block;
+        width: 97%;
+        @include media($rn-medium) {
+            width: 90%;
+        }
+        @include icon($fa-var-times-circle, after);
+
+        &:after {
+            margin-left: 10px;
+            float: right;
+            margin-top: 1%;
+        }
+    }
+}
+
+.rn_HighContrastMode .rn_OkcsProductCategorySearchFilter button.rn_DisplayButton {
+    border: 1px outset;
+
+    @include caret(down, after) {
+        position: absolute;
+        right: 5px;
+        font-size: $base-font-size;
+    }
+}
+
+.ygtvlabel {
+    color: #111;
+
+    &:link, &:visited, &:hover {
+        color: #111;
+    }
+}
+
+.rn_ProductCategoryLinks {
+    width: 400px;
+}

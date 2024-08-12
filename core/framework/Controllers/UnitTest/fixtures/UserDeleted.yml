@@ -1,0 +1,6 @@
+type: CommunityUser
+object:
+  DisplayName: Deleted User
+  StatusWithType.Status.LookupName: Deleted
+  Contact:
+    fixture: ContactDeleted

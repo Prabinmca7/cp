@@ -1,0 +1,73 @@
+input: <rn:widget path="standard/reports/Multiline" truncate_size="20" max_wordbreak_trunc="7" hide_when_no_results="true" highlight="false" label_screen_reader_search_success_alert="Custom Label 1" label_screen_reader_search_no_results_alert="Custom Label 2"/>
+filter: @"r_tok":"[^"]*",?@
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /kw/iPhone
+output:
+<div id="rn_Multiline_0" class="rn_Multiline">
+    <div id="rn_Multiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_Multiline_0_Loading"></div>
+    <div id="rn_Multiline_0_Content" class="rn_Content">
+                            <ol start="1">
+                            <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/52/kw/iPhone'>Enabling MMS on iPhone 3G and iPhone 3GS</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">AT&amp;T MMS require...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/54/kw/iPhone'>iPhone: Basic troubleshooting</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">If iPhone doesn't...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/55/kw/iPhone'>iPhone not recognized in iTunes for Windows</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Check the iPhone...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/56/kw/iPhone'>iPhone backups</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">About Syncing and...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/57/kw/iPhone'>iPhone: Charging the battery</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">An icon in the...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/60/kw/iPhone'>iPhone: About the SIM PIN</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">You can enable...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/59/kw/iPhone'>Understanding cellular data networks</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">Q: Why does original...</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/48/kw/iPhone'>manually related answer 1</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">answer</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><a href='/app/answers/detail/a_id/49/kw/iPhone'>manually related answer 2</a></h3></div>
+                                                                                                                                                                                                                        <span class="rn_Element3">answer</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                    <li>
+                                                                                        <div class="rn_Element1"><h3><span class='rn_FileTypeIcon rn_url'><span class='rn_ScreenReaderOnly'>Link to a URL</span></span> <a href='/app/answers/detail/a_id/50/kw/iPhone'>url type</a></h3></div>
+                                                                                                                                                                                                                                                                            <span class="rn_ElementsHeader">Date Updated: </span>
+                            <span class="rn_ElementsData">03/24/2010</span>
+                                                                        </li>
+                            </ol>
+                    </div>
+</div>

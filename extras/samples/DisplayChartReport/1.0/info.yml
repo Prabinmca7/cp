@@ -1,0 +1,52 @@
+# File: info.yml
+# Abstract: Definition of DisplayChartReport widget
+# Version: 1.0
+
+version: "1.0"
+requires:
+    jsModule:
+        - standard
+        - mobile
+    yui: ['charts']
+attributes:
+    label_loading:
+        name: label_loading
+        type: STRING
+        description: The label that appears while new results are loading into the display
+        default: Loading
+    label_result_link:
+        name: label_result_link
+        type: STRING
+        description: The label that appears on the button for loading updated results
+        default: Get Latest Results
+    chart_type:
+        name: chart_type
+        type: OPTION
+        options: [bar, column, line]
+        default: column
+        description: The type of chart to be displayed.
+    get_chart_data_ajax:
+        name: get_chart_data_ajax
+        type: AJAX
+        description: AJAX endpoint to retrieve report data for the chart
+        default: /ci/ajax/widget
+    chart_header:
+        name: chart_header
+        type: STRING
+        description: The title to display at the top of the chart
+        default: Number of page hits by Answer ID
+    report_id:
+        name: report_id
+        type: STRING
+        description: ID number of the report that contains charting data
+        default: -1
+    category_axis_label:
+        name: category_axis_label
+        type: STRING
+        description: The label to display on the category axis. Uses the report header by default.
+    value_axis_label:
+        name: value_axis_label
+        type: STRING
+        description: The label to display on the value axis. Uses the report header by default.
+info:
+  description: This widget provides an example of how to use the YUI charting library, a custom widget AJAX endpoint and a custom report to create a chart display widget for two dimensional data.

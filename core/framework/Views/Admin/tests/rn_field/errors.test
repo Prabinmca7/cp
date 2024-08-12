@@ -1,0 +1,21 @@
+input:
+# Primary object doesn't exist
+<rn:field name="Bananas.ToTheMax"/>
+# Primary object exists but isn't supported
+<rn:field name="Holiday.ID"/>
+# Field doesn't exist
+Nothing: <rn:field name="Answer.SpaceHelm.Elena"/>
+# No IDs specified via attribute or URL param: no error messages, but default or blank values are output.
+Nothing: <rn:field name="Answer.Summary"/>
+Nothing: <rn:field name="ServiceCategory.Name"/>
+Default: <rn:field name="Incident.UpdatedTime"/>
+removecontent: true
+validate: false
+output:
+# Primary object doesn't exist
+<div><b>Error with rn:field tag: 'Bananas' is an invalid value for the 'name' attribute. [Answer, Asset, Communitycomment, Communityquestion, Communityuser, Contact, Incident, Servicecategory, Serviceproduct] are the supported values</b></div>
+# Primary object exists but isn't supported
+<div><b>Error with rn:field tag: 'Holiday' is an invalid value for the 'name' attribute. [Answer, Asset, Communitycomment, Communityquestion, Communityuser, Contact, Incident, Servicecategory, Serviceproduct] are the supported values</b></div>
+# Field doesn't exist
+Nothing: # No IDs specified via attribute or URL param: no error messages, but default or blank values are output.
+Nothing: Nothing: Default: TIMEVALUE

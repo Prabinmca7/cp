@@ -1,0 +1,13 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path='standard/chat/ChatOffTheRecordDialog'/></rn:form>
+filter: @name='validationToken'(\s*)value='([^']*)'@
+removecontent: true
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/chat/ChatOffTheRecordDialog/tests/base"><div><div id="rn_ChatOffTheRecordDialog_0" class="rn_ChatOffTheRecordDialog rn_ChatPostMessage rn_Hidden">
+    <label for="rn_ChatOffTheRecordDialog_0_Input" class="rn_Label">Type your message here, then click Send or press &lt;Enter&gt;</label>
+    <span>
+        <textarea id="rn_ChatOffTheRecordDialog_0_Input" rows="3" cols="50"></textarea>
+    </span>
+</div>
+<input type='hidden' />
+                <input type='hidden' name='constraints' value='W10='/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

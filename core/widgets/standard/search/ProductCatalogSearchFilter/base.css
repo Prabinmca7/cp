@@ -1,0 +1,21 @@
+.rn_ProductCatalogSearchFilter button.rn_DisplayButton {
+    background:none;
+    color:#000;
+    cursor:pointer;
+    font-weight:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-radius:0;
+    box-shadow:none;
+    z-index:0 !important;
+}
+/* make the text label font relative*/
+.rn_ProductCatalogSearchFilter .ygtvlabel,
+.rn_ProductCatalogSearchFilter .ygtvlabel:link,
+.rn_ProductCatalogSearchFilter .ygtvlabel:visited,
+.rn_ProductCatalogSearchFilter .ygtvlabel:hover {
+    font-size:inherit;
+}
+.rn_ProductCatalogSearchFilter .rn_PanelContainer .yui3-widget-hd {
+    display: none;
+}

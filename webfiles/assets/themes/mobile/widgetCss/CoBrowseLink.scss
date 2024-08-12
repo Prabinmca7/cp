@@ -1,0 +1,14 @@
+@import 'widget-includes';
+
+.rn_CoBrowseLink a {
+    color: #222;
+    text-decoration: none;
+}
+
+.rn_CoBrowseLink a:hover {
+    white-space: normal;
+}
+
+.rn_CoBrowseLink a:hover span {
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+input: <form class="rn_hidden"><rn:widget path="input/FormInput" name="Contact.Address.Street"  textarea="true"/></form>
+filter: @"contactToken":"[^"]+"@
+removecontent: true
+output:
+<form class="rn_hidden"><div id="rn_TextInput_1" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_1_LabelContainer">
+        <label for="rn_TextInput_1_Contact.Address.Street" id="rn_TextInput_1_Label" class="rn_Label">
+        Street                                </label>
+    </div>
+    <textarea id="rn_TextInput_1_Contact.Address.Street" class="rn_TextArea" rows="7" cols="60" name="Contact.Address.Street" maxlength='240'></textarea>
+</div>
+</form>

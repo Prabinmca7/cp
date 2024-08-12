@@ -1,0 +1,268 @@
+1.9.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.8.3:
+  release: "17.5"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 634
+    date: 02/23/2017
+    description: An on-change event will be fired upon editing widget input field.
+    level: nano
+    refno: 161005-000174
+    sortPosition: Middle
+1.8.2:
+  release: "16.11"
+  entries:
+  - account: geoff.kembel@oracle.com
+    category: Bug Fix
+    changelogID: 522
+    date: 06/17/2016
+    description: Added sub_id and pre/post blocks to all uses of FieldDisplay widget
+    level: nano
+    refno: 160511-000189
+    sortPosition: Middle
+1.8.1:
+  release: "16.5"
+  entries:
+  - account: ryan.peterson
+    category: Bug Fix
+    changelogID: 505
+    date: 03/29/2016
+    description: Moved CSS rules to different location
+    details:
+    - Widget's base.css file was removed. To get most recent layout changes, pull
+      most recent CSS file.
+    level: minor
+    refno: 160311-000083
+    sortPosition: Middle
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+1.7.1:
+  release: "16.2"
+  entries:
+  - account: pranab.g.garad
+    category: Bug Fix
+    changelogID: 409
+    date: 10/01/2015
+    description: Avoiding double encoding in SelectionInput widget
+    details:
+    - When creating an Asset from cp, the Asset name is encoded and saved in the db.
+      The double encoding was displaying the Asset Name incorrectly in the menu dropdown
+      in the AAQ page. This fix involves removing the double encoding from SelectionInput
+      widget.
+    level: minor
+    refno: 141009-000051
+    sortPosition: Middle
+1.6.1:
+  release: "15.11"
+  entries:
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 407
+    date: 09/23/2015
+    description: Added read_only attribute to align with TextInput widget
+    details:
+    - Similar to the functionality in the TextInput widget, a read_only attribute
+      was added to allow the widget to render a field's value without allowing it
+      to be edited.
+    level: minor
+    refno: 150625-000083
+    sortPosition: Middle
+1.5.1:
+  release: "15.8"
+  entries:
+  - account: dmadsen
+    category: Bug Fix
+    changelogID: 292
+    date: 03/10/2015
+    description: Translated labels not being used from input widgets to output widgets
+      due to label name differences.
+    level: minor
+    refno: 150221-000000
+    sortPosition: Middle
+1.4.1:
+  release: "15.2"
+  entries:
+  - account: pkolpin
+    category: Bug Fix
+    changelogID: 278
+    date: 11/13/2014
+    description: Corrected behavior when label_input is empty
+    details:
+    - If the label\_input attribute is empty, the required asterisk will also not
+      display. The empty value will be output since some widgets, notably the ProductCategoryInput
+      widget, expect the input label to be displayed and causes a JavaScript error
+      when it cannot be found.  While providing a useful label\_input value is necessary
+      for providing good accessibility to screen readers, rather than forcing the
+      label\_input attribute to be required, this change instead causes the empty
+      element to be output.  This small change in the view of the widget requires
+      the minor bump of the widget.
+    level: minor
+    refno: 141010-000016
+    sortPosition: Middle
+1.3.1:
+  release: "14.8"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 256
+    date: 04/22/2014
+    description: Removed unused label_error attribute
+    level: minor
+    refno: 140421-000044
+    sortPosition: Bottom
+  - account: spage
+    category: New Feature
+    changelogID: 254
+    date: 04/15/2014
+    description: Added support for custom menu attributes
+    details:
+    - Menu type custom attributes that reference menu only custom objects are now
+      supported.
+    level: nano
+    refno: 130325-000050
+    sortPosition: Middle
+1.2.2:
+  release: "14.5"
+  entries:
+  - account: eturner
+    category: API Change
+    changelogID: 227
+    date: 02/10/2014
+    description: When displaying the Incident.StatusWithType.Status field and its
+      value changes, the requiredness of the Incident.Threads field will be toggled
+    details:
+    - Previously on the account/questions/detail page, the Incident.Threads field
+      was not set to required, however this field was required if the Incident.StatusWithType.Status
+      field was set to 'Yes, please respond to my question'. Now, when a user selects
+      that they need an answer to their question the Incident.Threads field will be
+      required. If the user selects that they no longer need an answer, the Incident.Threads
+      field will be set to not required. It is recommended that you change the default
+      of the Incident.Threads field on the account/questions/detail to be required.
+    level: nano
+    refno: 140122-000065
+    sortPosition: Middle
+1.2.1:
+  release: "14.2"
+  entries:
+  - account: jwatson
+    category: Deprecation
+    changelogID: 212
+    date: 11/27/2013
+    description: Removed call to ClientLoader's getCanUseAria function
+    details:
+    - The ClientLoader's getCanUseAria function has been removed, so the call to this
+      function in the widget has been removed. The standard widget was not actually
+      using the result of this function call, so there should be no perceived impact
+      of this change.
+    level: minor
+    refno: 130530-000050
+    sortPosition: Middle
+  - account: tlivengood
+    category: New Feature
+    changelogID: 194
+    date: 11/01/2013
+    description: Added support for `constraintChange` Dynamic Forms event
+    details:
+    - Restructured the label area of the widget to support dynamically changing the
+      required-ness of an input field. This change can impact custom code which overrides
+      the `preLabel` or `postLabel` RN Blocks. To consume this change, EJS extension
+      will need to be used to override the blocks in their new locations in addition
+      to their original locations.
+    level: minor
+    refno: 131021-000234
+    sortPosition: Middle
+  - account: pranab.g.garad
+    category: New Feature
+    changelogID: 158
+    date: 01/22/2014
+    description: Added support for Assets (registered products), Asset Statuses, and
+      Sales Products
+    level: nano
+    refno: 130912-000034
+    sortPosition: Middle
+1.1.3:
+  release: "13.11"
+  entries:
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 132
+    date: 10/09/2013
+    description: Honors the `default_value` attribute for menu fields that map to
+      a Connect `NamedIDOptList`
+    details:
+    - Fields such as `Contact.MarketingSettings.EmailFormat` that display as a menu
+      now work with the `default_value` attribute.
+    level: nano
+    refno: 130715-000105
+    sortPosition: Middle
+1.1.2:
+  release: "13.8"
+  entries:
+  - account: spage
+    category: Bug Fix
+    changelogID: 123
+    date: 07/17/2013
+    description: Correctly displays  the value of a selected menu option
+    details:
+    - Menu fields that map to a Connect NamedIDOptList data type (such as Contact.MarketingSettings.EmailFormat)
+      were not displaying the selected value. This version resolves that issue.
+    level: nano
+    refno: 130619-000073
+    sortPosition: Middle
+1.1.1:
+  release: "13.5"
+  entries:
+  - account: rlund
+    category: API Change
+    changelogID: 85
+    date: 04/29/2013
+    description: Moved post vars up in order of prefill precedence
+    details:
+    - Post vars (used primarily in the basic page set) now take precedence for prefilling
+      input fields. Prefill behavior is unchanged for the standard page set.
+    level: minor
+    refno: 130312-000003
+    sortPosition: Middle
+  - account: tlivengood
+    category: Bug Fix
+    changelogID: 39
+    date: 04/29/2013
+    description: Adds a hint for screen readers
+    details:
+    - A hidden screen reader hint has been added after the label for menu fields.
+      If you have manually added a hint to the SelectionInput widget, you can now
+      remove it.
+    level: nano
+    refno: 130111-000182
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle

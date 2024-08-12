@@ -1,0 +1,16 @@
+.rn_ChatTranscript{
+    overflow:auto;
+    height:15em;
+}
+
+.rn_ChatTranscript .rn_MessagePost{
+    clear:both;
+    display:block;
+}
+
+.rn_ChatTranscript ol,
+.rn_ChatTranscript ul,
+.rn_ChatTranscript dl{
+    clear:both;
+    display:block;
+}

@@ -1,0 +1,24 @@
+<rn:block id="top"/>
+<div class="rn_FilterLabel"><span class="rn_FacetFilterTitle"><%= data.attrs.label_filter %>: </span></div>
+<div class="rn_FilterContent">
+<% for(key in facetOrder) { %>
+    <%if(facetArray[key].length > 0) { %>
+        <span class="rn_FacetFilterProduct">
+            <span class="rn_FilterChoiceTitle rn_Product"><%= facetOrder[key] %>: </span>
+            <% for(i = 0; i < facetArray[key].length; i++) { %>
+                <% facet = facetArray[key][i]%>
+                <% facetRef = facet.substring(0,facet.indexOf(":")) %>
+                <% FacetLabel = facet.substring(facet.indexOf(":") + 1) %>
+                <span class="rn_FilterItem"><span class="rn_filterChoice" data-id="<%= facetRef %>" ><%= FacetLabel %></span>
+                <span class="rn_FacetFilterClearIcon" data-id="<%= facetRef %>"></span></span>
+            <% } %>
+        </span>
+    <% } %>
+<% } %>
+<span class="rn_ResetFilter">
+    <button id="<%= widgetInstanceID %>_ResetFilterButton" class="rn_ResetFilterBtn"><%= data.attrs.label_reset %></button>
+</span>
+<rn:block id="bottom"/>
+</div>
+            
+        

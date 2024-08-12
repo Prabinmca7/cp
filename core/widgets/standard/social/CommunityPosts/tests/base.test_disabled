@@ -1,0 +1,49 @@
+input: <rn:widget path='standard/social/CommunityPosts'/>
+config: COMMUNITY_VERSION|15.11.0.0,COMMUNITY_ENABLED|1,COMMUNITY_PRIVATE_KEY|OXaX8ctYifSiwonq,COMMUNITY_PUBLIC_KEY|5JbzLXNAJ0Y3sxAn,COMMUNITY_BASE_URL|http://den01tpo.us.oracle.com
+removecontent: true
+output:
+<div id="rn_CommunityPosts_0" class="rn_CommunityPosts">
+    <ul>
+            <li>
+            <span class="rn_PostTitle"><a href="posts/7baa4d52f9">Merge reports</a></span>
+                    <span class="rn_PostContent">merge How do you merge reports in Rave</span>
+                            <span class="rn_PostSubContent rn_PostAuthor">
+                Author: <a href='people/e156c441ec'>Joe Smith</a>            </span>
+                            <span class="rn_PostSubContent rn_PostDate">
+                Updated: TIMEVALUE            </span>
+                        </li>
+            <li>
+            <span class="rn_PostTitle"><a href="posts/f0951207b0">Fatal Windows Error</a></span>
+                    <span class="rn_PostContent">I am getting a fatal windows error message every time I...</span>
+                            <span class="rn_PostSubContent rn_PostAuthor">
+                Author: <a href='people/e2767e641e'>Randy Alsup</a>            </span>
+                            <span class="rn_PostSubContent rn_PostDate">
+                Updated: TIMEVALUE            </span>
+                        </li>
+            <li>
+            <span class="rn_PostTitle"><a href="posts/1e6a5a1179">“Invalid column name ‘cXXX_xx.” Error</a></span>
+                    <span class="rn_PostContent">Error message generating DTE views i am getting a...</span>
+                            <span class="rn_PostSubContent rn_PostAuthor">
+                Author: <a href='people/e2767e641e'>Randy Alsup</a>            </span>
+                            <span class="rn_PostSubContent rn_PostDate">
+                Updated: TIMEVALUE            </span>
+                        </li>
+            <li>
+            <span class="rn_PostTitle"><a href="posts/24d51f7438">Feedback on Rave 5.6</a></span>
+                    <span class="rn_PostContent">Rave Feedback Has anyone used Rave 5.6? What is your...</span>
+                            <span class="rn_PostSubContent rn_PostAuthor">
+                Author: <a href='people/e2767e641e'>Randy Alsup</a>            </span>
+                            <span class="rn_PostSubContent rn_PostDate">
+                Updated: TIMEVALUE            </span>
+                        </li>
+            <li>
+            <span class="rn_PostTitle"><a href="posts/4d77283dfa">Droid email</a></span>
+                    <span class="rn_PostContent">I just purchased the Droid and setup email.&nbsp; I am...</span>
+                            <span class="rn_PostSubContent rn_PostAuthor">
+                Author: <a href='people/e156c441ec'>Joe Smith</a>            </span>
+                            <span class="rn_PostSubContent rn_PostDate">
+                Updated: TIMEVALUE            </span>
+                        </li>
+        </ul>
+    <a href="posts?view=summary&amp;sort=new" class="rn_AllResults">See All Posts</a>
+</div>

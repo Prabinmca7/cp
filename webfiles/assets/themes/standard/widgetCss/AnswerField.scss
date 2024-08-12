@@ -1,0 +1,112 @@
+@import 'widget-includes';
+
+.rn_AnswerField {
+    display: inline;
+
+    .rn_SchemaAttribute {
+        margin-bottom: 5px;
+        font-weight: bold;
+        clear: both;
+    }
+
+    .rn_SchemaAttributeValue {
+        margin-bottom: 10px;
+        
+        ol, ul {
+            clear: both;
+            padding-left: 2em;
+        }
+
+        > ol, > ul {
+            margin-bottom: 1em;
+        }
+
+        li {
+            line-height: 1.4em;
+            margin: 4px 0;
+        }
+
+        li ul {
+            list-style: disc;
+        }
+
+        li ul li {
+            list-style: circle;
+        }
+
+        li li ul li {
+            list-style: square;
+        }
+
+        li ol li,
+        li li ol li {
+            list-style: decimal;
+        }
+    
+        th, td {
+            border-bottom: 1px solid;
+            padding: unset;
+        }
+
+        table {
+            table-layout: auto;
+            border-collapse: unset;
+            margin: auto;
+        }
+
+        ol:not([style*="list-style-type"]) {
+            list-style: decimal;
+        }
+    }
+
+    .rn_SchemaAttribute input {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    section {
+        display: inline-block;
+        padding: 3px;
+        width: 45%;
+        word-wrap: break-word;
+    }
+}
+
+.rn_AnswerField .rn_Info {
+    width: 30%;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.rn_AnswerView {
+    margin: 0 .2em;
+}
+
+.rn_AnswerHeader h1 {
+    font-size: 1.7em;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.rn_AnswerInfo {
+    color: #666;
+    margin: 6px 0 20px;
+}
+
+.rn_AnswerDivAlignment {
+    vertical-align: top;
+}
+
+.rn_AnswerValue{
+    display: inline-block;width: 65%;margin-top:10px;
+}
+
+.rn_userGroupList2{
+    display:none;
+}
+
+.rn_userGroupMore{
+    cursor:pointer;
+}
+

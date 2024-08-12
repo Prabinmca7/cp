@@ -1,0 +1,55 @@
+.rn_SearchControls {
+    form {
+        @include row;
+    }
+
+    .rn_SearchFilters {
+        @include row;
+        margin-top: 1em;
+    }
+
+    .rn_SocialSearchFilters {
+        display: none;
+    }
+
+    .rn_SearchFiltersLabel {
+        font-size: smaller;
+        @include icon($fa-var-chevron-down, 'after');
+    }
+
+    #rn_SearchFiltersToggle {
+        // Hidden checkbox whose label acts as a button
+        // to toggle the nav menu.
+        display: none;
+
+        &:checked ~ .rn_SocialSearchFilters {
+            display: block;
+        }
+    }
+}
+
+.rn_ResultList,
+.rn_QuestionList,
+.rn_KBAnswerList {
+    @include span-columns(12);
+
+    > div {
+        @include row;
+        margin-bottom: 1em;
+    }
+
+    .rn_SourceResultDetails {
+        @include span-columns(12);
+    }
+
+    h2 {
+        @include fill-parent;
+    }
+}
+
+.rn_SideRail {
+    @include span-columns(3);
+    @include media($rn-medium) {
+        @include span-columns(12);
+    }
+}

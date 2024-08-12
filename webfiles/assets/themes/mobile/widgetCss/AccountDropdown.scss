@@ -1,0 +1,144 @@
+@import 'widget-includes';
+
+.rn_AccountDropdown {
+    @include clearfix;
+
+    max-width: 100%;
+
+    .rn_AccountDropdownParent {
+        @include transition (all .2s ease-in-out);
+        float: right;
+        display: inline-block;
+        position: relative;
+
+        > a {
+            min-width: 150px;
+            color: #FFF;
+            display: block;
+            font-size: $base-font-size;
+
+            /* Used to resize the account dropdown link as
+               screen size changes */
+            @include media($rn-xlarge) {
+                min-width: 0;
+            }
+        }
+
+        .rn_LoggedInUser,
+        #rn_LoginLink,
+        #rn_DisabledLoginLink {
+            background: darken($base-accent-color, 4);
+            border-radius: $base-border-radius;
+            padding: .5em 1em;
+
+            &:hover,
+            &:focus {
+                background: lighten($base-accent-color, 1);
+            }
+        }
+
+        #rn_LoginLink,
+        #rn_DisabledLoginLink {
+            margin: .6em 0 0;
+        }
+
+        .rn_LoggedInUser {
+            @include clearfix;
+            margin-top: .7em;
+            padding: .4em .5em;
+
+            .rn_AvatarHolder {
+                float: left;
+            }
+
+            .rn_DisplayName {
+                min-width: 100px;
+                max-width: 120px;
+                display: inline-block;
+                float: left;
+                overflow: hidden;
+                padding: 0 1em 0 .2em;
+                position: relative;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @include caret(down, after) {
+                    margin-left: 4px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .rn_SubNavigation {
+        $menu-background: #FFF;
+
+        @include transition(all .3s ease);
+
+        background: $menu-background;
+        border: 1px solid $light-gray;
+        border-radius: $base-border-radius;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+        opacity: 1;
+        right: 0;
+        top: 120%;
+        visibility: visible;
+        width: 250px;
+
+        &.rn_ScreenReaderOnly {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        a {
+            display: block;
+            border-bottom: 1px solid lighten($light-gray, 8%);
+            line-height: $base-font-size - .1em;
+            padding: 12px;
+
+            /* Don't let hover background seep outside of parent's
+               border-radius. */
+
+            &:first-child {
+                border-top-right-radius: $base-border-radius;
+                border-top-left-radius: $base-border-radius;
+            }
+
+            &:last-child {
+                border-bottom-right-radius: $base-border-radius;
+                border-bottom-left-radius: $base-border-radius;
+            }
+
+            &:hover,
+            &:focus {
+                background: darken($menu-background, 5);
+            }
+        }
+
+        @include caret(up) {
+            font-size: 2em;
+            position: absolute;
+            right: 6px;
+            top: -17px;
+            color: #FFF;
+            z-index: 1;
+        }
+
+        @include caret(up, after) {
+            font-size: 2.1em;
+            position: absolute;
+            right: 11px;
+            top: -19px;
+            color: $light-gray;
+        }
+    }
+}
+
+.rn_HighContrastMode .rn_AccountDropdown .rn_SubNavigation {
+    &:before, &:after {
+        content: none;
+    }
+}

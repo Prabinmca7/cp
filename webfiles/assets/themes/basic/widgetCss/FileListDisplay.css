@@ -1,0 +1,22 @@
+.rn_FileListDisplay .rn_DataLabel {
+    display:block;
+    font-weight:bold;
+}
+.rn_FileListDisplay .rn_DataValue ul{
+    margin:0;
+}
+.rn_FileListDisplay .rn_DataValue li {
+    padding:10px 0;
+}
+.rn_FileListDisplay .rn_FileSize {
+    color:#555;
+    font-style:italic;
+    padding-left:4px;
+}
+.rn_FileTypeImageThumbnail {
+    border: 2px solid #fff;
+    height: 64px;
+    width: 64px;
+    vertical-align: middle;
+    margin-right: 6px;
+}

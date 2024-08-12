@@ -1,0 +1,116 @@
+@import 'widget-includes';
+
+.rn_ProductCategoryInput {
+    @include row;
+    margin-bottom: 8px;
+
+    .rn_Label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 2px;
+        width: 36%;
+    }
+
+    .rn_ErrorLabel {
+        display: block;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    button.rn_DisplayButton {
+        @include span-columns(4);
+
+        border: 1px solid $medium-gray;
+        font-weight: normal;
+        margin-top: auto;
+        min-height: 1.5em;
+        padding: 4px 20px 4px 4px;
+        position: relative;
+        text-align: left;
+        text-shadow: none;
+        margin-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+        @include caret(down, after) {
+            position: absolute;
+            right: 5px;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            background-color: $light-gray;
+        }
+    }
+
+    .rn_Panel {
+        @include fill-parent;
+
+        background: #FFF;
+        border: 1px solid $medium-gray;
+        max-height: 200px;
+        overflow: auto;
+        padding: 6px;
+    }
+
+    .rn_PanelContainer {
+        width: 300px;
+        border: 1px solid $medium-gray;
+        border-top: 0;
+
+        @include media($rn-small) {
+            width: 100%;
+        }
+
+        .rn_Panel {
+            border: 0;
+        }
+    }
+
+    .rn_SelectionButtons {
+        background: $light-gray;
+        border-top: 1px solid $medium-gray;
+
+        button {
+            font-size: .95em;
+            margin: 7px 0 7px 5px;
+            padding: 5px;
+        }
+    }
+
+    .rn_HintBox {
+        border: 1px solid $medium-gray;
+        margin: 0 0 0 .3em;
+        max-width: 200px;
+        padding: 4px 16px 2px;
+        word-wrap: break-word;
+        opacity: .9;
+
+        &.rn_AlwaysVisibleHint {
+            max-width: 200px;
+            opacity: 1;
+        }
+
+        @include caret(left) {
+            position: absolute;
+            font-size: 1em;
+            color: #FFF;
+            left: -1px;
+            top: 2px;
+            z-index: 1;
+        }
+
+        @include caret(left, after) {
+            position: absolute;
+            font-size: 1.1em;
+            color: $medium-gray;
+            left: -7px;
+            top: 2px;
+        }
+    }
+
+    .rn_Disabled {
+        color: #808080 !important;
+    }
+}

@@ -1,0 +1,12 @@
+<rn:block id="preListItemContent"/>
+<li data-index="<%= index %>" class="rn_<%= result.type %>">
+<rn:block id="listItemContent">
+    <a href="<%= result.url %>"><%= result.text %></a>
+    <% for (var field in fields) { %>
+        <% if (fields.hasOwnProperty(field)) { %>
+            <div class="rn_<%= (field.charAt(0).toUpperCase() + field.slice(1).toLowerCase()).replace(/\./g, '_') %>"><%= fields[field] %></div>
+        <% } %>
+    <% } %>
+</rn:block>
+</li>
+<rn:block id="postListItemContent"/>

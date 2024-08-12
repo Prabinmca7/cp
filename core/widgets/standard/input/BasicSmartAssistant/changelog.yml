@@ -1,0 +1,20 @@
+1.0.2:
+  release: "16.2"
+  entries:
+  - account: varun.asok
+    category: Bug Fix
+    changelogID: 478
+    date: 01/24/2016
+    description: Hide question summaries because social content is not used in the
+      basic page set
+    level: nano
+    refno: 160108-000145
+    sortPosition: Middle
+1.0.1:
+  release: "13.8"
+  entries:
+  - date: 4/02/2013
+    level: major
+    description: Initial version of input/BasicSmartAssistant
+    category: API Change
+    sortPosition: Middle

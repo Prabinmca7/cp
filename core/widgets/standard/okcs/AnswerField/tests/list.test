@@ -1,0 +1,11 @@
+input: <rn:widget path='standard/okcs/AnswerField' label='FruitList' value='apple,mango,banana' type='LIST'/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+removecontent: true
+output:
+<div id="rn_AnswerField_0" class="rn_AnswerField" >
+            <div class='rn_SchemaAttribute'>
+        FruitList    </div>                    <div class='rn_SchemaAttributeValue'>
+                                <div class="rn_ListOption">apple</div>
+                    <div class="rn_ListOption">mango</div>
+                    <div class="rn_ListOption">banana</div>
+            </div>            </div>

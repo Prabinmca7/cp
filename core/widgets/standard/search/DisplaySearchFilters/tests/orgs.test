@@ -1,0 +1,20 @@
+input: <rn:widget path='standard/search/DisplaySearchFilters'/>
+config: MYQ_VIEW_ORG_INCIDENTS|2
+contact: ejergan
+removecontent: true
+urlparameters: /org/2
+output:
+<div id="rn_DisplaySearchFilters_0" class="rn_DisplaySearchFilters">
+<span class="rn_Heading">Search filters applied</span>
+<div id="rn_DisplaySearchFilters_0_FilterContainer">
+    <div id="rn_DisplaySearchFilters_0_Filter_0" class="rn_Filter">
+        <div class="rn_Label">
+            Organization            <a id="rn_DisplaySearchFilters_0_Remove_0" title="Remove Organization filter" href="javascript:void(0);">
+                                    <span class="rn_ScreenReaderOnly">Remove Organization filter</span>
+                            </a>
+        </div>
+                                                        <span id="rn_DisplaySearchFilters_0_Filter2" class="rn_FilterItem rn_Selected">From my Organization and all subsidiaries</span>
+                            <span class="rn_Separator rn_Selected"></span>
+            </div>
+</div>
+</div>

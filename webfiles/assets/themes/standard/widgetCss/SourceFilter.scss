@@ -1,0 +1,38 @@
+@import 'widget-includes';
+@import '../components/search';
+
+.rn_SourceFilter {
+    @include span-columns(3);
+    @include medium-search-width();
+    @include small-search-width();
+
+    select {
+        @include transition(all .2s ease-in-out);
+        width: 100%;
+        border: 1px solid #999;
+        letter-spacing: 1.1px;
+        cursor: pointer;
+        padding: 2px;
+        margin-bottom: 0;
+
+        &:hover, &:focus {
+            box-shadow: none;
+            background-color: $light-gray;
+        }
+
+        &::-ms-expand {
+            // Leverage ::-ms-expand for better looking select boxes on ie10+
+            @include triangle($base-font-size, #000, down);
+            background-color: rgba(255, 0, 0, 0);
+            content: "";
+            margin-top: 4px;
+            margin-bottom: -4px;
+            margin-right: 2px;
+        }
+
+        option {
+            letter-spacing: 1.1px;
+            background-color: #fff;
+        }
+    }
+}

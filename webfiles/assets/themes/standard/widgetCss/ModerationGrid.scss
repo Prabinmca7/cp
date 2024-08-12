@@ -1,0 +1,166 @@
+@import 'widget-includes';
+
+@mixin primary-icon-style {
+    left: 0;
+    font-size: 1.2em;
+}
+
+@mixin primary-icon($font) {
+    position: relative;
+
+    @include icon($font) {
+        color: #3B6DB1;
+        @include primary-icon-style;
+    }
+}
+
+@mixin secondary-icon($font) {
+    @include icon($font, after) {
+        color: #F00;
+        margin-left: 0;
+        position: absolute;
+        left: .4em;
+        top: 40%;
+        font-size: .8em;
+        line-height: 1.2em;
+   }
+}
+
+@mixin flag-icon {
+    @include icon($fa-var-flag) {
+        color: #F00;
+        @include primary-icon-style;
+    }
+}
+
+.rn_ModerationGrid {
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    table {
+        table-layout: auto;
+
+        th {
+            &.yui3-datatable-header {
+                vertical-align: middle;
+
+                div {
+                    padding-right: 4px;
+                    white-space: nowrap;
+                }
+            }
+
+            &.rn_HideText {
+                text-indent: -9999px;
+            }
+        }
+    }
+}
+
+.rn_ModerationGrid.rn_SocialQuestion {
+    table {
+        th {
+            &.rn_GridColumn_4 {
+                @include flag-icon;
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            div {
+                display: inline;
+            }
+        }
+    }
+}
+
+.rn_ModerationGrid.rn_SocialComment {
+    table {
+        th {
+            white-space: nowrap;
+
+            &.rn_GridColumn_5 {
+                @include flag-icon;
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            div {
+                display: inline;
+            }
+        }
+
+        td p {
+            margin: 0;
+        }
+    }
+}
+
+.rn_ModerationGrid.rn_SocialUser {
+    table {
+        th {
+            &.rn_GridColumn_6 {
+                @include primary-icon($fa-var-file-text-o);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            &.rn_GridColumn_7 {
+                @include primary-icon($fa-var-comment);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            &.rn_GridColumn_8 {
+                position: relative;
+                @include primary-icon($fa-var-file-text-o);
+                @include secondary-icon($fa-var-ban);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            &.rn_GridColumn_9 {
+                @include primary-icon($fa-var-comment);
+                @include secondary-icon($fa-var-ban);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            &.rn_GridColumn_10 {
+                position: relative;
+                @include primary-icon($fa-var-file-text-o);
+                @include secondary-icon($fa-var-flag);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            &.rn_GridColumn_11 {
+                @include primary-icon($fa-var-comment);
+                @include secondary-icon($fa-var-flag);
+
+                .yui3-datatable-sort-indicator {
+                    padding-left: 2px;
+                }
+            }
+
+            div {
+                display: inline;
+            }
+        }
+    }
+}

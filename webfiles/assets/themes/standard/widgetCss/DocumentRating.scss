@@ -1,0 +1,59 @@
+@import 'widget-includes';
+
+.yui3-panel .yui3-panel-content.rn_DocumentRatingFeedbackDialog {
+    width: 375px;
+
+    @include media($rn-large) {
+        @include fill-parent;
+    }
+}
+
+.rn_DocumentRating {
+    .rn_HiddenMessage {
+        margin-top: 12px;
+    }
+
+    .rn_Bold {
+        display: block;
+        font-weight: bold;
+        margin-bottom: .5em;
+    }
+
+    .rn_RatingInput {
+        margin-bottom: 10px;
+        margin-top: 1px;
+    }
+
+    .rn_StarRatingInput, .rn_Selected {
+        width: 1.5em;
+        margin-right: 1px;
+        padding-left: 0;
+        background: none;
+        border: 0;
+        box-shadow: none;
+        font-size: 1.3em;
+        font-family: 'FontAwesome';
+        color: #294F88;
+        float: left;
+    }
+
+    .rn_StarRatingInput {
+        @include icon($fa-var-star-o);
+    }
+
+    .rn_Selected {
+        @include icon($fa-var-star);
+    }
+
+    .rn_SubmitButton {
+        display: block;
+        clear: both;
+        margin-top: .5em;
+    }
+
+    fieldset {
+        background: none;
+        padding: 0 .2em 1.5em 0;
+        border: 0;
+    }
+}

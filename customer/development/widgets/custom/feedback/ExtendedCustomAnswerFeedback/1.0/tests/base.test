@@ -1,0 +1,43 @@
+input: <rn:widget path="feedback/ExtendedCustomAnswerFeedback"/>
+removecontent: true
+urlparameters: /a_id/52
+output:
+<div id="rn_ExtendedCustomAnswerFeedback_0" class="rn_ExtendedCustomAnswerFeedback rn_CustomAnswerFeedback rn_AnswerFeedback">
+    <div class='custom-insert'>
+        ☟☟ ExtendedCustomAnswerFeedback - block top ☟☟
+    </div>
+    <div id="rn_ExtendedCustomAnswerFeedback_0_AnswerFeedbackControl" class="rn_AnswerFeedbackControl">
+                    <h2 class="rn_Title">Was this answer helpful?</h2>
+                            <div id="rn_ExtendedCustomAnswerFeedback_0_RatingButtons" class="rn_RatingButtons">
+    <div class="partial-insert">
+        <span class="label">
+            ExtendedCustomAnswerFeedback - Inside buttonView partial - before yes button (override's CustomAnswerFeedback's block)
+        </span>
+        <span class="cutie">
+            (ㆆ▃ㆆ)
+        </span>
+    </div>
+    <button id="rn_ExtendedCustomAnswerFeedback_0_RatingYesButton" type="button">Yes</button>
+    <div class="partial-insert">
+        <span class="label">
+            ExtendedCustomAnswerFeedback - Inside buttonView partial - after yes button
+        </span>
+        <span class="cutie">
+            (ㆆ▃ㆆ)
+        </span>
+    </div>
+    <button id="rn_ExtendedCustomAnswerFeedback_0_RatingNoButton" type="button">No</button>
+    <div class="partial-insert">
+        <span class="label">
+            CustomAnswerFeedback - buttonView partial - after no button
+        </span>
+        <span class="cutie">
+            ( •ॢ◡-ॢ)-♡
+        </span>
+    </div>
+</div>
+            </div>
+    <div class="custom-insert">
+        ☝ CustomAnswerFeedback Custom block - bottom ☝
+    </div>
+</div>

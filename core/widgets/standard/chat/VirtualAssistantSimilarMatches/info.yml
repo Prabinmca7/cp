@@ -1,0 +1,21 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  max_items_to_show:
+    name: rn:msg:MAXIMUM_ITEMS_TO_SHOW_LBL
+    description: rn:msg:MAX_SIMILAR_MATCHES_0_EQUALS_DISP_MSG
+    default: 0
+    min: 0
+    type: INT
+  all_posts_off_the_record:
+    name: rn:msg:ALL_POSTS_OFF_THE_RECORD_LBL
+    description: rn:msg:TRUE_CHAT_POSTS_END_RECORD_MSG
+    default: false
+    type: BOOLEAN
+
+info:
+  category:
+    - Chat
+  description: rn:msg:WIDGET_SIMILAR_MATCHED_PHRASES_MSG

@@ -1,0 +1,34 @@
+input: <rn:widget path="search/BasicProductCategorySearchFilter" required="true"/>
+removecontent: true
+template: basic
+output:
+<div id="rn_BasicProductCategorySearchFilter_0" class="rn_BasicProductCategorySearchFilter">
+    <span class="rn_RefineLabel"><a href="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/required">Select a product</a></span>
+                <ul>
+                                <li>
+                <a href="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/required/p/1">Mobile Phones</a>
+                 &gt;             </li>
+                    <li>
+                <a href="/app/answers/list/p/6">Voice Plans</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/p/162">Text Messaging</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/p/163">Mobile Broadband</a>
+                            </li>
+                    <li>
+                <a href="/app/answers/list/p/7">Replacement/Repair Coverage</a>
+                            </li>
+                    <li>
+                <a href="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/required/p/128">p1</a>
+                 &gt;             </li>
+                </ul>
+        <div class="rn_AdvancedSearchButtons">
+            <form method="get" action="/app/unitTest/rendering/widgets/standard/search/BasicProductCategorySearchFilter/tests/required">
+            <div>
+                <input type="submit" value="Clear Product" />
+            </div>
+        </form>
+    </div>
+</div>

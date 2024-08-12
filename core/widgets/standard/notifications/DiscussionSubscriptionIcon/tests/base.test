@@ -1,0 +1,26 @@
+input: <rn:widget path="standard/notifications/DiscussionSubscriptionIcon"/>
+contact: useractive1
+jstestfile: base.test.js
+removecontent: true
+urlparameters: /qid/5
+output:
+<div id="rn_DiscussionSubscriptionIcon_0" class="rn_DiscussionSubscriptionIcon">
+    <div class="rn_Loading rn_Hidden" id="rn_DiscussionSubscriptionIcon_0_LoadingIcon">
+        <span class="rn_ScreenReaderOnly">
+            Loading        </span>
+    </div>
+    <div id="rn_DiscussionSubscriptionIcon_0_Subscription" class="rn_Subscription">
+        <div id="rn_DiscussionSubscriptionIcon_0_Unsubscribe" class="rn_Hidden rn_Unsubscribe" aria-label="Required">
+            <a href="javascript:void(0);" title="Click to stop receiving email notifications for this discussion">
+                <span>
+                    Unsubscribe                </span>
+            </a>
+        </div>
+                                    <div id="rn_DiscussionSubscriptionIcon_0_Subscribe" class="rn_Show rn_Subscribe" aria-label="Required">
+                    <a href="javascript:void(0);" title="Click to receive an email when a new comment is added to this discussion">
+                        <span>
+                            Subscribe                        </span>
+                    </a>
+                </div>
+                    </div>
+</div>

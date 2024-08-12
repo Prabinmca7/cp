@@ -1,0 +1,21 @@
+@import 'widget-includes';
+
+.rn_FormSubmit {
+    button {
+        position: relative;
+    }
+
+    .rn_Loading {
+        padding-left: 1.8em;
+
+        @include loading-icon(1em) {
+            left: .6em;
+            position: absolute;
+        }
+    }
+
+    button.rn_IeFormButton {
+        background: lighten($base-accent-color, 5);
+        cursor: not-allowed;
+    }
+}

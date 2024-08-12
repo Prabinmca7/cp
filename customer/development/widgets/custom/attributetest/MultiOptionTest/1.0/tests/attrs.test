@@ -1,0 +1,16 @@
+input: <rn:widget path="custom/attributetest/MultiOptionTest" multioption1="a,b" multioption2="c" multioption3="a,b,c"/>
+removecontent: true
+validate: false
+output:
+array (
+  0 => 'a',
+  1 => 'b',
+)array (
+  0 => 'c',
+)array (
+  0 => 'a',
+  1 => 'b',
+  2 => 'c',
+)array (
+  0 => 'a',
+)

@@ -1,0 +1,11 @@
+info:
+  description: The purpose of this widget is to test that a widget can extend from another widget that has its own view helper class. The extending widget can reference the parent's helper as it's inherited and not overridden.
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: standard/searchsource/SourceResultListing
+  components:
+  - view

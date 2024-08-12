@@ -1,0 +1,33 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+  yui: [node-event-simulate]
+attributes:
+  fetch_translations:
+    name: rn:msg:AJAX_ENDPOINT_FOR_OKCS_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getAllTranslations
+  fetch_all_locale_desc:
+    name: rn:msg:AJAX_ENDPOINT_FOR_OKCS_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_FOR_OKCS_LBL
+    default: /ci/okcsAjaxRequest/getAllLocaleDescriptions
+  label_drop_down_accessibility:
+    name: rn:msg:ACCESSIBILITY_DROPDOWN_LABEL_LBL
+    type: STRING
+    description: rn:msg:SCREENREADER_LABEL_FOR_DROPDOWN_BUTTON_LBL
+    default: rn:msg:PRESS_ENT_O_L_OR_UP_DOWN_O_S_NAV_OPEN_MSG
+  label_loading:
+    name: rn:msg:WIDGET_LOAD_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_BE_DISPLAYED_WHEN_WIDGET_LOADING_LBL
+    default: rn:msg:LOADING_ELLIPSES_LBL
+  label_drop_down:
+    name: rn:msg:DROPDOWN_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_BE_DISPLAYED_ALONG_WITH_DROPDOWN_LBL
+    default: rn:msg:LANG_LBL
+info:
+  description: rn:msg:DROPDOWN_MENU_USE_ARTICLE_NO_PRESENT_MSG

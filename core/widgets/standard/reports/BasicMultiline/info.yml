@@ -1,0 +1,22 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [none]
+attributes:
+  label_screen_reader_search_success_alert: unset
+  label_screen_reader_search_no_results_alert: unset
+  hide_when_no_results: unset
+  hide_columns: unset
+  truncate_size:
+    name: rn:msg:WRAP_SIZE_LBL
+    type: INT
+    description: rn:msg:NUMMBER_CHARACTERS_TRUNCATE_FIELD_LBL
+    default: 100
+    min: 1
+extends:
+  widget: standard/reports/Multiline
+  versions: ["1.3"]
+  components: [php]
+  overrideViewAndLogic: true
+info:
+  description: rn:msg:WIDGET_EXTENSION_STD_MULTILINE_MSG

@@ -1,0 +1,82 @@
+input: <rn:widget path='standard/social/CommunitySearchResults' maximum_page_links="557"/>
+config: COMMUNITY_VERSION|15.11.0.0,COMMUNITY_ENABLED|1,COMMUNITY_PRIVATE_KEY|OXaX8ctYifSiwonq,COMMUNITY_PUBLIC_KEY|5JbzLXNAJ0Y3sxAn,COMMUNITY_BASE_URL|http://den01tpo.us.oracle.com
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_CommunitySearchResults_0" class="rn_CommunitySearchResults">
+    <div id="rn_CommunitySearchResults_0_Loading"></div>
+    <div id="rn_CommunitySearchResults_0_Content">
+                <ul>
+                                            <li class="rn_HasProfilePicture">
+                                    <span class="rn_PostTitle">
+                        <a href="posts/d69a236120">C & C white background + shadow</a>
+                    </span>
+                                    <span class="rn_PostContent">lit background, retain shadows? Hello I tried to get a shadow on a white background. I managed to get one by using a grid on top right and a softbox on the left and side. I couldn&#39;t...</span>
+                                                    <span class="rn_PostSubContent rn_PostAuthor">
+                        Author: <a href='people/7c62355853'>Camille</a>                                            <img src="files/d3bda422d7/me.jpg" alt=""/>
+                                        </span>
+                                                    <span class="rn_PostSubContent rn_PostDate">
+                        Updated: TIMEVALUE                    </span>
+                                                                </li>
+                                            <li class="rn_HasProfilePicture">
+                                    <span class="rn_PostTitle">
+                        <a href="posts/7baa4d52f9">Merge reports</a>
+                    </span>
+                                    <span class="rn_PostContent">merge How do you merge reports in Rave</span>
+                                                    <span class="rn_PostSubContent rn_PostAuthor">
+                        Author: <a href='people/e156c441ec'>Joe Smith</a>                                            <img src="common/images/avatars/user/cactus.jpg" alt=""/>
+                                        </span>
+                                                    <span class="rn_PostSubContent rn_PostDate">
+                        Updated: TIMEVALUE                    </span>
+                                                                </li>
+                                            <li class="rn_HasProfilePicture">
+                                    <span class="rn_PostTitle">
+                        <a href="posts/f0951207b0">Fatal Windows Error</a>
+                    </span>
+                                    <span class="rn_PostContent">I am getting a fatal windows error message every time I attempt a batch import. Has anyone seen this before?</span>
+                                                    <span class="rn_PostSubContent rn_PostAuthor">
+                        Author: <a href='people/e2767e641e'>Randy Alsup</a>                                            <img src="files/9b89ab3ebb/social.jpg" alt=""/>
+                                        </span>
+                                                    <span class="rn_PostSubContent rn_PostDate">
+                        Updated: TIMEVALUE                    </span>
+                                                                </li>
+                                            <li class="rn_HasProfilePicture">
+                                    <span class="rn_PostTitle">
+                        <a href="posts/1e6a5a1179">“Invalid column name ‘cXXX_xx.” Error</a>
+                    </span>
+                                    <span class="rn_PostContent">Error message generating DTE views i am getting a &ldquo;Invalid column name &lsquo;cXXX_xx.&rdquo; error mesage when trying to generate DTE views. Does anyone know how to fix that?</span>
+                                                    <span class="rn_PostSubContent rn_PostAuthor">
+                        Author: <a href='people/e2767e641e'>Randy Alsup</a>                                            <img src="files/9b89ab3ebb/social.jpg" alt=""/>
+                                        </span>
+                                                    <span class="rn_PostSubContent rn_PostDate">
+                        Updated: TIMEVALUE                    </span>
+                                                                </li>
+                                            <li class="rn_HasProfilePicture">
+                                    <span class="rn_PostTitle">
+                        <a href="posts/24d51f7438">Feedback on Rave 5.6</a>
+                    </span>
+                                    <span class="rn_PostContent">Rave Feedback Has anyone used Rave 5.6? What is your feedback. The clinical trial reporting is incredible.</span>
+                                                    <span class="rn_PostSubContent rn_PostAuthor">
+                        Author: <a href='people/e2767e641e'>Randy Alsup</a>                                            <img src="files/9b89ab3ebb/social.jpg" alt=""/>
+                                        </span>
+                                                    <span class="rn_PostSubContent rn_PostDate">
+                        Updated: TIMEVALUE                    </span>
+                                                                </li>
+                        </ul>
+                </div>
+            <div id="rn_CommunitySearchResults_0_Pagination" class="rn_Pagination ">
+            <a href="javascript:void(0)" id="rn_CommunitySearchResults_0_Back" data-page="0" class="rn_Hidden">&lt; Previous</a>
+            <span id="rn_CommunitySearchResults_0_Pages" class="rn_PageLinks">
+                                                            <span class="rn_CurrentPage">1</span>
+                                                                                <a href="javascript:void(0)" data-page="2" title="Page 2 of 9">2</a>
+                                                                                <a href="javascript:void(0)" data-page="3" title="Page 3 of 9">3</a>
+                                                                                <a href="javascript:void(0)" data-page="4" title="Page 4 of 9">4</a>
+                                                                                <a href="javascript:void(0)" data-page="5" title="Page 5 of 9">5</a>
+                                                                                <a href="javascript:void(0)" data-page="6" title="Page 6 of 9">6</a>
+                                                                                <a href="javascript:void(0)" data-page="7" title="Page 7 of 9">7</a>
+                                                                                <a href="javascript:void(0)" data-page="8" title="Page 8 of 9">8</a>
+                                                                                <a href="javascript:void(0)" data-page="9" title="Page 9 of 9">9</a>
+                                                </span>
+            <a href="javascript:void(0)" id="rn_CommunitySearchResults_0_Forward" data-page="2" class="">Next &gt;</a>
+        </div>
+    </div>

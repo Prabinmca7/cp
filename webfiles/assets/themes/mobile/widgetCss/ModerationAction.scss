@@ -1,0 +1,17 @@
+@import 'widget-includes';
+
+.rn_MoveDialogContainer {
+    @include span-columns(5);
+    @include media($rn-medium) {
+        @include span-columns(8);
+    }
+
+    @include media($rn-small) {
+        @include span-columns(10);
+    }
+
+    .rn_ProductCategoryInput button.rn_DisplayButton {
+        min-width: 11em;
+    }
+}
+

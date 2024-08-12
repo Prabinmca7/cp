@@ -1,0 +1,6 @@
+input: <rn:widget path='standard/utils/OracleLogo'/>
+removecontent: true
+output:
+<span id="rn_OracleLogo_0" class="rn_OracleLogo">
+    <a href="service" target="_blank" title="Powered By Oracle"><span class="rn_ScreenReaderOnly">Powered By Oracle</span></a>
+</span>

@@ -1,0 +1,6 @@
+type: CommunityCommentRtg
+object:
+  CreatedByCommunityUser:
+    fixture: UserModActive
+  RatingValue: 100
+  RatingWeight: 100

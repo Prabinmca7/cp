@@ -1,0 +1,321 @@
+@import 'widget-includes';
+
+.rn_BestAnswerDisplay {
+    @include row;
+    position: relative;
+
+    h2 {
+        font-size: $base-font-size * 1.75;
+        font-weight: normal;
+        margin-bottom: .5em;
+
+        @include icon($fa-var-check-circle-o) {
+            color: #008000;
+        }
+    }
+
+    $best-answer-background: rgba(182, 255, 255, .31);
+    $best-answer-border: 1px solid transparentize(#00f, .9);
+
+    .rn_BestAnswerList {
+        padding: 0;
+    }
+
+    .rn_BestAnswerContainer {
+        @include row;
+        @include clearfix;
+
+        .rn_BestAnswerInfo {
+            @include span-columns(2);
+            font-size: $base-font-size * .7;
+            line-height: 1.2em;
+            padding-top: 1em;
+
+            .rn_CommentAuthorAvatar {
+                font-size: 1.5em;
+
+                @include media($rn-small) {
+                    @include span-columns(4);
+                }
+            }
+
+            .rn_DisplayName {
+                display: block;
+            }
+
+            .rn_CommentTimestamp {
+                font-size: smaller;
+                display: block;
+                margin-top: 1em;
+
+                @include media($rn-small) {
+                    @include span-columns(8);
+                }
+
+                time {
+                    @include text-overflow;
+                }
+            }
+
+            @include media($rn-small) {
+                @include span-columns(12);
+                background: $aqua;
+                padding: 1em;
+            }
+        }
+
+        .rn_BestAnswerContent {
+            @include span-columns(10);
+            @include clearfix;
+            @include omega;
+
+            background: $best-answer-background;
+            border-radius: 2px;
+            position: relative;
+
+            @include caret(left) {
+                position: absolute;
+                left: -7px;
+                top: 7px;
+                font-size: 1.5em;
+                color: $aqua;
+            }
+
+            @include media($rn-small) {
+                @include span-columns(12);
+
+                &:before {
+                    content: none;
+                }
+
+                .rn_BestAnswerHeader {
+                    border-radius: 0;
+                }
+            }
+
+            .rn_BestAnswerHeader {
+                @include fill-parent;
+                background-color: $aqua;
+                font-size: smaller;
+                padding: .4em 1em;
+                color: $dark-gray;
+            }
+
+            .rn_BestAnswerBody {
+                @include clearfix;
+                position: relative;
+                border: $best-answer-border;
+                border-top: 0;
+                border-radius: 2px 2px 0 0;
+            }
+
+            .rn_HighlightBestAnswer {
+                @include icon($fa-var-tag, before);
+                background: #bcf2dd;
+                padding: 4px;
+                font-style: italic;
+                font-size: small;
+                display: table;
+                word-break: break-word;
+            }
+            .rn_BestAnswerLabel {
+                padding: 1em 1em 0;
+                float: left;
+            }
+
+            .rn_CommentText {
+                @include fill-parent;
+
+                position: relative;
+                padding: 1em 1em 0;
+                overflow: hidden;
+
+                > p {
+                    margin: 0;
+                }
+            }
+
+            .rn_CommentCollapsed {
+                .rn_CommentText {
+                    max-height: 10em;
+                }
+
+                .rn_CommentLiner:after {
+                    @include fade-text;
+                    content: "";
+                }
+
+                .rn_BestAnswerActions {
+                    background: lighten($best-answer-background, 90%);
+                }
+            }
+
+            .rn_CommentSelectedBy a {
+                color: transparentize(#000080, 0);
+            }
+        }
+    }
+
+    .rn_BestAnswerActions {
+        @include row;
+
+        padding: 0 1em 1em;
+
+        .rn_BestAnswerRemoval {
+            @include span-columns(8);
+
+            @include media($rn-large) {
+                @include fill-parent;
+            }
+        }
+
+        .rn_BestAnswerRating {
+            @include span-columns(8);
+
+            @include media($rn-large) {
+                @include fill-parent;
+            }
+
+            font-size: smaller;
+
+            .rn_RatingButtons {
+                display: inline;
+
+                .rn_UpvoteButton:before {
+                    vertical-align: top;
+                }
+
+                .rn_UpDownVoting {
+                    display: inline;
+                    vertical-align: text-bottom;
+                }
+
+            }
+
+            .rn_RatingValue {
+                color: #3b6db1;
+
+                .rn_RatingValueNumerical {
+                    color: #333;
+                }
+            }
+
+            .rn_ResetButton {
+                margin-left: 0;
+                vertical-align: middle;
+            }
+        }
+
+        .rn_ResetButton:before {
+            margin-right: 0;
+        }
+
+        .rn_RatingButtons {
+            .rn_StarVoting {
+                display: inline;
+                vertical-align: text-bottom;
+
+                padding-right: .5em;
+            }
+        }
+
+        button {
+            @include icon($fa-var-trophy);
+            background: none;
+            clear: left;
+            color: $base-link-color;
+            font-size: smaller;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1.5em;
+            padding: 0;
+            text-align: left;
+            text-shadow: none;
+            white-space: normal;
+
+            &:hover {
+                color: $hover-link-color;
+            }
+        }
+
+        .rn_BestAnswerCommentActions {
+            @include span-columns(4);
+
+            text-align: right;
+            padding-top: .2em;
+
+            @include media($rn-large) {
+                @include fill-parent;
+            }
+
+            > a {
+                display: inline-block;
+                font-size: $base-font-size * .7;
+                margin-left: .5em;
+            }
+        }
+
+        .rn_ShowAllCommentText {
+            @include icon($fa-var-plus-circle);
+        }
+
+        .rn_CollapseCommentText {
+            @include icon($fa-var-minus-circle);
+        }
+
+        .rn_ReplyToComment {
+            @include icon($fa-var-sign-out);
+        }
+    }
+
+    .rn_Mask {
+        position: absolute;
+        background: transparentize(#FFF, .1);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+        /* Perfect vertical+horizontal centering.
+           Unhip browsers fall back to horiz. centering
+           (via the text-align in the child div) */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        @include prefixer(box-align, center, webkit moz ms spec);
+        -ms-flex-align: center;
+        @include prefixer(align-items, center, webkit spec);
+        @include prefixer(box-pack, center, webkit moz);
+        -ms-flex-pack: center;
+        @include prefixer(justify-content, center, webkit spec);
+
+        > div {
+            font-size: larger;
+            line-height: 1.4em;
+            text-align: center;
+        }
+
+        a {
+            font-weight: bold;
+            display: block;
+            text-decoration: none;
+        }
+    }
+
+    .rn_Refresh {
+        @include icon($fa-var-refresh, after);
+    }
+}
+
+.rn_HighContrastMode {
+    .rn_BestAnswerActions button {
+        padding: 2px;
+    }
+
+    .rn_BestAnswerHeader {
+        border: 1px outset;
+    }
+}

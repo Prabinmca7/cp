@@ -1,0 +1,14 @@
+input: <rn:widget path="standard/okcs/OkcsSimpleSearch" source_id="OKCSSearch" report_page_url="/app/search"/>
+config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_OkcsSimpleSearch_0" class="rn_OkcsSimpleSearch rn_SimpleSearch">
+    <form id="rn_OkcsSimpleSearch_0_SearchForm" onsubmit="return false;">
+        <input type="search" id="rn_OkcsSimpleSearch_0_SearchField" name="rn_OkcsSimpleSearch_0_SearchField" class="rn_SearchField" maxlength="255" placeholder="Search..." aria-label="Search..."/>
+                        <button type="submit" id="rn_OkcsSimpleSearch_0_Submit">
+            <span class="rn_ButtonLabel">
+                Search            </span>
+        </button>
+    </form>
+</div>

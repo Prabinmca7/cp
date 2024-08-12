@@ -1,0 +1,130 @@
+@import 'widget-includes';
+
+%extend-1 {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align: bottom;
+    min-width: 110px;
+}
+
+.rn_OkcsManageRecommendations {
+    $border: 1px solid #DDD;
+
+    table {
+        th, td{
+            max-width: 300px !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .yui3-datatable-table {
+        border: 1px solid #888;
+        border-spacing: 0;
+        border-collapse: separate;
+
+        th {
+            @extend %extend-1;
+            padding: 10px;
+
+            a {
+                @extend %extend-1;
+
+                &:hover {
+                    @extend %extend-1;
+                }
+            }
+        }
+
+        td {
+            padding: 10px;
+        }
+    }
+
+    .yui3-datatable-sortable-column, .rn_sort {
+        cursor: pointer;
+    }
+
+    .yui3-datatable-even .yui3-datatable-cell {
+        background-color: #FFF;
+    }
+
+    .yui3-datatable-odd .yui3-datatable-cell {
+        background-color: #F7F7F7;
+    }
+
+    .yui3-datatable-sort-liner {
+        position: relative;
+    }
+
+    .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort);
+        padding-left: 8px;
+    }
+
+    .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort-asc);
+    }
+
+    .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+        @include icon($fa-var-sort-desc);
+    }
+
+    .rn_NoNotification {
+        background: #F2FAFD;
+        border: 1px solid #DDD;
+        margin: 10px 0 20px;
+        padding: 10px 4px 8px;
+    }
+
+    .rn_NotificationList {
+        background: #F2FAFD;
+        border: $border;
+        margin: 10px 0 20px;
+        padding: 10px 4px 8px;
+    }
+
+    .rn_Notification {
+        margin: 0 auto;
+    }
+
+    .rn_Notification_Info {
+        border-bottom: $border;
+        color: #6F6F6F;
+        padding: 0 4px 10px 0;
+    }
+
+    .rn_Notification_Actions button {
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+}
+
+.rn_RecommendationsField .rn_Info {
+    width: 30%;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.rn_RecommendationContent {
+    max-height: 250px;
+    overflow-x: auto;
+    display: block;
+}
+
+.rn_RecommendationsSortAsc {
+    @include icon($fa-var-caret-up, after);
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 15px;
+}
+
+.rn_RecommendationsSortDesc {
+    @include icon($fa-var-caret-down, after);
+    padding: 4px;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+}

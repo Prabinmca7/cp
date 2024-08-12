@@ -1,0 +1,29 @@
+version: "1.3.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:VARIOUS_Q_STATUSES_LOCKED_SUSP_MSG
+  category:
+    - Community
+attributes:
+  label_locked:
+    name: rn:msg:LOCKED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYS_HAS_LOCKED_STATUS_LBL
+    default: rn:msg:LOCKED_LBL
+    type: STRING
+  label_locked_tooltip:
+    name: rn:msg:LOCKED_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_USED_QUESTION_HAS_LOCKED_STATUS_LBL
+    default: rn:msg:LOCKED_CANNOT_CURRENTLY_UPDATED_MSG
+    type: STRING
+  label_suspended:
+    name: rn:msg:SUSPENDED_LABEL_LBL
+    description: rn:msg:LABEL_DISPLAYS_HAS_SUSPENDED_STATUS_LBL
+    default: rn:msg:SUSPENDED_LBL
+    type: STRING
+  label_suspended_tooltip:
+    name: rn:msg:SUSPENDED_TOOLTIP_LBL
+    description: rn:msg:TOOLTIP_DISPLAYS_HAS_SUSPENDED_STATUS_LBL
+    default: rn:msg:SUSPENDED_OPERATIONS_CURRENTLY_ALLOWED_MSG
+    type: STRING

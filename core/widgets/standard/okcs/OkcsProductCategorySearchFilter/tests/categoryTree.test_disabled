@@ -1,0 +1,14 @@
+input: <rn:widget path='standard/okcs/OkcsProductCategorySearchFilter' source_id="OKCSBrowse" filter_type="category" view_type='tree'/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+jstestfile: categoryTree.test.js
+removecontent: true
+output:
+<div id="rn_OkcsProductCategorySearchFilter_0" class="rn_OkcsProductCategorySearchFilter rn_ProductCategorySearchFilter">
+   <a role="button" href="javascript:void(0);" class="rn_ScreenReaderOnly" id="rn_OkcsProductCategorySearchFilter_0_LinksTrigger">Screen Reader users press enter to select a Filter by category.&nbsp;<span id="rn_OkcsProductCategorySearchFilter_0_TreeDescription"></span></a>
+      <span class="rn_Label">Filter by category</span>
+      <button type="button" id="rn_OkcsProductCategorySearchFilter_0_Category_Button" class="rn_DisplayButton"><span class="rn_ScreenReaderOnly">This button does not work with screen readers. Please use the previous link instead.</span> <span id="rn_OkcsProductCategorySearchFilter_0_ButtonVisibleText">Select a category</span></button>
+   <div class="rn_ProductCategoryLinks rn_Hidden" id="rn_OkcsProductCategorySearchFilter_0_Links"></div>
+   <div id="rn_OkcsProductCategorySearchFilter_0_TreeContainer" class="rn_PanelContainer rn_Hidden">
+       <div id="rn_OkcsProductCategorySearchFilter_0_Tree" class="rn_Panel"></div>
+   </div>
+</div>

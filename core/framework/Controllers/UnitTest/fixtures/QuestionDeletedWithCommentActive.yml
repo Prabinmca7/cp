@@ -1,0 +1,12 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserModActive
+  Subject: Deleted question by an active user
+  Body: Test question body
+  Attributes.ContentLocked: false
+  StatusWithType.Status.LookupName: Deleted
+  _comments:
+    - fixture: CommentActiveUserActive
+      parameters:
+        CommunityQuestion: this.ID

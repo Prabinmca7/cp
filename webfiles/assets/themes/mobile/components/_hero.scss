@@ -1,0 +1,70 @@
+.rn_Hero {
+    background: $hero-background;
+    color: $hero-color;
+    padding: 1em 0;
+    text-shadow: #000 0 1px;
+
+    .rn_Label {
+        text-shadow: #000 0 1px;
+    }
+
+    .rn_HeroLogo img {
+        height: 3em;
+        margin-bottom: 1em;
+    }
+
+    .rn_HeroInner {
+        @include outer-container;
+        @include clearfix;
+
+        @include media($rn-xlarge) {
+            margin: 0 1em;
+        }
+
+        @include media($rn-small) {
+            margin: 0 1em;
+            max-width: none;
+        }
+
+        > a,
+        > p a {
+            // Normal link colors don't have enough contrast
+            // against the hero background color. Make them
+            // appear as outlined pill buttons.
+            border: 1px solid $hero-color;
+            border-radius: $base-border-radius;
+            color: $hero-color;
+            padding: 3px 8px;
+        }
+
+        a {
+            display: block;
+        }
+
+        p {
+            margin-bottom: .5em;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .translucent {
+            margin: 1em 0;
+        }
+
+        .col {
+            @include span-columns(6);
+            @include small-full-width;
+        }
+
+        input,
+        button {
+            line-height: 1.75em;
+        }
+
+        .rn_SearchControls {
+            margin-top: .5em;
+        }
+    }
+}

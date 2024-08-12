@@ -1,0 +1,18 @@
+input:
+<form id="rn_textInput_0_form" onsubmit="return false;">           <rn:widget path="standard/input/TextInput" name="Contact.Login" validate_on_blur="true"/>
+           <div id="hereBeErrors"></div>
+        </form>
+filter: @"contactToken":"[^"]+"@
+jstestfile: checkExistingAccount.test.js
+removecontent: true
+validate: false
+output:
+<form id="rn_textInput_0_form" onsubmit="return false;">           <div id="rn_TextInput_0" class="rn_TextInput rn_Input">
+    <div id="rn_TextInput_0_LabelContainer">
+        <label for="rn_TextInput_0_Contact.Login" id="rn_TextInput_0_Label" class="rn_Label">
+        Login                                </label>
+    </div>
+    <input type="text" id="rn_TextInput_0_Contact.Login" name="Contact.Login" class="rn_Text" maxlength='255' autocorrect='off' autocapitalize='off'  />
+    </div>
+           <div id="hereBeErrors"></div>
+        </form>

@@ -1,0 +1,11 @@
+input: <form id="rn_textInput_0_form" onsubmit="return false;"><rn:widget path='standard/input/TextInput' name='Contact.Emails.PRIMARY.Address' read_only="true" label_input="Test"/></form>
+contact: slatest
+filter: @"contactToken":"[^"]+"@
+removecontent: true
+output:
+<form id="rn_textInput_0_form" onsubmit="return false;"><div  id="rn_FieldDisplay_1" class="rn_FieldDisplay rn_Output">
+            <span class="rn_DataLabel">Test </span>
+        <div class="rn_DataValue rn_LeftJustify">
+        <a href="mailto:perpetualslacontactnoorg@invalid.com">perpetualslacontactnoorg@invalid.com</a>    </div>
+</div>
+</form>

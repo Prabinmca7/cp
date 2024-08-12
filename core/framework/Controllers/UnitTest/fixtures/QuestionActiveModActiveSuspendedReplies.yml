@@ -1,0 +1,30 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserModActive
+  Subject: Question with active admin
+  Body: Test question body
+  Attributes.ContentLocked: false
+  StatusWithType.Status.LookupName: Active
+  _comments:
+    - fixture: CommentActiveUserActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentPendingModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentDeletedModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentWithSuspendedRepliesUserArchive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentSuspendedModActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentActiveUserArchive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentPendingUserActive
+      parameters:
+        CommunityQuestion: this.ID

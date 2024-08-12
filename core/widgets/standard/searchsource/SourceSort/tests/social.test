@@ -1,0 +1,15 @@
+input: <form><rn:widget path="searchsource/SourceSort" source_id="SocialSearch"/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form><div id="rn_SourceSort_0" class="rn_SourceSort">
+        <label for="rn_SourceSort_0_Column">
+        Sort by    </label>
+    <select id="rn_SourceSort_0_Column">
+        <option selected value="-1">--</option>            <option  value="2">Created</option>            <option  value="1">Updated</option>        </select>
+        <label for="rn_SourceSort_0_Direction">
+        Direction    </label>
+    <select id="rn_SourceSort_0_Direction">
+        <option selected value="-1">--</option>            <option  value="2">Ascending</option>            <option  value="1">Descending</option>        </select>
+</div>
+</form>

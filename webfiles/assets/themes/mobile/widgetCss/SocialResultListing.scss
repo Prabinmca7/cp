@@ -1,0 +1,62 @@
+@import 'widget-includes';
+
+.rn_SocialResultListing {
+    @include row;
+
+    .rn_AuthorAvatar {
+        @include span-columns(1);
+
+        @include media($rn-medium) {
+            @include span-columns(12);
+
+            margin-bottom: 5px;
+
+            .rn_Avatar {
+                @include span-columns(1);
+            }
+
+            .rn_DisplayName {
+                @include span-columns(11);
+
+                font-size: 1em;
+            }
+        }
+    }
+
+    .rn_SocialSearch_QuestionResult {
+        @include span-columns(11);
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    .rn_AdditionalInfo {
+        font-size: smaller;
+    }
+
+    .rn_Timestamps {
+        color: #5E5E5E;
+    }
+
+    .rn_Counts {
+        @include clearfix;
+
+        > div {
+            float: left;
+            margin-right: .9em;
+        }
+    }
+
+    .rn_CommentCount {
+        @include icon($fa-var-comment) {
+            color: #4A4A85;
+        }
+    }
+
+    .rn_BestAnswerCount {
+        @include icon($fa-var-check-circle-o) {
+            color: #008000;
+        }
+    }
+}

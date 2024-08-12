@@ -1,0 +1,33 @@
+@import 'widget-includes';
+
+.rn_DateInput {
+    clear: both;
+    margin-bottom: 1.6em;
+    overflow: visible;
+    position: relative;
+
+    .rn_Label {
+        display: block;
+        font-size: inherit;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    fieldset {
+        background: none;
+        border: 0;
+        padding: .5em 0;
+    }
+
+    select {
+        display: inline;
+        margin-bottom: 0;
+        width: 32%;
+
+        @include media($rn-small) {
+            display: block;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+    }
+}

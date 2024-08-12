@@ -1,0 +1,24 @@
+input: <rn:widget path="standard/discussion/QuestionList" show_sub_items_for="120" max_question_count="1" show_columns="comment_count"/>
+fixture: QuestionWithProduct
+removecontent: true
+output:
+<div id="rn_QuestionList_0" class="rn_QuestionList">
+                    <table id="rn_QuestionList_0_QuestionListTable">
+                <caption><span class='rn_ScreenReaderOnly'>Table containing question statistics</span></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Question</th>
+                                                    <th scope="col">Comments</th>
+                                            </tr>
+                </thead>
+                <tbody>
+                                                                        <tr>
+                                <th scope="row">
+                                    <a href="/app/social/questions/detail/qid/%CommunityQuestion%">Question with product assoc</a>
+                                </th>
+                                                                    <td>
+                                            1                                    </td>
+                                                            </tr>
+                                                            </tbody>
+            </table>
+        </div>

@@ -1,0 +1,60 @@
+input: <rn:form post_handler="postRequest/sendForm"><rn:widget path='standard/input/BasicSmartAssistant'/><rn:widget path="input/BasicFormInput" name="Contact.Emails.PRIMARY.Address"/><rn:widget path="input/BasicFormInput" name="Incident.Subject"/><rn:widget path="input/BasicFormInput" name="Incident.Threads"/><rn:widget path='standard/input/BasicFormSubmit' on_success_url="/app/ask_confirm"/></rn:form><rn:widget path="input/BasicFormStatusDisplay"/>
+filter: @((f_tok"|saToken"|validationToken') value=["'][a-zA-Z0-9_+/!~]+["'])|(saResultToken/)\d+@
+post: smart_assistant=true&formData%5BContact.Emails.PRIMARY.Address%5D=eturner%40rightnow.com.invalid&formData%5BIncident.Subject%5D=TEMPLATETEST&formData%5BIncident.Threads%5D=test&constraints=eyJJbmNpZGVudC5TdWJqZWN0Ijp7ImxhYmVscyI6eyJsYWJlbF9pbnB1dCI6IlN1YmplY3QiLCJsYWJlbF9lcnJvciI6IiIsImxhYmVsX3ZhbGlkYXRpb24iOiJSZS1lbnRlciAlcyJ9fSwiSW5jaWRlbnQuVGhyZWFkcyI6eyJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJUaHJlYWRzIiwibGFiZWxfZXJyb3IiOiIiLCJsYWJlbF92YWxpZGF0aW9uIjoiUmUtZW50ZXIgJXMifX19&handler=postRequest%2FsendForm&format%5Bon_success_url%5D=%2Fapp%2Fask_confirm
+postftok: true
+removecontent: true
+replace: $2$3
+template: basic
+validationtoken: 22121fa681d90a15c1c1ca933ea8915c1473fd50|intf|/app/unitTest/rendering/widgets/standard/input/BasicSmartAssistant/tests/postStandardText|postRequest/sendForm
+output:
+<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicSmartAssistant/tests/postStandardText"><div><div class="rn_BasicSmartAssistant">
+            <hr/>
+        <h2 class="rn_Banner">Your question hasn't been submitted yet.</h2>
+        <div>Since your question has not yet been submitted, please note that your submission may be lost if you click any links that take you away from this page. You may still edit your question below and resubmit.</div>
+        <br/>
+                                <div>
+                <a href='/app/home/saResultToken/'>My Question is Answered</a>
+            </div>
+            <br/>
+                                    <div>
+                <input type='submit' id='rn_BasicSmartAssistant_0_Header_Button' value='Finish Submitting Question'/>
+            </div>
+            <br/>
+                                                                            <div>Dear ,<br />We are sorry you have had a bad experience with our Customer Support. Our senior staff has been notified and will be contacting you within the next 30 minutes to resolve your situation.</div>
+                                            <br/>
+                <div>
+            <a href='/app/home/saResultToken/'>My Question is Answered</a>
+        </div>
+        <br/>
+                        <div>
+            <input type='submit' id='rn_BasicSmartAssistant_0_Button' value='Finish Submitting Question'/>
+        </div>
+        <br/>
+                <hr/>
+        <input type="hidden" name="saToken"/>
+        <input type="hidden" name="smart_assistant" value="false"/>
+    </div>
+<div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_2_Contact.Emails.PRIMARY.Address" class="rn_Label">
+    Address            </label><br/>
+    <input type="text" id="rn_BasicTextInput_2_Contact.Emails.PRIMARY.Address" name="formData[Contact.Emails.PRIMARY.Address]" class="rn_Email" value='eturner@rightnow.com.invalid' />
+    </div>
+<div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_4_Incident.Subject" class="rn_Label">
+    Subject            </label><br/>
+    <input type="text" id="rn_BasicTextInput_4_Incident.Subject" name="formData[Incident.Subject]" class="rn_Text" value='TEMPLATETEST' />
+    </div>
+<div class="rn_BasicTextInput rn_TextInput rn_Input">
+    <label for="rn_BasicTextInput_6_Incident.Threads" class="rn_Label">
+    Threads            </label><br/>
+    <textarea id="rn_BasicTextInput_6_Incident.Threads" class="rn_TextArea" rows="5" cols="20" name="formData[Incident.Threads]">test</textarea>
+</div>
+<div class="rn_BasicFormSubmit">
+        <input type="submit" id="rn_BasicFormSubmit_7_Button" value="Submit"/>
+    <input type="hidden" name="f_tok"/>
+                        <input type="hidden" name="format[on_success_url]" value="/app/ask_confirm"/>
+                        </div>
+<input type='hidden' name='validationToken'/>
+                <input type='hidden' name='constraints' value='eyJDb250YWN0LkVtYWlscy5QUklNQVJZLkFkZHJlc3MiOnsibGFiZWxzIjp7ImxhYmVsX2lucHV0IjoiQWRkcmVzcyIsImxhYmVsX2Vycm9yIjoiIiwibGFiZWxfdmFsaWRhdGlvbiI6IlJlLWVudGVyIGEgdmFsdWUgZm9yIHRoZSBmaWVsZCAnJXMnIn19LCJJbmNpZGVudC5TdWJqZWN0Ijp7ImxhYmVscyI6eyJsYWJlbF9pbnB1dCI6IlN1YmplY3QiLCJsYWJlbF9lcnJvciI6IiIsImxhYmVsX3ZhbGlkYXRpb24iOiJSZS1lbnRlciBhIHZhbHVlIGZvciB0aGUgZmllbGQgJyVzJyJ9fSwiSW5jaWRlbnQuVGhyZWFkcyI6eyJsYWJlbHMiOnsibGFiZWxfaW5wdXQiOiJUaHJlYWRzIiwibGFiZWxfZXJyb3IiOiIiLCJsYWJlbF92YWxpZGF0aW9uIjoiUmUtZW50ZXIgYSB2YWx1ZSBmb3IgdGhlIGZpZWxkICclcycifX19'/>
+                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form><div class="rn_BasicFormStatusDisplay">
+</div>

@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/okcs/OkcsVisualProductCategorySelector"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+jstestfile: base.test.js
+removecontent: true
+output:
+<div id="rn_OkcsVisualProductCategorySelector_0" class="rn_OkcsVisualProductCategorySelector rn_VisualProductCategorySelector">
+    <div class="rn_Items">
+        <div id="rn_OkcsVisualProductCategorySelector_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+        <div class="rn_NavigationArea rn_Hidden">
+                                    <span class="rn_BreadCrumb" role="navigation"></span>
+                    </div>
+            </div>
+    </div>

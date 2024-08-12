@@ -1,0 +1,20 @@
+input: <rn:widget path="standard/feedback/SocialContentRating" content_type="question" question_id="2003"/>
+contact: useractive2
+removecontent: true
+urlparameters: /qid/2003
+output:
+<div id="rn_SocialContentRating_0" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="Thank you for voting" disabled>
+    <span class="rn_ScreenReaderOnly" aria-live="polite">Thank you for voting</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Rating: 1 (1 user)">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Rating: 1 (1 user)                	</span>
+        	        </span>
+    </div>

@@ -1,0 +1,27 @@
+.rn_CustomAnswerFeedback .custom-insert {
+    background: red;
+    color: white;
+    margin: 8px 0;
+    padding: 4px;
+    text-align: center;
+}
+.rn_CustomAnswerFeedback .partial-insert {
+    background: cyan;
+    padding: 10px;
+    text-align: center;
+}
+.rn_CustomAnswerFeedback .partial-insert .cutie {
+    display: inline-block;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,13 @@
+input: <rn:widget path="standard/input/SocialUserAvatar"/>
+contact: weide@rightnow.com.invalid
+removecontent: true
+output:
+<div id="rn_SocialUserAvatar_0" class="rn_SocialUserAvatar">
+    <div id="rn_SocialUserAvatar_0_ProfilePicture">
+        <div id="rn_ErrorLocation"></div>
+                    <h2>Update Your Profile Picture</h2>
+                            <div class="rn_NoSocialUser">
+                Unfortunately, you do not have a public profile yet.                <a href="javascript:void(0);" id="rn_SocialUserAvatar_0_AddSocialUser" class="rn_AddSocialUser">Add one</a>
+            </div>
+            </div>
+</div>

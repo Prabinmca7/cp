@@ -1,0 +1,44 @@
+input:
+<pre>
+<?=print_r(get_included_files());?>
+</pre>
+filter: @\s*=>\s*/[a-zA-Z0-9/._-]*(scripts|configs)/@
+removecontent: true
+validate: false
+output:
+<pre>
+Array
+(
+    [0]bootstrap/index.php
+    [1]bootstrap/Router.php
+    [2]bootstrap/Loaders/CustomerPortal.php
+    [3]cp/index.php
+    [4]cp/core/framework/init.php
+    [5]cp/core/framework/CodeIgniter3/system/CoreCodeIgniter.php
+    [6]cp/core/framework/optimized_includes.php
+    [7]cp/core/framework/Controllers/Openlogin.php
+    [8]cp/core/framework/Libraries/OpenLoginErrors.php
+    [9]cp/core/framework/Libraries/BoundedObjectBase.php
+    [10]cp/core/framework/Internal/Libraries/OpenLogin/FacebookUser.php
+    [11]cp/core/framework/Internal/Libraries/OpenLogin/User.php
+    [12]cp/core/framework/Internal/Libraries/OpenLogin/TwitterUser.php
+    [13]cp/core/framework/Internal/Libraries/OpenLogin/GoogleUser.php
+    [14]cp/core/framework/Internal/Libraries/OpenLogin/OpenIDUser.php
+    [15]cp/core/compatibility/optimized_includes.php
+    [16]cp/core/framework/CodeIgniter3/system/core/Common.php
+    [17]cp/core/framework/Controllers/Page.php
+    [18]cp/core/framework/CodeIgniter3/system/libraries/Rntphpwrapper.php
+    [19]cp/mod_info.phph
+    [20]include/Connect_init.phph
+    [21]include/Connect_kf_init.phph
+    [22]include/config/config.phph
+    [23]config_custom.phph
+    [24]include/msgbase/msgbase.phph
+    [25]msgbase_custom.phph
+    [26]include/rnwintf.phph
+    [27]include/rnwintf_generated.phph
+    [28]cp/generated/production/optimized/config/pageSetMapping.php
+    [29]cp/generated/production/optimized/config/hooks.php
+    [30]cp/generated/production/optimized/views/headers/unitTest/rendering/Views/Admin/tests/misc/includedFilesList.php
+)
+1</pre>

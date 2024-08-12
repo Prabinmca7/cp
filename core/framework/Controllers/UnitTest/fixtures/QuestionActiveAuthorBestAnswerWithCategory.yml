@@ -1,0 +1,18 @@
+type: CommunityQuestion
+object:
+  CreatedByCommunityUser:
+    fixture: UserActive1
+  Subject: Question with active user with category
+  Body: Test question body
+  Attributes.ContentLocked: false
+  StatusWithType.Status.LookupName: Active
+  _comments:
+    - fixture: CommentActiveUserActive
+      parameters:
+        CommunityQuestion: this.ID
+    - fixture: CommentPendingUserActive
+      parameters:
+        CommunityQuestion: this.ID
+  BestCommunityQuestionAnswers:
+    - fixture: BestAnswerAuthor
+  Category: 70

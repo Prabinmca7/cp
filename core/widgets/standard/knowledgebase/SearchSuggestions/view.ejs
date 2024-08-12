@@ -1,0 +1,9 @@
+<rn:block id="preList"/>
+<ul id="<%= listID %>">
+<% for (var i = 0; i < links.length; i++) { %>
+    <rn:block id="listItem">
+    <li><a href="<%= links[i].href %>"/><%= links[i].label %></a></li>
+    </rn:block>
+<% } %>
+</ul>
+<rn:block id="postList"/>

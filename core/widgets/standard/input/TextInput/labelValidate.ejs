@@ -1,0 +1,10 @@
+<rn:block id="preValidateLabel"/>
+<label for="rn_<%= instanceID %>_<%= fieldName %>_Validate" id="rn_<%= instanceID %>_<%= fieldName %>_LabelValidate" class="rn_Label">
+<%= label %>
+<% if (required) { %>
+    <rn:block id="preValidateRequired"/>
+        <%= getRequiredLabel() %>
+    <rn:block id="postValidateRequired"/>
+<% } %>
+</label>
+<rn:block id="postValidateLabel"/>

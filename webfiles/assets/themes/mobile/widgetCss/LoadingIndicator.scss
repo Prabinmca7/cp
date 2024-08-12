@@ -1,0 +1,14 @@
+@import 'widget-includes';
+
+.rn_OkcsLoading {
+    background: url("#{$theme-images}/loading.gif") no-repeat scroll center center;
+    clear: both;
+    height: 100%;
+    margin-left: -6px;
+    opacity: .6;
+    position: fixed;
+    width: 100%;
+    max-width: 69em;
+    z-index: 500;
+    top: 0;
+}

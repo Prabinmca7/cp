@@ -1,0 +1,4 @@
+input: <rn:widget path='standard/utils/PageSetSelector' page_sets=''/>
+filter: @expires=.*?;'@
+removecontent: true
+output: 

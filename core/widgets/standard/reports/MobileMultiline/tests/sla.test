@@ -1,0 +1,27 @@
+input: <rn:widget path='standard/reports/MobileMultiline' report_id='161'/>
+contact: slatest
+jstestfile: base.test.js
+removecontent: true
+template: mobile
+output:
+<div id="rn_MobileMultiline_0" class="rn_MobileMultiline rn_Multiline">
+    <div id="rn_MobileMultiline_0_Alert" role="alert" class="rn_ScreenReaderOnly"></div>
+    <div id="rn_MobileMultiline_0_Loading"></div>
+    <div id="rn_MobileMultiline_0_Content" class="rn_Content">
+                            <ul>
+                            <li>
+                                                                                        <div class="rn_Element1"><h3>perpetual</h3></div>
+                                                                                                                                                                <span class="rn_Element2">Active</span>
+                                                                                                                                                                <span class="rn_Element3">Unlimited</span>
+                                                                                                                                                            <span class="rn_ElementsHeader">Remaining Incidents: </span>
+                            <span class="rn_ElementsData">Unlimited</span>
+                                                                                                                                <span class="rn_ElementsHeader">Access Level: </span>
+                            <span class="rn_ElementsData">Special</span>
+                                                                                                                                <span class="rn_ElementsHeader">Active Date: </span>
+                            <span class="rn_ElementsData">02/18/2009</span>
+                                                                                                                                <span class="rn_ElementsHeader">Expiration Date: </span>
+                            <span class="rn_ElementsData">02/18/2026</span>
+                                                                        </li>
+                            </ul>
+                    </div>
+</div>

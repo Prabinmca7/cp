@@ -1,0 +1,8 @@
+1.0.1:
+  release: "13.5"
+  entries:
+  - date: 12/06/2012
+    level: major
+    description: Initial version of search/BasicProductCategorySearchFilter
+    category: API Change
+    sortPosition: Middle

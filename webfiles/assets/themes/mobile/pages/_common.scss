@@ -1,0 +1,344 @@
+html, body {
+    // Ensure there's never a gap between the footer
+    // and the bottom of the page for shorter pages.
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+h2, h3, h4 {
+    margin-bottom: .5em;
+}
+
+a {
+    padding: 0.1em 0;
+}
+
+fieldset {
+    margin-top: .5em;
+    padding: .5em;
+    background: #F4F4F4;
+    border: 1px solid #ececec;
+
+    .rn_Input:last-child {
+        margin-bottom: 0;
+
+        input:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+p,
+textarea,
+.rn_Input > .rn_HintText,
+#{$all-text-inputs},
+select {
+    margin-bottom: .5em;
+}
+
+.rn_Input > .rn_HintText,
+.rn_Input > fieldset > .rn_HintText {
+    display: block;
+}
+
+legend {
+    // default legend tags to hidden
+    display: none;
+}
+
+pre {
+    background: lighten($light-gray, 5%);
+    color: #000;
+    padding: 1em;
+}
+
+.rn_Container {
+    @include outer-container;
+
+    padding-top: 5px;
+
+    @include media($rn-xlarge) {
+        margin: 0 1em;
+    }
+
+    @include media($rn-medium) {
+        word-wrap: break-word;
+    }
+}
+
+.rn_MegaContainer {
+    @include clearfix;
+    margin: 20px;
+}
+
+.rn_ErrorMessage {
+    @include flash($error-color);
+}
+
+.rn_WarningMessage {
+    @include flash($notice-color);
+}
+
+.rn_ErrorField {
+    background: $error-field !important;
+}
+
+.rn_Required,
+.rn_ErrorLabel {
+    color: darken($error-color, 50);
+}
+
+.rn_InfoMessage {
+    @include flash($success-color);
+}
+
+.rn_CaptchaDialog {
+    border: 1px solid #CCC;
+
+    #recaptcha_area {
+        table {
+            table-layout: auto;
+        }
+
+        input {
+            display: inline;
+        }
+    }
+}
+
+.rn_MessageBox {
+    margin: .5em 0;
+    padding: .5em;
+}
+
+.rn_HintBox {
+    background: #FFF;
+    border-radius: 3px;
+    border-top: 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    display: block;
+    margin-top: .3em;
+
+    @include caret(up) {
+        font-size: 2em;
+        color: #FFF;
+        top: -10px;
+        left: 33px;
+        z-index: 1;
+        margin: 0;
+        position: absolute;
+    }
+
+    @include caret(up, after) {
+        font-size: 2.2em;
+        color: #DBDBDB;
+        top: -11px;
+        left: 32px;
+        margin: 0;
+        position: absolute;
+    }
+}
+
+.rn_Loading {
+    @include loading-icon;
+}
+
+.rn_CheckSquare {
+    @include check-square-icon;
+}
+
+.rn_ExclamationCircle {
+    @include exclamation-circle-icon;
+}
+
+.rn_Body {
+    // Ensure there's never a gap between the footer
+    // and the bottom of the page for shorter pages.
+    min-height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.rn_SkipNav:focus,
+.rn_SkipNav:active {
+    background-color: #FFF;
+    height: auto;
+    left: auto;
+    top: auto;
+    width: auto;
+}
+
+.rn_MainColumn {
+    padding-bottom: .5em;
+}
+
+.rn_PageContent {
+    padding: .5em 0;
+
+    .rn_PopularKB,
+    .rn_PopularSocial {
+        $dark-text: #333;
+
+        h2 {
+            color: $dark-text;
+            margin-bottom: 1em;
+            font-size: 1.75em;
+            font-weight: bold;
+            line-height: 2em;
+        }
+
+        .rn_Container {
+            padding: 2em 0;
+        }
+    }
+}
+
+.rn_DiscussionAuthorSubscription {
+    margin-bottom: .5em;
+}
+
+.rn_SearchControls {
+    form {
+        @include small-full-width;
+        @include row;
+    }
+
+    .rn_SearchInput {
+        @include span-columns(11);
+
+        @include media($rn-medium) {
+            @include span-columns(10);
+        }
+    }
+
+    .rn_SearchButton,
+    .rn_SourceSearchButton {
+        @include span-columns(1);
+
+        @include media($rn-medium) {
+            @include span-columns(2);
+        }
+
+        text-align: right;
+
+        .rn_SubmitButton {
+            @include fill-parent;
+
+            padding: .5em 0;
+            font-weight: bold;
+
+            @include icon($fa-var-search, after) {
+                margin: 0;
+            }
+        }
+
+        .rn_ButtonText {
+            @extend %screenreader;
+        }
+    }
+
+    .rn_SearchFilters {
+        @include small-full-width;
+        @include row;
+
+        span.rn_Label,
+        label {
+            margin-bottom: 2px;
+            font-weight: normal;
+            text-shadow: 0 1px #000;
+        }
+    }
+}
+
+.rn_PopularSocial, .rn_QuestionResults, .rn_QuestionList {
+    h2 {
+        @include header-icon($social-discussion-icon);
+    }
+}
+
+.rn_PopularKB, .rn_KBAnswerResults, .rn_KBAnswerList {
+    h2 {
+        @include header-icon($kb-answer-icon);
+    }
+}
+
+.rn_PopularKB, .rn_PopularSocial,
+.rn_KBAnswerResults, .rn_QuestionResults,
+.rn_KBAnswerList, .rn_QuestionList {
+    h2 {
+        margin: 0 0 10px;
+        font-size: 1.75em;
+        font-weight: bold;
+        line-height: 2em;
+
+        @include span-columns(12);
+     }
+
+    .rn_AnswersLink, .rn_DiscussionsLink {
+        display: block;
+        font-size: larger;
+        text-align: right;
+
+        a {
+            @include list-more-icon;
+        }
+    }
+}
+
+.rn_SideRail li {
+    padding-left: 5px;
+}
+
+.rn_HighContrastMode {
+    input,
+    input[type="submit"],
+    button,
+    textarea,
+    select {
+        border: 1px outset !important;
+    }
+
+    .rn_HintBox {
+        &:before, &:after {
+            content: none;
+        }
+    }
+
+    .rn_Avatar {
+        .rn_Default {
+            border: 1px outset;
+        }
+    }
+}

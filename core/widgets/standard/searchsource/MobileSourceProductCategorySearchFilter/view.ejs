@@ -1,0 +1,16 @@
+<rn:block id="preDialog"/>
+<form id="<%= inputID %>" class="rn_Input rn_MobileSourceProductCategorySearchFilter rn_Level<%= level %>" onsubmit="return false;">
+     <rn:block id="dialogTop"/>
+<% for (var i = 0, divClass, labelClass; i < data.length; i++) { %>
+    <% divClass = ((i === 0) ? "rn_Parent" : "rn_SubItem") + ((data[i].id === alreadySelected) ? " rn_Selected" : ""); %>
+    <div class="<%= divClass %>">
+        <input type="radio" id="<%= inputID %>_<%= (i + 1) %>" value="<%= data[i].id %>"/>
+        <% labelClass = (data[i].hasChildren) ? "rn_HasChildren" : ""; %>
+        <label class="<%= labelClass %>" id="<%= labelID %>_<%= (i + 1) %>" for="<%= inputID %>_<%= (i + 1) %>"><%= escapeHtml(data[i].label) %>
+        <% if (labelClass === "rn_HasChildren") { %><span class="rn_ParentMenuAlt"> <%= parentAlt %></span><% } %>
+        </label>
+    </div>
+<% } %>
+   <rn:block id="dialogBottom"/>
+</form>
+<rn:block id="postDialog"/>

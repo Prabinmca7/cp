@@ -1,0 +1,4 @@
+input: <rn:widget path='standard/output/FileListDisplay'/>
+removecontent: true
+template: mobile
+output: 

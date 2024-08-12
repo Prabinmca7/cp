@@ -1,0 +1,19 @@
+@import 'widget-includes';
+
+.rn_CommunityUserDisplay {
+    min-height: 1.333em;
+    position: relative;
+}
+
+.rn_CommunityUserDisplay img {
+    height: 50px;
+    padding-right: 10px;
+    width: 50px;
+}
+
+.rn_CommunityUserDisplay .rn_UserName {
+    font-size: 1.333em;
+    font-weight: bold;
+    position: absolute;
+    top: -1px;
+}

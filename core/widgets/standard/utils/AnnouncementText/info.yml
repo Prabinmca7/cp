@@ -1,0 +1,17 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  label_heading:
+    name: rn:msg:ANNOUNCEMENT_LABEL_LBL
+    type: STRING
+    description: rn:msg:HDR_LABEL_DISP_ANNOUNCEMENT_TEXT_LBL
+    default: rn:msg:ANNOUNCEMENTS_LBL
+  file_path:
+    name: rn:msg:RNW_FILE_NAME_LBL
+    type: STRING
+    description: rn:msg:PATH_PP_CONT_A_PCT_FULLY_FILE_BEG_EUF_MSG
+    required: true
+info:
+  description: rn:msg:WIDGET_DISP_CONTENTS_FILE_ASSETS_MSG

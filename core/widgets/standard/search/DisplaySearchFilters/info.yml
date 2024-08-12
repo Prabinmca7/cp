@@ -1,0 +1,43 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  show_filter_label:
+    name: rn:msg:SHOW_FILTER_LABEL_LBL
+    type: BOOLEAN
+    description: rn:msg:When true, the filter label is displayed.
+    default: FALSE
+  label_filter_remove:
+    name: rn:msg:FILTER_REMOVE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAY_FILTER_REMOVAL_LBL
+    default: rn:msg:REMOVE_S_FILTER_LBL
+  label_title:
+    name: rn:msg:TITLE_LABEL_LBL
+    type: STRING
+    description: rn:msg:LABEL_HEADING_SET_TXT_STRING_MSG_MSG
+    default: rn:msg:SEARCH_FILTERS_APPLIED_CMD
+  report_id:
+    name: rn:msg:REPORT_LBL
+    type: INT
+    description: rn:msg:ID_RPT_DISP_DATA_SEARCH_RESULTS_MSG
+    default: rn:def:CP_NOV09_ANSWERS_DEFAULT
+    min: 1
+  report_page_url:
+    name: rn:msg:REPORT_PAGE_LBL
+    type: STRING
+    description: rn:msg:FLTRS_APPEND_T_FULLYQUALIFIED_BEG_APP_MSG
+  static_filter:
+    name: rn:msg:STATIC_FILTER_LBL
+    type: STRING
+    description: rn:msg:V_CMMSPRTD_KYVL_DSC_FLTR_VLS_P2PG2_VLS_P_MSG
+info:
+  category:
+    - Report Search
+  description: rn:msg:WDGET_DISP_SRCH_FLTRS_APPLIED_RPT_MSG
+  urlParameters:
+    filter_name:
+      name: rn:msg:FLTR_NAME_LBL
+      description: rn:msg:FLTR_NAME_URL_PARAM_MATCHES_FLTR_MSG
+      example: p/1,4,6

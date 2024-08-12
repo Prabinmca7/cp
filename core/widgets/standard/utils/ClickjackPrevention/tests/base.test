@@ -1,0 +1,13 @@
+input: <rn:widget path='standard/utils/ClickjackPrevention'/>
+removecontent: true
+output:
+<script type="text/javascript">
+<!--
+if (parent !== self) {
+    top.location.href = location.href;
+}
+else if (top !== self) {
+    top.location.href = self.document.location;
+}
+//-->
+</script>

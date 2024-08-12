@@ -1,0 +1,18 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [none]
+attributes:
+  email_credentials_ajax: unset
+  post_handler:
+    name: rn:msg:POST_HANDLER_LBL
+    description: rn:msg:CLASS_METHOD_PROCESS_POST_DATA_LBL
+    default: postRequest/emailCredentials
+    type: string
+extends:
+  widget: standard/login/EmailCredentials
+  versions: ["1.4"]
+  components: [php]
+  overrideViewAndLogic: "true"
+info:
+  description: rn:msg:WDGT_EXTENSION_STD_MSG

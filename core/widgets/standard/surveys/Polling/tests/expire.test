@@ -1,0 +1,40 @@
+input:
+<?
+$type = SURVEY_TYPE_POLLING;
+$sql = "update surveys set type=$type, design_xml='<?xml version=\"1.0\" ?>
+        <SurveyDesignModel xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">
+          <Pages>
+            <SurveyPageModel Title=\"Page 1\" DocumentId=\"36\" ButtonText=\"Submit\" ButtonClass=\"\" ButtonStyle=\"\" PollingSurvey=\"true\" Modified=\"false\">
+              <Items>
+                <SurveyPageItemModel xsi:type=\"SurveyQuestionModel\" QuestionID=\"12\" QuestionName=\"Favorite Color\" Active=\"true\"/>
+              </Items>
+            </SurveyPageModel>
+          </Pages>
+          <Options FinalPageOption=\"RedirectThankYou\" FinalPageRedirectUrl=\"\" Pollingtitle=\"Poll of the day\" PollingShowResultsLink=\"false\" PollingShowTotalVotes=\"false\" PollingShowChart=\"true\" ProgressBarVisible=\"false\" ProgressBackColorDone=\"AAAAAA\" ProgressBackColorCurrent=\"000000\" ProgressBackColorRemainder=\"FFFFFF\" ProgressBorderColor=\"000000\">
+            <FinalActions/>
+          </Options>
+        </SurveyDesignModel>', max_responses=2, num_started=2, expire_msg='POLLING_TEST' where survey_id=6";
+test_sql_exec_direct($sql);
+?>
+<rn:widget path='standard/surveys/Polling' survey_id="6" />
+<?
+$type = SURVEY_TYPE_WEB;
+$sql = "update surveys set type=$type, design_xml='<?xml version=\"1.0\" ?>
+        <SurveyDesignModel xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">
+          <Pages>
+            <SurveyPageModel Title=\"Favorite Color\" DocumentId=\"36\" ButtonText=\"Submit\" ButtonClass=\"\" ButtonStyle=\"\" PollingSurvey=\"false\" Modified=\"false\">
+              <Items>
+                <SurveyPageItemModel xsi:type=\"SurveyQuestionModel\" QuestionID=\"12\" QuestionName=\"Favorite Color\" Active=\"false\"/>
+                <SurveyPageItemModel xsi:type=\"SurveyQuestionModel\" QuestionID=\"18\" QuestionName=\"House Buying Matrix\" Active=\"false\"/>
+              </Items>
+            </SurveyPageModel>
+          </Pages>
+          <Options FinalPageOption=\"RedirectThankYou\" FinalPageRedirectUrl=\"\" Pollingtitle=\"Poll of the day\" PollingShowResultsLink=\"false\" PollingShowTotalVotes=\"false\" PollingShowChart=\"true\" ProgressBarVisible=\"false\" ProgressBackColorDone=\"AAAAAA\" ProgressBackColorCurrent=\"000000\" ProgressBackColorRemainder=\"FFFFFF\" ProgressBorderColor=\"000000\">
+            <FinalActions/>
+          </Options>
+        </SurveyDesignModel>', max_responses=NULL, expire_msg=NULL where survey_id=6";
+test_sql_exec_direct($sql);
+?>
+removecontent: true
+validate: false
+output: POLLING_TEST

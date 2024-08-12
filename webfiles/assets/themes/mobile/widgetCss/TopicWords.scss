@@ -1,0 +1,30 @@
+@import 'widget-includes';
+
+.rn_TopicWords {
+    background-color: $light-gray;
+    margin: 8px 0 20px;
+    padding: 6px;
+
+    .rn_Title {
+        font-size: 1.167em;
+        line-height: 1.3em;
+        font-weight: bold;
+    }
+
+    dl {
+        padding-left: 12px;
+    }
+
+    dd {
+        padding-bottom: 10px;
+    }
+
+    img {
+        margin-right: 6px;
+        vertical-align: middle;
+    }
+
+    a {
+        color: darken($base-link-color, 20%);
+    }
+}

@@ -1,0 +1,24 @@
+input: <rn:widget path='standard/output/IncidentThreadDisplay' name='incidents.thread'/>
+contact: ehannan@rightnow.com.invalid
+removecontent: true
+urlparameters: /i_id/141
+output:
+<div id="rn_IncidentThreadDisplay_0" class="rn_IncidentThreadDisplay rn_Output">
+    <span class="rn_DataLabel">Threads </span>
+        <div class="rn_ThreadHeader ">
+        <span class="rn_ThreadAuthor">
+            Rule Response        </span>
+        <span class="rn_ThreadTime">
+            TIMEVALUE        </span>
+    </div>
+    <div class="rn_ThreadContent">
+        Title: iPhone: About the SIM PIN<br />Link: <a href="app/answers/detail/a_id/60" target="_blank">app/answers/detail/a_id/60</a><br /><br />Title: Enabling MMS on iPhone 3G and iPhone 3GS<br />Link: <a href="app/answers/detail/a_id/52" target="_blank">app/answers/detail/a_id/52</a><br /><br />Title: Understanding cellular data networks<br />Link: <a href="app/answers/detail/a_id/59" target="_blank">app/answers/detail/a_id/59</a><br /><br />Title: iPhone not recognized in iTunes for Windows<br />Link: <a href="app/answers/detail/a_id/55" target="_blank">app/answers/detail/a_id/55</a><br /><br />Title: iPhone backups<br />Link: <a href="app/answers/detail/a_id/56" target="_blank">app/answers/detail/a_id/56</a><br />    </div>
+        <div class="rn_ThreadHeader rn_Customer">
+        <span class="rn_ThreadAuthor">
+            Customer (Erich Hannan) via channel 'Service Web'        </span>
+        <span class="rn_ThreadTime">
+            TIMEVALUE        </span>
+    </div>
+    <div class="rn_ThreadContent">
+        my iphone, blah, blah, blah    </div>
+</div>

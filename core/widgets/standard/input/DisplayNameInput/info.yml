@@ -1,0 +1,40 @@
+version: "1.2.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:PROVIDES_INPUT_EU_L_ONCE_ENT_C_NO_BLANK_MSG
+  category:
+  - Community
+extends:
+  widget: standard/input/TextInput
+  components:
+  - php
+  versions: ["1.8"]
+attributes:
+  name: unset
+  required: unset
+  always_show_mask: unset
+  default_value: unset
+  allow_external_login_updates: unset
+  existing_contact_check_ajax: unset
+  label_validation_incorrect: unset
+  label_validation: unset
+  require_validation: unset
+  validate_on_blur: unset
+  maximum_length: unset
+  minimum_length: unset
+  maximum_value: unset
+  minimum_value: unset
+  textarea: unset
+  hide_hint: unset
+  label_input:
+    name: rn:msg:INPUT_LABEL_LBL
+    type: string
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: rn:msg:DISPLAY_NAME_LBL
+  always_required:
+    name: rn:msg:ALWAYS_REQUIRED_LBL
+    type: boolean
+    description: rn:msg:S_REQD_EE_ATTRIB_S_REQD_TT_VALU_MSG
+    default: true

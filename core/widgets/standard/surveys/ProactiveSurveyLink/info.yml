@@ -1,0 +1,73 @@
+version: "1.1.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  - mobile
+attributes:
+  title:
+    name: rn:msg:TITLE_LBL
+    type: STRING
+    description: rn:msg:TITLE_TO_BE_USED_FOR_MODAL_DIALOG_MSG
+    default: rn:msg:SURVEY_INVITATION_LBL
+  intro_paragraph:
+    name: rn:msg:INTRO_PARAGRAPH_LBL
+    type: STRING
+    description: rn:msg:INTRODUCTION_TEXT_DESC_SURVEY_LBL
+    default: rn:msg:PLEASE_ACC_INV_PARTICIPATE_SURVEY_MSG
+  survey_id:
+    name: rn:msg:SURVEY_ID_LBL
+    type: INT
+    description: rn:msg:THE_ID_OF_THE_SURVEY_TO_BE_USED_MSG
+    min: 1
+    required: true
+  dialog_width:
+    name: rn:msg:DIALOG_WIDTH_LBL
+    type: INT
+    description: rn:msg:WIDTH_MODAL_DIALOG_POPS_VAL_PIXELS_MSG
+    default: 300
+    min: 100
+  seconds:
+    name: rn:msg:SECONDS_LBL
+    type: INT
+    description: rn:msg:DIALOG_POPS_SET_0_DIALOG_POP_MSG
+    default: 0
+  frequency:
+    name: rn:msg:FREQUENCY_LBL
+    description: rn:msg:PCT_VISITORS_OFFERED_SURVEY_EX_VAL_MSG
+    default: 100
+    type: INT
+    min: 1
+    max: 100
+  cookie_duration:
+    name: rn:msg:COOKIE_DURATION_LBL
+    description: rn:msg:COOKIE_EXPIRES_COOKIE_ACT_DIALOG_MSG
+    default: 10
+    type: INT
+  wait_for_event:
+    name: rn:msg:WAIT_FOR_EVENT_LBL
+    description: rn:msg:TRUE_MODAL_DIALOG_POP_UNLESS_EVT_MSG
+    default: false
+    type: BOOLEAN
+  label_cancel_button:
+    name: rn:msg:LABEL_CANCEL_BUTTON_LBL
+    type: STRING
+    description: rn:msg:LABEL_TO_DISPLAY_ON_CANCEL_BUTTON_LBL
+    default: rn:msg:CANCEL_LBL
+  label_accept_button:
+    name: rn:msg:LABEL_ACCEPT_BUTTON_LBL
+    type: STRING
+    description: rn:msg:LABEL_DISPLAY_ACCEPT_BUTTON_LBL
+    default: rn:msg:ACCEPT_LBL
+  target:
+    name: rn:msg:TARGET_LBL
+    description: rn:msg:TARG_WINDOW_OPENED_ACC_BTN_CLICKED_MSG
+    default: _self
+    type: OPTION
+    options:
+    - _self
+    - _blank
+
+info:
+  description: rn:msg:WIDGET_DISP_SURVEY_OFFER_MODAL_MSG
+

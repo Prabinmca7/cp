@@ -1,0 +1,21 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [mobile, none]
+extends:
+  widget: standard/search/ProductCategoryList
+  versions: ["1.4"]
+  components: php
+  overrideViewAndLogic: true
+attributes:
+  levels:
+    name: rn:msg:LEVELS_LBL
+    type: INT
+    description: rn:msg:NUMBER_HIERARCHY_LEVELS_DISPLAY_LBL
+    default: 2
+    min: 1
+    max: 2
+info:
+  category:
+    - Report Search
+  description: rn:msg:PRODUCTCATEGORYLIST_WIDGET_WIDGET_MSG

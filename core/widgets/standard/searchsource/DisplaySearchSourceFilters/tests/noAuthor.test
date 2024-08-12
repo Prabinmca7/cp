@@ -1,0 +1,9 @@
+input: <rn:widget path="searchsource/DisplaySearchSourceFilters" source_id="SocialSearch"/>
+removecontent: true
+output:
+<div id="rn_DisplaySearchSourceFilters_0" class="rn_DisplaySearchSourceFilters rn_Hidden">
+    <span class="rn_Label">
+        Search filters applied    </span>
+    <div id="rn_DisplaySearchSourceFilters_0_FilterContainer">
+        </div>
+</div>

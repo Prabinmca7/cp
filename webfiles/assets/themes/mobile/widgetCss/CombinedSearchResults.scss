@@ -1,0 +1,150 @@
+@import 'widget-includes';
+/* Common */
+.rn_CombinedSearchResults {
+    position: relative;
+}
+
+.rn_CombinedSearchResults li {
+    margin-bottom: 12px;
+}
+
+.rn_CombinedSearchResults .rn_Loading {
+    bottom: 0;
+    left: 0;
+    min-height: 66px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rn_CombinedSearchResults a,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MultiAnswerQuestion {
+    font-size: 1.333em;
+}
+
+.rn_CombinedSearchResults .rn_Heading {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.rn_CombinedSearchResults .rn_Element3,
+.rn_CombinedSearchResults .rn_Snippet {
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.rn_CombinedSearchResults .rn_ElementsHeader {
+    font-weight: bold;
+}
+
+.rn_CombinedSearchResults .rn_Link {
+    display: inline-block;
+}
+
+/* Knolwedgebase results */
+.rn_CombinedSearchResults .rn_AnswersList span.rn_Element1 {
+    display: block;
+}
+
+/* Intent Guide */
+.rn_CombinedSearchResults .rn_IntentGuide .rn_IntentGuideList {
+    background: url('#{$theme-images}/icons/compass.png') 0 2em no-repeat;
+    min-height: 72px;
+}
+
+.rn_CombinedSearchResults .rn_Similar,
+.rn_CombinedSearchResults .rn_SimilarList a,
+.rn_CombinedSearchResults .rn_More {
+    font-size: 1.167em;
+}
+
+.rn_CombinedSearchResults .rn_More {
+    margin-left: 56px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links {
+    display: block;
+    margin-left: 56px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Similar {
+    background: url('#{$theme-images}/layout/arrow.png') no-repeat 0 9px;
+    display: block;
+    padding: 6px 0 4px 10px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MetaInfo > span {
+    padding-right: 4px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links li > span,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links li .rn_Similar,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links li .rn_SimilarList {
+    margin-left: 10px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links li > span.rn_MultiAnswerQuestion,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links .rn_MoreAnswers span {
+    margin-left: 0;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MultiAnswer .rn_MoreAnswers li {
+    margin: 4px 0 4px 20px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MultiAnswer .rn_MetaInfo {
+    display: none;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links > li:before,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links .rn_SimilarList > li:before {
+    content: "\00BB \0020";
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Links .rn_SimilarList {
+    padding: 10px 0 0 14px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_Url a {
+    background: url('#{$theme-images}/icons/external.gif') no-repeat right center;
+    padding-right: 16px;
+}
+
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MetaInfo {
+    display: block;
+}
+
+.rn_CombinedSearchResults .rn_Social .rn_PostDate,
+.rn_CombinedSearchResults .rn_IntentGuide .rn_MetaInfo,
+.rn_CombinedSearchResults .rn_ElementsHeader,
+.rn_CombinedSearchResults .rn_ElementsData {
+    color: #6f6f6f;
+    font-size: .8em;
+}
+
+/* Social */
+.rn_CombinedSearchResults .rn_Social .rn_PostAuthor {
+    float: left;
+}
+
+.rn_CombinedSearchResults .rn_Social .rn_PostAuthor img {
+    height: 32px;
+    width: 32px;
+}
+
+.rn_CombinedSearchResults .rn_Social .rn_PostAuthorName {
+    color: #030303;
+}
+
+.rn_CombinedSearchResults .rn_Social .rn_PostAuthorName,
+.rn_CombinedSearchResults .rn_Social .rn_PostTitle,
+.rn_CombinedSearchResults .rn_Social .rn_PostSnippet,
+.rn_CombinedSearchResults .rn_Social .rn_PostDate {
+    display: block;
+    margin-left: 40px;
+}
+
+.rn_CombinedSearchResults .rn_Social .rn_Links {
+    margin-left: 12px;
+}

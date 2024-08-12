@@ -1,0 +1,18 @@
+@import 'widget-includes';
+
+.rn_VirtualAssistantSimilarMatches {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: .5em 1.2em;
+}
+
+.rn_VirtualAssistantSimilarMatches a,
+.rn_VirtualAssistantSimilarMatches a:link,
+.rn_VirtualAssistantSimilarMatches a:hover,
+.rn_VirtualAssistantSimilarMatches a:visited {
+    color: #000 !important;
+}
+
+.rn_VirtualAssistantSimilarMatches ul li:before {
+    content: '\3E';
+}

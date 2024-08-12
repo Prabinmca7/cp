@@ -1,0 +1,52 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: standard/input/FileAttachmentUpload
+  versions: ["1.12"]
+  components:
+  - php
+  - view
+  - js
+  - css
+attributes:
+  parent_object_id:
+    name: rn:msg:PARENT_OBJECT_ID_LBL
+    type: INT
+    description: rn:msg:ID_PARENT_OBJECT_FILE_BE_ATTACHED_TO_LBL
+  valid_file_extensions:
+    name: rn:msg:VALID_FILE_EXTENSIONS_LBL
+    description: rn:msg:L_ACCD_FILE_EXTENSIONS_LEADING_MSG
+    type: STRING
+    default: "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls"
+  label_existing_attachments:
+    name: rn:msg:LABEL_EXISTING_ATTACHMENTS_LBL
+    description: rn:msg:LABEL_EXISTING_FILE_ATTACHMENTS_LBL
+    type: STRING
+    default: rn:msg:EXISTING_FILE_ATTACHMENTS_LBL
+  name:
+    name: rn:msg:NAME_LBL
+    type: OPTION
+    description: rn:msg:COMBINATION_OF_TABLE_AND_FIELD_INPUT_LBL
+    required: true
+    default: CommunityQuestion.FileAttachments
+    options:
+      - CommunityQuestion.FileAttachments
+      - CommunityComment.FileAttachments
+  max_attachments:
+    name: rn:msg:MAXIMUM_ATTACHMENTS_LBL
+    description: rn:msg:HOW_MANY_TTCH_A_SINGLE_0_THERE_LIMIT_LBL
+    default: 0
+    type: INT
+info:
+  category:
+    - Community
+  description: rn:msg:ALLOWS_USERS_ATTACH_FILES_COMMENT_MSG
+  urlParameters:
+    qid:
+      name: rn:msg:QUESTION_ID_LABEL_LBL
+      description: rn:msg:QUESTION_ID_TO_GET_INFORMATION_FROM_LBL
+      example: qid/7

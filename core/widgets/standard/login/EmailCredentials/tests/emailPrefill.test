@@ -1,0 +1,16 @@
+input: <rn:widget path='standard/login/EmailCredentials' credential_type='username'/>
+jstestfile: base.test.js
+removecontent: true
+session: {"previouslySeenEmail":"bananas@banana.ape"}
+validate: false
+output:
+<div id="rn_EmailCredentials_0" class="rn_EmailCredentials">
+            <h2>Reset your password</h2>
+                <p>We'll email you a link to a page where you can create a new password.</p>
+            <form id="rn_EmailCredentials_0_username_Form" onsubmit="return false;">
+        <label for="rn_EmailCredentials_0_username_Input">Username</label>
+        <input id="rn_EmailCredentials_0_username_Input" name="emailUsername" type="text" maxlength="255" autocorrect="off" autocapitalize="off" value="bananas@banana.ape" />
+        <input id="rn_EmailCredentials_0_username_Submit" type="submit" value="Reset My Password" />
+        <div id="rn_EmailCredentials_0_username_LoadingIcon"></div>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+@import 'widget-includes';
+
+.rn_OkcsInteractiveSpellChecker {
+    .rn_OkcsSpellCheckerContainer {
+        display: inline-block;
+        float: left;
+        margin-right: 9%;
+        margin-top: 15px;
+    }
+
+    .rn_OkcsSpellCheckerLink {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .rn_CorrectedWord {
+        font-weight: bold;
+        font-style: italic;
+    }
+}

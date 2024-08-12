@@ -1,0 +1,10 @@
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: standard/feedback/AnswerFeedback
+  components:
+  - view
+  - css

@@ -1,0 +1,19 @@
+1.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.0.1:
+  release: "14.11"
+  entries:
+  - date: 17/06/2014
+    level: major
+    description: Initial version of notifications/DiscussionAuthorSubscription
+    category: New Feature
+    sortPosition: Middle

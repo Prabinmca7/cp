@@ -1,0 +1,6 @@
+type: RNObject
+object:
+    CommunityUser:
+        fixture: UserActive1
+    CommunityComment:
+        fixture: CommentActiveUserActive

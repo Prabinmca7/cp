@@ -1,0 +1,11 @@
+@import 'widget-includes';
+
+.rn_RssIcon {
+
+    a.rn_RssImgLink {
+        @include icon($fa-var-rss-square) {
+            color: #FF9933;
+        }
+
+    }
+}

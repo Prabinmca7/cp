@@ -1,0 +1,12 @@
+<?
+
+RightNow\UnitTest\Helper::loadTestedFile(__FILE__);
+
+class <%= widgetName %>Test extends WidgetTestCase {
+    public $testingWidget = 'standard/<%= widgetPath %>';
+
+    function test () {
+        $this->createWidgetInstance();
+        $widgetData = $this->widgetInstance->getData();
+    }
+}

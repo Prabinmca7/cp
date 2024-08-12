@@ -1,0 +1,4 @@
+/* Presentation css for widget elements goes here. */
+.rn_SampleWidget.rn_SelectionInput label {
+    color: red;
+}

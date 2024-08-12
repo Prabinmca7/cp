@@ -1,0 +1,28 @@
+<ul class = "rn_CategoryExplorerList">
+    <li class="rn_CategoryExplorerItem">
+        <% var categoryExplorerClass = children.length > 0 ? 'rn_CategoryExplorerExpanded' : ''; %>
+        <a id="rn_<%= widgetInstanceID %>_<%= parentCategory.referenceKey %>_Expanded" class="<%= categoryExplorerClass %>" href="javascript:void(0)"><span class="rn_ScreenReaderOnly"><%= expandLevelIcon %></span></a>
+        <a id="rn_<%= widgetInstanceID %>_<%= parentCategory.referenceKey %>_Collapsed" class="rn_CategoryExplorerCollapsedHidden" href="javascript:void(0)"><span class="rn_ScreenReaderOnly"><%= collapseLevelIcon %></span></a>
+        <a class="rn_CategoryExplorerLink" id="rn_<%= widgetInstanceID %>_<%= parentCategory.referenceKey %>" data-id="<%= parentCategory.referenceKey %>" data-type="<%= parentCategory.type %>" data-depth="<%= parentCategory.depth %>" href="javascript:void(0)"><%= parentCategory.name %></a>
+        <% if (children.length > 0) { %>
+            <ul class = "rn_CategoryExplorerList">
+                <% for(key in children) { %>
+                    <% var categoryValue = children[key]; %>
+                    <% if (!categoryValue.hasChildren ) { %>
+                        <li class= "rn_CategoryExplorerItem">
+                            <div class="rn_CategoryExplorerLeaf"></div>
+                            <a role="button" id="rn_<%= widgetInstanceID %>_<%= categoryValue.referenceKey %>_Collapsed" class="rn_CategoryExplorerCollapsedHidden" href="javascript:void(0)" title="<%= expandLevelIcon %>"></a>
+                            <a class="rn_LeafNode rn_CategoryExplorerLink" id="rn_<%= widgetInstanceID %>_<%= categoryValue.referenceKey %>" data-id="<%= categoryValue.referenceKey %>" data-type="<%= categoryValue.type %>" data-depth="<%= categoryValue.depth %>" href="javascript:void(0)"><%= categoryValue.name %></a>
+                        </li>
+                    <% } else { %>
+                        <li class="rn_CategoryExplorerItem">
+                            <a role="button" id="rn_<%= widgetInstanceID %>_<%= categoryValue.referenceKey %>_Expanded" class="rn_CategoryExplorerExpandedHidden" href="javascript:void(0)" title="<%= expandLevelIcon %>"></a>
+                            <a role="button" id="rn_<%= widgetInstanceID %>_<%= categoryValue.referenceKey %>_Collapsed" class="rn_CategoryExplorerCollapsed" href="javascript:void(0)" title="<%= collapseLevelIcon %>"></a>
+                            <a class="rn_CategoryExplorerLink" id="rn_<%= widgetInstanceID %>_<%= categoryValue.referenceKey %>" data-id="<%= categoryValue.referenceKey %>" data-type="<%= categoryValue.type %>" data-depth="<%= categoryValue.depth %>" href="javascript:void(0)"><%= categoryValue.name %></a>
+                        </li>
+                    <% } %>
+                <% } %>
+            </ul>
+        <% } %>
+    </li>
+</ul>

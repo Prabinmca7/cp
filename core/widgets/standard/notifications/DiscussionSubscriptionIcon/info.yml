@@ -1,0 +1,86 @@
+version: "1.5.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+info:
+  description: rn:msg:USERS_UNSUB_QST_PRDCTCTGRY_RN_NTF_QSTNS_MSG
+  category:
+  - Community
+  urlParameters:
+    qid:
+      name: rn:msg:QUESTION_ID_LBL
+      description: rn:msg:THE_ID_OF_THE_QUESTION_TO_SUBSCRIBE_LBL
+      example: qid/6
+    p:
+      name: rn:msg:PRODUCT_ID_LBL
+      description: rn:msg:THE_ID_OF_THE_PRODUCT_TO_SUBSCRIBE_LBL
+      example: p/1
+    c:
+      name: rn:msg:CATEGORY_ID_LBL
+      description: rn:msg:THE_ID_OF_THE_CATEGORY_TO_SUBSCRIBE_LBL
+      example: c/1
+attributes:
+  add_social_subscription_ajax:
+    name: rn:msg:ADD_SOCIAL_QUESTION_SUBSCRIPTION_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_ADD_SOCIAL_SUBSCRIPTIONS_LBL
+    default: /ci/ajaxRequest/addSocialSubscription
+  delete_social_subscription_ajax:
+    name: rn:msg:DELETE_SOCIAL_Q_SUBSCRIPTION_AJAX_LBL
+    type: ajax
+    description: rn:msg:ENDPOINT_DELETE_SOCIAL_SUBSCRIPTIONS_LBL
+    default: /ci/ajaxRequest/deleteSocialSubscription
+  label_subscribe:
+    name: rn:msg:SUBSCRIBE_LINK_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYS_SUBSCRIBE_LINK_ON_PAGE_LBL
+    default: rn:msg:SUBSCRIBE_LBL
+    type: STRING
+  label_subscribed_to_product:
+    name: rn:msg:SUBSCRIBED_TO_PRODUCT_LINK_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYS_SUBSCRIBED_PAGE_LBL
+    default: rn:msg:SUBSCRIBED_TO_S_LBL
+    type: STRING
+  label_unsubscribe:
+    name: rn:msg:UNSUBSCRIBE_LINK_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYS_UNSUB_LINK_PAGE_LBL
+    default: rn:msg:UNSUBSCRIBE_LBL
+    type: STRING
+  label_on_subscription_success_banner:
+    name: rn:msg:SUCCESS_BANNER_LABEL_LBL
+    description: rn:msg:MESSAGE_HAS_SUBSCRIBED_SOCIAL_QUESTION_LBL
+    default: rn:msg:YOU_HAVE_BEEN_SUBSCRIBED_MSG
+    type: STRING
+  label_on_unsubscription_success_banner:
+    name: rn:msg:SUCCESS_BANNER_LABEL_LBL
+    description: rn:msg:HAS_UNSUBSCRIBED_SOCIAL_QUESTION_LBL
+    default: rn:msg:YOU_HAVE_BEEN_UNSUB_MSG
+    type: STRING
+  label_on_failure_banner:
+    name: rn:msg:FAILURE_BANNER_LABEL_LBL
+    description: rn:msg:THERE_ERR_SUBSCRIBING_UNSUB_S_QUESTION_LBL
+    default: rn:msg:THERE_WAS_A_PROBLEM_WITH_YOUR_REQUEST_MSG
+    type: STRING
+  label_subscribe_title:
+    name: rn:msg:MOUSEOVER_SUBSCRIBE_LINK_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYED_SUBSCRIBE_MOUSEOVER_LBL
+    default: rn:msg:CLICK_RECV_COMMENT_ADDED_TH_DISCUSSION_LBL
+    type: STRING
+  label_unsubscribe_title:
+    name: rn:msg:MOUSEOVER_UNSUBSCRIBE_LINK_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYED_UNSUBSCRIBE_MOUSEOVER_LBL
+    default: rn:msg:CLICK_STOP_RECEIVING_NOTIF_DISCUSSION_LBL
+    type: STRING
+  label_subscribed_to_product_category_title:
+    name: rn:msg:MOUSEOVER_SUBSCRIBED_PRODUCT_LABEL_LBL
+    description: rn:msg:STRING_DISPLAYED_SUBSCRIBED_MOUSEOVER_LBL
+    default: rn:msg:ALREADY_SUB_RECEIVE_NOTIF_SSS_AREA_MSG
+    type: STRING
+  subscription_type:
+    name: rn:msg:SOCIAL_SUBSCRIPTION_OBJECT_TYPE_LBL
+    description: rn:msg:TYPE_OF_THE_SOCIAL_SUBSCRIPTION_OBJECT_LBL
+    default: Question
+    type: OPTION
+    options:
+    - Question
+    - Product
+    - Category

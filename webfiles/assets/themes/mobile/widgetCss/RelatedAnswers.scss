@@ -1,0 +1,18 @@
+@import 'widget-includes';
+
+.rn_RelatedAnswers {
+    li {
+        @include list-kbanswer-icon;
+    }
+
+    .rn_Highlight {
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+
+@media print {
+    .rn_RelatedAnswers {
+        display: none;
+    }
+}

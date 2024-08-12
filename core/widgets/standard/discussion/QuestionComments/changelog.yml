@@ -1,0 +1,416 @@
+3.1.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+3.0.1:
+  release: "24.5"
+  entries:
+  - account: praveen.puvvada@oracle.com
+    category: New Feature
+    changelogID: 810
+    date: 03/06/2024
+    description: Replaced CK editor 4 with ORTL as RichTextInput editor for creating/updating
+      a new question/comment.
+    details:
+    - The RichTextInput field on Community page which is loaded on CKEditor 4.5.5
+      is replaced with OracleRichTextEditor
+    level: major
+    refno: 240108-000022
+    sortPosition: Middle
+2.5.1:
+  release: "23.11"
+  entries:
+  - account: praveen.puvvada@oracle.com
+    category: Bug Fix
+    changelogID: 797
+    date: 10/27/2023
+    description: Minor Bump in CP attachment widgets for honouring the valid\_file\_extensions
+      config verb
+    details:
+    - The CP file attachment widgets were enhanced to honor the file extensions configured
+      in the "VALID\_FILE\_EXTENSIONS" configuration setting. All allowed file extensions
+      configured in the siteConfig JSON file must be copied into the "VALID\_FILE\_EXTENSIONS"
+      configuration setting. The siteConfig JSON file allowed file extension values
+      are not honored by the new CP framework version. This enhancement streamlines
+      allowed file extension configuration.
+    - The default valid file extensions list remains the same "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    level: minor
+    refno: 230825-000040
+    sortPosition: Middle
+2.4.1:
+  release: "22.11"
+  entries:
+  - account: nick.moore@oracle.com
+    category: Bug Fix
+    changelogID: 776
+    date: 09/01/2022
+    description: Added default list of valid file extension types
+    details:
+    - To improve security, moved FileAttachmentUpload widget attribute valid_file_extensions
+      to /customer/development/config/siteConfig.json as CP.ValidFileExtensions.
+    - Default valid file extensions are "png,jpg,txt,gif,pdf,docx,bmp,doc,csv,xlsx,xls,jpeg,odt,odm,ods,odp,odf,msg,eml,rtf,ppt,pptx,htm,html,zip,wav,mov,mp4,mp3".
+    - 'If the CP.ValidFileExtensions configuration settings is not defined in your
+      siteConfig.json file, the default sets listed above will be used.To allow a
+      restricted set of file types only to be uploaded, define the configuration settings
+      with the desired extensions in your siteConfig.json file.For example, if we
+      want to allow only "png,jpg,txt,gif,pdf,doc,xlsx,xls" then define this in the
+      siteConfig.json "CP.ValidFileExtensions" : "png,jpg,txt,gif,pdf,doc,xlsx,xls"'
+    level: minor
+    refno: 210908-000095
+    sortPosition: Middle
+2.3.1:
+  release: "20.11"
+  entries:
+  - account: andrew.odonnell@oracle.com
+    category: Bug Fix
+    changelogID: 762
+    date: 10/21/2020
+    description: Change Twitter URL for Share Functionality
+    details:
+    - Changed endpoint from twitter.com/intent/tweet?status to twitter.com/intent/tweet?text
+      to correctly source the links and their corresponding Twitter endpoints.
+    - Modified hard-coded links to be HTTPS compliant.
+    level: minor
+    refno: 200720-000145
+    sortPosition: Middle
+2.2.1:
+  release: "19.8"
+  entries:
+  - account: hussain.nayak@oracle.com
+    category: Bug Fix
+    changelogID: 739
+    date: 07/24/2019
+    description: Minor bumping to make the widgets which use latest connect objects
+      exclusive to CP Framework 3.8
+    details:
+    - Minor bumping to make the widgets which use latest connect objects exclusive
+      to CP Framework 3.8
+    level: minor
+    refno: 190717-000116
+    sortPosition: Middle
+2.1.2:
+  release: "19.5"
+  entries:
+  - account: varun.asok@oracle.com
+    category: Bug Fix
+    changelogID: 725
+    date: 03/06/2019
+    description: Fixed the functionality of the attribute use_file_attachments
+    level: nano
+    refno: 190114-000014
+    sortPosition: Middle
+2.1.1:
+  release: "18.5"
+  entries:
+  - account: pritish.routray@oracle.com
+    category: Bug Fix
+    changelogID: 696
+    date: 03/27/2018
+    description: It contains widget FormSubmit which was minor bumped
+    details:
+    - In widget FileAttachmentUpload, added the form token as a salt to the local
+      name (or tmp\_name) of the file to be uploaded and validate it in form submit.
+    level: minor
+    refno: 180305-000133
+    sortPosition: Middle
+2.0.2:
+  release: "17.11"
+  entries:
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 677
+    date: 08/08/2017
+    description: Added attribute "use\_file\_attachments" to QuestionDetail and QuestionComments
+    level: nano
+    refno: 170807-000036
+    sortPosition: Middle
+2.0.1:
+  release: "17.8"
+  entries:
+  - account: carolyn.philip
+    category: New Feature
+    changelogID: 653
+    date: 05/18/2017
+    description: Added support for users to change the sort order of comments.
+    details:
+    - Two buttons have been added in the UI which will allow end-user to sort the
+      comments dynamically.
+    level: minor
+    refno: 151117-000075
+    sortPosition: Middle
+  - account: carolyn.philip
+    category: New Feature
+    changelogID: 655
+    date: 05/18/2017
+    description: Removed Markdown editor and Added CKEditor 4.5.5 as RichTextInput
+      editor
+    level: major
+    refno: 150918-000190
+    sortPosition: Middle
+  - account: aviroop.karmakar
+    category: New Feature
+    changelogID: 656
+    date: 05/18/2017
+    description: Added the following attributes for implementing quote comment functionality
+      - label\_quote\_button\_title, label\_quote\_link, label\_quote\_author\_wrote,
+      label\_view\_original\_comment, quote\_comment\_truncate\_size and quote\_comment\_enabled
+    level: minor
+    refno: 150917-000178
+    sortPosition: Middle
+  - account: shekhar.singh
+    category: New Feature
+    changelogID: 658
+    date: 05/18/2017
+    description: Added support for admin to change the sort order of comments.
+    details:
+    - Added an attribute that provides support for admin to sort the comments.
+    level: minor
+    refno: 151117-000074
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: New Feature
+    changelogID: 670
+    date: 06/27/2017
+    description: File Attachment support has been added for Community Comments.
+    details:
+    - QuestionComments now contains input/SocialFileAttachmentUpload widget (for editing
+      file attachments of existing comments and creating new comments and replies
+      with attachments) and output/DataDisplay (for viewing comments with file attachments).
+    level: minor
+    refno: 160901-000051
+    sortPosition: Middle
+  - account: Soumitra.Deb
+    category: Bug Fix
+    changelogID: 673
+    date: 06/29/2017
+    description: Share window displayed over comment reply.
+    details:
+    - Share window should close on out side click but not closes on clicking reply
+      button.
+    level: minor
+    refno: 170328-000182
+    sortPosition: Middle
+1.7.1:
+  release: "17.5"
+  entries:
+  - account: aviroop.karmakar@oracle.com
+    category: New Feature
+    changelogID: 633
+    date: 02/23/2017
+    description: Added text next to comment if comment author is original poster (OP)
+      of the community question
+    details:
+    - Added original\_poster\_callout attribute which when enabled highlights any
+      comments in a discussion that were posted by the original poster (OP) of the
+      question.
+    level: minor
+    refno: 160412-000147
+    sortPosition: Middle
+1.6.1:
+  release: "17.2"
+  entries:
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 582
+    date: 09/08/2016
+    description: 'Added two new attributes: label\_reply\_suspended\_comment\_error
+      and label\_mark\_suspended\_comment\_best\_answer\_error'
+    details:
+    - Two attributes have been added-
+    - 'label\_reply\_suspended\_comment\_error: This replaces the current banner error
+      message which is displayed when a moderator tries to reply to a suspended comment.'
+    - 'label\_mark\_suspended\_comment\_best\_answer\_error: New banner error message
+      to be displayed when a moderator marks a suspended comment as the best answer.'
+    level: minor
+    refno: 160712-000043
+    sortPosition: Middle
+1.5.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 544
+    date: 08/30/2016
+    description: Updated default message for label\_new\_comment\_banner, label\_replied\_banner
+      and label\_edit\_comment\_banner
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 540
+    date: 08/30/2016
+    description: Added new attribute for controlling best answer selection type to
+      be limited to author only, moderator only, both or none.
+    details:
+    - Added new attribute best\_answer\_types to authorize best answer selection to
+      author, moderator, both or none.
+    - Added new attribute label\_best\_answer\_error to display error message when
+      user is not authorized to select a best answer.
+    level: minor
+    refno: 160225-000089
+    sortPosition: Middle
+1.4.1:
+  release: "16.8"
+  entries:
+  - account: prashant.chirania
+    category: New Feature
+    changelogID: 512
+    date: 05/18/2016
+    description: Call out author's role set with the content
+    details:
+    - Author's Role Set will be called out with the content. This will be applicable
+      to certain role sets.
+    - Use 'author_roleset_callout' attribute to give list of author role sets to be
+      called out on the page.
+    level: minor
+    refno: 160324-000035
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 487
+    date: 03/16/2016
+    description: Adding attribute check\_comment\_exists\_ajax to check if a comment
+      exists
+    details:
+    - The attribute check\_comment\_exists\_ajax has been added which is used to check
+      whether a comment exists.
+    level: minor
+    refno: 160218-000202
+    sortPosition: Middle
+1.3.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 489
+    date: 02/07/2017
+    description: Added banner focus to improve accessibility
+    details:
+    - Once a success or error banner displays and disappears, the widget now attempts
+      to find a good spot to return focus to, in order to improve accessibility.
+    level: minor
+    refno: 151217-000174
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 466
+    date: 12/24/2015
+    description: Default text for label\_login\_to\_comment has been changed to "Add
+      a new comment"
+    details:
+    - Default text for label\_login\_to\_comment has been changed to "Add a new comment"
+    level: minor
+    refno: 151208-000007
+    sortPosition: Middle
+1.2.1:
+  release: "16.2"
+  entries:
+  - account: aswin.kolli
+    category: Bug Fix
+    changelogID: 438
+    date: 11/19/2015
+    description: Several attributes have been renamed.
+    details:
+    - Attributes label\_mark\_best\_answer\_author\_title, label\_mark\_best\_answer\_moderator\_title,
+      label\_unmark\_best\_answer\_author\_title, and label\_unmark\_best\_answer\_moderator\_title
+      have been renamed and now have 'tooltip' instead of 'title' in the name.
+    - Attributes label\_deleted and label\_replied have been renamed to label\_delete\_comment\_banner
+      and label\_replied\_banner respectively for consistency with the other banners.
+    level: minor
+    refno: 150707-000220
+    sortPosition: Middle
+  - account: vanya.sinha
+    category: Bug Fix
+    changelogID: 431
+    date: 11/03/2015
+    description: Added attributes to customize labels for the delete dialog buttons
+      in QuestionComments and QuestionDetail widgets
+    details:
+    - Customized labels for the delete dialog buttons in QuestionComments and QuestionDetail
+      through two new attributes - 'label\_confirm\_delete\_button' for the button
+      that confirms the delete action and 'label\_cancel\_delete\_button' for the
+      button that cancels the delete action.
+    level: nano
+    refno: 151015-000185
+    sortPosition: Middle
+1.1.1:
+  release: "15.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 420
+    date: 10/06/2015
+    description: Removed conflicting aria attribute
+    level: minor
+    refno: 150928-000237
+    sortPosition: Bottom
+  - account: aswin.kolli
+    category: Bug Fix
+    changelogID: 404
+    date: 09/29/2015
+    description: Changed attribute names and made each comment's updated time visible
+    details:
+    - The attribute names "label\_comment\_created\_on" and "label\_comment\_updated\_on"
+      have been modified to "label\_created\_time" and "label\_updated\_time" respectively
+      to be consistent with the attributes of the QuestionDetail widget. The time
+      that each comment was updated on is now visible.
+    level: minor
+    refno: 150707-000111
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 402
+    date: 10/13/2015
+    description: Added new title labels for screen readers
+    details:
+    - There were no titles on the Share, Rate, Flag, or Edit buttons, so they weren't
+      being properly being read by screenreaders.  Attributes `label_share_button_title`,
+      `label_rate_button_title`, `label_flag_button_title`, and `label_edit_button_title`
+      were added to address this.
+    level: minor
+    refno: 150711-000028
+    sortPosition: Middle
+  - account: rlund
+    category: Bug Fix
+    changelogID: 401
+    date: 09/16/2015
+    description: Fixed up some semantic markup attributes
+    level: nano
+    refno: 150904-000147
+    sortPosition: Bottom
+  - account: kanchan.karjee
+    category: Bug Fix
+    changelogID: 382
+    date: 09/09/2015
+    description: Best answer edits/deletions now prompt the user to refresh the page.
+    level: nano
+    refno: 150821-000081
+    sortPosition: Middle
+  - account: jwatson
+    category: Bug Fix
+    changelogID: 373
+    date: 03/31/2016
+    description: The heading tags have been modified so that it will obey the accessibility
+      heading-order.
+    details:
+    - The heading tags have been modified so that they will abide to the accessibility
+      heading-order criterion.
+    - The CSS files need to be updated so that there will not be any look and feel
+      issues.
+    level: minor
+    refno: 150705-000007
+    sortPosition: Middle
+1.0.1:
+  release: "13.8"
+  entries:
+  - date: 12/10/2012
+    level: major
+    description: Initial version of discussion/QuestionComments

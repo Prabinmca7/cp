@@ -1,0 +1,43 @@
+@import 'widget-includes';
+
+.rn_NavigationTab {
+    .rn_ButtonOff {
+        font-style: normal;
+
+        @include icon($fa-var-chevron-down) {
+            font-size: 1em;
+            padding: .6em;
+
+            @include media($rn-large) {
+                font-size: 1.6em;
+                padding: .2em .6em;
+            }
+        }
+    }
+
+    .rn_SubNavigation {
+        background: darken($hero-background, 8);
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 1em 1em 0;
+        // Align sub-links with their parent tab link.
+        margin-left: -1em;
+        position: absolute;
+        z-index: 10;
+
+        @include media($rn-large) {
+            display: block;
+            position: static;
+            padding-top: 0;
+            padding-left: 2.5em;
+
+            &.rn_ScreenReaderOnly {
+                position: absolute;
+            }
+        }
+
+        a {
+            display: block;
+        }
+    }
+}

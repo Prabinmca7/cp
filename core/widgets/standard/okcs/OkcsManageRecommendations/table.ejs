@@ -1,0 +1,26 @@
+<table id="<%= tableID %>" class="yui3-datatable-table" role="grid">
+    <thead class="yui3-datatable-columns">
+        <tr>
+        <% for (var h=0; h < headers.length; h++) { %>
+            <th class="yui3-datatable-header yui3-datatable-sortable-column"><%= headers[h].key %></th>
+        <% } %>
+        </tr>
+    </thead>
+    <tbody class="yui3-datatable-data">
+    <% for (var r=0; r < data.length; r++) { %>
+        <tr role="row" class="yui3-datatable-cell">
+            <% for (var j = 0; j < headers.length; j++) { %>
+                <td role="gridcell" class="yui3-datatable-cell">
+                <% if (data[r][j].name === 'title') { %>
+                    <a href="javascript:void(0)" class="rn_RecommendationLink" id="<%= recommendations[r].recordId%>" target="<%= this.target %>" title="<%= data[r][j].value %>">
+                        <%= data[r][j].value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') %>
+                    </a>
+                <% } else { %>
+                    <%= data[r][j].value %>
+                <% } %>
+                </td>
+            <% } %>
+        </tr>
+    <% } %>
+    </tbody>
+</table>

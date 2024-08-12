@@ -1,0 +1,49 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  source_id:
+    name: rn:msg:SOURCE_ID_LBL
+    description: rn:msg:NAMES_OFSRCH_SOURCES_TO_BE_USED_MSG
+    required: true
+    type: STRING
+    options:
+    - KFSearch
+    - OKCSSearch
+    - SocialSearch
+    - rn:msg:ANY_ADDITIONAL_CUSTOM_SEARCH_SOURCES_LBL
+  label_button:
+    name: rn:msg:BUTTON_LABEL_LBL
+    type: STRING
+    description: rn:msg:STRING_LABEL_TO_DISPLAY_ON_BUTTON_LBL
+    default: rn:msg:SEARCH_CMD
+  label_enter_search_keyword:
+    name: rn:msg:ENTER_SEARCH_KEYWORD_LBL
+    type: STRING
+    description: rn:msg:MESSAGE_THERE_KEYWORD_ENTERED_SEARCH_LBL
+    default: rn:msg:PLEASE_ENTER_A_SEARCH_TERM_LBL
+  search_results_url:
+    name: rn:msg:SEARCH_RESULTS_URL_CMD
+    type: STRING
+    description: rn:msg:PATH_TO_A_PG_THAT_WILL_BE_USED_TO_MSG
+  target:
+    name: rn:msg:TARGET_LBL
+    type: STRING
+    description: rn:msg:SEARCHRESULTSURL_TH_TARGET_OPENED_PAGE_MSG
+    default: _self
+  search_ajax:
+    name: rn:msg:SEARCH_AJAX_ENDPOINT_CMD
+    description: rn:msg:THE_AJAX_ENDPOINT_TO_SEND_SRCH_MSG
+    default: /ci/ajaxRequest/search
+    type: AJAX
+  per_page:
+    name: rn:msg:ITEMS_PER_PAGE_LBL
+    type: INT
+    description: rn:msg:INDICATES_HOW_MANY_RES_TO_DISP_PER_LBL
+    default: 10
+    min: 1
+info:
+  category:
+    - Source Search
+  description: rn:msg:BUTTON_IMAGE_EXECUTE_SOURCEID_ACTIVATED_MSG

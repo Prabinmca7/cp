@@ -1,0 +1,23 @@
+.rn_Footer {
+    $footer-color: #EFEFEF;
+    $icon-color: #BBB;
+
+    background: $footer-color;
+    padding: 1em 0;
+
+    .rn_PageSetSelector {
+        @include span-columns(12);
+        padding-bottom: 2em;
+    }
+
+    .rn_Credit {
+        @include span-columns(5);
+        text-align: right;
+        float: right;
+    }
+
+    .rn_ScrollToTop {
+        @include span-columns(5);
+        @include icon($fa-var-arrow-up);
+    }
+}

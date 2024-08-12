@@ -1,0 +1,7 @@
+.rn_TopAnswers ul{
+    padding: 0;
+}
+.rn_TopAnswers ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}

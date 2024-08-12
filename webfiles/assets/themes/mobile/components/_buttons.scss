@@ -1,0 +1,17 @@
+button,
+input[type="submit"] {
+    @include transition(all .2s ease-in-out);
+    background: darken($base-accent-color, 4);
+    border-radius: $base-border-radius;
+    color: #fff;
+    font-size: $base-font-size;
+    padding: .5em 1em;
+    border: 0;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+
+    &:hover:not(:disabled) {
+        background: lighten($base-accent-color, 5);
+        box-shadow: none;
+    }
+}

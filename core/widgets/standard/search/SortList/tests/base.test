@@ -1,0 +1,20 @@
+input: <form onsubmit="return false;"><rn:widget path='standard/search/SortList'/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form onsubmit="return false;"><div id="rn_SortList_0" class="rn_SortList">
+    <label for="rn_SortList_0_Headings">Sort by</label>
+    <select id="rn_SortList_0_Headings" class="rn_Headings">
+        <option value="-1">Default</option>
+                    <option value="1" >Summary</option>
+                    <option value="2" >New or Updated</option>
+                    <option value="3" >Description</option>
+                    <option value="4" >Date Updated</option>
+            </select>
+    <label for="rn_SortList_0_Direction">Direction</label>
+    <select id='rn_SortList_0_Direction' class="rn_Direction">
+        <option value="1" selected="selected">Ascending</option>
+        <option value="2" >Descending</option>
+    </select>
+</div>
+</form>

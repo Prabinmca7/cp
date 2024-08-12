@@ -1,0 +1,7 @@
+info:
+  description: "The purpose of this widget is to test basic widget view helper functionality: A shared helper is used. The widget's own helper is used."
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile

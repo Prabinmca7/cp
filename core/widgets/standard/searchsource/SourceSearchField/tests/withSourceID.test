@@ -1,0 +1,10 @@
+input: <form><rn:widget path="standard/searchsource/SourceSearchField" source_id="KFSearch"/></form>
+jstestfile: base.test.js
+removecontent: true
+output:
+<form><div id="rn_SourceSearchField_0" class="rn_SourceSearchField">
+    <label for="rn_SourceSearchField_0_SearchInput">
+    Search by Keyword    </label>
+    <input type="search" id="rn_SourceSearchField_0_SearchInput" name="kw" placeholder="Search..." value="" maxlength="255">
+</div>
+</form>

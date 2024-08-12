@@ -1,0 +1,5 @@
+input: <form onsubmit="return false;"><rn:widget path="standard/search/AssetOrgList" /></form>
+config: MYQ_VIEW_ORG_ASSETS|0
+contact: slatest
+removecontent: true
+output: <form onsubmit="return false;"></form>

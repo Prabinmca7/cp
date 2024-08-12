@@ -1,0 +1,46 @@
+1.3.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 818
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.2.1:
+  release: "16.11"
+  entries:
+  - account: ramanpreet.dhunna
+    category: New Feature
+    changelogID: 574
+    date: 02/22/2017
+    description: '''contains'' dependency was updated with latest widget versions.'
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.1.1:
+  release: "16.5"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 534
+    date: 08/08/2016
+    description: Legend tag was replaced with H2 tag to fix accessibility issue.
+    details:
+    - '''legend'' tag was replaced with ''h2'' tag (for the label\_header attribute)
+      in the ''view'' file and the whole body was enclosed in a ''div'' tag instead
+      of a ''fieldset'' tag with a CSS border around it. This was changed to add accessibility
+      support to the label\_header label.'
+    level: minor
+    refno: 160724-000004
+    sortPosition: Middle
+1.0.1:
+  release: "15.8"
+  entries:
+  - date: 01/15/2015
+    level: major
+    description: Initial version of utils/ContactUs
+    category: API Change
+    sortPosition: Middle

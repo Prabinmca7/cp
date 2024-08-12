@@ -1,0 +1,11 @@
+info:
+  description: The purpose of this widget is to test that an inheriting widget's helper class can extend and override the helper class of the parent widget.
+version: "1.0"
+requires:
+  jsModule:
+  - standard
+  - mobile
+extends:
+  widget: custom/viewhelpertest/ViewHelper
+  components:
+  - php

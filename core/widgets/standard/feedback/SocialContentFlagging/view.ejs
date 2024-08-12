@@ -1,0 +1,27 @@
+<div class="rn_Dropdown">
+    <rn:block id="preDropdownList"/>
+    <ul>
+        <% for (var i = 0; i < flags.length; i++) { %>
+            <rn:block id="preDropdownListItem"/>
+            <li>
+                <a href="javascript:void(0);" data-id="<%= flags[i].ID %>" class="rn_Flag <%= (flags[i].Selected) ? 'rn_Selected' : '' %>">
+                    <span class="rn_Flagged">
+                        <rn:block id="flaggedLabel">
+                        <%= flags[i].LookupName %>
+                        </rn:block>
+                        <span class="rn_ScreenReaderOnly">
+                            <%= RightNow.Interface.getMessage("SELECTED_LBL") %>
+                        </span>
+                    </span>
+                    <span class="rn_Unflagged">
+                        <rn:block id="unflaggedLabel">
+                        <%= flags[i].LookupName %>
+                        </rn:block>
+                    </span>
+                </a>
+            </li>
+        <rn:block id="postDropdownListItem"/>
+        <% } %>
+    </ul>
+    <rn:block id="postDropdownList"/>
+</div>

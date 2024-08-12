@@ -1,0 +1,50 @@
+version: "1.4.1"
+requires:
+  framework: ["3.11"]
+  jsModule: [standard, mobile]
+attributes:
+  email_credentials_ajax:
+    name: rn:msg:EMAIL_CREDENTIALS_AJAX_LBL
+    description: rn:msg:AJAX_ENDPOINT_REQUESTS_SEND_CONT_MSG
+    type: ajax
+    default: /ci/ajax/widget
+  credential_type:
+    name: rn:msg:TYPE_OF_ACCOUNT_CREDENTIAL_FORM_LBL
+    description: rn:msg:SPECIFIES_TYPE_ACCT_CREDENTIALS_MSG
+    default: password
+    type: option
+    options:
+    - password
+    - username
+  label_heading:
+    name: rn:msg:LABEL_HEADING_LBL
+    description: rn:msg:LABEL_DISPLAY_WIDGET_HEADING_LBL
+    default: rn:msg:RESET_YOUR_PASSWORD_CMD
+    type: string
+  label_description:
+    name: rn:msg:DESCRIPTION_LBL
+    description: rn:msg:DESCRIPTION_DISPLAY_HEADING_LABEL_MSG
+    default: rn:msg:EMAIL_LINK_PAGE_CREATE_PASSWORD_MSG
+    type: string
+  label_button:
+    name: rn:msg:LABEL_BUTTON_LBL
+    description: rn:msg:LABEL_TO_DISPLAY_ON_BUTTON_LBL
+    default: rn:msg:RESET_MY_PASSWORD_CMD
+    type: string
+  label_input:
+    name: rn:msg:LABEL_INPUT_LBL
+    description: rn:msg:LABEL_DISPLAY_INPUT_CONTROL_LBL
+    default: rn:msg:USERNAME_LBL
+    type: string
+  initial_focus:
+    name: rn:msg:INITIAL_FOCUS_LBL
+    description: rn:msg:SET_TRUE_FIELD_FOCUSED_PAGE_LOADED_MSG
+    default: false
+    type: boolean
+info:
+  description: rn:msg:WIDGET_DISP_UI_ELEMENTS_RETRIEVE_MSG
+  urlParameters:
+    Contact.Emails.PRIMARY.Address:
+      name: rn:msg:CONTACT_PRIMARY_EMAIL_LBL
+      description: rn:msg:SPECIFIES_EMAIL_ADDR_PREFILL_LBL
+      example: Contact.Emails.PRIMARY.Address/test@example.com

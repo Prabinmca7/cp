@@ -1,0 +1,146 @@
+input: <rn:widget path="standard/discussion/QuestionComments" comments_per_page="1"/>
+filter: @datetime="[^"]+">[^<]+</time>@
+fixture: QuestionActiveAuthorBestAnswer
+removecontent: true
+replace: datetime=""></time>
+urlparameters: /qid/%CommunityQuestion%
+validate: false
+output:
+<div id="rn_QuestionComments_0" class="rn_QuestionComments">
+        <div class="rn_CommentsTitle" role="heading" aria-level="2">
+        <h2>Comments</h2>
+    </div>
+        <div class="rn_SortOrder">
+        <button class="rn_NewestButton" type="button" data-sort="ASC" title="Newest First">Newest First</button>
+        <span class="rn_Separator"></span>
+        <button class="rn_OldestButton rn_Disabled" type="button" data-sort="DESC" title="Oldest First">Oldest First</button>
+    </div>
+    <div id="rn_QuestionComments_0_Comments" aria-live="polite">
+            <div class="rn_Paginator" role="navigation">
+        <span class="rn_PageLinks">
+                                                                            <span tabindex="0" class="rn_CurrentPage" title="Page 1 of 4 selected" aria-label="Page 1 of 4 selected">1</span>
+                                                                                    <a data-pageid="2" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/2" title="Page 2 of 4">2<span class="rn_ScreenReaderOnly">Page 2 of 4</span></a>
+                                                                                    <a data-pageid="3" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/3" title="Page 3 of 4">3<span class="rn_ScreenReaderOnly">Page 3 of 4</span></a>
+                                                                                    <a data-pageid="4" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/4" title="Page 4 of 4">4<span class="rn_ScreenReaderOnly">Page 4 of 4</span></a>
+                                    </span>
+            <span class="rn_ForwardLink">
+            <a href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/2" data-pageid="2" rel="next">
+                Next            </a>
+        </span>
+    </div>
+<div class="rn_Comments">
+                <div id="rn_QuestionComments_0_%CommunityComment_0%" data-commentid="%CommunityComment_0%" data-contenttype="text/x-markdown" class="rn_CommentContainer rn_BestAnswer" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="Answer">
+        <div class="rn_CommentInfo">
+        <span class="rn_CommentAvatarImage" itemprop="author" itemscope itemtype="Person">
+            <span class="rn_UserAvatar" title="Active User1">
+            <a itemprop="url" href="/app/public_profile/user/%CommunityUser_0%/">
+            <span class="rn_Avatar rn_Medium rn_Placeholder">
+                    <span class="rn_Default rn_DefaultColor1" aria-hidden="true" role="presentation">
+                <span class="rn_Liner">A</span>
+            </span>
+            </span>
+                <span class="rn_DisplayName" itemprop="name">Active User1</span>
+                </a>
+    </span>
+        </span>
+    </div>
+        <div class="rn_CommentContent " id="comment_%CommunityComment_0%">
+                <div class="rn_HeaderToolbar">
+                <div class="rn_CommentLabel">
+                                                            <div class="rn_BestAnswerInfo" aria-live="assertive" aria-relevant="all">
+                            <span class="rn_BestAnswerLabel" title="This answer has been marked the best answer by the question's author">
+        Best Answer        <span class="rn_ScreenReaderOnly">
+        This answer has been marked the best answer by the question's author        </span>
+    </span>
+                    </div>
+                </div>
+                        </div>
+                    <div class="rn_CommentText" itemprop="text">
+                <p>Comment by an active user.</p>
+            </div>
+                            <div id="rn_FileListDisplay_2" class="rn_FileListDisplay rn_Output">
+    </div>
+                <div class="rn_CommentFooter">
+            <div class="rn_Timestamps">
+                <span class="rn_CommentTimestamp">
+                        <span class="rn_Created">
+                            Created <time itemprop="dateCreated" datetime=""></time>                        </span>
+                                    </span>
+            </div>
+                                                    <div class="rn_CommentToolbar">
+                <div class="rn_CommentToolbarLeft">
+    <ul role="menubar">
+                <li role="menuitem" class="rn_CommentAction" title="Reply to this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ReplyAction rn_SocialLogin" role="button">
+                <span class="rn_ActionLabel">Reply</span>
+            </a>
+        </li>
+                                <li role="menuitem" class="rn_CommentAction" title="Share this comment">
+            <a href="javascript:void(0);" class="rn_CommentAction rn_ShareAction" role="button">
+                <span class="rn_ActionLabel">Share</span>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="rn_CommentToolbarRight">
+    <ul role="menubar">
+        <li role="menuitem" class="rn_CommentRating" title="Upvote this comment">
+            <div id="rn_SocialContentRating_3" class="rn_SocialContentRating">
+    <div class="rn_RatingButtons">
+                <button class="rn_UpvoteButton" title="Upvote" >
+    <span class="rn_ScreenReaderOnly" aria-live="polite">Upvote</span>
+</button>
+    </div>
+    <button class="rn_ResetButton rn_Hidden" title="Remove Rating">
+        <span class="rn_ScreenReaderOnly" aria-live="polite">Remove Rating</span>
+    </button>
+        	<span class="rn_Separator"></span>
+    	<span class="rn_RatingValue" itemprop="upvoteCount" title="Be the first to vote">
+        	        		<span class="rn_RatingValueNumerical">
+                    		Be the first to vote                	</span>
+        	        </span>
+    </div>
+        </li>
+                <li role="menuitem" class="rn_CommentAction" title="Flag this comment">
+            <div id="rn_SocialContentFlagging_4" class="rn_SocialContentFlagging">
+    <a href="javascript:void(0);" id="rn_SocialContentFlagging_4_Button" class="rn_CommentAction rn_FlagAction" aria-haspopup="false" title="">
+        <span class="rn_Flagged rn_NotAllowed rn_Hidden ">
+                        <span class="rn_ScreenReaderOnly">
+                            </span>
+        </span>
+            <span class="rn_Unflagged">
+            Flag            <span class="rn_ScreenReaderOnly">
+                            </span>
+        </span>
+        </a>
+</div>
+        </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    <div class="rn_Paginator" role="navigation">
+        <span class="rn_PageLinks">
+                                                                            <span tabindex="0" class="rn_CurrentPage" title="Page 1 of 4 selected" aria-label="Page 1 of 4 selected">1</span>
+                                                                                    <a data-pageid="2" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/2" title="Page 2 of 4">2<span class="rn_ScreenReaderOnly">Page 2 of 4</span></a>
+                                                                                    <a data-pageid="3" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/3" title="Page 3 of 4">3<span class="rn_ScreenReaderOnly">Page 3 of 4</span></a>
+                                                                                    <a data-pageid="4" href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/4" title="Page 4 of 4">4<span class="rn_ScreenReaderOnly">Page 4 of 4</span></a>
+                                    </span>
+            <span class="rn_ForwardLink">
+            <a href="/app/unitTest/rendering/widgets/standard/discussion/QuestionComments/tests/pagination/qid/%CommunityQuestion%/page/2" data-pageid="2" rel="next">
+                Next            </a>
+        </span>
+    </div>
+    </div>
+            <div class="rn_CommentContainer rn_NewComment">
+                    <div class="rn_CommentContent">
+                <div class="rn_NoNewCommentMessage rn_Hidden">You cannot add a new comment while editing or replying to an existing comment</div>
+                <div class="rn_PostNewComment" id="rn_QuestionComments_0_NewComment">
+                                        <a href="javascript:void(0);" role="button" aria-haspopup="true" id="rn_QuestionComments_0_Login" class="rn_SocialLogin">Add a new comment</a>
+                                    </div>
+            </div>
+        </div>
+    </div>

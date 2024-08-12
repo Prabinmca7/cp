@@ -1,0 +1,10 @@
+input: <rn:widget path='standard/okcs/AnswerField' label='Attachments' type='FILE' xpath='TEST_CHANNEL/FILE' value="1#test.pdf"/>
+config: OKCS_IM_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsKmApi/endpoint/,OKCS_ENABLED|1,OKCS_API_TIMEOUT|0
+removecontent: true
+urlparameters: /a_id/1000001
+output:
+<div id="rn_AnswerField_0" class="rn_AnswerField rn_AnswerField_Test_Channel_File" >
+            <div class='rn_SchemaAttribute'>
+        Attachments    </div>                    <div class='rn_SchemaAttributeValue'>
+                <a target='_blank' href="/ci/okcsFattach/get/1000001_1">test.pdf</a>
+        </div>            </div>

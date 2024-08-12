@@ -1,0 +1,23 @@
+<div class='rn_ExistingFileAttachments'>
+    <label class="rn_DataLabel"><%= attrs.label_existing_attachments %></label>
+    <ul>
+    <% for(var i=0; i < fileAttachments.length; i++) {%>
+        <li id="<%='rn_RemoveExistingFile_' + fileAttachments[i].ID %>">
+            <rn:block id="attachmentItemTop"/>
+            <% if (attrs.display_thumbnail && fileAttachments[i].ThumbnailScreenReaderText) { %>
+                <rn:block id="preThumbnail"/>
+                <img class='rn_Thumbnail'/>
+                <span class="rn_ScreenReaderOnly"><%= fileAttachments[i].ThumbnailScreenReaderText %></span>
+                <rn:block id="postThumbnail"/>
+            <% } %>
+            <rn:block id="preFileName"/>
+            <%= escapeHtml(fileAttachments[i].FileName)%>
+            <rn:block id="postFileName"/>
+            <rn:block id="preRemoveLink"/>
+            <a href='javascript:void(0)' class='rn_ExistingFileRemove'><%= attrs.label_remove %><span class='rn_ScreenReaderOnly'><%=  escapeHtml(fileAttachments[i].FileName)%></span></a>
+            <rn:block id="postRemoveLink"/>
+            <rn:block id="attachmentItemBottom"/>
+        </li>
+    <% } %>
+    </ul>
+<div>

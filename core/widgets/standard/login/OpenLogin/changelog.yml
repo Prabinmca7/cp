@@ -1,0 +1,126 @@
+1.6.1:
+  release: "24.8"
+  entries:
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 816
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+  - account: vasanth.raghunatha@oracle.com
+    category: API Change
+    changelogID: 815
+    date: 07/31/2024
+    description: The widget is minor bumped to be compatible with PHP 8.3
+    level: minor
+    refno: 240724-000047
+    sortPosition: Middle
+1.5.1:
+  release: "17.2"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 604
+    date: 11/16/2016
+    description: Added new label one\_click\_access\_enabled to support One-click
+      access to third-party authentication sites
+    details:
+    - Setting attribute one\_click\_access\_enabled to true will allow users to go
+      to third party authentication site on a single click.
+    level: minor
+    refno: 161020-000077
+    sortPosition: Middle
+1.4.1:
+  release: "16.11"
+  entries:
+  - account: milan.pandya
+    category: New Feature
+    changelogID: 551
+    date: 08/24/2016
+    description: Updated error message on email login.
+    details:
+    - Updated error message on email login to "There was a problem with the request
+      and the action could not be completed."
+    level: minor
+    refno: 160412-000074
+    sortPosition: Middle
+1.3.1:
+  release: "16.5"
+  entries:
+  - account: andrew.jenkins
+    category: Bug Fix
+    changelogID: 486
+    date: 03/09/2016
+    description: Updated widgets using the rn\_Required screenreader text to use a
+      more conformant aria-label style of screen reading.
+    details:
+    - This widget now utilizes the aria-label view-partial functionality for views
+      and .ejs files rather than duplicating logic with the rn\_ScreenReader class.  The
+      rn\_ScreenReader class causes issues while using iOS VoiceOver on the mobile
+      pageset and should be avoided except in cases where absolutely necessary.
+    level: minor
+    refno: 151217-000173
+    sortPosition: Middle
+1.2.2:
+  release: "15.11"
+  entries:
+  - account: rlund
+    category: Bug Fix
+    changelogID: 429
+    date: 10/28/2015
+    description: OpenLogin submission was causing an error to momentarily display
+      on the standard login form
+    level: nano
+    refno: 151028-000177
+    sortPosition: Middle
+1.2.1:
+  release: "15.8"
+  entries:
+  - account: jwatson
+    category: API Change
+    changelogID: 321
+    date: 05/11/2015
+    description: Added support for changing the redirect URL if a user attempts a
+      social action prior to logging in and then uses the OpenLogin widget to login
+    level: minor
+    refno: 150501-000032
+    sortPosition: Middle
+1.1.2:
+  release: "14.5"
+  entries:
+  - account: ryan.peterson
+    category: Bug Fix
+    changelogID: 244
+    date: 02/20/2014
+    description: When showing error, check if certain objects are in namespace before
+      using method attached to them
+    details:
+    - Fixes a defect for IE10 users on slow internet connections in which methods
+      were trying to be used on objects not in the namespace.
+    level: nano
+    refno: 140121-000121
+    sortPosition: Middle
+1.1.1:
+  release: "13.8"
+  entries:
+  - account: ramanpreet.dhunna
+    category: Bug Fix
+    changelogID: 127
+    date: 07/17/2013
+    description: Prevents automatic initial caps on fields
+    details:
+    - Previously, fields were auto-corrected to capitalize the first letter of a word.
+      Auto-correction is no longer applied by default.
+    level: minor
+    refno: 130116-000034
+    sortPosition: Middle
+1.0.1:
+  release: "12.11"
+  entries:
+  - date: 10/16/2012
+    level: major
+    description: Initial version
+    category: API Change
+    sortPosition: Middle
