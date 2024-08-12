@@ -1,5 +1,5 @@
 <?
-
+echo "Testing";
 $cpPhpVersion = substr(PHP_VERSION_ID, 0, -2) . '00';
 define('CP_PHP_VERSION', $cpPhpVersion);
 define('IS_HOSTED', (get_cfg_var('rnt.hosted') == 0) ? false : true);
