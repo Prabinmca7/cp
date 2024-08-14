@@ -21,7 +21,7 @@
     <form id="rn_QuestionSubmit" method="post" action="/ci/ajaxRequest/sendForm">
         <div id="rn_ErrorLocation"></div>
         <rn:condition logged_in="false">
-            <h2>DEMO CICD PRABIN</h2>
+       
         <rn:widget path="input/FormInput" name="Contact.Emails.PRIMARY.Address" required="true" initial_focus="true" label_input="#rn:msg:EMAIL_ADDR_LBL#"/>
         <rn:widget path="input/FormInput" name="Incident.Subject" required="true" label_input="#rn:msg:SUBJECT_LBL#"/>
         </rn:condition>
