@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: DeletedUser
-  Name.First: Deleted
-  Name.Last: User
-  Emails.0.Address: userdeleted@social.com.invalid
-  NewPassword: ''

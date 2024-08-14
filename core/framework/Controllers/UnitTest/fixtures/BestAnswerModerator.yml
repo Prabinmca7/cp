@@ -1,7 +1,0 @@
-type: BestCommunityQuestionAnswer
-object:
-  CommunityUser:
-    fixture: UserModActive
-  BestAnswerType.LookupName: Moderator Selected
-  CommunityComment:
-    fixture: CommentActiveUserActive

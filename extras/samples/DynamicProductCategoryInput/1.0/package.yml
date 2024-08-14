@@ -1,6 +1,0 @@
-package: Dynamic Form
-folder: input
-additionalFiles:
-  views: dynamic_ask.php
-  exports: 
-    - CPCustomObject.zip

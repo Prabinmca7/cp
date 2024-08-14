@@ -1,5 +1,0 @@
-type: CommunityCommentFlg
-object:
-  CommunityUser:
-    fixture: UserActive1
-  Type.LookupName: Inappropriate

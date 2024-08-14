@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: SuspendedUser
-  Name.First: Suspended
-  Name.Last: User
-  Emails.0.Address: usersuspended@social.com.invalid
-  NewPassword: ''

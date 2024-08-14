@@ -1,8 +1,0 @@
-1.0.1:
-  release: "17.11"
-  entries:
-  - date: 08/10/2016
-    level: major
-    description: Initial version
-    category: New Feature
-    sortPosition: Middle

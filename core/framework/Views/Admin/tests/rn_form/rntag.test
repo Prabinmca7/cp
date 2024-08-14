@@ -1,8 +1,0 @@
-input: <rn:form action="/app/test/#rn:php:strtolower('ABC')#" post_handler="postRequest/sendForm"></rn:form>
-filter: @name='validationToken'(\s*)value='([^']*)'@
-removecontent: true
-replace: name='validationToken'$1value=''
-output:
-<form method='post' action='/app/test/abc'><div><input type='hidden' name='validationToken' value=''/>
-                <input type='hidden' name='constraints' value='W10='/>
-                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

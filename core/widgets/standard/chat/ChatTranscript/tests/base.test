@@ -1,8 +1,0 @@
-input: <rn:widget path='standard/chat/ChatTranscript'/>
-jstestfile: base.test.js
-removecontent: true
-output:
-<div id="rn_ChatTranscript_0" class="rn_ChatTranscript rn_Hidden">
-    <div id="rn_ChatTranscript_0_Transcript" class="rn_ChatTranscriptBlock" tabindex="0">
-    </div>
-</div>

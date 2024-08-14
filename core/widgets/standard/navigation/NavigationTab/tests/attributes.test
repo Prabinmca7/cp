@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/navigation/NavigationTab' link='/app/answers/list' css_class='MyClass' label_tab='MyLabel' target='_blank'/>
-jstestfile: base.test.js
-removecontent: true
-output:
-<span id="rn_NavigationTab_0" class="rn_NavigationTab">
-    <a class="" href="/app/answers/list" target="_blank" aria-label="">
-        <span>MyLabel</span>
-    </a>
-</span>

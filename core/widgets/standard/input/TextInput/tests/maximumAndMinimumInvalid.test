@@ -1,4 +1,0 @@
-input: <form onsubmit="return false;"><rn:widget path='standard/input/TextInput' name="Contact.Emails.PRIMARY.Address" maximum_length="10" minimum_length="11"/></form>
-filter: @"contactToken":"[^"]+"@
-removecontent: true
-output: <form onsubmit="return false;"></form>

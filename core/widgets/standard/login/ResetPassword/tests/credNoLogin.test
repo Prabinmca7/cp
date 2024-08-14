@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/login/ResetPassword'/><? /* TODO: create contact without a login set, cred: 1297/1577836800/login/, 1577836800 => Wed, 01 Jan 2020 00:00:00 GMT */ ?>
-redirecttohttps: true
-removecontent: true
-urlparameters: /cred/aUqDBwc0QwkYQ1iwVM4pfQFL4Z6645Fe_DTjuaqPDPCSY7SpTAd9wTLyDZ6OVHKBMHSXYyZM9PtE4!
-validate: false
-output: <br/>The link you used to access this page has expired.<br/>To request another password reset message, please visit <a href='/app/utils/account_assistance'>Account Assistance</a>.

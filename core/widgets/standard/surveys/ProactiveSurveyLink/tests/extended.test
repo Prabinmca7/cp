@@ -1,7 +1,0 @@
-input: <rn:widget path='standard/surveys/ProactiveSurveyLink' survey_id="5" intro_paragraph="My Intro Text" link_text="My Link"/>
-removecontent: true
-output:
-<div id="rn_ProactiveSurveyLink_0" class="rn_ProactiveSurveyLink rn_Hidden">
-    <div id="rn_ProactiveSurveyLink_0_IntroParagraph">
-        My Intro Text    </div>
-</div>

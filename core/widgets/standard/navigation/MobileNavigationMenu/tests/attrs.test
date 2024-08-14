@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/navigation/MobileNavigationMenu' label_button='Click Me' submenu="rn_TestMenu"/><ul id="rn_TestMenu" class="rn_Hidden"><li>Test1</li><li>Test2</li></ul>
-jstestfile: base.test.js
-removecontent: true
-template: mobile
-output:
-<span id="rn_MobileNavigationMenu_0" class="rn_MobileNavigationMenu">
-<button type="button" id="rn_MobileNavigationMenu_0_Link">Click Me</button>
-</span>
-<ul id="rn_TestMenu" class="rn_Hidden"><li>Test1</li><li>Test2</li></ul>

@@ -1,4 +1,0 @@
-input: <form onsubmit="return false;"><rn:widget path='standard/input/TextInput'/></form>
-filter: @"contactToken":"[^"]+"@
-removecontent: true
-output: <form onsubmit="return false;"></form>

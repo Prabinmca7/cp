@@ -1,3 +1,0 @@
-input: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div><rn:widget path='standard/input/SelectionInput'/></form>
-removecontent: true
-output: <form id='form' onsubmit="return false;"><div id="hereBeErrors"></div></form>

@@ -1,8 +1,0 @@
-version: "1.0.1"
-requires:
-  framework: ["3.2"]
-  jsModule: [standard, mobile]
-attributes:
-
-info:
-  description: rn:msg:ADD_A_DESCRIPTION_CMD

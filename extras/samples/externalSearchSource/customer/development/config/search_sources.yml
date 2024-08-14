@@ -1,5 +1,0 @@
-DDGSearch:
-  model: DDGSearch
-  filters:
-    bananas: bananas
-  endpoint: /ci/ajaxRequest/search

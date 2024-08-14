@@ -1,6 +1,0 @@
-<select data-level="<%= level %>" data-guide="<%= guideID %>" data-question="<%= questionID %>" title="<%= accessibleText %>" size="<%= size %>">
-    <option value="">--</option>
-<% for (var i = 0; i < responses.length; i++) { %>
-    <option value="<%= responses[i].responseID %>"><%= responses[i].text %></option>
-<% } %>
-</select>

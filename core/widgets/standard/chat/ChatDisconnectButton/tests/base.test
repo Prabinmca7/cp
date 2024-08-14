@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/chat/ChatDisconnectButton'/>
-removecontent: true
-output:
-<span id="rn_ChatDisconnectButton_0" class="rn_ChatDisconnectButton rn_Hidden">
-    <button id="rn_ChatDisconnectButton_0_Button" title="Terminate the Chat">
-                    <img src="images/chatDisconnect.png" alt="Terminate the Chat" />
-         
-        Disconnect    </button>
-</span>

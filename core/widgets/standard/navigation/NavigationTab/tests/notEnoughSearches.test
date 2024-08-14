@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/navigation/NavigationTab' searches_done="3"/>
-jstestfile: base.test.js
-removecontent: true
-output:
-<span id="rn_NavigationTab_0" class="rn_NavigationTab rn_Hidden">
-    <a class="" href="/app/home" target="_self" aria-label="">
-        <span>Support Home</span>
-    </a>
-</span>

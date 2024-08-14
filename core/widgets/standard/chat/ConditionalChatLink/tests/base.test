@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/chat/ConditionalChatLink' enable_availability_check="false"/>
-removecontent: true
-jstestfile: base.test.js
-output:
-<div id="rn_ConditionalChatLink_0" class="rn_ConditionalChatLink">
-</div>

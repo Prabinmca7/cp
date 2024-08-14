@@ -1,9 +1,0 @@
-input:
-<rn:field name="answers.a_id"/>
-<rn:field name="Answer.Summary"/>
-<rn:field name="ServiceCategory.Name"/>
-<rn:field name="product.Name"/>
-<rn:field name="Contact.Name.First"/>
-removecontent: true
-urlparameters: /p/1/c/70/a_id/52
-output: 52Enabling MMS on iPhone 3G and iPhone 3GSMobile BroadbandMobile Phones

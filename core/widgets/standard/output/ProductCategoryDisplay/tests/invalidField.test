@@ -1,4 +1,0 @@
-input: <rn:widget path='standard/output/ProductCategoryDisplay' name="answers.a_id"/>
-removecontent: true
-urlparameters: /a_id/8
-output: 

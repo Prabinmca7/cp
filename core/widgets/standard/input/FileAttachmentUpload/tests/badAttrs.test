@@ -1,3 +1,0 @@
-input: <form onsubmit="return false;"><rn:widget path='standard/input/FileAttachmentUpload' max_attachments='1' min_required_attachments='2'/></form>
-removecontent: true
-output: <form onsubmit="return false;"></form>

@@ -1,9 +1,0 @@
-input: <form onsubmit="return false;"><rn:widget path="standard/search/KeywordText" /></form>
-jstestfile: base.test.js
-removecontent: true
-output:
-<form onsubmit="return false;"><div id="rn_KeywordText_0" class="rn_KeywordText">
-    <label for="rn_KeywordText_0_Text">Search by Keyword</label>
-    <input placeholder="Search..." id="rn_KeywordText_0_Text" name="rn_KeywordText_0_Text" type="text" maxlength="255" value=""/>
-</div>
-</form>

@@ -1,4 +1,0 @@
-input: <form class="rn_hidden"><rn:widget path="input/FormInput" name="Contact.CustomFields.c.co_folder_integer"  textarea="true"/></form>
-filter: @"contactToken":"[^"]+"@
-removecontent: true
-output: <form class="rn_hidden"></form>

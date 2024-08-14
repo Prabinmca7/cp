@@ -1,8 +1,0 @@
-input: <rn:form post_handler="postRequest/sendForm"><rn:widget path="input/BasicTextInput"/></rn:form>
-filter: @name='validationToken'(\s*)value='([^']*)'@
-removecontent: true
-template: basic
-output:
-<form method='post' action="/app/unitTest/rendering/widgets/standard/input/BasicTextInput/tests/base"><div><input type='hidden' />
-                <input type='hidden' name='constraints' value='W10='/>
-                <input type='hidden' name='handler' value='postRequest/sendForm'/></div></form>

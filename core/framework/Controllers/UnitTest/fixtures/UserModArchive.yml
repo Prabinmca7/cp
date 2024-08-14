@@ -1,7 +1,0 @@
-type: CommunityUser
-object:
-  DisplayName: moderator
-  StatusWithType.Status.LookupName: Archived
-  Contact:
-    fixture: ContactModArchive
-  moderatorType: moderator

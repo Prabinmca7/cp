@@ -1,6 +1,0 @@
-input: <rn:widget path="standard/moderation/ModerationProfile"/>
-contact: useractive1
-fixture: UserActive1
-removecontent: true
-urlparameters: /user/%CommunityUser%
-output: 

@@ -1,4 +1,0 @@
-input: <form id="hereBeErrors"><rn:widget path='standard/okcs/OkcsSmartAssistant'/></form>
-config: OKCS_SRCH_API_URL|http://__OE_WEB_SERVER__/ci/unitTest/OkcsSrt/api/,OKCS_ENABLED|0,OKCS_API_TIMEOUT|0
-removecontent: true
-output: <form id="hereBeErrors"></form>

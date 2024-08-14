@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/chat/ChatPrintButton'/>
-removecontent: true
-output:
-<span id="rn_ChatPrintButton_0" class="rn_ChatPrintButton rn_Hidden">
-    <button id="rn_ChatPrintButton_0_Button" title="Print the Transcript"><img src="images/chatPrint.png" alt="Print the Transcript" /> </button>
-</span>

@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/chat/ChatSendButton'/>
-removecontent: true
-output:
-<span id="rn_ChatSendButton_0" class="rn_ChatSendButton rn_Hidden" title="Send the message to the agent">
-    <button id="rn_ChatSendButton_0_Button"> Send</button>
-</span>

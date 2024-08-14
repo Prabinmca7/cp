@@ -1,4 +1,0 @@
-input: <rn:widget path="standard/discussion/QuestionStatus"/>
-removecontent: true
-urlparameters: /qid/2039
-output: 

@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: ActiveUser2
-  Name.First: Active2
-  Name.Last: User
-  Emails.0.Address: useractive2@social.com.invalid
-  NewPassword: ''

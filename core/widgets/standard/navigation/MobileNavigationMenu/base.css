@@ -1,9 +1,0 @@
-.rn_MobileNavigationMenu button {
-    padding:6px 10px;
-    width:auto;
-}
-.rn_MobileNavigationMenu.rn_Menu li a .rn_ParentMenuAlt {
-    opacity:0;
-    position:absolute;
-    left:0;
-}

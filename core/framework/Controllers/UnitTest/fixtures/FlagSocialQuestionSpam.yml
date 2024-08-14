@@ -1,5 +1,0 @@
-type: CommunityQuestionFlg
-object:
-  CommunityUser:
-    fixture: UserModActive
-  Type.LookupName: Spam

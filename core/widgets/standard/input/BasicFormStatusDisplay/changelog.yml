@@ -1,8 +1,0 @@
-1.0.1:
-  release: "13.5"
-  entries:
-  - date: 1/16/2013
-    level: major
-    description: Initial version of input/BasicFormStatusDisplay
-    category: API Change
-    sortPosition: Middle

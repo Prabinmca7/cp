@@ -1,8 +1,0 @@
-version: "1.1.1"
-requires:
-  framework: ["3.11"]
-  jsModule: [standard, mobile]
-attributes:
-
-info:
-  description: rn:astr:OkcsApiTimingOnRefPage widget is used to display the KA REST API response time in KA reference pages. Details are displayed only in Development and OKCS Refernce mode of the site, only when the URL parameter logApiTimings is sent as true.

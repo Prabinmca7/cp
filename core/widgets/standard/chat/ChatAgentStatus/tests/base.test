@@ -1,8 +1,0 @@
-input: <rn:meta include_chat="true"/><rn:widget path='standard/chat/ChatAgentStatus'/>
-jstestfile: base.test.js
-removecontent: true
-output:
-<div id="rn_ChatAgentStatus_0" class="rn_ChatAgentStatus rn_Hidden">
-    <div id="rn_ChatAgentStatus_0_Roster" class="rn_ChatAgentStatusBlock">
-    </div>
-</div>

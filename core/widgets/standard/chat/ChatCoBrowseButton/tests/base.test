@@ -1,8 +1,0 @@
-input: <rn:widget path='standard/chat/ChatCoBrowseButton'/>
-removecontent: true
-output:
-<div id="rn_ChatCoBrowseButton_0" class="rn_ChatCoBrowseButton">
-    <button id="rn_ChatCoBrowseButton_0_Button" class="rn_Hidden" title="End the screen sharing session with the agent">
-         End Screen Share    </button>
-    <iframe id="rn_ChatCoBrowseButton_0_IFrame" class="rn_Hidden" title="CoBrowse Session"></iframe>
-</div>

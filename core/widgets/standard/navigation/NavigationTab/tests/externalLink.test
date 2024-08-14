@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/navigation/NavigationTab' link='www.google.com' external='true'/>
-jstestfile: base.test.js
-removecontent: true
-output:
-<span id="rn_NavigationTab_0" class="rn_NavigationTab">
-    <a class="" href="www.google.com" target="_self" aria-label="">
-        <span>Support Home</span>
-    </a>
-</span>

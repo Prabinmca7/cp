@@ -1,4 +1,0 @@
-input: <rn:widget path='standard/knowledgebase/TopicBrowse'/>
-jstestfile: base.test.js
-removecontent: true
-output: 

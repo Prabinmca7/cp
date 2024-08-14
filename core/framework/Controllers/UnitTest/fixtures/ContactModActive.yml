@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: ImaModerator
-  Name.First: Ima
-  Name.Last: Moderator
-  Emails.0.Address: usermodactive@social.com.invalid
-  NewPassword: ''

@@ -1,8 +1,0 @@
-1.0.1:
-  release: "13.5"
-  entries:
-  - date: 12/18/2012
-    level: major
-    description: Initial version of login/BasicLoginForm
-    category: API Change
-    sortPosition: Middle

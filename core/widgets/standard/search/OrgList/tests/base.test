@@ -1,4 +1,0 @@
-input: <form onsubmit="return false;"><rn:widget path="standard/search/OrgList" /></form>
-config: MYQ_VIEW_ORG_INCIDENTS|2
-removecontent: true
-output: <form onsubmit="return false;"></form>

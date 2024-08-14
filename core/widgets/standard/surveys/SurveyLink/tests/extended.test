@@ -1,7 +1,0 @@
-input: <rn:widget path='standard/surveys/SurveyLink' survey_id="5" link_text="Take My Survey" target="_blank" />
-removecontent: true
-output:
-<span id="rn_SurveyLink_0" class="rn_SurveyLink">
-    <a href="/ci/documents/detail/5/5/12/0364af5d0b33420eaedbf19cd07417819701fdd6" target="_blank">
-            Take My Survey        </a>
-</span>

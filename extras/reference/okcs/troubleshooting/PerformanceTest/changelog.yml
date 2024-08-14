@@ -1,8 +1,0 @@
-1.0.1:
-  release: "15.8"
-  entries:
-  - date: 14/06/2015
-    level: major
-    description: Initial version of okcs/PerformanceTest
-    category: API Change
-    sortPosition: Middle

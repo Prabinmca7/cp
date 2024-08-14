@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/login/BasicLoginForm'/>
-contact: slatest
-removecontent: true
-template: basic
-validate: false
-output: 

@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/utils/PageSetSelector' cookie_expiration_days='0'/>
-filter: @expires=.*?;'@
-removecontent: true
-output:
-<span id="rn_PageSetSelector_0" class="rn_PageSetSelector">
-    View site in:                        <span class="rn_Bold">Desktop</span>
-                <span class="rn_PageSetDivider">|</span>                        <a href="/ci/redirect/pageSet/mobile/unitTest/rendering/widgets/standard/utils/PageSetSelector/tests/sessionCookie">Mobile</a>
-                <span class="rn_PageSetDivider">|</span>                        <a href="/ci/redirect/pageSet/basic/unitTest/rendering/widgets/standard/utils/PageSetSelector/tests/sessionCookie">Basic</a>
-                    </span>

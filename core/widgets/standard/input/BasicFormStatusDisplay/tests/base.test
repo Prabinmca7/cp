@@ -1,6 +1,0 @@
-input: <rn:widget path='standard/input/BasicFormStatusDisplay'/>
-removecontent: true
-template: basic
-output:
-<div class="rn_BasicFormStatusDisplay">
-</div>

@@ -1,6 +1,0 @@
-version: "1.1.1"
-requires:
-  framework: ["3.11"]
-  jsModule: [standard, mobile]
-info:
-  description: rn:msg:WIDGET_DISPLAYS_ORACLE_LOGO_PAGE_MSG

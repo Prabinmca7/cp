@@ -1,8 +1,0 @@
-input: <rn:widget path="standard/output/ProductCategoryImageDisplay"/>
-jstestfile: base.test.js
-removecontent: true
-urlparameters: /p/1
-output:
-<div id="rn_ProductCategoryImageDisplay_0" class="rn_ProductCategoryImageDisplay">
-    <span class="rn_ProductImageContainer"></span>
-</div>

@@ -1,1 +1,0 @@
-In the installation tarball, this directory contains files which are produced by a build step which isn't normally performed by developers.  If you look at rnw/install/dist/unix/makefile and rnw/install/dist/unix/dist.defs you should be able to figure out where those files come from.

@@ -1,4 +1,0 @@
-input: <rn:widget path='standard/output/ProductCategoryDisplay'/>
-removecontent: true
-template: mobile
-output: 

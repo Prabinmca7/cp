@@ -1,9 +1,0 @@
-input: <rn:widget path="standard/user/UserStatus"/>
-contact: useradmin
-fixture: UserSuspended
-removecontent: true
-urlparameters: /user/%CommunityUser%
-output:
-<div id="rn_UserStatus_0" class="rn_UserStatus rn_Suspended">
-    <span class="rn_StatusContainer" title="The user is currently suspended.">Suspended</span>
-</div>

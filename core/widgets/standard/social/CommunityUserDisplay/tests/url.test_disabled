@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/social/CommunityUserDisplay'/>
-config: COMMUNITY_VERSION|15.11.0.0,COMMUNITY_ENABLED|1,COMMUNITY_PRIVATE_KEY|OXaX8ctYifSiwonq,COMMUNITY_PUBLIC_KEY|5JbzLXNAJ0Y3sxAn,COMMUNITY_BASE_URL|http://den01tpo.us.oracle.com
-removecontent: true
-urlparameters: /people/2f81208587
-output:
-<div id="rn_CommunityUserDisplay_0" class="rn_CommunityUserDisplay">
-        <img src="common/images/avatars/user/boat.jpg" alt=""/>
-        <span class="rn_UserName">John Dwyer</span>
-</div>

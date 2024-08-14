@@ -1,9 +1,0 @@
-@import 'widget-includes';
-
-.rn_ProductCategoryImageDisplay {
-    @include clearfix;
-
-    img {
-        @include span-columns(6);
-    }
-}

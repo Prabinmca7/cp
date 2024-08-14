@@ -1,8 +1,0 @@
-type: CommunityComment
-object:
-  CreatedByCommunityUser:
-    fixture: UserModActive
-  Body: Comment by a moderator.
-  StatusWithType.Status.LookupName: Deleted
-  BodyContentType.LookupName: text/x-markdown
-

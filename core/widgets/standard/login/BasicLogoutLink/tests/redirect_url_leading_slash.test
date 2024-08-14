@@ -1,9 +1,0 @@
-input: <rn:widget path='standard/login/BasicLogoutLink' label="Custom Logout Label" redirect_url="/app/answers/list"/>
-contact: slatest
-removecontent: true
-template: basic
-validate: false
-output:
-<span id="rn_BasicLogoutLink_0" class="rn_BasicLogoutLink rn_LogoutLink">
-    <a id="rn_BasicLogoutLink_0_LogoutLink" href="/ci/openlogin/logout/app/answers/list">Custom Logout Label</a>
-</span>

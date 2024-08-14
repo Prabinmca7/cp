@@ -1,4 +1,0 @@
-input: <rn:widget path="standard/navigation/ProductCategoryBreadcrumb" type="category"/>
-removecontent: true
-urlparameters: /p/1
-output: 

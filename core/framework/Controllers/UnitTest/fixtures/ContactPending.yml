@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: PendingUser
-  Name.First: Pending
-  Name.Last: User
-  Emails.0.Address: userpending@social.com.invalid
-  NewPassword: ''

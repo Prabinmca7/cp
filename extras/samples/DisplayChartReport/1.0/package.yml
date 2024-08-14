@@ -1,4 +1,0 @@
-package: DisplayChartReport
-folder: sample
-additionalFiles:
-    exports: [report_def.xml]

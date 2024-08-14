@@ -1,4 +1,0 @@
-input: <rn:widget path='standard/login/LoginDialog'/>
-removecontent: true
-urlparameters: /username/JohnDoe/redirect/account%252Foverview
-output: 

@@ -1,7 +1,0 @@
-type: Contact
-object:
-  Login: IzaSuspendedModerator
-  Name.First: Iza
-  Name.Last: Moderator
-  Emails.0.Address: usermodsuspended@social.com.invalid
-  NewPassword: ''

@@ -1,6 +1,0 @@
-input: <rn:widget path="standard/discussion/RecentlyAskedQuestions" category_filter="151" />
-removecontent: true
-output:
-<div id="rn_RecentlyAskedQuestions_0" class="rn_RecentlyAskedQuestions">
-            <div class="rn_NoQuestions">No Discussions Available</div>
-    </div>
