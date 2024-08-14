@@ -17,7 +17,6 @@ class AjaxCustom extends \RightNow\Controllers\Base
      */
     function ajaxFunctionHandler()
     {
-        echo "123";
         $postData = $this->input->post('post_data_name');
         //Perform logic on post data here
         echo $returnedInformation;
