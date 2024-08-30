@@ -30,7 +30,7 @@ pipeline {
                     
                     //URL="https://livetest-24c.custhelp.com/dav/cp/customer/development/views/pages/ask.php"
                     
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'CICDWebHook', url: 'https://github.com/Prabinmca7/cp.git']])
+                   // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'CICDWebHook', url: 'https://github.com/Prabinmca7/cp.git']])
                     def command = "git diff-tree --no-commit-id --name-only -n 1 HEAD~1..HEAD -r"
                     def filePaths = sh(script: command, returnStdout: true).trim().split('\n')
                     //echo "File path: ${filePaths}"
