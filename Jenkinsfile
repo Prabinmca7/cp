@@ -30,10 +30,10 @@ pipeline {
                     
                     //URL="https://livetest-24c.custhelp.com/dav/cp/customer/development/views/pages/ask.php"
                     
-                orahubSCM {
-                    repoUrl = "git@orahub.oci.oraclecorp.com:appdev-cloud-rnpd/cp.git"
-                    checkOutDir = "scripts/cp"
-                }
+                // orahubSCM {
+                //     repoUrl = "git@orahub.oci.oraclecorp.com:appdev-cloud-rnpd/cp.git"
+                //     checkOutDir = "scripts/cp"
+                // }
 
 
                     //checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'CICDWebHook', url: 'https://github.com/Prabinmca7/cp.git']])
