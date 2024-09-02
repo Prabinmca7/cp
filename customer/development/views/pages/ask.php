@@ -1,5 +1,5 @@
 <rn:meta title="#rn:msg:ASK_QUESTION_HDG#" template="standard.php" clickstream="incident_create"/>
-
+CICD DEMO ASK1
 <div class="rn_Hero">
     <div class="rn_HeroInner">
         <div class="rn_HeroCopy">
@@ -16,12 +16,11 @@
         <p>#rn:msg:NEED_A_QUICKER_RESPONSE_LBL# <a href="/app/social/ask#rn:session#">#rn:msg:ASK_OUR_COMMUNITY_LBL#</a></p>
     </div>
 </div>
-sample
+
 <div class="rn_PageContent rn_AskQuestion rn_Container">
     <form id="rn_QuestionSubmit" method="post" action="/ci/ajaxRequest/sendForm">
         <div id="rn_ErrorLocation"></div>
         <rn:condition logged_in="false">
-      
         <rn:widget path="input/FormInput" name="Contact.Emails.PRIMARY.Address" required="true" initial_focus="true" label_input="#rn:msg:EMAIL_ADDR_LBL#"/>
         <rn:widget path="input/FormInput" name="Incident.Subject" required="true" label_input="#rn:msg:SUBJECT_LBL#"/>
         </rn:condition>
