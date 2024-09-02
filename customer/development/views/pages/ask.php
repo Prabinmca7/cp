@@ -16,8 +16,7 @@
         <p>#rn:msg:NEED_A_QUICKER_RESPONSE_LBL# <a href="/app/social/ask#rn:session#">#rn:msg:ASK_OUR_COMMUNITY_LBL#</a></p>
     </div>
 </div>
-<h2>DEMO PRABIN</h2>
-
+sample
 <div class="rn_PageContent rn_AskQuestion rn_Container">
     <form id="rn_QuestionSubmit" method="post" action="/ci/ajaxRequest/sendForm">
         <div id="rn_ErrorLocation"></div>
