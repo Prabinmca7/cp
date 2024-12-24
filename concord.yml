@@ -5,9 +5,11 @@ configuration:
 
 flows:
   default:
-    - sh:
+    - log: "Getting list of changed files from Git"
+    - task: exec
+      in:
         cmd: "git diff-tree --no-commit-id --name-status -n 1 HEAD~1..HEAD -r"
-        out: fileChanges
+      out: {stdout: fileChanges}
 
     - script:
         in:
@@ -21,7 +23,13 @@ flows:
 
               // Process each file change
               fileChanges.split('\n').each { change ->
-                  def (status, path) = change.split('\t')
+                  def parts = change.split('\t')
+                  if (parts.size() != 2) {
+                      println("Ignoring malformed line: ${change}")
+                      return
+                  }
+                  def status = parts[0]
+                  def path = parts[1]
 
                   if (status == 'A' || status == 'M') { // Added or Modified
                       println("Queuing file for upload: ${path}")
@@ -51,10 +59,10 @@ flows:
               }.join(' ')
 
               def uploadCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${uploadCommands}"
-              def result = sh(script: uploadCommand, returnStatus: true)
+              def result = task("exec", cmd: uploadCommand, out: "status")
 
-              if (result != 0) {
-                  println("Failed to upload files with status ${result}")
+              if (result.status != 0) {
+                  println("Failed to upload files with status ${result.status}")
               } else {
                   println("Successfully uploaded all files")
               }
@@ -70,10 +78,10 @@ flows:
               }.join(' ')
 
               def deleteCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${deleteCommands}"
-              def result = sh(script: deleteCommand, returnStatus: true)
+              def result = task("exec", cmd: deleteCommand, out: "status")
 
-              if (result != 0) {
-                  println("Failed to delete files with status ${result}")
+              if (result.status != 0) {
+                  println("Failed to delete files with status ${result.status}")
               } else {
                   println("Successfully deleted all files")
               }
