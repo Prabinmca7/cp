@@ -7,81 +7,20 @@ configuration:
 
 flows:
   default:
-    - task: git-log
+    - task: git
       in:
-        command: "diff-tree --no-commit-id --name-status -n 1 HEAD~1..HEAD -r"
-      out: {result: fileChanges}
+        # Provide the repository URL here
+        repo: "https://github.com/example/repository.git"
+        branch: "main"  # Replace with the desired branch
+        dest: "${workDir}/repo"  # Directory where the repository will be cloned
 
-    - script:
-        in:
-          webdavUrl: "${webdavUrl}"
-          jwtAuthToken: "${jwtAuthToken}"
-          fileChanges: "${fileChanges}"
-        body: |
-          def processFiles(fileChanges, jwtAuthToken, webdavUrl) {
-              def filesToUpload = []
-              def filesToDelete = []
+    # Get the latest commit details
+    - expression: >
+        {
+          cmd: "git log -1 --name-only",
+          cwd: "${workDir}/repo"
+        }
+      out: {latestCommitFiles: result}
 
-              // Process each file change
-              fileChanges.split('\n').each { change ->
-                  def (status, path) = change.split('\t')
-
-                  if (status == 'A' || status == 'M') { // Added or Modified
-                      println("Queuing file for upload: ${path}")
-                      filesToUpload << path
-                  } else if (status == 'D') { // Deleted
-                      println("Queuing file for deletion: ${path}")
-                      filesToDelete << path
-                  }
-              }
-
-              if (filesToUpload.size() > 0) {
-                  uploadFiles(filesToUpload, jwtAuthToken, webdavUrl)
-              }
-
-              if (filesToDelete.size() > 0) {
-                  deleteFiles(filesToDelete, jwtAuthToken, webdavUrl)
-              }
-          }
-
-          def uploadFiles(filePaths, jwtAuthToken, webdavUrl) {
-              def uploadCommands = filePaths.collect { filePath ->
-                  def lastSlash = filePath.lastIndexOf('/')
-                  def directory = filePath.substring(0, lastSlash + 1)
-                  def fileName = filePath.substring(lastSlash + 1)
-
-                  "-T \"${filePath}\" \"${webdavUrl}${directory}${fileName}\""
-              }.join(' ')
-
-              def uploadCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${uploadCommands}"
-              def result = sh(script: uploadCommand, returnStatus: true)
-
-              if (result != 0) {
-                  println("Failed to upload files with status ${result}")
-              } else {
-                  println("Successfully uploaded all files")
-              }
-          }
-
-          def deleteFiles(filePaths, jwtAuthToken, webdavUrl) {
-              def deleteCommands = filePaths.collect { filePath ->
-                  def lastSlash = filePath.lastIndexOf('/')
-                  def directory = filePath.substring(0, lastSlash + 1)
-                  def fileName = filePath.substring(lastSlash + 1)
-
-                  "--request DELETE \"${webdavUrl}${directory}${fileName}\""
-              }.join(' ')
-
-              def deleteCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${deleteCommands}"
-              def result = sh(script: deleteCommand, returnStatus: true)
-
-              if (result != 0) {
-                  println("Failed to delete files with status ${result}")
-              } else {
-                  println("Successfully deleted all files")
-              }
-          }
-
-          processFiles(fileChanges, jwtAuthToken, webdavUrl)
-
-    - log: "Stage and promote build process in Next stage"
+    # Display the commit details in the log
+    - log: "Latest commit file details: ${latestCommitFiles.stdout}"
