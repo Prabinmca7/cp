@@ -9,18 +9,14 @@ flows:
   default:
     - task: git
       in:
-        # Provide the repository URL here
-        repo: "https://github.com/example/repository.git"
+        repo: "https://github.com/example/repository.git"  # Replace with your Git repository
         branch: "main"  # Replace with the desired branch
-        dest: "${workDir}/repo"  # Directory where the repository will be cloned
+        dest: "${workDir}/repo"  # Directory where the repo will be cloned
 
-    # Get the latest commit details
-    - expression: >
-        {
-          cmd: "git log -1 --name-only",
+    - script:
+        in:
+          cmd: "git log -1 --name-only"
           cwd: "${workDir}/repo"
-        }
-      out: {latestCommitFiles: result}
+        out: latestCommitDetails
 
-    # Display the commit details in the log
-    - log: "Latest commit file details: ${latestCommitFiles.stdout}"
+    - log: "Latest commit details:\n${latestCommitDetails.stdout}"
