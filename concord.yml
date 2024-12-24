@@ -10,7 +10,7 @@ flows:
     - task: git
       in:
         action: "clone"  # Specify the Git action
-        repo: "https://github.com/example/repository.git"  # Replace with your Git repository
+        url: "https://github.com/example/repository.git"  # Replace with your Git repository
         branch: "main"  # Replace with the desired branch
         dest: "${workDir}/repo"  # Directory where the repo will be cloned
 
