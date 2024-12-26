@@ -84,7 +84,12 @@
 #           processFiles(fileChanges, jwtAuthToken, webdavUrl)
 
 #     - log: "Stage and promote build process in Next stage"
-
+configuration:
+  dependencies:
+    - mvn://com.walmartlabs.concord.plugins:git:2.20.0
+  arguments:
+    concord:
+      logLevel: DEBUG
 flows:
   default:
     - task: git
