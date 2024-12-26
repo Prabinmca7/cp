@@ -89,11 +89,10 @@ flows:
   default:
     - task: git
       in:
-        action: "log"
-        repo: "https://your-git-repo-url.git"
+        action: "clone"
+        repo: "https://github.com/Prabinmca7/cp.git"
         branch: "main"
-        depth: 1
+        dest: "test-repo"
       out:
-        result: gitLog
-
-    - log: "Git Log Output: ${gitLog}"
+        result: gitClone
+    - log: "Git Clone Successful: ${gitClone}"
