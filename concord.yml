@@ -1,32 +1,85 @@
+configuration:
+  arguments:
+    webdavUrl: "https://cptest25a118.dv.dev.rightnow.com/dav/cp/"
+    jwtAuthToken: "eyJ0aW1lc3RhbXAiOjE3MzQ3MDc5NTgxMjYsInNpZ25hdHVyZSI6IkJIT0N4NDF0VUwrVlFqS3VMVVJlSm1MZzdUZz0iLCJkYXRhIjp7InNlc3Npb25JZCI6Im9LZGQyaHZOY0dWZEhOVTVjaHQ5NExNVG9Id3pKdk5nOTZibjYiLCJzZWNyZXRLZXkiOm51bGwsImFjY291bnRJZCI6NCwiaW50ZXJmYWNlVXJsIjoiaHR0cHM6Ly9jcHRlc3QyNWExMTguZHYuZGV2LnJpZ2h0bm93LmNvbS9jZ2ktYmluL2NwdGVzdDI1YTExOC5jZmciLCJmcmFtZVNlY3VyaXR5IjoiIn19"
+
 flows:
   default:
-    - task: git
+    - task: git-log
       in:
-        action: "log"
-        repo: "https://github.com/Prabinmca7/cp.git"
-        branch: "main"
-        depth: 1 # Fetch only the latest commit
-      out:
-        result: commitDetails
+        command: "diff-tree --no-commit-id --name-status -n 1 HEAD~1..HEAD -r"
+      out: {result: fileChanges}
 
-    - task: git
-      in:
-        action: "diff"
-        repo: "https://github.com/Prabinmca7/cp.git"
-        commitId: "${commitDetails.commitId}"
-      out:
-        result: changedFiles
+    - script:
+        in:
+          webdavUrl: "${webdavUrl}"
+          jwtAuthToken: "${jwtAuthToken}"
+          fileChanges: "${fileChanges}"
+        body: |
+          def processFiles(fileChanges, jwtAuthToken, webdavUrl) {
+              def filesToUpload = []
+              def filesToDelete = []
 
-    - log: |
-        Commit Details:
-        Commit Hash: ${commitDetails.commitId}
-        Author: ${commitDetails.authorName} <${commitDetails.authorEmail}>
-        Date: ${commitDetails.date}
-        Message: ${commitDetails.message}
+              // Process each file change
+              fileChanges.split('\n').each { change ->
+                  def (status, path) = change.split('\t')
 
-        Changed Files:
-        ${changedFiles}
+                  if (status == 'A' || status == 'M') { // Added or Modified
+                      println("Queuing file for upload: ${path}")
+                      filesToUpload << path
+                  } else if (status == 'D') { // Deleted
+                      println("Queuing file for deletion: ${path}")
+                      filesToDelete << path
+                  }
+              }
 
-configuration:
-  dependencies:
-    - mvn://com.walmartlabs.concord.plugins:git:2.20.0
+              if (filesToUpload.size() > 0) {
+                  uploadFiles(filesToUpload, jwtAuthToken, webdavUrl)
+              }
+
+              if (filesToDelete.size() > 0) {
+                  deleteFiles(filesToDelete, jwtAuthToken, webdavUrl)
+              }
+          }
+
+          def uploadFiles(filePaths, jwtAuthToken, webdavUrl) {
+              def uploadCommands = filePaths.collect { filePath ->
+                  def lastSlash = filePath.lastIndexOf('/')
+                  def directory = filePath.substring(0, lastSlash + 1)
+                  def fileName = filePath.substring(lastSlash + 1)
+
+                  "-T \"${filePath}\" \"${webdavUrl}${directory}${fileName}\""
+              }.join(' ')
+
+              def uploadCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${uploadCommands}"
+              def result = sh(script: uploadCommand, returnStatus: true)
+
+              if (result != 0) {
+                  println("Failed to upload files with status ${result}")
+              } else {
+                  println("Successfully uploaded all files")
+              }
+          }
+
+          def deleteFiles(filePaths, jwtAuthToken, webdavUrl) {
+              def deleteCommands = filePaths.collect { filePath ->
+                  def lastSlash = filePath.lastIndexOf('/')
+                  def directory = filePath.substring(0, lastSlash + 1)
+                  def fileName = filePath.substring(lastSlash + 1)
+
+                  "--request DELETE \"${webdavUrl}${directory}${fileName}\""
+              }.join(' ')
+
+              def deleteCommand = "/usr/bin/curl -k --header 'Authorization: Bearer ${jwtAuthToken}' ${deleteCommands}"
+              def result = sh(script: deleteCommand, returnStatus: true)
+
+              if (result != 0) {
+                  println("Failed to delete files with status ${result}")
+              } else {
+                  println("Successfully deleted all files")
+              }
+          }
+
+          processFiles(fileChanges, jwtAuthToken, webdavUrl)
+
+    - log: "Stage and promote build process in Next stage"
