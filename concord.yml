@@ -1,13 +1,32 @@
-configuration:
-  dependencies:
-    # Load the shell plugin
-    - mvn://com.walmartlabs.concord.plugins.basic:shell-tasks:2.20.0
-
 flows:
   default:
-    - log: "Printing the current working directory..."
-    - task: shell
+    - task: git
       in:
-        cmd: "pwd"
-        saveOutput: true
-    - log: "PWD is: ${result.stdout}"
+        action: "log"
+        repo: "https://github.com/Prabinmca7/cp.git"
+        branch: "main"
+        depth: 1 # Fetch only the latest commit
+      out:
+        result: commitDetails
+
+    - task: git
+      in:
+        action: "diff"
+        repo: "https://github.com/Prabinmca7/cp.git"
+        commitId: "${commitDetails.commitId}"
+      out:
+        result: changedFiles
+
+    - log: |
+        Commit Details:
+        Commit Hash: ${commitDetails.commitId}
+        Author: ${commitDetails.authorName} <${commitDetails.authorEmail}>
+        Date: ${commitDetails.date}
+        Message: ${commitDetails.message}
+
+        Changed Files:
+        ${changedFiles}
+
+configuration:
+  dependencies:
+    - mvn://com.walmartlabs.concord.plugins:git:2.20.0
