@@ -1,6 +1,5 @@
 configuration:
   dependencies:
-    - mvn://com.walmartlabs.concord.plugins:git:2.5.0
     - mvn://com.walmartlabs.concord.plugins.basic:shell-tasks:2.20.0
   arguments:
     webdavUrl: "https://cptest25a118.dv.dev.rightnow.com/dav/cp/"
