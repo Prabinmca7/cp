@@ -1,15 +1,20 @@
 configuration:
   dependencies:
     - mvn://com.walmartlabs.concord.plugins:git:2.5.0
+    - mvn://com.walmartlabs.concord.plugins.basic:shell-tasks:2.20.0
   arguments:
     webdavUrl: "https://cptest25a118.dv.dev.rightnow.com/dav/cp/"
     jwtAuthToken: "eyJ0aW1lc3RhbXAiOjE3MzQ3MDc5NTgxMjYsInNpZ25hdHVyZSI6IkJIT0N4NDF0VUwrVlFqS3VMVVJlSm1MZzdUZz0iLCJkYXRhIjp7InNlc3Npb25JZCI6Im9LZGQyaHZOY0dWZEhOVTVjaHQ5NExNVG9Id3pKdk5nOTZibjYiLCJzZWNyZXRLZXkiOm51bGwsImFjY291bnRJZCI6NCwiaW50ZXJmYWNlVXJsIjoiaHR0cHM6Ly9jcHRlc3QyNWExMTguZHYuZGV2LnJpZ2h0bm93LmNvbS9jZ2ktYmluL2NwdGVzdDI1YTExOC5jZmciLCJmcmFtZVNlY3VyaXR5IjoiIn19"
 flows:
   default:
-    - task: git
+    - log: "Fetching last committed file details..."
+    - task: shell
       in:
-        action: exec
-        command: "log -1 --name-only --pretty=format:''"
+        cmd: |
+          git log -1 --name-only --pretty=format:''
+        cwd: ${workDir}
+      out: fileDetails
+    - log: "Last committed files: ${fileDetails}"
 
 # flows:
 #   default:
