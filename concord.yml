@@ -95,7 +95,7 @@ flows:
     - task: git
       in:
         action: "clone"
-        repo: "https://github.com/Prabinmca7/cp.git"
+        url: "https://github.com/Prabinmca7/cp.git"
         branch: "main"
         dest: "test-repo"
       out:
