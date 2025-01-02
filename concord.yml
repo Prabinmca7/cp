@@ -9,7 +9,7 @@ flows:
     - task: git
       in:
         action: exec
-        command: "diff-tree --no-commit-id --name-only -r HEAD"
+        command: "log -1 --name-only --pretty=format:''"
 
 # flows:
 #   default:
