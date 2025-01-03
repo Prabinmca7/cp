@@ -5,14 +5,37 @@ configuration:
 
 flows:
   default:
-    - task: git
-      in:
-        action: CLONE
-        url: "https://github.com/Prabinmca7/cp"
-        workingDir: "git-project"
-        branch: main
-        dest: "${workDir}/repo"
-    - log: "Git Clone Successful ${workDir}"
+  - task: git
+    in:
+      action: "clone"
+      url: "git@github.com:Prabinmca7/cp.git"
+      workingDir: "git-project"
+      privateKey:
+        org: "Default"
+        secretName: "CICD"
+        # password: "mySecretPassword" # optional
+      baseBranch: "main"
+      ignoreErrors: true
+    out: response
+
+  - if: ${!response.ok}
+    then:
+    - log: "Clone action failed: ${response.error}"
+
+
+
+
+
+# flows:
+#   default:
+#     - task: git
+#       in:
+#         action: CLONE
+#         url: "https://github.com/Prabinmca7/cp"
+#         workingDir: "git-project"
+#         branch: main
+#         dest: "${workDir}/repo"
+#     - log: "Git Clone Successful ${workDir}"
 
 
         
