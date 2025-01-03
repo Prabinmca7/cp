@@ -9,7 +9,7 @@ flows:
       in:
         action: CLONE
         url: "https://github.com/Prabinmca7/cp"
-        branch: main
+        branch: master
         dest: "${workDir}/repo"
     - task: cmd
       in:
