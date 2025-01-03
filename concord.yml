@@ -2,25 +2,29 @@
 configuration:
   dependencies:
     - mvn://com.walmartlabs.concord.plugins:git:2.5.0
-
 flows:
   default:
-  - task: git
-    in:
-      action: "clone"
-      url: "git@github.com:Prabinmca7/cp.git"
-      workingDir: "git-project"
-      privateKey:
-        org: "Default"
-        secretName: "CICD"
-        # password: "mySecretPassword" # optional
-      baseBranch: "main"
-      ignoreErrors: true
-    out: response
+    - task: git
+      in:
+        action: "clone"
+        url: "git@github.com:Prabinmca7/cp.git"
+        workingDir: "git-project"
+        privateKey:
+          org: "Default"
+          secretName: "CICD"
+          # password: "mySecretPassword" # optional
+        baseBranch: "main"
+        ignoreErrors: true
+      out: response
 
-  - if: ${!response.ok}
-    then:
-    - log: "Clone action failed: ${response.error}"
+    - if: "${!response.ok}"
+      then:
+        - log: "Clone action failed: ${response.error}"
+
+
+  # - if: ${!response.ok}
+  #   then:
+  # - log: "Clone action failed: ${response.error}"
 
 
 
