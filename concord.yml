@@ -5,12 +5,13 @@ configuration:
 
 flows:
   default:
-    # - task: git
-    #   in:
-    #     action: CLONE
-    #     url: "https://github.com/Prabinmca7/cp"
-    #     branch: main
-    #     dest: "${workDir}/repo"
+    - task: git
+      in:
+        action: CLONE
+        url: "https://github.com/Prabinmca7/cp"
+        workingDir: "git-project"
+        branch: main
+        dest: "${workDir}/repo"
     - log: "Git Clone Successful ${workDir}"
 
 
