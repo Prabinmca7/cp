@@ -2,7 +2,6 @@
 configuration:
   dependencies:
     - mvn://com.walmartlabs.concord.plugins:git:2.5.0
-    - mvn://com.walmartlabs.concord.plugins.basic:shell-tasks:2.5.0
 
 flows:
   default:
@@ -13,11 +12,16 @@ flows:
         branch: main
         dest: "${workDir}/repo"
 
-    - task: shell
-      in:
-        workingDir: "${workDir}/repo"
-        command: |
-          git log -1 --name-only --pretty=format:''
+- task: cmd
+  in:
+    workingDir: "${workDir}/repo"
+    cmd: |
+      git log -1 --name-only --pretty=format:''
+    # - task: shell
+    #   in:
+    #     workingDir: "${workDir}/repo"
+    #     command: |
+    #       git log -1 --name-only --pretty=format:''
 
 
 
