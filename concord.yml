@@ -11,11 +11,13 @@ flows:
         url: "https://github.com/Prabinmca7/cp"
         branch: main
         dest: "${workDir}/repo"
-    - task: cmd
-      in:
-        workingDir: "${workDir}/repo"
-        cmd: |
-          git log -1 --name-only --pretty=format:''
+
+        
+    # - task: cmd
+    #   in:
+    #     workingDir: "${workDir}/repo"
+    #     cmd: |
+    #       git log -1 --name-only --pretty=format:''
 
 
 
